@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery-3.2.1.min.js"></script>
+	<style>
+#Numberlist.dropdown-menu{
+min-width: 200px;
+}
+
+body{
+background-color:#666666;
+}
+
+.container-fluid{
+    padding:none;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphic Design
+        <ul class="dropdown-menu">
+          <li><a href="#" onclick="load_home()">Political Poster & Leaflet</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography
+        <ul class="dropdown-menu">
+          <li><a href="#">Europe 2017</a></li>
+          <li><a href="#">Australia 2015-2016</a></li>
+          <li><a href="#">Europe 2015-2016</a></li>
+          <li><a href="#">Poland 2014</a></li>
+          <li><a href="#">Before</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Video
+        <ul class="dropdown-menu">
+          <li><a href="#">Vivid 2015</a></li>
+          <li><a href="#">Music Videos</a></li>
+          <li><a href="#">Other</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog
+        <ul class="dropdown-menu">
+          <li><a href="paris.html" target="fs">Sehnsucht</a></li>
+          <li><a href="#">Australian Dream</a></li>
+          <li><a href="#">Another World</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">UX
+        <ul class="dropdown-menu">
+          <li><a href="#">MCA</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Web
+        <ul class="dropdown-menu">
+          <li><a href="#">Fuad Soudah</a></li>
+          <li><a href="#">LMU</a></li>
+          <li><a href="#">Virgin Airlines</a></li>
+          <li><a href="#">Old Fuad Soudah</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Physical
+        <ul class="dropdown-menu">
+          <li><a href="#">Boombox</a></li>
+          <li><a href="#">Medical</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming
+        <ul class="dropdown-menu">
+          <li><a href="#">Event Locator</a></li>
+          <li><a href="#">Project nr. 3</a></li>
+          <li><a href="#">Project nr. 2</a></li>
+          <li><a href="#">Project nr. 1</a></li>
+      </ul>
+            
+        </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
+        <ul class="dropdown-menu">
+          <li><a href="#">Postgresql Database</a></li>
+          <li><a href="#">Project Piaseczno</a></li>
+          <li><a href="#">Audio</a></li>
+          <li><a href="#">Video Game</a></li>
+      </ul>
+            
+        </li>
+    </ul>
+
+        <ul class="nav navbar-nav navbar-right list-inline">
+      <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Culture</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-education"></span> Education</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+    </ul>
+
+</nav>
+</div>
+</div>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2 col-md-offset-5"><h1>Welcome!</h1></div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-2">
+The following website is a research version of a research based on Fuad Soudah. Feel free to look around.
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-2">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/XSiFtmgFcKc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
