@@ -31,6 +31,10 @@ a:active {
 
 body{
 background-color:#666666;
+    background-image: url(DSC_0162b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container-fluid{
@@ -63,6 +67,10 @@ background-color:#666666;
     transition: height 0.8s ease;
 }
 
+.panel{
+  background-color: rgba(255,255,255,0.65);
+}
+
 </style>
 
 </head>
@@ -72,7 +80,7 @@ background-color:#666666;
 <!-- BODY BODY BODY-->
 
 <div class="container-fluid">
-<div class="row">
+<div class="row panel">
   <center><h1>Education</h1></center>
 </div>
 <div class="row">
@@ -81,7 +89,7 @@ background-color:#666666;
   </div>
 </div>
 <div class="row">
-  <div class="col-md-3 col-md-offset-2">
+  <div class="col-md-3 col-md-offset-2 panel">
 
     <center><h4>University of Sydney</h4></center><br>
 
@@ -123,7 +131,7 @@ background-color:#666666;
     <a href="EventLocator.html">Information Visualization with Processing </a><div class="alignright" style="clear: both;">1.7</div><br>
     <a href="BoomBox.html">Sketching with Hardware </a><div class="alignright" style="clear: both;">1.0</div><br><br>
   </div>
-  <div class="col-md-3 col-md-offset-2">
+  <div class="col-md-3 col-md-offset-2 panel">
     <center><h4>Language Certificates</h4></center><br>
 
     Certificate in Advanced English<div class="alignright" style="clear: both;">72</div><br>
@@ -146,9 +154,11 @@ background-color:#666666;
   </div>
 </div>
 
+<br>
+
 <div class="row">
-<div class="col-md-6 col-md-offset-3">
-  <center><h2>Planned</h2></center>
+<div class="col-md-6 col-md-offset-3 panel">
+  <center><h2>Planned</h2></center><br>
 
 <center><h4>University of Munich</h4></center>
 
@@ -163,35 +173,14 @@ German Level B2.2<div class="alignright" style="clear: both;">TBA</div><br><br>
 <center><h4>University of Sydney</h4></center>
 
 Interactive Design Studio<div class="alignright" style="clear: both;">TBA</div><br>
-Innovation Design<div class="alignright" style="clear: both;">TBA</div><br>
+Innovation Design<div class="alignright" style="clear: both;">TBA</div><br><br>
 </div>
 </div>
 </div>
 
 <br>
 
-<div class="container-fluid">
-    <div class="row">
-<nav class="navbar navbar-inverse navbar-bottom" role="navigation">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="#">Future Projects:</a>
-  </div>
-    <ul class="nav navbar-nav">
-  <li><a href="#">Tertile's Uproar</a></li>
-  <li><a href="#">Sehnsucht</a></li>
-  <li><a href="#">Introspection</a></li>
-  <li><a href="#">Dorfbladt</a></li>
-  <li><a href="#">Grassausschus</a></li>
-  <li><a href="#">Untitled Video</a></li>
-    </ul>
-
-        <ul class="nav navbar-nav navbar-right list-inline">
-      <li><a href="Contact.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>
-    </ul>
-
-</nav>
-</div>
-</div>
+<script src="footer.js"></script>
 
 <script>
 document.getElementById('button').onclick = function() {
