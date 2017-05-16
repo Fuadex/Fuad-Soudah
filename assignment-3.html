@@ -1,0 +1,506 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="http://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link type="text/css" href="http://peepproject.com/media/css/peep.css?v=2.4a1" rel="stylesheet" media="screen">
+</head>
+<body>
+                
+                
+        <div id="content_wrap">
+            <div id="content">
+                <div class="portfolio_entry entry_view">
+        
+    <div class="meta" style="padding-top:80px;">
+        <img src="http://peepproject.com/media/images/portfolio/entries/16939/entry_image.jpg"><div class="data">
+            <h1 class="entry_title">Ass­i­g­n­m­e­n­t 3</h1>
+            <cite class="author">by <span><a href="http://peepproject.com/user/15033/portfolio">Fuad Soudah</a></span></cite>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    
+    <div class="content markdown">
+        
+
+<h1>Introduction</h1>
+
+<p>A client, pleased with the previous works, assigned me with a new task, to create a digital sketchpad, based on which any person would be able to create customizable apparel, etui or any other element showcasing the individual style of each person.</p>
+
+<p>Considering we were to create a sketchpad, I decided that the best object that would fit its criteria would be a skateboard deck.</p>
+
+<h1>Inspiration</h1>
+
+<p>The concept of chaos is quite broad. Even though order makes things simplier, some people prefer chaos, because of its unruliness and the beuty which lays within the concept itself.</p>
+
+<p>Sports are generally quite chaotic. The team usually try their best to create an order with which they may or may not win the game. However we wouldn't watch football if it was purely the same each time we watched it, correct? The chaotic element makes it interesting, introduces power with which we're able to win any game.</p>
+
+<p>Why not try underlining or personifying the concept of chaos, then? With a skateboard deck, so non-standard in it's looks, however esthetically beutyful, you'll be able to achieve any goals in style!</p>
+
+<p>But it wouldn't be any style, it would be YOUR style. Captured and painted right on your deck!</p>
+
+<h1>First Steps</h1>
+
+<p>My initial idea was to keep the program simple, as the client seeks tools, relatively comprehensive, however not overly complicated, so that anyone could use it and be pleased with the results.</p>
+
+<p>We don't want to overcrowd people with options, but let them take control of options, which either way will turn out to be, well, frankly said, just: awesome.</p>
+
+<h1>Preliminary Results</h1>
+
+<div class="code_example highlight sketchcode">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Sketch</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketchcode */</span>
+button tina<span class="sy0">;</span>
+button paul<span class="sy0">;</span>
+button nutt<span class="sy0">;</span>
+button paco<span class="sy0">;</span>
+button lolo<span class="sy0">;</span>
+button buba<span class="sy0">;</span>
+button nono<span class="sy0">;</span>
+ArrayList history<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> penColor<span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>,<span class="nu0">600</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/background_"><span class="kw2">background</span></a><span class="br0">(</span><span class="nu0">255</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+  tina = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">20</span>,<span class="nu0">20</span>, <span class="st0">"Red"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  paul = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">60</span>,<span class="nu0">20</span>, <span class="st0">"Blue"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  nutt = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">100</span>,<span class="nu0">20</span>, <span class="st0">"Black"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  paco = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">140</span>,<span class="nu0">20</span>, <span class="st0">"Green"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  lolo = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">180</span>,<span class="nu0">20</span>, <span class="st0">"Yellow"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  buba = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">220</span>,<span class="nu0">20</span>, <span class="st0">"Pink"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  nono = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">260</span>,<span class="nu0">20</span>, <span class="st0">"Aqua"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  history = <span class="kw12">new</span> ArrayList<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  penColor = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+tina.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+paul.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+nutt.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+paco.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+lolo.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+buba.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+nono.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span>penColor<span class="br0">)</span><span class="sy0">;</span>
+<span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/mousePressed"><span class="kw1">mousePressed</span></a> == <span class="kw4">true</span><span class="br0">)</span><span class="br0">{</span>
+<a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/pmouseX"><span class="kw1">pmouseX</span></a>,<a href="http://processingjs.org/reference/pmouseY"><span class="kw1">pmouseY</span></a>,<a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+  <span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/mousePressed"><span class="kw1">mousePressed</span></a><span class="br0">)</span> <span class="br0">{</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">16</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/pmouseX"><span class="kw1">pmouseX</span></a>, <a href="http://processingjs.org/reference/pmouseY"><span class="kw1">pmouseY</span></a>, <a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> history.<a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> i++<span class="br0">)</span> <span class="br0">{</span>
+      PVector p = <span class="br0">(</span>PVector<span class="br0">)</span> history.<a href="http://processingjs.org/reference/get_"><span class="kw2">get</span></a><span class="br0">(</span>i<span class="br0">)</span><span class="sy0">;</span>
+      <span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/dist_"><span class="kw2">dist</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a>, p.<span class="me1">x</span>, p.<span class="me1">y</span><span class="br0">)</span> <span class="sy0">&lt;</span> <span class="nu0">30</span><span class="br0">)</span> <span class="br0">{</span>
+        <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a>, p.<span class="me1">x</span>, p.<span class="me1">y</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+    <span class="br0">}</span>
+    history.<span class="me1">add</span><span class="br0">(</span><span class="kw12">new</span> PVector<span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/mouseClicked_"><span class="kw2">mouseClicked</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  tina.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  paul.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  nutt.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  paco.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  lolo.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  buba.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  nono.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+ 
+<a href="http://processingjs.org/reference/class"><span class="kw13">class</span></a> button<span class="br0">{</span>
+  <a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> bName<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> posX<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> posY<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> bColor<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> bWid<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> bHei<span class="sy0">;</span>
+ 
+  button<span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> _posX, <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> _posY, <a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> _bName, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> _bColor<span class="br0">)</span><span class="br0">{</span>
+    posX = _posX<span class="sy0">;</span>
+    posY = _posY<span class="sy0">;</span>
+    bName = _bName<span class="sy0">;</span>
+    bColor = _bColor<span class="sy0">;</span>
+    bWid = <span class="nu0">20</span><span class="sy0">;</span>
+    bHei = <span class="nu0">20</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+ 
+ <a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> render<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+   <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>bColor<span class="br0">)</span><span class="sy0">;</span>
+   <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span>posX,posY,bWid,bHei<span class="br0">)</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+ 
+ <a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> ifClicked<span class="br0">(</span><a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> clickX, <a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> clickY<span class="br0">)</span><span class="br0">{</span>
+ <span class="kw7">if</span> <span class="br0">(</span>clickX <span class="sy0">&gt;</span>= posX <span class="sy0">&amp;&amp;</span> clickX <span class="sy0">&lt;</span>= posX + bWid<span class="br0">)</span><span class="br0">{</span>
+   <span class="kw7">if</span> <span class="br0">(</span>clickY <span class="sy0">&gt;</span>= posY <span class="sy0">&amp;&amp;</span> clickY <span class="sy0">&lt;</span>= posY + bHei<span class="br0">)</span><span class="br0">{</span>
+     clicked<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+   <span class="br0">}</span>
+  <span class="br0">}</span>
+ <span class="br0">}</span>
+ 
+ <a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> clicked<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+   penColor = bColor<span class="sy0">;</span>
+ <span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/class"><span class="kw13">class</span></a> weblol<span class="br0">{</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> posX<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> posY<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> bWid<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> bHei<span class="sy0">;</span>
+ 
+  weblol<span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> _posX, <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> _posY<span class="br0">)</span><span class="br0">{</span>
+    posX = _posX<span class="sy0">;</span>
+    posY = _posY<span class="sy0">;</span>
+    bWid = <span class="nu0">20</span><span class="sy0">;</span>
+    bHei = <span class="nu0">20</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>I decided to build the sketch page with basic tools, such as creating lines in different colours, however I introduced the web effect, which combined with the colours, they just create quite an interesting scheme.</p>
+
+<h1>Final Design</h1>
+
+<div class="code_example highlight sketchcode">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Sketch</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketchcode */</span>
+button tina<span class="sy0">;</span>
+button paul<span class="sy0">;</span>
+button nutt<span class="sy0">;</span>
+button paco<span class="sy0">;</span>
+button lolo<span class="sy0">;</span>
+button buba<span class="sy0">;</span>
+button nono<span class="sy0">;</span>
+button hubl<span class="sy0">;</span>
+button omon<span class="sy0">;</span>
+button dupa<span class="sy0">;</span>
+button wowa<span class="sy0">;</span>
+button nowa<span class="sy0">;</span>
+ArrayList history<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> penColor<span class="sy0">;</span>
+ 
+<span class="co1">//Arrays and buttons above</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>,<span class="nu0">600</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/background_"><span class="kw2">background</span></a><span class="br0">(</span><span class="nu0">255</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+  tina = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">20</span>,<span class="nu0">20</span>, <span class="st0">"Red"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  paul = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">60</span>,<span class="nu0">20</span>, <span class="st0">"Blue"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  nutt = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">100</span>,<span class="nu0">20</span>, <span class="st0">"Black"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  paco = <span class="kw12">new</span> button<span class="br0">(</span><span class="nu0">140</span>,<span class="nu0">20</span>, <span class="st0">"Green"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  lolo = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">180</span>,<span class="nu0">20</span>, <span class="st0">"Yellow"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  buba = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">220</span>,<span class="nu0">20</span>, <span class="st0">"Pink"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  nono = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">260</span>,<span class="nu0">20</span>, <span class="st0">"Aqua"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  hubl = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">300</span>,<span class="nu0">20</span>, <span class="st0">"Blueish"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">100</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  omon = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">340</span>,<span class="nu0">20</span>, <span class="st0">"Greenish"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">100</span>,<span class="nu0">100</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  dupa = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">380</span>,<span class="nu0">20</span>, <span class="st0">"Goldenish"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">100</span>,<span class="nu0">100</span>,<span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  wowa = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">420</span>,<span class="nu0">20</span>, <span class="st0">"Redish"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">0</span>,<span class="nu0">100</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  nowa = <span class="kw12">new</span> button <span class="br0">(</span><span class="nu0">460</span>,<span class="nu0">20</span>, <span class="st0">"Purpulish"</span>, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">100</span>,<span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  history = <span class="kw12">new</span> ArrayList<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  penColor = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="co1">//a series of working coloring buttons above</span>
+<span class="co1">//We need to render these buttons, so that they're clickable</span>
+<span class="co1">// (underneath)</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+tina.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+paul.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+nutt.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+paco.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+lolo.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+buba.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+nono.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+hubl.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+omon.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+dupa.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+wowa.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+nowa.<span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span>penColor<span class="br0">)</span><span class="sy0">;</span>
+<span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/mousePressed"><span class="kw1">mousePressed</span></a> == <span class="kw4">true</span><span class="br0">)</span><span class="br0">{</span>
+<a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/pmouseX"><span class="kw1">pmouseX</span></a>,<a href="http://processingjs.org/reference/pmouseY"><span class="kw1">pmouseY</span></a>,<a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span> <span class="co1">//Now we've got the nice "itching" effect, all the magic is here</span>
+  <span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/mousePressed"><span class="kw1">mousePressed</span></a><span class="br0">)</span> <span class="br0">{</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">16</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/pmouseX"><span class="kw1">pmouseX</span></a>, <a href="http://processingjs.org/reference/pmouseY"><span class="kw1">pmouseY</span></a>, <a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> history.<a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> i++<span class="br0">)</span> <span class="br0">{</span>
+      PVector p = <span class="br0">(</span>PVector<span class="br0">)</span> history.<a href="http://processingjs.org/reference/get_"><span class="kw2">get</span></a><span class="br0">(</span>i<span class="br0">)</span><span class="sy0">;</span>
+      <span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/dist_"><span class="kw2">dist</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a>, p.<span class="me1">x</span>, p.<span class="me1">y</span><span class="br0">)</span> <span class="sy0">&lt;</span> <span class="nu0">30</span><span class="br0">)</span> <span class="br0">{</span>
+        <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a>, p.<span class="me1">x</span>, p.<span class="me1">y</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+    <span class="br0">}</span>
+    history.<span class="me1">add</span><span class="br0">(</span><span class="kw12">new</span> PVector<span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>, <a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="co1">//So, what happens once we click some of these buttons?</span>
+<span class="co1">//Of course, they will change the pen color!</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/mouseClicked_"><span class="kw2">mouseClicked</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  tina.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  paul.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  nutt.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  paco.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  lolo.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  buba.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  nono.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  hubl.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  omon.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  dupa.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  wowa.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+  nowa.<span class="me1">ifClicked</span><span class="br0">(</span><a href="http://processingjs.org/reference/mouseX"><span class="kw1">mouseX</span></a>,<a href="http://processingjs.org/reference/mouseY"><span class="kw1">mouseY</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="co1">//Now the more technical stuff, so that all the magic keeps on working</span>
+<span class="co1">//Main focus? Classes.</span>
+ 
+<a href="http://processingjs.org/reference/class"><span class="kw13">class</span></a> button<span class="br0">{</span>
+  <a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> bName<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> posX<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> posY<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> bColor<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> bWid<span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> bHei<span class="sy0">;</span>
+ 
+  button<span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> _posX, <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> _posY, <a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> _bName, <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> _bColor<span class="br0">)</span><span class="br0">{</span>
+    posX = _posX<span class="sy0">;</span>
+    posY = _posY<span class="sy0">;</span>
+    bName = _bName<span class="sy0">;</span>
+    bColor = _bColor<span class="sy0">;</span>
+    bWid = <span class="nu0">20</span><span class="sy0">;</span>
+    bHei = <span class="nu0">20</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+ 
+  <span class="co1">//And there's more important stuff, without which the code would not work</span>
+  <span class="co1">//Or it would work but it would just look badly</span>
+ 
+ <a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> render<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+   <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>bColor<span class="br0">)</span><span class="sy0">;</span>
+   <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span>posX,posY,bWid,bHei<span class="br0">)</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+ 
+ <a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> ifClicked<span class="br0">(</span><a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> clickX, <a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> clickY<span class="br0">)</span><span class="br0">{</span>
+ <span class="kw7">if</span> <span class="br0">(</span>clickX <span class="sy0">&gt;</span>= posX <span class="sy0">&amp;&amp;</span> clickX <span class="sy0">&lt;</span>= posX + bWid<span class="br0">)</span><span class="br0">{</span>
+   <span class="kw7">if</span> <span class="br0">(</span>clickY <span class="sy0">&gt;</span>= posY <span class="sy0">&amp;&amp;</span> clickY <span class="sy0">&lt;</span>= posY + bHei<span class="br0">)</span><span class="br0">{</span>
+     clicked<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+   <span class="br0">}</span>
+  <span class="br0">}</span>
+ <span class="br0">}</span>
+ 
+ <a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> clicked<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+   penColor = bColor<span class="sy0">;</span>
+ <span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<span class="co1">//Now we've got a few key bindings for "f" and "c"</span>
+ 
+  <a href="http://processingjs.org/reference/boolean"><span class="kw3">boolean</span></a> IsPressed = <span class="kw4">true</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/keyPressed"><span class="kw1">keyPressed</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/key"><span class="kw1">key</span></a> == <span class="st0">'f'</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">60</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span><a href="http://processingjs.org/reference/key"><span class="kw1">key</span></a> == <span class="st0">'c'</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">255</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>I introduced more colours and key bindings such as 'f' for fade and 'c' for clear. The c key however does not works as a refreshing key, meaning the lines seems to still be in the system and as a result the interaction with the sketchpad changes a notch.</p>
+
+<h1>Product Placement</h1>
+
+<p>These are just examples of how skateboard decks could look like, once applied the style created in the sketchbook provided.</p>
+
+<div>
+<p>
+<img src="http://i.imgur.com/C13Kqn5.jpg" width="93" height="290"><img src="http://i.imgur.com/QeKbk4D.jpg" width="93" height="290"><img src="http://i.imgur.com/4BXDJWd.jpg" width="93" height="290"><img src="http://i.imgur.com/2hkmJDh.jpg" width="93" height="290"><img src="http://i.imgur.com/i5FCCIZ.jpg" width="93" height="290"><img src="http://i.imgur.com/HEY17ny.jpg" width="93" height="290"></p>
+<p>
+</p>
+</div>
+
+<h1>References</h1>
+
+<p>I decided to take upon an interesting concept of building webs. Therefore I used a code built by Rob Saunders, the first sketch, which is to be found here: http://peepproject.com/portfolios/entry/1337/view</p>
+
+        
+    </div>
+    <ul class="actions gallery_actions">
+<li class="action action_upload_image"><a href="http://peepproject.com/portfolios/entry/entry_id/gallery/image/new">Upload Picture</a></li>            
+    </ul>
+<div class="gallery">
+                
+        <ul class="gallery">
+<li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/0/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/0/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/0.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/0.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/10/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/10/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/10.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/10.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/11/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/11/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/11.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/11.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/12/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/12/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/12.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/12.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/1/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/1/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/1.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/1.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/2/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/2/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/2.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/2.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/3/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/3/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/3.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/3.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/4/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/4/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/4.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/4.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/5/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/5/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/5.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/5.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/6/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/6/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/6.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/6.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/7/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/7/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/7.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/7.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/8/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/8/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/8.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/8.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16939/gallery/9/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16939/gallery/9/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16939/gallery/9.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16939/gallery/thumbs/9.jpg"></a>                    
+                </div>
+            </li>
+                        
+        </ul>
+</div>
+</div>            
+            </div>
+        </div>
+                
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js?v=2.4a1"></script><script type="text/javascript" src="http://peepproject.com/media/js/peep.js?v=2.4a1"></script><script type="text/javascript">
+                            
+                var user_id = '15033';                
+                            
+                var entry_id = 16939;                
+                            
+                var gallery_add = true;                
+                        
+        </script>
+</body>
+</html>

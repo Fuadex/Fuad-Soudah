@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery-3.2.1.min.js"></script>
+	<style>
+#Numberlist.dropdown-menu{
+min-width: 200px;
+}
+
+body{
+background-color:#666666;
+}
+
+.container-fluid{
+    padding:none;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
+.navbar-bottom{
+  margin-bottom:0;
+}
+
+#hidden_content{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease;
+}
+
+a:link {
+
+    color:black;
+}
+
+a:visited {
+
+    color:black;
+}
+
+a:hover {
+
+    color:black;
+}
+
+a:active {
+
+    color:black;
+}
+
+iframe {
+ 
+    height: 45vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
+</style>
+
+
+</head>
+<body>
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+    <div class="row">
+
+<center><h2>Virgin Velocity</h2></center><br>
+
+      <center>
+      <iframe src="http://fuadex.cba.pl" width="80%" frameborder="0" allowfullscreen></iframe>
+    </center>
+<div class="col-sm-2 col-sm-offset-1">
+  Project:<br>
+  Webpage
+</div>
+<div class="col-sm-2">
+  Unit:<br>
+  Web Design and Technologies
+  </div>
+<div class="col-sm-5">
+  Tools:<br>
+  HTML, CSS, Bootstrap, JQuery
+</div>
+  <div class="col-sm-2">
+    Release:<br>
+    November 2015
+</div>
+<br><br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+
+Additional Info may be found here
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+<nav class="navbar navbar-inverse navbar-bottom" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Future Projects:</a>
+  </div>
+    <ul class="nav navbar-nav">
+  <li><a href="#">Tertile's Uproar</a></li>
+  <li><a href="#">Sehnsucht</a></li>
+  <li><a href="#">Introspection</a></li>
+  <li><a href="#">Dorfbladt</a></li>
+  <li><a href="#">Grassausschus</a></li>
+  <li><a href="#">Untitled Video</a></li>
+    </ul>
+
+        <ul class="nav navbar-nav navbar-right list-inline">
+      <li><a href="Contact.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>
+    </ul>
+
+</nav>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
