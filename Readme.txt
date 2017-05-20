@@ -7,43 +7,62 @@ Version 0.1
 
 Version 0.1.5
 - Included navbar
-
-Version 0.2
 - Included Music Videos
 - Overview of the Education subpage
+- Some other subpages drafts
 
-Version 0.3
+Version 0.2
 - Refubrished and fixed the navbar
 - Introduced a common style
-
-Version 0.4
 - Included a range of new subpages
 
-Version 0.5
+Version 0.3
 - Added the footer (new navbar)
 - Began linking the subpages
 
-Version 0.6
+Version 0.4
 - Included Additional Information with JQuery animations
 - Added the majority of subpages
 
-Version 0.7
+Version 0.5 (Milestone, Alpha)
 - Included compact javascript injections, humongously speeding up the creation process
 - All the subpages are connected now
 
-Version 0.8
+Version 0.6
 - Page Style Overhaul (images in the background)
 
-Version 0.8.1
+Version 0.6.1
 - Double footer (Martingstag) FIXED
 - Covered footer (Politics) FIXED
 - Event Locator (footer) FIXED
 - Covering animation problem FIXED (div top)
 - BoomBox navbar FIXED
 
-Version 0.8.2
+Version 0.7
 - Introduced Gradients
 - Introduced Panels (+ variation)
+
+Version 0.8 (Milestone Beta)
+- Added background shadow for font
+- Added Roboto font as a regular content styling
+- Unified CSS styling for each page
+- Temporarily Fixed strange downslide to the bottom of the page (Games and Play)
+- Added borders (projects' info)
+- Further refined the styling (such as: more compact info section)
+
+Version 0.8.1
+- Moved away from Panels
+- Dance at Campus double navbar fixed
+- Physical double navbar fixed
+- Another pages' double navbar fixed
+- Fought off some bugs
+
+Version 0.8.2
+- Introduced borders
+
+Version 0.9
+
+Version 1.0
 
 BUGS NEEDED FIXING
 - Remaining space (mobile version)

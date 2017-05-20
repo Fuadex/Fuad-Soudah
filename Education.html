@@ -4,97 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="jquery-3.2.1.min.js"></script>
-	<style>
-#Numberlist.dropdown-menu{
-min-width: 200px;
-}
 
-a:link {
-    text-decoration: none;
-    color:black;
-}
+<link rel="stylesheet" href="fuad css.css" type="text/css">
 
-a:visited {
-    text-decoration: none;
-    color:black;
-}
-
-a:hover {
-    text-decoration: none;
-    color:black;
-}
-
-a:active {
-    text-decoration: none;
-    color:black;
-}
-
-body{
-background-color:#666666;
-    background-image: url(DSC_0162b.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.container-fluid{
-    padding:none;
-}
-.navbar-nav.navbar-right:last-child {
-    margin-right: 0;
-}
-
-.alignleft {
-  float: left;
-}
-.alignright {
-  float: right;
-}
-
-.navbar-bottom{
-  margin-bottom:0;
-}
-
-#hidden_content{
-    height: 0;
-    overflow: hidden;
-    transition: height 0.8s ease;
-}
-
-#hidden_content2{
-    height: 0;
-    overflow: hidden;
-    transition: height 0.8s ease;
-}
-
-.panel{
-  background-color: rgba(255,255,255,0.65);
-}
-
-.panel-yalo{
-    padding-top:4px;
-  padding-bottom:8px;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
-  /* W3C */
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
-  /* IE6-9 */
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 <body>
 <script src="navigation.js"></script>
+<style>
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+</style>
 
 <!-- BODY BODY BODY-->
 
@@ -123,7 +47,7 @@ background-color:#666666;
     <a href="Web Design & Technologies.html">Web Design and Technologies</a><div class="alignright" style="clear: both;">56</div><br><br>
 
     <a href="#test"> <!--Comunicates with id 'test'-->
-  <div id="button">Games and Play  <div class="alignright" style="clear: both;">81</div></div> <!-- A whole button block will definitely draw attention-->
+  <div id="button">Games and Play  <div class="alignright" style="clear: both;">81</div> <!-- A whole button block will definitely draw attention-->
 </a>
 
 <div id="hidden_content">
@@ -131,7 +55,7 @@ background-color:#666666;
   <ol><a href="Narrative Architecture.html">- Narrative Architecture</a><br>
   <a href="Game Concept.html">- Game Concept</a><br>
   <a href="Games and Play.html">- Game Analysis</a><br></ol>
-</div>
+</div></div>
     <a href="UX.html">User Experience Design Studio </a><div class="alignright" style="clear: both;">82</div><br>
     Database Systems 1 <div class="alignright" style="clear: both;">81</div><br><br>
 
@@ -141,7 +65,7 @@ background-color:#666666;
 </a>
 
 <div id="hidden_content2">
-  <div id="test"></div>
+  <div id="test2"></div>
   <ol><a href="HCI2 Web.html">- LMU Website Redevelopment</a><br>
   <a href="HCI2 Mob.html">- Mobile HCI</a><br></ol>
 </div></div>
@@ -212,6 +136,10 @@ document.getElementById('button').onclick = function() {
     else {
         target.style.height = 0;
         this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-3000);
+        TopscrollTo();
+    }, 0);
     }
 }
 </script>
