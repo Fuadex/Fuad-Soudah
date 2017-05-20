@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+  <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698b.jpg';
+    ImageArray[1] = 'DSC_3698c.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+<div class="row panel-yalo">
+  <center><h1>Changes!</h1></center>
+</div><br>
+
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+<br>
+BUGS NEEDED FIXING<br>
+- Onedrive videos not embedding problem<br><br>
+
+Version 0.9<br>
+- Created the Main Page<br>
+- Included a randomizing script (2 images)<br><br>
+
+Version 0.8.3<br>
+- Fixed padding overflow!<br>
+- Fixed Blog not showing properly?<br><br>
+
+Version 0.8.2<br>
+- Introduced borders<br><br>
+
+Version 0.8.1<br>
+- Moved away from Panels<br>
+- Dance at Campus double navbar fixed<br>
+- Physical double navbar fixed<br>
+- Another pages' double navbar fixed<br>
+- Fought off some bugs<br><br>
+
+Version 0.8 (Milestone Beta)<br>
+- Added background shadow for font<br>
+- Added Roboto font as a regular content styling<br>
+- Unified CSS styling for each page<br>
+- Temporarily Fixed strange downslide to the bottom of the page (Games and Play)<br>
+- Added borders (projects' info)<br>
+- Further refined the styling (such as: more compact info section)<br>
+
+Version 0.7<br>
+- Introduced Gradients<br>
+- Introduced Panels (+ variation)<br><br>
+
+Version 0.6.1<br>
+- Double footer (Martingstag) FIXED<br>
+- Covered footer (Politics) FIXED<br>
+- Event Locator (footer) FIXED<br>
+- Covering animation problem FIXED (div top)<br>
+- BoomBox navbar FIXED<br><br>
+
+Version 0.6 (Pre-Beta)<br>
+- Page Style Overhaul (images in the background)<br><br>
+
+Version 0.5 (Milestone, Alpha)<br>
+- Included compact javascript injections, humongously speeding up the creation process<br>
+- All the subpages are connected now<br><br>
+
+Version 0.4<br>
+- Included Additional Information with JQuery animations<br>
+- Added the majority of subpages<br><br>
+
+Version 0.3<br>
+- Added the footer (new navbar)<br>
+- Began linking the subpages<br><br>
+
+Version 0.2 (Pre-Alpha)<br>
+- Refubrished and fixed the navbar<br>
+- Introduced a common style<br>
+- Included a range of new subpages<br><br>
+
+Version 0.1.5<br>
+- Included navbar<br>
+- Included Music Videos<br>
+- Overview of the Education subpage<br>
+- Some other subpages drafts<br><br>
+
+Version 0.1<br>
+- Created html file<br>
+- Tried constructing the webpage solely on one file (failed)<br>
+- Created an orientational structure<br><br>
+
+</div>
+</div>
+
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

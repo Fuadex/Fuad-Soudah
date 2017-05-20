@@ -11,7 +11,7 @@ Version 0.1.5
 - Overview of the Education subpage
 - Some other subpages drafts
 
-Version 0.2
+Version 0.2 (Pre-Alpha)
 - Refubrished and fixed the navbar
 - Introduced a common style
 - Included a range of new subpages
@@ -28,7 +28,7 @@ Version 0.5 (Milestone, Alpha)
 - Included compact javascript injections, humongously speeding up the creation process
 - All the subpages are connected now
 
-Version 0.6
+Version 0.6 (Pre-Beta)
 - Page Style Overhaul (images in the background)
 
 Version 0.6.1
@@ -60,10 +60,19 @@ Version 0.8.1
 Version 0.8.2
 - Introduced borders
 
+Version 0.8.3
+- Fixed padding overflow!
+- Fixed Blog not showing properly?
+
 Version 0.9
+
+- Created the Main Page
+- Included a randomizing script (2 images)
+- Included Font Awesome
+- Included Bootstrap Social
+- Included Contact Page
 
 Version 1.0
 
 BUGS NEEDED FIXING
-- Remaining space (mobile version)
 - Onedrive videos not embedding problem

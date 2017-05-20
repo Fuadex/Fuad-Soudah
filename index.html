@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -9,9 +10,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-</head>
-<body>
-<script src="navigation.js"></script>
 <style>
 h2{
   background:none;
@@ -20,79 +18,44 @@ h2{
 }
 </style>
 
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698b.jpg';
+    ImageArray[1] = 'DSC_3698c.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+
 <!-- BODY BODY BODY-->
 
 <div class="container-fluid">
 <div class="row panel-yalo">
-  <center><h1>Education</h1></center>
+  <center><h1>Welcome!</h1></center>
 </div><br>
+
 <div class="row">
-  <div class="col-md-10 col-md-offset-2">
-
+  <div class="col-md-4 col-md-offset-2">
+    <img src="linkedin.jpg" width="100%">
   </div>
-</div>
-<div class="row">
-  <div class="col-md-3 col-md-offset-2 panel">
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Greetings!</h4></center><br>
 
-    <center><h4>University of Sydney</h4></center><br>
+    My name is Fuad Soudah. I am a 21 years old aspiring designer, currently studying
+    at University of Sydney and on exchange at Ludwig-Maximilians Universität in Munich.<br><br>
 
-    <a href="Design Thinking.html">Design Thinking </a><div class="alignright" style="clear: both;">57</div><br>
-    <a href="Processing assign.html">Design Programming</a> <div class="alignright" style="clear: both;">65</div><br>
-    <a href="Vivid.html">Digital Media Production</a> <div class="alignright" style="clear: both;">81</div><br>
-    <a href="Visual Communication.html">Visual Communication</a> <div class="alignright" style="clear: both;">67</div><br><br>
-
-    <a href="Digital Arts.html">Digital Arts </a><div class="alignright" style="clear: both;">70</div><br>
-    <a href="3D Modelling.html">3D Modelling and Fabrication </a><div class="alignright" style="clear: both;">77</div><br>
-    <a href="Physical.html">Sound Design and Physical Computing </a><div class="alignright" style="clear: both;">70</div><br>
-    <a href="Web Design & Technologies.html">Web Design and Technologies</a><div class="alignright" style="clear: both;">56</div><br><br>
-
-    <a href="#test"> <!--Comunicates with id 'test'-->
-  <div id="button">Games and Play  <div class="alignright" style="clear: both;">81</div> <!-- A whole button block will definitely draw attention-->
-</a>
-
-<div id="hidden_content">
-  <div id="test"></div>
-  <ol><a href="Narrative Architecture.html">- Narrative Architecture</a><br>
-  <a href="Game Concept.html">- Game Concept</a><br>
-  <a href="Games and Play.html">- Game Analysis</a><br></ol>
-</div></div>
-    <a href="UX.html">User Experience Design Studio </a><div class="alignright" style="clear: both;">82</div><br>
-    Database Systems 1 <div class="alignright" style="clear: both;">81</div><br><br>
-
-    <center><h4>University of Munich</h4></center><br>
-    <a href="#test"> <!--Comunicates with id 'test'-->
-  <div id="button2">    Human Computer Interaction 2 <div class="alignright" style="clear: both;">2.7</div><br> <!-- A whole button block will definitely draw attention-->
-</a>
-
-<div id="hidden_content2">
-  <div id="test2"></div>
-  <ol><a href="HCI2 Web.html">- LMU Website Redevelopment</a><br>
-  <a href="HCI2 Mob.html">- Mobile HCI</a><br></ol>
-</div></div>
-    Information Visualization <div class="alignright" style="clear: both;">3.6</div><br>
-    Interface Design <div class="alignright" style="clear: both;">2.3</div><br>
-    <a href="EventLocator.html">Information Visualization with Processing </a><div class="alignright" style="clear: both;">1.7</div><br>
-    <a href="BoomBox.html">Sketching with Hardware </a><div class="alignright" style="clear: both;">1.0</div><br><br>
-  </div>
-  <div class="col-md-3 col-md-offset-2 panel">
-    <center><h4>Language Certificates</h4></center><br>
-
-    Certificate in Advanced English<div class="alignright" style="clear: both;">72</div><br>
-    Goethe Certificate B1 (Reading)<div class="alignright" style="clear: both;">80</div><br>
-    Goethe Certificate B1 (Writing)<div class="alignright" style="clear: both;">76</div><br>
-    <a href="Martinstag.html">LMU Intensive Language Course (B1.2)</a><div class="alignright" style="clear: both;">2.0</div><br><br>
-
-    <center><h4>High School Results</h4></center><br>
-
-    Polish Language (Oral)<div class="alignright" style="clear: both;">60</div><br>
-    Polish Language (Written)<div class="alignright" style="clear: both;">59</div><br>
-    English Language (Oral)<div class="alignright" style="clear: both;">77</div><br>
-    English Language (Written)<div class="alignright" style="clear: both;">98</div><br>
-    English Language Advanced<div class="alignright" style="clear: both;">95</div><br>
-    Mathematics<div class="alignright" style="clear: both;">64</div><br>
-    Mathematics Advanced<div class="alignright" style="clear: both;">40</div><br><br>
-
-    ATAR Equivalent<div class="alignright" style="clear: both;">82</div><br><br>
+    My areas of expertise encompass a wide range of design topics, to name a few: Photography, Graphic, Video, User Experience and Web Developement. Furthermore, I have a fair knowledge of Database Systems, a few programming languages, Physical Computing, Environmental Development. One hobby is persistently pursued throughout the years was running a detailed, extensive blog.<br><br>
 
   </div>
 </div>
@@ -100,25 +63,66 @@ h2{
 <br>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3 panel">
-  <center><h2>Planned</h2></center><br>
-
-<center><h4>University of Munich</h4></center>
-
-Media Technology<div class="alignright" style="clear: both;">TBA</div><br>
-Multimedia Programming<div class="alignright" style="clear: both;">TBA</div><br>
-Computer Graphics 1<div class="alignright" style="clear: both;">TBA</div><br>
-Human-Computer Interaction 1<div class="alignright" style="clear: both;">TBA</div><br>
-Interaction Design<div class="alignright" style="clear: both;">TBA</div><br>
-Advanced Topics of HCI<div class="alignright" style="clear: both;">TBA</div><br>
-German Level B2.2<div class="alignright" style="clear: both;">TBA</div><br><br>
-
-<center><h4>University of Sydney</h4></center>
-
-Interactive Design Studio<div class="alignright" style="clear: both;">TBA</div><br>
-Innovation Design<div class="alignright" style="clear: both;">TBA</div><br><br>
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>History</h4></center><br>
+    I was born in Sydney, Australia. After having lived there for 6 years I left for Warsaw, Poland. After having spent 12 years I moved back to Sydney and after having lived there for 2 years, I left for a mobility period in Munich, Germany. My life might seem complicated as it is, but that's just the tip of an iceberg. To continue, my Mother is of Polish and my father of Palestinian origins. One, specialized in fine arts, another in engineering topics. On my own, I decided to pursue somewhat a middle ground and throughout the years, with fair success, I managed to acquire a broad selection of knowledges which on top was complemented with writing skills and a digital touch left upon.<br><br>
 </div>
 </div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <div id="randImage"></div>
+  </div>
+    <div class="col-md-4">
+    <img src="xdf.jpg" width="100%">
+  </div>
+</div><br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+
+    <center><h4>Website</h4></center><br>
+
+    Reaching this point was not that easy.<br><br>
+
+    I eventually managed to scrap off most of the materials that I ever built, raised, created and cultivated. With the use of my own memory, I was able to put together the crucial parts and write a compelling, yet close to truthful - a backstory. I believe that each valuable item ever created has, or at the very least deserves a matching story, that will come close to what it actually delivers.<br><br>
+
+    Just as much as myself. While the quality of works is of utmost importance, the process follows or even matches, but it is the circumstances in which the projects were raised that breathes a new life. Showcases the inspirations, longings, design choices, thinking methods and processes, motivations. I did my best to foreclose all the aforementioned and more in utmost the angles.<br><br>
+</div>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <img src="oa.jpg" width="100%">
+  </div>
+    <div class="col-md-4">
+    <img src="DSC_8620.jpg" width="100%">
+  </div>
+</div><br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+
+    <center><h4>Navigation</h4></center><br>
+
+    The following website contains a number of elements.<br><br>
+
+    First of all, a common style was introduced on each subpage. My suggestion would be to take a peek at the Education subsection first, which upon investigating (clicking the according unit of study), will take you to according subpages with the relevant projects that I have been working on in the past. Most of the materials will be interactive, that is, dependent on external materials such as: youtube and onedrive videos (the second seldom works), onedrive presentations and images, flickr images etc. I did my best to reference everyone that was involved in the group projects that I was involved in. If by any chance I happened to miss anyone, please <a href="mailto: fuadex@gmail.com">notify me as soon as possible.</a><br><br>
+
+    Each subpage will contain a backstory, the majority of which will be kept in professional manner. However, extra material will be included, that may shed some light onto the more creative ways that were applied into the creation process of a variety of projects.<br><br>
+
+    Please take a look at my future (including current) projects on the navigation bar included below. A subpage with a list of changes ought to be attached as well. In case if you were trying to reach me, please find the Contact subpage in the top right corner. The cultural subpage will give you a sneakpeak into the cultural background that I was raised in.<br><br>
+
+    I do hope that your stay on my website will be a pleasant one.<br><br>
+</div>
+</div><br>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <img src="DSC_6000.jpg" width="100%">
+  </div>
+</div>
+
 </div>
 
 <br>
@@ -137,7 +141,7 @@ document.getElementById('button').onclick = function() {
         target.style.height = 0;
         this.firstChild.nodeValue = "Games and Play";
         setTimeout(function() {
-       window.scrollTo(0,window.scrollY-3000);
+       window.scrollTo(0,window.scrollY-300);
         TopscrollTo();
     }, 0);
     }
