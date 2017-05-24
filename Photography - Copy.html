@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fuad css.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="raphael-min.js"></script>
+        <script src="chroma.min.js"></script>
+        <script src="jquery.qtip.min.js"></script>
+        <script src="kartograph.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery.qtip.min.css" />
+
+
+
+
+
+<script type="text/javascript">
+    $(function() {
+        var map,
+            colorscale,
+            countryPopularity = {};
+        $.fn.qtip.defaults.style.classes = 'ui-tooltip-bootstrap';
+        $.fn.qtip.defaults.style.def = false;
+        /*
+        * Now lets get the data
+        */
+        $.getJSON('/resources/kartograph/popularity.json', function(countryPopularity) {
+            /*
+            * once we have data, get the svg
+            */
+            $.get('/resources/kartograph/world.svg', function(svg) {
+                var div = $('#map');
+                // declare the dimensions of the map
+                var map = kartograph.map(div, 640, 420),
+                /*
+                * choose the color scale for the choropleth,
+                * consult chroma.js api docs for more details
+                */
+                color = chroma.scale('Greens').
+                        domain(countryPopularity,5,'quantiles','popularity');
+                map.setMap(svg);
+                /* 
+                * now add the layer "world" which contains the paths for the country 
+                * boundaries, the map will appear empty till this is added
+                */
+                map.addLayer('world', {
+                    styles: {
+                        'stroke-width': 0.7,
+                        /* 
+                        * pass the color scale function to the fill and stroke attribute
+                        */
+                        fill: function(d) { 
+                            return color(countryPopularity[d.iso3]?
+                                         countryPopularity[d.iso3].popularity:
+                                         0); 
+                            },
+                        stroke: function(d) {
+                            return color(countryPopularity[d.iso3]?
+                                         countryPopularity[d.iso3].popularity
+                                         :0).darker();
+                          }
+                    },
+                    /* 
+                    * set tooltip content
+                    */
+                    tooltips: function(d) {
+                        return [d.iso3, 
+                                countryPopularity[d.iso3]?
+                                    countryPopularity[d.iso3].popularity:
+                                    0
+                                ];
+                    }
+                });
+            });
+        });
+
+    });
+</script>
+
+</head>
+<body>
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+<div class="row">
+
+  <center><h1>Photography</h1></center>
+
+
+<div id="map">&nbsp;</div>
+
+
+</div>
+</div>
+
+<script src="footer.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

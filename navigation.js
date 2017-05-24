@@ -17,26 +17,15 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography\
         <ul class="dropdown-menu">\
-          <li><a href="#">Europe 2017</a></li>\
-          <li><a href="#">Australia 2015-2016</a></li>\
-          <li><a href="#">Europe 2015-2016</a></li>\
-          <li><a href="#">Poland 2014</a></li>\
-          <li><a href="#">Before</a></li>\
+          <li><a href="Photos.html">Overview</a></li>\
       </ul>\
             \
         </li>\
       <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Music Videos\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Videos\
         <ul class="dropdown-menu">\
-          <li><a href="2017b.html">Fargo on the Radio</a></li>\
-          <li><a href="2017a.html">Cowboy Butterfly</a></li>\
-          <li><a href="2016g.html">UnderExposed</a></li>\
-          <li><a href="2016f.html">Bad Fist</a></li>\
-          <li><a href="2016e.html">Misunderstood Brothers</a></li>\
-          <li><a href="2016d.html">Nothingworld</a></li>\
-          <li><a href="2016c.html">In Viking Licht</a></li>\
-          <li><a href="2016b.html">Mr. Yourself</a></li>\
-          <li><a href="2016a.html">Poltergoon</a></li>\
+          <li><a href="Vivid.html">Projection Mapping (Vivid 2015)</a></li>\
+          <li><a href="MusicVideos.html">Music Videos</a></li>\
       </ul>\
             \
         </li>\
@@ -98,7 +87,6 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Special\
         <ul class="dropdown-menu">\
-          <li><a href="Vivid.html">Vivid 2015</a></li>\
           <li><a href="Projekt Piaseczno.html">Project Piaseczno</a></li>\
           <li><a href="Radio.html">Radio</a></li>\
           <li><a href="#">Postgresql Database</a></li>\

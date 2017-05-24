@@ -17,7 +17,7 @@ document.write('\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
       <li><a href="Contact.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
-      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9</a></li>\
+      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9.7</a></li>\
     </ul>\
 \
 </nav>\

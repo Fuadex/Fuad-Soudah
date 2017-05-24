@@ -72,7 +72,44 @@ Version 0.9
 - Included Bootstrap Social
 - Included Contact Page
 
+Version 0.9.1
+- Fixed Contact Bootstrap Social
+
+Version 0.9.2
+- HOTFIX, BAD INDEX.HTML
+
+Version 0.9.5
+- Trying to introduce an interactive map using kartograph (due)
+- Needed: Python (Anaconda), raphael-min (due)
+- Changes page fully implemented
+- Installed Anaconda
+- Installed Visual C++ Compiler Package for python
+- Installed GDAL
+- Installed Shapely
+- Installed setuptools
+- Installed kartograph tool
+- Installed Visual C++ 14 Build tools
+- Installed pyproj
+- Installed tinycss
+- Naah, doesn't work.
+
+Version 0.9.6
+- Refubrished Photography page
+- Finished Martinstag page
+- Finished Political page
+- Finished 3D Modelling page
+
+Version 0.9.7
+- Used css transitions instead of jquery (Photos, Music Videos)
+- Fixed positioning of the appearing text
+- Added Transitions for panels
+
 Version 1.0
+- Cleaned navbar
+- Introduced the remaining subpages
+- Included a backstory for most of the pages
+- New Jquery script for photography page
 
 BUGS NEEDED FIXING
 - Onedrive videos not embedding problem
+- The html overflow on mobile devices still persistent
