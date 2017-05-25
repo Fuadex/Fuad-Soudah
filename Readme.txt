@@ -103,6 +103,12 @@ Version 0.9.7
 - Used css transitions instead of jquery (Photos, Music Videos)
 - Fixed positioning of the appearing text
 - Added Transitions for panels
+- Introduced a facebook page overview on Projekt Piaseczno
+
+Version 0.9.8
+- Fixed Videos not working properly
+- Introduced description to: Game Design, Game Concept, Projekt Piaseczno
+- Fixed a minor bug on Boombox page
 
 Version 1.0
 - Cleaned navbar

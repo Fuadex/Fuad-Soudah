@@ -62,9 +62,22 @@ a.darken:hover .text{color:black;
 
 </style>
 
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'https://c1.staticflickr.com/5/4196/34070156813_71d2accbf8_n.jpg';
+    ImageArray[1] = 'https://c1.staticflickr.com/5/4204/34717635622_67741a7180_n.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+</script>
 
 </head>
-<body>
+<body onload="getRandomImage()">
 <script src="navigation.js"></script>
 
 <!-- BODY BODY BODY-->
@@ -72,6 +85,54 @@ a.darken:hover .text{color:black;
 <div class="container-fluid">
 
 <center><h2>Photography</h2></center><br>
+
+<center>
+
+<div class="row">
+<div class="col-lg-6" id="3">
+  <center>
+<a href="#" class="darken"><div class="text">Germany</div><img class="img-rounded" src="olympiaturm.jpg" width="640" height="427"></a>
+</div>
+
+<div class="col-lg-6" id="4">
+<a href="#" class="darken"><div class="text">Australia</div><img class="img-rounded" src="DSC_0195.jpg" width="640" height="427"></a>
+</center>
+</div>
+</div><br>
+
+<br>
+
+<div class="row">
+
+<center>
+<div class="col-lg-3 col-lg-offset-1">
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34841806766/in/album-72157681229921033/" title="DSC_2811"><img src="https://c1.staticflickr.com/5/4202/34841806766_8b5812eb10_n.jpg" width="320" height="194" alt="DSC_2811"></a>
+</div>
+<div class="col-lg-4">
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34841121146/in/dateposted-public/" title="DSC_0581-2"><img src="https://c1.staticflickr.com/5/4252/34841121146_b922a0a3bc_n.jpg" width="320" height="213" alt="DSC_0581-2"></a>
+  </div>
+<div class="col-lg-3">
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34494800120/in/album-72157681229921033/" title="DSC_3008"><img src="https://c1.staticflickr.com/5/4203/34494800120_e3773e27c9_n.jpg" width="320" height="213" alt="DSC_3008"></a>
+</div></div>
+
+<br>
+
+<div class="row">
+
+<center>
+<div class="col-lg-3 col-lg-offset-1">
+  <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/34300486440/in/dateposted-public/" title="DSC_0422"><img src="https://c1.staticflickr.com/5/4173/34300486440_0632730ff0_n.jpg" width="320" height="213" alt="DSC_0422"></a>
+</div>
+<div class="col-lg-4">
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34881519385/in/album-72157681229921033/" title="DSC_1886"><img src="https://c1.staticflickr.com/5/4226/34881519385_9393a86d83_n.jpg" width="320" height="213" alt="DSC_1886"></a>
+  </div>
+<div class="col-lg-3">
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34841517306/in/album-72157681229956373/" title="DSC_0162"><img src="https://c1.staticflickr.com/5/4226/34841517306_d5b7eecb05_n.jpg" width="320" height="213" alt="DSC_0162"></a>
+</div>
+</center>
+</div><br><br>
+
+
 
 <center>
   <div class="row">
@@ -85,21 +146,22 @@ a.darken:hover .text{color:black;
   <div class="text">Poland</div><img class="img-rounded" src="https://c1.staticflickr.com/1/349/31564327531_3483a82da0_z.jpg" width="640" height="427" alt="DSC_0307"></a>
   </div>
 </div>
+</center><br>
 
-<br>
 
-<div class="row">
 
 <center>
+  <div class="row">
 <div class="col-lg-3 col-lg-offset-1">
-<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/30838311664/in/dateposted-public/" title="oa"><img src="https://c1.staticflickr.com/1/566/30838311664_1e3d74770e_n.jpg" width="320" height="213" alt="oa"></a>
+  <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/31533720232/in/dateposted-public/" title="DSC_0533"><img src="https://c1.staticflickr.com/1/64/31533720232_0831a78f8f_n.jpg" width="320" height="213" alt="DSC_0533"></a>
 </div>
 <div class="col-lg-4">
-<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/31533720232/in/dateposted-public/" title="DSC_0533"><img src="https://c1.staticflickr.com/1/64/31533720232_0831a78f8f_n.jpg" width="320" height="213" alt="DSC_0533"></a>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34494653210/in/album-72157681230105693/" title="DSC_3786"><img src="https://c1.staticflickr.com/5/4271/34494653210_dcc69c3baa_n.jpg" width="320" height="213" alt="DSC_3786"></a>
   </div>
 <div class="col-lg-3">
 <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/30869734823/in/dateposted-public/" title="DSC_0284"><img src="https://c1.staticflickr.com/6/5585/30869734823_b255d15a78_n.jpg" width="320" height="213" alt="DSC_0284"></a>
 </div></div>
+</center>
 
 <br>
 
@@ -107,55 +169,13 @@ a.darken:hover .text{color:black;
 
 <center>
 <div class="col-lg-3 col-lg-offset-1">
-  <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/34300486440/in/dateposted-public/" title="DSC_0422"><img src="https://c1.staticflickr.com/5/4173/34300486440_0632730ff0_n.jpg" width="320" height="213" alt="DSC_0422"></a>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34038421104/in/album-72157684248466105/" title="DSC_0098"><img src="https://c1.staticflickr.com/5/4274/34038421104_658ce0f10c_n.jpg" width="320" height="213" alt="DSC_0098"></a>
 </div>
 <div class="col-lg-4">
-  <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/34554697631/in/dateposted-public/" title="DSC_0638"><img src="https://c1.staticflickr.com/5/4189/34554697631_97670690ed_n.jpg" width="320" height="213" alt="DSC_0638"></a>
-  </div>
-<div class="col-lg-3">
 <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/30838396404/in/dateposted-public/" title="DSC_0506"><img class="img-rounded" src="https://c1.staticflickr.com/1/701/30838396404_cca473a6e9_n.jpg" width="320" height="213" alt="DSC_0506"></a>
-</div>
-</center>
-</div><br><br>
-
-<div class="row">
-<div class="col-lg-6" id="3">
-  <center>
-<a href="#" class="darken"><div class="text">Munich</div><img class="img-rounded" src="olympiaturm.jpg" width="640" height="427"></a>
-</div>
-
-<div class="col-lg-6" id="4">
-<a href="#" class="darken"><div class="text">Australia</div><img class="img-rounded" src="DSC_0195.jpg" width="640" height="427"></a>
-</center>
-</div>
-</div><br>
-
-<div class="row">
-
-<center>
-<div class="col-lg-3 col-lg-offset-1">
-<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/30838311664/in/dateposted-public/" title="oa"><img src="https://c1.staticflickr.com/1/566/30838311664_1e3d74770e_n.jpg" width="320" height="213" alt="oa"></a>
-</div>
-<div class="col-lg-4">
-<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/31533720232/in/dateposted-public/" title="DSC_0533"><img src="https://c1.staticflickr.com/1/64/31533720232_0831a78f8f_n.jpg" width="320" height="213" alt="DSC_0533"></a>
   </div>
 <div class="col-lg-3">
-<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/30869734823/in/dateposted-public/" title="DSC_0284"><img src="https://c1.staticflickr.com/6/5585/30869734823_b255d15a78_n.jpg" width="320" height="213" alt="DSC_0284"></a>
-</div></div>
-
-<br>
-
-<div class="row">
-
-<center>
-<div class="col-lg-3 col-lg-offset-1">
-  <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/34300486440/in/dateposted-public/" title="DSC_0422"><img src="https://c1.staticflickr.com/5/4173/34300486440_0632730ff0_n.jpg" width="320" height="213" alt="DSC_0422"></a>
-</div>
-<div class="col-lg-4">
-  <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/34554697631/in/dateposted-public/" title="DSC_0638"><img src="https://c1.staticflickr.com/5/4189/34554697631_97670690ed_n.jpg" width="320" height="213" alt="DSC_0638"></a>
-  </div>
-<div class="col-lg-3">
-<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/70140987@N03/30838396404/in/dateposted-public/" title="DSC_0506"><img class="img-rounded" src="https://c1.staticflickr.com/1/701/30838396404_cca473a6e9_n.jpg" width="320" height="213" alt="DSC_0506"></a>
+<div id="randImage" width="320" height="213"></div>
 </div>
 <br><br>
 </center>
@@ -164,11 +184,11 @@ a.darken:hover .text{color:black;
 <div class="row">
 <center>
 <div class="col-lg-6" id="5">
-<a href="#" class="darken"><div class="text">Middle East</div><img class="img-rounded" src="olympiaturm.jpg" width="640" height="427"></a>
+<a data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/34494310650/in/dateposted-public/" title="DSC_0401"><img src="https://c1.staticflickr.com/5/4275/34494310650_e203109a4d_z.jpg" width="640" height="427" alt="DSC_0401"><div class="text">Middle East</div></a>
 </div>
 
 <div class="col-lg-6" id="6">
-<a href="#" class="darken"><div class="text">Asia</div><img class="img-rounded" src="DSC_0195.jpg" width="640" height="427"></a>
+<a data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/34494309110/in/dateposted-public/" title="Miasto kontrastow"><img src="https://c1.staticflickr.com/5/4272/34494309110_beeae22f59_z.jpg" width="640" height="426" alt="Miasto kontrastow"><div class="text">Asia</div></a>
  </center>
   </div>
 </div>
