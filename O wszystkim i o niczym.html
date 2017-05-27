@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery-3.2.1.min.js"></script><link rel="stylesheet" href="fuad css.css" type="text/css">
+
+<style>
+
+body{
+  background-image: url(oa.jpg);
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2em;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'https://c1.staticflickr.com/5/4196/34070156813_71d2accbf8_n.jpg';
+    ImageArray[1] = 'https://c1.staticflickr.com/5/4204/34717635622_67741a7180_n.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<center><h2>O Wszystkim i O Niczym</h2></center><br>
+
+<div class="row">
+
+<center>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2014/07/magia-wyborow.html"><div class="text">Magia Wyborów</div><img src="http://img.gawkerassets.com/img/17t161qhw6xa3jpg/original.jpg" width="100%"></a>
+</div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2014/06/recenzja-gta-v-last-of-us.html"><div class="text">Recenzje GTA V & The Last of Us</div><img src="http://static.gamespot.com/uploads/original/1534/15343359/2453616-2762456622-the-l.jpg" width="100%"></a>
+  </div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken" href="http://fuadex.blogspot.de/2013/02/antichamber.html" ><div class="text">Antichamber</div><img src="http://www.miastogier.pl/baza/Encyklopedia/gry/Antichamber_PC/Recenzja/rec_001.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<div class="row">
+
+<center>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2012/12/dwa-bardzo-pozytywne-zaskoczenia-2012.html"><div class="text">Dwa Pozytywne Zaskoczenia 2012</div><img src="https://www.bennylingbling.com/wp-content/uploads/2012/07/SpecOpsTheLine-2012-07-25-15-52-00-92-1.jpg" width="100%"></a>
+</div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2011/11/skyrim-vol-1.html"><div class="text">Skyrim vol. 1</div><img src="http://www.gram.pl/upl/artykul/120111110074008.jpg" width="100%"></a>
+  </div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken" href="http://fuadex.blogspot.de/2011/05/post-wstepny.html" ><div class="text">Post Wstępny</div><img src="http://gearnuke.com/wp-content/uploads/2014/03/the-last-of-us-1080p.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+
+<div class="row">
+  <div class="col-sm-8 col-md-offset-2">
+    <br>Once you move outside of where you used to live, you start to wonder: what did I miss, throughout all these years that I left right, not that long ago?<br><br>
+
+    Europe is a wonderful continent. Rich with culture, with an abundance of nations scattered across the lands. Unfortunately, once I came back I didn't really find anything that I presumed I'd be looking for. So once my stay in Munich started getting heavy to the extent that it was quite unbearable, with my exams incoming inexorably I decided to make a final stand.<br><br>
+
+    In physiology, there is the classic terminology that varietes between a fight and flight response. I combined both, once again in my life and undertook a combination of trips in order to find something, that germans sum up to one word: Sehnsucht, which in my case could translate into longing for something that I relentlessly awaited to discover. Something that could predestine my next steps in life, after the mobility period concludes.<br><br>
+
+    Despite having discovered a great range of european cities, I did not find what I was looking for. But paradoxically, despite me neglecting heavily and hampering my studies, I managed to pass all of my exams. I wonder, if there is one more way to unlock myself?<br><br>
+
+    Anyway, the series is not yet finished, awaiting for a significant amount of free time, that might come after I come back to Sydney. I plan on publishing, probably more than around 12-15 extensive articles, that will describe the world through my eyes with a keen focus placed on the atmosphere of all the places, read through the cultural lenses and my personal experience.<br><br>
+</div>
+</div></div>
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

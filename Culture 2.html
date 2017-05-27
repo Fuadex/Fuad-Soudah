@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="jquery-3.2.1.min.js"></script><link rel="stylesheet" href="fuad css.css" type="text/css">
+
+<style>
+
+body{
+  background-image: url(oa.jpg);
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.75em;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-8, .col-sm-10{
+  background-color:rgba(255,255,255,0);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:none;
+      -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-sm-1:hover, .col-sm-2:hover, .col-sm-3:hover, .col-sm-4:hover, .col-sm-5:hover, .col-sm-6:hover, .col-sm-8:hover, .col-sm-10:hover{
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+              background-color:rgba(255,255,255,0);
+}
+
+</style>
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'https://c1.staticflickr.com/5/4196/34070156813_71d2accbf8_n.jpg';
+    ImageArray[1] = 'https://c1.staticflickr.com/5/4204/34717635622_67741a7180_n.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<div class="row">
+
+<center>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/serial/Czarne+lustro-2011-640699"><div class="text">Black Mirror</div><img src="http://1.fwcdn.pl/ph/06/99/640699/441154.1.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/serial/Breaking+Bad-2008-430668"><div class="text">Breaking Bad</div><img src="https://68.media.tumblr.com/0f6d50bd9ba3b6c6b54026a6e645c367/tumblr_o17ydbK3Lq1v1e7b1o1_500.jpg" width="100%"></a>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Westworld-2016-232988" ><div class="text">Westworld</div><img src="http://media.vanityfair.com/photos/57fea8e56d65c9f44d47fde3/master/w_768,c_limit/westworld-episode-3-ss02.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/Rodzina.Soprano" ><div class="text">The Sopranos</div><img src="https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F2a2d8271-5e82-455c-937b-93891ba67cd4.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Rick+and+Morty-2013-671074" ><div class="text">Rick and Morty</div><img src="http://i.cdn.turner.com/adultswim/big/video/a-rickle-in-time/rickandmorty_cc_201_pt4_1.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Sze%C5%9B%C4%87+st%C3%B3p+pod+ziemi%C4%85-2001-89546" ><div class="text">Six Feet Under</div><img src="https://shopgreatstories.com/wp-content/uploads/2015/08/n4zbgqta6synhcyideff.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<div class="row">
+
+<center>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/Podziemny.Krag"><div class="text">Fight Club</div><img src="https://campusghanta.com/wp-content/uploads/2013/06/Fight-Club-fight-club-30836125-1600-1200.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/Matrix"><div class="text">The Matrix</div><img src="http://kulturadobra.pl/wp-content/uploads/2017/02/matrix.jpg" width="100%"></a>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/To.Nie.Jest.Kraj.Dla.Starych.Ludzi" ><div class="text">No Country For Old Men</div><img src="https://fanart.tv/fanart/movies/6977/moviebackground/no-country-for-old-men-52fa61df43aec.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/Mechaniczna.Pomarancza" ><div class="text">A Clockwork Orange</div><img src="https://images7.alphacoders.com/320/thumb-1920-320572.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/film/Dwunastu+gniewnych+ludzi-1957-30701" ><div class="text">12 Angry Men</div><img src="http://1.fwcdn.pl/wv/86/13/28613/annex_fonda_henry_12_angry_men_10.28613.4.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/Czas.Apokalipsy" ><div class="text">Apocalypse Now</div><img src="https://shakespearecartoon.files.wordpress.com/2014/09/apocalypse.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<div class="row">
+
+<center>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/film/Labirynt+opowie%C5%9Bci-1987-201649"><div class="text">Neo Tokyo</div><img src="https://i.ytimg.com/vi/I-GP8cyLkMM/maxresdefault.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/film/Kimi+no+Na+wa.-2016-760082"><div class="text">Kimi no Na wa.</div><img src="https://images.alphacoders.com/736/736461.png" width="100%"></a>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Black+Lagoon-2006-304751" ><div class="text">Black Lagoon</div><img src="http://www.toonzone.net/wp-content/uploads/2012/08/blacklagoonuk-5.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827" ><div class="text">Full Metal Alchemist<br>
+Brotherhood</div><img src="https://i.ytimg.com/vi/yYwQrM6QOQQ/maxresdefault.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/film/Kowboj+Bebop%3A+Pukaj%C4%85c+do+nieba+bram-2001-34454" ><div class="text">Cowboy Bebop</div><img src="https://ae01.alicdn.com/kf/HTB1B9j4QVXXXXc5XXXXq6xXFXXXW/-font-b-Cowboy-b-font-font-b-Bebop-b-font-4-Sizes-Silk-Fabric-wood.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866" ><div class="text">Ghost in The Shell</div><img src="http://www.funimationfilms.com/wp-content/uploads/2017/01/Gits_image_gallery_13.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<div class="row">
+
+<center>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="https://www.last.fm/pl/music/Nine+Inch+Nails"><div class="text">Nine Inch Nails</div><img src="https://images4.alphacoders.com/732/73256.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="https://www.last.fm/pl/music/Type+O+Negative"><div class="text">Type O Negative</div><img src="https://i.ytimg.com/vi/VqHbvRssyvY/maxresdefault.jpg" width="100%"></a>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://www.last.fm/pl/music/Machine+Head" ><div class="text">Machine Head</div><img src="https://i.ytimg.com/vi/-wKGkrZJHIc/maxresdefault.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://www.last.fm/pl/music/Linkin+Park" ><div class="text">Linkin Park</div><img src="http://www.emp.de/blog/wp-content/uploads/2016/01/LinkinPark-Banner.png" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://www.last.fm/pl/music/deadmau5" ><div class="text">Deadmau5</div><img src="http://www.billboard.com/files/media/deadmau5-performance-paris-billboard-1548.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://www.last.fm/pl/music/Dream+Theater" ><div class="text">Dream Theater</div><img src="http://img08.deviantart.net/e9af/i/2008/054/3/3/dream_theater___version_1_by_v_k_s.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<div class="row">
+
+<center>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/videogame/The+Last+of+Us-2013-642590"><div class="text">The Last of Us</div><img src="http://jarock.pl/wp-content/uploads/2013/11/The-last-of-us-remastered-2_986411713.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/videogame/The+Walking+Dead%3A+Season+One-2012-631588"><div class="text">The Walking Dead<br>
+The Game</div><img src="https://mattbrett.com/wp-content/uploads/2012/12/thewalkingdead-part2-poster.jpg" width="100%"></a>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645" ><div class="text">Spec Ops: The Line</div><img src="https://gamedot.pl/uploads/media/default/0001/82/fff93f81c8017f011c5143dc45a775c64a6d2798.jpeg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Life+is+Strange-2015-720567" ><div class="text">Life is Strange</div><img src="https://images6.alphacoders.com/679/679666.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Antichamber-2013-680088" ><div class="text">Antichamber</div><img src="https://i.stack.imgur.com/1NIYM.jpg" width="100%"></a>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Heavy+Rain-2010-607549" ><div class="text">Heavy Rain</div><img src="http://sm.ign.com/ign_pl/screenshot/default/hr-heavy-rain-35820756-1920-1080_us7w.jpg" width="100%"></a>
+</div></div>
+</center>
+<br><br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+
+<div class="row">
+  <div class="col-sm-8 col-md-offset-2">
+    <br>Once you move outside of where you used to live, you start to wonder: what did I miss, throughout all these years that I left right, not that long ago?<br><br>
+
+    Europe is a wonderful continent. Rich with culture, with an abundance of nations scattered across the lands. Unfortunately, once I came back I didn't really find anything that I presumed I'd be looking for. So once my stay in Munich started getting heavy to the extent that it was quite unbearable, with my exams incoming inexorably I decided to make a final stand.<br><br>
+
+    In physiology, there is the classic terminology that varietes between a fight and flight response. I combined both, once again in my life and undertook a combination of trips in order to find something, that germans sum up to one word: Sehnsucht, which in my case could translate into longing for something that I relentlessly awaited to discover. Something that could predestine my next steps in life, after the mobility period concludes.<br><br>
+
+    Despite having discovered a great range of european cities, I did not find what I was looking for. But paradoxically, despite me neglecting heavily and hampering my studies, I managed to pass all of my exams. I wonder, if there is one more way to unlock myself?<br><br>
+
+    Anyway, the series is not yet finished, awaiting for a significant amount of free time, that might come after I come back to Sydney. I plan on publishing, probably more than around 12-15 extensive articles, that will describe the world through my eyes with a keen focus placed on the atmosphere of all the places, read through the cultural lenses and my personal experience.<br><br>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

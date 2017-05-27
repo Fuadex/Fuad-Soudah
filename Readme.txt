@@ -110,11 +110,25 @@ Version 0.9.8
 - Introduced description to: Game Design, Game Concept, Projekt Piaseczno
 - Fixed a minor bug on Boombox page
 
-Version 1.0
+Version 0.9.8.1
 - Cleaned navbar
 - Introduced the remaining subpages
 - Included a backstory for most of the pages
 - New Jquery script for photography page
+
+Version 0.9.9
+- Reshuffled Photos page
+- Recovered and added Mobile HCI, Web HCI webpages
+- Added Blog subpage
+- Added my old webpage and introduced fixes on equivalents
+- Added nowrap
+- Refubrished Culture Page
+
+Version 0.9.9.1
+- The Page is almost ready
+
+Version 1.0
+- The basic version is ready
 
 BUGS NEEDED FIXING
 - Onedrive videos not embedding problem
