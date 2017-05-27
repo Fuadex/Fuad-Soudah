@@ -126,6 +126,8 @@ Version 0.9.9
 
 Version 0.9.9.1
 - The Page is almost ready
+- Added Processing.js
+- Some tweaks and fixes
 
 Version 1.0
 - The basic version is ready
