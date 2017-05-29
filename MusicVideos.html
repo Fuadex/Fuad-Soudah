@@ -3,14 +3,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="jquery-3.2.1.min.js"></script><link rel="stylesheet" href="fuad css.css" type="text/css">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+
 <style>
 .text{
     opacity:0;
       font-weight: bold;
     z-index: 1;
     position: absolute;
-    font-size:1.5em;
+    font-size:2em;
 float: left;
 top: 50%;
 left: 50%;
@@ -255,12 +257,67 @@ a.wob:hover .text{color:black;
   <a href="2008e.html" class="wob"><div class="text">Battlefield 2 Gameplay</div>
 <img src="https://img.youtube.com/vi/7riYfRaIFVM/0.jpg" width="100%"></a><br>
 </div>
+</div><br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+<div class="row">
+  <div class="col-sm-8 col-md-offset-2">
+<br>
+    Yeah, well I decided to say a few words about these Videos as well.<br><br>
+
+    First of all, I started off, being inspired by other equivalent music videos featured on youtube. So I decided to make my own. And considering I was big on gaming, in fact, just about to revitalise my hobby with a new gaming rig, I just did as much. Capturing some content in fraps, some in gamecam, looking for the right software. Then, editing it in windows movie maker (so easy and forthcoming, the first and old versions!) and combining it with the music I enjoyed listening to. They did not rather contain any cuts. And the framerate... Well, capturing anything did impact the game's performance, plus my hard drive couldn't take it (more Gigabytes) anymore.<br><br>
+
+    Throughout the years, I started walking away from gaming. However, I still managed to employ more cuts and tried matching what was happening on the screen in better fashion, in conjunction with music. It was around 2012 that I shifted toward working with TV Shows, fascinated by the narrative aspects and how much content a show could deliver in so many angles.<br><br>
+
+    The software changes as well. I rather used Sony Vegas and FRAPS as a standard setup. Once I departed to Sydney, I changed once again to Adobe Premiere, but still preferred Sony Vegas in certain cases. Yet, the most important aspect that has changed? I tried making my mixes so that they contained a certain atmosphere, that would run along well with the music introduced. Sometimes, I even introduced alternate stories, which didn't even have to involve dialogues. They were just self-explanatory. But what fascinated me the most, was how I was able to create certain mixes, that each person was able to deliver a different opinion, weighing in with a different clutch, pointing my attention to different aspects, some that I did not even notice.<br><br>
+
+    But then, one thing did not change at all. Would you like to know what it was? I never spent more than, probably, 5 hours on one mix. I tried capturing them as fast as possible. And then editing them as fast as possible, so that my inspiration didn't go with the end(wind?). That said, you will always notice parts that could have been fixed in better fashion. That said, I did not care. I made these mashups just for fun and my own personal pleasure. Constructive criticism, or... you know what? Any would do. It is always vital. So throw as much of it as you may. Even if I won't seem greatful, rest assured, I will be.<br><br>
 </div>
+</div>
+    </div>
+</div>
+<br>
 
 </div>
 
 <script src="footer.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
 </body>
 </html>

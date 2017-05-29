@@ -135,6 +135,12 @@ Version 0.9.9.2
 
 Version 0.9.9.3
 - Added CSS styling for navbar on hover
+- Applied fixes to UX page
+
+Version 0.9.5
+- CSS slight overhaul (transitions)
+- Remade index.html page
+- Slight changes here and there
 
 Version 1.0
 - The basic version is ready

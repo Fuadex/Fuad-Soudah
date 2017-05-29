@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0034)http://fuadex.strefa.pl/Witam.html -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250"><title>TYTUŁ</title>
+
+
+	<style type="text/css">
+		a {text-decoration: underline;
+		color:darkblue}
+	</style>
+
+<script type="text/javascript">
+<!--
+function zegarek(offs){
+offs=offs+lato_offset;
+var g,m,s,teraz=new Date();
+with(teraz){
+setTime(getTime()+(offs*3600000));
+g=getUTCHours(); m=getUTCMinutes(); s=getUTCSeconds()}
+
+var czas=" "+(g<10?"0":"")+g;
+czas+=(m<10?":0":":")+m;
+czas+=(s<10?":0":":")+s;
+return czas;
+}
+
+function zegarStart(){
+var lato=new Date(2000,7,1), teraz=new Date();
+lato_offset=(teraz.getTimezoneOffset()==lato.getTimezoneOffset())?1:0;
+ustawCzas();
+setInterval('ustawCzas()',1000);
+}
+
+function ustawCzas(){
+function Czas(id,offs){
+document.clock.elements[id].value=zegarek(offs);
+}
+Czas("newyork", +1);
+}
+// -->
+</script>
+
+<style type="text/css">
+table.nav {background:#93D1E3;
+text-align:center;
+color:black}
+</style>
+
+		</head>
+			<body bgcolor="#93D1E3" text="black" onload="zegarStart()">
+	
+
+
+<form name="clock">
+<table border="0" width="500">
+<tbody><tr>
+<td>
+<input name="newyork" size="10"> zegarek
+</td>
+</tr>
+</tbody></table>
+</form>
+
+	<font size="3">
+	<font face="Times New Roman">
+<table class="nav" width="100%">
+	<tbody><tr><td><h3><center><u>WITAM NA MOJEJ STRONIE :)</u></center></h3></td></tr>
+
+
+	<tr><td><div align="right">Znudził ci się zwykły kalkulator? Kliknij <a target="top" href="http://pontus.pl.pl/">tutaj!</a></div></td>
+
+
+
+</tr></tbody></table>
+
+	
+	
+</font></font></body></html>
