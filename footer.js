@@ -7,16 +7,15 @@ document.write('\
     <a class="navbar-brand" href="#">Future Projects:</a>\
   </div>\
     <ul class="nav navbar-nav">\
-  <li><a href="#">Tertile;s Uproar</a></li>\
-  <li><a href="#">Sehnsucht</a></li>\
-  <li><a href="#">Introspection</a></li>\
+  <li><a href="Tertiles Uproar.html">Tertiles Uproar</a></li>\
+  <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
   <li><a href="#">Dorfbladt</a></li>\
-  <li><a href="#">Grassausschus</a></li>\
-  <li><a href="#">Untitled Video</a></li>\
+  <li><a href="#">LMU SoSe</a></li>\
+  <li><a href="#">Untitled 360</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
-      <li><a href="Contact.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
+      <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
       <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9.9.1</a></li>\
     </ul>\
 \

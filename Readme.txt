@@ -129,8 +129,21 @@ Version 0.9.9.1
 - Added Processing.js
 - Some tweaks and fixes
 
+Version 0.9.9.2
+- Included Chronology
+- Included Jquery SimpleTimeline
+
+Version 0.9.9.3
+- Added CSS styling for navbar on hover
+
 Version 1.0
 - The basic version is ready
+
+NEEDS:
+
+- Processing page is broken
+- on:hover header panels?
+- More fixes
 
 BUGS NEEDED FIXING
 - Onedrive videos not embedding problem
