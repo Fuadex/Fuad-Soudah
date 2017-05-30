@@ -58,10 +58,58 @@ iframe{
   </div>
 
 </div>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+    <div class="row">
+  <div class="col-sm-8 col-md-offset-2">
+    <br>
+    This project was one of my favorites at LMU. A practical unit, in which we had 1.5 weeks to come up with a device that would play according sounds to the midi controller.<br><br>
+</div>
+
+      </div>
+
+      <center><h2><a href="http://blog.medien.ifi.lmu.de/swh/2017/04/12/team-1-boom-box/">For The Project overview written by Martin, please click on this link</a></h2></center>
+      <center><h2><a href="http://blog.medien.ifi.lmu.de/swh/2017/04/17/day-4-ideas-take-form/">For a Day 4 recap, please click on this link</a></h2></center><br><br>
+
 </div>
 </div>
 
 <script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
 
     <script src="js/bootstrap.min.js"></script>
 </body>

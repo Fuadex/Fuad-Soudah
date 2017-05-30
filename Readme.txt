@@ -142,6 +142,12 @@ Version 0.9.5
 - Remade index.html page
 - Slight changes here and there
 
+Version 0.9.6
+- Rest of the videos are included
+- More information added
+- More everything is there now
+- 2 Radio shows!
+
 Version 1.0
 - The basic version is ready
 
