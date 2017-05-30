@@ -11,7 +11,7 @@ document.write('\
   <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
   <li><a href="#">Dorfbladt</a></li>\
   <li><a href="#">LMU SoSe</a></li>\
-  <li><a href="#">Untitled 360</a></li>\
+  <li><a href="Untitled 360.html">Untitled 360</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
