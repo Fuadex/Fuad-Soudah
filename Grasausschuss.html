@@ -37,6 +37,58 @@ border:1px solid black;
     width: 32vw;
     }
 
+    .text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2em;
+float: left;
+top: 50%;
+left: 50%;
+white-space: nowrap;
+transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.wob img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.wob:hover img {
+    opacity: 0.7;           
+}
+
+a.wob:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
 </style>
 
 
@@ -47,22 +99,6 @@ border:1px solid black;
 
 <script src="navigation.js"></script>
 
-<div id="fb-root"></div>
-<script>
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id))
-        return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
-
-<div class="fb-post" data-href="https://www.facebook.com/grausolydorf/photos/a.1525485914430773.1073741828.1453735014939197/1695654787413884/?type=3"></div>
-
 
 <!-- BODY BODY BODY-->
 
@@ -70,14 +106,16 @@ border:1px solid black;
 
 <center><h1>Grasausschuss</h1></center><br>
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrausolydorf%2Fposts%2F1769500306695998&width=500" width="500" height="448" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
+<div class="row">
 <div class="col-md-6">
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrausolydorf%2Fphotos%2Fa.1525485914430773.1073741828.1453735014939197%2F1695654787413884%2F%3Ftype%3D3&width=500" width="500" height="337" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  <a href="Grasausschuss Vid.html" class="wob"><div class="text">360 Videos</div>
+<img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/15440397_1695654787413884_3653285946423549233_o.jpg?oh=405230ad66c06786103774a2cfefa76c&oe=59AB3001" width="100%"></a>
 </div>
 <div class="col-md-6">
-<iframe class="ab1" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrausolydorf%2Fvideos%2F1689341131378583%2F&show_text=0&width=560" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+  <a href="Grasausschuss Pho.html" class="wob"><div class="text">Photography</div>
+<img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/15288540_1686334398345923_1048672756519412252_o.jpg?oh=a09869991c548b98639210ef7c6f8c80&oe=59E171F0" width="100%"></a>
   </div>
+</div><br>
 
 <div class="row">
 <div class="col-sm-2 col-sm-offset-2">
