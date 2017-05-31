@@ -137,16 +137,28 @@ Version 0.9.9.3
 - Added CSS styling for navbar on hover
 - Applied fixes to UX page
 
-Version 0.9.5
+Version 0.9.9.5
 - CSS slight overhaul (transitions)
 - Remade index.html page
 - Slight changes here and there
 
-Version 0.9.6
+Version 0.9.9.6
 - Rest of the videos are included
 - More information added
 - More everything is there now
 - 2 Radio shows!
+
+Version 0.9.9.7
+- Grasausschuss Page referenced
+- Many more fixes uberalls
+
+Version 0.9.9.8
+- Document in the Visual Communication (Sustain) FIXED
+- Old Webpage, possibly an img redirecting to the website FIXED
+- Event Locator, need to upload the code package FIXED
+- Processing Assignments, possibly pictures and the websites as downloadables FIXED
+- Australian Dream footer FIXED
+- Sehnsucht breaks At the end of the info FIXED
 
 Version 1.0
 - The basic version is ready

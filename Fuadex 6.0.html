@@ -5,7 +5,60 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="jquery-3.2.1.min.js"></script><link rel="stylesheet" href="fuad css.css" type="text/css">
 
+<style>
 
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:4em;
+float: left;
+top: 50%;
+left: 50%;
+white-space: nowrap;
+transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.wob img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.wob:hover img {
+    opacity: 0.7;           
+}
+
+a.wob:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+</style>
 </head>
 <body>
 <script src="navigation.js"></script>
@@ -18,8 +71,10 @@
 <center><h2>Fuadex 6.0</h2></center><br>
 
       <center>
-      <iframe src="http://fuadex.strefa.pl" width="90%" frameborder="0" allowfullscreen></iframe>
+      <a class="wob" href="http://fuadex.strefa.pl"><div class="text">Fuadex 6.0</div><img src="https://jdnccg.dm2302.livefilestore.com/y4mUoQSjd9sdJthP1n7Eb56vgobGXUTn6LyFsoFVJpC3GgaeqPPoNb_X7utrQgB14Tqe1gL2StPE_tdTLCA7WMks4qyc5Siizepqz85kq4vqOxXDfSTmJwQqJA37qZGPju2cJjXRIY7bDgHdtQsw3vb5AtitBV1LaitWZMUGvDMidiobEholl-nko9dlErUYCZwIcX6aBGZ9csCVI5vJjOIMg?width=2160&height=1440&cropmode=none" width="80%" /></a>
     </center>
+<br>
+
 <div class="col-sm-3 col-sm-offset-1">
   Project:<br>
   Old Website
@@ -48,7 +103,7 @@
     <div class="row">
   <div class="col-sm-8 col-md-offset-2">
     <br>
-    <a href="http://fuadex.strefa.pl">If the website doesn't work (which is likely, please click on this tekst</a><br><br>
+    <a href="http://fuadex.strefa.pl">Please, click on the picture to access the actual website. Clicking this text will work as well.</a><br><br>
 </div>
 
       </div>

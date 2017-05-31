@@ -55,16 +55,72 @@ iframe {
   </div>
   <div class="col-sm-4">
     Tools:<br>
-    Processing, 2x plugins
+    Processing, Unfolding Maps, Control P5
   </div>
   <div class="col-sm-1">
   Release:<br>
   Feb 2017
   </div>
+</div>
+
+
+<div class="row panel-yalo">
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+</div>
+
+<br>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+
+<div class="row">
+  <div class="col-sm-8 col-md-offset-2">
+
+    <br>
+    Event Locator...<br><br>
+    </div>
+  </div><br>
+
+  <h2><center><a href="https://1drv.ms/u/s!AqI17gtc_ND8g95Dfp4Ds-FctY5rQw">Please Find The Event Locator Package by clicking on this text.</a></center></h2><br>
+
+<center>
+<iframe src="https://onedrive.live.com/embed?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2161252&authkey=AFMeySrj--CcaOg&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe></center>
 
 </div>
 
 <script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
 
     <script src="js/bootstrap.min.js"></script>
 </body>
