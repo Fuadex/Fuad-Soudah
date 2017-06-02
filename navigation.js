@@ -3,6 +3,14 @@ document.write('\
 <div class="container-fluid">\
     <div class="row">\
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">\
+    <div class="navbar-header">\
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+        <span class="icon-bar"></span>\
+      </button>\
+    </div>\
+    <div class="collapse navbar-collapse" id="myNavbar">\
     <ul class="nav navbar-nav">\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphic Design\

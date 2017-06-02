@@ -160,8 +160,16 @@ Version 0.9.9.8
 - Australian Dream footer FIXED
 - Sehnsucht breaks At the end of the info FIXED
 
-Version 1.0
+Version 0.9.9.9
+- Included Codyhouse vertical timeline
+
+Version 0.9.9.9.1
+- Collapsable navbar (!)
+
+Version 0.7
 - The basic version is ready
+- Included Chronology subpage
+- Fixed tablet align
 
 NEEDS:
 

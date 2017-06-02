@@ -6,6 +6,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="jquery-3.2.1.min.js"></script>
 
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 
 
 <link rel="stylesheet" href="fuad css.css" type="text/css">
@@ -13,6 +17,11 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <style>
+body{
+  background-image: none;
+  background-color:white;
+}
+
 h2{
   background:none;
   padding-top:8px;
@@ -25,9 +34,46 @@ h2{
   font-family:'Roboto', sans-serif;
 border:1px solid black;
 }
+
+img{
+  border:none;
+}
+
+.cd-date{
+  color: black; text-shadow: white 0em 0em 0.2em;
+}
+
+.text-primary{
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+span.text-primary {
+    font-size: 1.5em;
+    color:white;
+}
+
+.cd-timeline-content{
+      border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+}
+
+.cd-date{
+text-shadow: 0px 0px 10px white;
+}
+
+.blue{
+  background:blue;
+}
 </style>
-
-
 
 
 </head>
@@ -40,10 +86,753 @@ border:1px solid black;
 
 <div class="container-fluid">
 
-<center>
+
+  <section id="cd-timeline" class="cd-container">
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <span class="glyphicon glyphicon-cloud text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Came to Life</h2>
+        <p>I was born in St. Leonards, Sydney.<br>
+           Eventually, I had moved to Ingleburn.<br>
+           Yet, six blissful years as far as I recall.</p>
+        <span class="cd-date">27 January 1996</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-movie">
+        <span class="glyphicon glyphicon-map-marker text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Moved to Poland</h2>
+        <p>My Grandparents' house, located near Warsaw. From today's perspective I might say it was a great place to live in. From today's perspective, I believe my life could have taken a better course. From today's perspective, I should have made better choices. From today's perspective, it all turned out quite well. But it could and should have been better.</p>
+        <span class="cd-date">2002</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Primary School</h2>
+        <p>Zespół Szkół Publicznych w Nowej Iwicznej. The school I used to attend, located nearby. Relatively decent, its facilities have had radically improved throughout the years, but then the vicity has expanded exponentially as well. I still visit my former teachers, whenever I have the chance. One thing I keep on noticing? Nothing really has changed. Paradoxically it just might be a good thing.</p>
+        <span class="cd-date">2002</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-globe text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>First Website</h2>
+        <p>Created in HTML. Why did I create it in the first place at the age of 11? Well, I just wanted to express myself. Yet, my friend was way ahead, having created an actual calculator in PHP. I am still envious, I just wish I had joined him, learned and tried to create something even of a larger scale. He had great ideas. I just had my website. (2007-2011)</p>
+        <a href="Fuadex 6.0.html" class="cd-read-more">ver. 2011</a>
+        <span class="cd-date">2007</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon glyphicon-option-horizontal text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Board Ogame</h2>
+        <p>Regularly Took Part in an Online Discussion Board, primarily issuing comments, debating and handing out advice regarding Computer Hardware and Video Game related topics. Written over 2000 posts. I even got acquainted with a few, whom I met in person after the years. (2008-2011)</p>
+        <a href="#0" class="cd-read-more">Read more</a>
+        <span class="cd-date">2007</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Secondary School</h2>
+        <p>After fairly written final exams, I remained for the commencing 3 years in the Secondary School program. Now they're getting rid of it, but in my case it was basically the same school, with the same teachers and friends. Me on the other hand? Well, I prefered playing video games on my new gaming rig that I put together and built myself. (2008-2011)</p>
+        <a href="#0" class="cd-read-more">Read more</a>
+        <span class="cd-date">2008</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-facetime-video text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Music Videos</h2>
+        <p>Inspired by a few music videos that I had seen back in the days, I eventually had decided to make a few my own. Throughout the years I evolved, ranging from the tools that I have had used: Windows Movie Maker, Sony Vegas, Adobe Premiere, to the programs with which I captured the content: GameCam, Xfire, Fraps and the materials themselves: Video Games, TV Shows. I produce some content every now and then, whenever I get inspired, up 'till this day. (2008-2017)</p>
+        <a href="MusicVideos.html" class="cd-read-more">Music Videos</a>
+        <span class="cd-date">2008</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+        <h2>High School</h2>
+        <p>Liceum Ogólnokształcące im. I Dywizji Kościuszkowskiej was not necessarily my primary choice. Yet, it turned out relatively splendind: I was enrolled in the advanced streams of: Mathematics, Physics and Geography. I also did advanced: English and German, but I was particularly bad with the latter. In the end, I managed to survive, although with relatively poor results when compared to the extremely competetive higher education scene in Poland (2011-2014)</p>
+        <span class="cd-date">2011</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                 <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-text-size text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>First Blog</h2>
+        <p>I decided to open up my first blog as I grew tired with my old website, which would take ages to transform. I hit an abilities-related roadblock and decided to set a relatively good looking blog as fast as possible, which would primarily feature material by which I would get, literally, stricken by inspiration. I produced a great deal, 65 blog entries yet only 5(6) were eventually published, as I was not content with the quality of language in which I drove these blogs. Yet, I continued. For 3 years. (2011-2014)</p>
+        <a href="O wszystkim i o niczym.html" class="cd-read-more">O Wszystkim i O Niczym</a>
+        <span class="cd-date">10 May 2011</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-text-size text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Another Blog</h2>
+        <p>In this case I produced 22 blog entires out of which 8 were actually published. That might seem like an improvement, yet the idea was radically different. I was already used to producing gigantic blog entries, this time, the plan was to split them into parts. It worked, for a while. Then I grew bored as I usually prefer to take one shot at a blog, then 2 commencing which would refine the existing thing. Trying to fit all of the aforementioned in small steps seemed right, but that was not my style. (2012-2014)</p>
+        <a href="https://fuadexsite.blogspot.com" class="cd-read-more">Read more</a>
+        <span class="cd-date">23 September 2012</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-picture text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>First Photoshop Work</h2>
+        <p>I had an idea. I went with a friend for a bike ride and some KFC bite. We ended up above the, still being constructed, Warsaw's southern ring expressway bypass. I took a few pictures, as I grew being an addict of taking photos and then, once I reviewed them at home, an idea went through my head. What if I made it... as if there was an apocalypse happening in the background. My friend just sitting, enjoying the view. With a KFC bucket and a few beers on the side. That showcased the potential of graphic design. And I decided to follow this scene.</p>
+        <a href="https://1drv.ms/b/s!AqI17gtc_ND81W8smeuhSEdKS5ef" class="cd-read-more">Take a look!</a>
+        <span class="cd-date">2013</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-road text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Project Piaseczno</h2>
+        <p>This project I consider to be the most designer related thing that I have ever made. Purely something out of nothing, created by means that should have not enabled it in the first place. Let down by the complete lack of instructure improvements, not taking place for, so far, years; After having learned of incredible projects that were supposed to take place nearby, I sketched my own visions. And then used Galaxy Note 3 to refine, Google Map Saver to get the satellite images from and Photoshop to put the puzzles together. After having iterated multiplicitous times and finding the best solutions, while providing alternatives, I have managed to redesign almost all of the most heavily congested areas near the town I used to live and commute to for around 3 years. I don't know if it managed to influence anyone. But things eventually started to happen, just right after my departure to Australia. (2013-2014)</p>
+        <a href="Projekt Piaseczno.html" class="cd-read-more">Projekt Piaseczno</a>
+        <span class="cd-date">Late 2013</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Certificate in Advanced English</h2>
+        <p>I gotta be frank, I did actually attend an English course at British Council. I considered it a significant waste of money, as I did not get much out of it compared to me just staying in the English-speaking culture, although I did enjoy the learning structure. Especially the combination of tests, it totalled me, a day of drilling through a brains already melted. Just merely after 2 weeks after my High School finals. I was fed up with my mom actually putting me to this, without the provision of any former heads up whatsoever. I was certain, that I would not get as far, as the exam was by far quite harder than what I experienced in my actual finals. Yet, I passed it in seldom flying colors: an average of 72/100? Take a look at the document. In fact, if I didn't get this certificate, nothing that happened afterwards would have taken place, at least so soon. If I received a grade higher by 8 points, I would be considered for a different university. Yet, if I performed worse by a few points, I would not get considered for the course I am in now. Just think of the possibilities?</p>
+        <a href="https://1drv.ms/b/s!AqI17gtc_ND8g98TVXEwjVaaiEzrIA" class="cd-read-more">Certificate</a>
+        <span class="cd-date">26 June 2014</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <img src="img/cd-icon-location.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Moved to Australia</h2>
+        <p>Back to where I was. Ended up in Macquarie Fields. Thereof, 2 weeks and back to Ingleburn. 12 years, exactly the same place as I had left it, yet at the now it seemed so different, without the colors that were stuck to my mind within the frames preserved for so long. Now, it was this. And a future uncertain. Which became an even more, thoughout the upcoming.</p>
+        <span class="cd-date">8 September 2014</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-picture text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Political Leaflet & Poster</h2>
+        <p>So, I was approached by a friend. Despite halfway around the world splitting us apart, he asked whether I could pull a leaflet and a poster within my capacities for his election run. I had the perfect piece of hardware to test my abilities. And so I produced what he asked for within the requested timeframe of 3(4) days. He did get elected.</p>
+        <a href="Politics.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">October 2014</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>University of Sydney</h2>
+        <p>Bachelor of Design Computing was not in my crosshairs until the very last minute when I applied via the UAC system. Let's put aside the latter and how difficult it was to deal with UAC and how unique my situation was and that despite me running circles and great lengths to get it properly done and that I wasn't rest assured until the very last moment when I received an sms, congratulating me on my successful admission to University of Sydney. I discovered my course by an accident. In fact, I did not want to attend this university, for some reasons. Probably because all the other universities seemed like getting a much more significant cashflow, with new buildings actually being built, campuses in their entireties redesigned, while University of Sydney... Orientation was difficult at first and it took me a few approaches until I actually spoke to the right person who pointed out, that well, there is this course which has this really cool website and it's part of the faculty of architecture, design & planning, which obviously I had overlooked... And it indeed had a cool website. And an even better curriculum. And I could potentially get in. I even made a portfolio of what I had left and printed out in A3, which had a real poor presentation, but could potentially have got me an extra up to 5 points. I probably didn't even need any, I got in. And the course that I am attending? I couldn't have chosen any better.</p>
+        <a href="#0" class="cd-read-more">Read more</a>
+        <span class="cd-date">21 January 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon glyphicon-random text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Logotype Design</h2>
+        <p>Visual Communication. A unit in which I believed that I could outperform in. Yet, I struggled cause, like usual, I was stubborn and did not enjoy following industrial grade rules. At the time I didn't know it was a requirement! The very beginning of a journey, yet I still stuck to my own devices. I also had to produce a portfolio and a graphic summary of myself. I tried. And got a credit.</p>
+        <a href="Visual Communication.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">May 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-sound-dolby text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Vivid Projection</h2>
+        <p>Digital Media Production was the wild card. I knew nothing of what was about to take place. I knew nothing of what was mentioned in the lectures. Yet I did something. And once I've seen it being projected on University of Sydney's iconic quadrangle... Hell of a start! And a likely one of a kind opportunity. Based on which a documentary was made. Highly recommend taking a look at the final effect, just click below!</p>
+        <a href="Vivid.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">May 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-star text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Design Thinking</h2>
+        <p>One of the most crucial devices employed by designers - Design Thinking. Yet a course that I felt the most disquiet about. Research Methods, Prototyping, Empathising you name it. Fun, yet required a great deal of knowledge to internalize. Plus, as usual, I did not follow the conventions as required... Still, first semester and I did really have a great deal more to worry about. Unfortunately.</p>
+        <a href="Design Thinking.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-qrcode text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Design Programming</h2>
+        <p>At first when I asked some of my friends if they heard of a language called processing, I just received negation on their ends. Today, I actually see how convenient this was and how versatile of a language processing is. We were required to create 3 projects. Out of which one seems missing on my end (maybe I'll find it one day, I better hope so!). The final assignment? Create an application in which you may create your own design of some sorts. I decided that my clients would design skateboard decks. Fairly straightforward code and I got a credit.</p>
+        <a href="Processing.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-unchecked text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Digital Arts</h2>
+        <p>To be honest I did not know what it actually was. I did it 'cause I found it interesting and considering I could write about stuff I actually enjoyed writing just fit well with what I was after. I still actually wrote whatever the hell I wanted, although I did make a small effort to fit in to the requirements. That said, I was still graded more than fairly. And complemented my knowledge with a good set of terminology and literature. I did have a problem, though. I rewrote my essay absatively 3 times and in each case I went beyond my word limit. Eventually, I entwined some politics even. But the problem laid elsewhere. I just actually wrote whatever the hell I wanted. And that was not what was asked of us. That said, I was still graded more than fairly.</p>
+        <a href="Digital Arts.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">May 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-th text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>3D Modelling and Fabrication</h2>
+        <p>They said: Make a toy! But before, make a concept! For which I ran late. And then, make a toy! In Rhinoceros, like an actual 3D thing. Then reiterate and make a packaging. But before that, we'll print your toy! And I was ambitious! And made myself... a box of chess. That you could disassemble and play. And then assemble, as if it was a rubic cube or something. Well, I did well. And the pleasure of experiencing the toy you just designed first hand? What you see is what you get just became what you make is what you get. And I liked what I made.</p>
+        <a href="3D Modelling.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">May 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-sound-7-1 text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Sound Design & Physical Computing</h2>
+        <p>How about some sound manipulation? Gotta disclose, I tried learning guitar since... secondary school? Still thinking about it, yet then I had the opporunity to do some other magic in relation to video excerpt. But, I didn't know we were allowed to use sounds that were produced privately by us. It limited me significantly and... well, the result might seem uncompelling. Then, in teams we created a conceptual medical device, which would beep if you walked in an unhealthy fashion. Equipped with an arduino, yet we could have relied on little bits kit.</p>
+        <a href="Physical.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-globe text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Web Design & Technologies</h2>
+        <p>That course made me dislike a notch Web Development as a whole. First, wireframes. Then, producing a mid-fidelity prototype. And obviously an actual website, which in our case, was to recreate a Velocity Frequent Flyer join page. I was pumped to do the latter part. And neglected the aforementioned. Heavily. 'Cause I simple never have had done it, while today I understand the concept behind the provided structure, I nearly failed the units because of the first two assignments. The final mark does not reflect my knowledge in terms of Web Design. Or maybe it does? Depends on how you enjoy this page alone. I did integrate facebook and google maps apis, though. Got marked relatively highly for my last project, for which I worked tirelessly for 2 straight weeks.</p>
+        <a href="Web Design & Technologies.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-music text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Radio Show</h2>
+        <p>My friend did a radio show. I loved the idea and so I followed. Joined Surg FM society and... well, his show was awesome. Mine? Not so much. He talked about classics. I talked about TV Shows. His prescended mine, as far as I recall, on Thursdays at 7. Do you know, how much of an effort it is to make an, at times, 2 hour long radio show, for an actual non-native speaker, without a proper script at times? Especially for myself, who just started to set a life in Sydney and was forced to make choices which ended up in me becoming a solid mess. Nevertheless, I produced around 10 episodes. The first I could not retrieve. 1 other actually got affected by technical difficulties. 2 I shared and the rest? They're back in Sydney for some reason... I plan on doing at least one more show.</p>
+        <a href="Radio.html" class="cd-read-more">Radio</a>
+        <span class="cd-date">May 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-user text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>User Experience Design</h2>
+        <p>First studio unit, graded double. Now, imagine yourself, recreating a museum experience. How would you do it? User Experience Design provided us with the right toolsets and knowledge to employ and I just did as much. Research, Concept Development etc. However... I overproduced, to such a degree that I provided a nearly 10000 words (43 pages long!) final document. I literally tried matching all of the expectations and followed every one and each step as close to being right as possible. And with my due dilligence, I tried working even harder to make sure that I did my part right (and that I could go on exchange, duh!). I gotta say, I was pretty burnt out afterwards. But? It was worth it.</p>
+        <a href="UX.html" class="cd-read-more">UX</a>
+        <span class="cd-date">May 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-knight text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Games and Play</h2>
+        <p>I wanted to do this unit from the very beginning. Despite, that it did not include any actual, that is practical game construction. We created a concept as a team. And I provided an actual concept built in an actual Video Game (Crysis Editor), which as I recall, blew the minds of the audiences' and tutor's away. I also recorder a video essay, which was optional, yet, I may have been in the very minority of people actually doing it. And... around a 15 minutes long presentation. In my case about Narrative Architecture in conjunction with game time. Is there anything better than actually doing something that you enjoy doing?</p>
+        <a href="Narrative Architecture.html" class="cd-read-more">Narrative Architecture</a>
+        <a href="Game Concept.html" class="cd-read-more">Game Concept</a>
+        <a href="Games and Play.html" class="cd-read-more">Video Essay</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-barcode text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Database Systems</h2>
+        <p>Of all the lectures, that one was the one I was worried the most about. The amount of knowledge! The tutorials that were lacking. The projects and... holy cow, an exam. A bloody exam. Oh man, oh woman, oh the celestial species. Yet, I put a lot of effort and so did my team members. Eventually I actually got an 80, out of which the exam itself 75. What did we have to do? An ER Diagram, something with a working database code and then an actual implementation so that it worked on a website with an actual database, in conjunction with python. We did our projects quite well. Oh and there was a quiz as well. Anyway, I'm still trying to figure out how to feature the works that I was involved with during this course as it will not work without a python run script, that I cannot recall at the moment. But... It will get included.</p>
+        <a href="Database.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Certificate in German B1</h2>
+        <p>A speedrun that I undertook, which was around 2 months, having taken an extracurricular course at University of Sydney and smashing all what's included in duolingo somehow lead me towards a half of a certificate. I passed reading by 80/100 and writing by 76/100. I failed speaking ~53;57/60 and listening ~40/100. Yet, that was enough for University of Munich. Furthermore, I kind of had half a certificate of a german language now, how cool is that?!</p>
+        <a href="Database.html" class="cd-read-more">Read more</a>
+        <span class="cd-date">June 2015</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-blue">
+        <span class="glyphicon glyphicon-map-marker text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Moved to Munich</h2>
+        <p>Back in Europe.<br>
+          Would you like to learn more?<br>
+          Take a look at the University of Munich part, then.</p>
+        <span class="cd-date">4 September 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-picture text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Martin's Tag</h2>
+        <p>I took part in a B1.2 course, which was supposed to prepare us for our classes here in Munich. Well, it kinda did but just as much as any course that I attended did. You guessed it, not quite. But I got to meet some peeps and design a poster, which I did with my team members, but the design? Well, I had InDesign so I InDesigned the damn thing. It looked nice, just I wish I InDesigned for an A1 poster in the first place.</p>
+        <a href="Martinstag.html" class="cd-read-more">Martin's Tag</a>
+        <span class="cd-date">October 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+
+              <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>University of Munich</h2>
+        <p>How I got here? I don't know in the second place. I really wanted to go to Montreal. But I don't know why in the first place. How I survived my first semester here? As a Bachelor, having completed master courses? I don't know in the third place. How did I get so lucky to get myself placed in one of the possibly best student housing complexes, which is the Olympic Village? I don't know in the fourth place. And there is some truth that even follows the magic that I disclosed, which makes my stay here even sweeter than it actually is and definitely more than what I have described. The lectures, the possibility to do my core units on exchange (which I have almost done), the olympic park. Europe itself and that Munich is in the very middle. Cheap flights and high quality of teaching. Close to Warsaw, where most of my friends are located. Seems like paradise, doesn't it? Well, everything comes with a price and the tag I was issued with, contained the requirement of a B1 German Knowledge, for which I had to sprint throughout mere 2 months before submitting all my documents. Making sure that I pass the 3rd semester well was on top of my priorities as well. Yet, once I arrived here, despite all that was handed over to me and how well I was, to sum up, treated. At times I just believe that pearls were casted before the swine. Did I try to match it? Obviously I did. Am I being too hard on myself? Believe me, it's justified. The fact that I was placed here is well beyond even my own comprehension, having done all the other leaps and so on. Still, I believe I have failed, not having done enough as I felt was right.</p>
+        <span class="cd-date">5 October 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tree-deciduous text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Grasausschuss</h2>
+        <p>If you get lucky enough to live in Munich's Olympic Village, you gotta participate in someway, despite that most actually don't. I decided to put some effort, by documenting the bungalows and the committee's events. In the end, I even received a sweet bike as a replacement for the one I got stolen. Would you like to see lively students' creativity at its best? That's as much as I tried to capture during my stay.</p>
+        <a href="Grasausschuss.html" class="cd-read-more">Grasausschuss</a>
+        <span class="cd-date">October 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-modal-window text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Human-Computer Interaction 2</h2>
+        <p>That's an actual lecture that I really enjoyed participating in. To sweaten it a notch, a master course. I passed it. And even did the voluntary projects and tutorials, for which I received a max of 10(9) extra points. We were asked to make Medien's website more responsive. We were asked to showcase a better use for smartwatches. I delivered both, with a tiny bit of finesse.</p>
+        <a href="HCI2 Web.html" class="cd-read-more">Web</a>
+        <a href="HCI2 Mob.html" class="cd-read-more">Mobile</a>
+        <span class="cd-date">October 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-equalizer text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Information Visualization with Processing</h2>
+        <p>What can you create, equipped with 2 weeks and a processing language? Well, I created, in a team of one (compared to others) an application in which you may check whether certain bands of your liking are playing in the vicinity (in USA). I plan on updating it with an API key that actually features Europe as well.</p>
+        <a href="EventLocator.html" class="cd-read-more">Event Locator</a>
+        <span class="cd-date">October 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-wrench text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Sketching with Hardware</h2>
+        <p>What can you create, equipped with 1.5 weeks, a bazylion of tools, a set of two minds and a project's aim to create a device playing out certain sounds? Well, we decided to blow shit up, per say. Yet, in style, accordingly with the tunes. Probably the most creative environment I had the pleasure of participating in.</p>
+        <a href="BoomBox.html" class="cd-read-more">BoomBox</a>
+        <span class="cd-date">October 2016</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                                           <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <span class="glyphicon glyphicon-picture text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Fuad Soudah</h2>
+        <p>Created The Entire History of Myself<br>
+          Why did I create an entire history of myself?<br>
+          Well, because of what comes next.</p>
+        <a href="#" class="cd-read-more">Fuad Soudah</a>
+        <span class="cd-date">2 June 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+  </section> <!-- cd-timeline -->
+
+  <h1><center>Preliminary Plan</center></h1>
+
+  <section id="cd-timeline" class="cd-container">
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-file text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Research Paper</h2>
+        <p>Produced a Research Paper on Learning Management Systems</p>
+        <span class="cd-date">June 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-movie">
+        <span class="glyphicon glyphicon-king text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Video Game</h2>
+        <p>Created a Game based on Cocos2D and PyGame</p>
+        <span class="cd-date">June 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-movie">
+        <span class="glyphicon glyphicon-queen text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Video Game</h2>
+        <p>Created a Game based on D3.js and OpenGL</p>
+        <span class="cd-date">June 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-retweet text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Interaction Design</h2>
+        <p>Created a mid-fi prototype on a 'Home is My Castle' </p>
+        <span class="cd-date">July 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-movie">
+        <span class="glyphicon glyphicon-cog text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>JavaFX App</h2>
+        <p>Created an application that manipulates with graphics </p>
+        <span class="cd-date">July 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-film text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Short Movie</h2>
+        <p>Produced a Short Movie</p>
+        <span class="cd-date">July 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>German B2.2</h2>
+        <p>Received a German B2.2 Certificate</p>
+        <span class="cd-date">July 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <img src="img/cd-icon-location.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Moved to Australia</h2>
+        <p>Finishing my final semester at University of Sydney</p>
+        <span class="cd-date">8 August 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-fullscreen text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Innovation Design</h2>
+        <p>Did Projects for Innovation Design</p>
+        <span class="cd-date">November 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-location">
+        <span class="glyphicon glyphicon-thumbs-up text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Product Design</h2>
+        <p>Created a compelling Product that incorporates all my previous knowledges</p>
+        <span class="cd-date">November 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>German C1</h2>
+        <p>Certificate</p>
+        <span class="cd-date">December 2017</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Master's Program</h2>
+        <p>Accepted for a Master's Program</p>
+        <span class="cd-date">February 2018</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <img src="img/cd-icon-location.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Year of Leave</h2>
+        <p>For Projects</p>
+        <span class="cd-date">June 2018</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Arabic B1</h2>
+        <p>Certificate</p>
+        <span class="cd-date">July 2018</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>French B1</h2>
+        <p>Certificate</p>
+        <span class="cd-date">December 2018</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <img src="img/cd-icon-location.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Came back from Leave</h2>
+        <p>University stuff now.</p>
+        <span class="cd-date">June 2019</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                        <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Arabic B2</h2>
+        <p>Certificate</p>
+        <span class="cd-date">December 2019</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-tag text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>French B2</h2>
+        <p>Certificate</p>
+        <span class="cd-date">December 2019</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-picture">
+        <span class="glyphicon glyphicon-education text-primary"></span>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Completed Master's Program</h2>
+        <p>K.</p>
+        <span class="cd-date">November 2020</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+      <div class="cd-timeline-img cd-blue">
+        <img src="img/cd-icon-location.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Who The Hell Knows...</h2>
+        <p>I'll just focus on what's ahead of me (for now).</p>
+        <span class="cd-date">27 January 2021</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+  </section>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>(Click for Additional Information)</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div id="hidden_content">
+  <div id="test"></div>
+
+    <center>
 <iframe src="https://onedrive.live.com/embed?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2110992&authkey=AHKGMrgkr8YBMsM&em=2" width="65%" frameborder="0" scrolling="no"></iframe>
 </center>
 
+<div class="row">
 <div class="col-sm-2 col-sm-offset-2">
   Project:<br>
   Portfolio 08.01.2015
@@ -60,13 +849,30 @@ border:1px solid black;
     Release:<br>
     Jan 2015
 </div>
-<br><br>
+</div>
 
+
+
+</div>
 </div>
 
 <br>
 
 <script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
 
 <script>
 document.getElementById('button').onclick = function() {
@@ -103,6 +909,8 @@ document.getElementById('button2').onclick = function() {
 </script>
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

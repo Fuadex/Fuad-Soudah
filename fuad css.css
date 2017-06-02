@@ -226,3 +226,7 @@ img{
   border-width:1px;
   border-color:black;
 }
+
+@media (max-width: 767px) {
+    footer .text-left { text-align:center }
+}
