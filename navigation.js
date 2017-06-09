@@ -1,5 +1,6 @@
 document.write('\
 \
+<div class="wrapper">\
 <div class="container-fluid">\
     <div class="row">\
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">\
