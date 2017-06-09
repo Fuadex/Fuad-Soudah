@@ -229,4 +229,17 @@ img{
 
 @media (max-width: 767px) {
     footer .text-left { text-align:center }
+    iframe{
+      width:100%;
+    }
+    video{
+      width:100%;
+    }
+    img{
+      width:100%;
+    }
+}
+
+.nayol{
+  border:none;
 }

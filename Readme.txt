@@ -170,6 +170,12 @@ Version 0.7
 - The basic version is ready
 - Included Chronology subpage
 - Fixed tablet align
+- Fixed Photo Content
+
+Version 0.7.1
+- Found a way for mobile version to remain without overflow
+- Added matadata through javascript injection
+- Now google searchable
 
 NEEDS:
 
@@ -180,3 +186,4 @@ NEEDS:
 BUGS NEEDED FIXING
 - Onedrive videos not embedding problem
 - The html overflow on mobile devices still persistent
+@media screen and (max-width:768px) FOR PHOTOS
