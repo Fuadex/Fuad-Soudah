@@ -175,15 +175,34 @@ Version 0.7
 Version 0.7.1
 - Found a way for mobile version to remain without overflow
 - Added matadata through javascript injection
-- Now google searchable
+- Images on mobile now on 100% width
+- Videos embedding now (although I did actually fixe it before)
+- Processing page is still broken but now it's downloadable
+- Included a color for the address bar (mobile)
+
+Version 0.7.2
+- Changed the metadata to correct ones
+- Updated Education Page
+- Added Processing 2
+- Added Radio Shows
+- Added Music Videos (!)
+- Fixed Mobile Navbar
+- Fixed photosmobile (Seems Fixed)
+- Fixed vivid mobile (Seemx Fixed)
+- Fixed design thinking (Seems Fixed)
+- Fixed index mobile (Seems Fixed)
+- Fixed contact mobile (Fixed)
+
+TO DO:
+
+- Adjustable pictures on hover
+-- Different for Mobile and PC
 
 NEEDS:
 
-- Processing page is broken
-- on:hover header panels?
+- design at campus mobile (???)
+- viscom background (Requires new background)
+- photos background (Requires reworking)
+- aspect ratio to youtube iframes (??)
+- on:hover header panels? (??)
 - More fixes
-
-BUGS NEEDED FIXING
-- Onedrive videos not embedding problem
-- The html overflow on mobile devices still persistent
-@media screen and (max-width:768px) FOR PHOTOS

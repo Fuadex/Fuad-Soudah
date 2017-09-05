@@ -1,0 +1,931 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="http://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link type="text/css" href="http://peepproject.com/media/css/peep.css?v=2.4a1" rel="stylesheet" media="screen">
+</head>
+<body>
+                
+                
+        <div id="content_wrap">
+            <div id="content">
+                <div class="portfolio_entry entry_view">
+        
+    <div class="meta" style="padding-top:80px;">
+        <img src="http://peepproject.com/media/images/portfolio/entries/16224/entry_image.jpg"><div class="data">
+            <h1 class="entry_title">Ass­i­g­n­m­e­n­t 2</h1>
+            <cite class="author">by <span><a href="http://peepproject.com/user/15033/portfolio">Fuad Soudah</a></span></cite>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    
+    <div class="content markdown">
+        
+
+<h1>Introduction</h1>
+
+<p>The objective was to develop a sketch, which whilst sticking to the design constraints mentioned in the assignment page, at the same time would express the mission of peep. It's not easy to create something out of nothing, especially with all the requirements introduced, however there is always a thing which keeps on inspiring me. And there's no such thing which would do it better than music.</p>
+
+<p>As a result I decided to base my project on the previous assignment nr. 1. Extended, reshaped and reimagined. This time I wanted however to go a tiny bit beyond a standard music analysing graphs.</p>
+
+<p>The following is a music spectrum, each bar visualises a group of frequencies, defined by loudness (in decibels).</p>
+
+<div>
+<p>
+<img src="http://i.imgur.com/Dss9cZG.png" width="617" height="411"></p>
+<p>
+</p>
+</div>
+
+<p>The following on the other hand is an Oscilloscope. Way more "brutal", fast changing, frequent and either smooth or sharp, depending on the music type.</p>
+
+<div>
+<p>
+<img src="http://i.imgur.com/ZdXBurC.png" width="617" height="411"></p>
+<p>
+</p>
+</div>
+
+<p>At first however I had to take a peek at what I actually created before...</p>
+
+<h1>Reconnaissance</h1>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+ 
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">400</span>, <span class="nu0">400</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/background_"><span class="kw2">background</span></a><span class="br0">(</span><span class="nu0">255</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noFill_"><span class="kw2">noFill</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> q=<span class="nu0">0</span><span class="sy0">;</span> <span class="co1">//this guy plays a big role in the upcoming code</span>
+ 
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> z = <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>,<span class="nu0">7</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//this guy will give us a random number based on which we'll get one of the following color schemes</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>,<span class="nu0">6</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//random thickness of the lines</span>
+    <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">1</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">150</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of green and blues</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">2</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">150</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of reds and blues</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">3</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">150</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of reds and greens</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">4</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of everything</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">5</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">150</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of blues</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">6</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">150</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of reds</span>
+  <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>z<span class="sy0">&lt;</span>=<span class="nu0">7</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">)</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">150</span>,<span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="br0">}</span> <span class="co1">//mix of greens</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/* The following mix of loops and conditionals will show off one of the following:
+- Equidistant vertical lines
+- Equidistant horizontal lines
+All split in half or quarters
+*/</span>
+ 
+  <span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">450</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">10</span>,<span class="nu0">70</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span>
+ 
+<span class="kw7">if</span> <span class="br0">(</span><span class="br0">(</span>q<span class="sy0">&gt;</span>=<span class="nu0">10</span><span class="br0">)</span> <span class="sy0">&amp;&amp;</span> <span class="br0">(</span>q<span class="sy0">&lt;</span>=<span class="nu0">20</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> 
+<span class="br0">{</span>
+  <span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">400</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">9</span>,<span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//verticals half half</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>q, <span class="nu0">400</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">200</span>,<span class="nu0">400</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>q, <span class="nu0">0</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">200</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="br0">}</span><span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span><span class="br0">(</span>q<span class="sy0">&gt;</span><span class="nu0">20</span><span class="br0">)</span><span class="sy0">&amp;&amp;</span><span class="br0">(</span>q<span class="sy0">&lt;</span>=<span class="nu0">30</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="br0">{</span>
+<span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">380</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">9</span>,<span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//verticals quarters</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>q, <span class="nu0">400</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">100</span>,<span class="nu0">400</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>q, <span class="nu0">0</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">100</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span><span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span><span class="br0">(</span>q<span class="sy0">&gt;</span><span class="nu0">30</span><span class="br0">)</span><span class="sy0">&amp;&amp;</span><span class="br0">(</span>q<span class="sy0">&lt;</span>=<span class="nu0">40</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="br0">{</span>
+<span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">380</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">9</span>,<span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//verticals quarters</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>q, <span class="nu0">400</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">300</span>,<span class="nu0">400</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>q, <span class="nu0">0</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">300</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span><span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span><span class="br0">(</span>q<span class="sy0">&gt;</span><span class="nu0">40</span><span class="br0">)</span><span class="sy0">&amp;&amp;</span><span class="br0">(</span>q<span class="sy0">&lt;</span>=<span class="nu0">50</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">370</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">9</span>,<span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//horizontals half half</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">0</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">200</span><span class="br0">)</span>, q<span class="br0">)</span><span class="sy0">;</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">400</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">200</span>,<span class="nu0">400</span><span class="br0">)</span>, q<span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+ 
+<span class="br0">}</span><span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span><span class="br0">(</span>q<span class="sy0">&gt;</span><span class="nu0">50</span><span class="br0">)</span><span class="sy0">&amp;&amp;</span><span class="br0">(</span>q<span class="sy0">&lt;</span>=<span class="nu0">60</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">370</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">9</span>,<span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//horizontals quarters</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">0</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">100</span><span class="br0">)</span>, q<span class="br0">)</span><span class="sy0">;</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">400</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">100</span>,<span class="nu0">400</span><span class="br0">)</span>, q<span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+ 
+<span class="br0">}</span><span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span><span class="br0">(</span>q<span class="sy0">&gt;</span><span class="nu0">60</span><span class="br0">)</span><span class="sy0">&amp;&amp;</span><span class="br0">(</span>q<span class="sy0">&lt;</span>=<span class="nu0">70</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="kw9">for</span> <span class="br0">(</span>q<span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">370</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">9</span>,<span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//horizontals quarters</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">400</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">300</span>,<span class="nu0">400</span><span class="br0">)</span>, q<span class="br0">)</span><span class="sy0">;</span>
+  w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">0</span>, q, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">300</span><span class="br0">)</span>, q<span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/* Basically what happens here is that q variable gets assigned a value
+Depending on the validated conditional it's assigned to another loop
+Which assigns a new value to q, upon which a sketch is drawn
+To be honest I don't really understand the code ultimately myself
+However it works perfectly well and gets the job done */</span></code></pre>
+</div>
+
+<p>That's the design I submitted for the assessment nr. 1. The code works well, it transforms the idea quite neatly, however, frozen in time, it transcends into something a bit neatier, which in the overall one might find appealing.</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> z = <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">30</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+ 
+  <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> q= <span class="nu0">0</span><span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">3</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">1</span>,<span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+    <span class="kw7">if</span> <span class="br0">(</span>q=<span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span> 
+      <span class="br0">{</span>
+        <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+      <span class="br0">}</span>
+    <span class="br0">}</span> <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>q=<span class="nu0">2</span><span class="br0">)</span> <span class="br0">{</span>
+      <span class="br0">{</span>
+        <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r  = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals quarters</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">4</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+      <span class="br0">}</span>
+    <span class="br0">}</span> <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>q=<span class="nu0">3</span><span class="br0">)</span> <span class="br0">{</span>
+      <span class="br0">{</span>
+          <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r  = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals quarters</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="sy0">*</span><span class="nu0">3</span>/<span class="nu0">4</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="sy0">*</span><span class="nu0">3</span>/<span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          <span class="br0">}</span>
+      <span class="br0">}</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span>
+ 
+    <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline2, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<h1>Setting Things in Motion</h1>
+
+<p>So I started off with implementing stuff which was just required, such as the text and the animation code. I cut a bit the code, since some of which just became redundant. I decided to see what's going to happen once I set all of this in motion and the effect turned out to be quite interesting. (needs restarting after opening the sketch)</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> z = <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> z <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">60</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+ 
+  <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> q= <span class="nu0">0</span><span class="sy0">;</span> q <span class="sy0">&lt;</span>= <span class="nu0">4</span><span class="sy0">;</span> q += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">1</span>,<span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+    <span class="kw7">if</span> <span class="br0">(</span>q=<span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span> 
+        <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span> <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>q=<span class="nu0">2</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r  = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals quarters</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">4</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span> <span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>q=<span class="nu0">3</span><span class="br0">)</span> <span class="br0">{</span>
+          <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r  = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals quarters</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="sy0">*</span><span class="nu0">3</span>/<span class="nu0">4</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="sy0">*</span><span class="nu0">3</span>/<span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          <span class="br0">}</span>
+    <span class="br0">}</span><span class="kw7">else</span> <span class="kw7">if</span> <span class="br0">(</span>r=<span class="nu0">4</span><span class="br0">)</span><span class="br0">{</span>
+    <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r  = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//horizontals half half</span>
+    z <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span><span class="br0">)</span>, r<span class="br0">)</span><span class="sy0">;</span>
+    z <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="br0">)</span>, r<span class="br0">)</span><span class="sy0">;</span>
+       <span class="br0">}</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span>
+ 
+    <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>I wanted to stick to the outcome, however there was still a few tweaks that I thought should become introduced at some point.
+So I introduced animation coming from the rear sides.</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">60</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+ 
+        <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+          w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+ 
+    <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r  = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span><span class="br0">{</span> <span class="co1">//horizontals half half</span>
+    m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span><span class="br0">)</span>, r<span class="br0">)</span><span class="sy0">;</span>
+    m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="br0">)</span>, r<span class="br0">)</span><span class="sy0">;</span>
+       <span class="br0">}</span>
+ 
+    <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>That turned out to be a tiny bit... untidy. So I played with the code furthermore.
+And after quite a bit of messing with all of this, I came up with this:</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> z = <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+ 
+ 
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">50</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>I somehow got to a point the code started working in my favor</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> z = <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">7</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">30</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><span class="nu0">50</span>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">20</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2.5</span>, -<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>+<span class="nu0">100</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">50</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>The very next step was to make the animation more interesting, a tiny bit more smart, a tiny bit... better. And so the sinewaves made its way towards my project, adjustable so they could become more awesome.</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">50</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">50</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">30</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><span class="nu0">50</span>,<span class="nu0">10</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/abs_"><span class="kw2">abs</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">1.1</span>, -<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>+<span class="nu0">100</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/abs_"><span class="kw2">abs</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">50</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<h1>Semi-Final Design</h1>
+
+<p>This time I introduced a "bouncing effect". I reshaped the code so it scaled better. A few more tweaks made the sketch even better.</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">70</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">30</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//verticals half half</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><span class="nu0">50</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">1.12</span>, -<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>+<span class="nu0">100</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">50</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<p>Before I get to the end I'd like to showcase a variation of my design, which is way more dynamic in a way, resembling the oscilloscope presented at the beginning of this page. It's a bit interesting idea, however the text became a tiny bit less legible.</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="coMULTI">/*Some basics above, the text and colours
+Two different colors for the nice lines to come underneath*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">70</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/*Setting up the void*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">60</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/*The main stuff*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//each time the screen will refresh, nice ain't it?</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//vertical lines with the maximum reach of half the sketch</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+      <span class="co1">//I made the code as much versatile as possible, so scaling goes smoothly</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//more text stuff</span>
+ 
+ <span class="coMULTI">/*I decided to introduce some kind of waves, like sinus or cosinus, ultimately I got to the following point,
+ when I couldn't really figure out how to put this stuff as it should've been so I used rotating and translating
+ code, which was a bit tricky at first but it got the job done well*/</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><span class="nu0">50</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//the wave thing</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">1.12</span>, -<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>+<span class="nu0">100</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span>
+ 
+ <span class="co1">//And to nicely refresh the screen, we've got something which makes the sketch look neatly</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">15</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<h1>Final Design</h1>
+
+<p>It was not good enough, though. So I increased the framerate and blurred out the lines a bit more so the text became more vivid. I varied the thickness of the blue and orange lines. I introduced a few more tweaks so the code becomes even more "scalable" and as good as the main two versions.</p>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="coMULTI">/*Some basics above, the text and colours
+Two different colors for the nice lines to come underneath*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">70</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/*Setting up the void*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">500</span>, <span class="nu0">207</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">45</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/*The main stuff*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//each time the screen will refresh, nice ain't it?</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//vertical lines with the maximum reach of half the sketch</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+      <span class="co1">//I made the code as much versatile as possible, so scaling goes smoothly</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//more text stuff</span>
+ 
+ <span class="coMULTI">/*I decided to introduce some kind of waves, like sinus or cosinus, ultimately I got to the following point,
+ when I couldn't really figure out how to put this stuff as it should've been so I used rotating and translating
+ code, which was a bit tricky at first but it got the job done well*/</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><span class="nu0">50</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//the wave thing</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">1.12</span>, -<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>+<span class="nu0">100</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span>
+ 
+ <span class="co1">//And to nicely refresh the screen, we've got something which makes the sketch look neatly</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">70</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<h2>Bigger</h2>
+
+<div class="code_example highlight sketch">
+    <ul class="actions code_example_actions"><li class="action action_toggle_code">Show Code</li></ul>
+<pre><code><span class="coMULTI">/** @peep sketch */</span>
+<span class="coMULTI">/* @pjs font="/media/css/Chunkfive-webfont.ttf"; */</span>
+ 
+<a href="http://processingjs.org/reference/PFont"><span class="kw3">PFont</span></a> chunkfive<span class="sy0">;</span>
+<a href="http://processingjs.org/reference/String"><span class="kw3">String</span></a> tagline = <span class="st0">"Learn to Program. Creatively."</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textX = <span class="nu0">1000</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> textY = <span class="nu0">414</span>/<span class="nu0">2</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> lightBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">66</span>, <span class="nu0">168</span>, <span class="nu0">237</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> darkBlue = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a> orange = <a href="http://processingjs.org/reference/color"><span class="kw3">color</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="coMULTI">/*Some basics above, the text and colours
+Two different colors for the nice lines to come underneath*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> w <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">70</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">102</span>, <span class="nu0">153</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> m <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/strokeWeight_"><span class="kw2">strokeWeight</span></a><span class="br0">(</span> <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">1</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <a href="http://processingjs.org/reference/stroke_"><span class="kw2">stroke</span></a><span class="br0">(</span><span class="nu0">204</span>, <span class="nu0">102</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/*Setting up the void*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/setup_"><span class="kw2">setup</span></a> <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/size_"><span class="kw2">size</span></a><span class="br0">(</span><span class="nu0">1000</span>, <span class="nu0">414</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> taglineHeight = <span class="nu0">3</span><span class="sy0">*</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">40</span><span class="sy0">;</span>
+  chunkfive = <a href="http://processingjs.org/reference/createFont_"><span class="kw2">createFont</span></a><span class="br0">(</span><span class="st0">"/media/css/Chunkfive-webfont.ttf"</span>, taglineHeight<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/frameRate"><span class="kw1">frameRate</span></a><span class="br0">(</span><span class="nu0">45</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/*The main stuff*/</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> <a href="http://processingjs.org/reference/draw_"><span class="kw2">draw</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  screenClear<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//each time the screen will refresh, nice ain't it?</span>
+ 
+ 
+     <span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> r = <span class="nu0">0</span><span class="sy0">;</span> r <span class="sy0">&lt;</span>= <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a><span class="sy0">;</span> r += <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a> <span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">15</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">//vertical lines with the maximum reach of half the sketch</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    w <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>r, <span class="nu0">0</span>, r, <a href="http://processingjs.org/reference/random_"><span class="kw2">random</span></a><span class="br0">(</span><span class="nu0">0</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      <span class="br0">}</span>
+ 
+      <span class="co1">//I made the code as much versatile as possible, so scaling goes smoothly</span>
+ 
+          <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span>lightBlue<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textFont_"><span class="kw2">textFont</span></a><span class="br0">(</span>chunkfive<span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/textAlign_"><span class="kw2">textAlign</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a>, <a href="http://processingjs.org/reference/CENTER"><span class="kw14">CENTER</span></a><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/text_"><span class="kw2">text</span></a><span class="br0">(</span>tagline, <a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">2</span>, <a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//more text stuff</span>
+ 
+ <span class="coMULTI">/*I decided to introduce some kind of waves, like sinus or cosinus, ultimately I got to the following point,
+ when I couldn't really figure out how to put this stuff as it should've been so I used rotating and translating
+ code, which was a bit tricky at first but it got the job done well*/</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><span class="nu0">50</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">40</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a>/<span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> a = <span class="nu0">0.0</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/float"><span class="kw3">float</span></a> inc = <a href="http://processingjs.org/reference/TWO_PI"><span class="kw14">TWO_PI</span></a>/<span class="nu0">25.0</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  m <span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">//the wave thing</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://processingjs.org/reference/translate_"><span class="kw2">translate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a>/<span class="nu0">1.12</span>, -<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>+<span class="nu0">100</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://processingjs.org/reference/rotate_"><span class="kw2">rotate</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/PI"><span class="kw14">PI</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw9">for</span> <span class="br0">(</span><a href="http://processingjs.org/reference/int"><span class="kw3">int</span></a> i = <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">25</span><span class="sy0">;</span> i = i + <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+  <a href="http://processingjs.org/reference/line_"><span class="kw2">line</span></a><span class="br0">(</span>i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">50</span>, i<span class="sy0">*</span><a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">65</span>, <span class="nu0">0.01</span>+<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>/<span class="nu0">250</span><span class="sy0">*</span><a href="http://processingjs.org/reference/sin_"><span class="kw2">sin</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/radians_"><span class="kw2">radians</span></a><span class="br0">(</span><a href="http://processingjs.org/reference/frameCount"><span class="kw1">frameCount</span></a><span class="sy0">*</span><span class="nu0">10</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">*</span><a href="http://processingjs.org/reference/cos_"><span class="kw2">cos</span></a><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">*</span><span class="nu0">40.0</span><span class="br0">)</span><span class="sy0">;</span>
+  a = a + inc<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span>
+ 
+ <span class="co1">//And to nicely refresh the screen, we've got something which makes the sketch look neatly</span>
+ 
+<a href="http://processingjs.org/reference/void"><span class="kw3">void</span></a> screenClear<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <a href="http://processingjs.org/reference/fill_"><span class="kw2">fill</span></a><span class="br0">(</span><span class="nu0">255</span>,<span class="nu0">70</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/noStroke_"><span class="kw2">noStroke</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <a href="http://processingjs.org/reference/rect_"><span class="kw2">rect</span></a><span class="br0">(</span><span class="nu0">0</span>,<span class="nu0">0</span>,<a href="http://processingjs.org/reference/width"><span class="kw1">width</span></a>,<a href="http://processingjs.org/reference/height"><span class="kw1">height</span></a><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></code></pre>
+</div>
+
+<h1>Final Thoughts</h1>
+
+<p>The code is quite plain, however definitely not simple. The outcome may seem to be highly complex, however the length of the code indicates something quite the contrary. I'm pleased with the outcome, considering it accustomed all the design constraints.</p>
+
+        
+    </div>
+    <ul class="actions gallery_actions">
+<li class="action action_upload_image"><a href="http://peepproject.com/portfolios/entry/entry_id/gallery/image/new">Upload Picture</a></li>            
+    </ul>
+<div class="gallery">
+                
+        <ul class="gallery">
+<li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16224/gallery/0/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16224/gallery/0/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16224/gallery/0.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16224/gallery/thumbs/0.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16224/gallery/1/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16224/gallery/1/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16224/gallery/1.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16224/gallery/thumbs/1.jpg"></a>                    
+                </div>
+            </li>
+                    
+                        
+            <li class="gallery_item">
+                <div class="wrap">
+                    <ul class="actions">
+<li class="action action_delete"><a href="http://peepproject.com/portfolios/entry/16224/gallery/2/delete">Delete</a></li>                            
+                        <li class="action action_promote"><a href="http://peepproject.com/portfolios/entry/16224/gallery/2/promote">Promote</a></li>                            
+                    </ul>
+<a href="http://peepproject.com/media/images/portfolio/entries/16224/gallery/2.jpg"><img src="http://peepproject.com/media/images/portfolio/entries/16224/gallery/thumbs/2.jpg"></a>                    
+                </div>
+            </li>
+                        
+        </ul>
+</div>
+</div>            
+            </div>
+        </div>
+                
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js?v=2.4a1"></script><script type="text/javascript" src="http://peepproject.com/media/js/peep.js?v=2.4a1"></script><script type="text/javascript">
+                            
+                var user_id = '15033';                
+                            
+                var entry_id = 16224;                
+                            
+                var gallery_add = true;                
+                        
+        </script>
+</body>
+</html>
