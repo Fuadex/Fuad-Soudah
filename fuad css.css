@@ -34,6 +34,11 @@ background-color:#666666;
 .container-fluid{
     padding:none;
 }
+
+.navbar{
+  font-size:default;
+}
+
 .navbar-nav.navbar-right:last-child {
     margin-right: 0;
 }
@@ -92,20 +97,42 @@ background-color:#666666;
   color: black; text-shadow: white 0em 0em 0.2em;
   font-family:'Roboto', sans-serif;
   border:1px solid black;
-      -webkit-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-        -ms-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            overflow: hidden;
 }
 
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-8, .col-md-10{
+            overflow: hidden;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+.col-md-1:hover, .col-md-2:hover, .col-md-3:hover, .col-md-4:hover, .col-md-5:hover, .col-md-6:hover, .col-md-8:hover, .col-md-10:hover{
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+  }
+
 .col-sm-1:hover, .col-sm-2:hover, .col-sm-3:hover, .col-sm-4:hover, .col-sm-5:hover, .col-sm-6:hover, .col-sm-8:hover, .col-sm-10:hover{
-    -webkit-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-        -ms-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
               background-color:rgba(255,255,255,0.9);
+              overflow: hidden;
+                border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
 }
 
 
@@ -184,6 +211,7 @@ img{
   border-style:solid;
   border-width:1px;
   border-color:black;
+  max-width:100%;
 }
 
 img {
@@ -196,16 +224,6 @@ img {
     -o-transition: all 0.1s ease; /* Opera */
     transition: all 0.1s ease;
     vertical-align: middle;
-}
-
-div:hover {
-  z-index:999999;
-}
-
-img:hover {
-  /* bring your own prefixes */
-  transform: scale(1.5);
-  z-index: 9999999 !important;
 }
 
 @media (max-width: 767px) {
@@ -222,11 +240,12 @@ img:hover {
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767\px) {
 
   .sidebar-nav {
     padding: 9px 0;
 }
+
 
 .dropdown-menu .sub-menu {
     left: 100%;
@@ -268,9 +287,21 @@ img:hover {
 }
   }
 
+    @media (min-width: 990px){
+body{
+  font-size:7px;
+}
+}
+
   @media (min-width: 1024px){
 body{
-  font-size:8px;
+  font-size:9px;
+}
+}
+
+  @media (min-width: 1120px){
+body{
+  font-size:10px;
 }
 }
 
@@ -298,7 +329,13 @@ body{
 }
 }
 
-  @media (min-width: 1920px){
+@media (min-width: 1800px){
+body{
+  font-size:17px;
+}
+}
+
+@media (min-width: 1920px){
 body{
   font-size:18px;
 }
@@ -310,12 +347,33 @@ body{
 }
 }
 
-@media (min-width: 2160px){
+@media (min-width: 2304px){
 body{
-  font-size:21px;
+  font-size:24px;
 }
 }
 
+@media (min-width: 2880px){
+body{
+  font-size:26px;
+}
+}
+
+div:hover {
+  z-index:999999;
+}
+
+img:hover {
+  /* bring your own prefixes */
+  transform: scale(1.5);
+      -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: 9999999 !important;
+}
 
 .nayol{
   border:none;
