@@ -193,6 +193,26 @@ Version 0.7.2
 - Fixed index mobile (Seems Fixed)
 - Fixed contact mobile (Fixed)
 
+Version 0.7.3
+- Added images enlargements
+
+Version 0.7.4
+- Added image enlargements within divs
+
+Version 0.8
+- Complete navbar overhaul
+-- Now it fits the style of the website
+-- Underline transitions added
+- More transitions and borders
+
+Version 0.8.1
+- HOTFIX Adjustable picture on hover
+- HOTFIX Adjustable picture on text
+- HOTFIX Adjustable picture on grid
+
+The release contains 0.7.1, 0.7.2, 0.7.3 & 0.7.4
+Basically I made my site more interactive
+
 TO DO:
 
 - Adjustable pictures on hover
