@@ -27,7 +27,7 @@ document.write('\
     <div class="collapse navbar-collapse" id="myNavbar">\
     <ul class="nav navbar-nav">\
       <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphic Design\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphic\
         <ul class="dropdown-menu">\
           <li><a href="Martinstag.html">Martinstag</a></li>\
           <li><a href="3D Modelling.html">ChessBox</a></li>\
@@ -39,7 +39,8 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography\
         <ul class="dropdown-menu">\
-          <li><a href="Photos.html">Overview</a></li>\
+          <li><a href="Photos.html">Flickr</a></li>\
+          <li><a href="Instagram.html">Instagram</a></li>\
       </ul>\
             \
         </li>\
@@ -47,13 +48,14 @@ document.write('\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Videos\
         <ul class="dropdown-menu">\
           <li><a href="Vivid.html">Projection Mapping (Vivid 2015)</a></li>\
-          <li><a href="MusicVideos.html">Music Videos</a></li>\
+          <li><a href="MusicVideos.html">Mashups</a></li>\
       </ul>\
             \
         </li>\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog\
         <ul class="dropdown-menu">\
+          <li><a href="High Pitch Void.html">High Pitch Void</a></li>\
           <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
           <li><a href="Australian Dream.html">Australian Dream</a></li>\
           <li><a href="Another Series.html">Another Series</a></li>\
@@ -71,36 +73,43 @@ document.write('\
             \
         </li>\
       <li class="dropdown">\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VR\
+        <ul class="dropdown-menu">\
+          <li><a href="GradShow.html">Graduation Show 2017</a></li>\
+          <li><a href="Lone Island.html">Lone Island</a></li>\
+          <li><a href="Trouble Cruise.html">Trouble Cruise VR</a></li>\
+          <li><a href="Furniture.html">...</a></li>\
+      </ul>\
+            \
+        </li>\
+      <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Web\
         <ul class="dropdown-menu">\
-          <li><a href="https://fuadex.github.io/Fuad-Soudah/">New Personal Website</a></li>\
+          <li><a href="https://fuadex.github.io/Fuad-Soudah/">Fuad</a></li>\
           <li><a href="HCI2 Web.html">LMU</a></li>\
           <li><a href="Web Design & Technologies.html">Virgin Airlines</a></li>\
-          <li><a href="Fuadex 6.0.html">Old Personal Website</a></li>\
+          <li><a href="Fuadex 6.0.html">Fuad 2007</a></li>\
       </ul>\
             \
         </li>\
       <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Physical\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">HCI\
         <ul class="dropdown-menu">\
+          <li><a href="keto.html">Keto</a></li>\
           <li><a href="BoomBox.html">Boombox</a></li>\
           <li><a href="HCI2 Mob.html">Smartwatch</a></li>\
-          <li><a href="Physical.html">Medical</a></li>\
-      </ul>\
-            \
-        </li>\
-      <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming\
-        <ul class="dropdown-menu">\
+          <li><a href="Physical.html">Walkmate</a></li>\
           <li><a href="EventLocator.html">Event Locator</a></li>\
           <li><a href="Processing.html">Processing Projects</a></li>\
       </ul>\
+      \
+      </li>\
 \
             <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Game Design\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Game\
         <ul class="dropdown-menu">\
-          <li><a href="Game Concept.html">Serious Game Concept</a></li>\
-          <li><a href="Games and Play.html">Video Essay</a></li>\
+          <li><a href="Game Concept.html">Platform 21</a></li>\
+          <li><a href="Games and Play.html">Game Analysis</a></li>\
           <li><a href="Narrative Architecture.html">Narrative Architecture</a></li>\
           <li><a href="Digital Arts.html">Digital Arts</a></li>\
       </ul>\
@@ -122,6 +131,7 @@ document.write('\
       <li><a href="Culture 2.html"><span class="glyphicon glyphicon-heart"></span> Culture</a></li>\
       <li><a href="Education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>\
       <li><a href="Contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>\
+      <li><a href="Index - Copy.html"><span class="glyphicon glyphicon-qrcode"></span> About Me</a></li>\
     </ul>\
 \
 </nav>\

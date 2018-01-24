@@ -10,13 +10,14 @@ document.write('\
   <li><a href="Tertiles Uproar.html">Tertiles Uproar</a></li>\
   <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
   <li><a href="#">Dorfbladt</a></li>\
-  <li><a href="#">LMU SoSe</a></li>\
+  <li><a href="#">No i Gitara!</a></li>\
   <li><a href="Untitled 360.html">Untitled 360</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
+        <li><a href="Index.html"><span class="glyphicon glyphicon-home"></span></a></li>\
       <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
-      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.8</a></li>\
+      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9 BETA</a></li>\
     </ul>\
 \
 </nav>\

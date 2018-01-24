@@ -16,6 +16,63 @@ body{
     background-position: center;
     overflow-x: hidden;
 }
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2em;
+float: left;
+top: 50%;
+left: 50%;
+white-space: nowrap;
+transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.wob img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.wob:hover img {
+    opacity: 0.7;           
+}
+
+a.wob:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+iframe {
+    height: 30vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
 </style>
 
 </head>
@@ -28,10 +85,17 @@ body{
     <div class="row">
 
 <center><h2>Virgin Velocity</h2></center><br>
+</div>
 
+<div class="row">
       <center>
-      <iframe src="https://fuadex.github.io/Virgin-Concept/" width="90%" frameborder="0" allowfullscreen></iframe>
+        <a class="wob" href="https://fuadex.github.io/Virgin-Concept/">
+          <div class="text">Enter Redeveloped Virgin Airlines</div>
+        <img src="https://uhwmaq-db3pap001.files.1drv.com/y4mR3c6M1cIFC8ZaApve_k9uvEj6NoH-eDQ9ZrQBKZiWXZ5MNVqTqLsdyvT3I31Y2u5FBVZzPVrRSGUY10ROcJ_6rG7fgbQDgjKRTJmgsC8mxfNDUK7E6An6QAC2J298rxuGVT0ir6DFs3WElbha5EecS2gJ2KKw2OMNd8ZqYUIPCNdiJeBTEKKPs-FQ7nDHyyzf-IIGceA6w5izqlKVXbJYA?width=1000&height=545&cropmode=none" width="50%"/>
+      </a>
     </center>
+<br></div>
+
     <div class="row">
 <div class="col-sm-3 col-sm-offset-1">
   Project:<br>
@@ -49,19 +113,19 @@ body{
     Release:<br>
     November 2015
 </div></div>
-<br><br>
+<br>
 
 <a href="#test"> <!--Comunicates with id 'test'-->
   <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
 </a>
 
+      <div class="row">
 <div id="hidden_content">
   <div id="test"></div>
 
 <center><h2><a href="http://fuadex.cba.pl">The Original Website with all the working features<br>
   May Be Found Here (Please click on the text)</a></h2></center>
 
-      <div class="row">
   <div class="col-sm-8 col-sm-offset-2">
     <br>
     Well... With this unit I had a gigantic problem, as I may be really stubborn at times, I heavily messed up my first and then second assignments, which were as following: wireframes and, as I recall, a mid-fi concept. Similarly to 3D Modelling project, I just had problems at the very beginning of the year and then I realised, that, well, obviously I usually designed webpages in a different fashion, by just writing lines of code for the damn thing, having already envisioned what it could look like. But no, times have changed, now there are different ways, that I did not really use so far and did not plan on using.<br><br>
@@ -70,10 +134,8 @@ body{
 
     How about some more information? Well, at the bottom of this page you may find everything that you may need to learn. The sign up button will trigger capturing of all the information you filled in, potentially making it useful for proper data collection via an actual database.<br><br>
 
-    Also, it is responsive. Mobile friendly. And the code is well documented. I received a distinction for that project and saved my unit from failing it altogether. Still, it does hurt that I performed so badly in the recent assignments, as the final mark does not reflect my skills in web design.<br><br>
-</div>
-
-      </div>
+    Also, it is responsive. Mobile friendly. And the code is well documented. I received a distinction for that project and saved my unit from failing it altogether. Still, it does hurt that I performed so badly in the recent assignments, as the final mark does not reflect my skills in web design.
+    <br><br>
 
       </div>
     </div>
