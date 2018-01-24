@@ -15,7 +15,7 @@ document.write('\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
-        <li><a href="Index.html"><span class="glyphicon glyphicon-home"></span></a></li>\
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>\
       <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
       <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9 BETA</a></li>\
     </ul>\

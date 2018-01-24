@@ -40,7 +40,8 @@ document.write('\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography\
         <ul class="dropdown-menu">\
           <li><a href="Photos.html">Flickr</a></li>\
-          <li><a href="Instagram.html">Instagram</a></li>\
+          <li><a href="Grasausschuss Pho.html">Grasausschuss</a></li>\
+          <li><a href="#">Instagram</a></li>\
       </ul>\
             \
         </li>\
@@ -131,7 +132,7 @@ document.write('\
       <li><a href="Culture 2.html"><span class="glyphicon glyphicon-heart"></span> Culture</a></li>\
       <li><a href="Education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>\
       <li><a href="Contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>\
-      <li><a href="Index - Copy.html"><span class="glyphicon glyphicon-qrcode"></span> About Me</a></li>\
+      <li><a href="index - Copy.html"><span class="glyphicon glyphicon-qrcode"></span> About Me</a></li>\
     </ul>\
 \
 </nav>\
