@@ -355,6 +355,11 @@ img {
       height:70vw !important;
     }
 
+    body{
+      background: url(#) !important;
+      background: radial-gradient(white, rgba(200,200,200,1)) !important;
+    }
+
     h1, h2{
     border-width:1px;
   border-style:solid;
@@ -628,7 +633,6 @@ transform: scaleX(1);
     color: #555;
     background-color: rgba(255,255,255,0.5);
     border-radius: 35px;
-
 }
 /* Caret */
 .navbar-inverse .navbar-nav > .dropdown > a .caret {

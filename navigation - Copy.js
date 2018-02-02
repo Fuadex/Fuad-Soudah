@@ -125,6 +125,5 @@ document.write('\
 \
 </nav>\
 </div>\
-</div>\
 <div id="top"></div>\
 ');
