@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+
+video {
+    border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      width: 50%;
+  preload:auto;
+}
+
+
+iframe {
+    height: 29.5vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
+</style>
+
+</head>
+<body>
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+    <div class="row">
+
+<center><h2>Databases</h2></center><br>
+</div>
+
+<div class="row">
+<center>
+<iframe src="https://onedrive.live.com/embed?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2172434&authkey=APsib4a_f4SLk64&em=2" width="50%" frameborder="0" scrolling="no"></iframe>
+</center>
+</div>
+
+<div class="row">
+<div class="col-sm-1 col-sm-offset-2">
+  Project:<br>
+  Databases
+</div>
+<a href="http://www.d17.design/#meet-team">
+<div class="col-sm-3">
+  Creator:<br>
+  Damian Martelli, Andrew Mackertich, Fuad Soudah
+</div></a>
+<div class="col-sm-3">
+  Tools:<br>
+  PostgreSQL, Flask, Python
+</div>
+  <div class="col-sm-1">
+    Release:<br>
+    July 2016
+</div>
+</div>
+<br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+
+  <div id="button"><h2><center>Additional Information</center></h2></div> <!-- A whole button block will definitely draw attention-->
+</a>
+<br>
+
+      <div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+  <center><h2>ANX</h2></center><br>
+
+<center>
+<iframe src="https://onedrive.live.com/embed?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2172677&authkey=AOxDsUGXfu_VlL4&em=2" width="50%" frameborder="0" scrolling="no"></iframe>
+</center>
+
+
+<div class="col-sm-1 col-sm-offset-2">
+  Project:<br>
+  ANX
+</div>
+<a href="http://www.d17.design/#meet-team">
+<div class="col-sm-1">
+  Creator:<br>
+  Fuad Soudah
+</div></a>
+<div class="col-sm-5">
+  Tools:<br>
+  Arduino, LCD, Piezzo, LED, Buttons and more...
+</div>
+  <div class="col-sm-1">
+    Release:<br>
+    October 2017
+
+</div>
+<br><br>
+
+
+  <div class="col-sm-8 col-sm-offset-2">
+<br>
+  TBA<br><br>
+</div>
+</div>
+
+</div></div>
+
+<br>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+<script src="footer.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

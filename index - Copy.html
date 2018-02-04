@@ -52,6 +52,57 @@ h4{
     background-size: cover;
 }
 
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+
 </style>
 
 
@@ -85,14 +136,16 @@ function getRandomImage() {
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
-    <img src="linkedinb.jpg" width="100%"><br>
+    <a href="#" class="darken"><img src="linkedinb.jpg" width="100%"></a><br>
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
     <center><h4>Aspection</h4></center>
 
-    My name is Fuad Soudah. I am a 21 years old aspiring designer, on exchange at University of Munich, studying at University of Sydney.<br><br>
+    Hey There! I guess you already know a few things about me already and yet, notwithstanding, would like to learn a little bit more, aye? Alrighty then, let's get started! Shall we?<br><br>
 
-    My areas of expertise encompass: Graphic Design, Video Montage and Web Development. Of late, I synergically apply knowledges, to name a few: Human-Computer Interaction, User Experience and Information Visualization in order to deliver the most accommodating solutions. Furthermore, I have a fair knowledge of Database Systems, Programming, Physical Computing and Environmental Development. One hobby is persistently pursued throughout the years was running a detailed, extensive blog, recently enriched by compelling photography that I post-process and capture on my own.<br><br>
+    I guess if I called myself a quite complex fella, it wouldn't be quite an overexaggeration. Perhaps quite the contrary and then some. I mean, how did a fella end up halfway around the world, back and forth, every now and then and still manage to prep up the website you're currently lookin' at, eh? Well, before I get anytime soon started, perhaps you'd like to take a look at my <a href="Culture 2.html">cultural side</a> and hobby's such as <a href="Photos.html">Photography</a> and fixing up <a href="Music Videos.html">custom music videos?</a><br><br>
+
+    No? You already past that? Well then, let's start with taking a glimpse at who I am and where I come from. Everything and everyone has a start and and end, wouldn't you agree? <br><br>
 
   </div><br>
 </div>
@@ -100,7 +153,7 @@ function getRandomImage() {
 <div class="row">
 <div class="col-md-8 col-md-offset-2 panel">
   <center><h4>Retrospection</h4></center>
-    I was born in St. Leonards, Sydney in Australia. I attended preschool and then the first year of my primary school in Ingleburn, New South Wales. At the age of 6, my parents decided to leave for a rural area of Stara Iwiczna, located near Warsaw in Poland. These were 6 years of my life, the very start of my journey. Thereon, I finished 6 years in Primary School and the following 3 years in secondary school, both of which took place in Nowa Iwiczna. Afterwards, I did 3 years of high school in Piaseczno, with specializations established in mathematics, physics and geography. Shortly after my final exams, I left for Sydney, Australia where I made an attempt at constructing stable foundations for my future. A year later, I enrolled in the Design Computing Bachelor program at the Faculty of Architecture, Design and Planning in University of Sydney. After having completed 3 semesters, I was granted 2 semesters of exchange at University of Munich, where I am currently pursuing degree-related units of study.<br><br>
+    I was born at St. Leonards in Sydney, Australia. I attended preschool and then the first year of my primary school in Ingleburn, New South Wales. At the age of 6, my parents decided to leave for a rural area of Stara Iwiczna, located near, south of Warsaw in Poland. Thereon, I finished 6 years in Primary School and the following 3 years in secondary school, both of which hosted in Nowa Iwiczna. Afterwards, I did 3 years of high school in neighouring town of Piaseczno, with specializations established in mathematics, physics and geography. After completing which, shortly after my final exams, I left for Sydney, Australia - where I made an attempt at constructing reasonably stable foundations for my future. Half a year later, I enrolled in Bachelor of Design Computing program at the Faculty of Architecture, Design and Planning at University of Sydney. After having completed 3 semesters, I was granted 2 semesters of exchange at University of Munich, where I pursued degree-related units of study, upon completing which I came back and finalized my degree in Sydney.<br><br>
 </div>
 </div>
 
@@ -118,9 +171,9 @@ function getRandomImage() {
 
     <center><h4>Introspection</h4></center>
 
-    I have been commited to quite a few radical changes throughout the entire span of my life, most of which took place beyond my control. If there were three qualities by which my works are driven, I would enumerate: Ambition, Innovation and Dilligence. Ambitious of the projects' scope, Innovative of the solutions incorporated and dilligent by the passion put forward towards refinement and conclusion. I enjoy working on my projects from a variety of perspectives and taking them upon by novel attempts. Lately, I have been increasingly relating to existing techniques, yet I remained with my belief that finding a more compelling solution requires an even more refined approach.<br><br>
+    I have been commited to quite a few radical changes throughout the entire span of my life, most of which took place beyond my control. If there were three qualities by which my works are driven, I would enumerate: Ambition, Innovation and Dilligence. Ambitious of the projects' scope, Innovative of the solutions incorporated and dilligent by the passion put forward towards refinement and conclusion. I enjoy working on my projects from a variety of perspectives and taking them upon by novel attempts. Lately, I have been increasingly relating to industry-grade techniques, yet I remained with my belief that reaching compelling solutions requires at times an elaborate and refined approach.<br><br>
 
-    Unfortunately, significant changes in my life tended to hamper with my qualities, at times, in combination with constant, high stress levels and a lack of proper schedule, created a void that eaten and mashed up the best of me, leaving flattened abilities and knowledges I found at hardship employing in my works. Throughout most of my life, I found difficulties in reaching stability and a perspective. As of late, the latter has radically improved and in case of the former, this website is intended to introduce a total overhaul in regards to its perception.<br><br>
+    As a result, I managed to acquire a range of skills presented on this very website, enriched with embeds of Documents and Presentations. The quality of works is of utmost importance and while the process follows or even matches, it is the circumstances in which the projects were raised that breathes and showcases its life. The inspirations, longings, design choices, thinking methods, all the processes, motivations. I did my best to foreclose all of the aforementioned and even more at the utmost of all the angles.<br><br>
 
 </div>
 </div><br>
@@ -137,23 +190,21 @@ function getRandomImage() {
 
     <center><h4>Futurospection</h4></center>
 
-        What the future holds? It's often uncertain. I usually do not write about, as of the aforementioned. Yet, an exception will be made, as I took an impossible course and am currently leaving a broken-inconceivable life. So why not dream a bit?<br><br>
+        The Future is usually quite uncertain, nevertheless envisioning is ultimately a part of a design process. So why not dream a bit?<br><br>
 
-        This semester I took a B2.2 German Course. Did a leap over B2.1. I also took 6 lectures, out of which 5 are driven in German. They include: Writing and Presenting a Research Paper, Producing a Film, getting a grip on the following programming languages and libraries: Python, C++, Cocos2D, PyGame, JavaFX, D3.js, OpenGL, according projects will be made. On top of which I am required to acquire a vast range of theoretical knowledges, to name a few: Interaction Design followed by Human-Computer Interaction.<br><br>
+        An attempt to master and incorporate a vast range of programming languages is on my agenda. Enriching my skills in the visual sphere and delving more into working with Game Engines are some things I would eventually enjoy getting beyond proficient. Further developing my current language skills and broadening my horizons towards new ones may further enhance my horizons.<br><br>
 
-        Afterwards? Last semester in Sydney, potentially an immense project that I will be taking upon. Could try pursuing a year of honors or go straight into a master's program. The question is, how do I see myself at the age of 24? Currently I may operate fluently in two languages. In three years I would like five. Today I may seldom program. In three years, I would like to acquire the entire spectrum of high and low level programming skills. But before all, I would like to be able to consistently apply all of my skills, the qualities of which I plan on improving on multiple vectors.<br><br>
-
-        Please take a look at my future (including current) projects on the navigation bar included below.<br><br>
+        Oh, yeah and revamping the hardware that I will work on for and in any future ventures entailing myself is consistently on my mind. Along with continuing my education and professional career. Putting at foremost, increasing my autonomy and potential for further development.<br><br>
       </div>
     </div>
 
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34643726810/in/dateposted-public/" title="DSC_6097b"><img src="https://farm5.staticflickr.com/4275/34643726810_97648f8bb4_b.jpg" width="100%" alt="DSC_6097b"></a><br>
+<a data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/34643726810/in/dateposted-public/" title="DSC_6097b"><img src="https://farm5.staticflickr.com/4275/34643726810_97648f8bb4_b.jpg" width="100%" alt="DSC_6097b"></a><br>
   </div>
     <div class="col-md-4">
-    <a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34899289091/in/dateposted-public/" title="DSC_6862"><img src="https://farm5.staticflickr.com/4250/34899289091_23eaa12fb8_b.jpg" width="100%" alt="DSC_6862"></a><br>
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/34899289091/in/dateposted-public/" title="DSC_6862"><img src="https://farm5.staticflickr.com/4250/34899289091_23eaa12fb8_b.jpg" width="100%" alt="DSC_6862"></a><br>
   </div>
 </div>
 <br>
@@ -163,22 +214,27 @@ function getRandomImage() {
 
     <center><h4>Reinspection</h4></center>
 
-    My father is an overqualified Engineer. My mother is greatly skilled in Fine Arts.<br>
-    I assume that I established myself a middle ground by binding technical and creative, ultimately becoming a designer.<br>
+    My father is an Engineer and my mother is skilled in Fine Arts.<br>
+    I assume that I established myself a middle ground by binding technical and creative - becoming a designer.<br>
     Thereof I managed to acquire a broad selection of knowledges which on top was complemented with writing skills and a digital touch left upon.<br><br>
 
-    The quality of works is of utmost importance and while the process follows or even matches, it is the circumstances in which the projects were raised that breathes and showcases its life. The inspirations, longings, design choices, thinking methods, all the processes, motivations. I did my best to foreclose all of the aforementioned and even more at the utmost of all the angles.<br><br>
+    What do I leave it with, though? Well, let's take a look at my key hardware:<br><br>
+    Headphones: Audiotechnica M40x, <s>Sony MDR-V6</s><br>
+    IEMs: Custom Art FIBAE 1, <s>Philips Fidelio S2, Etymotics ETY Kids 3, Soundmagic E30, (...)</s><br>
+    Camera: Nikon D750 + 24-120mm f4, <s>D5200 + 18-105mm f3.5-5.6 + 35mm f1.8</s>
+    Smartphone: Galaxy S7,<s> Note 3, S2</s><br>
+    Computer: Surface Book 2 (15"),<s> Surface Pro 3</s><br><br>
 
-    Please, take note: I worked on this website alone. Some scripts and solutions were used as recommended by google or stackoverflow, yet, it took me around a month of heavy research, recovering most of the materials I ever was envolved with. Constructing the website alone, its user experience and backend design took me a significant amount of time, especially fixing all the glitches and introducing workarounds at times made the entire experience as futile as it gets. Eventually, the effort somehow did match my expectations and just then I realised: all of the projects that I included must have taken thousands of hours, uni-related and personal works altogether. Count thrice for the ones I dropped and planned on getting back to eventually. It is my desire, that in terms of quality, the projects may speak for themselves. Yet, who am I to judge?<br><br>
+    As a rule, I always prefered versatility and close-to-reality quality, as if just pure and neutral. Nevertheless, lately I am looking increasingly more into enriching experiences via experimentation and well established techniques.<br><br>
   </div>
 </div>
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
-        <a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34643903330/in/dateposted-public/" title="DSC_4648ver2"><img src="https://farm5.staticflickr.com/4271/34643903330_2c286bcacd_b.jpg" width="100%" alt="DSC_4648ver2"></a><br>
+        <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/34643903330/in/dateposted-public/" title="DSC_4648ver2"><img src="https://farm5.staticflickr.com/4271/34643903330_2c286bcacd_b.jpg" width="100%" alt="DSC_4648ver2"></a><br>
   </div>
     <div class="col-md-4">
-    <a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34221090423/in/dateposted-public/" title="DSC_3990ver1"><img src="https://farm5.staticflickr.com/4220/34221090423_f6fbffa1b6_b.jpg" width="100%" alt="DSC_3990ver1"></a><br>
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/34221090423/in/dateposted-public/" title="DSC_3990ver1"><img src="https://farm5.staticflickr.com/4220/34221090423_f6fbffa1b6_b.jpg" width="100%" alt="DSC_3990ver1"></a><br>
   </div>
 </div>
 <br>
@@ -190,9 +246,9 @@ function getRandomImage() {
 
     My suggestion is to take a peek at the Education page first. Upon investigation, you will find according subpages with the relevant projects that I have been working on, related to the units that I have been doing in the past. Most of the materials will feature presentations, documentations, photo, video & audio content, linked to external services such as: youtube, onedrive, flickr etc. I did my best to reference everyone that was involved in the group projects. If by any chance I happened to miss anyone, please <a href="mailto: fuadex@gmail.com">notify me.</a><br><br>
 
-    I eventually managed to scrape off most of the materials that I have ever built, raised, created and cultivated. In the process, I recalled, finally, ablebodied to put together the crucial parts and a compelling, close to its true nature - a backstory. Every one and each, I believe, has or, at the very least, deserves a matching story. Extra materials will be provided, that may shed some light onto the more creative ways that were applied throughout the process of a variety of projects. Consider it, a tiny bit of makeup. Which evokes the tasty details. Sprinkled with insights.<br><br>
+    I eventually managed to scrape off most of the materials that I have ever built, raised, created and cultivated. In the process, I recalled and finally ablebodied to put together the crucial parts and a compelling, close to its true nature - a backstory. Every one and each, I believe, has or, at the very least, deserves a matching story. Extra materials will be provided, that may shed some light onto the more creative ways that were applied throughout the process of a variety of projects. Consider it, a tiny bit of makeup. Which evokes the tasty details. Sprinkled with a handful of insights.<br><br>
 
-    Are you interested in my website's evolution? Please find attached the changes subpage at the bottom right corner. In case if you were trying to reach me, please use the Contact subpage in the top right corner. What about the cultural background I was raised in? You may find just as much in the top right corner. Embraced by myself and the magic that comes with. Alternatively, you may take a look at my vertical timeline, at the bottom right corner. By this time, most of the content ought to be in place.<br><br>
+    Are you interested in my website's evolution? Please find attached the changes subpage at the bottom right corner. In case you were trying to reach me, please use the Contact subpage in the top right corner. What about the cultural background I was raised in? You may find just as much in the top right corner. Embraced by myself and the magic that comes with. Alternatively, you may take a look at my vertical timeline, at the bottom right corner. By this time, most of the content ought to be in place.<br><br>
 
     I do hope that your stay on my website will be a pleasant one.<br><br>
 </div>

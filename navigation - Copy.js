@@ -78,7 +78,7 @@ document.write('\
           <li><a href="keto.html">Keto</a></li>\
           <li><a href="BoomBox.html">Boombox</a></li>\
           <li><a href="HCI2 Mob.html">Smartwatch</a></li>\
-          <li><a href="#">Postgresql Database</a></li>\
+          <li><a href="Databases.html">Postgresql Database</a></li>\
           <li><a href="Physical.html">Walkmate</a></li>\
           <li><a href="EventLocator.html">Event Locator</a></li>\
           <li><a href="Processing.html">Processing Projects</a></li>\
@@ -109,7 +109,7 @@ document.write('\
         <ul class="dropdown-menu">\
           <li><a href="Photos.html">Flickr</a></li>\
           <li><a href="Grasausschuss Pho.html">Grasausschuss</a></li>\
-          <li><a href="#">Instagram</a></li>\
+          <li><a href="Instagram.html">Instagram</a></li>\
       </ul>\
             \
         </li>\

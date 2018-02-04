@@ -8,25 +8,7 @@
 <link rel="stylesheet" href="fuad css.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-
-
-<link rel="stylesheet" href="fuad css.css" type="text/css">
-
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 <style>
-h2{
-  background:none;
-  padding-top:8px;
-  padding-bottom:0px;
-}
-
-.panel{
-  background-color:rgba(255,255,255,0.65);
-  color: black; text-shadow: white 0em 0em 0.5em;
-  font-family:'Roboto', sans-serif;
-border:1px solid black;
-}
 
 body{
   background-image: url(DSC_1676.jpg);
@@ -36,48 +18,120 @@ body{
     overflow-x: hidden;
 }
 
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
 
 </style>
 
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'https://c1.staticflickr.com/5/4196/34070156813_71d2accbf8_n.jpg';
+    ImageArray[1] = 'https://c1.staticflickr.com/5/4204/34717635622_67741a7180_n.jpg';
+  
 
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
 
+}
+</script>
 
 </head>
-<body>
-
+<body onload="getRandomImage()">
 <script src="navigation.js"></script>
-
 
 <!-- BODY BODY BODY-->
 
 <div class="container-fluid">
 
-<center><h1>Untitled 360</h1></center><br>
+<div class="row">
+<center><h2>Untitled 360</h2></center><br>
+</div>
 
 <center>
-<iframe width="80%" src="https://www.youtube.com/embed/yWI2GPTkRyM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+<a data-flickr-embed="true" class="darken"  href="https://www.youtube.com/watch?v=zTqARnXOGJ4"><div class="text">E01S01</div><img src="Untitled/b.jpg" width="100%"></a><br>
+</div></div>
 </center>
 
 <div class="row">
-<div class="col-sm-2 col-sm-offset-2">
-  Project:<br>
-  Untitled 360
+<center><h2>Pre-Untitled 360</h2></center><br>
 </div>
-<div class="col-sm-3">
-  Place:<br>
-  Munich's Olympic Village
-  </div>
-<div class="col-sm-2">
-  Tools:<br>
-  Gear 360
-</div>
-  <div class="col-sm-1">
-  Release:<br>
-  Sep 2016
-</div>
-<br><br>
 
+<div class="row">
+
+<center>
+<div class="col-lg-4 col-lg-offset-2">
+<a data-flickr-embed="true" class="darken"  href="https://www.youtube.com/watch?v=xsfZkW1rjxA"><div class="text">Trailer</div><img src="Untitled/c.jpg" width="100%"></a><br>
 </div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="https://www.youtube.com/watch?v=rqQqh29ExT0"><div class="text">Ljubljana</div><img src="Untitled/d.jpg" width="100%"></a><br>
+</div></div>
+</center>
+
+<center>
+
+  <div class="row">
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="https://www.youtube.com/watch?v=nQQz9LJr558"><div class="text">Olydorf</div><img src="Untitled/a.jpg" width="100%"></a><br>
+</div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="https://www.youtube.com/watch?v=G2igXqsnLOw"><div class="text">Salzburg</div><img src="Untitled/e.jpg" width="100%"></a><br>
+</div>
+<div class="col-lg-4">
+<a data-flickr-embed="true" class="darken"  href="https://www.youtube.com/watch?v=yWI2GPTkRyM"><div class="text">Olydorf</div><img src="Untitled/f.jpg" width="100%"></a><br>
+</div></div>
+</center>
+
 
 <a href="#test"> <!--Comunicates with id 'test'-->
   <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
@@ -88,13 +142,15 @@ body{
   <div id="test"></div>
 
   <div class="col-sm-8 col-sm-offset-2">
-    <br>Since 2016, can't recall exactly when, I decided to get myself into quite a piece of hardware. 360 camera! At the time, I assumed that Gear 360 would be the deal breaker. 4K videos, waterproof, what else you might need? A piece of hardware a little larger than a golf ball, a little smaller than a tennis ball. Capable of capturing everything around. Might be of use for Virtual Reality hardware. Yet, is perfectly fit for other devices, especially smartphones which make use of built in gyroscope. Touch enabled devices are compatible with these videos as well.<br><br>
+    <br>Once you move outside of where you used to live, you start to wonder: what did I miss, throughout all these years that I left right, not that long ago?<br><br>
 
-    Travel blogs are gaining heavily on popularity, although it may seem from my perspective that their growth already reached its peak. What did not get through yet, is the use of a little more innovative approach. Believe it or not, Virtual Reality has a 50:50 chance, of becoming the future of how we interact digitally with the world. Personally? I believe augmented and mixed reality has a much larger potential, yet... To think of all the possibilities...<br><br>
+    Europe is a wonderful continent. Rich with culture, with an abundance of nations scattered across the lands. Unfortunately, once I came back I didn't really find anything that I presumed I'd be looking for. So once my stay in Munich started getting heavy to the extent that it was quite unbearable, with my exams incoming inexorably I decided to make a final stand.<br><br>
 
-    Unfortunately, Gear 360 is in possession of quite a few drawbacks, especially after its recent updates. Nevertheless, I have collected an enormous material that weighs over 300 GB already. It just awaits... proper attention and likely hundreds of hours of refinement. Rest assured, that is + 20 hours of material, out of which more than half may be worth seeing. I'm still unsure in which style am I going to pursue the editing part... But most likely it will be the classic Fuad: ambitious, innovative, dilligent. Which will never remain the same, yet will. With each episode being different. Showcasing progression, throughout my life in a way. And all the places that I've been so far.<br><br>
+    In physiology, there is the classic terminology that varietes between a fight and flight response. I combined both, once again in my life and undertook a combination of trips in order to find something, that germans sum up to one word: Sehnsucht, which in my case could translate into longing for something that I relentlessly awaited to discover. Something that could predestine my next steps in life, after the mobility period concludes.<br><br>
 
-    Once I get back to Australia. Just wait for it.<br><br>
+    Despite having discovered a great range of european cities, I did not find what I was looking for. But paradoxically, despite me neglecting heavily and hampering my studies, I managed to pass all of my exams. I wonder, if there is one more way to unlock myself?<br><br>
+
+    Anyway, the series is not yet finished, awaiting for a significant amount of free time, that might come after I come back to Sydney. I plan on publishing, probably more than around 12-15 extensive articles, that will describe the world through my eyes with a keen focus placed on the atmosphere of all the places, read through the cultural lenses and my personal experience.<br><br>
 </div>
 </div>
 </div>
@@ -103,7 +159,6 @@ body{
 <br>
 
 <script src="footer.js"></script>
-
 
 <script>
 $(document).ready(function(){
@@ -125,34 +180,14 @@ document.getElementById('button').onclick = function() {
     var target = document.getElementById('hidden_content');
     if( this.__toggle) {
         target.style.height = target.scrollHeight+"px";
-        this.firstChild.nodeValue = "Games and Play";
+        this.firstChild.nodeValue = "Hide Info";
     }
     else {
         target.style.height = 0;
-        this.firstChild.nodeValue = "Games and Play";
-        setTimeout(function() {
-       window.scrollTo(0,window.scrollY-300);
-        TopscrollTo();
-    }, 0);
+        this.firstChild.nodeValue = "Show Info";
     }
 }
 </script>
-
-<script>
-document.getElementById('button2').onclick = function() {
-    this.__toggle = !this.__toggle;
-    var target = document.getElementById('hidden_content2');
-    if( this.__toggle) {
-        target.style.height = target.scrollHeight+"px";
-        this.firstChild.nodeValue = "Human-Computer Interaction 2";
-    }
-    else {
-        target.style.height = 0;
-        this.firstChild.nodeValue = "Human-Computer Interaction 2";
-    }
-}
-</script>
-
 
     <script src="js/bootstrap.min.js"></script>
 </body>

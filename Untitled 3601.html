@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+body{
+  background-image: url(DSC_1676.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<script src="navigation.js"></script>
+
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<center><h1>Untitled 360</h1></center><br>
+
+<center>
+<iframe width="80%" src="https://www.youtube.com/embed/yWI2GPTkRyM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+
+<div class="row">
+<div class="col-sm-2 col-sm-offset-2">
+  Project:<br>
+  Untitled 360
+</div>
+<div class="col-sm-3">
+  Place:<br>
+  Munich's Olympic Village
+  </div>
+<div class="col-sm-2">
+  Tools:<br>
+  Gear 360
+</div>
+  <div class="col-sm-1">
+  Release:<br>
+  Sep 2016
+</div>
+<br><br>
+
+</div>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+  <div class="col-sm-8 col-sm-offset-2">
+    <br>Since 2016, can't recall exactly when, I decided to get myself into quite a piece of hardware. 360 camera! At the time, I assumed that Gear 360 would be the deal breaker. 4K videos, waterproof, what else you might need? A piece of hardware a little larger than a golf ball, a little smaller than a tennis ball. Capable of capturing everything around. Might be of use for Virtual Reality hardware. Yet, is perfectly fit for other devices, especially smartphones which make use of built in gyroscope. Touch enabled devices are compatible with these videos as well.<br><br>
+
+    Travel blogs are gaining heavily on popularity, although it may seem from my perspective that their growth already reached its peak. What did not get through yet, is the use of a little more innovative approach. Believe it or not, Virtual Reality has a 50:50 chance, of becoming the future of how we interact digitally with the world. Personally? I believe augmented and mixed reality has a much larger potential, yet... To think of all the possibilities...<br><br>
+
+    Unfortunately, Gear 360 is in possession of quite a few drawbacks, especially after its recent updates. Nevertheless, I have collected an enormous material that weighs over 300 GB already. It just awaits... proper attention and likely hundreds of hours of refinement. Rest assured, that is + 20 hours of material, out of which more than half may be worth seeing. I'm still unsure in which style am I going to pursue the editing part... But most likely it will be the classic Fuad: ambitious, innovative, dilligent. Which will never remain the same, yet will. With each episode being different. Showcasing progression, throughout my life in a way. And all the places that I've been so far.<br><br>
+
+    Once I get back to Australia. Just wait for it.<br><br>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+background-color:#666666;
+    background-image: url(DSC_0525.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+.ab1{
+    height: 24vw; /* 100/56.25 = 560/315 = 1.778 */
+    width: 44vw;
+    }
+
+
+.ab3{
+    height: 18vw; /* 100/56.25 = 560/315 = 1.778 */
+    width: 32vw;
+    }
+
+    .text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2em;
+float: left;
+top: 50%;
+left: 50%;
+white-space: nowrap;
+transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.wob img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.wob:hover img {
+    opacity: 0.7;           
+}
+
+a.wob:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.landscape {
+        float:left;
+        width:18vw;     
+        height:18vw;    
+        overflow:hidden;    
+    }
+
+.landscape  img{
+        width:auto;
+        height: 18vw;   
+    }
+
+.portrait {
+        float:left;
+        width:18vw;
+        height:18vw;
+        overflow:hidden;    
+    }
+
+.portrait img {
+        width:18vw;    <-- notice these
+        height: auto;   <-- have switched
+    }
+
+    .square {
+        float:left;
+        width:18vw;
+        height:18vw;
+        overflow:hidden;    
+    }
+
+.square img {
+        width:18vw;    <-- notice these
+        height: 18vw;   <-- have switched
+    }
+
+@media (max-width: 1024px) {
+
+.landscape {
+        float:left;
+        width:37vw;
+        height:37vw;    
+        overflow:hidden;    
+    }
+
+.landscape  img{
+        width:auto;
+        height: 37vw;   
+    }
+
+.portrait {
+        float:left;
+        width:37vw;
+        height:37vw;
+        overflow:hidden;    
+    }
+
+.portrait img {
+        width:37vw;    <-- notice these
+        height: auto;   <-- have switched
+    }
+
+    .square {
+        float:left;
+        width:37vw;
+        height:37vw;
+        overflow:hidden;    
+    }
+
+.square img {
+        width:37vw;    <-- notice these
+        height: 37vw;   <-- have switched
+    }
+}
+
+img{
+  margin:0.5vw;
+  object-fit: cover;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<script src="navigation.js"></script>
+
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<div class="row">
+<center><h1>Instagram</h1></center></div><br>
+
+<div class="row"><div class="col-xs-10 col-xs-offset-1"><center>
+  <div id="instafeed"></div>
+  <script src="instafeed.min.js"></script>
+  <script>
+    var feed = new Instafeed({
+      get: 'user',
+      userId: 237976118, // Ex: 1374300081
+      accessToken: '237976118.6df541c.20f5b8ffda1e4104b619ebe950ab3a88',
+      resolution: 'standard_resolution',
+      template: '<a href="{{link}}" class="wob"><img src="{{image}}" class="{{orientation}}"/></a>'
+    });
+    feed.run();
+  </script>
+</center>
+</div></div>
+<br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+  <div class="col-sm-8 col-sm-offset-2">
+    <br>TBA<br><br>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
