@@ -67,6 +67,19 @@ input, textarea {
   padding-right:15px;
 }
 
+.col-lg-1:hover, .col-lg-2:hover, .col-lg-3:hover, .col-lg-4:hover, .col-lg-5:hover, .col-lg-6:hover, .col-lg-8:hover, .col-lg-10:hover {
+              background-color:rgba(255,255,255,0.0);
+              overflow: hidden;
+                border-radius: 0px;
+  border-style:solid;
+  border-width:0px;
+  border-color:black;
+}
+
+.container{
+  padding:35px;
+}
+
 </style>
 
 
@@ -76,40 +89,40 @@ input, textarea {
 
 <!-- BODY BODY BODY-->
 
-<div class="container-fluid">
-
 <br>
 <center><h2>Say Hello!</h2></center><br><br>
+
+<div class="container-fluid">
 
 <form action="https://getform.org/f/dc0e015c-47a4-498f-a81d-ebb1401acd67" method="POST">
         
         <div class="row">
-        <div class="col-xs-2 col-xs-offset-3">
+        <div class="col-lg-2 col-lg-offset-3">
     <label>Name</label>
     <input class="panel" name="name" required>
   </div>
             
-            <div class="col-xs-2">
+            <div class="col-lg-2">
     <label>Email</label>
     <input class="panel" name="email" type="email">
   </div>
 
-<div class="col-xs-2">
+<div class="col-lg-2">
     <label>Subject</label>
     <input class="panel" name="subject" type="subject" required>
   </div></div>
             
             <div class="row">
-              <div class="col-xs-1 col-xs-offset-2">
+              <div class="col-lg-1 col-lg-offset-2">
                 <label>Text</label>
               </div>
-              <div class="col-xs-7">
+              <div class="col-lg-7">
     <textarea class="panel" minlength="20" maxlength="250" name="message"></textarea>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-xs-1 col-xs-offset-9">
+            <div class="col-lg-1 col-lg-offset-9">
     <input class="panel" id="submit" name="submit" type="submit" value="Submit">
   </div>
 </div>
@@ -118,10 +131,13 @@ input, textarea {
 </div>
   </div>
 
+<div class="container-fluid">
 <div class="row">
 
 <center>
-  <div class="col-xs-4 col-xs-offset-4">
+  <div class="col-lg-4 col-lg-offset-4">
+
+<div class="container">
 
       <a class="btn btn-block btn-social btn-google" href="mailto: fuadex@gmail.com">
     <span class="fa fa-google"></span> Gmail (contact@fuad.design)
