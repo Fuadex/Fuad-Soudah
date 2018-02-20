@@ -10,13 +10,13 @@ document.write('\
     <ul class="nav navbar-nav">\
   <li><a href="Tertiles Uproar.html">Tertiles Uproar</a></li>\
   <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
-  <li><a href="#">No i Gitara!</a></li>\
+  <li><a href="noigitara.html">No i Gitara!</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
         <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
       <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
-      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.95</a></li>\
+      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.98</a></li>\
     </ul>\
 \
 </nav>\
@@ -25,4 +25,12 @@ document.write('\
 </div>\
 </div>\
 </div>\
+\
+      <script src="scrollreveal.js"><\/script>\
+\
+      <script>\
+window.sr = ScrollReveal({ reset: true });\
+\
+sr.reveal(\'.row\', {opacity: 0,duration:1500});\
+<\/script>\
 ');

@@ -11,6 +11,11 @@ function doResize() {
 
 document.write('\
 \
+<div class="wrapper">\
+<div class="wrapper">\
+<div class="wrapper">\
+<div class="container-fluid">\
+    <div class="row">\
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">\
     <div class="navbar-header">\
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">\
@@ -119,6 +124,7 @@ document.write('\
     </ul>\
 \
 </nav>\
+</div>\
 </div>\
 <div id="top"></div>\
 ');
