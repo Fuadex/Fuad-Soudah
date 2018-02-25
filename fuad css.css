@@ -480,7 +480,7 @@ img {
 
   @media(min-width:992px){
     body{
-      font-size:0.8vw; <!-- 0.87 -->
+      font-size:0.74vw; <!-- 0.87 -->
     }
     h1{
       font-size:2.2vw; <!-- 2.5 -->
