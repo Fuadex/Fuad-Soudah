@@ -480,21 +480,21 @@ img {
 
   @media(min-width:992px){
     body{
-      font-size:0.87vw;
+      font-size:0.8vw; <!-- 0.87 -->
     }
     h1{
-      font-size:2.5vw;
+      font-size:2.2vw; <!-- 2.5 -->
     }
     h2{
-      font-size:2vw;
+      font-size:1.8vw; <!-- 2 -->
     }
 
     h4{
-      font-size:1.2vw;
+      font-size:1.1vw; <!-- 1.2 -->
     }
 
     h5{
-      font-size:0.97vw;
+      font-size:0.9vw; <!-- 0.97 -->
     }
   }
 
