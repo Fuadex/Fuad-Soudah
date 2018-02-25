@@ -34,7 +34,7 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog\
         <ul class="dropdown-menu">\
-          <li><a href="High Pitch Void.html">High Pitch Void</a></li>\
+          <li><a href="Blog.html">High Pitch Void</a></li>\
           <li><a href="Grasausschuss.html">Grasausschuss</a></li>\
           <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
           <li><a href="Radio.html">Radio X</a></li>\

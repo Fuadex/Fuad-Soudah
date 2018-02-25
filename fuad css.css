@@ -1,3 +1,20 @@
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  49% { opacity: 1; }
+  85%   { opacity: 0; }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  49% { opacity: 1; }
+  85%   { opacity: 0; }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  49% { opacity: 1; }
+  85%   { opacity: 0; }
+}
+@keyframes NAME-YOUR-ANIMATION {
+  49% { opacity: 1; }
+  85%   { opacity: 0; }
+}
+
 #Numberlist.dropdown-menu{
 min-width: 200px;
 }
@@ -136,31 +153,37 @@ background-color:#666666;
  .row > .col-md-1:first-child  img, .row > .col-md-2:first-child  img, .row > .col-md-3:first-child  img, .row > .col-md-4:first-child  img, .row > .col-md-5:first-child  img, .row > .col-md-6:first-child  img, .row > .col-md-8:first-child  img, .row > .col-md-1:first-child  img{
             overflow: hidden;
 border-radius: 100px 10px 100px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
  .row > .col-md-1:last-child  img, .row > .col-md-2:last-child  img, .row > .col-md-3:last-child  img, .row > .col-md-4:last-child  img, .row > .col-md-5:last-child  img, .row > .col-md-6:last-child  img, .row > .col-md-8:last-child  img, .row > .col-md-1:last-child  img{
             overflow: hidden;
 border-radius: 10px 100px 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
  .row > .col-sm-1:first-child  img, .row > .col-sm-2:first-child  img, .row > .col-sm-3:first-child  img, .row > .col-sm-4:first-child  img, .row > .col-sm-5:first-child  img, .row > .col-sm-6:first-child  img, .row > .col-sm-8:first-child  img, .row > .col-sm-1:first-child  img{
             overflow: hidden;
 border-radius: 100px 10px 100px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
  .row > .col-sm-1:last-child  img, .row > .col-sm-2:last-child  img, .row > .col-sm-3:last-child  img, .row > .col-sm-4:last-child  img, .row > .col-sm-5:last-child  img, .row > .col-sm-6:last-child  img, .row > .col-sm-8:last-child  img, .row > .col-sm-1:last-child  img{
             overflow: hidden;
 border-radius: 10px 100px 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
  .row > .col-lg-1:first-child  img, .row > .col-lg-2:first-child  img, .row > .col-lg-3:first-child  img, .row > .col-lg-4:first-child  img, .row > .col-lg-5:first-child  img, .row > .col-lg-6:first-child  img, .row > .col-lg-8:first-child  img, .row > .col-lg-1:first-child  img{
             overflow: hidden;
 border-radius: 100px 10px 100px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
  .row > .col-lg-1:last-child  img, .row > .col-lg-2:last-child  img, .row > .col-lg-3:last-child  img, .row > .col-lg-4:last-child  img, .row > .col-lg-5:last-child  img, .row > .col-lg-6:last-child  img, .row > .col-lg-8:last-child  img, .row > .col-lg-1:last-child  img{
             overflow: hidden;
 border-radius: 10px 100px 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .col-md-1:hover, .col-md-2:hover, .col-md-3:hover, .col-md-4:hover, .col-md-5:hover, .col-md-6:hover, .col-md-7:hover, .col-md-8:hover, .col-md-10:hover{
@@ -173,6 +196,7 @@ border-radius: 10px 100px 10px;
   border-style:solid;
   border-width:1px;
   border-color:black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 
 .col-sm-1:hover, .col-sm-2:hover, .col-sm-3:hover, .col-sm-4:hover, .col-sm-5:hover, .col-sm-6:hover, .col-sm-7:hover, .col-sm-8:hover, .col-sm-10:hover {
@@ -187,6 +211,7 @@ border-radius: 10px 100px 10px;
   border-style:solid;
   border-width:1px;
   border-color:black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .col-lg-1:hover, .col-lg-2:hover, .col-lg-3:hover, .col-lg-4:hover, .col-lg-5:hover, .col-lg-6:hover, .col-lg-8:hover, .col-lg-10:hover {
@@ -201,6 +226,7 @@ border-radius: 10px 100px 10px;
   border-style:solid;
   border-width:1px;
   border-color:black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .col-lg-1:hover img, .col-lg-2:hover img, .col-lg-3:hover img, .col-lg-4:hover img, .col-lg-5:hover img, .col-lg-6:hover img, .col-lg-8:hover img, .col-lg-10:hover img{
@@ -213,6 +239,7 @@ border-radius: 10px 100px 10px;
             transition: all 0.7s ease;
             transform: scale(1.3);
   z-index: 9999999 !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .col-md-1:hover img, .col-md-2:hover img, .col-md-3:hover img, .col-md-4:hover img, .col-md-5:hover img, .col-md-6:hover img, .col-md-8:hover img, .col-md-10:hover img{
@@ -225,6 +252,7 @@ border-radius: 10px 100px 10px;
             transition: all 0.7s ease;
             transform: scale(1.3);
   z-index: 9999999 !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .col-sm-1:hover img, .col-sm-2:hover img, .col-sm-3:hover img, .col-sm-4:hover img, .col-sm-5:hover img, .col-sm-6:hover img, .col-sm-8:hover img, .col-sm-10:hover img{
@@ -237,6 +265,7 @@ border-radius: 10px 100px 10px;
             transition: all 0.7s ease;
             transform: scale(1.3);
   z-index: 9999999 !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
@@ -280,25 +309,26 @@ h1:hover, h2:hover{
   border-width:1px;
   border-style:solid;
   border-color:black;
-        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0.5) 100%);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0.5)));
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0.5)));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0.5) 100%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0.5) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0.5) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 100%);
   /* IE10+ */
   background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 100%);
   /* W3C */
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
-      -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-        -ms-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+
+              -webkit-animation: NAME-YOUR-ANIMATION 5s infinite; /* Safari 4+ */
+  -moz-animation:    NAME-YOUR-ANIMATION 5s infinite; /* Fx 5+ */
+  -o-animation:      NAME-YOUR-ANIMATION 5s infinite; /* Opera 12+ */
+  animation:         NAME-YOUR-ANIMATION 5s infinite; /* IE 10+, Fx 29+ */
+
 }
 
 .panel-yalo{
@@ -340,6 +370,7 @@ img {
   border-width:1px;
   border-color:black;
   max-width:100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 @media (max-width: 767px) {
@@ -437,7 +468,38 @@ img {
 
   }
 
-    @media (min-width: 992px){
+  @media (max-width:992px){
+    body{
+    font-size: 1.9vh;
+  }
+
+  h1{
+    font-size:4vh;
+  }
+  }
+
+  @media(min-width:992px){
+    body{
+      font-size:0.87vw;
+    }
+    h1{
+      font-size:2.5vw;
+    }
+    h2{
+      font-size:2vw;
+    }
+
+    h4{
+      font-size:1.2vw;
+    }
+
+    h5{
+      font-size:0.97vw;
+    }
+  }
+
+<script>/*
+   @media (min-width: 992px){
 body{
   font-size:8px;
 }
@@ -556,6 +618,7 @@ body{
   font-size:22px;
 }
 }
+*/</script>
 
 div:hover {
   z-index:999999;
