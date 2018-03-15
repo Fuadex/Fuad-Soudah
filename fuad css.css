@@ -498,7 +498,7 @@ img {
     }
   }
 
-<script>/*
+/*
    @media (min-width: 992px){
 body{
   font-size:8px;
@@ -618,7 +618,7 @@ body{
   font-size:22px;
 }
 }
-*/</script>
+*/
 
 div:hover {
   z-index:999999;

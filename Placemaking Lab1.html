@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+  background:url(DSC_1559-4.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+video{
+	width:50%;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+<center><h1>10/03/2018 - Back to Arduino - 17/03/2018</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://ighifw.db.files.1drv.com/y4mcCTj4ZxvlIGKTXOHddl-sN-aBu979ClaIGKsVBjxltRZ07ZjAzB1scxkXi7FOzjgA0TMnaNNZM2_h6W0WZqvv-RoCxuNO24uJEf0Ig5kRcJztm8eWWUa6T3PB-Qc5s0g4OcQpTOrngbQSvIbu_KlBvnB9G3vhhej2bcAdVvWy_kFQDKFXDvSrikVtOhC9qnNyL9BZ1OjFBK6AdfGZWK0qQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Brief task overview</h4></center>
+
+I believe the task was to combine:<br>
+- An arduino board<br>
+- Breadboard<br>
+- Resistors<br>
+- 4 Buttons<br>
+- RGB LED<br><br>
+
+Notwithstanding, I decided to implement a Processing sketch, that would gradually and accordingly manipulate with the brightness of the RGB LED.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://iahmfw.db.files.1drv.com/y4m_WeM5bGmaXjHi2ljyuCHWRHEDIiYmFha4V-UB_O6Xwdnjs-XnuXTroGMG6PsrMNXY0Fo9oYCxXHKe-ZSFtQS47XIW42xDG75I289H0EowxWQcdoHgwijQs9EDbE9bnFj2rUXA2RxwTew9cDPMyfGN2J1C6QFSUR-3eWH2okX7UEPM0A4QUjXiYqD56ecs3v0Uh6GymxNpi9rNKbVNRKSeg?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Main challenges</h4></center>
+
+Actually there were none. But considering my extra-curricular activities, there were a few.<br>
+- Just recollecting how sketches work and how to connect different ones did take a few minutes to refresh my memory<br>
+- Sending the data between Arduino and Processing can be quite tricky at times. If something doesn't work, you usually won't know why until you manually search for the mistakes/missing parts.<br>
+- Obviously, Arduino can get quite frequently very annoying, as the uploaded sketch will tell you quite often, that it's busy. As if its time is more precious than mine, daum Arduinos, taking over the world ._.<br>
+- Getting to know which is Blue/Red/Green in the RGB LED may be tricky, although straightforward, it ain't color coded, so it's more of a test and trial to get the pins and values right<br>
+- How do I send multiple values through serial? There must be a way, probably via an array, but mine did not quite work yet.<br>
+- Processing code works somewhat unexpectedly at times. For instance, if the clicked-on value is recorded as a value smaller than 0, Arduino will treat it as some sort of a maximum value. My RGB LED was quite bright, hence my hypothesis.<br>
+- The buttons did not always work and I still could not figure out why.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://iqhifw.db.files.1drv.com/y4mpTmA6GWUwQ-Tnv-gJ3GY2ThbbgQJL4Nbz97GGVZ6Z_vXkbmYdbWoO_cis6uPgHJEzC_Zwv9tDrJzp0yAjfmjc42sLa9w2Xv05Z65qYbKI3GrYkuAol-HhTzDUNVc_UZ4_zaXUHxLW9LnMjteslrOro6HWn8PDYN-fV9AfG7HFuVm96tu1dbJnBZp84Hiv--S2liu9EZOoM8Vs4azbF9hbQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Things, Code and Photos</h4></center>
+
+3.a) Things that went well<br><br>
+
+I successfully managed to get my setup working, so I'd say job well done. The RGB LED was bright. The buttons did trigger it to light up. The Processing sketch as well. So everything really went well.<br><br>
+
+3.b) Things that went wrong.<br><br>
+
+The dodgy Arduino and dodgy buttons did get on my nerves a bit. But one problem I encountered was, well, that I could not send multiple values via the serial.<br><br>
+
+4. Code excerpts: Coming soon.<br><br>
+
+5. Photos during the making process (at least 3): Embedded.<br><br>
+
+  </div><br>
+</div>
+
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://iqhffw.db.files.1drv.com/y4m_4X_S5-yLXDXHGcuyb1hib6A9C8lZbfodaRcbnehjH86GH5gAZhqEchF_s-XHewsB8R4y9OR5yZ8v8GYsiXwRI4awytmfwXITy31gforGUqs5V-BM_ZcbwTD6UZFhqdq-Y17uFhUdtynnXA4miOd2bwjfJCmzWZ3_IWMK6tu1kBxdre5XwUxV0YvAurRHQUQuWufqbOubSHrC8Zv9-xSqQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Videos and Photos</h4></center>
+
+6. Video of the resulting outcome/prototype at the end of the class. A very short video (20 seconds or less) showing whether your prototype worked or not.<br><br>
+
+Embedded. Due to be cut (one of 'em)<br><br>
+
+7. Please upload your video files to vimeo/youtube and either (a) embed your video to this post, or (b) include links to them here.<br><br>
+
+Uploaded and shared via Onedrive.<br><br>
+
+</div></div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://iqhkfw.db.files.1drv.com/y4mNtx7oWUUzs8HDBhgXWlufZE3zpimqpsVivi9qzXYFRr6eCiJAuqVgBpMjPbI42XgjsZp5fp2SpZBnDkrtMF9lrTRrKASTWi44UG-QdIKqOcEGNxG7j-10D8fam440VY0d1EOM3_JlyWUwR02ncSCiacodcGbWjgqF-ZP2FzjaN6ayW8Z00M9I1_rSM7t1ljbi70Eo-uoW2FSdZYbNsRsJg?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+  	<center><h4>Questions!</h4></center>
+
+8. a) What would you do differently during this process?<br><br>
+
+I probably would have looked into using Firmata from the very beginning when I started to develop the Processing sketch.<br><br>
+
+8. b) Does this tutorial inspire any idea?<br><br>
+
+Sort of. We may use an RGB LED in our project or even thousands. But I was more inspired by the processing sketch. After all, we could develop an Android app, with which we could manipulate many different things, such as the RGB LED (stripes).<br><br>
+
+8. c) How can the exercise be extended?<br><br>
+
+I believe that I already extended the exercise onto implementing the Processing sketch and integrating it with my Arduino setup.<br><br>
+
+</div></div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+	<br>
+
+9. You can also suggest your own reflection.<br><br>
+
+First of all, a few words to clarify some ambiguities around, well, my first blog post - all in all.<br><br>
+
+I decided to make the first blog post appear on my website. Why? Well, I kept on writing on canvas and at some point, I figured that preloading some of my images and videos could be a quite nice idea. And so I threw in the images I took from onedrive, which didn't work at first, but I found a nice workaround. However, once I embedded a video, which had to take place via html code, suddenly my canvas website redirected me... well, you guessed it! Right to the video, that I just embedded. Dreary of the malicious effects that could have made, I went back and... well, it's all self-explanatory: all progress was lost.<br><br>
+
+So what could I do, eh? Gotta learn from my past mistakes, so here's one, due for consultation, naturally as it sort of violates what was agreed upon: my very first blog post lands on... my webiste. Which has a few nice implications if you think about it, I mean at some point I might want to share what I have created throughout this course right? What better way to document and at the very same time upskill and dedicate my time for developing my web design skills, other than actually keeping in touch and working on both at the same time?<br><br>
+
+Secondly, it must be stated at this point, that I did not have access to canvas, until, well at the very least Wednesday. As my special consideration finally did get through on Tuesday and once I inspected on my access to the Lab/Studio units... Well, these were not there yet, despite my sydney student units of study having been updated. Then came Wednesday, throughout which I just literally did nothing, worn down by the previous, really heavy and demanding days. And today is Thursday, so I checked whether the canvas site did get updated. And so it did, but now obviously I had to deliver all my documentation. But that, got corrupted in the end. So, if I may ask to receive a 'lille bit of leeway, as I could not just simply launch my documentation artillery just yet. But here it comes!<br><br>
+
+</div></div>
+
+	<center>
+    <video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175257&authkey=AH6FgpnuLi7AJAw" type="video/mp4">
+      </video></center>
+      </div>
+
+      <div class="row">
+      	<div class="col-md-8 col-md-offset-2 panel">
+<br>
+Thirdly, probably lastly, although in fact, last but not least! I actually already have had been in touch with Arduino, on... well, two instances to be precise. Although actually three, but on this one particular time, I just saw this mystical Arduino thingy as something straight out of sci-fi, magical little thingies, that you gotta program and hell if I wasn't really incompetent at the time with, well, programming. 'Cause the only time I ever had been in touch with practically implementing anything related, was during Design Programming and for that particular course (note, I did it 3 years ago), I did not receive the feedback for the last 2 assignments (out of 3), so how would I know how good my skills were in the first place? Regardless, the two instances, in which I did actually quite a bit of coding, were overseas, when I co-developed a, what I still find as, nice little idea, that included an Arduino MEGA, midi-controller, some.. well, in fact: lots of power, some electro-mechanical pieces and a range of capacitors meant for blowing up in the accompaniment of played music at the time. The project did not get that far, but we did a bit of bl... empirical testing in terms of how effective our hypothesis regarding sound effects generated by exploding components was. Which to our delight - quite successful indeed, but it might have violated some safety laws, therefore we carried on with a limited amount of piezzo speakers.<br><br>
+
+Nonetheless, I am mentioning the last project for a specific reason. I have completed that one last semester, raised in great pain, semi-functioning, yet reasonably stunning and totally unexpected in terms of how far I managed single-handedly take this project and to what resolution and fidelity it did actually become developed. The idea involved assisting a potential large percentage of Australian, or even world-wide population of overweight and obese, in losing weight by the use of the ketogenic diet. As I was explicitly told, that per the name of Product Design course, I was expected to produce an actual physical product, thereon I managed to develop, carry out and build an actual weight scale, that sort of worked. It was connected to an Android app built in Processing via bluetooth and the scale itself, was equipped with a pulse sensor, load sensors and many more components meant for increasing overall user experience. It was, however, a quite dodgy and overall tricky setup. It was my first time that I attempt at building an application for Android, which in fact was really a hack, as I used Processing. It was also my first attempt at building a refined physical product and I actually managed to do it singlehandedly in just merely a week's time due to my parts being shipped for the same amount of time dedicated to building the device and a few major changes to my concept that were introduced throughout the semester. What's the point of me telling all of this, you may ask? Well, I did go through some key details in terms of my knowledge and... well, one final thing: my entire sparkfun kit was literally still buried in my magnificent, sanded-wooden weightscale.<br><br>
+
+</div></div>
+
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://ighjfw.db.files.1drv.com/y4mORscXaReNiqVumF8D9769mhUHVhbmbwT5II8uJILBaD6O2eKedjgg5rf4F5xkD4rUxxeFRDr15ekPpVW-YEbMEIwhDy7HFV7St83DXtjnGYabnU6daYHIMqg5DT1K-lb3XS4g6s2uWRCJPYoT2QycsdSzx6i_8QyZZrHnkeTIJ1u1M8KvQL2b-kExhK665oGr_S0k9zzFqzMcGd4Bb9uRg?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+  	<center><h4>Free da Cable!</h4></center>
+
+
+The good thing about it, was that I didn't glue all of the components. The bad thing was, some I actually had to, hence I managed to actually trap my USB cable within. Let's rollback a little. The setup was quite straightforward and some other elements I did glue along, such as the load sensors. But these surprisingly were easy to detach, so no harm done. The cable was trickier as there was no clean way of getting that out, it was just simply stuck: from each side. So, I had to look for some sort of devices that would help me get that beautiful weight scale open and considering that DMAF wasn't open in between our lecture and tutorial, then I had to make use of what I had. No powertools unfortunately, thereby all hail the mighty screwdriver.<br><br>
+
+Well, it still took me around 10-15 minutes to get that freed, I mean it was not much of a prison break, as the entire wooden structure began to crumble once I started sawing it off with my blunt instrument. Which introduced some hazard such as: pointy debris, potent of delivering some nasty splinters and my fingers after a few minutes of work did eventually start to get quite weary and even worn down, but all went according to the plan. At some point, there was enough space to provide the leverage I needed and got the cable out at last! Michael Scofield would've been so proud (anyone seen Prison Break?)<br><br>
+
+</div></div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+  	<a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://ighefw.db.files.1drv.com/y4mKoRhwYteLcz7bm4APdPEKYH3HoWJEU1BpbBRGkIEnQN3QoDa7MSr4FSFXE_OoKl80NSKoXfFC2JCcpT3jaG_weFY9xaYEqhxOKAI1cX0WC8Jj0VS7-9RontvGZLnHpAjgRWDcTedFUVWoUKqzJIMDGUR05n9MNwga9qlaMGZA8mbyn0NApcIpNaVk-JKPbvr_4dd-pfL4m2Ih5L0ynmGcA?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+
+<br>
+Now, I had all the components. Literally all, as some were soldered, so I had to figure out which cables I had left, that I could still use for potential tinkering. Then, I moved on to clearing out my breadboard and arduino kit. And voila, now I'm at square one! Happy and dandy, ready to start learning arduino from the very basics, cause I'm a great student, ain't I?<br><br>
+
+Well, sort of, as I have this nasty tendency of just jumping around. Oh, wait, why is it nasty overall and in the first place? If it wasn't for this ability, I guess I would've never ended up in Australia, right here in MIDEA and right now, well? So, why learn all of the basics, if I could just head on to making an attempt at connecting my RGB LED and integrating it with a processing sketch? Here's an idea: how about manipulating the brightness of the RGB LED by the 'amount' of how far I click on the sketch? Seems like a challenge, considering it's the first tut, right?<br><br>
+
+So, my first step was quite simple. Let's just plug the damn LED RGB into the arduino board. Yes, yes, I know we were taught it is dangerous 'n all, but the truth is, that the RGB LED does not require any resistors, well, for the purpose, voltage and amperage that the arduino can deliver after all. It was a test, if the thing works, if I get it why it works and what the code is. It was quite some time since I fiddled with all this and well it was a good idea to try fiddling a bit more, I guess?<br><br>
+
+</div></div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://ighffw.db.files.1drv.com/y4m8smdbHEub9RyPcp5_6gIw-NPddQ0BZdqvOBMSRfmGiGOpCC6P3kz4Rp63yVqEF8KzdPuinAcMLsR5Do41vHSwPx3dlQuUgAyRAknKYoXbZBLbIOmoV2SHEB3nw_L_eqQRN7zqwOriStqIvc6LomTSkqL4WenDytz6pVBxzL1d76VeOZLEio8Rpn5ZJyElaL3-pxG9yQ4SzU7aiBw91L2bA?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+So I did get the RGB LED working. Now it was time to make the setup seem, well, at least closer to proper. That worked as well, but I started having trouble finding cables, as like I mentioned before, most were already used to connect the 4 load sensors, amplifier and the combinator. That kind of makes the job a tinier bit more difficult but, as with this kinds of fiddles, ain't it 'tiss a scratch! Or a flesh wound. Anyone watches Monty Python? Wait, was it actually Monty Python?<br><br>
+
+Either way, after some fiddling, I managed to:<br><br>
+- Get the code for the RGB LED working<br>
+- Get the code for Processing working and talking with Arduino via serial.write()<br>
+- Get the RGB LED working in accordance with the Processing sketch<br><br>
+
+</div></div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://ighkfw.db.files.1drv.com/y4mio0K4JTsxFTdIHwC7ZQJojCxKiy2bJtV59i9bNdu3QfRZK16wNgnlWym-NAOTKbvq5W3xtNckg0p05GnC01bGGMI3E7RVyBzs8tlsfejny_p1MBk0XBQBv38J64j8L7AClu9_IeHLQgbbVqEdSkniEu8F0jr2q0f8rBTZ_D4V3DvYS1IfXe8OTYCN4eam-jbsl8moW5cv9Fy-DxgXP17_A?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+Well, awesome! Just one problem that I could not get quite how to transfer three different values, so that I could freely manipulate with all the three RGB diodes. It seems that I may have to delve into Firmata next week. So in the meantime, I helped out a mate next to me and made an attempt at explaining how Arduino works, why it works and what the code means. I wasn't too great, but I think I might have clarified some details so that he could launch his LED, although there were some Port issues between the Mac and Arduino. Did I ever mention, that Macs keep on breaking down on me? Now to think of it, Windows does too, but not that often (I sweat they break every single time I encounter them) and once they do, in most cases I manage to find a way of getting it fixed properly.<br><br>
+
+Nevertheless, the most important part, as I was told, was to get one particular setup up and running: that was the button-RGB LED setup. Now, my idea was: hey! How about I do that and... combine it with my processing sketch? It took a bit of iterating the codes in Arduino and Processing, getting the right conditionals and loops... although, actually I might have dropped the loops for now, simple conditionals in theory should have worked. And as per my hypothesis, here's the effect:<br><br>
+
+</div></div>
+
+      
+<div class="row">
+	
+	<center>
+      	    <video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175246&authkey=ABop3BB98JmlpT4" type="video/mp4">
+      </video></center>
+      </div>
+
+
+<!--
+
+<div class="row">
+<center><h1>Follow-up</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://farm5.staticflickr.com/4694/27993583069_97c07b276a.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Intro</h4></center>
+    So, here I am, back with Arduino. After a few attempts, one minor, one prompt, one challenging and now the one, in a way ubiquitous, theoretically more constrained, yet potentially more potent to bring technology out to the open and make sure people actually interact and become healthier. In a way I was not entirely into 'designing for wellbeing' concept, while I agree with it and believe there is a strong need for it, I feel that it might not be my thing, ya know? However, one thing I did however manage to connect with and to and it all started back in around 2013, when I felt a strong drive for the redevelopment of my hometown, to which I had to commute for pretty much everyday. Whether to attend my high school classes, or to meet with friends - but the infrastruture did not really support either. So that's probably when my UX story really started, despite me not knowing the techniques, I already have utilized quite a few: Background research, target user interviews, low-fidelity sketches, later on mockups. The number one issue that I have commited to, intended no-misuse on my side, was that I went streight into developing ideas, instead of consulting it with others. At that time I was like, 'whom am I going to consult it with? Barely anybody knew what I was doing as a hobby. And nobody really would in fact approve it unless it was potentially good.' And so it remained a secret and never went beyond the defining stage. Since then, I believe it was only Vivid, which surprisingly became something that I started believing in the work that one may be conducting in terms of enriching the surrounding environment. And now, a factual 18 credit point subject, utilizing a number of areas that I have been dedicated to: Product Design, Sound Design, UX, Interface Design... what does it not utilize really? Arduino, Processing, Product making comes into play and the project will likely evolve way beyond that. Now that I consider as quite beautiful.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+Nevertheless, what I was told to do here, was really showcase and reflect on how I did and would likely prefer to perform futurewise. So first of all, I am in possession of a new computer system, therefore all of my software was not installed to begin with. I had to download Arduino and Processing softwares. Then my arduino kit was still stranded on the semi-failed weightscale project, very likely due to the dodgy arduino kit that I have (Sparkfun unit). After all, I constructed my device in a way, that it was relatively easy to disassemble. However, it turned out that my cable was stuck inside, therefore I had to fiddle with breaking it out. I had to apply some pressure and I didn't manage to free it out without breaking the structure a bit. But that's okay, I may recycle it someday, I guess. Then another issue came to my mind: what do I do now? Well, I went straight into trying to get something working. So I followed the sparkfun tutorial for launching my RGB LED and, it worked. So I figured: hey! Maybe I'll bind a processing code to the arduino kit? And there I made an attempt. A quite successful one. Nevertheless, I crashed on the Serial.write() bit, as unfortunately serialized code does not quite work well when you wish to send a few separate info. Too bad, so I figured, well, maybe I could do something more physical, then?<br><br>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+And so I did! Four buttons, according to my concept, the yellow would unlock the ground pin. And the other: red, green, blue; would just activate each. It didn't take much fidling, as it was just the buttons, that work as a connector itself. This is some cool stuff, easy peasy, but still cool. Along the way I found out that it's absolutely okay to use the RGB LED without any resistors, the same goes for the buttons. Cause what would they be needed for? They just carry on the electricity further, when pressed that is. The very next thing was to see whether both of the methods for launching the RGB LED work. Buttons worked. The processing code, after a few fixes: started to work as well. So there it is. Now I have an interesting foundation, although still am in need of some ways of sending data two-way. Hey, perhaps via bluetooth finally? So next step: Firmata.<br><br>
+</div>
+</div>
+
+-->
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
