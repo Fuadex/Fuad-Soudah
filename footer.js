@@ -11,12 +11,13 @@ document.write('\
   <li><a href="Tertiles Uproar.html">Tertiles Uproar</a></li>\
   <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
   <li><a href="noigitara.html">No i Gitara!</a></li>\
+  <li><a href="Placemaking.html">Leaf</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
         <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
       <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
-      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.98</a></li>\
+      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.99 BETA</a></li>\
     </ul>\
 \
 </nav>\

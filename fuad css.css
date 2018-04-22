@@ -324,7 +324,7 @@ h1:hover, h2:hover{
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
 
-              -webkit-animation: NAME-YOUR-ANIMATION 5s infinite; /* Safari 4+ */
+  -webkit-animation: NAME-YOUR-ANIMATION 5s infinite; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION 5s infinite; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION 5s infinite; /* Opera 12+ */
   animation:         NAME-YOUR-ANIMATION 5s infinite; /* IE 10+, Fx 29+ */
