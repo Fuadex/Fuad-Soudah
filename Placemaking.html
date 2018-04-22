@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+body{
+  background-image: url(https://farm1.staticflickr.com/934/40730228575_fabc4d3cd5_o.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+video {
+    border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      width: 50%;
+  preload:auto;
+}
+
+
+iframe {
+    height: 35vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
+</style>
+
+</head>
+<body>
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<div class="row">
+<center><h2>Digital Placemaking</h2></center><br>
+</div>
+
+   <div class="row">
+<center>
+<iframe src="https://drive.google.com/file/d/1HDGqVnffONKy_NiPW4XDs2fP6f8V3gRo/preview" width="50%"></iframe>
+</center>
+</div>
+
+<div class="row">
+<div class="col-sm-2 col-sm-offset-1">
+  Project:<br>
+  Digital Placemaking
+</div>
+<div class="col-sm-3">
+  Collaborators:<br>
+  Soul Kang, Alireza Mirzaei, Chen Li, Fuad Soudah
+</div>
+<div class="col-sm-4">
+  Tools:<br>
+  User Centered Design Process, IDEO Methods, Keynote, DSLRs, Adobe Photoshop
+</div>
+  <div class="col-sm-1">
+    Release:<br>
+    April 2018
+</div>
+</div>
+<br><br>
+
+<div class="row">
+<center><h2>Arduino Input/Output</h2></center><br>
+</div>
+
+<center>
+<iframe src="https://drive.google.com/file/d/1uSFCfnBlLmE2X9NXguPXIMqoI1iTh-wg/preview" width="50%"></iframe>
+</center>
+
+<div class="row">
+<div class="col-sm-2 col-sm-offset-1">
+  Project:<br>
+  Arduino Input/Output
+</div>
+<div class="col-sm-2">
+  Collaborators:<br>
+  Fuad Soudah
+</div>
+<div class="col-sm-5">
+  Tools:<br>
+  Arduino, Ultrasonic Sensor, Bluetooth Module, Processing for Android, Ketai Library, RGB Strip, Galaxy S7, Fritzing
+</div>
+  <div class="col-sm-1">
+    Release:<br>
+    March 2018
+</div>
+</div>
+<br><br>
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+
+  <div id="button"><h2><center>Additional Information</center></h2></div> <!-- A whole button block will definitely draw attention-->
+</a>
+<br>
+
+      <div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+
+  <div class="col-sm-8 col-sm-offset-2">
+<br>
+  TBA<br><br>
+</div>
+</div>
+
+</div></div>
+
+<br>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+<script src="footer.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
