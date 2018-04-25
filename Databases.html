@@ -25,6 +25,58 @@ iframe {
     height: 29.5vw; /* 100/56.25 = 560/315 = 1.778 */
 }
 
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2em;
+float: left;
+top: 50%;
+left: 50%;
+white-space: nowrap;
+transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.wob img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.wob:hover img {
+    opacity: 0.7;           
+}
+
+a.wob:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
 </style>
 
 </head>
@@ -40,12 +92,23 @@ iframe {
 </div>
 
 <div class="row">
+  <div class="col-md-4">
 <center>
-  <div class="col-sm-8 col-sm-offset-2">
-<br>
-  TBA<br><br>
-</div>
+      <a class="wob" href="https://1drv.ms/b/s!AqI17gtc_ND8hN4KV-kTTYnhPRrEag" download><div class="text">Databases Assignment 1</div><img src="https://7redgq.db.files.1drv.com/y4meIABnDcgmMyf0f7TCUjLau-_yEBKaCOmGAVJ1Ha1-5YPZhuWXjQmqXnBpTEyFFweV84It4TfSOFosbRihZ7w4OyUZJ_CRIeqY_xL0aQGrwasWFbz5n21MtUy1BO8g7nldd39TRdyUjq2RXUZuJNhz2ivgv5FTLCOOyfhRonsm_OoM1k6YwY8V2FBhHdNRWQ4-RT-mK67kA6-r7DQ5fyvrA?width=3970&height=3070&cropmode=none" width="100%" /></a><br>
 </center>
+</div>
+
+  <div class="col-md-4">
+<center>
+      <a class="wob" href="https://github.com/Fuadex/Databases-Assignments/tree/master/A2" download><div class="text">Databases Assignment 2</div><img src="https://7hewgq.db.files.1drv.com/y4mZgOOQRzWtQsrJj0MK11EUItEjF_nHtiSoKV6uudyg2VVVxpXTtNaHALtDmOBb9iX4twVy4wyzicFPF_anZ05pWQWXDng_KgqhPCTYUHUNGk6Dis9vAn6vvwpTOn_CJu1eUwNDEteGCaTsa24C6qWBa8pmNAXYL6zWjdCIz5X9yV4KmLbY8zHi1MhvZUK_Zvlc9-Xc7VqDk7ObO2WDZUpQw?width=2339&height=1653&cropmode=none" width="100%" /></a><br>
+</center>
+</div>
+
+<div class="col-md-4">
+<center>
+      <a class="wob" href="https://github.com/Fuadex/Databases-Assignments/tree/master/CarShareClient" download><div class="text">Databases Assignment 3</div><img src="https://7hevgq.db.files.1drv.com/y4mOX9-RFn8LmnEVBrsdjAHl8qWSH928HQ9Q9E7abqiQmkMYZeZHFcm8DqTrbtmdQOK8xsaJKoZ4ANU3q3VE3UG0FxS1ehtAdz57Bu6EsND25aYjDmS5W9LtcgIRWsbJh0tkCRiqNWG6E0bLANG2GkupjoYBIedUZeJy1FPPgQTyu77mvotyEm6AiK1s1oj9FWytn1aIcKeswk6m25kQQlLKA?width=3115&height=1827&cropmode=none" width="100%" /></a><br>
+</center>
+</div>
 </div>
 
 <div class="row">
@@ -53,11 +116,10 @@ iframe {
   Project:<br>
   Databases
 </div>
-<a href="http://www.d17.design/#meet-team">
 <div class="col-sm-3">
   Creator:<br>
   Damian Martelli, Andrew Mackertich, Fuad Soudah
-</div></a>
+</div>
 <div class="col-sm-3">
   Tools:<br>
   PostgreSQL, Flask, Python
