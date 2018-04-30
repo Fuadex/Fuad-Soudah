@@ -288,8 +288,8 @@ h1, h2{
   /* W3C */
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
-      padding-top:12px;
-  padding-bottom:12px;
+      padding-top:0.6vw;
+  padding-bottom:0.6vw;
       -webkit-transition: all 0.3s linear;
        -moz-transition: all 0.3s linear;
         -ms-transition: all 0.3s linear;
@@ -298,11 +298,11 @@ h1, h2{
 }
 
 h3{
-  padding-bottom:12px;
+  padding-bottom:0.5vw;
 }
 
 h4 {
-  padding-top:12px;
+  padding-top:0.45vw;
 }
 
 h1:hover, h2:hover{
@@ -409,8 +409,8 @@ img {
   /* W3C */
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
-      padding-top:12px;
-  padding-bottom:12px;
+      padding-top:0.6vw;
+  padding-bottom:0.6vw;
       -webkit-transition: all 0.3s linear;
        -moz-transition: all 0.3s linear;
         -ms-transition: all 0.3s linear;
@@ -470,7 +470,7 @@ img {
 
   @media (max-width:992px){
     body{
-    font-size: 1.9vh;
+    font-size: 1.6vh;
   }
 
   h1{
@@ -480,21 +480,21 @@ img {
 
   @media(min-width:992px){
     body{
-      font-size:0.74vw; <!-- 0.87 -->
+      font-size:0.7vw; <!-- 0.74 0.87 -->
     }
     h1{
-      font-size:2.2vw; <!-- 2.5 -->
+      font-size:2.1vw; <!-- 2.2 2.5 -->
     }
     h2{
-      font-size:1.8vw; <!-- 2 -->
+      font-size:1.7vw; <!-- 1.8 2 -->
     }
 
     h4{
-      font-size:1.1vw; <!-- 1.2 -->
+      font-size:1vw; <!-- 1.1 1.2 -->
     }
 
     h5{
-      font-size:0.9vw; <!-- 0.97 -->
+      font-size:0.8vw; <!-- 0.9 0.97 -->
     }
   }
 
