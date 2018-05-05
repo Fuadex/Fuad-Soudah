@@ -120,6 +120,8 @@ background-color:#666666;
          -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
             overflow: hidden;
+            padding-left: 1vw;
+            padding-right: 1vw;
 }
 
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10{
@@ -129,6 +131,8 @@ background-color:#666666;
         -ms-transition: all 0.5s ease;
          -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
+            padding-left: 1vw;
+            padding-right: 1vw;
 }
 
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-10{
@@ -138,6 +142,8 @@ background-color:#666666;
         -ms-transition: all 0.5s ease;
          -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
+            padding-left: 1vw;
+            padding-right: 1vw;
 }
 
 .row > .col-md-1:first-child, .row > .col-md-2:first-child, .row > .col-md-3:first-child, .row > .col-md-4:first-child, .row > .col-md-5:first-child, .row > .col-md-6:first-child, .row > .col-md-8:first-child, .row > .col-md-1:first-child0{
