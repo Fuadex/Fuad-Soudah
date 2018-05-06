@@ -20,21 +20,21 @@ body{
 
 .text{
     opacity:0;
-      font-weight: bold;
+      font-weight: 400;
     z-index: 1;
     position: absolute;
     font-size:2vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-background-color:rgba(255,255,255,0.65);
+background-color:rgba(255,255,255,0.75);
     color: white; text-shadow: white 0em 0em 0.5em;
   font-family:'Roboto', sans-serif;
   padding-top:0.25em;
   padding-bottom:0.25em;
   padding-left:0.5em;
   padding-right:0.5em;
-  border-radius: 10px;
+  border-radius: 1px;
   border-style:solid;
   border-width:1px;
   border-color:black;
@@ -48,15 +48,15 @@ background-color:rgba(255,255,255,0.65);
 a.darken img {
     display: block;
     
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-        -ms-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 a.darken:hover img {
-    opacity: 0.7;           
+    opacity: 0.5;           
 }
 
 a.darken:hover .text{color:black;
@@ -67,6 +67,32 @@ a.darken:hover .text{color:black;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
+
+.col-lg-1:hover, .col-lg-2:hover, .col-lg-3:hover, .col-lg-4:hover, .col-lg-5:hover, .col-lg-6:hover, .col-lg-8:hover, .col-lg-10:hover {
+     -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+/*              background-color:rgba(255,255,255,0.9);*/
+background-color: black;
+              overflow: hidden;
+                border-radius: 10vw;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.col-lg-1:hover img, .col-lg-2:hover img, .col-lg-3:hover img, .col-lg-4:hover img, .col-lg-5:hover img, .col-lg-6:hover img, .col-lg-8:hover img, .col-lg-10:hover img{
+       -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+         -o-transition: all 2s ease;
+            transition: all 2s ease;
+    transform: scale(1.65);
+  }
+
 
 </style>
 
