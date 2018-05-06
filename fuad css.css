@@ -167,12 +167,12 @@ background-color:#666666;
   }
 }
 
-.col-lg-1 br, .col-lg-2 br, .col-lg-3 br, .col-lg-4 br, .col-lg-5 br, .col-lg-6 br, .col-lg-8 br, .col-lg-10 br{
+/*.col-lg-1 br, .col-lg-2 br, .col-lg-3 br, .col-lg-4 br, .col-lg-5 br, .col-lg-6 br, .col-lg-8 br, .col-lg-10 br{
   content: "";
   margin: 0em;
   display: block;
   font-size: 0%;
-}
+}*/
 
 .row > .col-md-1:first-child, .row > .col-md-2:first-child, .row > .col-md-3:first-child, .row > .col-md-4:first-child, .row > .col-md-5:first-child, .row > .col-md-6:first-child, .row > .col-md-8:first-child, .row > .col-md-1:first-child0{
             overflow: hidden;
