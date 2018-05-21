@@ -3,14 +3,14 @@ document.write('\
         <script src="scrollreveal.js"><\/script>\
 \
       <script>\
-window.sr = ScrollReveal({ reset: true });\
+window.sr = ScrollReveal({ mobile: false, reset: true });\
 \
-sr.reveal(\'.row\', {opacity: 0,duration:1000});\
+sr.reveal(\'.row\', {opacity: 0,duration:1000, mobile: true});\
 sr.reveal(\'h2\', {origin:\'left\', distance: \'1000px\',duration:1500});\
 sr.reveal(\'h1\', {origin:\'right\', distance: \'1000px\',duration:1500});\
-sr.reveal(\'h4\', {opacity: 0,duration:1500});\
+sr.reveal(\'h4\', {opacity: 0,duration:1500, mobile: false});\
 sr.reveal(\'h5\', {origin:\'bottom\', distance: \'1000px\',duration:1000});\
-sr.reveal(\'span\', {opacity: 0,duration:1000});\
+sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
 <\/script>\
 <div class="container-fluid">\
     <div class="row">\

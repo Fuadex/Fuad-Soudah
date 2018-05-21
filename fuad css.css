@@ -524,17 +524,17 @@ img {
     border-width:1px;
   border-style:solid;
   border-color:transparent;
-      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%);
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%) !important;
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(255, 255, 255, 1)), color-stop(49%, rgba(255, 255, 255, 0.8)), color-stop(85%, rgba(255, 255, 255, 0.5)));
+  background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(255, 255, 255, 1)), color-stop(49%, rgba(255, 255, 255, 0.8)), color-stop(85%, rgba(255, 255, 255, 0.5))) !important;
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%) !important;
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%) !important;
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%) !important;
   /* IE10+ */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0.5) 85%) !important;
   /* W3C */
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
