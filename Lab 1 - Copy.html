@@ -11,7 +11,7 @@
 <style>
 
 body{
-  background-image: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1)), url(DSC_1559-4.jpg);
+  background:url(DSC_1559-4.jpg);
       background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -106,57 +106,6 @@ video{
 	width:50%;
 }
 
-center img{
-  border-width:0.1vw;
-  background:white;
-  padding:2vw;
-  margin-top:1vw;
-  margin-bottom:1vw;
-}
-
-center:hover img{
-  border-width:0.2vw;
-  border-color:#222;
-  padding:3vw;
-}
-
-.noborder{
-  border-width:0px !important;
-  box-shadow:none !important;
-}
-
-pre{
-  border-width:1px;
-  border-color:black;
-  margin-top:1vw;
-  padding:1vw;
-      -webkit-transition: all 0.5s ease !important;
-       -moz-transition: all 0.5s ease !important;
-        -ms-transition: all 0.5s ease !important;
-         -o-transition: all 0.5s ease !important;
-            transition: all 0.5s ease !important;
-}
-
-pre:hover{
-  border-width:2px;
-  border-radius:2vw;
-  padding:5vw;
-  background:white;
-    -webkit-transition: all 0.5s ease !important;
-       -moz-transition: all 0.5s ease !important;
-        -ms-transition: all 0.5s ease !important;
-         -o-transition: all 0.5s ease !important;
-            transition: all 0.5s ease !important;
-}
-
-.nopadding{
-  padding:0px !important;
-}
-.nopadding:hover{
-transform: scale(1.5);
-border-radius: 3vw;
-}
-
 </style>
 
 
@@ -186,17 +135,16 @@ function getRandomImage() {
 <div class="container-fluid">
 
 <div class="row">
-<center><img src="https://i.imgur.com/AQbCRu1.png" width="100%"></center>
+<center><h1>10/03/2018 - Back to Arduino - 17/03/2018</h1></center>
 </div><br>
-
-<center><img src="https://i.imgur.com/1DnH45U.png" width="70%"></center>
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
     <a href="Blog v2.html" class="darken"><div class="text">Starter Kit</div><img src="https://ighifw.db.files.1drv.com/y4mcCTj4ZxvlIGKTXOHddl-sN-aBu979ClaIGKsVBjxltRZ07ZjAzB1scxkXi7FOzjgA0TMnaNNZM2_h6W0WZqvv-RoCxuNO24uJEf0Ig5kRcJztm8eWWUa6T3PB-Qc5s0g4OcQpTOrngbQSvIbu_KlBvnB9G3vhhej2bcAdVvWy_kFQDKFXDvSrikVtOhC9qnNyL9BZ1OjFBK6AdfGZWK0qQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
-    <br>
+    <center><h4>Brief task overview</h4></center>
+
 I believe the task was to combine:<br>
 - An arduino board<br>
 - Breadboard<br>
@@ -209,17 +157,12 @@ Notwithstanding, I decided to implement a Processing sketch, that would graduall
   </div><br>
 </div>
 
-<center><img src="https://i.imgur.com/QdISIgP.png" width="70%"></center>
-
-<div class="row">
-</div><br>
-
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
     <a href="Blog v2.html" class="darken"><div class="text">Tut Exercise</div><img src="https://iahmfw.db.files.1drv.com/y4m_WeM5bGmaXjHi2ljyuCHWRHEDIiYmFha4V-UB_O6Xwdnjs-XnuXTroGMG6PsrMNXY0Fo9oYCxXHKe-ZSFtQS47XIW42xDG75I289H0EowxWQcdoHgwijQs9EDbE9bnFj2rUXA2RxwTew9cDPMyfGN2J1C6QFSUR-3eWH2okX7UEPM0A4QUjXiYqD56ecs3v0Uh6GymxNpi9rNKbVNRKSeg?width=1024&height=576&cropmode=none" width="100%"></a><br>
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
-<br>
+    <center><h4>Main challenges</h4></center>
 
 Actually there were none. But considering my extra-curricular activities, there were a few.<br>
 - Just recollecting how sketches work and how to connect different ones did take a few minutes to refresh my memory<br>
@@ -232,9 +175,6 @@ Actually there were none. But considering my extra-curricular activities, there 
 
   </div><br>
 </div>
-
-<center><img src="https://i.imgur.com/kapsHFL.png" width="70%"></center>
-<center><img src="https://i.imgur.com/vok7uVX.png" width="70%"></center>
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
@@ -258,101 +198,6 @@ The dodgy Arduino and dodgy buttons did get on my nerves a bit. But one problem 
   </div><br>
 </div>
 
-<center><img src="https://i.imgur.com/xa6xhMw.png" width="70%"></center>
-
-<div class="row">
-  <div class="col-md-8 col-md-offset-2 noborder">
-    <pre>
-//Arduino Code
-
-      int redPin = 11;
-int bluePin = 12;
-int greenPin = 13;
-int redPin2 = 2;
-int greenPin2 = 3;
-int bluePin2 = 4;
-
-char val1;
-char val2;
-char val3;
-
-void setup() {
-  // put your setup code here, to run once:
-
-Serial.begin(9600);
-  
-  pinMode(redPin, OUTPUT);
-  pinMode(bluePin, OUTPUT);
-  pinMode(greenPin, OUTPUT);
-}
-
-void loop() {
-
-  if (Serial.available())
-  { val1 = Serial.read();
-setColor2(val1,val1,val1);
-  delay(10);
-  Serial.print(val1);
-  // put your main code here, to run repeatedly:
-}
-else{
-    setColor(255,255,255);
-}
-}
-
-void setColor(int red, int green, int blue)
-{
-  analogWrite(redPin, red);
-  analogWrite(greenPin, green);
-  analogWrite(bluePin, blue);  
-}
-
-void setColor2(int red2, int green2, int blue2)
-{
-  analogWrite(redPin2, red2);
-  analogWrite(greenPin2, green2);
-  analogWrite(bluePin2, blue2);  
-}
-</pre>
-
-<pre>
-//Processing code
-
-  import processing.serial.*;
-
-Serial myPort1;  // Create object from Serial class
-Serial myPort2;
-Serial myPort3;
-String val1;     // Data received from the serial port
-String val2;
-String val3;
-
-void setup()
-{
-  size(400,400);
-  // I know that the first port in the serial list on my mac
-  // is Serial.list()[0].
-  // On Windows machines, this generally opens COM1.
-  // Open whatever port is the one you're using.
-  String portName = Serial.list()[0]; //change the 0 to a 1 or 2 etc. to match your port
-  myPort1 = new Serial(this, portName, 9600);
-}
-
-void draw()
-{
-  rect(0,0,100,100);
-  
-  if ((mousePressed == true) && (mouseX<200 && mouseY < 200)) 
-  {                           //if we clicked in the window
-   myPort1.write(mouseX/2);         //send a 1
-   println(mouseX/2, mouseY/2, myPort1);    
-  }
-}
-</pre>
-</div>
-</div>
-
-<center><img src="https://i.imgur.com/UI0PAbb.png" width="70%"></center>
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
@@ -370,20 +215,6 @@ Embedded. Due to be cut (one of 'em)<br><br>
 Uploaded and shared via Onedrive.<br><br>
 
 </div></div>
-
-<center><img class="nopadding" src="https://9v2sbg.by.files.1drv.com/y4mRNxuyvFb-wTbT62PIVErrDyYCZRq3BTNistjAbaqySSzOBL9kUNYt1NU--oo1_rdJbIcC-c1K1Tttx2c4d36DZOKl5PYzabEnzDddXhMr-hg91svcohoksUfSe8cqqfCPqimzNao--oWsp4ZN4Hc6WNG0OUroO4sxrtRZP3RWAyS4_ZyglDNtVwJTYAES-FdWMXw9AkB3G9p6dnJ5mPNJA?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img class="nopadding" src="https://9p2sbg.by.files.1drv.com/y4mt_l3-fXLhuoCkTEJiMu---3p5wPHaNcTeQ96_Iy4KTYEdBavNZDwjiA9P_RXCI4Vnsod5dMHevq5-IDR59WUPcOANwq5L_N84_HRnbxH0O-JbMAF4x0njZ975SjJxcv1TYOz7BgkrMKhBsinH8zVZ_FW1BVtCCdgvZk1ABvQ8yqDUnhtSn7aI_ZbcjdGqXaSR-ygdm2XEaf875HlHUopmQ?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img class="nopadding" src="https://8q2sbg.by.files.1drv.com/y4mceeDfx0wJIBEkY6CSI935R9ndniaLcuhf068gNJLiR__ndmbtCnQ5RnMgUluJaaSj7crf71inOANpKLCiQ9rSifBRaLz3e513N-8UHGCn0qsfMowS32HwVs_cFov6dWhFwMEApztdkheIqPVlPZ9DX_J10OUGN9bl3V589YtlxoVlMSvoxjZAgU4WL_Lcrdb-29qbss-TQvD_RH-awhULw?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img class="nopadding" src="https://af6sbg.by.files.1drv.com/y4mdNtOpNNyTJXWsqEf5MZh3540qUdv3pAyURTYUOz-gdHyPO_fW1-rGsbKXORh3pny3iKvLoNHfw_mKDtsvcvBGj-Je7hARNelxzlEzESafaq9jRAlYaohryk2an6FLUo3Js02LkpuLXFuODEH62IwZVwMCqZl-91BNH83YAM6LkmdJl-xbhgqlf5Phun-OoKt23hW98viHiBoD1xIgdmhhQ?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img src="https://i.imgur.com/JgVEAWA.png" width="80%"></center>
-
-<center><img src="https://i.imgur.com/04zv3Th.png" width="70%"></center>
-<center><img src="https://i.imgur.com/x3x3smB.png" width="70%"></center>
-<center><img src="https://i.imgur.com/Imzj14y.png" width="70%"></center>
 
 <div class="row">
   <div class="col-md-4 col-md-offset-2">
@@ -406,11 +237,11 @@ I believe that I already extended the exercise onto implementing the Processing 
 
 </div></div>
 
-<center><img src="https://i.imgur.com/i5CwYzp.png" width="70%"></center>
-
 <div class="row">
 <div class="col-md-8 col-md-offset-2 panel">
 	<br>
+
+9. You can also suggest your own reflection.<br><br>
 
 First of all, a few words to clarify some ambiguities around, well, my first blog post - all in all.<br><br>
 
