@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1)), url(DSC_1559-4.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+video{
+	width:50%;
+}
+
+center img{
+  border-width:0.1vw;
+  background:white;
+  padding:2vw;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+center:hover img{
+  border-width:0.2vw;
+  border-color:#222;
+  padding-left:3vw;
+  padding-right:3vw;
+}
+
+.noborder{
+  border-width:0px !important;
+  box-shadow:none !important;
+}
+
+pre{
+  border-width:1px;
+  border-color:black;
+  margin-top:1vw;
+  padding:1vw;
+      -webkit-transition: all 0.5s ease !important;
+       -moz-transition: all 0.5s ease !important;
+        -ms-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
+}
+
+pre:hover{
+  border-width:2px;
+  border-radius:2vw;
+  padding:5vw;
+  background:white;
+    -webkit-transition: all 0.5s ease !important;
+       -moz-transition: all 0.5s ease !important;
+        -ms-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
+}
+
+.nopadding{
+  padding:0px !important;
+}
+.nopadding:hover{
+transform: scale(1.5);
+border-radius: 3vw;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+<center><img class="noborder" src="https://i.imgur.com/c2Ssxkr.png" width="100%"></center>
+</div><br>
+
+<center><img src="https://i.imgur.com/1DnH45U.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Starter Kit</div><img src="https://ts3uca.by.files.1drv.com/y4mP2CIppsn5oP11WimSBTqa3vB94O1y6TiVh6OjLZ4MBrnGYefROnjkOVxJNe39I5i3AUx0BBjiHMMEhxl3cy01yWYR0xbVynw9OTrVryv_YdfK54jhyThPACSIb3O9Us6KVrLMMZkj2rvBBmXiNmkCPNNv77RT49LVyRiLu2cALEyoPCXa7qXt8JqpE0Mn6DzRj8iFsK2ZwWPswnlq0SX1A?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <br>
+There were a few tasks scheduled. First was to get to know Max 7, then experimenting with video effects and audio effects, after which came a combination of audio and video effects, playing with audio visualisations intervened by user input and, at last, connecting Arduino with a Processing sketch and Max 7.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/QdISIgP.png" width="70%"></center>
+
+<div class="row">
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Tut Exercise</div><img src="https://xm3uca.by.files.1drv.com/y4m6LJuz9IUCrOiDi-1jFbOi8xqjp1FLTQmeJc3FBa_hhHjBK0Xet6HJUTmjW-72vfjcqFh0-UYOt9y5W6ydMslPpcyacjdM1BS8bLYtDczJdJshxtowOmwMcLeec4c6pb8xrjmRTrqabTmHBJQwMpl67K_3mWpqUsUY56FID7ITubSv1886-3ykmdqyexKZ4wFKFzkvUJGd9pYyeHTf06YfA?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+The main challenges primarily consisted of getting to know the application itself, despite it feeling relatively intuitive, there were still many unknowns associated with the application. In addition, the workflow was slow, as some methods like deleting could be made quicker by using hotkeys (in my case alt). Figuring out the logic at times was also tricky, for instance, does the effect filter an audio/video or does it actually attach on top of it? What do the different pipelines do? What sorts of values are acceptable?<br><br>
+
+Also, some objects didn't make sense to include. For instance, some sort of a flickering button thing, that was necessary to parse data from Processing and ODP/UDP protocol. But it worked, so I shouldn't complain at this point.<br><br>
+
+Splitting the values was also a bit tricky, it seems like the Max 7 likes humans to introduce values to manipulate with stuff within.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/kapsHFL.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://t83uca.by.files.1drv.com/y4m_KiMuABgCzr3l3s-1rPIbTXXitlZhOG0Z3-pmk9mMHGdoH53yVBdTFZcXDs_7vP6UZNl3o2SGacSP2_K6MO7Tq3bW04nDEyBIy-1COj2tHYU1VsIva8uEURgRnKQpcWYzHtYWTN-jKM5pv8G-bLwViJ_Q1lrvSx-hRRFLQZ_fwYmqy2jC-XY9_Euq-4psr66oBq3Ek1MUr-0mO-02Cl4gg?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+I successfully managed to complete all of the requested steps and came up with some cool distortions by the inclusion of randomly chosen effects. The application works quite fluently and I was pleased to see many effects working quite nicely.<br><br>
+
+  </div><br>
+</div>
+
+
+<center><img src="https://i.imgur.com/vok7uVX.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://vm1vfq.by.files.1drv.com/y4mtjeuP8FoHElkIcLZTqZYjRTdTzmHhJYny99EzkEOstH-NfW0isI7sFrwzunNIx4LCd7UGfrkJFuzWFrUVVDlpriBX-IQ9MqRqJ71SOuLtoLIkhzfX6j2N8kdBywvttVkCJMPb8zmglnEjWq6X0S-5dAJ9eMks9M4u1U_D5EpEtVuQIJ9bZVCYGOPIl7CTeNHVLBEidR4eGpiTu_gidXebQ?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+First of all, Max 7 is buggy. The application crashed a few times, frozen up on me for overextended periods of time (and seldom crashing afterwards), also the audio/video, especially with the camera, likes to freeze up randomly as well or not behave the way I intend it to. Even by the inclusion or detachment of my IEMs, the music would just stop working. Sort of makes sense, but distorts the experience I had with the application. Also, progress loss is unacceptable with professional-grade software and once I see Max crashing, that is something that should be considered critical and in need of addressing ASAP.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/xa6xhMw.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 noborder">
+    <pre>
+//Processing Code
+import processing.serial.*;
+import oscP5.*;
+import netP5.*;
+
+
+OscP5 oscP5;
+
+/* a NetAddress contains the ip address and port number of a remote location in the network. */
+NetAddress myBroadcastLocation;
+
+float sendOSCMouseX, sendOSCMouseY;
+
+Serial myPort1;  // Create object from Serial class
+Serial myPort2;
+Serial myPort3;
+String val1;     // Data received from the serial port
+String val2;
+String val3;
+
+void setup()
+{
+  size(400,400);
+  // I know that the first port in the serial list on my mac
+  // is Serial.list()[0].
+  // On Windows machines, this generally opens COM1.
+  // Open whatever port is the one you're using.
+  String portName = Serial.list()[0]; //change the 0 to a 1 or 2 etc. to match your port
+  myPort1 = new Serial(this, portName, 115200);
+  
+  frameRate(25);
+
+  /* create a new instance of oscP5. 
+   * 12000 is the port number you are listening for incoming osc messages.
+   */
+  oscP5 = new OscP5(this, 12000);
+
+  /* create a new NetAddress. a NetAddress is used when sending osc messages
+   * with the oscP5.send method.
+   */
+
+  /* the address of the osc broadcast server */
+  myBroadcastLocation = new NetAddress("127.0.0.1", 32000);
+}
+
+void draw()
+{
+  
+    background(0);
+  fill(45, 124, 26);
+  noStroke();
+  sendOSCMouseX = mouseX;
+  sendOSCMouseY = mouseY;
+  ellipse(sendOSCMouseX, sendOSCMouseY, 50, 50);
+  
+  OscMessage myOscMessage = new OscMessage("/test");
+  myOscMessage.add(sendOSCMouseX/100);
+  myOscMessage.add(sendOSCMouseY/100);
+  String val;
+  val = myPort1.readStringUntil('\n'); 
+  val1 = trim(val);
+  if (val==null || val=="1"){
+  }
+  else{
+    float val2 = parseFloat(val1);
+println(parseInt(val1));
+  myOscMessage.add(val2/100);
+  
+   oscP5.send(myOscMessage, myBroadcastLocation);
+  }
+}
+
+
+
+
+void mousePressed() {
+  /* create a new OscMessage with an address pattern, in this case /test. */
+  
+  /* add a value (an integer) to the OscMessage */
+  
+  /* send the OscMessage to a remote location specified in myNetAddress */
+ 
+}
+
+
+void keyPressed() {
+  OscMessage m;
+  switch(key) {
+    case('c'):
+    /* connect to the broadcaster */
+    m = new OscMessage("/server/connect", new Object[0]);
+    oscP5.flush(m, myBroadcastLocation);  
+    break;
+    case('d'):
+    /* disconnect from the broadcaster */
+    m = new OscMessage("/server/disconnect", new Object[0]);
+    oscP5.flush(m, myBroadcastLocation);  
+    break;
+  }
+}
+
+
+/* incoming osc message are forwarded to the oscEvent method. */
+void oscEvent(OscMessage theOscMessage) {
+  /* get and print the address pattern and the typetag of the received OscMessage */
+  println("### received an osc message with addrpattern "+theOscMessage.addrPattern()+" and typetag "+theOscMessage.typetag());
+  theOscMessage.print();
+}
+
+
+</pre>
+
+</div>
+</div>
+
+<center><img src="https://i.imgur.com/UI0PAbb.png" width="70%"></center>
+
+
+<center><img class="nopadding" src="https://vc1vfq.by.files.1drv.com/y4ma_FUzspqKzmAFHYsrwNIkWeQUlamRHfRLrh4ahfep7-Obxk_9I9YTpNiKIjM9cgRRHMOnekgcTef-ZYtgj0SlRH5GGnHu9Xb3aDLZeyL-v3k84m7qq3Q5YAHGNbBhH_zohYslzPYIOWyeXx9fyJmgtCWzxzPtZLegSh3ZNuQYcn8XO87cXTDBa7N4gYGSrm9QAF_6z8tyAH5qtYtVrziaw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://us1vfq.by.files.1drv.com/y4m_kzY5F5PkgmDcW5fCtwzwHBigbebmv7oVwJRkMHaDt0JEdToHdnNdsuP4uCGLo729Yx5XxjgYcmzAGKlKO1kxO6kFMt085727oskiitVk9Rb_GD0kPwq3o1FbkE6Qm1f_5LzdCIE_RXkyVSKNmLDcubotZT9Gihb2lLzDOrUBN3htSHa6STvjjrPYJvJaBA5V14Srq3g4wBRYa7ZzGg80A?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://uc1vfq.by.files.1drv.com/y4mNwR1rF9KzLlxT4y1OPTfiLzTNwNh069ZlfaLAU39P8KEyuXfCzFKJm7Q9L3tieoD_f23-9ZyWzrHR4OYu30yPbTi5E42LLqcC_Y9N9BZe74XDqQ5byz-62D8_8xvwvgY32jP_6AE04Fc8BQeBbVnHmbKFHFdRGBO2_KQVi04gNL21fGNIF8BxkMvY78ztt9lqKu5krA7MHyuE5e6PWofaw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://t81vfq.by.files.1drv.com/y4m9e2GzgGRPW2_bGGLKPUJ8ESmV5z91VkJg2j22f2MtrfAs2jRk7zC_jAh0uon4UyvQ-kMMKyYinl3XYaxqoJ5mMzKTKoebwmPwxWPMZ3BcyWtDVJpIziRxZKOIQA3fPlPi1A39bKekWZKjNQmHYOq_-OYgEhAR034jevgQ72Ac_nFTiKXe624O-Rg9Tz1GXQmr0We3XbFQAO0vyb8XhqkdQ?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://ts1vfq.by.files.1drv.com/y4mcESPvX42ZVbTsbr1rTV0Ma22VLXv8ayyM5vgLpGu2QjfcrGO8fIFRyu0Vk2HPwfGGJDhptTMWVU17WdbMqBkv3EOPFZ3HF_LNGaNo5b6m5Bl-drXbTjqKu6HvKtkQC1iCjpdthB-jXuYJtFiEcTslKpy6gNy4usBW_dK0jlpGhrbBl6sS123xhsA_hJK0msrDVB8oAQ-d0xwkRCo9SLQJw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://xm1vfq.by.files.1drv.com/y4mz1jGWSsTh62lgu_QqqSMcsGUrD1xMF19YFyEHy4EZC1nQn5227DCKS0nj6o5Vg25j-4LEYbeWxlDoWpej9lI6nI_F1930IpJS36lKw9_4QjkO6UiAUskPhsoI_JVshsGP8pR_Mt_NxNQvU2HU17DQNY-WfX_G-C22PrWSdaK5lrBvAQTXbkSlpkbBXAv1_LNDMygSuOp_fFCK2DtT21MAg?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://vm0k8g.by.files.1drv.com/y4mpRqnIIgIgKDsDik0DrlCZpzIrYlJIxjsSVy5zMSlQ985Ye_jd-7yXGsJvviQWiEvKO-fyzH_VFktcMBQDYYir0pyZ5227GTlQ8_QiKtaveINFV9Mz3o8GhBTK1HlwqUl1qb1b6DbOTtPx2y56rxWATsw9hGhTPkhTczMUMUGnJ9z1QbTJUZFO6JvZzLnyQ7BJRcu4JVi7m9CkAbggFDuIQ?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://us0k8g.by.files.1drv.com/y4mW1NyvJR2sjisNDseAeYdtuZErjpi6VtqaRqZaLurfGULfyubihUkj29nt3GM1T40Nw7XzR6AeAYTR06l70sd07tMr5WCEY5lSFunbq5cIukL6SxKhNWNPuLiIOHFRpSV5v96FensB1p-57G6SN1Be4kF_y2NtBHjpTQZsyfkGIRAm3Att_t0YmowvkFi4FkxWfGK3ZiqFsanfZ-uGbwlfQ?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://vc0k8g.by.files.1drv.com/y4mjL6UboLc4BudtfxOEYTFtOYptQWKro6YJhyUEKMPPRTRLwYiJ2sg0cphdoDPtyzz4jGcuozFpC-UGpzL-XUO1XvYjzwG6etqsZe5obBk-ixIzLYGnwvPtsbCBx9JVgyPIiog3gF5g7TuycQuGq1xz3CPWNrfb9uO8sOtryYBHN7G3vYE2rYFsisqbJPRLlsJrFioyFKtmUpp_pXLnQxLkg?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://uc0k8g.by.files.1drv.com/y4mzwKerCzkQF1PkfeO769zz0Fv9Qa-3F2Q3cTsoHUQJSAQwdctOuBr7gljNXQFPDOPKrPWvygSGJauwlUn4X28XrCBXa2hPj4339Kx5t0N3GDqjSHRhrk32DXzwxJVVbGieCmGVj9SubFYDySapJQLfuvUEnV25OUkK6AGPh4ZXe0cPHsKwXoMSU9QD-8PDbaDp0R52S6zZC3IMIEgdKNEEw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://ts0k8g.by.files.1drv.com/y4m0JwWh7hbpaTgfvCwKQoyxNevVX6LbVS51S1CM4vc8HIiCsolLc7kYi0sLc80t4mjyfHg_3145o7KfceeEBOwxzpuDjZtuxGqSAhefFa-A2xtKNa4lvWztrp5PeR3SLOXocILOIlP8rrbfgf58iogmnvCVPyM5wOJjGAVug-z_5dMmix97YeQ84DPPQ5cvH5Yn56sKChbiOlwKkEkxUi-fw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://um0k8g.by.files.1drv.com/y4md8AM1-6Rdv7kmUDqbdXiMzjPvXO70UWKVph9vv5lhRycVEhfPfmX4ulcsvKrAma36uXUPRf1qDddsnaC5fODYH-qytevoQc6t8BNNQ9G8Xif5oPDYj2ojMBErKhkFTGfckDjKKSzAIVZrwP-CQr0EFrjRKQXMoCnZlAYxzyWbGeOaidaX1o9NJREFP0hCrPNa9cIH58tbi-LTrvjNRNYLw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://xc0k8g.by.files.1drv.com/y4mtXYYuRlU__GdfnSRXdqaiVflg2kGfuiNR8Da8qjdCQSFedaJw_4U5Q-l-lCrrwzTh1lQ_vQaURL89k8fZ51B2JdZVO5n12TsNZ2GP7UglrkWqafVb4tn88SIEyk5LwxH3-02W-l65RWWqj8JXTgsNHh6m73c99APFk4pqj35LdsZyx0QQXl7lfCb6lhUpigLdFy-2g4pxz3f_LWnwr_GpQ?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://xm0k8g.by.files.1drv.com/y4mlFCTY5_lqVDCVhRV_OKi5648SvF6DqN6x2xS0MXBFKiIuaB7MOtI5n0iYzgISW5_3ivXrw4ljc1MNSI7t1kaONUg6xWegdf6q8Jij__OPARLY3Cm0L0vZ0_Z5BxEhRsqoWD2J20AIqTFCPbdlOi70dxdqWWDDDF342kfcM1pkCNN5Kb4knOAHNSFyzAkRPOXmmPnFMum22vvztW7lrSiOA?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://vm19cw.by.files.1drv.com/y4mS9Cb9qM92Ri9LuTFd-oXYvPl0EqynKruOQdabGCzACJYosICa_u1x9RUOlkqX0d4uLlcvKqeVaBaYSZT-hTZF9vp_505V8XG9LTOiWkAB1eWeNvg3Fp1OLcF1PAMXtArrcTJYgb72pfZ15RYyFBuhiMCIDujILmv-kOTDKtudkNT6V2iiHpG0iULH1Dhg1tyYxD69bP5hWVvb_hU01qqVA?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://vc19cw.by.files.1drv.com/y4mjbatSn79SbwUFmSt1mGmqEsZCphYPhaHpdQMeE7Re3iEncF2xsoHt0KhbJEZ4vSxbawextHtyE5nPZM131j0bpGokU87kqDNLucn-7d8UM7Emmk2zZhjMq7SwBWfMHlY--WkDnH_xLi8ppCOtsrpS24MpmOBQndAtvMbph-y8KPiGo_n2kEsL4RUWVJnSKWOE35TkJ6HPxfNW0s_tMpFGA?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://us19cw.by.files.1drv.com/y4mjmf8SmB7OeRcresGIMuPR1OGeYV9b-T4TID75uRaIGCeyYEhY_y-pijDy7QzdrvcGSSuCTmw_FChUQGUHCJjsZTV4_L_GjXMKFMO5yciLhKDPogjecfev2ZupGKSFIo-DkB8vm2nvvV9db1mw8lATnVJPk0KF8nCn-vMupJ_R4pjWpSISmkh-4gWJlyAX-HJ50eS0DJAO5RkTMFNs7CQ9w?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://u819cw.by.files.1drv.com/y4mNiwk-rFc_Ejz9GOLOCKtfuBaafgtpNFWCORbhffKc7_HMd7XODEe6CNKEyeborZESg7vA46HraWARtIOvvkkf_SHkmGVuwl6_phrTsForwOnGXWxC-3g_pXGGGGP3WzyEzISc_B5omNYMwQEIEdSAOVCVjul2UmursUUupVEr4pzy6PQQ00rnnpGpHeQl4AAQf5T-fJivjjiYXhQHZFx0g?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://um19cw.by.files.1drv.com/y4mCvb1r3kXFak7PibiqxSW2s0bLlHYCjoyvVd6f1BsVXu_j2Yqk7zYQBVGOJOndk9EhM_hyZYElJ0W6dsW6bXx9BpCmuq8TfsBKli1P2YJZbfYtRgRbK-jvkBN_NDnotQylCesHcfrf1gwuH18VCHLePhq5OxYvVucMQhLfajheUstvWBV0j1a7xyvH2YIu1BMY1JwrDro8tGXhcFFMwGe3Q?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://ts19cw.by.files.1drv.com/y4mUFjcvjxCX2HvOaBsYWS225VJUtI8ftYx5p9F8rkHV7gNzPXYzEWfPlTd5a0UK1LgtkFO0UkqMphmUyEWb2531DTwBjdEKPTuwKxodCPfXSQOab3IqI6vrHe3xm_FCqHclLtq5xXpGmxslTJ0qUB3JdKPEUmuUbBYynYckF1iZPnl18h1ysil1A9EXGx97C_TaiOxpQ0C4aTvBPbMhNZHyw?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://xc19cw.by.files.1drv.com/y4m9orkAvB6TQOXp3l-ELyQwh2HGCK5Bl3SN-lT8zJr28Qk23enCxUuUKeZnDGW734L6AvfMNn-_cxUKOqV_q6LNP_-UEtBLFPbciTLm_2BRrhGHkJucaYmhlav58_2vlqLJAzdEphWaWGoL5z720WlL9jifcaxvQXm9Exa4xS2LqH_51OoD-LE4GkFi2Vu82JZiHL45fs5rNS0phVRUgeZBg?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+
+<center><img class="nopadding" src="https://vc0yga.by.files.1drv.com/y4mcxRnMrnMOHXH8iAo-Tmm2lsaOI8sobTP4HYf5atZeJQuofYDt0JnXtt3o8a0yRdBDOQJsEgLPJN9NLziB_CL4mLsFU2iI2zaKK5Rp1UWx4zWm0dU4qnioY8ULA4k1Bka0bDJwj8XAbY9CMneKY0ihD50ev7EcvsOHDABNoEQesmhFsHwXHQH4Vbgqd9C77YQXjm9-FPIKasjC30_d0sENA?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img src="https://i.imgur.com/JgVEAWA.png" width="80%"></center>
+
+<center><img src="https://i.imgur.com/04zv3Th.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+Nothing really, it was a tutorial, so all the steps I took were pretty much the right ones and whenever ambiguities have arisen, I sought help. Probably the right way to do it?<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/x3x3smB.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+Hell yeah it does, I do enjoy creating a nice combination of devices all interconnected between one another. I already created for the first assignment a combination between Arduino and a Processing app running on Android, communicating via bluetooth with extra layers associated.<br><br>
+
+So how 'bout dis: Arduino with sensors <-> Processing sketch on Android <-> Max 7 and a massive amount of libraries and stuff like OpenCV, OCP/UDP communication, bluetooth communication, serial communication. Like, what, wanna tell me I can't do dis? ._.<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/Imzj14y.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+As above, however I did see a lot of value presented with this laboratory, as I see many possibilities associated. On one hand, the communication methods are quite intriguing to see, as there are a handful that may be utilised for the upcoming assignment, despite our project being a rather inclusive project, working perfectly as a standalone intervention out in the field. It's an intervention within the environment, placemaking as many see it, therefore there is no point in going into spheres that could disrupt the intervention, one sturdy and potentially enriching the user experience.<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/i5CwYzp.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+That having said, we are utilising music in our project, therefore some sort of intervention presented by users could be interesting. Just, how do we make it, we'd need an app at the very least. A device present on sight or make people have to download an external app, with which they would be able to manipulate with the environment, even lights and music if needed. Wouldn't that be going to far, though? How do the users get to know how to download the app? How sure are we the app would work? What are the limitations? Would the app work via the internet or bluetooth? How would we power each?<br><br>
+
+There are more questions than answers and I think it may be our team's belief, that the intervention should be autonomous. It is taking place at the university after all at a site that is particularly soothing for people to stay present in. Why disrupt it?<br><br>
+
+</div></div>
+
+<div class="row">
+	<center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177707&authkey=AOtTIiJc-iOf0LM" type="video/mp4">
+      </video></center>
+    </div>
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177706&authkey=AI1ZF03Vv3L9hQY" type="video/mp4">
+      </video></center>
+    </div>
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177703&authkey=AI0JoKw0JFT87pE" type="video/mp4">
+      </video></center>
+    </div>
+
+
+<div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177701&authkey=AOJTTTBu0keWWdE" type="video/mp4">
+      </video></center>
+    </div>
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177696&authkey=ANh9qc13AZV6mFs" type="video/mp4">
+      </video></center>
+    </div>
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177695&authkey=AOuHxtcNtBdg8iE" type="video/mp4">
+      </video></center>
+    </div>
+
+
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177694&authkey=AGJngm7f4awzRkI" type="video/mp4">
+      </video></center>
+    </div>
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177693&authkey=ACcKsAF0xCWC-0U" type="video/mp4">
+      </video></center>
+    </div>
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2177692&authkey=AFpm3cvyB3DvdEE" type="video/mp4">
+      </video></center>
+    </div>
+
+
+
+
+
+      </div>
+
+      
+<!--
+
+<div class="row">
+<center><h1>Follow-up</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://farm5.staticflickr.com/4694/27993583069_97c07b276a.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Intro</h4></center>
+    So, here I am, back with Arduino. After a few attempts, one minor, one prompt, one challenging and now the one, in a way ubiquitous, theoretically more constrained, yet potentially more potent to bring technology out to the open and make sure people actually interact and become healthier. In a way I was not entirely into 'designing for wellbeing' concept, while I agree with it and believe there is a strong need for it, I feel that it might not be my thing, ya know? However, one thing I did however manage to connect with and to and it all started back in around 2013, when I felt a strong drive for the redevelopment of my hometown, to which I had to commute for pretty much everyday. Whether to attend my high school classes, or to meet with friends - but the infrastruture did not really support either. So that's probably when my UX story really started, despite me not knowing the techniques, I already have utilized quite a few: Background research, target user interviews, low-fidelity sketches, later on mockups. The number one issue that I have commited to, intended no-misuse on my side, was that I went streight into developing ideas, instead of consulting it with others. At that time I was like, 'whom am I going to consult it with? Barely anybody knew what I was doing as a hobby. And nobody really would in fact approve it unless it was potentially good.' And so it remained a secret and never went beyond the defining stage. Since then, I believe it was only Vivid, which surprisingly became something that I started believing in the work that one may be conducting in terms of enriching the surrounding environment. And now, a factual 18 credit point subject, utilizing a number of areas that I have been dedicated to: Product Design, Sound Design, UX, Interface Design... what does it not utilize really? Arduino, Processing, Product making comes into play and the project will likely evolve way beyond that. Now that I consider as quite beautiful.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+Nevertheless, what I was told to do here, was really showcase and reflect on how I did and would likely prefer to perform futurewise. So first of all, I am in possession of a new computer system, therefore all of my software was not installed to begin with. I had to download Arduino and Processing softwares. Then my arduino kit was still stranded on the semi-failed weightscale project, very likely due to the dodgy arduino kit that I have (Sparkfun unit). After all, I constructed my device in a way, that it was relatively easy to disassemble. However, it turned out that my cable was stuck inside, therefore I had to fiddle with breaking it out. I had to apply some pressure and I didn't manage to free it out without breaking the structure a bit. But that's okay, I may recycle it someday, I guess. Then another issue came to my mind: what do I do now? Well, I went straight into trying to get something working. So I followed the sparkfun tutorial for launching my RGB LED and, it worked. So I figured: hey! Maybe I'll bind a processing code to the arduino kit? And there I made an attempt. A quite successful one. Nevertheless, I crashed on the Serial.write() bit, as unfortunately serialized code does not quite work well when you wish to send a few separate info. Too bad, so I figured, well, maybe I could do something more physical, then?<br><br>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+And so I did! Four buttons, according to my concept, the yellow would unlock the ground pin. And the other: red, green, blue; would just activate each. It didn't take much fidling, as it was just the buttons, that work as a connector itself. This is some cool stuff, easy peasy, but still cool. Along the way I found out that it's absolutely okay to use the RGB LED without any resistors, the same goes for the buttons. Cause what would they be needed for? They just carry on the electricity further, when pressed that is. The very next thing was to see whether both of the methods for launching the RGB LED work. Buttons worked. The processing code, after a few fixes: started to work as well. So there it is. Now I have an interesting foundation, although still am in need of some ways of sending data two-way. Hey, perhaps via bluetooth finally? So next step: Firmata.<br><br>
+</div>
+</div>
+
+-->
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

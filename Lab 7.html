@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1)), url(DSC_1559-4.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+video{
+	width:50%;
+}
+
+center img{
+  border-width:0.1vw;
+  background:white;
+  padding:2vw;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+center:hover img{
+  border-width:0.2vw;
+  border-color:#222;
+  padding-left:3vw;
+  padding-right:3vw;
+}
+
+.noborder{
+  border-width:0px !important;
+  box-shadow:none !important;
+}
+
+pre{
+  border-width:1px;
+  border-color:black;
+  margin-top:1vw;
+  padding:1vw;
+      -webkit-transition: all 0.5s ease !important;
+       -moz-transition: all 0.5s ease !important;
+        -ms-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
+}
+
+pre:hover{
+  border-width:2px;
+  border-radius:2vw;
+  padding:5vw;
+  background:white;
+    -webkit-transition: all 0.5s ease !important;
+       -moz-transition: all 0.5s ease !important;
+        -ms-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
+}
+
+.nopadding{
+  padding:0px !important;
+}
+.nopadding:hover{
+transform: scale(1.5);
+border-radius: 3vw;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+<center><img class="noborder" src="https://i.imgur.com/UXpiTMm.png" width="100%"></center>
+</div><br>
+
+<center><img src="https://i.imgur.com/1DnH45U.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Starter Kit</div><img src="https://i.imgur.com/KrvDAAu.png" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <br>
+There were no formal tasks. We were introduced to troubleshooting techniques, books and app creating methods. Additional libraries for a variety of purposes were mentioned. Once it ended, we sought feedback in regards to our project in a few lengths, such as: questionnaire construction and device-related matters such as the usefulness of specific nature sounds and technical execution of particular features we had in mind.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/QdISIgP.png" width="70%"></center>
+
+<div class="row">
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Tut Exercise</div><img src="https://uukyla.by.files.1drv.com/y4mcJw5I760UogJPfkQq2Kh44K9ocFcpZ3klWi8G9YGiXn-lqvhUi3G2n1C8JjXhMP6lQ3Apkn6-VVCznn4YAtFbqpBLJc2PgAoi7JEVQsaRO_IaVbCGaT79m10Hz8yD1Ei3DSNrfl0jrzlMm6M22HCrNmNycGY95Atl-_tqxq7kaMGthpnvc1OC2oJLkmG4o1-wg-UFUMRgaPFZniiqEpfnw?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+One of the main challenges was to establish whether the sounds coming from the street would either combine together with the nature sounds and assemble into a major mess or would they sort of cancel each other out due to some reasons. We also had to establish which nature sounds would actually work well with the people and which would not, which we would try to establish with a proper questionnaire shared.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/kapsHFL.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://yekyla.by.files.1drv.com/y4m4pTvVHkaw5o03B7RwaqXge-YVBK7chjLXcJJvzW5eOav5KZoXhG061Fvho-enHjx29ToGeXsBZTB9hiz9b6oBKg08Xb3rhDy6t2dlLgOYGnekx2f0rlBD_RU74CPfA3uwBsiOqx36AIUKmnZjbyZ2sY9LhWS2t4s-NViJ88FXzoCx0h1tkYR14vcEY1EBBlo0qxPTk0yCNU4Mz8IjprDcw?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+The prototype seems quite complete so far and only in requisition of some final tweaks and polishing. Processing for Android also works quite nicely, although java-related errors can be a nuisance.<br><br>
+
+  </div><br>
+</div>
+
+
+<center><img src="https://i.imgur.com/vok7uVX.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://yekyla.by.files.1drv.com/y4m4pTvVHkaw5o03B7RwaqXge-YVBK7chjLXcJJvzW5eOav5KZoXhG061Fvho-enHjx29ToGeXsBZTB9hiz9b6oBKg08Xb3rhDy6t2dlLgOYGnekx2f0rlBD_RU74CPfA3uwBsiOqx36AIUKmnZjbyZ2sY9LhWS2t4s-NViJ88FXzoCx0h1tkYR14vcEY1EBBlo0qxPTk0yCNU4Mz8IjprDcw?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+Nothing quite went wrong on this day, we just need to finish up the remaining details and make sure all the modules work. I think we're on a good track to user-testing and iterating our prototype.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/xa6xhMw.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 noborder">
+    <pre>Nothing quite in need of sharing today. We just worked further on polishing the code. In addition, I bought a multimeter to test the load sensors, which sort of worked and the amplifier did pick up signals once some voltage was supplied. However, I did not quite manage to get the sensors to work properly at this time. I was scheduled to borrow a FlexiForce pressure sensor from a friend, which after some tests and code refining eventually turned up with quite satisfactory results. The code attached is a modified example code from SparkFun website.
+
+
+</pre>
+
+</div>
+</div>
+
+<center><img src="https://i.imgur.com/UI0PAbb.png" width="70%"></center>
+
+
+<center><img src="https://i.imgur.com/JgVEAWA.png" width="80%"></center>
+
+<center><img src="https://i.imgur.com/04zv3Th.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+I would most definitely have proceeded with the pressure sensors straightaway instead of spending hours trying to get the load sensors up and running. Making attempts to solder the modules took too much time, which could have been spent on polishing the working modules, tweaking the code, working on all the other parts of the project, especially considering the timeframe.<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/x3x3smB.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+We were advised to look into testing the sounds more effectively and dropping the bird sounds, as these apparently are found by people as (surprisingly) annoying. We have further tested the sounds ourselves on another day and based on preliminary findings, the bird sounds are indeed quite uncanny, especially if played during and throughout an evening.<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/Imzj14y.png" width="70%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+  <br>
+
+On the other hand, water-related sounds are quite promising in terms of their ambience and potential to soothe peoples' feelings and predisposition.<br><br>
+
+</div></div>
+
+
+<div class="row">
+	<center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%212423&authkey=ADP-z_wdeTiO71E" type="video/mp4">
+      </video></center>
+    </div>
+<div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%212427&authkey=ACWKq4fouwLfgbQ" type="video/mp4">
+      </video></center>
+    </div>
+<div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2178158&authkey=AOz4eloqJGPghUc" type="video/mp4">
+      </video></center>
+    </div>
+
+
+    <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%212440&authkey=ADzOXJtJsI83-kE" type="video/mp4">
+      </video></center>
+    </div>
+
+
+
+
+
+      </div>
+
+      
+<!--
+
+<div class="row">
+<center><h1>Follow-up</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://farm5.staticflickr.com/4694/27993583069_97c07b276a.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Intro</h4></center>
+    So, here I am, back with Arduino. After a few attempts, one minor, one prompt, one challenging and now the one, in a way ubiquitous, theoretically more constrained, yet potentially more potent to bring technology out to the open and make sure people actually interact and become healthier. In a way I was not entirely into 'designing for wellbeing' concept, while I agree with it and believe there is a strong need for it, I feel that it might not be my thing, ya know? However, one thing I did however manage to connect with and to and it all started back in around 2013, when I felt a strong drive for the redevelopment of my hometown, to which I had to commute for pretty much everyday. Whether to attend my high school classes, or to meet with friends - but the infrastruture did not really support either. So that's probably when my UX story really started, despite me not knowing the techniques, I already have utilized quite a few: Background research, target user interviews, low-fidelity sketches, later on mockups. The number one issue that I have commited to, intended no-misuse on my side, was that I went streight into developing ideas, instead of consulting it with others. At that time I was like, 'whom am I going to consult it with? Barely anybody knew what I was doing as a hobby. And nobody really would in fact approve it unless it was potentially good.' And so it remained a secret and never went beyond the defining stage. Since then, I believe it was only Vivid, which surprisingly became something that I started believing in the work that one may be conducting in terms of enriching the surrounding environment. And now, a factual 18 credit point subject, utilizing a number of areas that I have been dedicated to: Product Design, Sound Design, UX, Interface Design... what does it not utilize really? Arduino, Processing, Product making comes into play and the project will likely evolve way beyond that. Now that I consider as quite beautiful.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+Nevertheless, what I was told to do here, was really showcase and reflect on how I did and would likely prefer to perform futurewise. So first of all, I am in possession of a new computer system, therefore all of my software was not installed to begin with. I had to download Arduino and Processing softwares. Then my arduino kit was still stranded on the semi-failed weightscale project, very likely due to the dodgy arduino kit that I have (Sparkfun unit). After all, I constructed my device in a way, that it was relatively easy to disassemble. However, it turned out that my cable was stuck inside, therefore I had to fiddle with breaking it out. I had to apply some pressure and I didn't manage to free it out without breaking the structure a bit. But that's okay, I may recycle it someday, I guess. Then another issue came to my mind: what do I do now? Well, I went straight into trying to get something working. So I followed the sparkfun tutorial for launching my RGB LED and, it worked. So I figured: hey! Maybe I'll bind a processing code to the arduino kit? And there I made an attempt. A quite successful one. Nevertheless, I crashed on the Serial.write() bit, as unfortunately serialized code does not quite work well when you wish to send a few separate info. Too bad, so I figured, well, maybe I could do something more physical, then?<br><br>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+And so I did! Four buttons, according to my concept, the yellow would unlock the ground pin. And the other: red, green, blue; would just activate each. It didn't take much fidling, as it was just the buttons, that work as a connector itself. This is some cool stuff, easy peasy, but still cool. Along the way I found out that it's absolutely okay to use the RGB LED without any resistors, the same goes for the buttons. Cause what would they be needed for? They just carry on the electricity further, when pressed that is. The very next thing was to see whether both of the methods for launching the RGB LED work. Buttons worked. The processing code, after a few fixes: started to work as well. So there it is. Now I have an interesting foundation, although still am in need of some ways of sending data two-way. Hey, perhaps via bluetooth finally? So next step: Firmata.<br><br>
+</div>
+</div>
+
+-->
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

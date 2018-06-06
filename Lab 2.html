@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1)), url(DSC_1559-4.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+video{
+	width:50%;
+}
+
+center img{
+  border-width:0.1vw;
+  background:white;
+  padding:2vw;
+  margin-top:1vw;
+  margin-bottom:1vw;
+}
+
+center:hover img{
+  border-width:0.2vw;
+  border-color:#222;
+  padding-left:3vw;
+  padding-right:3vw;
+}
+
+.noborder{
+  border-width:0px !important;
+  box-shadow:none !important;
+}
+
+pre{
+  border-width:1px;
+  border-color:black;
+  margin-top:1vw;
+  padding:1vw;
+      -webkit-transition: all 0.5s ease !important;
+       -moz-transition: all 0.5s ease !important;
+        -ms-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
+}
+
+pre:hover{
+  border-width:2px;
+  border-radius:2vw;
+  padding:5vw;
+  background:white;
+    -webkit-transition: all 0.5s ease !important;
+       -moz-transition: all 0.5s ease !important;
+        -ms-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
+}
+
+.nopadding{
+  padding:0px !important;
+}
+.nopadding:hover{
+transform: scale(1.5);
+border-radius: 3vw;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+<center><img class="noborder" src="https://i.imgur.com/DmIXpxd.png" width="100%"></center>
+</div><br>
+
+<center><img src="https://i.imgur.com/1DnH45U.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Light!</div><img src="https://jqhqxg.db.files.1drv.com/y4mOs5Gdl1PtmPVte8yyo3kT7pAsJgVfDsK-p2Qykjxqajl6IkXOXuiX--0UVwFI5d4vf5r3-ehLa53oAdQ8SxC65iruJrHEPfWH_LI5FQJYzqkyyeFIxcRFtiF38doFqLRzrcD1NtGN59rH9LqFTf4HMiEARzWuMHXEfTgrlGOwn8sB8o652mxvgyyJaU_7g5JHLz5zpk2EZK0tY0DHvQj3w?width=660&height=371&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <br>
+The tasks presented were to: design an Arduino circuits board set in accordance with a:<br><br>
+
+- Light Sensor and a diode<br>
+- Temperature Sensor and its proper execution<br>
+- Combination of aforementioned and PWM (to be double checked)<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/QdISIgP.png" width="70%"></center>
+
+<div class="row">
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Tut Exercise</div><img src="https://jqhlxg.db.files.1drv.com/y4mOwf4-c1hNjpOj47xXKccbODG1_Fdbx8Tv8mGhRiu5JJqz1Mb9PBKW2Xo020Xoij7hXRBpaB5LS6T2pMe5q7EkLYqvMyX0u4TVc0xegsdIXPaAEUZWgyhVNdVEgVHr9j22X4InrV1lGpMFyDCw6QqjEUaOG4P1B9AyoQAnkpeuXl6P8T10tVV1dOF-6NItQcaIRQWQuqoXYq8uR2aP1p3ag?width=660&height=371&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+Throughout the construction of the board, there were a few minor challenges that I could not get over without seeking additional feedback. At first, the light sensor was a little tricky to get it up and running. It seems that the problem laid in my code, however a few tiny fixes and suddenly it could detect incoming light quite nicely. Piece of cake.<br><br>
+
+The other larger piece was not as I perceived as such. And it was a rather simple task, get the diode to light up brighter if light came shining upon my precious little photosensitive resistor. The only thing I managed to do, was to get it to turn on and off, with a simple conditional statement embedded. And I quadruple-checked my code, everything seemed fine. I used a different diode, as one just simply would not light up (idk why). I tried doing it with my LED, but that would not budge either for some unforeseen and yet to be studied reason. Eventually, it turned out that, well, Arduino has these PWM pins, which actually allow the circuit board to provide, well, a variety of energy potency? Which was quite some news to me, as I have never before, for some reason, came across this particular issue or matter in question.<br><br>
+
+One surprising thing with the temperature sensor was to get it to properly address the room’s temperature, which it would provide with a slightly decreased values. It wasn’t anything major, but the interesting part was once I plugged the battery in, the voltage kicked in slightly and the temperature increased from eerie 20 degrees to 22-23 degrees altogether. Interesting, is the usb not good enough to power all the stuff that I chucked onto the board?<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/kapsHFL.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://jqhtxg.db.files.1drv.com/y4mL9NzR1k51VvHY-VTLNBPNFf7nRTfRhlUUXGnUK0oeHQXTQEKcQJNWMt48_dV1cE1KAgekDE3nJhQYO9hqwutufvY5wByKptdxmXctzp52-qJn1FST0r1yhXT0h8tBzqu87u7NOv966P7gz65MUfUB__Kedk-_t4QqrcygPX292sutYk8sLlZLajyFqsTctPi_SPdnzFJWoyaA6ysCOdt0A?width=660&height=371&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+It should be remarked, that I managed to successfully complete the Lab tutorial, as the light sensor worked, in conjunction with the diode and LED altogether and the temperature sensor properly addressing the room’s temperature In a variety of values. I also connected the Arduino sketch with a Processing sketch and it worked again well.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/vok7uVX.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://jqhnxg.db.files.1drv.com/y4mxzElebObrXwrCFoAwM_a7Oa7_g51h6hOHxMRC7L23nw_BQYHGnW_oNWDnLDIVlA78kL9ijuBLixUAxor11r5BckbkufqWW2WirGY5PqDKr9pG8auRIbnFb9k3VGX2ARwBK9BLcEJDUVsvN2t__O4xQk2yGoZojwAmAHAbMIq74dOortkOQvRQ9udbkxd7UpsMa1LJxAQrF6_Y2Fo70q5fQ?width=660&height=371&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+The only thing that did not go well was me not being able to come up with an interesting combination of the light sensor, diode, temperature sensor and PWM… I mean, what do I do with the temperature sensor, eh? So that’s yet to be sorted. Also, firmata is still a bit of a riddle.<br><br>
+
+  </div><br>
+</div>
+
+<center><img src="https://i.imgur.com/xa6xhMw.png" width="70%"></center>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 noborder">
+    <pre>
+//Arduino Code
+
+#include 
+#include 
+#include 
+#include 
+#include 
+#include 
+#include 
+
+/*
+SparkFun Inventor’s Kit
+Circuit 1C-Photoresistor
+
+Use a photoresistor to monitor how bright a room is, and turn an LED on when it gets dark.
+
+This sketch was written by SparkFun Electronics, with lots of help from the Arduino community.
+This code is completely free for any use.
+
+View circuit diagram and instructions at: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40
+Download drawings and code at: https://github.com/sparkfun/SIK-Guide-Code
+*/
+
+int redPin = 9;
+int bluePin = 10;
+int greenPin = 11;
+
+int photoresistor = 0;              //this variable will hold a value based on the position of the knob
+int threshold = 750;                //if the photoresistor reading is below this value the light will turn on
+int calibratedlightlevel;
+int lightLevel;
+int sensorPin = 0;
+int minThreshold = 1023;
+int maxThreshold = 0;
+const int temperaturePin = A1;
+float getVoltage(int pin);
+int degreesC;
+int degreesF;
+int reservedPin = 13;
+
+void setup()
+{
+  Serial.begin(115200);               //start a serial connection with the computer
+
+  pinMode(6, OUTPUT);              //set pin 13 as an output that can be set to HIGH or LOW
+
+  
+  pinMode(redPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+
+}
+
+void loop()
+{
+
+    setColor(255,255,255);
+  
+float voltage, degreeC, degreeF;
+voltage = getVoltage(temperaturePin);
+degreesC = (voltage - 0.5) * 100.0;
+degreesF = degreesC * (9.0 / 5.0) + 32.0;
+
+  Serial.print("voltage: ");
+  Serial.print(voltage);
+  Serial.print("  deg C: ");
+  Serial.print(degreesC);
+  Serial.print("  deg F: ");
+  Serial.println(degreesF);
+  delay(000);
+  
+  
+  lightLevel = analogRead(sensorPin);
+  calibratedlightlevel = map(lightLevel, 100, 1023, 0, 255);
+  //read the position of the knob
+  photoresistor = analogRead(A0);   //set photoresistor to a number between 0 and 1023 based on how far the knob is turned
+  Serial.println(constrain(calibratedlightlevel,0,255));    //print the value of photoresistor in the serial monitor on the computer
+
+
+    analogWrite(6, constrain(calibratedlightlevel,0,255));         // Turn on the LED  
+
+
+  delay(100);                       //short delay to make the printout easier to read
+
+
+}
+
+float getVoltage(int pin){
+  return(analogRead(pin) * 0.004882814);
+}
+
+void autoRange()
+
+{
+  if (lightLevel < minThreshold)
+  minThreshold = lightLevel;
+  if (lightLevel > maxThreshold)
+  maxThreshold = lightLevel;
+  lightLevel = map(lightLevel, minThreshold, maxThreshold, 0, 15);
+  lightLevel = constrain(lightLevel, 0, 255);
+}
+
+void setColor(int red, int green, int blue)
+{
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);  
+}
+
+
+</pre>
+</div>
+</div>
+
+<center><img src="https://i.imgur.com/UI0PAbb.png" width="70%"></center>
+
+
+<center><img class="nopadding" src="https://av5hew.by.files.1drv.com/y4mXaGyhg8K4Z4GEJUrHm4pKS3WpmnpfvieCbMhK7YUdwK3mWDFZlE7qepci8JmbVyigpfzRKSI4jNTGHECuFXaf0YOFwRyuhrR3R1MK6BDq4u2GsWKYZ6-3eFmFqrzp0D4sAseW7PZZcGDTsrP3ttXJ4rNytSkiWG12KTNUAOX0ZFmFLe6_xAhMVuSny320gYug-JifxsMOZP4NgLt03hBDA?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://pv3i7w.by.files.1drv.com/y4muNb8sZTOXPIQJSCTj90gxpxS4j721L6eBy-4o3V9L0amFndD3jY4hymWf6_hIYUm0ZGlcM5s2VaGFBI-SrrEw_QNajb343sC8g4YGa0PsmJ6Nv35-DxByfbsw-Yb3EaM9Mpzk2WXvu2ZRwFlwMIS967KoiT_ladYA1vv_EZufgomFaWngIJS699XaL0WKuqlt-uGn91Kk_2bPy1q0UrW_g?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img class="nopadding" src="https://9q3i7w.by.files.1drv.com/y4mv1CSBTXSmS5Vf-L0JPsYt0eBb8ppm_Y2I8FHSRlt-KXIF6RtMmy1IFleek0FyEh3SC7-SCyj_ZKb7OgLrsK37iktz6VwLEaVujvHNA-fgnVGbDkpH2P-B59pP8t_mjs7YKphhbAfwhhElELTODMyNsvs37GmzwBAbXJRRNDy-OoJ0OwdBh5uClTdbmfTNOpUPmZ3QlKIhFr0SFOdzVOx2g?width=3240&height=2160&cropmode=none" width="50%"></center>
+
+<center><img src="https://i.imgur.com/JgVEAWA.png" width="80%"></center>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3 panel">
+	<br>
+I feel that the Arduino board and sensor are not that much of a challenge at present time and I am looking forward to actually implementing a bit more elaborate setups. Especially I am curious of how I may connect Arduino with processing via Bluetooth in a rather simple and easy to understand manner. Although, at the same time there are features that pop up and turn out as quite new for me, for instance the WME stuff, just a few pins available and marked with a ~. Now that’s something unexpected. I even used a few different pins to see whether these were damaged or so, but I didn’t plug these to the right ones, instead the ones that did not quite work as intended.<br><br>
+
+It seems, though, that the problems I have encountered clearly state that working as a group will likely be more efficient, as the problems are what hold projects up in the end. You eventually come to a conclusion of what you want installed and once you actually start introducing the idea, it may turn out that many features just simply do not feel like working. And once they don’t and you have no idea why, you start figuring it out and the entire process will take ages. That’s why collaboration is so important, as the final effect may become sorted much quicker.<br><br>
+
+Another important lesson, although it wasn’t that much of a major problem in my case, was that some things do break and if they do, you gotta figure this out asap. With simply components like diodes, it won’t be much of an issue, but once some more elaborate equipment get introduced… Accidents happen, it’d be best to know whether something works or doesn’t and whether it is our fault or not. Nevertheless, getting to know whether a component works or doesn’t is tricky, we take it usually for granted that it actually does. But what if it doesn’t? Do you just stick with trying to plug the component in new ways, rewrite the code or… perhaps it’d be best to check whether it works at someone else’s hands, or if this person’s component actually works?
+<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/Imzj14y.png" width="70%"></center>
+
+      <div class="row">
+      	<div class="col-md-6 col-md-offset-3 panel">
+<br>
+Not much really, I think I could’ve improved by expanding the idea and just figuring out the WME much faster. Then I could focus on other stuff, like, maybe expanding the processing sketch or getting some cool Arduino features installed? Or maybe I could have even managed to launch the Bluetooth module at last, with all its functions. Bluetooth serial ain’t a module to joke with ;)<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/04zv3Th.png" width="70%"></center>
+
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 panel">
+<br>
+
+I’m not sure how the temperature sensor could be utilized in any other way then to just simply showcase information for public spaces. Otherwise, it is a bit limited. It could be used creatively, obviously, but still it is not necessarily a sensor that allows one to do that much with it.<br><br>
+
+</div></div>
+
+<center><img src="https://i.imgur.com/x3x3smB.png" width="70%"></center>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 panel">
+<br>
+
+The photosensitive resistor is a complete different story, although still fairly limited, any changes introduced may be instant. Just make someone for instance limit the light that comes into the sensor and the changes will be showcased on whatever installation.<br><br>
+
+</div></div>
+
+
+<center><img src="https://i.imgur.com/i5CwYzp.png" width="70%"></center>
+
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 panel">
+<br>
+I did a few iterations. First of all: if the temperature is below 25 degrees, blueLED will light up. If it's over 25 degrees, redLED will light up. If the detected light surpasses a value of a 100, the greenLED will light up in relation to the detected values (100-255). The video showcasing how it works is below, I utilised RGB LED, temperature sensor, photosensitive resistor, PWM pins and a 8.4V battery<br><br>
+</div></div>
+
+      
+<div class="row">
+	<center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175596&authkey=AMk54oW_CtPA5Qs" type="video/mp4">
+      </video></center>
+      </div>
+
+      <div class="row">
+  <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175594&authkey=ACqC0SHOWnLqR9s" type="video/mp4">
+      </video></center>
+      </div>
+
+      <div class="row">
+    <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175593&authkey=AKVe98l8_D0XG2A" type="video/mp4">
+      </video></center>
+      </div>
+
+      <div class="row">
+    <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175591&authkey=AIlemktpsiTYECw" type="video/mp4">
+      </video></center>
+      </div>
+
+      <div class="row">
+    <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175589&authkey=AJG3ejOEn7fjbLY" type="video/mp4">
+      </video></center>
+      </div>
+
+            <div class="row">
+    <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2175585&authkey=AORidT0G0bR1pA0" type="video/mp4">
+      </video></center>
+      </div>
+
+                  <div class="row">
+    <center><video width="100%" controls>
+      <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2176492&authkey=AAq6ykuOq7LCBvY" type="video/mp4">
+      </video></center>
+      </div>
+<!--
+
+<div class="row">
+<center><h1>Follow-up</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Placemaking</div><img src="https://farm5.staticflickr.com/4694/27993583069_97c07b276a.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Intro</h4></center>
+    So, here I am, back with Arduino. After a few attempts, one minor, one prompt, one challenging and now the one, in a way ubiquitous, theoretically more constrained, yet potentially more potent to bring technology out to the open and make sure people actually interact and become healthier. In a way I was not entirely into 'designing for wellbeing' concept, while I agree with it and believe there is a strong need for it, I feel that it might not be my thing, ya know? However, one thing I did however manage to connect with and to and it all started back in around 2013, when I felt a strong drive for the redevelopment of my hometown, to which I had to commute for pretty much everyday. Whether to attend my high school classes, or to meet with friends - but the infrastruture did not really support either. So that's probably when my UX story really started, despite me not knowing the techniques, I already have utilized quite a few: Background research, target user interviews, low-fidelity sketches, later on mockups. The number one issue that I have commited to, intended no-misuse on my side, was that I went streight into developing ideas, instead of consulting it with others. At that time I was like, 'whom am I going to consult it with? Barely anybody knew what I was doing as a hobby. And nobody really would in fact approve it unless it was potentially good.' And so it remained a secret and never went beyond the defining stage. Since then, I believe it was only Vivid, which surprisingly became something that I started believing in the work that one may be conducting in terms of enriching the surrounding environment. And now, a factual 18 credit point subject, utilizing a number of areas that I have been dedicated to: Product Design, Sound Design, UX, Interface Design... what does it not utilize really? Arduino, Processing, Product making comes into play and the project will likely evolve way beyond that. Now that I consider as quite beautiful.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+Nevertheless, what I was told to do here, was really showcase and reflect on how I did and would likely prefer to perform futurewise. So first of all, I am in possession of a new computer system, therefore all of my software was not installed to begin with. I had to download Arduino and Processing softwares. Then my arduino kit was still stranded on the semi-failed weightscale project, very likely due to the dodgy arduino kit that I have (Sparkfun unit). After all, I constructed my device in a way, that it was relatively easy to disassemble. However, it turned out that my cable was stuck inside, therefore I had to fiddle with breaking it out. I had to apply some pressure and I didn't manage to free it out without breaking the structure a bit. But that's okay, I may recycle it someday, I guess. Then another issue came to my mind: what do I do now? Well, I went straight into trying to get something working. So I followed the sparkfun tutorial for launching my RGB LED and, it worked. So I figured: hey! Maybe I'll bind a processing code to the arduino kit? And there I made an attempt. A quite successful one. Nevertheless, I crashed on the Serial.write() bit, as unfortunately serialized code does not quite work well when you wish to send a few separate info. Too bad, so I figured, well, maybe I could do something more physical, then?<br><br>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+And so I did! Four buttons, according to my concept, the yellow would unlock the ground pin. And the other: red, green, blue; would just activate each. It didn't take much fidling, as it was just the buttons, that work as a connector itself. This is some cool stuff, easy peasy, but still cool. Along the way I found out that it's absolutely okay to use the RGB LED without any resistors, the same goes for the buttons. Cause what would they be needed for? They just carry on the electricity further, when pressed that is. The very next thing was to see whether both of the methods for launching the RGB LED work. Buttons worked. The processing code, after a few fixes: started to work as well. So there it is. Now I have an interesting foundation, although still am in need of some ways of sending data two-way. Hey, perhaps via bluetooth finally? So next step: Firmata.<br><br>
+</div>
+</div>
+
+-->
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
