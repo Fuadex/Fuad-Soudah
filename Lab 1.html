@@ -198,12 +198,14 @@ function getRandomImage() {
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
     <br>
-I believe the task was to combine:<br>
-- An arduino board<br>
+The task in question involed the combination of:<br><br>
+
+- An Arduino Board<br>
 - Breadboard<br>
-- Resistors<br>
+- Range of Resistors<br>
 - 4 Buttons<br>
-- RGB LED<br><br>
+- RGB LED<br>
+- Potentially, something extra<br><br>
 
 Notwithstanding, I decided to implement a Processing sketch, that would gradually and accordingly manipulate with the brightness of the RGB LED.<br><br>
 
@@ -222,19 +224,38 @@ Notwithstanding, I decided to implement a Processing sketch, that would graduall
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-Actually there were none. But considering my extra-curricular activities, there were a few.<br>
-- Just recollecting how sketches work and how to connect different ones did take a few minutes to refresh my memory<br>
-- Sending the data between Arduino and Processing can be quite tricky at times. If something doesn't work, you usually won't know why until you manually search for the mistakes/missing parts.<br>
-- Obviously, Arduino can get quite frequently very annoying, as the uploaded sketch will tell you quite often, that it's busy. As if its time is more precious than mine, daum Arduinos, taking over the world ._.<br>
-- Getting to know which is Blue/Red/Green in the RGB LED may be tricky, although straightforward, it ain't color coded, so it's more of a test and trial to get the pins and values right<br>
-- How do I send multiple values through serial? There must be a way, probably via an array, but mine did not quite work yet.<br>
-- Processing code works somewhat unexpectedly at times. For instance, if the clicked-on value is recorded as a value smaller than 0, Arduino will treat it as some sort of a maximum value. My RGB LED was quite bright, hence my hypothesis.<br>
-- The buttons did not always work and I still could not figure out why.<br><br>
+- Recollecting how sketches work and how to connect one to another takes sometime<br>
+- Exchanging the data between Arduino and Processing can get tricky. Something not working usually won't tell you directly why it ain't until you perform an in-depth analysis<br>
+- Obviously, Arduino can get quite frequently very annoying, as the uploaded sketch will rebuke you quite often with a statement, that it is busy. Its time being soo precious, daum Arduinos, taking over the world, stealing our rare earth elements etc. ._.<br>
+- Getting to know which is Blue/Red/Green in the RGB LED may be tricky, it ain't color coded, so it's more of a set of trials to get the pins and values right<br>
+- How do I send multiple values through serial? There must be a way, probably via an array, but mine did not quite work at the time<br>
+- Processing code works somewhat unexpectedly at times. For instance, if the clicked-on value is recorded as a value smaller than 0, Arduino will treat it as some sort of a maximum value. Hypothesis based on my RGB LED getting quite very very bright<br>
+- The buttons did not always quite work and I remain unsure as to why.<br><br>
 
   </div><br>
 </div>
 
 <center><img src="https://i.imgur.com/kapsHFL.png" width="70%"></center>
+
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Tut Exercise</div><img src="https://iqhffw.db.files.1drv.com/y4m_4X_S5-yLXDXHGcuyb1hib6A9C8lZbfodaRcbnehjH86GH5gAZhqEchF_s-XHewsB8R4y9OR5yZ8v8GYsiXwRI4awytmfwXITy31gforGUqs5V-BM_ZcbwTD6UZFhqdq-Y17uFhUdtynnXA4miOd2bwjfJCmzWZ3_IWMK6tu1kBxdre5XwUxV0YvAurRHQUQuWufqbOubSHrC8Zv9-xSqQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
+
+
+
+- I successfully managed to get my setup working, so I'd say job well done. The RGB LED got bright. The buttons did trigger it lighting up. The Processing sketch did exactly the same as well. So everything really went well, all things considered?<br><br>
+
+- I found ways a variety of ways to manipulate with the RGB LED using a simple function based on a mouse press and monitoring its position on a processing sketch's canvas<br><br>
+
+- I was able to supplement the Processing sketch with two dimensions, X values changed one particular LED and Y values changed another. I'm planning on exploring additional dimensions<br><br>
+
+  </div><br>
+</div>
+
 <center><img src="https://i.imgur.com/vok7uVX.png" width="70%"></center>
 
 <div class="row">
@@ -242,19 +263,12 @@ Actually there were none. But considering my extra-curricular activities, there 
     <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://iqhkfw.db.files.1drv.com/y4mNtx7oWUUzs8HDBhgXWlufZE3zpimqpsVivi9qzXYFRr6eCiJAuqVgBpMjPbI42XgjsZp5fp2SpZBnDkrtMF9lrTRrKASTWi44UG-QdIKqOcEGNxG7j-10D8fam440VY0d1EOM3_JlyWUwR02ncSCiacodcGbWjgqF-ZP2FzjaN6ayW8Z00M9I1_rSM7t1ljbi70Eo-uoW2FSdZYbNsRsJg?width=1024&height=576&cropmode=none" width="100%"></a><br>
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
-    <center><h4>Things, Code and Photos</h4></center>
+<br>
+- The Arduino gets dodgy and the buttons can demonstrate how dodgy they are every now and then, getting eventually on my nerves a bit.<br><br>
 
-3.a) Things that went well<br><br>
+- One problem I encountered was, well, that I could not send multiple values via the serial. This particular communication form is a tricky one, as it seems that the communication needs to be clearly managed. In theory many ways to send data may be introduced, however the main Serial type remains in terms of Arduino and its bandwidth along with data receival interpretation
 
-I successfully managed to get my setup working, so I'd say job well done. The RGB LED was bright. The buttons did trigger it to light up. The Processing sketch as well. So everything really went well.<br><br>
-
-3.b) Things that went wrong.<br><br>
-
-The dodgy Arduino and dodgy buttons did get on my nerves a bit. But one problem I encountered was, well, that I could not send multiple values via the serial.<br><br>
-
-4. Code excerpts: <a href="https://unisydneyedu-my.sharepoint.com/:f:/g/personal/fsou4085_uni_sydney_edu_au/El5C-T7PxtxErCo_ejnqtCUBz8pAv3tmP_nGgMPU4ajTlg?e=G9L0pa">Click me for Arduino + Processing sketches</a><br><br>
-
-5. Photos during the making process (at least 3): Embedded.<br><br>
+<br><br>My main point is, that the communication needs to be utilised with care<br><br>
 
   </div><br>
 </div>
@@ -355,23 +369,6 @@ void draw()
 
 <center><img src="https://i.imgur.com/UI0PAbb.png" width="70%"></center>
 
-<div class="row">
-  <div class="col-md-4 col-md-offset-2">
-    <a href="Blog v2.html" class="darken"><div class="text">Code Excerpt</div><img src="https://iqhffw.db.files.1drv.com/y4m_4X_S5-yLXDXHGcuyb1hib6A9C8lZbfodaRcbnehjH86GH5gAZhqEchF_s-XHewsB8R4y9OR5yZ8v8GYsiXwRI4awytmfwXITy31gforGUqs5V-BM_ZcbwTD6UZFhqdq-Y17uFhUdtynnXA4miOd2bwjfJCmzWZ3_IWMK6tu1kBxdre5XwUxV0YvAurRHQUQuWufqbOubSHrC8Zv9-xSqQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
-  </div>
-  <div class="col-md-4 col-md-offset-0 panel">
-    <center><h4>Videos and Photos</h4></center>
-
-6. Video of the resulting outcome/prototype at the end of the class. A very short video (20 seconds or less) showing whether your prototype worked or not.<br><br>
-
-Embedded. Due to be cut (one of 'em)<br><br>
-
-7. Please upload your video files to vimeo/youtube and either (a) embed your video to this post, or (b) include links to them here.<br><br>
-
-Uploaded and shared via Onedrive.<br><br>
-
-</div></div>
-
 <center><img class="nopadding" src="https://9v2sbg.by.files.1drv.com/y4mRNxuyvFb-wTbT62PIVErrDyYCZRq3BTNistjAbaqySSzOBL9kUNYt1NU--oo1_rdJbIcC-c1K1Tttx2c4d36DZOKl5PYzabEnzDddXhMr-hg91svcohoksUfSe8cqqfCPqimzNao--oWsp4ZN4Hc6WNG0OUroO4sxrtRZP3RWAyS4_ZyglDNtVwJTYAES-FdWMXw9AkB3G9p6dnJ5mPNJA?width=3240&height=2160&cropmode=none" width="50%"></center>
 
 <center><img class="nopadding" src="https://9p2sbg.by.files.1drv.com/y4mt_l3-fXLhuoCkTEJiMu---3p5wPHaNcTeQ96_Iy4KTYEdBavNZDwjiA9P_RXCI4Vnsod5dMHevq5-IDR59WUPcOANwq5L_N84_HRnbxH0O-JbMAF4x0njZ975SjJxcv1TYOz7BgkrMKhBsinH8zVZ_FW1BVtCCdgvZk1ABvQ8yqDUnhtSn7aI_ZbcjdGqXaSR-ygdm2XEaf875HlHUopmQ?width=3240&height=2160&cropmode=none" width="50%"></center>
@@ -391,7 +388,7 @@ Uploaded and shared via Onedrive.<br><br>
     <a href="Blog v2.html" class="darken"><div class="text">Voila!</div><img src="https://iqhifw.db.files.1drv.com/y4mpTmA6GWUwQ-Tnv-gJ3GY2ThbbgQJL4Nbz97GGVZ6Z_vXkbmYdbWoO_cis6uPgHJEzC_Zwv9tDrJzp0yAjfmjc42sLa9w2Xv05Z65qYbKI3GrYkuAol-HhTzDUNVc_UZ4_zaXUHxLW9LnMjteslrOro6HWn8PDYN-fV9AfG7HFuVm96tu1dbJnBZp84Hiv--S2liu9EZOoM8Vs4azbF9hbQ?width=1024&height=576&cropmode=none" width="100%"></a><br>
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
-  	<center><h4>Questions!</h4></center>
+<br>
 
 8. a) What would you do differently during this process?<br><br>
 

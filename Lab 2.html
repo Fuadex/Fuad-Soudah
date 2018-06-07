@@ -200,9 +200,13 @@ function getRandomImage() {
     <br>
 The tasks presented were to: design an Arduino circuits board set in accordance with a:<br><br>
 
-- Light Sensor and a diode<br>
-- Temperature Sensor and its proper execution<br>
-- Combination of aforementioned and PWM (to be double checked)<br><br>
+- Light Sensor<br>
+- an LED (used RGB LED)<br>
+- Temperature Sensor<br>
+- Combination of aforementioned and PWM pins<br>
+- It's proper (code) execution<br><br>
+
+Eventually, I created a system which would affect an RGB LED based on the light level and room temperature<br><br>
 
   </div><br>
 </div>
@@ -219,11 +223,9 @@ The tasks presented were to: design an Arduino circuits board set in accordance 
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-Throughout the construction of the board, there were a few minor challenges that I could not get over without seeking additional feedback. At first, the light sensor was a little tricky to get it up and running. It seems that the problem laid in my code, however a few tiny fixes and suddenly it could detect incoming light quite nicely. Piece of cake.<br><br>
+Throughout the construction of the board, there were a few minor challenges that I could not overcome without seeking additional feedback. At first, the light sensor was a little tricky to get up and running. It seems that the problem was based in my code, however a few tiny fixes implemented and suddenly it could detect incoming light quite nicely. Piece of cake.<br><br>
 
-The other larger piece was not as I perceived as such. And it was a rather simple task, get the diode to light up brighter if light came shining upon my precious little photosensitive resistor. The only thing I managed to do, was to get it to turn on and off, with a simple conditional statement embedded. And I quadruple-checked my code, everything seemed fine. I used a different diode, as one just simply would not light up (idk why). I tried doing it with my LED, but that would not budge either for some unforeseen and yet to be studied reason. Eventually, it turned out that, well, Arduino has these PWM pins, which actually allow the circuit board to provide, well, a variety of energy potency? Which was quite some news to me, as I have never before, for some reason, came across this particular issue or matter in question.<br><br>
-
-One surprising thing with the temperature sensor was to get it to properly address the room’s temperature, which it would provide with a slightly decreased values. It wasn’t anything major, but the interesting part was once I plugged the battery in, the voltage kicked in slightly and the temperature increased from eerie 20 degrees to 22-23 degrees altogether. Interesting, is the usb not good enough to power all the stuff that I chucked onto the board?<br><br>
+The other larger piece was not quite. It was a simple task of getting the diode to light up brighter once any came bestowing upon my precious little photosensitive resistor. The only thing I managed to do, was to get it on or off with a simple conditional statement embedded. And I quadruple-checked my code, everything seemed fine. I used a different diode, as one just simply would not light up (probably died). I tried doing it with my RGB LED, but it would not budge either for some unforeseen and yet to be studied reason. Eventually, it turned out that, well, Arduino has these PWM pins, which allow the circuit board to provide, well, a more varied output? Which was quite some news to me, as I have never before, for some reason, came across the matter in question.<br><br>
 
   </div><br>
 </div>
@@ -237,7 +239,9 @@ One surprising thing with the temperature sensor was to get it to properly addre
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-It should be remarked, that I managed to successfully complete the Lab tutorial, as the light sensor worked, in conjunction with the diode and LED altogether and the temperature sensor properly addressing the room’s temperature In a variety of values. I also connected the Arduino sketch with a Processing sketch and it worked again well.<br><br>
+It should be remarked, that I managed to successfully complete the Lab tutorial, as the light sensor worked, in conjunction with the diode and LED altogether and the temperature sensor properly addressing the room’s temperature with a variety of values. I also connected the Arduino sketch with a Processing sketch and it worked well.<br><br>
+
+One surprising thing with the temperature sensor was getting it to properly address the room’s temperature, which it would, although by the provision of slightly decreased values. Once I plugged the battery in, the voltage kicked in by that remaining slight amount and the temperature increased from eerie 20 degrees to 22-23 degrees. Interesting, is the usb not good enough to power all the stuff that I chucked onboard?<br><br>
 
   </div><br>
 </div>
@@ -250,7 +254,9 @@ It should be remarked, that I managed to successfully complete the Lab tutorial,
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
-The only thing that did not go well was me not being able to come up with an interesting combination of the light sensor, diode, temperature sensor and PWM… I mean, what do I do with the temperature sensor, eh? So that’s yet to be sorted. Also, firmata is still a bit of a riddle.<br><br>
+The only thing that did not go well was me not being able to come up with an interesting combination of the light sensor, diode, temperature sensor and PWM… I mean, what do I do with the temperature sensor, eh? So that’s yet to be sorted<br><br>
+
+In addition, firmata is still a bit of a riddle. On one hand it is handy, on the other: libraries might refuse working with it, finding workarounds might just not be a good idea, taking an exponential amount of time<br><br>
 
   </div><br>
 </div>
@@ -388,11 +394,11 @@ void setColor(int red, int green, int blue)
 <div class="row">
 <div class="col-md-6 col-md-offset-3 panel">
 	<br>
-I feel that the Arduino board and sensor are not that much of a challenge at present time and I am looking forward to actually implementing a bit more elaborate setups. Especially I am curious of how I may connect Arduino with processing via Bluetooth in a rather simple and easy to understand manner. Although, at the same time there are features that pop up and turn out as quite new for me, for instance the WME stuff, just a few pins available and marked with a ~. Now that’s something unexpected. I even used a few different pins to see whether these were damaged or so, but I didn’t plug these to the right ones, instead the ones that did not quite work as intended.<br><br>
+I feel that the Arduino board and sensor are not that much of a challenge at present time and I am looking forward to actually implementing a bit more elaborate setups. Especially I am curious of how I may connect Arduino with processing via Bluetooth in a rather simple and easy to understand manner. Although, at the same time there are features that pop up and turn out as quite new for me, for instance the PWM stuff, just a few pins available and marked with a ~. Now that’s something unexpected. I even used a few different pins to see whether these were damaged or so, but I didn’t plug it to the PWM ones.<br><br>
 
 It seems, though, that the problems I have encountered clearly state that working as a group will likely be more efficient, as the problems are what hold projects up in the end. You eventually come to a conclusion of what you want installed and once you actually start introducing the idea, it may turn out that many features just simply do not feel like working. And once they don’t and you have no idea why, you start figuring it out and the entire process will take ages. That’s why collaboration is so important, as the final effect may become sorted much quicker.<br><br>
 
-Another important lesson, although it wasn’t that much of a major problem in my case, was that some things do break and if they do, you gotta figure this out asap. With simply components like diodes, it won’t be much of an issue, but once some more elaborate equipment get introduced… Accidents happen, it’d be best to know whether something works or doesn’t and whether it is our fault or not. Nevertheless, getting to know whether a component works or doesn’t is tricky, we take it usually for granted that it actually does. But what if it doesn’t? Do you just stick with trying to plug the component in new ways, rewrite the code or… perhaps it’d be best to check whether it works at someone else’s hands, or if this person’s component actually works?
+Another important lesson, although it wasn’t that much of a major problem in my case, was that some things do break and if they do, you gotta figure this out asap. With simple components like diodes, it won’t be much of an issue, but once some more elaborate equipment gets introduced… Accidents happen, it’d be best to know whether something works or doesn’t and whether it is our fault or not. Nevertheless, getting to know whether a component works or doesn’t is tricky, we take it usually for granted that it actually does. But what if it doesn’t? Do you just stick with trying to plug the component in new ways, rewrite the code or… perhaps it’d be best to check whether it works at someone else’s hands, or if this person’s component actually works?
 <br><br>
 
 </div></div>
@@ -402,7 +408,7 @@ Another important lesson, although it wasn’t that much of a major problem in m
       <div class="row">
       	<div class="col-md-6 col-md-offset-3 panel">
 <br>
-Not much really, I think I could’ve improved by expanding the idea and just figuring out the WME much faster. Then I could focus on other stuff, like, maybe expanding the processing sketch or getting some cool Arduino features installed? Or maybe I could have even managed to launch the Bluetooth module at last, with all its functions. Bluetooth serial ain’t a module to joke with ;)<br><br>
+Not much really, I think I could’ve improved by expanding the idea and just figuring out the PWM much faster. Then I could focus on other stuff, like, maybe expanding the processing sketch or getting some cool Arduino features installed? Or maybe I could have even managed to launch the Bluetooth module at last, with all its functions. Bluetooth serial ain’t a module to joke with ;)<br><br>
 
 </div></div>
 
@@ -413,7 +419,7 @@ Not much really, I think I could’ve improved by expanding the idea and just fi
         <div class="col-md-6 col-md-offset-3 panel">
 <br>
 
-I’m not sure how the temperature sensor could be utilized in any other way then to just simply showcase information for public spaces. Otherwise, it is a bit limited. It could be used creatively, obviously, but still it is not necessarily a sensor that allows one to do that much with it.<br><br>
+I’m not sure how the temperature sensor could be utilized in any other way then to just simply showcase information for public spaces. Otherwise, it is a bit limited. It could be used creatively, obviously, but still it is not necessarily a sensor that allows one to do that much with.<br><br>
 
 </div></div>
 
@@ -423,7 +429,7 @@ I’m not sure how the temperature sensor could be utilized in any other way the
         <div class="col-md-6 col-md-offset-3 panel">
 <br>
 
-The photosensitive resistor is a complete different story, although still fairly limited, any changes introduced may be instant. Just make someone for instance limit the light that comes into the sensor and the changes will be showcased on whatever installation.<br><br>
+The photosensitive resistor is a complete different story, although still fairly limited, any changes introduced may be instant. Just make someone for instance limit the light that comes into the sensor and the changes will be showcased on whatever the installation.<br><br>
 
 </div></div>
 
@@ -434,7 +440,7 @@ The photosensitive resistor is a complete different story, although still fairly
       <div class="row">
         <div class="col-md-6 col-md-offset-3 panel">
 <br>
-I did a few iterations. First of all: if the temperature is below 25 degrees, blueLED will light up. If it's over 25 degrees, redLED will light up. If the detected light surpasses a value of a 100, the greenLED will light up in relation to the detected values (100-255). The video showcasing how it works is below, I utilised RGB LED, temperature sensor, photosensitive resistor, PWM pins and a 8.4V battery<br><br>
+I did a few iterations. First of all: if the temperature is below 25 degrees, blueLED will light up. If it's over 25 degrees, redLED will light up. If the detected light surpasses a value of a 100, the greenLED will light up in relation to the detected values (100-255). The video showcasing how it works is at the end of the post, I utilised a RGB LED, temperature sensor, photosensitive resistor, PWM pins and a 8.4V battery<br><br>
 </div></div>
 
       
