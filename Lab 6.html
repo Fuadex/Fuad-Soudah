@@ -198,7 +198,9 @@ function getRandomImage() {
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
     <br>
-We were tasked with two parts. First of all we had to connect a sensor and combine it with a processing visualisation, the looks of which we would be able to manipulate by ourselves. The second involved a custom music track that via an analyzer plugin in Max 7, we would be able to manipulate the visualisations in a more distinct way, by the use of analysed features the music track came with.<br><br>
+We were tasked with two parts. First of all we had to connect a sensor and combine it with a processing visualisation, the looks of which we would be able to manipulate<br><br>
+
+The second involved a custom music track that via an analyzer plugin in Max 7, we would be able to manipulate the visualisations in a more distinct way, by the use of analysed features the music track came with<br><br>
 
   </div><br>
 </div>
@@ -215,9 +217,9 @@ We were tasked with two parts. First of all we had to connect a sensor and combi
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-The first challenge was to connect the Processing sketch with an Arduino board. One method everyone used was firmata, however, since I have allergy to firmata (it does not work with many libraries) out of the box, I decided to reuse the code I developed a week ago, which utilised a fully working serial communication between an Arduino, Processing sketch and Max 7 via OCP/UDP protocols. Once I recreated my steps, I was able to have a fully functioning visualisation manipulator in motion, based on the distance the ultrasonic sensor picked up. The effect was subliminal, but relatively surprising at the same time.<br><br>
+The first challenge was to connect the Processing sketch with an Arduino board. One method everyone used was firmata, however, since I have allergy to firmata (it does not work with many libraries) out of the box, I decided to reuse the code I developed a week ago, which utilised a fully working serial communication between an Arduino, Processing sketch and Max 7 via OCP/UDP protocols. Once I recreated my steps, I was able to have a fully functioning visualisation manipulator in motion, based on the distance the ultrasonic sensor picked up. The effect was subliminal, but relatively surprising at the same time<br><br>
 
-The largest challenge came once I had to involve an analyzer plugin, one that would be able to analyze any song possible, break it down to specific features with which I would be able to control visualisations more elaborately. Unfortunately, I never managed to get the plugin working. I looked for solutions on the web, however, despite having broached quite a few discussion boards, I was never able to get the plugin working nor find a suitable alternative, sadly.<br><br>
+The largest challenge came once I had to involve an analyzer plugin, one that would be able to analyze any song possible, break it down to specific features with which I would be able to control visualisations more elaborately. Unfortunately, I never managed to get the plugin working. I looked for solutions on the web, however, despite having broached quite a few discussion boards, I was never able to get the plugin working nor find a suitable alternative, sadly<br><br>
 
   </div><br>
 </div>
@@ -231,7 +233,9 @@ The largest challenge came once I had to involve an analyzer plugin, one that wo
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-I was able to introduce a serial communication and an OSC/UDP protocol between Max, Processing and Arduino and successfully manipulate a processing sketch by picking up information from a variety of Arduino modules.<br><br>
+I was able to introduce a serial communication and an OSC/UDP protocol between Max, Processing and Arduino and successfully manipulate a processing sketch by picking up information from a variety of Arduino modules<br><br>
+
+I have also explored a variety of filters and ways of breaking down songs, along with rediscovering the existance of the very same filters available on PC, although sadly not working at this time<br><br>
 
   </div><br>
 </div>
@@ -247,6 +251,8 @@ I was able to introduce a serial communication and an OSC/UDP protocol between M
 <br>
 
 I was not able to analyze data from any song due to a plugin compatibility-related issue and spend most of the time in class trying to figure out how to get it properly installed and working on my PC, as the Mac I was stationed at did not work at all, unfortunately.<br><br>
+
+Despite having found an equivalent that should have worked on PCs, it eventually didn't. Most likely due to the requirements targetting a Windows 7 PC, as some of the files that had to be altered were derived from previous setups, not suitable for my current system<br><br>
 
   </div><br>
 </div>
@@ -383,57 +389,66 @@ void oscEvent(OscMessage theOscMessage) {
 
 <center><img class="nopadding" src="https://vkiezw.by.files.1drv.com/y4mAQ4_L69nm8kwKR9vDENh-b2-UOgky81yH8D2t0e8xC8ocof78-H111Q2ZAMG95RIU1IxSjqKKy5VOp7nMTzgJctsYNI7katGeEhvRP1RqjtiO4RiAsAgUik9c6UT5tiendi-EIlZybpywLNyoeDbwufCYn9hXbZ9KclZ0ubNSPoW99FLxALVjzaYjjK0v3S3CR8j4Bc_c9FA5XBQ29oSlg?width=3240&height=2160&cropmode=none" width="50%"></center>
 
-<center><img class="nopadding" src="https://uuiezw.by.files.1drv.com/y4mjdgPcEuf8UWAcQNc-faiwbZXVd7zqHtCA27tOI_vD4kj0P9eOwOmhCHyK9xtjbWPfk-vzNgdSS9-ldlPTNs2HRjjfo6Weq38cBFlxJoao8pvm-mHFEDvpltbCIp9JQuHdVV1qegeFs_CJlGLwsGt_3-lUvRzI8PHEg4Y9f6-KToErYNeEkFEbHb7s97ms_wDkYyGU7a7fnMrLoH87ZYv_g?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img class="nopadding" src="https://x0iezw.by.files.1drv.com/y4myNrtw6QzSwqnOemh2O5jctyagA0T_cuTRddi8t1UTwp6LgSM3QpN4Xv9crxORPHarMjQVNhmYu9mb1E83eAIcD8Ugk7Vs0FxmabZE6z9UQLhuvrQbiFR3rGoV1I3JozwsovjuOcjW6D1IY3cB_zBLTTpJ_66ixt634AnlQf-Hmli1lj3IBB3VoFeQEcy3PUyizlmu3bVQ4FmbG9hO4MBxA?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-
-<center><img class="nopadding" src="https://v0lhng.by.files.1drv.com/y4mdKTpyMvZki4DdCtJFxUFnNSTNRe3c6dUYMOrCKyrx3-H3oAWhXzRvLtm_jKqsdKGILnirrMQSrd01MxhIt8YoCjuBfV2KRr7YxdyXjdwI2xMgvGkBzNNHAz4tpBAngWrRozlF4XX7OrQX2fJgx_8aRS13pcsprfXJqvxW7krM38UwBcJvtySfxmbLzunL1JWF_8slDfzxbFFK3cAOUtJrA?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img class="nopadding" src="https://yeiezw.by.files.1drv.com/y4mT8xtupssZ_Br3kIpUn2Qal_xRgguSYKFhDQlzbEFY4HbLMHy-Il9UHPk-xnAiomcvNx_TglK4w3skw81c2vGbOnwvtWrliUW3_ZwrdrBdGhOwYff1GXi3plGT4IuQiydld4mX4I3hJ2r199SRrNWyaMIqcCCdbYN9kA-bYJwYKzxNfrnnfaCPQpAQACsS9ObsgABS8ZH0bv222t5Pte87w?width=3240&height=2160&cropmode=none" width="50%"></center>
-
 
 <center><img src="https://i.imgur.com/JgVEAWA.png" width="80%"></center>
 
 <center><img src="https://i.imgur.com/04zv3Th.png" width="70%"></center>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3 panel">
-  <br>
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://uuiezw.by.files.1drv.com/y4mjdgPcEuf8UWAcQNc-faiwbZXVd7zqHtCA27tOI_vD4kj0P9eOwOmhCHyK9xtjbWPfk-vzNgdSS9-ldlPTNs2HRjjfo6Weq38cBFlxJoao8pvm-mHFEDvpltbCIp9JQuHdVV1qegeFs_CJlGLwsGt_3-lUvRzI8PHEg4Y9f6-KToErYNeEkFEbHb7s97ms_wDkYyGU7a7fnMrLoH87ZYv_g?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
 
 I would not have done anything differently actually, except perhaps, if needed, bought a Macintosh computer and worked on it, as apparently analyzer did eventually launch on this particular brand. That having said, I probably would have dedicated more time into finding an equivalent music-analyzing plugin or perhaps a legitimate solution. It might be the case that the plugin will not work in windows-based computers with the newest Max installed, plugins can be quite difficult to work with when they're not updated for quite some time.<br><br>
 
-</div></div>
+  </div><br>
+</div>
+
 
 <center><img src="https://i.imgur.com/x3x3smB.png" width="70%"></center>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3 panel">
-  <br>
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://x0iezw.by.files.1drv.com/y4myNrtw6QzSwqnOemh2O5jctyagA0T_cuTRddi8t1UTwp6LgSM3QpN4Xv9crxORPHarMjQVNhmYu9mb1E83eAIcD8Ugk7Vs0FxmabZE6z9UQLhuvrQbiFR3rGoV1I3JozwsovjuOcjW6D1IY3cB_zBLTTpJ_66ixt634AnlQf-Hmli1lj3IBB3VoFeQEcy3PUyizlmu3bVQ4FmbG9hO4MBxA?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
 
 It certainly does in a few dimensions. One of our ideas was to include a projection mapping placed underneath the umbrella. In fact, any projection mapping being showcased could potentially be manipulated with data included. Furthermore, we are involving sounds in our project, ie. nature sounds, which could potentially be analyzed via Max with sensors pitching another dimensions affecting specific visualisations.<br><br>
 
 To be honest, the potential applications are endless, however we need to consider the complexity of our project, as we were frequently reminded to not make it too complicated. Moreover, we are concentrating on addressing real user-needs bound with the area, in such case we will focus on tweaking these. That having said, we will keep in mind the affordances provided by the implication of Max and OSC/UDP protocols to send data back and forth. Despite that it may end up being a relatively tiring process, the gains are substantial, as it could even work remotely over a server if needed. With sensors properly installed, a simple IOT system could be established, although the question remains of how useful would it be for our project?<br><br>
 
-</div></div>
+  </div><br>
+</div>
+
 
 <center><img src="https://i.imgur.com/Imzj14y.png" width="70%"></center>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3 panel">
-  <br>
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://v0lhng.by.files.1drv.com/y4mdKTpyMvZki4DdCtJFxUFnNSTNRe3c6dUYMOrCKyrx3-H3oAWhXzRvLtm_jKqsdKGILnirrMQSrd01MxhIt8YoCjuBfV2KRr7YxdyXjdwI2xMgvGkBzNNHAz4tpBAngWrRozlF4XX7OrQX2fJgx_8aRS13pcsprfXJqvxW7krM38UwBcJvtySfxmbLzunL1JWF_8slDfzxbFFK3cAOUtJrA?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
 
 Well, the exercise could involve more sensors to begin with. Secondly, the visualisations could be more straightforward as to suggest direct user feedback, which it did not quite suggest throughout the entire session. Perhaps integrating the system with OpenCV could emerge with quite a few particularly interesting use cases, although at this point we would be working with such a multitude of dimensions that the effect a user could impose would eventually not be quite visible as we would have intended as.<br><br>
 
 It may be a different story if we involved more precise or a cluster of sensors. It all really comes down to the sensors really, as the communication could be even established via regular cables. Nevertheless it is just interesting to see how easy/intricate a system can be and through the lenses of our projects and the Lab's tutorials consider how other, potentially imaginary and visionary projects such as Amazon's shop in which you don't have to scan any products, you just pick them up and leave with Amazon automatically charging for the products, can conceptually be implemented. Broadening the horizons and showcasing more possibilities along with functions and the technical implementation is useful to comprehend phenomena taking place around us, as well as being able to contribute to a variety of potential projects.<br><br>
 
-</div></div>
+  </div><br>
+</div>
+
 
 <center><img src="https://i.imgur.com/i5CwYzp.png" width="70%"></center>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3 panel">
-  <br>
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Collaboration</div><img src="https://yeiezw.by.files.1drv.com/y4mT8xtupssZ_Br3kIpUn2Qal_xRgguSYKFhDQlzbEFY4HbLMHy-Il9UHPk-xnAiomcvNx_TglK4w3skw81c2vGbOnwvtWrliUW3_ZwrdrBdGhOwYff1GXi3plGT4IuQiydld4mX4I3hJ2r199SRrNWyaMIqcCCdbYN9kA-bYJwYKzxNfrnnfaCPQpAQACsS9ObsgABS8ZH0bv222t5Pte87w?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+<br>
 
 All in all, I feel the tutorials in which we were taught how to communicate between devices were substantial. On one hand we need to know which sensors to use in order to evaluate and directly relate to a problem. And then see how we could solve it via communication and technical implementation means and provide a positive impact on the users.<br><br>
 
@@ -443,7 +458,8 @@ Subliminal references:<br><br>
 
 <a href="https://cycling74.com/forums/cnmats-analyzer-object">Links to an external site.</a><br><br>
 
-</div></div>
+  </div><br>
+</div>
 
 <div class="row">
 	<center><video width="100%" controls>

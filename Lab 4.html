@@ -198,7 +198,11 @@ function getRandomImage() {
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
     <br>
-We were tasked with running a Processing sketch that would utilise the OpenCV library.<br><br>
+We were tasked with running a Processing sketch that would utilise the OpenCV library<br><br>
+
+The library facilitates its developers with the creation of tools that enable computers to see more than meets the eye within the environment. For instance it may detect specific moving objects, people, image differences etc.<br><br>
+
+The tasks involved fiddling with OpenCV code, trying to come up with some interesting solutions and even more interesting use cases, especially in relation to our future project<br><br>
 
   </div><br>
 </div>
@@ -215,9 +219,11 @@ We were tasked with running a Processing sketch that would utilise the OpenCV li
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-My Surface Book’s camera does not work well with the processing.video library, as the video only works in predefined resolutions, crops off the video in many cases, the colours are skewed and tinted green, and the framerate is substantially bad.<br><br>
+My Surface Book’s camera does not work well with the processing.video library, as the video only works in predefined resolutions, crops off the video in many cases, the colours are skewed and tinted green, and the framerate is substantially bad<br><br>
 
-Getting a workaround implemented was the main challenge, that I was still not able to technically overcome as of yet.<br><br>
+Getting a workaround implemented was the main challenge that I was still not able to technically overcome as of yet. Unfortunately the discussion boards do not provide with a straight answer and I have made attempts at introducing a few workaround, however none would work in relation to OpenCV<br><br>
+
+I was advised that the eerie performance was due to codec-related issues, however, I remain by my belief that processing.video library does not provide with a suitable technological solution for Surface computer's software. The codecs on my computer run anything and in addition, video encoding software such as Premiere operates on its own codecs, similarly to video playback-related software such as VLC<br><br> 
 
   </div><br>
 </div>
@@ -231,7 +237,9 @@ Getting a workaround implemented was the main challenge, that I was still not ab
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
 
-I was successfully able to run the OpenCV code and get some basic functionality working. I also managed to find a workaround to get a proper video feature implemented.<br><br>
+I was successfully able to run the OpenCV code and get some basic functionality up and running. In addition I successfully managed to get the code working, despite that it did not quite produce with the right output at first, prompting me to explore potential solutions, eventually finding the key: using an appropriate resolution (Full HD in my case as I believe it was)<br><br>
+
+I also managed to find a workaround to get a proper video feature implemented, that would function as a workaround compared to video.processing library<br><br>
 
   </div><br>
 </div>
@@ -244,7 +252,11 @@ I was successfully able to run the OpenCV code and get some basic functionality 
   </div>
   <div class="col-md-4 col-md-offset-0 panel">
 <br>
-I wasn't able to get OpenCV to work entirely in proper fashion, as it glitches substantially. I will make a few more attempts merging the codes or perhaps messing with the codecs in relation to processing.video.<br><br>
+I wasn't able to get OpenCV to work entirely in proper fashion, as it glitches substantially: The colors are tinted green, the framerate is very low, so low the experience feels like a slideshow, the OpenCV features are limited, therefore it seems the library becomes affected altogether. In total, the library seems unusable on surface-related devices<br><br>
+
+Unfortunately, I was not able to get a Mac running at the station I was sitting at. There are some problems with running them in the Labs, however, I would still prefer to have OpenCV running on my PC, as I would be able to research more effectively and efficiently at my own pace, time and will on my own hardware<br><br>
+
+I will make a few more attempts merging the codes or perhaps messing with the codecs in relation to processing.video, although so far the attempts were futile<br><br>
 
   </div><br>
 </div>
@@ -410,11 +422,6 @@ class DCapture implements java.beans.PropertyChangeListener {
 <center><img src="https://i.imgur.com/UI0PAbb.png" width="70%"></center>
 
 
-<center><img class="nopadding" src="https://kvnwaa.by.files.1drv.com/y4mBjwKGie5cp_xg6q1vlHar0GwaD8COh39Di6v6Gn_nwIx2XTceogTNinvhwuFP0r2viOHvAYconV-osNH-A8kSnNMUhdld9-4WgHfk0W19MdvzmidMNIgJWqYHTcLRxKE2_fjspJKrZnc0U4mnVG-InofVR69DCSDGztylgWQhEu1edYfTzFIUZwn7A19KvHGw93Ty_PH7GfoWJcMnT0H-Q?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-<center><img class="nopadding" src="https://ivlx3q.by.files.1drv.com/y4mW9tyR_B65YcplMt4lINAkzQNcPbDUkW1t-hSJ8VIPYvPw73PLsh6s_TNEIcJjiu8KwCo6NmwtPHxsg8oEHek8UnWMDbbCEEq9VAx3AUbEyqn6eVqvJ9Jj3dGj_Crc_TQ33Fkw4YnaIyT2tg261qRncTHFeMN9IjH4pojMafPyuupVFU4F2BkJWHRqE-OpQtzEEECKztWwBSmcK25It6bvg?width=3240&height=2160&cropmode=none" width="50%"></center>
-
-
 <center><img src="https://i.imgur.com/JgVEAWA.png" width="80%"></center>
 
 <div class="row">
@@ -441,47 +448,59 @@ Although my camera froze up eventually.<br><br>
 <center><img src="https://i.imgur.com/Imzj14y.png" width="70%"></center>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3 panel">
-	<br>
- Not much, but I'll elaborate soon.
-<br><br>
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Light!</div><img src="https://kvnwaa.by.files.1drv.com/y4mBjwKGie5cp_xg6q1vlHar0GwaD8COh39Di6v6Gn_nwIx2XTceogTNinvhwuFP0r2viOHvAYconV-osNH-A8kSnNMUhdld9-4WgHfk0W19MdvzmidMNIgJWqYHTcLRxKE2_fjspJKrZnc0U4mnVG-InofVR69DCSDGztylgWQhEu1edYfTzFIUZwn7A19KvHGw93Ty_PH7GfoWJcMnT0H-Q?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <br>
+Well, it is my firm belief that computer vision is what drives our contemporary world. Whether it is us, riding over Harbour Bridge with cameras picturing the licence plates and sending the bill to us home, or us just walking around somewhere. Orwell is strong, although Australia probably could be pictured far from being a dystopian reality<br><br>
+
+For the base of our future project, we could potentially utilise OpenCV as a substitute for a range of sensors. After all, most of our devices are already equipped with such. My laptop has a camera. Your laptop has a camera. My phone has a camera. Once you chuck in software that can analyze what the camera pictures, you come up with a wide range of possibilities, especially once you consider how superior sensors become<br><br>
+
+Detecting movement is one use case. Detecting how far/close a person is - another. The only problem is, that we would have to utilise a device but that could ruin potential immersion capabilities<br><br>
+
+  </div><br>
+</div>
 
 </div></div>
 
 <center><img src="https://i.imgur.com/04zv3Th.png" width="70%"></center>
 
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Light!</div><img src="https://ivlx3q.by.files.1drv.com/y4mW9tyR_B65YcplMt4lINAkzQNcPbDUkW1t-hSJ8VIPYvPw73PLsh6s_TNEIcJjiu8KwCo6NmwtPHxsg8oEHek8UnWMDbbCEEq9VAx3AUbEyqn6eVqvJ9Jj3dGj_Crc_TQ33Fkw4YnaIyT2tg261qRncTHFeMN9IjH4pojMafPyuupVFU4F2BkJWHRqE-OpQtzEEECKztWwBSmcK25It6bvg?width=3240&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <br>
+    Not much, all in all. Considering, though, that I could not run OpenCV on my own computer, I would have probably tracked a macintosh down and tried running the library on these computers instead<br><br>
 
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 panel">
-<br>
+    If not, perhaps I could have looked into employing some other techniques mentioned in the lecture. Maybe learning on sampling methods, filters and a variety of tools to make sure the data that gets produced and which would flow will have a specific grade of precision and be useful for any ideas that may arise throughout this course<br><br>
 
-Interaction based on user's movement. But it would have to rather analyze the behavior of the user rather than entice them to do anything (due to Kinect's being rolledback from the Market).<br><br>
+    I probably should also state that I would continue exploring possibilities in relation to integrating a working video output that I managed to appropriate from a Processing forum together with the OpenCV logic that did not work in my case<br><br>
+  </div><br>
+</div>
 
-Questions!<br>
-Is there a debounce function in Processing?<br>
-How does printing PCBs work?<br>
-Better sensors instead of Sonic sensors?<br>
-Best way to filter signals? I used oversampling.<br><br>
-
-</div></div>
 
 <center><img src="https://i.imgur.com/x3x3smB.png" width="70%"></center>
 
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 panel">
-<br>
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="Blog v2.html" class="darken"><div class="text">Light!</div><img src="https://i.imgur.com/V6o07FL.png" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <br>
 
-Techniques!<br>
-Science man!<br>
-Undersampling?<br>
-Aggressive Low Pass Filters (Filtering?)<br>
-Sampling Rate?<br>
-Filtering<br>
-Averaging!<br>
-Smoothing<br>
-Error Correction<br><br>
+    Quite a few. Firstly, interaction based on user's movement. But it would have to rather analyze the behavior of the user rather than entice them to do anything (due to Kinect being withdrawn from the market).<br><br>
 
-</div></div>
+There are some other ideas to consider such as:<br><br>
+
+- Is there a debounce function in Processing?<br>
+- How does printing PCBs work?<br>
+- Are there any better quality ultrasonic sensors out there?<br>
+- What is the best way to filter data/signals? For the purpose of the first assignment, oversampling is the idea<br><br>
+
+  </div><br>
+</div>
 
       
 <div class="row">
