@@ -40,7 +40,7 @@ a:active {
 }
 
 body{
-background-color:#666666;
+background-color: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1));
     background: url(DSC_0162b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -504,6 +504,12 @@ img {
 
 @media (max-width: 767px) {
     footer .text-left { text-align:center }
+/*
+    .row{
+      padding-top:10px;
+      padding-bottom:10px;
+    }*/
+
     video{
       width:100% !important;
     }
@@ -517,7 +523,7 @@ img {
 
     body{
       background: url(#) !important;
-      background: radial-gradient(white, rgba(200,200,200,1)) !important;
+      background: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(255, 255, 255,1)) !important;
     }
 
     h1, h2{
@@ -538,8 +544,8 @@ img {
   /* W3C */
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
-      padding-top:0.6vw;
-  padding-bottom:0.6vw;
+      padding-top:10px;
+  padding-bottom:10px;
       -webkit-transition: all 0.3s linear;
        -moz-transition: all 0.3s linear;
         -ms-transition: all 0.3s linear;
