@@ -34,11 +34,14 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog\
         <ul class="dropdown-menu">\
-          <li><a href="Blog.html">Fuad</a></li>\
           <li><a href="NewMediaAudiences.html">New Media Audiences</a></li>\
           <li><a href="Labs.html">MIDEA Labs</a></li>\
           <li><a href="Grasausschuss.html">Grasausschuss</a></li>\
+          <li><a href="Sehnsucht.html">Sehnsucht</a></li>\
           <li><a href="Radio.html">Radio X</a></li>\
+          <li><a href="Australian Dream.html">Australian Dream</a></li>\
+          <li><a href="Another Series.html">Another Series</a></li>\
+          <li><a href="O wszystkim i o niczym.html">O Wszystkim i O Niczym</a></li>\
           <li><a href="http://fuadexsite.blogspot.de/">Strona Glowna</a></li>\
       </ul>\
             \
