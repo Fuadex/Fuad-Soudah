@@ -156,6 +156,69 @@ box-shadow:none;
 }
 
 
+h4{
+  margin-left:25vw;
+margin-right:25vw;
+    border-width:1px;
+  border-style:solid;
+  border-color:transparent;
+  position:relative;
+            background-image: -moz-linear-gradient(left, rgba(0, 255, 0, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+  /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255, 0.8)), color-stop(85%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(left, rgba(0, 255, 0, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(left, rgba(0, 255, 0, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(left, rgba(0, 255, 0, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+  /* IE10+ */
+  background-image: linear-gradient(to right, rgba(0, 255, 0, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+  /* W3C */
+      padding-top:0.6vw;
+  padding-bottom:0.6vw;
+      -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index:100;
+}
+
+
+h4:before{
+content:'';
+
+position:absolute;
+display:block;
+height:100%;
+width:100%;
+top:0;
+left:0;
+      background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(255, 255, 255, 0)), color-stop(49%, rgba(255, 255, 255, 0.8)), color-stop(85%, rgba(255, 255, 255, 0)));
+
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 49%, rgba(255, 255, 255, 0) 85%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.9) 49%, rgba(255, 255, 255, 0) 85%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+
+    opacity:0;
+  z-index:-100;
+  transition: opacity 1.0s;
+}
+
+h4:hover:before {
+  opacity:1;
+}
+
+
+
 </style>
 
 </head>
@@ -198,53 +261,6 @@ box-shadow:none;
 </center>
 <br><br>
 
-<center>
-<div class="row">
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/Podziemny.Krag"><div class="text">Fight Club</div><img src="Culture/b11.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/Mechaniczna.Pomarancza" ><div class="text">A Clockwork Orange</div><img src="Culture/b2.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/To.Nie.Jest.Kraj.Dla.Starych.Ludzi" ><div class="text">No Country For Old Men</div><img src="Culture/b3.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/Matrix"><div class="text">The Matrix</div><img src="Culture/b4.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/film/Dwunastu+gniewnych+ludzi-1957-30701" ><div class="text">12 Angry Men</div><img src="Culture/b5.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/Czas.Apokalipsy" ><div class="text">Apocalypse Now</div><img src="Culture/b6.jpg" width="100%"></a><br>
-</div></div>
-</center>
-<br><br>
-
-<center>
-<div class="row">
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/film/Labirynt+opowie%C5%9Bci-1987-201649"><div class="text">Neo Tokyo</div><img src="Culture/c1.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/film/Kimi+no+Na+wa.-2016-760082"><div class="text">Kimi no Na wa.</div><img src="Culture/c2.jpg" width="100%"></a><br>
-  </div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Black+Lagoon-2006-304751" ><div class="text">Black Lagoon</div><img src="Culture/c3.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827" ><div class="text">Full Metal Alchemist<br>
-Brotherhood</div><img src="Culture/c4.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/film/Kowboj+Bebop%3A+Pukaj%C4%85c+do+nieba+bram-2001-34454" ><div class="text">Cowboy Bebop</div><img src="Culture/c5.jpg" width="100%"></a><br>
-</div>
-<div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866" ><div class="text">Ghost in The Shell</div><img src="Culture/c6.jpg" width="100%"></a><br>
-</div></div>
-</center>
-<br><br>
-
   <div class="row">
     <h2>
       <center>
@@ -254,26 +270,258 @@ Brotherhood</div><img src="Culture/c4.jpg" width="100%"></a><br>
   </div>
   <br>
 
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="Blog v3.html"><div class="text">Vivacious</div><img src="Culture/a11.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/serial/Breaking+Bad-2008-430668"><div class="text">Breaking Bad</div><img src="Culture/a22.jpg" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Westworld-2016-232988" ><div class="text">Westworld</div><img src="Culture/a33.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/Rodzina.Soprano" ><div class="text">The Sopranos</div><img src="Culture/a444.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Rick+and+Morty-2013-671074" ><div class="text">Rick and Morty</div><img src="Culture/a5.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/serial/Sze%C5%9B%C4%87+st%C3%B3p+pod+ziemi%C4%85-2001-89546" ><div class="text">Six Feet Under</div><img src="Culture/a6.jpg" width="100%"></a><br>
+</div></div>
+</center>
+<br><br>
+
+    <div class="row">
+    <h2>
+      <center>
+      Sehnsucht
+    </center>
+    </h2>
+  </div>
+  <br>
+
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-3">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2017/03/sehnsucht-ex-paris-eng.html?view=classic/"><div class="text">Paris</div><img src="https://3.bp.blogspot.com/-YB4XEy08-tI/WLlBNAUsaSI/AAAAAAAABgg/LxNyPZl_TgQt0pC2G9L4_tTA1Z2bhJwMQCLcB/s1600/DSC_3632.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2016/11/sehnsucht-ex-ii-budapest.html?view=classic"><div class="text">Budapest 2</div><img src="https://3.bp.blogspot.com/-OJNYk1ZUAPs/WDDfb2osloI/AAAAAAAABeM/M6TtEkseKfsqau4iWCqZBqpNcJY-XISCwCLcB/s1600/DSC_0533.jpg" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2016/11/sehnsucht-ex-i-budapest.html?view=classic" ><div class="text">Budapest 1</div><img src="https://3.bp.blogspot.com/-bn0GK_d_5mk/WC4unsEHiRI/AAAAAAAABcs/kpXY5vD5w3Aohne73SpvV30j_ncC6P4ogCLcB/s1600/DSC_0186.jpg" width="100%"></a><br>
+</div>
+</div>
+
+  <div class="row">
+    <h2>
+      <center>
+      Australian Dream
+    </center>
+    </h2>
+  </div>
+  <br>
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-2">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/03/australian-dream-xiv_19.html?view=classic"><div class="text">Gliding Over All</div><img src="http://3.bp.blogspot.com/-uidFpDZIZbA/VQuEl8fR1kI/AAAAAAAAA6w/wy_pP0XBue0/s1600/20150318_171250(0).jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/02/australian-dream-xiii.html?view=classic"><div class="text">Chances Are</div><img src="http://4.bp.blogspot.com/-cYd-bKOZLas/VNhi-HIKCPI/AAAAAAAAA3g/hKP2BJlSuv8/s1600/DSC_0058.JPG" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2015/02/australian-dream-xii.html?view=classic" ><div class="text">That Little Window</div><img src="http://2.bp.blogspot.com/-6Gp68dBLj-A/VNROK85MDYI/AAAAAAAAA10/oK_xV1Rn1wc/s1600/DSC_0209.JPG" width="100%"></a><br>
+  </div>
+  <div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/01/australian-dream-xi.html?view=classic"><div class="text">A Man's Gotta Eat</div><img src="http://2.bp.blogspot.com/-DI-lr0xRF00/VLJTRja6pzI/AAAAAAAAAz8/T172WyZNR2g/s1600/DSC_0080.jpg" width="100%"></a><br>
+</div>
+</div>
+</center>
+<br><br>
+
+  <center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-2">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/11/australian-dream-x.html?view=classic"><div class="text">a Bouquet of</div><img src="http://1.bp.blogspot.com/-G5h3vpkgat0/VHQ8zMXVlDI/AAAAAAAAAxc/PLkguOVIN-g/s1600/antipasto.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2014/11/australian-dream-ix.html?view=classic" ><div class="text">Waffles!</div><img src="http://3.bp.blogspot.com/-tBxgCmhoCAw/VG7QhOAsJ3I/AAAAAAAAAww/FazwseE2FE0/s1600/wafel%2B2.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/11/australian-dream-viii.html?view=classic"><div class="text">New Millenium</div><img src="http://4.bp.blogspot.com/-X5RQbasifys/VG1jBg3Pb5I/AAAAAAAAAvQ/4LCfiCqBtPs/s1600/111.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/11/australian-dream-vii.html?view=classic"><div class="text">Rediscovering The<br>Uncharted</div><img src="https://1.bp.blogspot.com/-_-DfWbClyO8/VGVTm8hv4eI/AAAAAAAAAu0/SdG07J6TFiA/s1600/Ale%2Bfajnie.jpg" width="100%"></a><br>
+</div></div>
+</center>
+<br><br>
+
+
 
 <center>
 <div class="row">
 <div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken"  href="http://www.filmweb.pl/videogame/Wied%C5%BAmin+3%3A+Dziki+Gon-2015-678629"><div class="text">The Witcher</div><img src="Culture/h1.jpg" width="100%"></a><br>
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2014/11/australian-dream-vi.html?view=classic" ><div class="text">The Writing's On The Wall</div><img src="https://3.bp.blogspot.com/-ALhqQwWDASA/VGIVqXi3OoI/AAAAAAAAAtg/-XmEufXcVMI/s1600/NA%2BBLOGA.jpg" width="100%"></a><br>
   </div>
   <div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Antichamber-2013-680088" ><div class="text">Antichamber</div><img src="Culture/h2.jpg" width="100%"></a><br>
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/10/australian-dream-v.html?view=classic"><div class="text">What Comes Next</div><img src="http://4.bp.blogspot.com/-QrL_riwFgM8/VE4HKhBkNrI/AAAAAAAAAro/CiFEkEztk3g/s1600/DSC_0103.JPG" width="100%"></a><br>
 </div>
 <div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Crysis-2007-608586" ><div class="text">Crysis</div><img src="Culture/h3.jpg" width="100%"></a><br>
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/10/australian-dream-iv.html?view=classic"><div class="text">en Route</div><img src="http://3.bp.blogspot.com/-F9ZU_3FBWeE/VETaAepVZcI/AAAAAAAAAo0/o6HB1rKe_AM/s1600/20140902_031733_S%C5%82oneczna.jpg" width="100%"></a><br>
 </div>
 <div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Call+of+Duty%3A+Modern+Warfare+2-2009-608594" ><div class="text">Call of Duty: Modern Warfare 2</div><img src="Culture/h4.jpg" width="100%"></a><br>
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2014/10/australian-dream-iii.html?view=classic" ><div class="text">Za Siedmioma Górami</div><img src="http://1.bp.blogspot.com/-rCrbaJK9Pcs/VD4dY90yr0I/AAAAAAAAAoU/3D9hFariGSk/s1600/DSC_0082.JPG" width="100%"></a><br>
 </div>
 <div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/Undertale-2015-715189" ><div class="text">Undertale</div><img src="Culture/h5.jpg" width="100%"></a><br>
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/10/australian-dream-ii.html?view=classic"><div class="text">Internet?</div><img src="http://4.bp.blogspot.com/-7a_jyNFAo9U/VD0Zxnqo81I/AAAAAAAAAnA/RPn7M_tmLrA/s1600/DSC_0059.JPG" width="100%"></a><br>
 </div>
 <div class="col-md-2 col-sm-4">
-<a data-flickr-embed="true" class="darken" href="http://www.filmweb.pl/videogame/World+in+Conflict-2007-608112" ><div class="text">World in Conflict</div><img src="Culture/h6.jpg" width="100%"></a><br>
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2014/10/australian-dream-i.html?view=classic"><div class="text">5 Tygodni w Sydney</div><img src="http://4.bp.blogspot.com/-jQupGNXYuzc/VDt7s4XMyUI/AAAAAAAAAmo/5s0UAr31-e0/s1600/DSC_0012.JPG" width="100%"></a><br>
+</div></div>
+</center>
+<br><br>
+
+
+  <div class="row">
+    <h2>
+      <center>
+      Another Series
+    </center>
+    </h2>
+  </div>
+  <br>
+
+    <div class="row">
+    <h4>
+      <center>
+      Politicum
+    </center>
+    </h4>
+  </div>
+  <br>
+
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-3">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2016/11/politicum-iii.html?view=classic"><div class="text">Welcome To The<br>New World</div><img src="http://img03.deviantart.net/70ba/i/2012/288/a/3/shark_utopia_by_6doug9-d5bbyjs.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/10/politicum-ii.html?view=classic"><div class="text">When Tables Turn</div><img src="ud.jpg" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2015/10/politicum-i.html?view=classic" ><div class="text">a Future Uncertain</div><img src="rj2.jpg" width="100%"></a><br>
+</div>
+</div>
+
+    <div class="row">
+    <h4>
+      <center>
+      Another World
+    </center>
+    </h4>
+  </div>
+  <br>
+
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/12/another-world-ii.html?view=classic"><div class="text">Trippin'</div><img src="http://2.bp.blogspot.com/-c_ljvoWgLbA/VmqYeysyezI/AAAAAAAABFs/yrscja2QotA/s1600/20151206_133353.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/12/another-world-i.html?view=classic"><div class="text">Intro</div><img src="http://2.bp.blogspot.com/-VSy-GxwRGM4/VmmSManmOsI/AAAAAAAABFA/kslZPBri_WA/s1600/Clipboard02.jpg" width="100%"></a><br>
+  </div>
+</div>
+
+    <div class="row">
+    <h4>
+      <center>
+      Different Series
+    </center>
+    </h4>
+  </div>
+  <br>
+
+
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-3">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/08/descending-underneath-i.html?view=classic"><div class="text">Hello Friend</div><img src="http://www.usanetwork.com/sites/usanetwork/files/mrrobot_show_2560x1440.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://endemirage.blogspot.de/2015/07/rekwiem-dla-polskiego-snu.html?view=classic"><div class="text">Throwback Poland</div><img src="http://1.bp.blogspot.com/-rehCF7cyblA/Vahjn4L_ZRI/AAAAAAAAA_U/3u8iCLG-Uzo/s1600/20150624_132322.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://endemirage.blogspot.de/2014/10/ambiguous-disputes-i.html?view=classic" ><div class="text">O kilka kroków za daleko?</div><img src="http://2.bp.blogspot.com/-33ugYqmdk6s/UQ13FDOji_I/AAAAAAAAAJc/StU_i4nXEXw/s1600/2013-01-24_00011.jpg" width="100%"></a><br>
+</div></div>
+</center>
+<br><br>
+
+
+  <div class="row">
+    <h2>
+      <center>
+      O Wszystkim i O Niczym
+    </center>
+    </h2>
+  </div>
+  <br>
+
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2014/07/magia-wyborow.html"><div class="text">Magia Wyborów</div><img src="http://img.gawkerassets.com/img/17t161qhw6xa3jpg/original.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2014/06/recenzja-gta-v-last-of-us.html"><div class="text">Recenzje GTA V &<br>The Last of Us</div><img src="http://static.gamespot.com/uploads/original/1534/15343359/2453616-2762456622-the-l.jpg" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://fuadex.blogspot.de/2013/02/antichamber.html" ><div class="text">Antichamber</div><img src="http://www.miastogier.pl/baza/Encyklopedia/gry/Antichamber_PC/Recenzja/rec_001.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2012/12/dwa-bardzo-pozytywne-zaskoczenia-2012.html"><div class="text">Dwa Pozytywne<br>Zaskoczenia 2012</div><img src="https://www.bennylingbling.com/wp-content/uploads/2012/07/SpecOpsTheLine-2012-07-25-15-52-00-92-1.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2011/11/skyrim-vol-1.html"><div class="text">Skyrim vol. 1</div><img src="http://www.gram.pl/upl/artykul/120111110074008.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://fuadex.blogspot.de/2011/05/post-wstepny.html" ><div class="text">Post Wstępny</div><img src="http://gearnuke.com/wp-content/uploads/2014/03/the-last-of-us-1080p.jpg" width="100%"></a><br>
+</div></div>
+</center>
+<br><br>
+
+
+  <div class="row">
+    <h2>
+      <center>
+      Strona Główna
+    </center>
+    </h2>
+  </div>
+  <br>
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2014/07/magia-wyborow.html"><div class="text">Magia Wyborów</div><img src="http://img.gawkerassets.com/img/17t161qhw6xa3jpg/original.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2014/06/recenzja-gta-v-last-of-us.html"><div class="text">Recenzje GTA V &<br>The Last of Us</div><img src="http://static.gamespot.com/uploads/original/1534/15343359/2453616-2762456622-the-l.jpg" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://fuadex.blogspot.de/2013/02/antichamber.html" ><div class="text">Antichamber</div><img src="http://www.miastogier.pl/baza/Encyklopedia/gry/Antichamber_PC/Recenzja/rec_001.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2012/12/dwa-bardzo-pozytywne-zaskoczenia-2012.html"><div class="text">Dwa Pozytywne<br>Zaskoczenia 2012</div><img src="https://www.bennylingbling.com/wp-content/uploads/2012/07/SpecOpsTheLine-2012-07-25-15-52-00-92-1.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="http://fuadex.blogspot.de/2011/11/skyrim-vol-1.html"><div class="text">Skyrim vol. 1</div><img src="http://www.gram.pl/upl/artykul/120111110074008.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="http://fuadexsite.blogspot.com/2012/09/black-mesa-theyre-waiting-for-you-gordon.html" ><div class="text">Black Mesa - <br>"They're waiting <br>for you Gordon..." </div><img src="http://2.bp.blogspot.com/-Zh5LS9g0ZOM/UY1PaQN8g1I/AAAAAAAAATA/Ld73HHD4IK0/s640/shot1.jpg" width="100%"></a><br>
 </div></div>
 </center>
 <br><br>
