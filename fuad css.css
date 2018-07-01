@@ -662,6 +662,7 @@ img {
 
   }
 
+
   @media (max-width:1200px){
     body{
     font-size: 1.1em;
@@ -766,7 +767,18 @@ a h2{
     }
     }
 
-  @media(min-width:992px){
+      @media (min-width:992px) and (max-width:1200px){
+    
+h4{
+  font-size:1vw;
+}
+
+    body{
+    font-size: 0.77vw;
+  }
+  }
+
+  @media(min-width:1200px){
     body{
       font-size:0.78vw; <!-- 0.72 0.74 0.87 -->
     }
