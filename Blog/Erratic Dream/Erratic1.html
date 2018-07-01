@@ -105,24 +105,10 @@ a.darken:hover .text{color:black;
 
 </style>
 
-
-  <script type="text/javascript">
-    ImageArray = new Array();
-    ImageArray[0] = 'DSC_3698bb.jpg';
-    ImageArray[1] = 'DSC_3698cc.jpg';
-  
-
-function getRandomImage() {
-    var num = Math.floor( Math.random() * 2);
-    var img = ImageArray[num];
-    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
-
-}
-
 </script>
 
 </head>
-<body onload="getRandomImage()">
+<body>
 <script src="navigation.js"></script>
 
 <!-- BODY BODY BODY-->
@@ -235,6 +221,6 @@ document.getElementById('button2').onclick = function() {
 }
 </script>
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 </html>
