@@ -38,7 +38,7 @@ document.write('\
           <li><a href="../../NewMediaAudiences.html">New Media Audiences</a></li>\
           <li><a href="../../Labs.html">MIDEA Labs</a></li>\
           <li><a href="../../Grasausschuss.html">Grasausschuss</a></li>\
-          <li><a href="../../Radio.html">Radio X</a></li>\
+          <li><a href="../../RadioX.html">Radio</a></li>\
       </ul>\
             \
         </li>\

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+  background-image: url(oa.jpg);
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.75em;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-8, .col-sm-10{
+  background-color:rgba(255,255,255,0);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:none;
+      -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-sm-1:hover, .col-sm-2:hover, .col-sm-3:hover, .col-sm-4:hover, .col-sm-5:hover, .col-sm-6:hover, .col-sm-8:hover, .col-sm-10:hover{
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+              background-color:rgba(255,255,255,0);
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.8);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:1px solid black;
+      -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.panel:hover{
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+              background-color:rgba(255,255,255,0.9);
+}
+
+ .row > .col-sm-1:nth-last-child(-n+3)  img, .row > .col-sm-2:nth-last-child(-n+3)  img, .row > .col-sm-3:nth-last-child(-n+3)  img, .row > .col-sm-4:nth-last-child(-n+3)  img, .row > .col-sm-5:nth-last-child(-n+3)  img, .row > .col-sm-6:nth-last-child(-n+3)  img, .row > .col-sm-8:nth-last-child(-n+3)  img, .row > .col-sm-1:nth-last-child(-n+3)  img{
+            overflow: hidden;
+border-radius: 10px 100px 10px;
+}
+
+ .row > .col-sm-1:nth-child(-n+3)  img, .row > .col-sm-2:nth-child(-n+3)  img, .row > .col-sm-3:nth-child(-n+3)  img, .row > .col-sm-4:nth-child(-n+3)  img, .row > .col-sm-5:nth-child(-n+3)  img, .row > .col-sm-6:nth-child(-n+3)  img, .row > .col-sm-8:nth-child(-n+3)  img, .row > .col-sm-1:nth-child(-n+3)  img{
+            overflow: hidden;
+border-radius: 100px 10px 100px;
+}
+
+.col-md-2:hover img, .col-sm-4:hover img{
+transform: scale(2);
+}
+
+.col-md-2:hover, .col-sm-4:hover{
+
+border-radius:200px;
+box-shadow:none;
+
+}
+
+@media (min-width: 767px) {
+.col-md-2{
+  width:16.3vw;
+  height:9.375vw;
+}
+}
+
+@media (min-width: 480px, max-width: 767px) {
+.col-sm-4{
+  width:33vw;
+  height:18.75vw;
+}
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-10{
+  background-color:rgba(255,255,255,0.8);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:1px solid black;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            overflow: hidden;
+}
+
+@media (min-width:768px) and (max-width:992px){
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10{
+/* background-color:rgba(255,255,255,0.85) !important;*/
+ padding-left:0px;
+ padding-right:0px;
+}
+}
+
+</style>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<center>
+<div class="row">
+  <h2>Awry Perception</h2>
+</div>
+</center>
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-3">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AsODPaqszcFrpEd2e1bMNAVaI4Eo"><div class="text">Polish Rap/Hip-Hop</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/3349f6ee7d374e3c9e1b823d06ca7743.jpg#3349f6ee7d374e3c9e1b823d06ca7743" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AsODPaqszcFrpEGd44qN-HDAy0DW"><div class="text">Progressive Metal vol. 1</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/3afd5fc099d94ddf8703032df8ea8985.jpg#3afd5fc099d94ddf8703032df8ea8985" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://1drv.ms/u/s!AsODPaqszcFrpELFaes5afh0SXGm" ><div class="text">Progressive Metal vol. 2</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/31a2447fe0a34598a9596d9e0d856c7e.jpg#31a2447fe0a34598a9596d9e0d856c7e" width="100%"></a><br>
+</div><br>
+</div></div>
+</center>
+<br><br>
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-2">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AsODPaqszcFrpEM_mHCSjZcqb-nD"><div class="text">Electronic</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/185f845f5ff74eb7a35ee6e8e1b597f0.jpg#185f845f5ff74eb7a35ee6e8e1b597f0" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://1drv.ms/u/s!AsODPaqszcFrpEXKhpkyGqDD7w6b" ><div class="text">Nu Metal</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/bc2b94f044e249328f769d1bf3e23727.jpg#bc2b94f044e249328f769d1bf3e23727" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://1drv.ms/u/s!AsODPaqszcFrpERC8hAaEVy0ErDp" ><div class="text">Thrash Metal</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/20f6f66e444d4dae92827e821fd9b86e.jpg#20f6f66e444d4dae92827e821fd9b86e" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AsODPaqszcFrpEYvHsE_czPkYfkT"><div class="text">Grunge</div><img src="https://lastfm-img2.akamaized.net/i/u/770x0/e21007ed6b85dad3da79f4778ce510bf.jpg#e21007ed6b85dad3da79f4778ce510bf" width="100%"></a><br>
+</div><br>
+</div></div>
+</center>
+<br><br>
+
+<center>
+<div class="row">
+  <h2>TV OST</h2>
+</div>
+</center>
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-3">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AqI17gtc_ND8hIR6Ppy4TSn6Gj5h6Q"><div class="text">Band of Brothers</div><img src="https://www.hbo.com/content/dam/hbodata/series/band-of-brothers/episodes/band-of-brothers-1-3000x1688.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AqI17gtc_ND8hIR3TLcpWxwF9II7VA"><div class="text">Music + The Wire</div><img src="Culture/f4.jpg" width="100%"></a><br>
+  </div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://1drv.ms/u/s!AqI17gtc_ND8hIR2SGBYshHWIwJZzA" ><div class="text">Six Feet Under</div><img src="Culture/a6.jpg" width="100%"></a><br>
+</div><br>
+</div></div>
+</center>
+<br><br>
+
+<center>
+<div class="row">
+<div class="col-md-2 col-sm-4 col-md-offset-2">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AqI17gtc_ND8hIR4Er_W0lEXT7advw"><div class="text">The Sopranos</div><img src="Culture/a444.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://1drv.ms/u/s!AqI17gtc_ND8hIR5ufhJ0rBow_DUnA" ><div class="text">Vikings</div><img src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/mgm-TV_Vikings_S4-Full-Image_GalleryBackground-en-US-1483993289772._RI_SX940_.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken" href="https://1drv.ms/u/s!AqI17gtc_ND8hIR1J4g5RoD7q0OD0w" ><div class="text">Mr. Robot & Music</div><img src="Culture/f1.jpg" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="https://1drv.ms/u/s!AqI17gtc_ND8hIRzXvGX2Q2jug_--Q"><div class="text">Discussion & Music<br>- Feat. Richard Wang</div><img src="Culture/b5.jpg" width="100%"></a><br>
+</div><br>
+</div></div>
+</center>
+<br><br>
+
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+  <div class="col-md-8 col-md-offset-2 panel">
+    <br>A friend took on a radio show. And I decided to follow. What he created, I deemed of quality. Great concept of a show, even better execution.<br><br>
+
+What I created, was... well, it just was. Better or worse. First episode I considered a catastrophy. It went on for 2.5h, although it was supposed to just for an hour. One person did not show up, so I had to take his slot. Then the next person's recording was missing as far as I recall. So constructing a setlist last minute based on Breaking Bad and possible Black Mirror at the same time was quite a struggle. Afterwards, I'm not sure if I had as many listeners. To speak of a failstart.<br><br>
+
+The show's idea basically encompassed playing TV Shows' soundtracks and giving an overview on why they were considered so great in the first place. It was relatively, more difficult than I thought it would, to construct such a show, as the soundtracks are not necessarily readily available for the public just as they please. At times it was a score, at times a soundtrack. Balancing in between these two and finding the score tracks and then launching them in the radio booth. Eh...<br><br>
+
+Anyway, I delivered a total of around 10 episodes. 1 I could not recover. 1 was just purely broken, as a result of technical difficulties (oh how I loved telling this line). Still, a great experience and I would love to do it again, just in relation to Video Games or perhaps... another types of mediums?<br><br>
+
+Unfortunately I left most of my radio tracks back in Australia. For some reason, I only uploaded two of them. Once I arrive back in the land down under, I will fill this page up with the entire season. In the meantime, enjoy a relatively chill Band of Brothers episode and an episode which encompasses a variation of music I listen to + some The Wire excerpts. Now, The Wire was particularly difficult as it... lacked a soundtrack to begin with. And I received an extra hour, as I had to cover for a friend. So... Stress that you will hear while listening to that 2 hour episode. Anyway, enjoy (if you may).<br><br>
+</div>
+</div>
+
+</div>
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
