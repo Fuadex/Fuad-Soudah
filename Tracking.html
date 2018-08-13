@@ -77,30 +77,15 @@ h4{
   padding-bottom:15px;
 }
 
-.parallax { 
-    /* The image used */
-    background-image: url("DSC_3698b.jpg");
-
-    /* Full height */
-    min-height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .text{
     opacity:0;
       font-weight: bold;
     z-index: 1;
     position: absolute;
-    font-size:1em;
+    font-size:1.75em;
     left: 50%;
     top: 50%;
+    white-space: nowrap;
     transform: translate(-50%, -50%);
 background-color:rgba(255,255,255,0.65);
     color: white; text-shadow: white 0em 0em 0.5em;
@@ -122,6 +107,7 @@ background-color:rgba(255,255,255,0.65);
 
 a.darken img {
     display: block;
+    
     -webkit-transition: all 0.5s linear;
        -moz-transition: all 0.5s linear;
         -ms-transition: all 0.5s linear;
@@ -130,7 +116,7 @@ a.darken img {
 }
 
 a.darken:hover img {
-    opacity: 1 !important;           
+    opacity: 0.7;           
 }
 
 a.darken:hover .text{color:black;
@@ -140,6 +126,106 @@ a.darken:hover .text{color:black;
         -ms-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-8, .col-sm-10{
+  background-color:rgba(255,255,255,0);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:none;
+      -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-sm-1:hover, .col-sm-2:hover, .col-sm-3:hover, .col-sm-4:hover, .col-sm-5:hover, .col-sm-6:hover, .col-sm-8:hover, .col-sm-10:hover{
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+              background-color:rgba(255,255,255,0);
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.8);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:1px solid black;
+      -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.panel:hover{
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+              background-color:rgba(255,255,255,0.9);
+}
+
+ .row > .col-sm-1:nth-last-child(-n+3)  img, .row > .col-sm-2:nth-last-child(-n+3)  img, .row > .col-sm-3:nth-last-child(-n+3)  img, .row > .col-sm-4:nth-last-child(-n+3)  img, .row > .col-sm-5:nth-last-child(-n+3)  img, .row > .col-sm-6:nth-last-child(-n+3)  img, .row > .col-sm-8:nth-last-child(-n+3)  img, .row > .col-sm-1:nth-last-child(-n+3)  img{
+            overflow: hidden;
+border-radius: 10px 100px 10px;
+}
+
+ .row > .col-sm-1:nth-child(-n+3)  img, .row > .col-sm-2:nth-child(-n+3)  img, .row > .col-sm-3:nth-child(-n+3)  img, .row > .col-sm-4:nth-child(-n+3)  img, .row > .col-sm-5:nth-child(-n+3)  img, .row > .col-sm-6:nth-child(-n+3)  img, .row > .col-sm-8:nth-child(-n+3)  img, .row > .col-sm-1:nth-child(-n+3)  img{
+            overflow: hidden;
+border-radius: 100px 10px 100px;
+}
+
+.col-md-2:hover img, .col-sm-4:hover img{
+transform: scale(2);
+}
+
+.col-md-2:hover, .col-sm-4:hover{
+
+border-radius:200px;
+box-shadow:none;
+
+}
+
+@media (min-width: 767px) {
+.col-md-2{
+  width:16.3vw;
+  height:9.375vw;
+}
+}
+
+@media (min-width: 480px, max-width: 767px) {
+.col-sm-4{
+  width:33vw;
+  height:18.75vw;
+}
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-10{
+  background-color:rgba(255,255,255,0.8);
+  color: black; text-shadow: white 0em 0em 0.2em;
+  font-family:'Roboto', sans-serif;
+  border:1px solid black;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            overflow: hidden;
+}
+
+
+@media (min-width:768px) and (max-width:992px){
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10{
+/* background-color:rgba(255,255,255,0.85) !important;*/
+ padding-left:0px;
+ padding-right:0px;
+}
+}
 }
 
 </style>
@@ -185,6 +271,25 @@ Ever since we are living in the information era and smartphones became the commu
   </div><br>
 </div>
 
+<center><h2>Research Proposal Documentation</h2></center><br>
+
+<center>
+<div class="row">
+<!--       <div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="Blog/Tracking/5.html"><div class="text">13/08</div><img src="https://wupeda.db.files.1drv.com/y4mbcAhzYHqO6zcFXsM3vXSwD3mVZ9-2apqqDS5OxQ-EtkB9BzPSBbu8Xc9Mrpm7YI8E92gTlqKC_WgimPl_yMisMEWe1PnqNO3hiOzouQ0OKuzOB65KCVMVMqfC7-2QUPXMblbu9P3M4DG4ttq7pJf5Nx0-TQDiDgPa0ezGCbgldS9OHsR1I2oyuoU7xqje_ZL1LqEIC9SLYfAF6H0lRVkgg?width=4032&height=2268&cropmode=none" width="100%"></a><br>
+</div> -->
+    <div class="col-md-2 col-sm-4 col-md-offset-3">
+<a data-flickr-embed="true" class="darken"  href="Blog/Tracking/3.html"><div class="text">9/08</div><img src="https://814n9g.db.files.1drv.com/y4moxobZaiAIYeT452PHUYhUroHOza2JjUkELilWEJNWTJMnNfa861HKrCzrszivheVMn7zI6ILoXblrG2tZq0ZVN2ua1Q6B5Vo--ee-g38cBWigMnltRc1VIKuv9MUyt78icOa6UgqNgwSdbQjDebtE3w2YQYVaxgoK0iNSqsRSB3y-UXIqknsjqcc1S4d6D7r8tQhYyoAkGdN7MK357AchA?width=1080&height=607&cropmode=none" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="Blog/Tracking/2.html"><div class="text">7/08</div><img src="https://814c9g.db.files.1drv.com/y4mTjfu2j5bvTx69gG9W9-wWwXo94T7BDfUPA3ZY4QUc2Pw8wfzjmBfda4x-FJLgA82ZSajxtE1BhOdFZH9-_S6F4Fqcp63zQFUCNrZc3KR3g8oB2jOZE5EA63WCrMez45Nqo8C3DUgA-7mXRkF52dzbWbRKclEbB0FX60sW3Px9sZ-z5EtFXM1HrhgMFHr9yUu2CjZhzVnAyT85GWEmE9aFw?width=1080&height=607&cropmode=none" width="100%"></a><br>
+</div>
+<div class="col-md-2 col-sm-4">
+<a data-flickr-embed="true" class="darken"  href="Blog/Tracking/1.html"><div class="text">31/07</div><img src="https://9l76rg.db.files.1drv.com/y4mTJp4eo9YBHov33B_sWUv1x56YHjRDlh_TOX9KIfKuuCqUTLRcvFdHJCcT8eEwCLcJcGvpTMvLz3RsCfvArtQ0udjrubAoUhIkj8acsaseRy0nL0pCWl-_NV-xTrwIffPGZ59QeAUG2ptnvbS3Zwk7yOYWaIaggt04pt7q1DyHVCOs-xW2c_T3arEs546dTN05WQDsyJ-BCOXtCJiy76X2Q?width=4032&height=2268&cropmode=none" width="100%"></a><br>
+</div></div>
+</center>
+<br><br>
+
 <div class="row">
 <div class="col-md-8 col-md-offset-2 panel">
   <center><h4>Summary and next steps</h4></center>
@@ -198,197 +303,17 @@ Ever since we are living in the information era and smartphones became the commu
 </div>
 </div>
 
-<center><h2>Research Proposal Phase</h2></center><br>
-
 <!-- <div class="row">
   <div class="col-lg-8 col-lg-offset-2">
     <a href="https://farm1.staticflickr.com/931/43849236242_fdb9f7ac54_k.jpg" class="darken"><div class="text">Filler Image.<br>
     Pretty, though?</div><img src="https://farm1.staticflickr.com/931/43849236242_fdb9f7ac54_k.jpg" width="100%" alt="DSC_6000"></a>
   </div><br>
 </div> -->
-<br>
-</div>
-</div>
 
-<div class="con4">
-<div class="container-fluid">
 
-<div class="row">
-<div class="col-md-8 col-md-offset-2 panel">
-  <center><h4>Retrospection - 9/08/2018</h4></center>
-    Let's try to meet the general ideas of the research I'll be conducting a little bit more in detail. Sometime ago I had a smartwatch, I acquired Galaxy Gear S3 as it seemed that it just could be the smartwatch I needed. Furthermore, it was relatively cheap while I was on exchange in Germany, especially once considered I had acquired amazon vouchers after having attended user-testing sessions at LMU and the conditions attached to purchases in Germany were very lenient. If I was not happy with the product, then I could just simply return it, no questions asked, within a 30 day period. Eventually I did due to regional restrictions, for instance Samsung Pay was not present in Germany, therefore it was not available on my S3 and it would not become as such after having arrived in Australia, which I carefully verified before arriving back in Australia. None of it happened though, before I have put the device to a thorough test and traces of my tests are still saved on my phone.<br><br>
-
-    Let's start with technical features of the smartwatch.<br><br>
-
-    General overview:<br>
-    - 32.9mm size<br>
-    - 63g Weight<br>
-    - 380 mAh battery<br>
-    - 4GB memory<br>
-    - NFC & MST<br>
-    - Bluetooth v4.2<br>
-    - Wi-Fi 802.11 b/g/n/ 2.4GHz<br>
-    - GPS, Glonass<br>
-    - IP68 Rating (basic waterproofness)<br><br>
-
-    Sensors<br>
-    - Accelerometer<br>
-    - Barometer<br>
-    - Gyroscope<br>
-    - Heart-Rate Sensor<br>
-    - Light Sensor<br><br>
-
-    Now, disregarding most of the device's features, let's take a closer look at how does it record user activities, especially the ones that are triggered. For this, I have decided to showcase one of the first training sessions I have done with the device.<br><br>
-</div>
 </div>
 
-<div class="row">
-<div class="col-md-2 col-md-offset-2">
-  <img src="https://vhtkoa.by.files.1drv.com/y4mNWLzNPBvhvvjF8o_3UbaPCkRSIBHqDuu8SlKkDH8z99gcJo0D2FnK7Vvmh-43e6TOrgwWIbqu3F5SU_qWAxyOhDNoLcYyMySf2a5DLOyrbmpP8TpT6o-Lm4UDEawXcTndss5eugqIxmTo3WFN-OTGC0d3eBjmFHEjdWg_ri-zCmsSzDO0AyGO_U7Md9XKcGcFFHzU2_nNTTlmyxWtTsKGQ?width=810&height=4622&cropmode=none">
-  </div>
-  <div class="col-md-2">
-      <img src="https://vxtkoa.by.files.1drv.com/y4mTyCTj_ScjvFsJq9kLm3UzVCT1s70BqUMpoDgRYxK_uixUmZqZh_kvn-Dwk0QJVJcowvvKqDHd2SVeKpeKtQbr4A8BkJ3vTDPE_0S7NxV9ccJeYmFByZ6NPN7gXSR9UlaVnw6pF2PgHWlDObNg50J_Tt8AGI4w24xWK21DETObhJqsjNRzvnhjVpSYcreFkyfGfrNX8tmUIz6xAk9GB7B4A?width=810&height=5051&cropmode=none">
-  </div>
-  <div class="col-md-2">
-      <img src="https://wbtkoa.by.files.1drv.com/y4msNvMrzw5TmGPJXeYUrjeBhunBAASPzzF3zQrDJsWExF0xQI62YGZDFBlUfVK0jISkyz7VLmdhsZa14we1PwsH0GBKcArY1N6II7sGR5gifv58pPpGXapRnnzIcgSTWjw3nKr6sDAptkqA9O0QKoXE1MdZExc-1696Uq9v8X0YqXtoaB7Q9q28LGHiBEKC8K3UHh1U1d_YQa0fo09z9xigg?width=810&height=4156&cropmode=none">
-  </div>
-  <div class="col-md-2">
-      <img src="https://vrtkoa.by.files.1drv.com/y4mQWI1EeUeBTxRnZgbpDNnmbJtmUAtvJc0rXDlMK9DM-lLJAhlACp8TRfMJx0I9lLVZaVs0qngs4PuVVniP2zK4UZxlsgDutcAN7u1GfipkjyUr9Mk_qZbC6sMLczFAOtRnBQdWD-Wo236OKBqzcaiHmdFgXxKuoKqSzFjGkw1cLSK9J8apSuRd4A4-Ua4_851htOCDHGXuNkfEpG4F7aX1A?width=810&height=5082&cropmode=none">
-  </div>
-</div>
-
-<div class="row">
-<div class="col-md-8 col-md-offset-2 panel">
-  <center><h4>Cycling and Walking</h4></center>
-    The device will record many activities by itself. However, in case of trainings triggered manually by the user, the device will collect the data more thoroughly and meticulously.<br><br>
-
-    For instance, the first two screenshots showcase cycling that I have done on the 7th of July. It collates all the data from all my movements done on the day, presents with the distance I have done by myself, the longest time of my activity and the amount of burnt calories.<br><br>
-
-    Let's take a look at the first training I did... interestingly at 7 pm, it might be an issue with how Samsung sorts the sessions. The exact route is presented on a map, including the stops that I have made due to traffic lights. There is a customisable chart of my speed, heart pulse and potentially altitude which was disabled here. More dynamic training is extracted. Each part of my journey is split into the time I have spent on those. And even more details are provided further down, such as:<br><br>
-
-    - The time of the training and the total time of the training<br>
-    - The distance I have covered<br>
-    - The amount of calories burnt during the training and in total<br>
-    - Average and max speeds<br>
-    - Average and max tempo<br>
-    - Lowest and highest altitudes<br>
-    - The longest distance while I was climbing and descending<br>
-    - Average and maximum pulse<br><br>
-
-    In addition, weather details are presented, including the temperature, humidity, wind speed and direction. Additional pictures could be added... <b>and the data extracted as GPX</b>.<br><br>
-
-    Now, as for the second training. That was conducted at midnight, it was pretty much my first test, as I decided to do some running around Munich's Olympic Village and Park. In this case the details recorded were fairly the same. Except, Some additional gamification features were included, as apparently I won some virtual trophies. The chart can also include cadence. The differences between the pacing is bit more vivid too and since the distances ran were lower, I could see a bit more detailed overview of how my route exactly looked like. <b>This information could be exported as GPX as well.</b><br><br>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="con5">
-<div class="container-fluid">
-
-
-<div class="row">
-<div class="col-md-2 col-md-offset-2">
-  <img src="https://yxtkoa.by.files.1drv.com/y4m-xWQ4OJx1Yyhf5NT27vGY5JlbyUKiRcE5n9eFSm_AFvdMbRC2XK1WqqCoxdvl2mEBzjk5S5Hs5wioibcLHhqc-eMYoq1T33Xi2YeN7YyXztMJLMb4CayQWVs8qBELC1X8rjalpSCZCALsVZMfJfn8VvaaDyRfysi3_fvwXud4BsWXk8OEOtyPf6ufsyTFI6cRb1B_bOhwL5K8n21LbDRbg?width=810&height=8076&cropmode=none">
-  </div>
-  <div class="col-md-2">
-          <img src="https://zbtkoa.by.files.1drv.com/y4m9JJjw9FQusX4Y7YakcJVM4MNzkcE9GUEj0o_CmJzjXW26bauCiOS4YY7BFI8qZx0cy5CubcsF-iQAx1k93MmcqR2j13zf6Rlow0CyNBLINjZipuw0TFQcnBI6LLS-XwGlnAg4rHBVLsfwwKc_h6GBg1Wgbr5jkhe8KP5pzFi0Wye90ZVH7WpwKwkgnCGWKpj9OfhCuZ_Rrd6iDHZNeun_A?width=810&height=14871&cropmode=none">
-
-  </div>
-  <div class="col-md-2">
-          <img src="https://wxrqrq.by.files.1drv.com/y4mXVuEpWeiTqDOHuJjm_zgStmvjdnFZ_AeY-bdBG_lYBtAppAhq80Tf1bi2EbdyXQg4KMSgbOQmedMlxhxW8n2k16jTPic6Ok2oPXZ1afESSk_U2SOz6mqIg4rsPwB9EuaBvuc54KmEnxmqoNA20wz_vZDDu1dZrX4PfAlHXa2bw0CM12kFHRpyNH37khi5uMr6x53EB-_l49Y_pTt9GxWRw?width=810&height=13484&cropmode=none">
-  </div>
-  <div class="col-md-2">
-          <img src="https://wrrqrq.by.files.1drv.com/y4meFu9fbI4-1FmdDgc_dw9dwouSSSXJm4L48FPn59ZZQ8UQWN1DxMdwvCFhbpyhVDEZwJr_6vaBLN7krzUev0v7B1Ne_epGy6c4wD_j11P638usWtc_dyZxNCZ9htGzKXJM5SRDR50UwshGN_vCIs1rNQhyC_B4qP-VYxKqfHLKo71FE8FobXvnw1H7vj_fdpT7pOXNq4Fj7rZDysgrGE0ww?width=810&height=12093&cropmode=none">
-  </div>
-</div>
-
-<div class="row">
-<div class="col-md-8 col-md-offset-2 panel">
-  <center><h4>Heart Rate</h4></center>
-    Now this is the most detailed part. It is particularly interesting as Samsung managed to find a few uses for this. During training, the heart rate would be continuously monitored. Outside however, it would collect the data roughly, every 20 minutes. At times more often, at times bit less. It would also attach an icon showcasing the activity being done, such as cycling or... sitting idle.<br><br>
-
-    All the information would amount to an aggregate chart and technically could be of use for a doctor to look at. As the overall patterns would be showcased, although, it is only the heart rate. And there is the question of the sensor's accuracy.<br><br>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-2 col-md-offset-2">
-        <img src="https://xbrqrq.by.files.1drv.com/y4me8KO3AUOQE8QMUwrNV_SqlnUEUoBOVU3SIoYTRClyYO8mKZIFOu_fNeGl9E-2bxer7kiIFK_ioFxXeJ5hHHWJUZtTCjY3HRb0TkDqtxmYEiMHib-adQN9TzmZCh_jShJsp153DFRO-k2jCCvXqgwdB97QOwC4D-hH2_J0HrOjrsPwzDTaSR7BMKMnz_KddTDSThryy0tVUnlf3qKSkJGHA?width=810&height=2151&cropmode=none">
-  </div>
-  <div class="col-md-2">
-      <img src="https://whrqrq.by.files.1drv.com/y4mRGNbG0bGJxcst0jCPnxnno0DlA-PgmSD0grJwHmJreGUDBewfXbB20uL2VV9mQ8-cyaRdTU69JxxwPSricQ4Lk9ggqFu9bNZO6cz84woYampu5FEMsLFnLsYYhcMTivomvrL4BFF69e_LU3Pa7RL0QM4UN3uR2kWjxBI7y5kxb_5UtgO8phKbTyWl1tYdlU78JnoQ5mmv-lELK4OtHudTg?width=810&height=2189&cropmode=none">
-  </div>
-  <div class="col-md-2">
-      <img src="https://vxrqrq.by.files.1drv.com/y4mhbg2bGkQUrywHWyveQ7GShPypcoPPe7DUyQl7uFfWqpAhzK2WMq9mGdjEPd3dE5VDOtZUR31LXyhbLID58FHu1810XOfHQ8RZOMDJB7vPV4yjCQ4emi7JNEBQR6aVs-sq9uYy9miaKhQkQM0PR0CP84h9ldm8LXRoaxeojiN_AEo_wjAwUkHDD8nzVj_S8VWhpyMiSajTdiPuYUWAenD9A?width=810&height=2151&cropmode=none">
-  </div>
-  <div class="col-md-2">
-      <img src="https://wbrqrq.by.files.1drv.com/y4m9NvYL24YUsP08gN-WEyVF4E-u6gjXqUWfO-StTKJAVH2KN0WaPAhR_US7wDTSNb7OpQt6U2jFVuZqiYr5Egb1mw6X_8fImc_MrrKcqF86hIzYOjueu0Hu8ZLEgHzfPwvFv_z9WwOcz5mnVfOgExRjI9IclIqsKBSTVTHEitHoLfraYcfSacPaCIsNxhTBJ_l_u39Xb3PJ2uSWRxVt_LvKw?width=810&height=2189&cropmode=none">
-  </div>
-</div>
-
-<div class="row">
-<div class="col-md-8 col-md-offset-2 panel">
-  <center><h4>Sleeping Patterns</h4></center>
-    The extra feature was the monitoring of sleep. Normally, the any watch would likely be taken off before going to sleep. However, Samsung actually encourages to keep it on the wrist, as it could gather detailed information about your sleeping patterns. This worked fairly well, although the device had to be recharged every 2-4 days, depending on how much it was being used. It would gather the amount of hours slept, the performance of your sleep, how much time you really slept, how long you were motionless, how long you slept 'lightly', spent without sleeping and... how many calories you burnt in the process. You could also rate your sleeping patterns.<br><br>
-</div>
-</div>
-
-  </div>
-</div>
-
-</div>
-</div>
-<div class="con2">
-<div class="container-fluid">
-
-  <div class="row">
-<div class="col-md-8 col-md-offset-2 panel">
-  <center><h4>Progress Report - 7/08/2018</h4></center>
-    To prepare for Week 2 I have been committed to the following:<br><br>
-
-    - I have reviewed the <b>Unit of Study outline</b><br>
-    - I have reviewed the <b>Assessment Guidelines</b><br>
-    - I have read the <b>announcements made</b> to students on canvas<br>
-    - I have posted as required the <b>research overview</b> I will be conducting on canvas<br>
-    - I have <b>setup a website</b> on which I will keep an aggregate of all my progress conducted throughout the semester<br><br>
-
-    More will come.<br><br>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-8 col-md-offset-2 panel">
-    <center><h4>Progress Report - 31/07/2018</h4></center>
-  This week I had to concentrate on barrages of <b>Quizes, Homework and Exams</b><br>
-  But that is quite fine, as I also worked on setting up a skeleton in my mind of how the research could be set up.<br><br>
-
-  And so, the preliminary vision consists of a few elements:<br><br>
-
-  - Researching <b>existing hardware, software and media</b> gathering various amounts of data and their impact on people's lives<br>
-  - Researching <b>existing work focused around API</b>, predominantly precedent studies of works in Australia and hosted overseas<br>
-  - Studying <b>people's behaviour and awareness</b> of what data they share and whether they use or are willing to use it in any form<br>
-  - Finding out platforms that <b>offer API publicly</b> and finding ways of utilising the data it provides within foreset constrains<br>
-  - Creating an application aggregating and <b>making use of publicly available APIs</b>, preferably based on social networks<br>
-  - <b>Iterative User-Centered development</b> of the application and measuring changes occurring in users via iterative research<br><br>
-
-</div>
-</div>
-
-<div class="row">
-  <div class="col-lg-8 col-lg-offset-2">
-    <a href="https://farm2.staticflickr.com/1840/43849382742_9d09d2a972_k.jpg" class="darken"><div class="text">Filler Image.<br>
-    Pretty, though?</div><img src="https://farm2.staticflickr.com/1840/43849382742_9d09d2a972_k.jpg" width="100%" alt="DSC_6000"></a>
-  </div><br>
-</div>
-<br>
-
-<br>
-</div>
-</div>
-
-<div class="con3">
+<!-- <div class="con3">
 <div class="container-fluid">
 
   <div class="row">
@@ -400,7 +325,7 @@ Ever since we are living in the information era and smartphones became the commu
   <iframe src="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%214680&authkey=AH80XTr5fINgYow&em=2" width="40%"" frameborder="0" scrolling="no"></iframe>
 </center>
 </div>
-</div>
+</div> -->
 
 <script src="footer.js"></script>
 
