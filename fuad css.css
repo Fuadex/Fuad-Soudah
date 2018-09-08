@@ -100,6 +100,8 @@ background-color: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(2
             transition: all 0.3s linear;
 }
 
+
+@media (min-width:767px){
 .panel:hover{
      background-color:rgba(255,255,255,0.9);
     -webkit-transition: all 0.3s linear;
@@ -107,6 +109,18 @@ background-color: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(2
         -ms-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+}
+
+@media (max-width:767px){
+.panel:hover{
+     background-color:rgba(255,255,255,0.8);
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
 }
 
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-10{
@@ -266,6 +280,8 @@ border-radius: 10px 100px 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+@media (min-width:767px){
+
 .col-md-1:hover, .col-md-2:hover, .col-md-3:hover, .col-md-4:hover, .col-md-5:hover, .col-md-6:hover, .col-md-7:hover, .col-md-8:hover, .col-md-10:hover{
      -webkit-transition: all 0.3s ease-in;
        -moz-transition: all 0.3s ease-in;
@@ -371,6 +387,7 @@ background-color: black;
             transform: scale(1.3);
   z-index: 9999999 !important;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 }
 
 h3{
