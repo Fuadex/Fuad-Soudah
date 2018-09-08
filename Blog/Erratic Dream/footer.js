@@ -20,14 +20,14 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
   </div>\
     <div class="container-fluid">\
     <ul class="nav navbar-nav">\
-  <li><a href="Blog.html">Blogs</a></li>\
-  <li><a href="noigitara.html">No i Gitara!</a></li>\
+  <li><a href="../../Blog.html">Blogs</a></li>\
+  <li><a href="../../noigitara.html">No i Gitara!</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
-        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
-      <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
-      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.8.7 BETA</a></li>\
+        <li><a href="../../index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
+      <li><a href="../../Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
+      <li><a href="../../Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.8.7 BETA</a></li>\
     </ul>\
 \
 </nav>\
