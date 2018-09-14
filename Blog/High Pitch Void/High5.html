@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://veigzw.by.files.1drv.com/y4m8Eo2MwGucqLEIiM1YCjhqNbLlJ8jJFqG3atfxBFQHF0zhucnCwQRK0IpDJRnLocz2zKL1UoQJHWpKHs3DFGkK_-szQPp4HFad6Gh5IgBga--hwI0VA7j9HA0hgLijyMesWvFW1xgMM3u_bo6kRSRo_Ybp0yq-SuWeY67hlXlhJU-piUZewxOJT5OpjuCiXwRI5IDJJVKhf9z7vPtwOBVnQ?width=3240&height=1816&cropmode=none);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://welqng.by.files.1drv.com/y4mFh3XgObwTi2VaRK8WVkb_qxQDFMXhazmE3I8zr-vMNFs0qE_FFv18Q4AGQdNaLEdU6YDCnTdBFk-tSgZWjirIqvuG5814yaGbdeDwBf5auhy2iD4ZFNxXVcs3mttQQhvZxCtdJlRY4SmwhSgigXQTCkwAbv5lcOObvaiGJdzlPVw4rLIBtVgu9JSr9A3Jy7_jzY8FN6MRBRCPVlzbZlx6A?width=3240&height=1813&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://ukilzw.by.files.1drv.com/y4mOehlzsPd3xMoSvD0XKSVGF6nWjdfu541BSWxPd7o2OSExQsmMStTBlv1Pt1kAb9H4MHX_Uu21Wx5PyyOsgSfk0-J9HrN_0WOjcdormaO2DQt8SL719K8g4RWuTqlxmmvCE1TllY-JGLvejaouxCD2iuXb6RuR1yXvrAck6OrQasCduRe463Yk3ElvtqlNuth_kvXAi_ZCMPYSzNl7l8jOg?width=1920&height=1200&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://ukinzw.by.files.1drv.com/y4m1diWgUheCUc8sO-WulOKY1y7UFyTPH4m1oWuGI_x8OgXHfXN2PUGRSVI-m2gxP71Ll3xgxE15K6zeA6foXLTCUQ4xOKiB-2gKTd2U7WnlBKM7JtCY1VM6A3wINr3iGVIc306pIPSSU7W-YvXvz66cVUwUDrtCeFNUgGmrZ6LDZ2KiNli7cLTrTj714DL6LMMgAuJiZPXlx9zRPObS14gOA?width=3240&height=1818&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px){
+
+.d{
+	margin-bottom:15px;
+}
+
+}
+
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Suave</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://v0lyng.by.files.1drv.com/y4mtZevp1S03iuBcIhyWCTHM9xYbODXZE716B0hFWrYll-9CdLZBcXIhufFPEoyo4zV7JSKiK_lEaIyS9E6A8Wt58lQe1hTzGuDkCx9MSMsoGk0A9bMA0SDo-rNwcjzGHSZ8t660VjpcUEjROwEfrRgV-zyJJzhFM6P3eU_F--y-785JnFc0o2anyYqEFOKZXbRlCZCe_9u-voNmGaLfDcoRg?width=3240&height=1819&cropmode=none" class="darken"><div class="text">Revival</div><img class="d" src="https://v0lyng.by.files.1drv.com/y4mtZevp1S03iuBcIhyWCTHM9xYbODXZE716B0hFWrYll-9CdLZBcXIhufFPEoyo4zV7JSKiK_lEaIyS9E6A8Wt58lQe1hTzGuDkCx9MSMsoGk0A9bMA0SDo-rNwcjzGHSZ8t660VjpcUEjROwEfrRgV-zyJJzhFM6P3eU_F--y-785JnFc0o2anyYqEFOKZXbRlCZCe_9u-voNmGaLfDcoRg?width=3240&height=1819&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Equalizer</h4></center>
+    Recently, I've equipped myself with a VPN. It was a last-call offering that I dug out from my facebook feed. Sometimes I wondered 'why the hell do I spend so much time on facebook. It's trash'. But I guess it's as trashy as you design your facebook feed and sometimes, gold will come out, just like with the VPN offer.<br><br>
+
+    It was sort of a dream come true, as I questioned my subscription to Netflix. Now there is actually some stuff to watch from beyond the constrains of Australian selection. Despite I have research to do. But oh well. I also have a sense of emptiness recently and that was coming in hard so filling it up with a notch of illusion, well, I forgot but it did work in the past, didn't it? And so it did the trick now too.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Steins;Gate</h4></center>
+
+ 	There are a few titles out there that continue battling for my attention, despite I should redirect none. I've got work to do... But I also need to remain sane and what better way is there than to watch some prime Anime from the absolute top top? Without oxymoroning you any further, I'll just depict a title that somewhat glided below my radar and is in top 4... actually, it climbed up to top 3 on myanimelist! On the Polish imdb equivalent it's actually quite high too but I discovered that just after having watched the series. Usually, there can't be much wrong about a huge audience spamming a title with very high ratings. Steins;Gate is one of those, as it gathered a gargantuous amount of reviews and somehow remained a bit above the 9.0 average, enough to reach this sweet spot of getting into the elitist bunch. Well, at this point I had no excuses? But, there's the thing that after having watched this, I... I wouldn't neccesarily say it's a bad show, cause it's not. But the problem is, that this extra mile is never reached.<br><br>
+
+  Let me put it into these words. It is an extreme accomplishment to get such an intricate story to such a cohesion. It's impeccable. I literally have found no plotholes whatsoever. And we are speaking of an Anime of which the central point is time travel. It's just frankly unbelievable that a story of that caliber could get that coherent and tie up, literally all the storylines. True, perhaps a few were left ambiguous purposefully but still with relevant and realistic conclusions. And trust me, I'm usually the first to blast off with how bad something is, because it throws your out of immersion due to stupid scenario-related mistakes. I swear, I even tried and pointed out some things that found a resolution of its own eventually. To be honest, I can't name one show which managed to get as bulletproof as Steins;Gate. And that's why I would love to see a fully-fledged adaptation of this series into a proper movie. Now, what would make it a particularly good movie? Just a few tweaks...<br><br>
+
+  First of all. The show does not kick off properly. I mean, the first episode was an interesting carrousel. But then it was quite... regular? Too eccentric? The central point of the show was rebuked for the first half of it. Wait, I said rebuked? Scoffed would be proper. This show was literally going nowhere for a fine bit and its deviated insertions which came on a episode-regular basis just felt unnecessary and at times even forced. Again, I understand it may be a cultural thing and this show is theoretically okay for relatively younger audience too, which probably again is an oxymoron but humour oriented around sexuality seems to be prevalent in pretty much any Anime. But I'll remain with my stance that taking it to a regular cringy-basis is not healthy for a show. Some parts are actually good and the audience may get used to it overtime, however... considering the themes that are imbued, despite that the show at a point decides to start shifting around especially the psychological profile of the main protagonist, the style of the show will relatively remain firm. Which to a point is what I feel critical about.<br><br>
+
+  I'll push it a little further. That is, elaborate. The show makes a very decent execution of themes that just should be showcased in a show that involves the theme of time travel. It involves some heavy themes as well. Pretty much exactly what I am usually after. And it takes a really good care of the process and preserve all the details. This is a fantastic job. Meanwhile the characters are also quite good, on second thought actually. Their build-up is a bit non-existent and that unfortunately hurts the heavy themes involved. It's just, that the character arcs are not quite there. Some themes, like I just learned, Tsundere is used but this is not what I consider a character build-up, it's more about the shift in how they behave but most will firmly remain themselves, which is an explosive mix that with a grain of storytelling just does not go off. That's why I would just call it a synthetic experience. I could not directly exactly relate to any of the characters, especially that they were all just so finite. This actually helps the cohesion of the world... but also reaffirms its stiffness. And a few deviations and really good moments just do not help it. I can't say the show made an awe-inspiring feeling in me. I can't say it evoked any strong emotions. But what I can say is that it's technically sound. It doesn't deserve such a great community-based acclaim but if it did check those missed opportunities, I'm certain it would become the real best.<br><br>
+
+    <center>7/10</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://welpng.by.files.1drv.com/y4m7Vis2h8COj90OQ0EBIUZe5m4RSEX9PJtCFRchgKnFQduMg3jjQwt1uE5R0pvmauH32iknxrXgXiOXEnNQB95nhNVjYwoXiGhUdTp21q1BpbD4QTVOaKt_hZmnJT9M9Sqpz9tyZUXbh1cIyv8bhrqL5e3BofG9LTV2RH-XgAHo8DsE9ziWX5uDrKR-boyeMsYXZ9fFeXEoUaezYljp8mhgQ?width=3240&height=1820&cropmode=none" class="darken"><div class="text">Narrative Device</div><img src="https://welpng.by.files.1drv.com/y4m7Vis2h8COj90OQ0EBIUZe5m4RSEX9PJtCFRchgKnFQduMg3jjQwt1uE5R0pvmauH32iknxrXgXiOXEnNQB95nhNVjYwoXiGhUdTp21q1BpbD4QTVOaKt_hZmnJT9M9Sqpz9tyZUXbh1cIyv8bhrqL5e3BofG9LTV2RH-XgAHo8DsE9ziWX5uDrKR-boyeMsYXZ9fFeXEoUaezYljp8mhgQ?width=3240&height=1820&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<div class="con2">
+	<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Bioshock Infinite</h4></center>
+    I approached this game with a certain dose of restraint. This is a good thing, sometimes I get so hyped about something that eventually it turns against me and makes really, really disappointed. So once I approached this game, also after doing a quick research and discovering that it is somehow very valued by a variety of communities, I figured that with clear conscience I can play this and perhaps it will match storytelling-wise the Indie game that so much put my hopes high. I played the original game and that was truly a marvel, atmosphere-wise, narration-wise, gameplay too actually. It all morphed into one particularly immersive experience that had a twist that took the audience and reviewers by storm. I mean how do you get so many GOTY titles when in 2007 you had nothing but good games on the market in numbers that made some of them financially unsuccessful?<br><br>
+
+    Well, I'll tell you maybe the distinction between what made that game so great and why does Bioshock Infinite remain on the opposite side. First of all, world-building. Fact, Infinite has an interesting styling and art-wise I can't say much against it. A quite tasty mix of steampunk, Bioshocky styling, religion and... well, it is a thing on its own actually. But the problem is, that it is all artificial. Sure, there are many NPCs and they talk to each other. But you can't interact much with them. Sure you're leading a character, who has a voice, who has a face, who does things and is animated. But many of the lines he speaks just do not connect. Compared to original bioshock, which felt much more down-to-earth. You were on a plane. You crashed. You enter a underwater dystopia that went mad and you need to survive through it all, guided by someone. This too was relatively far-fetched but believeable enough and provided some goals for the character to follow and created specific links that evolved throughout the game. It was still very much interaction-based but the underworld was also very compellingly crafted and the level of immersion was dense. Infinite, unfortunately, does not introduce you to the world properly. I didn't know why I was there. I didn't know where I was going. Nothing was really explained to the player for way too long and that just kicks you out of immersion. Along with an alive now but very much unnatural world.<br><br>
+
+    To make matters worse, it is a very gameplay-centric game. There is plenty of shooting and Bioshocky mechanics that just do not feel very good actually. The extra magic stuff happening is kinda cool but I don't feel the magic coming out of the gameplay. Sometimes the game even forces you to play through the same maps back and forth. The construct feels also unnatural with the stealth/action split. We are given the ability to scavenge and look into every single corner of the world but what for? It just slows down the gameplay and again, put you off away from the immersion. These are huge criticisms as at this stage I am saying that both the gameplay and the story just do not live up to the quality. It feels rather generic which is just simply not good enough.<br><br>
+
+    But then there are some elements that work. Some characters and voice acting are decent. Elisabeth, despite that I was not quite told exactly why I was looking for her (or even that I was looking for her) is a very interesting character and a, while very easy narrative hook, I knew exactly what 2K had in mind by introducing that interestingly written character into the game and how easily that could refract emotionally on the players, it is also a very interesting addition from the mechanical perspective as she will find additional resources in the game, create sort of strategic helpers for the player in the environment and provide some insightful comments that build her character further, primarily personality but also just the dialogues themselves are fruitful. Although sometimes they are detached in the game between live-action and cutscenes which I'm finding eerie. So far it's not a bad game. It's just not as good and some people bring this up and I agree with them.<br><br>
+
+    <center>7/10</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://veiuzw.by.files.1drv.com/y4mYcjzn7w3vbRlma7OPjUt6RRjTaFnocSsFEmhlYcrCYyZMTm7oiFGI3Wpunnx-OQABYs3-8mZRBzdXIC1kEmjPoO8YJTRUJm4V4bTiItcBwdlcPBzwTEY5EuvYYaKJVX0fm7rCTPexbMq4JJQnewc3EXAgfZihtQn5AVSx-XY17FD-ca76jAib9yD_Gfiiy8elHQK0kKEqEmk7YLw6QG6xw?width=1920&height=1200&cropmode=none" class="darken"><div class="text">Artistic Device</div><img src="https://veiuzw.by.files.1drv.com/y4mYcjzn7w3vbRlma7OPjUt6RRjTaFnocSsFEmhlYcrCYyZMTm7oiFGI3Wpunnx-OQABYs3-8mZRBzdXIC1kEmjPoO8YJTRUJm4V4bTiItcBwdlcPBzwTEY5EuvYYaKJVX0fm7rCTPexbMq4JJQnewc3EXAgfZihtQn5AVSx-XY17FD-ca76jAib9yD_Gfiiy8elHQK0kKEqEmk7YLw6QG6xw?width=1920&height=1200&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div></div>
+
+<div class="con3">
+	<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Your Lie in April</h4></center>
+    I admit, I got into the series because I saw the artwork on Netflix, clearly distinguishing itself from all the rest. It's quite surprising for me to say these words I mean, Anime live off artworks. If those are not done well, then why would anyone want to watch those series? I think I'm at some wrong here and I guess there is some hidden truth that I did not discover. And hey! I watched Erased also solely basing off the artwork presented which struck me as interesting and oh boy, what a dissapointment was the story. But I still found some value in it. And this show seemed to generate quite a traffic on myanimelist. Plus it seemed to incorporate a few interesting themes which I was intrigued to discover.<br><br>
+
+    Let's start with what I particularly hated about this series. I can't say hated, this is a word that seems a bit too strong but still I am not used to watching a Sittendrama, okay, let's call it a soap opera, despite it's not quite one. I'm surprised I can't find the appropriate translation for this. But imagine a contemporary soap opera condensed to a short 22-episode long series, all drawn and animated, created obviously by the Japanese. Something that anyone can watch, a family watch. Kids will be dazzled. Adults will be drawn... by the music and inspirational touches. Let's get back later to the pros, though. The problem I had with this series and it actually extends to quite a few other Animes are, what I would call as, comedy twists. These are particularly annoying as they totally disregard the styling of the show and introduce rapid, extreme deviations and exaggerations that in my personal opinion, are just overly cringy and kick you out of immersion. The common link between everything happening is lost, the nuances are disregarded the subtleties are thrown out the window. That having said, I see the potential to dazzle the younger audience with such and it just may be a cultural thing. The artstyle is still quite nice, though. But the story lacks and is quite adolescent at its semi-best. So what kept me watching?<br><br>
+
+    I like to watch average shows at times but acclaimed by some to see what they see in it. This show stood quite high in the rankings and I think I saw why. What the creators managed to accomplish was the incorporation of primarily, two features: the music part and as I'd call it, the lively life part. The music is not quite simple. It's classical. Piano and Violin. And you'll hear of this plenty but what is actually really good and here I'm speaking as a person who doesn't know too much about technicalities of music, is that it extends to quite a few authors and the very same plays are featured in interestingly distinct styles that intertwine with a narrative. I really enjoyed seeing the mesmerising intertwine between music and having it used as a narrative device to such an extent and putting an emphasis on how it correlates with emotions and many details that may remain hidden from people not familiar with such music all-in-all. It kinda makes you want to play a piano, a violin or pick up an instrument. That is an accomplishment on its own.<br><br>
+
+    The other part is the lively life part. There are many plot threads happening, most of 'em very adolescent-grade. A bit about love, a bit about goals, accomplishments etc. etc. But I think it worked quite interestingly nicely here. Drilling into the inspiration part. Drilling into the times when you just can't get stuff done. Drilling further into the nature of inspiration, idols and what makes you you and what makes someone a shadow of himself. The power of memories, hardwork but I think it all came down to inspiration and creations of things that can be beautiful in so many different ways. Dazzling in so many different ways. Such thoroughness and depth is something that needs to be brought out here as such elements can save an otherwise quite average show. I guess it's all about the details and something that you have not seen often, much at all, experienced but is just simply amazing.<br><br>
+
+    <center>7/10*</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none" class="darken"><div class="text">Perspective Device</div><img src="https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
