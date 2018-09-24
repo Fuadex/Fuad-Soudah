@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="fuad css.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+<link rel="stylesheet" href="magnific.css">
+<script src="magnific_main.js"></script>
+
 <style>
 
     body{
@@ -69,11 +72,41 @@ a.wob:hover .text{color:black;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
+
+
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out; 
+  -moz-transition: all 0.15s ease-out; 
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
 </style>
 
 </head>
 <body>
 <script src="navigation.js"></script>
+
 
 <!-- BODY BODY BODY-->
 
@@ -88,8 +121,12 @@ a.wob:hover .text{color:black;
 </div>
 <br>
 
+
 <div class="row">
-<div class="col-md-6 col-md-offset-3"><a href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%213843&authkey=AEXL3j6yxftaaYw" class="wob"><div class="text">Tempestuous Attraction</div>
+<div class="col-md-5 col-md-offset-1"><a href="https://onedrive.live.com/embed?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2186502&authkey=APhBU1WMzDT7OPI" class="wob"><div class="text">Ethos in April</div>
+<img src="https://s6mn3w.db.files.1drv.com/y4mYy4EadxXempj84OUuO6pVlcfgwsuArWWRsD0aGxfaZ9h27ftUEdt8oYgNbLRVIN8ArNc3cqJljGHf5Uz4wQzpaC-zPntsjeiXT2-R4KKw3DmZL9x690uvM4oV3mB1Vrmjx9n-ofcmxJGIQ1FdHGhkqqtXreQjE30WiFbpOuzbSkMKk5bdNbJ-2uueehcxSL4hP7sylz4gvo_HbIsUeRLkw?width=3240&height=1819&cropmode=none" width="100%"></a><br>
+</div>
+<div class="col-md-5"><a href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%213843&authkey=AEXL3j6yxftaaYw" class="wob"><div class="text">Tempestuous Attraction</div>
 <img src="https://9v3nbg.by.files.1drv.com/y4mNOxNAClRar0olJNTqbjv334BlMlq8hNW3wQucxuiFrSIO6jzPeUTOAd5HiR2hE-gsndQtQuGkqB3v8eYcjUkT7VdF_-3rCdx-e8YeODoG32KQmcuG3hq9sJuQuklIBTw6oh5eqNzJHcuRu9AAPNq5aXkgl603MAHSbtAWFc5owhgtJ7PTE3nPDZbFy-jMiKdHgH5Bu78nCwyUcF_vZ-QkA?width=1000&height=563&cropmode=none" width="100%"></a><br>
 </div>
 </div>
@@ -420,5 +457,31 @@ document.getElementById('button').onclick = function() {
     }
 }
 </script>
+
+
+<script>
+$('#foo').magnificPopup({
+    delegate: 'a',
+    type: 'inline',
+    callbacks: {
+        open: function() {
+
+            // https://github.com/dimsemenov/Magnific-Popup/issues/125
+            $('html').css('margin-right', 0);
+
+            // Play video on open:
+            $(this.content).find('video')[0].play();
+
+        },
+        close: function() {
+
+            // Reset video on close:
+            $(this.content).find('video')[0].load();
+
+        }
+    }
+});
+</script>
+
 </body>
 </html>

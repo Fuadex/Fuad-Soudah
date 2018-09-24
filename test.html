@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+	<script src="jquery.js"></script>
+<script src="jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="magnific.css">
+
+<style>
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+</style>
+</head>
+<body>
+	    
+<a class="video" href="http://www.dailymotion.com/video/xxgmlg#.UV71MasY3wE">Open DailyMotion video</a>
+<script>
+$('.video').magnificPopup({
+  type: 'iframe',
+  
+  
+  iframe: {
+    patterns: {
+      dailymotion: {
+       
+        index: 'dailymotion.com',
+        
+        id: function(url) {        
+            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
+            if (m !== null) {
+                if(m[4] !== undefined) {
+                  
+                    return m[4];
+                }
+                return m[2];
+            }
+            return null;
+        },
+        
+        src: 'https://www.dailymotion.com/embed/video/%id%'
+        
+      }
+    }
+  }
+  
+  
+});
+</script>
+<script src="magnific_main.js"></script>
+</body>
+</html>

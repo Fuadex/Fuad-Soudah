@@ -22,10 +22,10 @@ document.write('\
     <div class="collapse navbar-collapse" id="myNavbar">\
     <ul class="nav navbar-nav">\
       <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Artworks\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphic\
         <ul class="dropdown-menu">\
           <li><a href="Martinstag.html">Martinstag</a></li>\
-          <li><a href="3D Modelling.html">ChessBox</a></li>\
+          <li><a href="3D Modelling.html">Chess Box</a></li>\
           <li><a href="Visual Communication.html">Sustain</a></li>\
           <li><a href="Politics.html">Election</a></li>\
       </ul>\
@@ -34,11 +34,11 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog\
         <ul class="dropdown-menu">\
+        <li><a href="Blog.html">Blog</a></li>\
           <li><a href="Tracking.html">Tracking Self</a></li>\
-          <li><a href="Blog.html">Fuad</a></li>\
           <li><a href="NewMediaAudiences.html">New Media Audiences</a></li>\
-          <li><a href="Labs.html">MIDEA Labs</a></li>\
-          <li><a href="Grasausschuss.html">Grasausschuss</a></li>\
+          <li><a href="Labs.html">Leaf Lab</a></li>\
+          <li><a href="Grasausschuss.html">Gras</a></li>\
           <li><a href="RadioX.html">Radio</a></li>\
       </ul>\
             \
@@ -59,7 +59,7 @@ document.write('\
           <li><a href="GradShow.html">Graduation Show (2017)</a></li>\
           <li><a href="Lone Island.html">Lone Island</a></li>\
           <li><a href="Trouble Cruise.html">Trouble Cruise</a></li>\
-          <li><a href="VE Shopping.html">VE Shopping</a></li>\
+          <li><a href="VE Shopping.html">Shopping</a></li>\
           <li><a href="Game Concept.html">Platform 21</a></li>\
           <li><a href="Games and Play.html">Game Analysis</a></li>\
           <li><a href="Digital Arts.html">Digital Arts</a></li>\
@@ -76,7 +76,7 @@ document.write('\
           <li><a href="Databases.html">Postgresql Database</a></li>\
           <li><a href="Physical.html">Walkmate</a></li>\
           <li><a href="EventLocator.html">Event Locator</a></li>\
-          <li><a href="Processing.html">Processing Projects</a></li>\
+          <li><a href="Processing.html">Processing</a></li>\
       </ul>\
       \
       </li>\
@@ -92,16 +92,16 @@ document.write('\
             \
         </li>\
       <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Videos\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Video\
         <ul class="dropdown-menu">\
-          <li><a href="Vivid.html">Vivid - Projection Mapping</a></li>\
+          <li><a href="Vivid.html">Vivid Sydney (2015)</a></li>\
           <li><a href="MusicVideos.html">Mashups</a></li>\
           <li><a href="Untitled 360.html">Untitled 360</a></li>\
       </ul>\
             \
         </li>\
                     <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photography\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photo\
         <ul class="dropdown-menu">\
           <li><a href="Photos.html">Flickr</a></li>\
           <li><a href="Grasausschuss Pho.html">Grasausschuss</a></li>\
