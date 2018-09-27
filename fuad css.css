@@ -40,7 +40,7 @@ a:active {
 }
 
 body{
-background-color: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1));
+  background-color: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.9), rgba(255, 255, 255,1));
     background: url(DSC_0162b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +114,7 @@ background-color: linear-gradient(0deg, rgba(0, 0, 0,1), rgba(0,0,0,0.7), rgba(2
 
 @media (max-width:767px){
 .panel:hover{
-     background-color:rgba(255,255,255,0.8);
+     background-color:rgba(255,255,255,0.8) !important;
     -webkit-transition: all 0.3s linear;
        -moz-transition: all 0.3s linear;
         -ms-transition: all 0.3s linear;
@@ -1255,4 +1255,9 @@ background-color:rgba(255,255,255,0.75) !important;
 
 .row{
 margin-top:1em;
+}
+
+
+.footer{
+
 }

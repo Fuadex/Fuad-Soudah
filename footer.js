@@ -14,7 +14,7 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
 <\/script>\
 <div class="container-fluid">\
     <div class="row">\
-<nav class="navbar navbar-inverse navbar-bottom" role="navigation">\
+<nav class="navbar navbar-inverse navbar-bottom footer" role="navigation">\
   <div class="navbar-header">\
     <a class="navbar-brand" href="#"><ol>Future Projects:</ol></a>\
   </div>\
