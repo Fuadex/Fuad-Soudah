@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://veigzw.by.files.1drv.com/y4m8Eo2MwGucqLEIiM1YCjhqNbLlJ8jJFqG3atfxBFQHF0zhucnCwQRK0IpDJRnLocz2zKL1UoQJHWpKHs3DFGkK_-szQPp4HFad6Gh5IgBga--hwI0VA7j9HA0hgLijyMesWvFW1xgMM3u_bo6kRSRo_Ybp0yq-SuWeY67hlXlhJU-piUZewxOJT5OpjuCiXwRI5IDJJVKhf9z7vPtwOBVnQ?width=3240&height=1816&cropmode=none);*/
+background:url();
+background-color: black !important;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://welqng.by.files.1drv.com/y4mFh3XgObwTi2VaRK8WVkb_qxQDFMXhazmE3I8zr-vMNFs0qE_FFv18Q4AGQdNaLEdU6YDCnTdBFk-tSgZWjirIqvuG5814yaGbdeDwBf5auhy2iD4ZFNxXVcs3mttQQhvZxCtdJlRY4SmwhSgigXQTCkwAbv5lcOObvaiGJdzlPVw4rLIBtVgu9JSr9A3Jy7_jzY8FN6MRBRCPVlzbZlx6A?width=3240&height=1813&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://8q32ng.by.files.1drv.com/y4mm7fyl19WF1GJHCohyTOI_toVOxf-69Yqgkmddb6XwG1IV9r9Xc4LplKiJbQEDz7PTDF7oK9yaBKgYSyYDYZQC_HqBD5D6qwFLzsXSfS90vFAlUfLOGqCxrJUl8r27I1pPLKsfQTqVDWIuCKSx49s8qYHD8s3XqjaapJ2ksMqFB_vPiDGHvpThoAhoPc4ib1C_b0MVbbBEf42U2zptwEhKQ?width=3240&height=1820&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://8q31ng.by.files.1drv.com/y4mp2ToqnBe5xvKESktzt3wFWu3zPLo6N1az1rPbNCMxpmI2J1OjGGVk4XpQOBMmEcQoM0WFihNOfj5iHlZsA_vxUrboZOfRXPZO5ocDce5Bll7t7Fm-e8DZ9AINr5P_z-cxUsRpoFU8eWXX4xEDE8wX6o6OrNOXn58jXpYqIc3ULWJJ7U7rN4SHcFwJFqpRgWv3tSiEpxSssAq9sHKEuOzJw?width=3240&height=1821&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://8q3zng.by.files.1drv.com/y4mZTztoFIFSXpHqCKzIc-O7t_gV8nBOeVVeZh2Qh0qT3EwyNQkdLRdhqXb6xyxBF1tczhB0SgL66vTXJbVps016U4dyeOnFKcuLqCgeAK0xd5X2HDkgOh-JKOvIXh55pyHbgrlMULI0vz7ALDM9XCrHhpMPfPSpihUz-0MAJK43FSHEv8YCDJzokCjupC8tJL1isN_-27hZ0Rl3AWJA_8icQ?width=3240&height=1825&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px){
+
+.d{
+	margin-bottom:15px;
+}
+
+}
+
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Suave</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://v0lyng.by.files.1drv.com/y4mtZevp1S03iuBcIhyWCTHM9xYbODXZE716B0hFWrYll-9CdLZBcXIhufFPEoyo4zV7JSKiK_lEaIyS9E6A8Wt58lQe1hTzGuDkCx9MSMsoGk0A9bMA0SDo-rNwcjzGHSZ8t660VjpcUEjROwEfrRgV-zyJJzhFM6P3eU_F--y-785JnFc0o2anyYqEFOKZXbRlCZCe_9u-voNmGaLfDcoRg?width=3240&height=1819&cropmode=none" class="darken"><div class="text">Hello?</div><img class="d" src="https://v0lyng.by.files.1drv.com/y4mtZevp1S03iuBcIhyWCTHM9xYbODXZE716B0hFWrYll-9CdLZBcXIhufFPEoyo4zV7JSKiK_lEaIyS9E6A8Wt58lQe1hTzGuDkCx9MSMsoGk0A9bMA0SDo-rNwcjzGHSZ8t660VjpcUEjROwEfrRgV-zyJJzhFM6P3eU_F--y-785JnFc0o2anyYqEFOKZXbRlCZCe_9u-voNmGaLfDcoRg?width=3240&height=1819&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Equalizer</h4></center>
+    Recently, I've equipped myself with a VPN. It was a last-call offering that I dug out from my facebook feed. Sometimes I wondered 'why the hell do I spend so much time on facebook. It's trash'. But I guess it's as trashy as you design your facebook feed and sometimes, gold will come out, just like with the VPN offer.<br><br>
+
+    It was sort of a dream come true, as I questioned my subscription to Netflix. Now there is actually some stuff to watch from beyond the constrains of Australian selection. Despite I have research to do. But oh well. I also have a sense of emptiness recently and that was coming in hard so filling it up with a notch of illusion, well, I forgot but it did work in the past, didn't it? And so it did the trick now too.<br><br>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Steins;Gate</h4></center>
+
+ 	There are a few titles out there that continue battling for my attention, despite I should redirect none. I've got work to do... But I also need to remain sane and what better way is there than to watch some prime Anime from the absolute top top? Without oxymoroning you any further, I'll just depict a title that somewhat glided below my radar and is in top 4... actually, it climbed up to top 3 on myanimelist! On the Polish imdb equivalent it's actually quite high too but I discovered that just after having watched the series. Usually, there can't be much wrong about a huge audience spamming a title with very high ratings. Steins;Gate is one of those, as it gathered a gargantuous amount of reviews and somehow remained a bit above the 9.0 average, enough to reach this sweet spot of getting into the elitist bunch. Well, at this point I had no excuses? But, there's the thing that after having watched this, I... I wouldn't neccesarily say it's a bad show, cause it's not. But the problem is, that this extra mile is never reached.<br><br>
+
+  Let me put it into these words. It is an extreme accomplishment to get such an intricate story to such a cohesion. It's impeccable. I literally have found no plotholes whatsoever. And we are speaking of an Anime of which the central point is time travel. It's just frankly unbelievable that a story of that caliber could get that coherent and tie up, literally all the storylines. True, perhaps a few were left ambiguous purposefully but still with relevant and realistic conclusions. And trust me, I'm usually the first to blast off with how bad something is, because it throws your out of immersion due to stupid scenario-related mistakes. I swear, I even tried and pointed out some things that found a resolution of its own eventually. To be honest, I can't name one show which managed to get as bulletproof as Steins;Gate. And that's why I would love to see a fully-fledged adaptation of this series into a proper movie. Now, what would make it a particularly good movie? Just a few tweaks...<br><br>
+
+  First of all. The show does not kick off properly. I mean, the first episode was an interesting carrousel. But then it was quite... regular? Too eccentric? The central point of the show was rebuked for the first half of it. Wait, I said rebuked? Scoffed would be proper. This show was literally going nowhere for a fine bit and its deviated insertions which came on a episode-regular basis just felt unnecessary and at times even forced. Again, I understand it may be a cultural thing and this show is theoretically okay for relatively younger audience too, which probably again is an oxymoron but humour oriented around sexuality seems to be prevalent in pretty much any Anime. But I'll remain with my stance that taking it to a regular cringy-basis is not healthy for a show. Some parts are actually good and the audience may get used to it overtime, however... considering the themes that are imbued, despite that the show at a point decides to start shifting around especially the psychological profile of the main protagonist, the style of the show will relatively remain firm. Which to a point is what I feel critical about.<br><br>
+
+  I'll push it a little further. That is, elaborate. The show makes a very decent execution of themes that just should be showcased in a show that involves the theme of time travel. It involves some heavy themes as well. Pretty much exactly what I am usually after. And it takes a really good care of the process and preserve all the details. This is a fantastic job. Meanwhile the characters are also quite good, on second thought actually. Their build-up is a bit non-existent and that unfortunately hurts the heavy themes involved. It's just, that the character arcs are not quite there. Some themes, like I just learned, Tsundere is used but this is not what I consider a character build-up, it's more about the shift in how they behave but most will firmly remain themselves, which is an explosive mix that with a grain of storytelling just does not go off. That's why I would just call it a synthetic experience. I could not directly exactly relate to any of the characters, especially that they were all just so finite. This actually helps the cohesion of the world... but also reaffirms its stiffness. And a few deviations and really good moments just do not help it. I can't say the show made an awe-inspiring feeling in me. I can't say it evoked any strong emotions. But what I can say is that it's technically sound. It doesn't deserve such a great community-based acclaim but if it did check those missed opportunities, I'm certain it would become the real best.<br><br>
+
+    <center>7/10</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://welpng.by.files.1drv.com/y4m7Vis2h8COj90OQ0EBIUZe5m4RSEX9PJtCFRchgKnFQduMg3jjQwt1uE5R0pvmauH32iknxrXgXiOXEnNQB95nhNVjYwoXiGhUdTp21q1BpbD4QTVOaKt_hZmnJT9M9Sqpz9tyZUXbh1cIyv8bhrqL5e3BofG9LTV2RH-XgAHo8DsE9ziWX5uDrKR-boyeMsYXZ9fFeXEoUaezYljp8mhgQ?width=3240&height=1820&cropmode=none" class="darken"><div class="text">Hello :(</div><img src="https://welpng.by.files.1drv.com/y4m7Vis2h8COj90OQ0EBIUZe5m4RSEX9PJtCFRchgKnFQduMg3jjQwt1uE5R0pvmauH32iknxrXgXiOXEnNQB95nhNVjYwoXiGhUdTp21q1BpbD4QTVOaKt_hZmnJT9M9Sqpz9tyZUXbh1cIyv8bhrqL5e3BofG9LTV2RH-XgAHo8DsE9ziWX5uDrKR-boyeMsYXZ9fFeXEoUaezYljp8mhgQ?width=3240&height=1820&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<div class="con2">
+	<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>La Casa De Papel</h4></center>
+    A marriage between Prison Break and... what exactly? Let's call it a Spanish Prison Break. Theoretically made by netflix, although seems like just bought and remixed by Netflix. A series I came across while browsing through filmweb, a Polish equivalent of IMDB that I still use primarily to most of my friends spending time on this platform. What came across as eerie was the fact that title closes the top 10 of best series of all time, all accordingly rated by filmweb's community that is. At this point, a few alarms started ringing, like hola! How come that is possible, this just came out recently. I get that we have many Spanish speakers in Poland, or at least at a point when they're climbing up the lexicological ladders, making sure they're getting immersed with yet another language and paving their way to forging an extra qualification that will come in handy in the unforgiving business driven world. A world that I guess is being contested in the series, more from the socioeconomical perspective, although the criticism is elicited in a rather subtle manner. Eventually, I found value in the show, it was made well, especially once considered that this is one of those shows that pop out of nowhere with a previously quite unknown cast but somehow all managed to spin in a quite fondly manner. That having said, it is still not quite the level of, let's say, Dark.<br><br>
+
+    Let's take a closer look at what's good in this show. First of all, the performance given by the leading actors was just simply very good. I may be repeating myself too often by saying it may be surprising to see such a great performance given, considering the world we're living in, bla bla bla. Okay, let's reframe this: the actors that were involved in this project did a wonderful job and the characterisation befitted perfectly the world they were set in. This created a specific set of beliveability and once we blend in a very decently conformed dialogues, this all becomes a very nicely flowing show, as the scenes are composed well and even make a leap in quality with the consecutive season. Frankly, I enjoyed the progression, although the series did kick off quite rapidly at first, at an extent that I figured 'oh no, one of those shows again'. But as we're introduced to the world, it all dies down a notch and settles at a quite tasty mix of drama, suspense highs and not that many lows that I could count. This alone should give a solid bolid 8/10 here but I'm one of these types that looks for a bit more in a show.<br><br>
+
+    And so, I'll mention how the series becomes overstretched a notch, especially in season 2 with scenes that are just ridiculous to watch. I'll mention the weird bullet impact sound overlays that in combination with some scenes in which the characters act all rambo just shifts the quite lofty feel of the series towards a comical bland mash of frames. The script becomes pierced a few times, especially in the second season, as some plot lines just become well too far-fetched. Which was still actually kept in quite decent frame but what I can't stand, is when specific characters all of a sudden decide to change how they interact with the world, going against all that made the core of who they were and therefore how they were constructed. It all becomes a bit too much towards the end but the key combat points were very satisfying to watch and I wish I could see more of some stunts that took place in this show. I mean, this is a classic Prison Break type of a show, with plenty of stuff happening, relatively concisely with a good flow. It's a decent watch that you will enjoy but I wouldn't say it provides something particularly extraordinary.<br><br>
+
+    <center>7/10</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://veiuzw.by.files.1drv.com/y4mYcjzn7w3vbRlma7OPjUt6RRjTaFnocSsFEmhlYcrCYyZMTm7oiFGI3Wpunnx-OQABYs3-8mZRBzdXIC1kEmjPoO8YJTRUJm4V4bTiItcBwdlcPBzwTEY5EuvYYaKJVX0fm7rCTPexbMq4JJQnewc3EXAgfZihtQn5AVSx-XY17FD-ca76jAib9yD_Gfiiy8elHQK0kKEqEmk7YLw6QG6xw?width=1920&height=1200&cropmode=none" class="darken"><div class="text">Hello.</div><img src="https://8q33ng.by.files.1drv.com/y4mbZ5YcJQ4iycEkviJOT-fokcawaoAhcJ9nunYChjAS0Ua8wl7F9rPdYMwtbtykb4FTxTn6oas-r-YoX_FX0xYnzJ2C8LfwhkW-TVBricEP_3axSMCAf6g31q3VFZ14Yqz2meJF8YKhAVtJVQcyyFL89q1mXMq0TO1oLe1J1CB8jVT2JrCMOo9G2HISSTLAiFLp2CPlrWZvF8U77pY_JcGiw?width=3240&height=1822&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+
+<div class="con3">
+	<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>One Punch Man</h4></center>
+    If there is one thing that I honestly enjoy watching, it is a show that just makes fun of the genre it is representing. And which it does so honestly but keeping to the highest quality standards that it just flows and heck, in this particular case, even introduces something new, although defying what was in the show's description. And here we have, a hero who is being a hero just for fun. A hero, that is the strongest hero in the world and is ultimately unbeatable. A hero for whom there is no match, in a world of... other heroes and monsters, set in a set of cities beginning and ending with just one letter. And heck, even getting swept away in just a matter of seconds. This show introduces insurmountable excess into whatever it makes an attempt in depicting and serves towards a very interesting endgame. Let's face it, practically any hero-driven show has a specific flow to it. Practically, in almost every single one of them, the hero wins, right? Well, here we have it all foreshadowed, this guy's unbeatable. Let's keep it sincere that way and create a colorful story. And they did it. Not only did they do it impeccably, they also made sure it watches well even in western standards. The most annoying immersion-wreaking, I'd call it anime-devices are not quite present here. The humour is expertly narrated. And the storyline that gets built on the rediculous encounters very skillfully continued.<br><br>
+
+    I'll sweeten it up. The soundtrack is also quite interestingly. The opening feels full and extended. The dialogues.. eh, if there is something that can be held as a constant in the world of anime, it is that the voice acting will always remain flawless. Although, there is a specific style to it and considering One Punch Man is a notch different, here it could have become na issue. But this show ain't an exception (and I gotta look into why there ain't any that I know of). Okay! The visual design is great, there is a specific style here but it gets a bit a bit shaken up by having specific characters drawn in a radically different style but it only contributes towards the dynamics of the show. And still, the dynamics here can get extremely hectic. But the creators somehow managed it all at an astonishing level of polishment. The specific gradation of excess and ridiculity is also something that I believe is very uneasy to accomplish. And yet, here, despite they break through scales, they manage to invent their own and keep it all consistent and at bay. What else could I mention in terms of how technically this show presents itself? I mean, even the tiny details seem to have been thought out quite thoroughly, I honestly could not say a bad word at any given point.<br><br>
+
+    Let's move on to the story. Well, it's all spoiled out to you at the very beginning. But what a good story usually does entail, no matter what medium you're delving into, is a shitton of nuances. And here, there is a grandiose amount with quite nicely spoiled depth and quality to it. Here we will come across antiheroes that strongly remind of totalitarian figures. Here we will come across all sorts of heroes, most of whom are, well, ridiculous but I gotta praise that despite the amount presented, they're actually well crafted and memorable. They will mock popular western and japanese icons and they will do this in style. The humour is well-rounded, the scenes quite interestingly structured, the antagonists' destructive potential unleashed quite thoroughly and neatly managed. There is just a specific balance associated with this show which just makes it so enjoyable on so many levels, with its main protagonist who seems like something new and easily relatable to. Imagine a hard working Big Lebowski with superpowers. This just could not go wrong. And there is just simply nearly nothing wrong. On top of which, it feels fresh, it is fresh and after watching it all, you just yearn for more (of which will come, eventually).<br><br>
+
+    <center>9/10</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none" class="darken"><div class="text">Hello :D</div><img src="https://8q3yng.by.files.1drv.com/y4mfFYw7ExSqjNoATvCYk0MoUFdHNhLZeI0hIXounaf0sEJpTvMiuTFdPFf9eXJZ_934ArtCymbpQc795s1iIlznHUz1VrEDN-S1gdyvdLOER0SMIjsw5YSI--kFGbP4ITVqIJcxxVFb6BcaxU94vbVANi2wPbM43ePsKOc5E7tpXrI-lVT1MLdcc4_SADB81cQ8B3AX0KayPSMKONuNDB5Qg?width=3240&height=1822&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<div class="con4">
+	<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Bojack Horseman Season 5</h4></center>
+    Bojack, Bojack, Bojack... There is something weird about me writing a review here, in which I'm giving such a high score to a series that I felt quite ambivalent towards. Because Bojack is frankly not an amazing show. It is an okay show. Pretty much as Bojack himself, I presume. A show which is supposed to be so lifelike. Filled up with depressive contents and trying to depict it in a sarcastic way. Okay Bojack, you did this (and the team it created). And there's probably also a lot of contents behind it, such as LA, life of stars and stars like Bojack. But frankly, it all just felt like a regular show that does not provide you with nothing more than... well, I don't know, there wasn't much of anything to begin with? Except for a bit fresh stylizing of characters after animals, although I felt stronger in relation to such an artistic device once I play The Wolf Among Us. I think things changed with the introduction of Season 4, which just started feeling different. The problem is, that I don't remember what was exactly happening in Season 4, except for the golden retriever jogging, which tells you already, that yeah, one of these shows that you watch and ultimately forget about. This, will not stick to Season 5, however. And I don't know who came up with the changes or maybe I just started growing up but this season actually stepped up. And let me explain why.<br><br>
+
+    Okay, what makes a drama? Probably characters... Music, dialogues, setting... oh, there are just so many variables. But see, there is a certain pattern and a frame, for instance how long can an episode last. In terms of regular tv shows, you'd expect an episode to last 45-60 minutes, an animation around 25 minutes. See, patterns, constraints, such that usually will not allow meddling, cause how are you going to meddle? With what? You going to put out a job ad for, I don't know, a videographer who is expected to do work that nobody has seen in the industry? Then again, there are so many shows, that are not just generic by how they are but there are other elements that will just lack, like performance. Here, with Bojack, it is an animation, it's probably not easy to mess up the voiceover. What deserves your attention here however, is how this specific season was constructed. There I said it, constructed. And, this is... well, not a novum, I mean many directors will try to induce some particularly interesting changes that will make their creation stand out from the crowd. But it's also about making it... work. Now, in Bojack... now that's important. In Bojack, they managed to rebuild a standarised construct of storytelling... for each episode (as far I recall).<br><br>
+
+    In some cases, it worked just fine. But in some cases, they managed to outdo themselves and a lot of things that I have seen so far. Let me throw in a quick spoiler: how about featuring an episode, in which you throw in the same characters, perform pretty much the same activities, feature the same theme but mash it up with 4 distinct timelines? Sounds complicated? But once you watch the episode, you will see how much the creators made it work and how coherent it remained and even that the conceptual frame and nuances all worked towards a specific theme which here felt lifelike in relation to the alter egos the portrayed characters are playing. That might, again, sound complicated. But main point being, is that they made many of such clusters work. On top of which, they upped their dialogue-related game. These were actually authentically good dialogues, even parts that should have remained stale, somehow had a quite good knack to it. But what I was in awe of, the nuances! The flood of thick and directly delivered nuances, so bluntly delivered, so extremely complicated themes delivered on a silver, bloody platter. The sarcasm worked like a charm. The jokes along. But this show is not quite just about jokes. It's about pain and suffering, and a lot of bad things that just does happen, so the unique delivery of grotesque here and really making it work is something that I could consider as in a cherry on top of a really neatly and yet uniquely crafted and presented cake. But hey! The details!<br><br>
+    <center>9/10</center><br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none" class="darken"><div class="text">Hello?!</div><img src="https://8q0anw.by.files.1drv.com/y4m-Q23KYH3S8pLexqepSCvkgkD3fpSv38uMBhLrv6_sNtA97BohFYWuyzAr9B6j8RejKw4OR8aX5xIytyKxGMvA4Izpt92MonYL8OUU-qGbtwhuxxbSB0CxfSOFqm2QuwOdnzrO8n2KsjpGrfGZXtHJbbLKg_wSdi26laP6Zao-WvgPv3PSxHSqtVxOzC9ldfu3wKR_vWO-AAiLzLi6w1kNw?width=3240&height=1823&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<br>
+</div>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

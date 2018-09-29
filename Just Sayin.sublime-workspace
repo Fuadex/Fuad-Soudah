@@ -8,36 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "Blog/Tracking/11.html",
-			"settings":
-			{
-				"buffer_size": 15157,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Tracking/10.html",
-			"settings":
-			{
-				"buffer_size": 15157,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Tracking/9.html",
-			"settings":
-			{
-				"buffer_size": 15157,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Education.html",
 			"settings":
 			{
-				"buffer_size": 9463,
+				"buffer_size": 9472,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -46,7 +20,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 21911,
+				"buffer_size": 24434,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -64,7 +38,7 @@
 			"file": "footer.js",
 			"settings":
 			{
-				"buffer_size": 1506,
+				"buffer_size": 1513,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -106,33 +80,6 @@
 			}
 		},
 		{
-			"file": "Blog/Erratic Dream/Erratic 9.html",
-			"settings":
-			{
-				"buffer_size": 30215,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High3.html",
-			"settings":
-			{
-				"buffer_size": 22793,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High2.html",
-			"settings":
-			{
-				"buffer_size": 25598,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Blog.html",
 			"settings":
 			{
@@ -145,7 +92,7 @@
 			"file": "Changes.html",
 			"settings":
 			{
-				"buffer_size": 14522,
+				"buffer_size": 14957,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -180,7 +127,7 @@
 			"file": "fuad css.css",
 			"settings":
 			{
-				"buffer_size": 36360,
+				"buffer_size": 36666,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -213,19 +160,10 @@
 			}
 		},
 		{
-			"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
-			"settings":
-			{
-				"buffer_size": 15816,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Blog/High Pitch Void/footer.js",
 			"settings":
 			{
-				"buffer_size": 1542,
+				"buffer_size": 1549,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -306,6 +244,13 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/9.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/10.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/11.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High2.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High3.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic 9.html",
+		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Tracking.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/navigation.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/navigation.js",
@@ -324,8 +269,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia/0.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High4.html",
 		"/C/Users/Fuade/Documents/Eudaimonia/0.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic 9.html",
-		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Leap/Leap2.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Leap/Leap1.html",
@@ -337,7 +280,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Placemaking.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Lone Island.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/12.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/9.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Trouble Cruise.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/RadioX.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/GradShow.html",
@@ -364,7 +306,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Sehnsucht.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic3.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Grasausschuss Pho.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High3.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Photos.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/navigation.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/index - Copy.html",
@@ -426,7 +367,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -440,6 +381,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":hover",
+			"h2",
+			"h4",
+			":hover",
+			"h1",
+			"translat",
+			"text-shadow",
+			"  color: black; text-shadow: white 0em 0em 5.5em;",
+			"body",
+			"text-shadow",
+			"font",
 			"icon",
 			"top",
 			"#top",
@@ -545,114 +497,24 @@
 	"groups":
 	[
 		{
-			"selected": 23,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Blog/Tracking/11.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3902,
-								3902
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3076.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Blog/Tracking/10.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3902,
-								3902
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 26,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Blog/Tracking/9.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5512,
-								5512
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1806.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "Education.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9463,
+						"buffer_size": 9472,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4500,
-								4500
+								1666,
+								1134
 							]
 						],
 						"settings":
@@ -665,24 +527,24 @@
 						"translation.y": 346.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 1,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21911,
+						"buffer_size": 24434,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1482,
-								1482
+								1522,
+								1524
 							]
 						],
 						"settings":
@@ -692,14 +554,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "Contact.html",
 					"semi_transient": false,
 					"settings":
@@ -725,24 +587,24 @@
 						"translation.y": 1022.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "footer.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1506,
+						"buffer_size": 1513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1489,
-								1484
+								691,
+								691
 							]
 						],
 						"settings":
@@ -755,11 +617,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 4,
 					"file": "MusicVideos.html",
 					"semi_transient": false,
 					"settings":
@@ -785,11 +647,11 @@
 						"translation.y": 895.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "Blog/High Pitch Void/High5.html",
 					"semi_transient": false,
 					"settings":
@@ -813,11 +675,11 @@
 						"translation.y": 4323.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "Blog/High Pitch Void/High4.html",
 					"semi_transient": false,
 					"settings":
@@ -843,11 +705,11 @@
 						"translation.y": 1124.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 7,
 					"file": "Blog/Erratic Dream/Erratic 12.html",
 					"semi_transient": false,
 					"settings":
@@ -873,101 +735,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Blog/Erratic Dream/Erratic 9.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 30215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1407,
-								1407
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Blog/High Pitch Void/High3.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22793,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								880,
-								880
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "Blog/High Pitch Void/High2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25598,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								880,
-								880
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
+					"buffer": 8,
 					"file": "Blog.html",
 					"semi_transient": false,
 					"settings":
@@ -990,27 +762,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2835.0,
+						"translation.y": 599.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 9,
 					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14522,
+						"buffer_size": 14957,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1799,
-								1799
+								1706,
+								1706
 							]
 						],
 						"settings":
@@ -1018,14 +790,14 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 449.0,
+						"translation.y": 374.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 10,
 					"file": "navigation.js",
 					"semi_transient": false,
 					"settings":
@@ -1051,11 +823,11 @@
 						"translation.y": 1162.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 11,
 					"file": "Photos.html",
 					"semi_transient": false,
 					"settings":
@@ -1079,11 +851,11 @@
 						"translation.y": 3289.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 12,
 					"file": "Game Concept.html",
 					"semi_transient": false,
 					"settings":
@@ -1109,24 +881,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 13,
 					"file": "fuad css.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 36360,
+						"buffer_size": 36666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								768,
-								768
+								2210,
+								2210
 							]
 						],
 						"settings":
@@ -1136,14 +908,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 15674.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 14,
 					"file": "Blog/High Pitch Void/High1.html",
 					"semi_transient": false,
 					"settings":
@@ -1173,7 +945,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 15,
 					"file": "test.html",
 					"semi_transient": false,
 					"settings":
@@ -1198,11 +970,11 @@
 						"translation.y": 18.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 16,
 					"file": "Blog/Tracking/13.html",
 					"semi_transient": false,
 					"settings":
@@ -1228,54 +1000,24 @@
 						"translation.y": 2770.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
-					"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1804,
-								1804
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
+					"buffer": 17,
 					"file": "Blog/High Pitch Void/footer.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1542,
+						"buffer_size": 1549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1524,
-								1524
+								697,
+								697
 							]
 						],
 						"settings":
@@ -1292,7 +1034,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 18,
 					"file": "Trouble Cruise.html",
 					"semi_transient": false,
 					"settings":
@@ -1318,11 +1060,11 @@
 						"translation.y": 517.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 19,
 					"file": "Blog/Tracking/12.html",
 					"semi_transient": false,
 					"settings":
@@ -1348,7 +1090,7 @@
 						"translation.y": 1496.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 19,
 					"type": "text"
 				}
 			]
