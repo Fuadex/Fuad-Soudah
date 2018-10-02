@@ -8,10 +8,8 @@ function doResize() {
     var fpc = Math.round(fpc*100)/100;
     $('html').css('font-size',fpc+'%');
 }
-
 document.write('\
-\
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">\
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">\
     <div class="navbar-header">\
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">\
         <span class="icon-bar"></span>\
