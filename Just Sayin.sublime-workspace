@@ -17,37 +17,39 @@
 			}
 		},
 		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\n\nbody{\n/*  background:url(https://veigzw.by.files.1drv.com/y4m8Eo2MwGucqLEIiM1YCjhqNbLlJ8jJFqG3atfxBFQHF0zhucnCwQRK0IpDJRnLocz2zKL1UoQJHWpKHs3DFGkK_-szQPp4HFad6Gh5IgBga--hwI0VA7j9HA0hgLijyMesWvFW1xgMM3u_bo6kRSRo_Ybp0yq-SuWeY67hlXlhJU-piUZewxOJT5OpjuCiXwRI5IDJJVKhf9z7vPtwOBVnQ?width=3240&height=1816&cropmode=none);*/\nbackground:url();\nbackground-color: black !important;\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:2vw;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    \n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 0.7;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\n.con1{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://welqng.by.files.1drv.com/y4mFh3XgObwTi2VaRK8WVkb_qxQDFMXhazmE3I8zr-vMNFs0qE_FFv18Q4AGQdNaLEdU6YDCnTdBFk-tSgZWjirIqvuG5814yaGbdeDwBf5auhy2iD4ZFNxXVcs3mttQQhvZxCtdJlRY4SmwhSgigXQTCkwAbv5lcOObvaiGJdzlPVw4rLIBtVgu9JSr9A3Jy7_jzY8FN6MRBRCPVlzbZlx6A?width=3240&height=1813&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://8q32ng.by.files.1drv.com/y4mm7fyl19WF1GJHCohyTOI_toVOxf-69Yqgkmddb6XwG1IV9r9Xc4LplKiJbQEDz7PTDF7oK9yaBKgYSyYDYZQC_HqBD5D6qwFLzsXSfS90vFAlUfLOGqCxrJUl8r27I1pPLKsfQTqVDWIuCKSx49s8qYHD8s3XqjaapJ2ksMqFB_vPiDGHvpThoAhoPc4ib1C_b0MVbbBEf42U2zptwEhKQ?width=3240&height=1820&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con3{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://8q31ng.by.files.1drv.com/y4mp2ToqnBe5xvKESktzt3wFWu3zPLo6N1az1rPbNCMxpmI2J1OjGGVk4XpQOBMmEcQoM0WFihNOfj5iHlZsA_vxUrboZOfRXPZO5ocDce5Bll7t7Fm-e8DZ9AINr5P_z-cxUsRpoFU8eWXX4xEDE8wX6o6OrNOXn58jXpYqIc3ULWJJ7U7rN4SHcFwJFqpRgWv3tSiEpxSssAq9sHKEuOzJw?width=3240&height=1821&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con4{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://8q3zng.by.files.1drv.com/y4mZTztoFIFSXpHqCKzIc-O7t_gV8nBOeVVeZh2Qh0qT3EwyNQkdLRdhqXb6xyxBF1tczhB0SgL66vTXJbVps016U4dyeOnFKcuLqCgeAK0xd5X2HDkgOh-JKOvIXh55pyHbgrlMULI0vz7ALDM9XCrHhpMPfPSpihUz-0MAJK43FSHEv8YCDJzokCjupC8tJL1isN_-27hZ0Rl3AWJA_8icQ?width=3240&height=1825&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n@media (max-width: 1024px){\n\n.d{\n\tmargin-bottom:15px;\n}\n\n}\n\n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n</head>\n<body onload=\"getRandomImage()\">\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<center><h1>Suave</h1></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-4 col-md-offset-2\">\n    <a href=\"https://v0lyng.by.files.1drv.com/y4mtZevp1S03iuBcIhyWCTHM9xYbODXZE716B0hFWrYll-9CdLZBcXIhufFPEoyo4zV7JSKiK_lEaIyS9E6A8Wt58lQe1hTzGuDkCx9MSMsoGk0A9bMA0SDo-rNwcjzGHSZ8t660VjpcUEjROwEfrRgV-zyJJzhFM6P3eU_F--y-785JnFc0o2anyYqEFOKZXbRlCZCe_9u-voNmGaLfDcoRg?width=3240&height=1819&cropmode=none\" class=\"darken\"><div class=\"text\">Hello?</div><img class=\"d\" src=\"https://v0lyng.by.files.1drv.com/y4mtZevp1S03iuBcIhyWCTHM9xYbODXZE716B0hFWrYll-9CdLZBcXIhufFPEoyo4zV7JSKiK_lEaIyS9E6A8Wt58lQe1hTzGuDkCx9MSMsoGk0A9bMA0SDo-rNwcjzGHSZ8t660VjpcUEjROwEfrRgV-zyJJzhFM6P3eU_F--y-785JnFc0o2anyYqEFOKZXbRlCZCe_9u-voNmGaLfDcoRg?width=3240&height=1819&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div>\n  <div class=\"col-md-4 col-md-offset-0 panel\">\n    <center><h4>Equalizer</h4></center>\n    Recently, I've equipped myself with a VPN. It was a last-call offering that I dug out from my facebook feed. Sometimes I wondered 'why the hell do I spend so much time on facebook. It's trash'. But I guess it's as trashy as you design your facebook feed and sometimes, gold will come out, just like with the VPN offer.<br><br>\n\n    It was sort of a dream come true, as I questioned my subscription to Netflix. Now there is actually some stuff to watch from beyond the constrains of Australian selection. Despite I have research to do. But oh well. I also have a sense of emptiness recently and that was coming in hard so filling it up with a notch of illusion, well, I forgot but it did work in the past, didn't it? And so it did the trick now too.<br><br>\n\n  </div><br>\n</div>\n\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n  <center><h4>Steins;Gate</h4></center>\n\n \tThere are a few titles out there that continue battling for my attention, despite I should redirect none. I've got work to do... But I also need to remain sane and what better way is there than to watch some prime Anime from the absolute top top? Without oxymoroning you any further, I'll just depict a title that somewhat glided below my radar and is in top 4... actually, it climbed up to top 3 on myanimelist! On the Polish imdb equivalent it's actually quite high too but I discovered that just after having watched the series. Usually, there can't be much wrong about a huge audience spamming a title with very high ratings. Steins;Gate is one of those, as it gathered a gargantuous amount of reviews and somehow remained a bit above the 9.0 average, enough to reach this sweet spot of getting into the elitist bunch. Well, at this point I had no excuses? But, there's the thing that after having watched this, I... I wouldn't neccesarily say it's a bad show, cause it's not. But the problem is, that this extra mile is never reached.<br><br>\n\n  Let me put it into these words. It is an extreme accomplishment to get such an intricate story to such a cohesion. It's impeccable. I literally have found no plotholes whatsoever. And we are speaking of an Anime of which the central point is time travel. It's just frankly unbelievable that a story of that caliber could get that coherent and tie up, literally all the storylines. True, perhaps a few were left ambiguous purposefully but still with relevant and realistic conclusions. And trust me, I'm usually the first to blast off with how bad something is, because it throws your out of immersion due to stupid scenario-related mistakes. I swear, I even tried and pointed out some things that found a resolution of its own eventually. To be honest, I can't name one show which managed to get as bulletproof as Steins;Gate. And that's why I would love to see a fully-fledged adaptation of this series into a proper movie. Now, what would make it a particularly good movie? Just a few tweaks...<br><br>\n\n  First of all. The show does not kick off properly. I mean, the first episode was an interesting carrousel. But then it was quite... regular? Too eccentric? The central point of the show was rebuked for the first half of it. Wait, I said rebuked? Scoffed would be proper. This show was literally going nowhere for a fine bit and its deviated insertions which came on a episode-regular basis just felt unnecessary and at times even forced. Again, I understand it may be a cultural thing and this show is theoretically okay for relatively younger audience too, which probably again is an oxymoron but humour oriented around sexuality seems to be prevalent in pretty much any Anime. But I'll remain with my stance that taking it to a regular cringy-basis is not healthy for a show. Some parts are actually good and the audience may get used to it overtime, however... considering the themes that are imbued, despite that the show at a point decides to start shifting around especially the psychological profile of the main protagonist, the style of the show will relatively remain firm. Which to a point is what I feel critical about.<br><br>\n\n  I'll push it a little further. That is, elaborate. The show makes a very decent execution of themes that just should be showcased in a show that involves the theme of time travel. It involves some heavy themes as well. Pretty much exactly what I am usually after. And it takes a really good care of the process and preserve all the details. This is a fantastic job. Meanwhile the characters are also quite good, on second thought actually. Their build-up is a bit non-existent and that unfortunately hurts the heavy themes involved. It's just, that the character arcs are not quite there. Some themes, like I just learned, Tsundere is used but this is not what I consider a character build-up, it's more about the shift in how they behave but most will firmly remain themselves, which is an explosive mix that with a grain of storytelling just does not go off. That's why I would just call it a synthetic experience. I could not directly exactly relate to any of the characters, especially that they were all just so finite. This actually helps the cohesion of the world... but also reaffirms its stiffness. And a few deviations and really good moments just do not help it. I can't say the show made an awe-inspiring feeling in me. I can't say it evoked any strong emotions. But what I can say is that it's technically sound. It doesn't deserve such a great community-based acclaim but if it did check those missed opportunities, I'm certain it would become the real best.<br><br>\n\n    <center>7/10</center><br><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://welpng.by.files.1drv.com/y4m7Vis2h8COj90OQ0EBIUZe5m4RSEX9PJtCFRchgKnFQduMg3jjQwt1uE5R0pvmauH32iknxrXgXiOXEnNQB95nhNVjYwoXiGhUdTp21q1BpbD4QTVOaKt_hZmnJT9M9Sqpz9tyZUXbh1cIyv8bhrqL5e3BofG9LTV2RH-XgAHo8DsE9ziWX5uDrKR-boyeMsYXZ9fFeXEoUaezYljp8mhgQ?width=3240&height=1820&cropmode=none\" class=\"darken\"><div class=\"text\">Hello :(</div><img src=\"https://welpng.by.files.1drv.com/y4m7Vis2h8COj90OQ0EBIUZe5m4RSEX9PJtCFRchgKnFQduMg3jjQwt1uE5R0pvmauH32iknxrXgXiOXEnNQB95nhNVjYwoXiGhUdTp21q1BpbD4QTVOaKt_hZmnJT9M9Sqpz9tyZUXbh1cIyv8bhrqL5e3BofG9LTV2RH-XgAHo8DsE9ziWX5uDrKR-boyeMsYXZ9fFeXEoUaezYljp8mhgQ?width=3240&height=1820&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div>\n\n<div class=\"con2\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>La Casa De Papel</h4></center>\n    A marriage between Prison Break and... what exactly? Let's call it a Spanish Prison Break. Theoretically made by netflix, although seems like just bought and remixed by Netflix. A series I came across while browsing through filmweb, a Polish equivalent of IMDB that I still use primarily to most of my friends spending time on this platform. What came across as eerie was the fact that title closes the top 10 of best series of all time, all accordingly rated by filmweb's community that is. At this point, a few alarms started ringing, like hola! How come that is possible, this just came out recently. I get that we have many Spanish speakers in Poland, or at least at a point when they're climbing up the lexicological ladders, making sure they're getting immersed with yet another language and paving their way to forging an extra qualification that will come in handy in the unforgiving business driven world. A world that I guess is being contested in the series, more from the socioeconomical perspective, although the criticism is elicited in a rather subtle manner. Eventually, I found value in the show, it was made well, especially once considered that this is one of those shows that pop out of nowhere with a previously quite unknown cast but somehow all managed to spin in a quite fondly manner. That having said, it is still not quite the level of, let's say, Dark.<br><br>\n\n    Let's take a closer look at what's good in this show. First of all, the performance given by the leading actors was just simply very good. I may be repeating myself too often by saying it may be surprising to see such a great performance given, considering the world we're living in, bla bla bla. Okay, let's reframe this: the actors that were involved in this project did a wonderful job and the characterisation befitted perfectly the world they were set in. This created a specific set of beliveability and once we blend in a very decently conformed dialogues, this all becomes a very nicely flowing show, as the scenes are composed well and even make a leap in quality with the consecutive season. Frankly, I enjoyed the progression, although the series did kick off quite rapidly at first, at an extent that I figured 'oh no, one of those shows again'. But as we're introduced to the world, it all dies down a notch and settles at a quite tasty mix of drama, suspense highs and not that many lows that I could count. This alone should give a solid bolid 8/10 here but I'm one of these types that looks for a bit more in a show.<br><br>\n\n    And so, I'll mention how the series becomes overstretched a notch, especially in season 2 with scenes that are just ridiculous to watch. I'll mention the weird bullet impact sound overlays that in combination with some scenes in which the characters act all rambo just shifts the quite lofty feel of the series towards a comical bland mash of frames. The script becomes pierced a few times, especially in the second season, as some plot lines just become well too far-fetched. Which was still actually kept in quite decent frame but what I can't stand, is when specific characters all of a sudden decide to change how they interact with the world, going against all that made the core of who they were and therefore how they were constructed. It all becomes a bit too much towards the end but the key combat points were very satisfying to watch and I wish I could see more of some stunts that took place in this show. I mean, this is a classic Prison Break type of a show, with plenty of stuff happening, relatively concisely with a good flow. It's a decent watch that you will enjoy but I wouldn't say it provides something particularly extraordinary.<br><br>\n\n    <center>7/10</center><br><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://veiuzw.by.files.1drv.com/y4mYcjzn7w3vbRlma7OPjUt6RRjTaFnocSsFEmhlYcrCYyZMTm7oiFGI3Wpunnx-OQABYs3-8mZRBzdXIC1kEmjPoO8YJTRUJm4V4bTiItcBwdlcPBzwTEY5EuvYYaKJVX0fm7rCTPexbMq4JJQnewc3EXAgfZihtQn5AVSx-XY17FD-ca76jAib9yD_Gfiiy8elHQK0kKEqEmk7YLw6QG6xw?width=1920&height=1200&cropmode=none\" class=\"darken\"><div class=\"text\">Hello.</div><img src=\"https://8q33ng.by.files.1drv.com/y4mbZ5YcJQ4iycEkviJOT-fokcawaoAhcJ9nunYChjAS0Ua8wl7F9rPdYMwtbtykb4FTxTn6oas-r-YoX_FX0xYnzJ2C8LfwhkW-TVBricEP_3axSMCAf6g31q3VFZ14Yqz2meJF8YKhAVtJVQcyyFL89q1mXMq0TO1oLe1J1CB8jVT2JrCMOo9G2HISSTLAiFLp2CPlrWZvF8U77pY_JcGiw?width=3240&height=1822&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n\n</div>\n</div>\n\n<div class=\"con3\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>One Punch Man</h4></center>\n    If there is one thing that I honestly enjoy watching, it is a show that just makes fun of the genre it is representing. And which it does so honestly but keeping to the highest quality standards that it just flows and heck, in this particular case, even introduces something new, although defying what was in the show's description. And here we have, a hero who is being a hero just for fun. A hero, that is the strongest hero in the world and is ultimately unbeatable. A hero for whom there is no match, in a world of... other heroes and monsters, set in a set of cities beginning and ending with just one letter. And heck, even getting swept away in just a matter of seconds. This show introduces insurmountable excess into whatever it makes an attempt in depicting and serves towards a very interesting endgame. Let's face it, practically any hero-driven show has a specific flow to it. Practically, in almost every single one of them, the hero wins, right? Well, here we have it all foreshadowed, this guy's unbeatable. Let's keep it sincere that way and create a colorful story. And they did it. Not only did they do it impeccably, they also made sure it watches well even in western standards. The most annoying immersion-wreaking, I'd call it anime-devices are not quite present here. The humour is expertly narrated. And the storyline that gets built on the rediculous encounters very skillfully continued.<br><br>\n\n    I'll sweeten it up. The soundtrack is also quite interestingly. The opening feels full and extended. The dialogues.. eh, if there is something that can be held as a constant in the world of anime, it is that the voice acting will always remain flawless. Although, there is a specific style to it and considering One Punch Man is a notch different, here it could have become na issue. But this show ain't an exception (and I gotta look into why there ain't any that I know of). Okay! The visual design is great, there is a specific style here but it gets a bit a bit shaken up by having specific characters drawn in a radically different style but it only contributes towards the dynamics of the show. And still, the dynamics here can get extremely hectic. But the creators somehow managed it all at an astonishing level of polishment. The specific gradation of excess and ridiculity is also something that I believe is very uneasy to accomplish. And yet, here, despite they break through scales, they manage to invent their own and keep it all consistent and at bay. What else could I mention in terms of how technically this show presents itself? I mean, even the tiny details seem to have been thought out quite thoroughly, I honestly could not say a bad word at any given point.<br><br>\n\n    Let's move on to the story. Well, it's all spoiled out to you at the very beginning. But what a good story usually does entail, no matter what medium you're delving into, is a shitton of nuances. And here, there is a grandiose amount with quite nicely spoiled depth and quality to it. Here we will come across antiheroes that strongly remind of totalitarian figures. Here we will come across all sorts of heroes, most of whom are, well, ridiculous but I gotta praise that despite the amount presented, they're actually well crafted and memorable. They will mock popular western and japanese icons and they will do this in style. The humour is well-rounded, the scenes quite interestingly structured, the antagonists' destructive potential unleashed quite thoroughly and neatly managed. There is just a specific balance associated with this show which just makes it so enjoyable on so many levels, with its main protagonist who seems like something new and easily relatable to. Imagine a hard working Big Lebowski with superpowers. This just could not go wrong. And there is just simply nearly nothing wrong. On top of which, it feels fresh, it is fresh and after watching it all, you just yearn for more (of which will come, eventually).<br><br>\n\n    <center>9/10</center><br><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none\" class=\"darken\"><div class=\"text\">Hello :D</div><img src=\"https://8q3yng.by.files.1drv.com/y4mfFYw7ExSqjNoATvCYk0MoUFdHNhLZeI0hIXounaf0sEJpTvMiuTFdPFf9eXJZ_934ArtCymbpQc795s1iIlznHUz1VrEDN-S1gdyvdLOER0SMIjsw5YSI--kFGbP4ITVqIJcxxVFb6BcaxU94vbVANi2wPbM43ePsKOc5E7tpXrI-lVT1MLdcc4_SADB81cQ8B3AX0KayPSMKONuNDB5Qg?width=3240&height=1822&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div>\n\n<div class=\"con4\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Bojack Horseman Season 5</h4></center>\n    Bojack, Bojack, Bojack... There is something weird about me writing a review here, in which I'm giving such a high score to a series that I felt quite ambivalent towards. Because Bojack is frankly not an amazing show. It is an okay show. Pretty much as Bojack himself, I presume. A show which is supposed to be so lifelike. Filled up with depressive contents and trying to depict it in a sarcastic way. Okay Bojack, you did this (and the team it created). And there's probably also a lot of contents behind it, such as LA, life of stars and stars like Bojack. But frankly, it all just felt like a regular show that does not provide you with nothing more than... well, I don't know, there wasn't much of anything to begin with? Except for a bit fresh stylizing of characters after animals, although I felt stronger in relation to such an artistic device once I play The Wolf Among Us. I think things changed with the introduction of Season 4, which just started feeling different. The problem is, that I don't remember what was exactly happening in Season 4, except for the golden retriever jogging, which tells you already, that yeah, one of these shows that you watch and ultimately forget about. This, will not stick to Season 5, however. And I don't know who came up with the changes or maybe I just started growing up but this season actually stepped up. And let me explain why.<br><br>\n\n    Okay, what makes a drama? Probably characters... Music, dialogues, setting... oh, there are just so many variables. But see, there is a certain pattern and a frame, for instance how long can an episode last. In terms of regular tv shows, you'd expect an episode to last 45-60 minutes, an animation around 25 minutes. See, patterns, constraints, such that usually will not allow meddling, cause how are you going to meddle? With what? You going to put out a job ad for, I don't know, a videographer who is expected to do work that nobody has seen in the industry? Then again, there are so many shows, that are not just generic by how they are but there are other elements that will just lack, like performance. Here, with Bojack, it is an animation, it's probably not easy to mess up the voiceover. What deserves your attention here however, is how this specific season was constructed. There I said it, constructed. And, this is... well, not a novum, I mean many directors will try to induce some particularly interesting changes that will make their creation stand out from the crowd. But it's also about making it... work. Now, in Bojack... now that's important. In Bojack, they managed to rebuild a standarised construct of storytelling... for each episode (as far I recall).<br><br>\n\n    In some cases, it worked just fine. But in some cases, they managed to outdo themselves and a lot of things that I have seen so far. Let me throw in a quick spoiler: how about featuring an episode, in which you throw in the same characters, perform pretty much the same activities, feature the same theme but mash it up with 4 distinct timelines? Sounds complicated? But once you watch the episode, you will see how much the creators made it work and how coherent it remained and even that the conceptual frame and nuances all worked towards a specific theme which here felt lifelike in relation to the alter egos the portrayed characters are playing. That might, again, sound complicated. But main point being, is that they made many of such clusters work. On top of which, they upped their dialogue-related game. These were actually authentically good dialogues, even parts that should have remained stale, somehow had a quite good knack to it. But what I was in awe of, the nuances! The flood of thick and directly delivered nuances, so bluntly delivered, so extremely complicated themes delivered on a silver, bloody platter. The sarcasm worked like a charm. The jokes along. But this show is not quite just about jokes. It's about pain and suffering, and a lot of bad things that just does happen, so the unique delivery of grotesque here and really making it work is something that I could consider as in a cherry on top of a really neatly and yet uniquely crafted and presented cake. But hey! The details!<br><br>\n    <center>9/10</center><br><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none\" class=\"darken\"><div class=\"text\">Hello?!</div><img src=\"https://8q0anw.by.files.1drv.com/y4m-Q23KYH3S8pLexqepSCvkgkD3fpSv38uMBhLrv6_sNtA97BohFYWuyzAr9B6j8RejKw4OR8aX5xIytyKxGMvA4Izpt92MonYL8OUU-qGbtwhuxxbSB0CxfSOFqm2QuwOdnzrO8n2KsjpGrfGZXtHJbbLKg_wSdi26laP6Zao-WvgPv3PSxHSqtVxOzC9ldfu3wKR_vWO-AAiLzLi6w1kNw?width=3240&height=1823&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n\n<br>\n</div>\n</div>\n\n<script src=\"footer.js\"></script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n    <script src=\"js/bootstrap.min.js\"></script>\n</body>\n</html>",
+			"file": "High5.html",
+			"file_size": 29153,
+			"file_write_time": 131826878502534508,
+			"settings":
+			{
+				"buffer_size": 28826,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "1.html",
+			"settings":
+			{
+				"buffer_size": 18479,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 24434,
+				"buffer_size": 28685,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Contact.html",
+			"file": "noigitara.html",
 			"settings":
 			{
-				"buffer_size": 5701,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "footer.js",
-			"settings":
-			{
-				"buffer_size": 1513,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "MusicVideos.html",
-			"settings":
-			{
-				"buffer_size": 28990,
+				"buffer_size": 5453,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -80,6 +82,24 @@
 			}
 		},
 		{
+			"file": "Changes.html",
+			"settings":
+			{
+				"buffer_size": 16062,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "keto.html",
+			"settings":
+			{
+				"buffer_size": 4325,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Blog.html",
 			"settings":
 			{
@@ -89,10 +109,28 @@
 			}
 		},
 		{
-			"file": "Changes.html",
+			"file": "Photos.html",
 			"settings":
 			{
-				"buffer_size": 14957,
+				"buffer_size": 18274,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Vivid.html",
+			"settings":
+			{
+				"buffer_size": 9777,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "NewMediaAudiences.html",
+			"settings":
+			{
+				"buffer_size": 3459,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -102,24 +140,15 @@
 			"settings":
 			{
 				"buffer_size": 5234,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Photos.html",
+			"file": "footer.js",
 			"settings":
 			{
-				"buffer_size": 16841,
+				"buffer_size": 1511,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Game Concept.html",
-			"settings":
-			{
-				"buffer_size": 6647,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,16 +156,7 @@
 			"file": "fuad css.css",
 			"settings":
 			{
-				"buffer_size": 36666,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High1.html",
-			"settings":
-			{
-				"buffer_size": 12332,
+				"buffer_size": 36740,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -172,7 +192,7 @@
 			"file": "Trouble Cruise.html",
 			"settings":
 			{
-				"buffer_size": 6200,
+				"buffer_size": 6602,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -244,6 +264,21 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/UX.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High1.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/3D Modelling.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Game Concept.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/GradShow.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Lone Island.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Radio.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/RadioX.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Visual Communication.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Placemaking.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/MusicVideos.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Photos.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/navigation.js",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Contact.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/9.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/10.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/11.html",
@@ -253,7 +288,6 @@
 		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Tracking.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/navigation.js",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/navigation.js",
 		"/C/Users/Fuade/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/magnific.css",
 		"/C/Users/Fuade/Desktop/Magnific-Popup-master/website/_includes/examples.html",
@@ -277,22 +311,16 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/4.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/8.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/index.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Placemaking.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Lone Island.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/12.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Trouble Cruise.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/RadioX.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/GradShow.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/noigitara.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High3 - Copy.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia/Erratic1.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Radio.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/7.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/6.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/5.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/3.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Culture 2.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/lastfm.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Awry Perception.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Web Design & Technologies.html",
@@ -306,17 +334,14 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Sehnsucht.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic3.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Grasausschuss Pho.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Photos.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/navigation.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/index - Copy.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic 12.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic X2.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic X.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/UX.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Lab 3.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/navigation.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic3 - Copy.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High1.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic2.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic1.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Lab 7.html",
@@ -332,16 +357,13 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog Cluster.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Erratic Dream.html",
 		"/C/Users/Fuade/Desktop/steamfm-master/steam.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/MusicVideos.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Lab 1.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Labs.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Education.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Martinstag.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Physical.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Visual Communication.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Digital Arts.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Games and Play.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Game Concept.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/VE Shopping.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/LMS.html",
 		"/C/Users/Fuade/Downloads/AndroidSerial/README.md",
@@ -351,7 +373,6 @@
 		"/C/Users/Fuade/Desktop/d3-template-master/working examples/timeSeries/d3_template_timeSeries.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Placemaking Lab1.html",
 		"/C/Users/Fuade/Desktop/New folder/A3/CarShareClient/Stored-Functions.sql",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Contact.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/2013b.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/2017d.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/2017c.html",
@@ -367,7 +388,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -381,6 +402,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"body",
+			".text",
+			"../",
 			":hover",
 			"h2",
 			"h4",
@@ -497,7 +521,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -527,54 +551,52 @@
 						"translation.y": 346.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "High5.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24434,
+						"buffer_size": 28826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1522,
-								1524
+								28501,
+								28501
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 4837.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Contact.html",
+					"file": "1.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5701,
+						"buffer_size": 18479,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2761,
-								2761
+								11018,
+								11018
 							]
 						],
 						"settings":
@@ -584,57 +606,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1022.0,
+						"translation.y": 3465.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "footer.js",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1513,
+						"buffer_size": 28685,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								691,
-								691
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "MusicVideos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 28990,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2818,
-								2818
+								1521,
+								1521
 							]
 						],
 						"settings":
@@ -644,10 +636,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 895.0,
+						"translation.y": 348.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "noigitara.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3902,
+								3902
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1142.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -672,10 +694,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4323.0,
+						"translation.y": 475.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -705,7 +727,7 @@
 						"translation.y": 1124.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -721,8 +743,156 @@
 						"selection":
 						[
 							[
-								909,
-								909
+								913,
+								829
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Changes.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16062,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1912,
+								1912
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 308.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "keto.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3416,
+								3416
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 899.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15524,
+								15524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3522.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Photos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17400,
+								17400
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3774.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Vivid.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								858,
+								858
 							]
 						],
 						"settings":
@@ -739,20 +909,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "Blog.html",
+					"buffer": 13,
+					"file": "NewMediaAudiences.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29591,
+						"buffer_size": 3459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8039,
-								8039
+								630,
+								630
 							]
 						],
 						"settings":
@@ -762,42 +932,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 599.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "Changes.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14957,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1706,
-								1706
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 374.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
+					"buffer": 14,
 					"file": "navigation.js",
 					"semi_transient": false,
 					"settings":
@@ -809,8 +951,8 @@
 						"selection":
 						[
 							[
-								5234,
-								5234
+								0,
+								0
 							]
 						],
 						"settings":
@@ -820,85 +962,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1162.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "Photos.html",
+					"buffer": 15,
+					"file": "footer.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16841,
+						"buffer_size": 1511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12035,
-								12035
+								1357,
+								1357
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3289.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Game Concept.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								751,
-								751
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "fuad css.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 36666,
+						"buffer_size": 36740,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2210,
-								2210
+								26756,
+								26756
 							]
 						],
 						"settings":
@@ -908,44 +1020,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 15674.0,
+						"translation.y": 9833.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "Blog/High Pitch Void/High1.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								577,
-								577
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
+					"buffer": 17,
 					"file": "test.html",
 					"semi_transient": false,
 					"settings":
@@ -970,11 +1052,11 @@
 						"translation.y": 18.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 18,
 					"file": "Blog/Tracking/13.html",
 					"semi_transient": false,
 					"settings":
@@ -1000,11 +1082,11 @@
 						"translation.y": 2770.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 19,
 					"file": "Blog/High Pitch Void/footer.js",
 					"semi_transient": false,
 					"settings":
@@ -1030,24 +1112,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 20,
 					"file": "Trouble Cruise.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6200,
+						"buffer_size": 6602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3551,
-								3551
+								2196,
+								2196
 							]
 						],
 						"settings":
@@ -1057,14 +1139,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 517.0,
+						"translation.y": 851.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 21,
 					"file": "Blog/Tracking/12.html",
 					"semi_transient": false,
 					"settings":
@@ -1090,7 +1172,7 @@
 						"translation.y": 1496.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 21,
 					"type": "text"
 				}
 			]
@@ -1098,7 +1180,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -1135,7 +1217,7 @@
 	"project": "Just Sayin.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
