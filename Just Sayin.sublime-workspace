@@ -35,10 +35,21 @@
 			}
 		},
 		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\nbody{\n  background-image: url(https://farm1.staticflickr.com/934/40730228575_fabc4d3cd5_o.jpg);\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\nvideo {\n    border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      width: 50%;\n  preload:auto;\n}\n\n\n\n</style>\n\n</head>\n<body>\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n<div class=\"container-fluid\">\n\n    <div class=\"row\">\n<center><h2>Leaf.</h2></center><br>\n</div>\n\n<div class=\"row\">\n\t<center>\n\t<iframe width=\"70%\" src=\"https://www.youtube.com/embed/JjKtIdsLW8o?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n</center>\n</div>\n\n    <div class=\"row\">\n<center><h2>Reflective Report</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n<!-- <iframe src=\"https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%213844&authkey=AIs5N-K6nEe73fw&em=2#zoom=300\" width=\"50%\" frameborder=\"0\" scrolling=\"no\"></iframe> -->\n<iframe width=\"60%\" src=\"//e.issuu.com/embed.html#34415519/64822575\" frameborder=\"0\" allowfullscreen></iframe>\n</center>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-1 col-sm-offset-3\">\n  Project:<br>\n  Reflective Report\n</div>\n<div class=\"col-sm-2\">\n  Creator:<br>\n  Fuad Soudah\n</div>\n<div class=\"col-sm-2\">\n  Tools:<br>\n  Adobe InDesign, Photoshop\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    June 2018\n</div>\n</div>\n<br><br>\n\n  <div class=\"row\">\n<center><h2>Project's Technical Documentation</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n  <iframe width=\"70%\" src=\"//e.issuu.com/embed.html#34415519/64822772\" frameborder=\"0\" allowfullscreen></iframe>\n<!-- <iframe src=\"https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%212841&authkey=AKpcKDp7PT2WYBE&em=2\" width=\"60%\" frameborder=\"0\" scrolling=\"no\"></iframe> -->\n</center>\n</div>\n\n    <div class=\"row\">\n<center><h2>Leaf. Documentary</h2></center><br>\n</div>\n\n<div class=\"row\">\n\t<center>\n\t<iframe width=\"70%\" src=\"https://www.youtube.com/embed/zKQmqL0yc34?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n</center>\n</div>\n\n\n  <div class=\"row\">\n<center><h2>Studio's Final Submission</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n  <iframe src=\"https://drive.google.com/file/d/1vxQMyxQKU4Lt0sfwfqaAhjGUN6nr3Yfl/preview\" width=\"50%\"></iframe>\n<!-- <iframe src=\"https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2110076&authkey=AFpMu-l7s6T7z-I&em=2\" width=\"60%\" frameborder=\"0\" scrolling=\"no\"></iframe> -->\n</center>\n</div>\n\n\n<div class=\"row\">\n<div class=\"col-sm-1 col-sm-offset-1\">\n  Project:<br>\n  Leaf\n</div>\n<div class=\"col-sm-3\">\n  Collaborators:<br>\n  Soul Kang, Alireza Mirzaei, Chen Li, Fuad Soudah\n</div>\n<div class=\"col-sm-5\">\n  Tools:<br>\n  Arduino, Processing, Keynote, Adobe CC (Photoshop, Illustrator, Premiere, After Effects, XD), Sketch, Audacity, Fritzing, Unity, DSLRs, Android, Ketai, Cassette, Galaxy S7, Bluetooth, a bunch of sensors\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    May 2018\n</div>\n</div>\n<br><br>\n\n<div class=\"row\">\n<center><h2>Digital Placemaking</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n<iframe src=\"https://drive.google.com/file/d/1HDGqVnffONKy_NiPW4XDs2fP6f8V3gRo/preview\" width=\"50%\"></iframe>\n</center>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-2 col-sm-offset-1\">\n  Project:<br>\n  Leaf\n</div>\n<div class=\"col-sm-3\">\n  Collaborators:<br>\n  Soul Kang, Alireza Mirzaei, Chen Li, Fuad Soudah\n</div>\n<div class=\"col-sm-4\">\n  Tools:<br>\n  User Centered Design Process, IDEO Methods, Keynote, DSLRs, Adobe Photoshop\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    April 2018\n</div>\n</div>\n<br><br>\n\n<div class=\"row\">\n<center><h2>Arduino Input/Output</h2></center><br>\n</div>\n\n<div class=\"row\">\n<center>\n  <iframe width=\"70%\" src=\"//e.issuu.com/embed.html#34415519/64822856\" frameborder=\"0\" allowfullscreen></iframe>\n<!-- <iframe src=\"https://drive.google.com/file/d/1uSFCfnBlLmE2X9NXguPXIMqoI1iTh-wg/preview\" width=\"50%\"></iframe> -->\n</center>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-2 col-sm-offset-1\">\n  Project:<br>\n  Arduino Input/Output\n</div>\n<div class=\"col-sm-2\">\n  Collaborators:<br>\n  Fuad Soudah\n</div>\n<div class=\"col-sm-5\">\n  Tools:<br>\n  Arduino, Ultrasonic Sensor, Bluetooth Module, Processing for Android, Ketai Library, RGB Strip, Galaxy S7, Fritzing\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    March 2018\n</div>\n</div>\n<br><br>\n\n\n    <div class=\"row\">\n<center><h2>Official Video<br>Of the Showcase</h2></center><br>\n</div>\n\n<div class=\"row\">\n  <center>\n  <iframe width=\"70%\" src=\"https://www.youtube.com/embed/_0rh-Y1diec?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n</center>\n</div>\n<br><br>\n\n<a href=\"#test\"> <!--Comunicates with id 'test'-->\n\n  <div id=\"button\"><h2><center>Additional Information</center></h2></div> <!-- A whole button block will definitely draw attention-->\n</a>\n<br>\n\n      <div class=\"row\">\n<div id=\"hidden_content\">\n  <div id=\"test\"></div>\n\n\n  <div class=\"col-sm-8 col-sm-offset-2\">\n<br>\n  Arguably the most challenging semester and one that I was consistently hardworking from the very start 'till the very end. Coding, writing, crafting, designing, prototyping and utilising potentially most of my qualities and knowledge, putting all into use in this, pretty much 18 Credit Point subject. In the process, I think my eyesight grew worse, at least for the subsequent few months, my nerves became desolated and myself, succumbing into the phase of becoming razed out but I think it was worth it. This project has proven, that I am able to contribute heavily into a variety of phases related to any potential, conceptual, physical or of any other sorts project. That alone, is an important milestone in not just designer's but anyone's life.<br><br>\n\n  I believe there is not too much that I can share beyond what's already in the documentation attached above. There is code, videos, entire documentation even captured in 360. It is very humbling to a see a project come to life and adhere to most of what you foresaw in terms of what would happen. As in any case, the project could be improved in more than a few ways but considering the amount of resources put forward towards research, design & development the end result was complex, firm but what is most important, it did work and its job well.<br><br>\n</div>\n</div>\n\n</div></div>\n\n<br>\n\n<script>\n$(document).ready(function(){\n    $('a[href^=\"#\"]').click(function(e) {\n        e.preventDefault();\n        var target = this.hash, $target = $(target);\n        $('html, body').stop().animate({\n            'scrollTop': $target.offset().top\n        }, 900, 'swing', function() {\n            window.location.hash = target;\n        });\n    });\n});\n</script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Hide Info\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Show Info\";\n    }\n}\n</script>\n\n<script src=\"footer.js\"></script>\n\n    <script src=\"js/bootstrap.min.js\"></script>\n</body>\n</html>",
 			"file": "Placemaking.html",
+			"file_size": 8244,
+			"file_write_time": 131833671588566946,
 			"settings":
 			{
-				"buffer_size": 7976,
+				"buffer_size": 7895,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MusicVideos.html",
+			"settings":
+			{
+				"buffer_size": 30125,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -100,7 +111,7 @@
 			"file": "Tracking.html",
 			"settings":
 			{
-				"buffer_size": 22993,
+				"buffer_size": 23014,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -120,14 +131,6 @@
 			{
 				"buffer_size": 15713,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "2014a.html",
-			"settings":
-			{
-				"buffer_size": 1466,
 				"line_ending": "Windows"
 			}
 		},
@@ -485,7 +488,7 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -582,15 +585,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7976,
+						"buffer_size": 7895,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								946,
-								866
+								865,
+								865
 							]
 						],
 						"settings":
@@ -603,11 +606,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "MusicVideos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3044,
+								3044
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "UX.html",
 					"semi_transient": false,
 					"settings":
@@ -633,11 +666,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "Blog/Tracking/13.html",
 					"semi_transient": false,
 					"settings":
@@ -663,11 +696,11 @@
 						"translation.y": 1560.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "Blog/Tracking/14.html",
 					"semi_transient": false,
 					"settings":
@@ -691,11 +724,11 @@
 						"translation.y": 1641.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "Blog/Tracking/15.html",
 					"semi_transient": false,
 					"settings":
@@ -721,11 +754,11 @@
 						"translation.y": 1673.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "Blog/Tracking/16.html",
 					"semi_transient": false,
 					"settings":
@@ -749,11 +782,11 @@
 						"translation.y": 1582.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "Blog/Tracking/17.html",
 					"semi_transient": false,
 					"settings":
@@ -779,24 +812,24 @@
 						"translation.y": 1793.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "Tracking.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22993,
+						"buffer_size": 23014,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7780,
-								7780
+								7901,
+								7901
 							]
 						],
 						"settings":
@@ -806,14 +839,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3346.0,
+						"translation.y": 3303.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
@@ -839,11 +872,11 @@
 						"translation.y": 490.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "/C/Users/Fuade/Documents/GitHub/Tracking/index.html",
 					"semi_transient": false,
 					"settings":
@@ -867,37 +900,7 @@
 						"translation.y": 4505.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "2014a.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1276,
-								1276
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -927,7 +930,7 @@
 						"translation.y": 10294.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -957,7 +960,7 @@
 						"translation.y": 242.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -987,7 +990,7 @@
 						"translation.y": 1249.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
