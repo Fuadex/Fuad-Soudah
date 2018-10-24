@@ -35,13 +35,11 @@
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\nbody{\n  background-image: url(https://farm1.staticflickr.com/934/40730228575_fabc4d3cd5_o.jpg);\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\nvideo {\n    border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      width: 50%;\n  preload:auto;\n}\n\n\n\n</style>\n\n</head>\n<body>\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n<div class=\"container-fluid\">\n\n    <div class=\"row\">\n<center><h2>Leaf.</h2></center><br>\n</div>\n\n<div class=\"row\">\n\t<center>\n\t<iframe width=\"70%\" src=\"https://www.youtube.com/embed/JjKtIdsLW8o?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n</center>\n</div>\n\n    <div class=\"row\">\n<center><h2>Reflective Report</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n<!-- <iframe src=\"https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%213844&authkey=AIs5N-K6nEe73fw&em=2#zoom=300\" width=\"50%\" frameborder=\"0\" scrolling=\"no\"></iframe> -->\n<iframe width=\"60%\" src=\"//e.issuu.com/embed.html#34415519/64822575\" frameborder=\"0\" allowfullscreen></iframe>\n</center>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-1 col-sm-offset-3\">\n  Project:<br>\n  Reflective Report\n</div>\n<div class=\"col-sm-2\">\n  Creator:<br>\n  Fuad Soudah\n</div>\n<div class=\"col-sm-2\">\n  Tools:<br>\n  Adobe InDesign, Photoshop\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    June 2018\n</div>\n</div>\n<br><br>\n\n  <div class=\"row\">\n<center><h2>Project's Technical Documentation</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n  <iframe width=\"70%\" src=\"//e.issuu.com/embed.html#34415519/64822772\" frameborder=\"0\" allowfullscreen></iframe>\n<!-- <iframe src=\"https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%212841&authkey=AKpcKDp7PT2WYBE&em=2\" width=\"60%\" frameborder=\"0\" scrolling=\"no\"></iframe> -->\n</center>\n</div>\n\n    <div class=\"row\">\n<center><h2>Leaf. Documentary</h2></center><br>\n</div>\n\n<div class=\"row\">\n\t<center>\n\t<iframe width=\"70%\" src=\"https://www.youtube.com/embed/zKQmqL0yc34?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n</center>\n</div>\n\n\n  <div class=\"row\">\n<center><h2>Studio's Final Submission</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n  <iframe src=\"https://drive.google.com/file/d/1vxQMyxQKU4Lt0sfwfqaAhjGUN6nr3Yfl/preview\" width=\"50%\"></iframe>\n<!-- <iframe src=\"https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2110076&authkey=AFpMu-l7s6T7z-I&em=2\" width=\"60%\" frameborder=\"0\" scrolling=\"no\"></iframe> -->\n</center>\n</div>\n\n\n<div class=\"row\">\n<div class=\"col-sm-1 col-sm-offset-1\">\n  Project:<br>\n  Leaf\n</div>\n<div class=\"col-sm-3\">\n  Collaborators:<br>\n  Soul Kang, Alireza Mirzaei, Chen Li, Fuad Soudah\n</div>\n<div class=\"col-sm-5\">\n  Tools:<br>\n  Arduino, Processing, Keynote, Adobe CC (Photoshop, Illustrator, Premiere, After Effects, XD), Sketch, Audacity, Fritzing, Unity, DSLRs, Android, Ketai, Cassette, Galaxy S7, Bluetooth, a bunch of sensors\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    May 2018\n</div>\n</div>\n<br><br>\n\n<div class=\"row\">\n<center><h2>Digital Placemaking</h2></center><br>\n</div>\n\n   <div class=\"row\">\n<center>\n<iframe src=\"https://drive.google.com/file/d/1HDGqVnffONKy_NiPW4XDs2fP6f8V3gRo/preview\" width=\"50%\"></iframe>\n</center>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-2 col-sm-offset-1\">\n  Project:<br>\n  Leaf\n</div>\n<div class=\"col-sm-3\">\n  Collaborators:<br>\n  Soul Kang, Alireza Mirzaei, Chen Li, Fuad Soudah\n</div>\n<div class=\"col-sm-4\">\n  Tools:<br>\n  User Centered Design Process, IDEO Methods, Keynote, DSLRs, Adobe Photoshop\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    April 2018\n</div>\n</div>\n<br><br>\n\n<div class=\"row\">\n<center><h2>Arduino Input/Output</h2></center><br>\n</div>\n\n<div class=\"row\">\n<center>\n  <iframe width=\"70%\" src=\"//e.issuu.com/embed.html#34415519/64822856\" frameborder=\"0\" allowfullscreen></iframe>\n<!-- <iframe src=\"https://drive.google.com/file/d/1uSFCfnBlLmE2X9NXguPXIMqoI1iTh-wg/preview\" width=\"50%\"></iframe> -->\n</center>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-2 col-sm-offset-1\">\n  Project:<br>\n  Arduino Input/Output\n</div>\n<div class=\"col-sm-2\">\n  Collaborators:<br>\n  Fuad Soudah\n</div>\n<div class=\"col-sm-5\">\n  Tools:<br>\n  Arduino, Ultrasonic Sensor, Bluetooth Module, Processing for Android, Ketai Library, RGB Strip, Galaxy S7, Fritzing\n</div>\n  <div class=\"col-sm-1\">\n    Release:<br>\n    March 2018\n</div>\n</div>\n<br><br>\n\n\n    <div class=\"row\">\n<center><h2>Official Video<br>Of the Showcase</h2></center><br>\n</div>\n\n<div class=\"row\">\n  <center>\n  <iframe width=\"70%\" src=\"https://www.youtube.com/embed/_0rh-Y1diec?rel=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n</center>\n</div>\n<br><br>\n\n<a href=\"#test\"> <!--Comunicates with id 'test'-->\n\n  <div id=\"button\"><h2><center>Additional Information</center></h2></div> <!-- A whole button block will definitely draw attention-->\n</a>\n<br>\n\n      <div class=\"row\">\n<div id=\"hidden_content\">\n  <div id=\"test\"></div>\n\n\n  <div class=\"col-sm-8 col-sm-offset-2\">\n<br>\n  Arguably the most challenging semester and one that I was consistently hardworking from the very start 'till the very end. Coding, writing, crafting, designing, prototyping and utilising potentially most of my qualities and knowledge, putting all into use in this, pretty much 18 Credit Point subject. In the process, I think my eyesight grew worse, at least for the subsequent few months, my nerves became desolated and myself, succumbing into the phase of becoming razed out but I think it was worth it. This project has proven, that I am able to contribute heavily into a variety of phases related to any potential, conceptual, physical or of any other sorts project. That alone, is an important milestone in not just designer's but anyone's life.<br><br>\n\n  I believe there is not too much that I can share beyond what's already in the documentation attached above. There is code, videos, entire documentation even captured in 360. It is very humbling to a see a project come to life and adhere to most of what you foresaw in terms of what would happen. As in any case, the project could be improved in more than a few ways but considering the amount of resources put forward towards research, design & development the end result was complex, firm but what is most important, it did work and its job well.<br><br>\n</div>\n</div>\n\n</div></div>\n\n<br>\n\n<script>\n$(document).ready(function(){\n    $('a[href^=\"#\"]').click(function(e) {\n        e.preventDefault();\n        var target = this.hash, $target = $(target);\n        $('html, body').stop().animate({\n            'scrollTop': $target.offset().top\n        }, 900, 'swing', function() {\n            window.location.hash = target;\n        });\n    });\n});\n</script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Hide Info\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Show Info\";\n    }\n}\n</script>\n\n<script src=\"footer.js\"></script>\n\n    <script src=\"js/bootstrap.min.js\"></script>\n</body>\n</html>",
 			"file": "Placemaking.html",
-			"file_size": 8244,
-			"file_write_time": 131833671588566946,
 			"settings":
 			{
 				"buffer_size": 7895,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -111,7 +109,45 @@
 			"file": "Tracking.html",
 			"settings":
 			{
-				"buffer_size": 23014,
+				"buffer_size": 23191,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "noigitara.html",
+			"settings":
+			{
+				"buffer_size": 5453,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"../../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"../../jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"../../fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Reenie+Beanie\" rel=\"stylesheet\">\n\n<link rel=\"stylesheet\" href=\"css/swiper.min.css\">\n\n<style>\n\nbody{\n/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/\nbackground:url();\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n    font-family:'Reenie Beanie';\n    font-size:30px !important;\n}\n\n.con1{\n\n  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 5%, rgba(255,255,255,0) 20%,  rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(255,255,255,1) 95%, rgba(255,255,255,1)),\n  linear-gradient(to right, rgba(255,243,224), rgba(255,243,224) 5%, rgba(255,255,255,0) 20%, rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(255,243,224) 95%, rgba(255,243,224));\n              \n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background:  linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1) 5%, rgba(255,255,255,0) 20%,  rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(255,255,255,1) 95%, rgba(255,255,255,1)),\n  linear-gradient(to right, rgba(255,220,220), rgba(255,220,220) 5%, rgba(255,255,255,0) 20%, rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(255,220,220) 95%, rgba(255,220,220));\n             \n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con3{\n  background:  linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1) 5%, rgba(255,255,255,0) 20%,  rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(255,255,255,1) 95%, rgba(255,255,255,1)),\n  linear-gradient(to right, rgba(220,255,220), rgba(220,255,220) 5%, rgba(255,255,255,0) 20%, rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(220,255,220) 95%, rgba(225,255,220));\n             \n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con4{\n  background:  linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1) 5%, rgba(255,255,255,0) 20%,  rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(255,255,255,1) 95%, rgba(255,255,255,1)),\n  linear-gradient(to right, rgba(220,220,255), rgba(220,220,255) 5%, rgba(255,255,255,0) 20%, rgba(255,255,255,0), rgba(255,255,255,0) 80%, rgba(220,220,255) 95%, rgba(220,220,255));\n             \n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Reenie Beanie';\n      font-size:30px !important;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:1.5em;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 1 !important;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\n    html, body {\n      position: relative;\n      height: 100%;\n    }\n\n    .swiper-container, .swiper-container2 {\n      width: 100%;\n      height: 100%;\n    }\n    .swiper-slide, .swiper-slide2  {\n      text-align: center;\n      font-size: 18px;\n      background: #fff;\n      /* Center slide text vertically */\n/*      display: -webkit-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;*/\n      display: block;\n      -webkit-box-pack: center;\n      -ms-flex-pack: center;\n      -webkit-justify-content: center;\n      justify-content: center;\n      -webkit-box-align: center;\n      -ms-flex-align: center;\n      -webkit-align-items: center;\n      align-items: center;\n    }\n\n    .swiper-slide > p:nth-child(2n){\n      margin-top:10px;\n      margin-bottom:0;\n    }\n\n    .swiper-slide > p:nth-child(2n+1){\n      margin-top:0px;\n      margin-bottom:0;\n    }\n\n        .swiper-slide > p:last-child{\n      margin-top:0px;\n      margin-bottom:40px;\n    }\n\n#map {\n        width:100%;\n        height:70%;\n      }\n\n      p{\n        font-size:18px;\n      }\n\n      a:hover img{\n                    transition: all 0.7s ease;\n            transform: scale(1.3);\n      } \n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n\n\n\n</head>\n<body><!-- \n<script src=\"navigation.js\"></script> -->\n\n<!-- BODY BODY BODY-->\n\n  <!-- Swiper -->\n\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n      <div class=\"swiper-slide\"><a href=\"https://www.google.com/maps/timeline?pb\"><img src=\"images/images/gl.jpg\"></a>\n        <p>You've visited 508 places so far!</p>\n        <p>According to Google Location</p></div>\n      <div class=\"swiper-slide\"><img src=\"images/images/fb2.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"images/images/gl2.jpg\">\n        <p>Here's where you've been 2 years ago!</p>\n        <p>According to Google Location</p></div>\n    </div>\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n\n<div class=\"row\"\">\n  <div class=\"col-md-3 col-md-offset-3\" style=\"height:22vw !important; padding:0; margin-right:9px !important\">\n  <div class=\"swiper-container2\">\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\"><img src=\"images/images/been.jpg\" style=\"\">\n      <p>You have visited 13% countries of the World!</p>\n      <p>According to Been</p></div>\n      <div class=\"swiper-slide\"><img src=\"images/images/fb4.jpg\">\n        <p>You seem to have memories associated with these places</p>\n        <p>According to Facebook Check-in</p></div>\n      <div class=\"swiper-slide\"><div id=\"map\"></div>\n      <p>Here's an artwork of where you are.</p>\n      <p>According to Google Maps</p></div>\n    </div>\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n  <div class=\"col-md-4 col-md-offset-0 panel\" style=\"border:none; box-shadow:none; margin-left:9px !important;\">\n  <div class=\"swiper-container3\">\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\">\n      <p>You have visited so far:</p>\n      <p>- 40% of Europe:</p>\n    <p>Austria, Belgium, Croatia, Czechia, Denmark, England, France, Germany, Hungary, Ireland, Italy, Lithuania, Poland, Portugal, Scotland, Slovakia, Slovenia, Spain, Sweden, Switzerland, Netherlands, Vatican, Turkey</p>\n      <p>- 19% of Asia:</p>\n      <p>China, India, Japan, Jordan, Malaysia, Qatar, South Korea, Taiwan, Thailand</p>\n      <p>- 3% of Oceania:</p>\n      <p>Australia</p></div>\n      <div class=\"swiper-slide\">\n        <p>You seem to have memories associated with these places</p>\n        <p>According to Facebook Check-in</p></div>\n      <div class=\"swiper-slide\"><div id=\"map\"></div>\n      <p>Here's an artwork of where you are.</p>\n      <p>According to Google Maps</p></div>\n    </div>\n    <div class=\"swiper-pagination\"></div>\n  </div>\n</div>\n</div>\n</div>\n</div>\n\n<div class=\"con2\">\n<div class=\"container-fluid\">\n\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n      <div class=\"swiper-slide\"><img src=\"https://6bdprw.db.files.1drv.com/y4my6XdMtNIiE7teQyW6Rb9x-kUXQhGiYMBoOYDwaK3umfgqgHhjKI4jqK6fWlxokj6uphSAqONt2pXlZ03RW-ivFeyWn4UYRuce6oeqw1zsLn5jVwXxNhnAzPi2NLkFA2oYdMmWYLBinSpzVQ_kTUNGnVVJNzBEtOMZt2Pn35lr6tD3tPymmjXlmQ0uQg_uyVkc1nASMjpmBzLr2701yucuQ?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>Chippendale, 9 October 2018, 8:45 PM</p>\n        <p>You seemed to have changed course on your way home</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://vkmmma.db.files.1drv.com/y4m3B28eK6SFNxWVAEBYAbAdOM_JdMaxqYZJB5n3wwagHYYRVLo_D6I3veeviTgKbhchZqTyX9dObPj7kfrO3KlSCveAkijCLhbWpoc9dfrBukRHvbTs25znCFlJNwaJNeCPyzwN85Ev3HTj-3Pjhkid8DFW09vcivC5wSWzLqhpzOz0_EL4ppAU2WKupP-g_Az-KDiZkLJ0QWBIXJiJ_35WA?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n      <p>Sydney CBD, 16 September 2018, 1:30 PM</p>\n        <p>Your mood seemed to have improved afterwards</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://s6pa9q.db.files.1drv.com/y4m-C3RBXukYNyiAMbe-e4SXt2TYcMpq-m-QoKcn5RxzjpY4-EPAN034Cl2B-DoA9YU5CwpPJNjtceL-u4oYuyXGaP6yB6yYa6im7hc5MM_ju5ZyMCpo7BpZSiZiqf7Ro91ABOJwPaXt_Awk3zHUGDmZWor3hsev7XFoNc-itCzzxr7GCq3DjEdYZUn071avNL326swVDfptpWpUafUL68rJQ?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n              <p>Sydney CBD, 16 September 2018, 1:30 PM</p>\n        <p>Your mood seemed to have improved afterwards</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://vkolda.db.files.1drv.com/y4mHUdPM2QNrOKQis3ie3XHuM53uMJX1yK61Oqg9JxcTPSEntAKVLWwcptrsEI_cIGopd8xnPxuZ30R9IL_cW6d5CTstfy0tqhsyRYK2ZCh3ywyroGju3g7qYQ0HR5_bICqffJUpZa51Mh6DYMk0gwDEY40nEEnOChJxFZIj4uSL7g6WYvDxRL7colAR3nfdLmz4_Tt37VP0tf0EWugLAGYrQ?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>Watsons Bay, 15 September 2018, 4:30 PM</p>\n        <p>You seemed to have been thrice as productive as usual</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://hwgjow.db.files.1drv.com/y4mIkuymr8rk59HkaB4bEJLwF6sTbaWkWE1oMWD3Nhxr3ZROBHfywcQ9x4-wpBZM-WTG68ISCXWgqZg5Q-s9r9pch2e1JNQpykRM-QfIL9QfmkNu4wXsU1YO7kMxOMVse_ZSQUtRW6A_ZPgcZHiOpGABfym3pr5zFm5PyAjJ2QtqPFdysInyGgHdbcVo22st3AUrn_A7U-LOQcHrHTnsJaS6A?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>University of Sydney, 30 August 2018, 1:00 PM</p>\n        <p>You caught up with 5 friends you haven't seen in a while!</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://jage9a.db.files.1drv.com/y4mpKJuoC-EZj2Icwfw-65pJuvWkaZpKmYckLpbKpXMBCmZjjHJHshIkXM4qfcrweJXGKEEn-jWQldJSRufRH3TVS34GZXl2U9O17D4kr59VHWIW7xiaZTOdSdpORWyw9yLg3JMUvNIC9S2z0-pAnKUUW--eeingxLbx43asHa3ZuClvyxVy3Il7rA_J9Nz5UH4g8-ZpCSkY21Lk0rxSEyM0A?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>Cafe Ella, 23 August 2018, 2:00 PM</p>\n        <p>Looks like you have been dieting and not sleeping!</p>\n        <p>For the love of God, get some sleep!</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n\n    <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container\" style=\"height:200px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n      <div class=\"swiper-slide\">\n        <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\">\n        <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p>\n      </div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n\n\n\n<br>\n</div>\n</div>\n\n\n<div class=\"con3\">\n<div class=\"container-fluid\">\n\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container4\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n      <div class=\"swiper-slide\"><a href=\"https://www.rescuetime.com/similarities/setup\"><img src=\"images/images/rescue.jpg\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>You were quite productive <b>this week</b></p>\n        <p><b>Facebook</b> and <b>Youtube</b> distract you the most</p>\n        <p style=\"margin-top:0;\">Here's how you perform compared to other designers</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.rescuetime.com/dashboard/for/the/week/of/2018-10-21\"><img src=\"images/images/rescue2.jpg\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>You have spent 63% of your logged time on productive tasks</p>\n        <p>Including: <b>Transcriptions</b>, <b>Video Editing</b> and <b>Web Development</b></p>\n        <p style=\"margin-top:0;\">You get mostly distracted by <b>Facebook</b></p></div>\n<!--       <div class=\"swiper-slide\"><img src=\"https://s6pa9q.db.files.1drv.com/y4m-C3RBXukYNyiAMbe-e4SXt2TYcMpq-m-QoKcn5RxzjpY4-EPAN034Cl2B-DoA9YU5CwpPJNjtceL-u4oYuyXGaP6yB6yYa6im7hc5MM_ju5ZyMCpo7BpZSiZiqf7Ro91ABOJwPaXt_Awk3zHUGDmZWor3hsev7XFoNc-itCzzxr7GCq3DjEdYZUn071avNL326swVDfptpWpUafUL68rJQ?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n              <p>Sydney CBD, 16 September 2018, 1:30 PM</p>\n        <p>Your mood seemed to have improved afterwards</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://vkolda.db.files.1drv.com/y4mHUdPM2QNrOKQis3ie3XHuM53uMJX1yK61Oqg9JxcTPSEntAKVLWwcptrsEI_cIGopd8xnPxuZ30R9IL_cW6d5CTstfy0tqhsyRYK2ZCh3ywyroGju3g7qYQ0HR5_bICqffJUpZa51Mh6DYMk0gwDEY40nEEnOChJxFZIj4uSL7g6WYvDxRL7colAR3nfdLmz4_Tt37VP0tf0EWugLAGYrQ?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>Watsons Bay, 15 September 2018, 4:30 PM</p>\n        <p>You seemed to have been thrice as productive as usual</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://hwgjow.db.files.1drv.com/y4mIkuymr8rk59HkaB4bEJLwF6sTbaWkWE1oMWD3Nhxr3ZROBHfywcQ9x4-wpBZM-WTG68ISCXWgqZg5Q-s9r9pch2e1JNQpykRM-QfIL9QfmkNu4wXsU1YO7kMxOMVse_ZSQUtRW6A_ZPgcZHiOpGABfym3pr5zFm5PyAjJ2QtqPFdysInyGgHdbcVo22st3AUrn_A7U-LOQcHrHTnsJaS6A?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>University of Sydney, 30 August 2018, 1:00 PM</p>\n        <p>You caught up with 5 friends you haven't seen in a while!</p></div>\n      <div class=\"swiper-slide\"><img src=\"https://jage9a.db.files.1drv.com/y4mpKJuoC-EZj2Icwfw-65pJuvWkaZpKmYckLpbKpXMBCmZjjHJHshIkXM4qfcrweJXGKEEn-jWQldJSRufRH3TVS34GZXl2U9O17D4kr59VHWIW7xiaZTOdSdpORWyw9yLg3JMUvNIC9S2z0-pAnKUUW--eeingxLbx43asHa3ZuClvyxVy3Il7rA_J9Nz5UH4g8-ZpCSkY21Lk0rxSEyM0A?width=3024&height=4032&cropmode=none\" style=\"height:80%\">\n        <p>Cafe Ella, 23 August 2018, 2:00 PM</p>\n        <p>Looks like you have been dieting and not sleeping!</p>\n        <p>For the love of God, get some sleep!</p></div> -->\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n\n    <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container\" style=\"height:200px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n      <div class=\"swiper-slide\">\n        <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\">\n        <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p>\n      </div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n      <div class=\"swiper-slide\"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n</div>\n</div>\n\n<div class=\"con4\">\n<div class=\"container-fluid\">\n\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container5\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n        <div class=\"swiper-slide\"><a href=\"https://www.goodreads.com/book/show/1381.The_Odyssey\"><img src=\"https://images.gr-assets.com/books/1390173285l/1381.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645\"><img src=\"https://ssl-gfx.filmweb.pl/po/56/45/615645/7470862.3.jpg\" style=\"height:80%\"></a>\n        <p>Overwhelmingly Positive (93%) Reviews, Based on <b>Apocalypse Now</b> and <b>Heart of Darkness</b></p>\n        <p>Advised due to physically opposing narrative & morally ambiguous decisions</p>\n        <p style=\"margin-top:0;\">You have the game on <b>Steam</b> as you have purchased it with <b>Humble Bundle</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.goodreads.com/book/show/4900.Heart_of_Darkness\"><img src=\"https://images.gr-assets.com/books/1388207662l/4902.jpg\" style=\"height:80%\"></a>\n        <p>The predecessor of Apocalypse Now</p>\n        <p>You may access an audiobook on Audible</p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Czas.Apokalipsy\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/92/1092/7053688.3.jpg\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>You have seen <b>Apocalypse Now</b> on Netflix and given it 10/10</p>\n        <p>You were most compelled by the <b>bleak atmosphere</b> and <b>progressive storyline</b></p>\n        <p style=\"margin-top:0;\">Your writing style seems to have been affected by this movie</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Pluton\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/68/1068/7500874.3.jpg\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p><b>Platoon</b> by Oliver Stone may be the next within your interest</p>\n        <p>Including: <b>Transcriptions</b>, <b>Video Editing</b> and <b>Web Development</b></p>\n        <p style=\"margin-top:0;\">You get mostly distracted by <b>Facebook</b></p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Lowca.Jeleni\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/45/1045/7563795.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/film/Pe%C5%82ny+magazynek-1987-8625\"><img src=\"https://ssl-gfx.filmweb.pl/po/86/25/8625/7183752.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n</div>\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container5\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n        <div class=\"swiper-slide\"><a href=\"https://www.goodreads.com/book/show/1381.The_Odyssey\"><img src=\"https://images.gr-assets.com/books/1390173285l/1381.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645\"><img src=\"https://ssl-gfx.filmweb.pl/po/56/45/615645/7470862.3.jpg\" style=\"height:80%\"></a>\n        <p>Overwhelmingly Positive (93%) Reviews, Based on <b>Apocalypse Now</b> and <b>Heart of Darkness</b></p>\n        <p>Advised due to physically opposing narrative & morally ambiguous decisions</p>\n        <p style=\"margin-top:0;\">You have the game on <b>Steam</b> as you have purchased it with <b>Humble Bundle</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/pl/music/Tool\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/b7c317ab6fa2431a8e678ba564c2befa.jpg#b7c317ab6fa2431a8e678ba564c2befa\" style=\"height:80%\"></a>\n        <p>You've used to listen to <b>Tool</b> heavily and they are coming back with a <b>Tour in 2019</b></p>\n        <p>We'll let you know once they announce a concert in Australia</p>\n        <p style=\"margin-top:0;\">In the meantime, check out their material on <b>Youtube</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/BABYMETAL\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/83ed0d373f30e1cb7cd3b59c2ff36ece.jpg#83ed0d373f30e1cb7cd3b59c2ff36ece\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you primarily listen to <b>Metal</b> are getting into <b>Anime OST</b> and <b>explore new genres</b></p>\n        <p>You're recommended <b>Babymetal</b> due to <b>universal acclaim</b> and a <b>unique Metal/JPop fusion</b></p>\n        <p style=\"margin-top:0;\">Their albums are covered by your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/Ling+Tosite+Sigure\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/aaf443f764dc3201b6aac3ce002ba14d.jpg#aaf443f764dc3201b6aac3ce002ba14d\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you have watched <b>Psycho Pass</b> recently, often replayed their opening on <b>Youtube</b> and you listen to <b>post-hardcore</b></p>\n        <p>You're recommended <b>Ling Tosite Sigure</b> as they're the author of the opening and their style aligns with your last.fm profile</p>\n        <p style=\"margin-top:0;\">Most of their albums are available on your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Lowca.Jeleni\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/45/1045/7563795.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/film/Pe%C5%82ny+magazynek-1987-8625\"><img src=\"https://ssl-gfx.filmweb.pl/po/86/25/8625/7183752.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n</div>\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container5\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n        <div class=\"swiper-slide\"><a href=\"https://www.goodreads.com/book/show/1381.The_Odyssey\"><img src=\"https://images.gr-assets.com/books/1390173285l/1381.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645\"><img src=\"https://ssl-gfx.filmweb.pl/po/56/45/615645/7470862.3.jpg\" style=\"height:80%\"></a>\n        <p>Overwhelmingly Positive (93%) Reviews, Based on <b>Apocalypse Now</b> and <b>Heart of Darkness</b></p>\n        <p>Advised due to physically opposing narrative & morally ambiguous decisions</p>\n        <p style=\"margin-top:0;\">You have the game on <b>Steam</b> as you have purchased it with <b>Humble Bundle</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/pl/music/Tool\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/b7c317ab6fa2431a8e678ba564c2befa.jpg#b7c317ab6fa2431a8e678ba564c2befa\" style=\"height:80%\"></a>\n        <p>You've used to listen to <b>Tool</b> heavily and they are coming back with a <b>Tour in 2019</b></p>\n        <p>We'll let you know once they announce a concert in Australia</p>\n        <p style=\"margin-top:0;\">In the meantime, check out their material on <b>Youtube</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/BABYMETAL\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/83ed0d373f30e1cb7cd3b59c2ff36ece.jpg#83ed0d373f30e1cb7cd3b59c2ff36ece\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you primarily listen to <b>Metal</b> are getting into <b>Anime OST</b> and <b>explore new genres</b></p>\n        <p>You're recommended <b>Babymetal</b> due to <b>universal acclaim</b> and a <b>unique Metal/JPop fusion</b></p>\n        <p style=\"margin-top:0;\">Their albums are covered by your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/Ling+Tosite+Sigure\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/aaf443f764dc3201b6aac3ce002ba14d.jpg#aaf443f764dc3201b6aac3ce002ba14d\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you have watched <b>Psycho Pass</b> recently, often replayed their opening on <b>Youtube</b> and you listen to <b>post-hardcore</b></p>\n        <p>You're recommended <b>Ling Tosite Sigure</b> as they're the author of the opening and their style aligns with your last.fm profile</p>\n        <p style=\"margin-top:0;\">Most of their albums are available on your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Lowca.Jeleni\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/45/1045/7563795.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/film/Pe%C5%82ny+magazynek-1987-8625\"><img src=\"https://ssl-gfx.filmweb.pl/po/86/25/8625/7183752.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n</div>\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container5\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n        <div class=\"swiper-slide\"><a href=\"https://www.goodreads.com/book/show/1381.The_Odyssey\"><img src=\"https://images.gr-assets.com/books/1390173285l/1381.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645\"><img src=\"https://ssl-gfx.filmweb.pl/po/56/45/615645/7470862.3.jpg\" style=\"height:80%\"></a>\n        <p>Overwhelmingly Positive (93%) Reviews, Based on <b>Apocalypse Now</b> and <b>Heart of Darkness</b></p>\n        <p>Advised due to physically opposing narrative & morally ambiguous decisions</p>\n        <p style=\"margin-top:0;\">You have the game on <b>Steam</b> as you have purchased it with <b>Humble Bundle</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/pl/music/Tool\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/b7c317ab6fa2431a8e678ba564c2befa.jpg#b7c317ab6fa2431a8e678ba564c2befa\" style=\"height:80%\"></a>\n        <p>You've used to listen to <b>Tool</b> heavily and they are coming back with a <b>Tour in 2019</b></p>\n        <p>We'll let you know once they announce a concert in Australia</p>\n        <p style=\"margin-top:0;\">In the meantime, check out their material on <b>Youtube</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/BABYMETAL\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/83ed0d373f30e1cb7cd3b59c2ff36ece.jpg#83ed0d373f30e1cb7cd3b59c2ff36ece\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you primarily listen to <b>Metal</b> are getting into <b>Anime OST</b> and <b>explore new genres</b></p>\n        <p>You're recommended <b>Babymetal</b> due to <b>universal acclaim</b> and a <b>unique Metal/JPop fusion</b></p>\n        <p style=\"margin-top:0;\">Their albums are covered by your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/Ling+Tosite+Sigure\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/aaf443f764dc3201b6aac3ce002ba14d.jpg#aaf443f764dc3201b6aac3ce002ba14d\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you have watched <b>Psycho Pass</b> recently, often replayed their opening on <b>Youtube</b> and you listen to <b>post-hardcore</b></p>\n        <p>You're recommended <b>Ling Tosite Sigure</b> as they're the author of the opening and their style aligns with your last.fm profile</p>\n        <p style=\"margin-top:0;\">Most of their albums are available on your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Lowca.Jeleni\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/45/1045/7563795.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/film/Pe%C5%82ny+magazynek-1987-8625\"><img src=\"https://ssl-gfx.filmweb.pl/po/86/25/8625/7183752.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n</div>\n\n  <div class=\"row\" style=\"padding-top:3vw !important\">\n      <div class=\"swiper-container5\" style=\"height:600px !important; margin-left:25vw; width:50%;\">\n    <div class=\"swiper-wrapper\" style=\"display:flex !important\">\n        <div class=\"swiper-slide\"><a href=\"https://www.goodreads.com/book/show/1381.The_Odyssey\"><img src=\"https://images.gr-assets.com/books/1390173285l/1381.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645\"><img src=\"https://ssl-gfx.filmweb.pl/po/56/45/615645/7470862.3.jpg\" style=\"height:80%\"></a>\n        <p>Overwhelmingly Positive (93%) Reviews, Based on <b>Apocalypse Now</b> and <b>Heart of Darkness</b></p>\n        <p>Advised due to physically opposing narrative & morally ambiguous decisions</p>\n        <p style=\"margin-top:0;\">You have the game on <b>Steam</b> as you have purchased it with <b>Humble Bundle</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/pl/music/Tool\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/b7c317ab6fa2431a8e678ba564c2befa.jpg#b7c317ab6fa2431a8e678ba564c2befa\" style=\"height:80%\"></a>\n        <p>You've used to listen to <b>Tool</b> heavily and they are coming back with a <b>Tour in 2019</b></p>\n        <p>We'll let you know once they announce a concert in Australia</p>\n        <p style=\"margin-top:0;\">In the meantime, check out their material on <b>Youtube</b></p></div>\n        <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/BABYMETAL\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/83ed0d373f30e1cb7cd3b59c2ff36ece.jpg#83ed0d373f30e1cb7cd3b59c2ff36ece\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you primarily listen to <b>Metal</b> are getting into <b>Anime OST</b> and <b>explore new genres</b></p>\n        <p>You're recommended <b>Babymetal</b> due to <b>universal acclaim</b> and a <b>unique Metal/JPop fusion</b></p>\n        <p style=\"margin-top:0;\">Their albums are covered by your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.last.fm/music/Ling+Tosite+Sigure\"><img src=\"https://lastfm-img2.akamaized.net/i/u/770x0/aaf443f764dc3201b6aac3ce002ba14d.jpg#aaf443f764dc3201b6aac3ce002ba14d\" style=\"height:75%; border:none; box-shadow:none;\"></a>\n        <p>It seems you have watched <b>Psycho Pass</b> recently, often replayed their opening on <b>Youtube</b> and you listen to <b>post-hardcore</b></p>\n        <p>You're recommended <b>Ling Tosite Sigure</b> as they're the author of the opening and their style aligns with your last.fm profile</p>\n        <p style=\"margin-top:0;\">Most of their albums are available on your <b>Spotify</b> subscription</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/Lowca.Jeleni\"><img src=\"https://ssl-gfx.filmweb.pl/po/10/45/1045/7563795.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n      <div class=\"swiper-slide\"><a href=\"https://www.filmweb.pl/film/Pe%C5%82ny+magazynek-1987-8625\"><img src=\"https://ssl-gfx.filmweb.pl/po/86/25/8625/7183752.3.jpg\" style=\"height:80%\"></a>\n        <p>...</p></div>\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"swiper-pagination\"></div>\n  </div>\n  </div>\n</div>\n\n\n<br>\n</div>\n\n<!-- <script src=\"footer.js\"></script> -->\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n<script src=\"js/swiper.min.js\"></script>\n\n  <script>\n    var swiper = new Swiper('.swiper-container', {\n      lazy: true,\n      spaceBetween: 30,\n      centeredSlides: true,\n      autoplay: {\n        delay: 4500,\n        disableOnInteraction: false,\n      },\n      pagination: {\n        el: '.swiper-pagination',\n        dynamicBullets: true,\n        clickable: true,\n      },\n      navigation: {\n        nextEl: '.swiper-button-next',\n        prevEl: '.swiper-button-prev',\n      },\n    });\n\n        var swiper = new Swiper('.swiper-container2', {\n      lazy: true,\n      spaceBetween: 30,\n      centeredSlides: true,\n            autoplay: {\n        delay: 4500,\n        disableOnInteraction: false,\n      },\n      pagination: {\n        el: '.swiper-pagination',\n        dynamicBullets: true,\n        clickable: true,\n      },\n      navigation: {\n        nextEl: '.swiper-button-next',\n        prevEl: '.swiper-button-prev',\n      },\n    });\n\n                var swiper = new Swiper('.swiper-container3', {\n      lazy: true,\n      spaceBetween: 30,\n      centeredSlides: true,\n            autoplay: {\n        delay: 4500,\n        disableOnInteraction: false,\n      },\n      pagination: {\n        el: '.swiper-pagination',\n        dynamicBullets: true,\n        clickable: true,\n      },\n      navigation: {\n        nextEl: '.swiper-button-next',\n        prevEl: '.swiper-button-prev',\n      },\n    });\n\n                var swiper = new Swiper('.swiper-container4', {\n      effect: 'cube',\n      grabCursor: true,\n                  autoplay: {\n        delay: 4500,\n        disableOnInteraction: false,\n      },\n      cubeEffect: {\n        shadow: true,\n        slideShadows: true,\n        shadowOffset: 20,\n        shadowScale: 0.94,\n      },\n      pagination: {\n        el: '.swiper-pagination',\n      },\n    });\n\n                    var swiper = new Swiper('.swiper-container5', {\n      effect: 'coverflow',\n      initialSlide: 3,\n      grabCursor: true,\n      centeredSlides: true,\n      slidesPerView: 'auto',\n      coverflowEffect: {\n        rotate: 50,\n        stretch: 0,\n        depth: 100,\n        modifier: 1,\n        slideShadows : true,\n      },\n      pagination: {\n        el: '.swiper-pagination',\n      },\n    });\n  </script>\n\n      <script>\n      // Note: This example requires that you consent to location sharing when\n      // prompted by your browser. If you see the error \"The Geolocation service\n      // failed.\", it means you probably did not give permission for the browser to\n      // locate you.\n      var map, infoWindow;\n      function initMap() {\n        map = new google.maps.Map(document.getElementById('map'), {\n          center: {lat: -34.397, lng: 150.644},\n          zoom: 6\n        });\n        infoWindow = new google.maps.InfoWindow;\n\n        // Try HTML5 geolocation.\n        if (navigator.geolocation) {\n          navigator.geolocation.getCurrentPosition(function(position) {\n            var pos = {\n              lat: position.coords.latitude,\n              lng: position.coords.longitude\n            };\n\n            infoWindow.setPosition(pos);\n            infoWindow.setContent('Location found.');\n            infoWindow.open(map);\n            map.setCenter(pos);\n          }, function() {\n            handleLocationError(true, infoWindow, map.getCenter());\n          });\n        } else {\n          // Browser doesn't support Geolocation\n          handleLocationError(false, infoWindow, map.getCenter());\n        }\n      }\n\n      function handleLocationError(browserHasGeolocation, infoWindow, pos) {\n        infoWindow.setPosition(pos);\n        infoWindow.setContent(browserHasGeolocation ?\n                              'Error: The Geolocation service failed.' :\n                              'Error: Your browser doesn\\'t support geolocation.');\n        infoWindow.open(map);\n      }\n    </script>\n    <script async defer\n    src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDQPayZYSYDne4uSIIcOiO21RnXZ9w_BHw&callback=initMap\">\n</script>\n\n    <script src=\"../../js/bootstrap.min.js\"></script>\n</body>\n</html>",
+			"file": "Blog/Tracking/Savant.html",
+			"file_size": 39081,
+			"file_write_time": 131848107192241466,
+			"settings":
+			{
+				"buffer_size": 48288,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
+			"settings":
+			{
+				"buffer_size": 15816,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Tracking/test.html",
+			"settings":
+			{
+				"buffer_size": 2083,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -120,7 +156,7 @@
 			"file": "Changes.html",
 			"settings":
 			{
-				"buffer_size": 16436,
+				"buffer_size": 16509,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -138,7 +174,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 29216,
+				"buffer_size": 29672,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -219,6 +255,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/17.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/noigitara.html",
@@ -258,7 +295,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High2.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High3.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Erratic Dream/Erratic 9.html",
-		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/navigation.js",
 		"/C/Users/Fuade/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/magnific.css",
@@ -364,6 +400,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"api",
+			"child",
 			"button",
 			"font-weight",
 			"font-family",
@@ -488,7 +526,7 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 13,
 			"sheets":
 			[
 				{
@@ -518,7 +556,7 @@
 						"translation.y": 99.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -546,7 +584,7 @@
 						"translation.y": 1508.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -576,7 +614,7 @@
 						"translation.y": 2543.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -606,7 +644,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -636,7 +674,7 @@
 						"translation.y": 1225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -666,7 +704,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -696,7 +734,7 @@
 						"translation.y": 1560.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -724,7 +762,7 @@
 						"translation.y": 1641.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -754,7 +792,7 @@
 						"translation.y": 1673.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -782,7 +820,7 @@
 						"translation.y": 1582.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -812,7 +850,7 @@
 						"translation.y": 1793.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -821,15 +859,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23014,
+						"buffer_size": 23191,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7901,
-								7901
+								7714,
+								7714
 							]
 						],
 						"settings":
@@ -839,27 +877,148 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3303.0,
+						"translation.y": 3331.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "Changes.html",
+					"file": "noigitara.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16436,
+						"buffer_size": 5453,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2074,
-								2074
+								2371,
+								2232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 755.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Blog/Tracking/Savant.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39267,
+								39267
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9560,
+								9599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4647.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Blog/Tracking/test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2067,
+								1893
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 236.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Changes.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1352,
+								1352
 							]
 						],
 						"settings":
@@ -869,14 +1028,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 490.0,
+						"translation.y": 243.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 17,
 					"file": "/C/Users/Fuade/Documents/GitHub/Tracking/index.html",
 					"semi_transient": false,
 					"settings":
@@ -897,27 +1056,27 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4505.0,
+						"translation.y": 410.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 18,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29216,
+						"buffer_size": 29672,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27792,
-								27792
+								15342,
+								15342
 							]
 						],
 						"settings":
@@ -927,14 +1086,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10294.0,
+						"translation.y": 4763.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 19,
 					"file": "fuad css.css",
 					"semi_transient": false,
 					"settings":
@@ -946,8 +1105,8 @@
 						"selection":
 						[
 							[
-								925,
-								925
+								11996,
+								11923
 							]
 						],
 						"settings":
@@ -957,14 +1116,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 242.0,
+						"translation.y": 4160.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 20,
 					"file": "Blog/Tracking/12.html",
 					"semi_transient": false,
 					"settings":
@@ -990,7 +1149,7 @@
 						"translation.y": 1249.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				}
 			]
