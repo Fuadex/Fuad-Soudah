@@ -162,7 +162,7 @@ a.darken:hover .text{color:black;
     .swiper-slide, .swiper-slide2  {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background:none
       /* Center slide text vertically */
 /*      display: -webkit-box;
       display: -ms-flexbox;
@@ -193,9 +193,21 @@ a.darken:hover .text{color:black;
       margin-bottom:40px;
     }
 
-#map {
+#map img {
+  left:0; right:0;
+        transform: scale(1.0) !important;
+                border:none;box-shadow:0;border-radius:0;
+                box-shadow:0 0 0;
+
+        /*height:70%;*/
+      }
+
+      #map{
+        height:80%;
         width:100%;
-        height:70%;
+       /* border:0;box-shadow:0;border-radius:0;*/
+        /*height:70%;*/
+                          border-radius: 10px;
       }
 
       p{
@@ -216,6 +228,18 @@ a.darken:hover .text{color:black;
 @media (min-width:724px){
 .swiper-slide > a > img{
   height:75%;
+}
+}
+
+      @media (max-width:724px){
+.swiper-slide > img{
+  width:100%;
+}
+}
+
+@media (min-width:724px){
+.swiper-slide > img{
+  height:50%;
 }
 }
 
@@ -255,36 +279,56 @@ function getRandomImage() {
   <div class="row" style="padding-top:3vw !important">
       <div class="swiper-container" style="height:600px !important; margin-left:25vw; width:50%;">
     <div class="swiper-wrapper" style="display:flex !important">
+            <div class="swiper-slide"><div id="map" style="  border-style:solid;
+  border-width:1px;
+  border-color:black;"></div>
+      <p>You seem to be... rrrright here, according to Google Maps!</p>
+      <p>You seem to be really busy with work.</p>
+      <p style="margin-top:0;">Good luck and <b>stay productive!</b></p></div> 
+<!--       <p>Is this the University? Are you giving a presentation right now???</p>
+      <p style="margin-top:0;">Good luck man, get an <b>HD!</b></p></div> -->
       <div class="swiper-slide"><a href="https://www.google.com/maps/timeline?pb"><img src="images/images/gl.jpg"></a>
-        <p>You've visited 508 places so far!</p>
-        <p>According to Google Location</p></div>
-      <div class="swiper-slide"><img src="images/images/fb2.jpg"></div>
+        <p>BTW, You've visited 508 places so far according to Google Location!</p>
+        <p>According to your flight schedule, you'll be visiting... <b>Singapore</b> and <b>Greece</b></p>
+        <p style="margin-top:0;">You seem to have been looking at <b>Germany</b> and <b>Poland</b> lately</p>
+        <p>I'll alert you once cheap flights show up on <b>Google Flights</b></p></div>
       <div class="swiper-slide"><img src="images/images/gl2.jpg">
-        <p>Here's where you've been 2 years ago!</p>
-        <p>According to Google Location</p></div>
+        <p>You've been in <b>Munich 2 years ago</b>, according to Google Location.</p>
+        <p>Check out what you've been through on this day on <b>Facebook!</b></p>
+      </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
   </div>
 
-<div class="row"">
-  <div class="col-md-3 col-md-offset-3" style="height:22vw !important; padding:0; margin-right:9px !important">
-  <div class="swiper-container2">
+<div class="row">
+  <div class="swiper-container2"  style="height:600px !important;">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/images/been.jpg" style="">
+      <div class="swiper-slide">
+  <div class="col-md-3 col-md-offset-3" style="height:22vw !important; padding:0; margin-right:9px !important">
+        <img src="images/images/Been.jpg" style="">
       <p>You have visited 13% countries of the World!</p>
       <p>According to Been</p></div>
+        <div class="col-md-4 col-md-offset-0 panel" style="border:none; box-shadow:none; margin-left:9px !important;">
+                <p>You have visited so far:</p>
+      <p>- 40% of Europe:</p>
+    <p>Austria, Belgium, Croatia, Czechia, Denmark, England, France, Germany, Hungary, Ireland, Italy, Lithuania, Poland, Portugal, Scotland, Slovakia, Slovenia, Spain, Sweden, Switzerland, Netherlands, Vatican, Turkey</p>
+      <p>- 19% of Asia:</p>
+      <p>China, India, Japan, Jordan, Malaysia, Qatar, South Korea, Taiwan, Thailand</p>
+      <p>- 3% of Oceania:</p>
+      <p>Australia</p></div>
+    </div>
       <div class="swiper-slide"><img src="images/images/fb4.jpg">
         <p>You seem to have memories associated with these places</p>
         <p>According to Facebook Check-in</p></div>
-      <div class="swiper-slide"><div id="map"></div>
-      <p>Here's an artwork of where you are.</p>
-      <p>According to Google Maps</p></div>
-    </div>
+              <div class="swiper-slide"><img src="images/images/fb2.jpg"></div>
+            </div>
     <div class="swiper-pagination"></div>
   </div>
   </div>
-  <div class="col-md-4 col-md-offset-0 panel" style="border:none; box-shadow:none; margin-left:9px !important;">
+</div>
+</div>
+<!--   <div class="col-md-4 col-md-offset-0 panel" style="border:none; box-shadow:none; margin-left:9px !important;">
   <div class="swiper-container3">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -298,16 +342,13 @@ function getRandomImage() {
       <div class="swiper-slide">
         <p>You seem to have memories associated with these places</p>
         <p>According to Facebook Check-in</p></div>
-      <div class="swiper-slide"><div id="map"></div>
-      <p>Here's an artwork of where you are.</p>
-      <p>According to Google Maps</p></div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
 </div>
 </div>
 </div>
-</div>
+</div> -->
 
 <div class="con2">
 <div class="container-fluid">
@@ -318,30 +359,36 @@ function getRandomImage() {
     <div class="swiper-wrapper" style="display:flex !important">
       <div class="swiper-slide"><img src="https://6bdprw.db.files.1drv.com/y4my6XdMtNIiE7teQyW6Rb9x-kUXQhGiYMBoOYDwaK3umfgqgHhjKI4jqK6fWlxokj6uphSAqONt2pXlZ03RW-ivFeyWn4UYRuce6oeqw1zsLn5jVwXxNhnAzPi2NLkFA2oYdMmWYLBinSpzVQ_kTUNGnVVJNzBEtOMZt2Pn35lr6tD3tPymmjXlmQ0uQg_uyVkc1nASMjpmBzLr2701yucuQ?width=3024&height=4032&cropmode=none" style="">
         <p>Chippendale, 9 October 2018, 8:45 PM</p>
-        <p>You seemed to have changed course on your way home</p></div>
+        <p>You seemed to have changed course on your way home</p><br><br>
+      <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
       <div class="swiper-slide"><img src="https://vkmmma.db.files.1drv.com/y4m3B28eK6SFNxWVAEBYAbAdOM_JdMaxqYZJB5n3wwagHYYRVLo_D6I3veeviTgKbhchZqTyX9dObPj7kfrO3KlSCveAkijCLhbWpoc9dfrBukRHvbTs25znCFlJNwaJNeCPyzwN85Ev3HTj-3Pjhkid8DFW09vcivC5wSWzLqhpzOz0_EL4ppAU2WKupP-g_Az-KDiZkLJ0QWBIXJiJ_35WA?width=3024&height=4032&cropmode=none" style="">
       <p>Sydney CBD, 16 September 2018, 1:30 PM</p>
-        <p>Your mood seemed to have improved afterwards</p></div>
+        <p>Your mood seemed to have improved afterwards</p><br><br>
+      <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
       <div class="swiper-slide"><img src="https://s6pa9q.db.files.1drv.com/y4m-C3RBXukYNyiAMbe-e4SXt2TYcMpq-m-QoKcn5RxzjpY4-EPAN034Cl2B-DoA9YU5CwpPJNjtceL-u4oYuyXGaP6yB6yYa6im7hc5MM_ju5ZyMCpo7BpZSiZiqf7Ro91ABOJwPaXt_Awk3zHUGDmZWor3hsev7XFoNc-itCzzxr7GCq3DjEdYZUn071avNL326swVDfptpWpUafUL68rJQ?width=3024&height=4032&cropmode=none" style="">
               <p>Sydney CBD, 16 September 2018, 1:30 PM</p>
-        <p>Your mood seemed to have improved afterwards</p></div>
+        <p>Your mood seemed to have improved afterwards</p><br><br>
+      <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
       <div class="swiper-slide"><img src="https://vkolda.db.files.1drv.com/y4mHUdPM2QNrOKQis3ie3XHuM53uMJX1yK61Oqg9JxcTPSEntAKVLWwcptrsEI_cIGopd8xnPxuZ30R9IL_cW6d5CTstfy0tqhsyRYK2ZCh3ywyroGju3g7qYQ0HR5_bICqffJUpZa51Mh6DYMk0gwDEY40nEEnOChJxFZIj4uSL7g6WYvDxRL7colAR3nfdLmz4_Tt37VP0tf0EWugLAGYrQ?width=3024&height=4032&cropmode=none" style="">
         <p>Watsons Bay, 15 September 2018, 4:30 PM</p>
-        <p>You seemed to have been thrice as productive as usual</p></div>
+        <p>You seemed to have been thrice as productive as usual</p><br><br>
+      <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
       <div class="swiper-slide"><img src="https://hwgjow.db.files.1drv.com/y4mIkuymr8rk59HkaB4bEJLwF6sTbaWkWE1oMWD3Nhxr3ZROBHfywcQ9x4-wpBZM-WTG68ISCXWgqZg5Q-s9r9pch2e1JNQpykRM-QfIL9QfmkNu4wXsU1YO7kMxOMVse_ZSQUtRW6A_ZPgcZHiOpGABfym3pr5zFm5PyAjJ2QtqPFdysInyGgHdbcVo22st3AUrn_A7U-LOQcHrHTnsJaS6A?width=3024&height=4032&cropmode=none" style="">
         <p>University of Sydney, 30 August 2018, 1:00 PM</p>
-        <p>You caught up with 5 friends you haven't seen in a while!</p></div>
+        <p>You caught up with 5 friends you haven't seen in a while!</p><br><br>
+      <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
       <div class="swiper-slide"><img src="https://jage9a.db.files.1drv.com/y4mpKJuoC-EZj2Icwfw-65pJuvWkaZpKmYckLpbKpXMBCmZjjHJHshIkXM4qfcrweJXGKEEn-jWQldJSRufRH3TVS34GZXl2U9O17D4kr59VHWIW7xiaZTOdSdpORWyw9yLg3JMUvNIC9S2z0-pAnKUUW--eeingxLbx43asHa3ZuClvyxVy3Il7rA_J9Nz5UH4g8-ZpCSkY21Lk0rxSEyM0A?width=3024&height=4032&cropmode=none" style="">
         <p>Cafe Ella, 23 August 2018, 2:00 PM</p>
         <p>Looks like you have been dieting and not sleeping!</p>
-        <p>For the love of God, get some sleep!</p></div>
+        <p>For the love of God, get some sleep!</p><br><br>
+      <p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
   </div>
   </div>
 
-    <div class="row" style="padding-top:3vw !important">
+<!--     <div class="row" style="padding-top:3vw !important">
       <div class="swiper-container" style="height:200px !important; margin-left:25vw; width:50%;">
     <div class="swiper-wrapper" style="display:flex !important">
       <div class="swiper-slide">
@@ -358,10 +405,10 @@ function getRandomImage() {
       <div class="swiper-slide"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
       <div class="swiper-slide"><p>From other news, surprisingly Apple's Smartwatch subpages do not work properly on my Chrome. First of all, what struck me, was how many options there were. This was confusing, why should I care about Adidas and Nike versions of the very same smartwatch? Where do I learn more about the smartwatches? Then once I found what I wanted, the website would not navigate. Not even with my pen! I would have to use my touchscreen or trackpad to scroll down, how come Apple has bad UX all of a sudden?</p></div>
     </div>
-    <!-- Add Pagination -->
+    Add Pagination
     <div class="swiper-pagination"></div>
   </div>
-  </div>
+  </div> -->
 
 
 
@@ -660,7 +707,7 @@ document.getElementById('button2').onclick = function() {
         target.style.height = target.scrollHeight+"px";
         this.firstChild.nodeValue = "Human-Computer Interaction 2";
     }
-    else {
+    else {y
         target.style.height = 0;
         this.firstChild.nodeValue = "Human-Computer Interaction 2";
     }
@@ -676,7 +723,7 @@ document.getElementById('button2').onclick = function() {
       centeredSlides: true,
       autoplay: {
         delay: 4500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       },
       pagination: {
         el: '.swiper-pagination',
@@ -695,7 +742,7 @@ document.getElementById('button2').onclick = function() {
       centeredSlides: true,
             autoplay: {
         delay: 4500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       },
       pagination: {
         el: '.swiper-pagination',
@@ -714,7 +761,7 @@ document.getElementById('button2').onclick = function() {
       centeredSlides: true,
             autoplay: {
         delay: 4500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       },
       pagination: {
         el: '.swiper-pagination',
@@ -732,7 +779,7 @@ document.getElementById('button2').onclick = function() {
       grabCursor: true,
                   autoplay: {
         delay: 4500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       },
       cubeEffect: {
         shadow: true,
@@ -773,7 +820,7 @@ document.getElementById('button2').onclick = function() {
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
-          zoom: 6
+          zoom: 14
         });
         infoWindow = new google.maps.InfoWindow;
 
