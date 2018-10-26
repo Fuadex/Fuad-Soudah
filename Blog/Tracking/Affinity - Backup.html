@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://farm1.staticflickr.com/852/42072351800_dce6f49186_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm1.staticflickr.com/833/28620123727_3b61bf1fd3_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>31/07</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-1 panel">
+    <center>Participants use a mix of digital/Physical</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>They track themselves everyday</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>They like to track other people</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>They track their personal & professional lives</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Some want to keep it public, others private</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Tracking is for inspiration, tracking process, personal analytics, suggestions, reflection and it's cool!</center>
+  </div>
+
+    <div class="col-md-1 panel">
+    <center>Participants used photos but not words</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>They recall specific pictures like MCA artworks</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>The participants know what to do (the user knows best)</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People want to track what they want</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People are different, they consume some things differently and they track differently</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Conversation based off hunger, the snacks available and common interest</center>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-md-1 panel">
+    <center>Most of the mentioned areas are and can already be tracked via either physical and/or digital means. They all lead towards a progressive understanding of oneself</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Differences in likings may be tough to address</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Keeping track of activities & mood & diary important</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Keeping track of activities & diary & productivity important</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I still don't know why we want to track ourselves'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People want to keep track of news, themselves & visualise it</center>
+  </div>
+  
+    <div class="col-md-1 panel">
+    <center>People don't know why they want to track themselves</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I really want ot understand why some people they really want to track themselves'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People want to keep track of mood, activities, map it & have insights of relevance presented to them</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'It's good if you wanna look back and find that information, something that's subtle enough that it can do that if you allow it to track the information passively'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I'm interested in but actually that's tracking for myself'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Curation of content is important and could be a solution</center>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-1 panel">
+    <center>Tactile feel & smeel boosts reflections</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Sometimes when you uh, try to like recall a certain moment. You don't really remember a big event like a whole thing. You just remember some details. Like I still remember like ten years ago the sunshine on my hair. Like I still feel the warmth'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Information overload & data is not desired</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>There is just too much, which raises all sorts of issues</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'This week you spent much higher, maybe 20% higher than compared to the several months I just need that information. I don't want ot look at that and compute by myself'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Insight need to be concrete, meaningful and filtered</center>
+  </div>
+  
+    <div class="col-md-1 panel">
+    <center><i>'How can a computer know what I am thinking?'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Users want meaningful information</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Computers can track app use but not how good it is</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Some data can be unreliable, some other data may seem irrelevant but once correlated, it can be useful</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I never was a huge fan of tracking everything anyway' // 'They just need to find the way to like track themselves. Like their thoughts or'
+</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People know they are tracked and many do keep track of themselves but some need to find right tools and they don't want to be left out</center>
+  </div>
+</div>
+
+<center><h1>Interview</h1></center>
+
+<div class="row">
+  <div class="col-md-1 panel">
+    <center>Everything can be tracked but not everything is yet understood</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Productivity, health & human interactions, aptitutde are of great importance</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Correlations seem to have a high potential to provide practical insights</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>It's interesting to see identified that humans see correlations where there are none. Like with optical illussions but also beyond. On the other hand computers are even more prone to that like exist.io</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Quantified Self (…) is the ability to understand the external and internal factors that are affecting you psychologically, physiologically and emotionally'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>No good tool for quantifying self in term of Netflix</center>
+  </div>
+  
+    <div class="col-md-2 panel">
+    <center><i>'10 years ago if you told that I could track everything about myself, I would have not believed you. Today I think it's quite feasible and reasonable to do so. (...) The market itself is a 40 billion $ industry in 2020. That's just the devices, not the software. The software is subscription based so the sky is the limit'</i> - Self Tracking is a recent thing and it became enormous in market size</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Possible research gap around media consumption and its impact on human health and emotional state via self-tracking</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Uuu wow... You can track everything...!'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Anything that's data based or numbers based or of yourself... I think you can track it'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>You can track anything that may be quantified</center>
+  </div>
+</div>
+
+
+<div class="row">
+      <div class="col-md-1 panel">
+    <center>New developments are constant, especially in health</center>
+  </div>
+  <div class="col-md-1 panel">
+    <center>Many issues are derived like privacy, manual tracking etc.</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>The data collected and transmission capabilities affect commercial viability</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Wearables will often remain relatively constrained</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Some data is meaningless, lack of explanation makes it suspicious</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Most social media seem to have some forms of an API</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Unless the data is explained, it's meaningless</center>
+  </div>
+  
+    <div class="col-md-1 panel">
+    <center>There is a myriad of tools for self-tracking and they change constantly</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I was talking to a friend about a new band that came out and how my listening habits have changed just on the fact that new album came out'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Facebook on this day (...) ah there where I was on this day (...) how does that make you feel and how does it affect your mood, it's pretty interesting.'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I will use every and any tool that can help me get closer to understanding everything'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>The tools look more reliable when they lead to unexpected insights</center>
+  </div>
+</div>
+
+<div class="row">
+      <div class="col-md-1 panel">
+    <center>Self-Tracking can lead to understanding oneself better based on the data, information and how that makes you feel</center>
+  </div>
+  <div class="col-md-1 panel">
+    <center><i>'I think I find delight in when I see something that is a little Eureka in the data'</i> - Finding groundbreaking discoveries about oneself is enjoyable</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Here's what changed this week, here's what's different about your week (...) one of the more powerful aspects of it (Exist.io - F)'</i> - Summaries are a powerful tool, pointed out by codesign participants</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Deep insights & summaries with correlations seem to harness a specific power</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>The results need to be objective to earn our trust</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Obvious stuff explained scientifically may be relevant, simple cues can be powerful</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Seeing the activities that people are engaged with and then comparing that to the mood of that I have (...) I think that's going to be dreadfully insightful'</i> - Finding correlations between interactions with people and your mood is like opening a pandora box</center>
+  </div>
+  
+    <div class="col-md-1 panel">
+    <center><i>'I'd love it if eh all our television consumptions, video game consumption can somehow be recorded in'</i> - Possible gap with media consumption</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Everything manual makes it harder and makes you less likely to commit to it'</i> - Detailed statistics may lead to not seamless use</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'Yeah sometimes it's really interesting um eh I love it when I've eh... You know not looked at the correlations for a few days and then all of a sudden I look at and I;m like oh yeah it does make sense'</i> - Eureka! Moments based on passive info</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Finding some correlations in regards to relations and mood could revolutionise how we generally interact with each other</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Trackers may not control everything and can be cumbersome</center>
+  </div>
+</div>
+
+<div class="row">
+      <div class="col-md-3 col-md-offset-3 panel">
+    <center><i>'I found for a long time that I was having a so every Tuesday was my one-on-one with my previous manager and I was finding that my Mondays were busier and uh the activities I was doing I was more productive on Mondays and it turned out that the reasons I'm obviously doing that is deliberately being prepared for that next meeting (...) I'm wasting time preparing for these meetings on Monday why don't we like have a less often meeting that I can prepare for a long period of time and it worked out quite well'</i> - Objective insights can lead to actual, positive changes</center>
+  </div>
+  <div class="col-md-1 panel">
+    <center><i>'Something that I haven't listened to in a while and then being excited for it again, it's quite wonderful'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>In depth analysis can lead to meaningful, positive change especially if it contains objective data</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Finding out old memories and reliving them is wonderful</center>
+  </div>
+</div>
+
+<h1><center>Additional Insights</center></h1>
+
+<div class="row">
+      <div class="col-md-1 panel">
+    <center><i>'So I played like 5 or 6 songs that I had already written and some of 'em were recents and some of 'em were... Way back! So it totally reminds me of what my thought process or my aptitude was like at the time. Pretty interesting'</i></center>
+  </div>
+  <div class="col-md-1 panel">
+    <center>Some pictures that I used recalled their memories (like from MCA)</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Some people just want to track news, banter, celebrities, other people etc.</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Some people want to track quite surprising things, like buildings at specific time of the year <u>I assume that's directly related to their interests</u></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center><i>'I like to know who I am (...) Me just trying to understand myself on my journey, right?'</i></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Many activities seem to be split into categories and managed differently, perceived differently such as: professional life, personal life and then further drilled down</center>
+  </div>
+
+    <div class="col-md-1 panel">
+    <center>Some visual cues such as pictures recall memories</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People seem to remain connected to where they come from and they seem to want to track what is happening even if they're So far away from their homeland</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Some medical features seem to be important and a necessity, however some may be neglected such as allergies</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People seem to have very varied not just hobbies but also willingness to share their life with others <u>It may have to do also with perception, as many see specific things differently to one another</u></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Despite people seem to know what they want, they have no idea of how they would like the information to be presented to them, it takes time for them to conceptualise this, however they are very serious in regards to the activity</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People might want to adjust themselves to fit the perfection standards established by the society which is dangerous but also an interesting insight</center>
+  </div>
+</div>
+
+<div class="row">
+      <div class="col-md-1 col-md-offset-2 panel">
+    <center>People often simplify their feelings by the use of emojis. Sometimes, they will use other objects such as nature ex. Trees, which may require some knowledge actually</center>
+  </div>
+  <div class="col-md-1 panel">
+    <center>Narration is a powerful tool employed to convey a variety of stories, also about oneself</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>It seems to me that differences in points of views generate debates, which is healthy</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>People may want to keep track of information they read, such as news and group them accordingly to relevance, perhaps visualise it <u>There are some groups I know that already filter news and evaluate objectivism of news outlets and journalists</u></center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Tracking needs to have a specific goal and needs to be seamless without manual logging</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>There's just too much happening in life and people can't keep track of everything</center>
+  </div>
+
+    <div class="col-md-1 panel">
+    <center>People want to see a summary of what they have missed (FOMO?)</center>
+  </div>
+    <div class="col-md-1 panel">
+    <center>Good curation seems to be valued</center>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Progress Report - 31/07/2018</h4></center>
+  This week I had to concentrate on barrages of <b>Quizes, Homework and Exams</b><br>
+  But that is quite fine, as I also worked on setting up a skeleton in my mind of how the research could be set up.<br><br>
+
+  And so, the preliminary vision consists of a few elements:<br><br>
+
+  - Researching <b>existing hardware, software and media</b> gathering various amounts of data and their impact on people's lives<br>
+  - Researching <b>existing work focused around API</b>, predominantly precedent studies of works in Australia and hosted overseas<br>
+  - Studying <b>people's behaviour and awareness</b> of what data they share and whether they use or are willing to use it in any form<br>
+  - Finding out platforms that <b>offer API publicly</b> and finding ways of utilising the data it provides within foreset constrains<br>
+  - Creating an application aggregating and <b>making use of publicly available APIs</b>, preferably based on social networks<br>
+  - <b>Iterative User-Centered development</b> of the application and measuring changes occurring in users via iterative research<br><br>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://farm2.staticflickr.com/1776/30011315768_955964980b_k.jpg" class="darken"><div class="text"><center>Here's a bit of Seoul<br>Cause I've been on Exchange...<br>In Korea?</center></div><img src="https://farm2.staticflickr.com/1776/30011315768_955964980b_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
