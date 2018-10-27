@@ -126,7 +126,7 @@
 			"file": "Blog/Tracking/Savant.html",
 			"settings":
 			{
-				"buffer_size": 76215,
+				"buffer_size": 94507,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -426,6 +426,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Culture",
+			"loop",
+			"pagination",
+			".pagination",
+			".swiper-pagination",
+			"tt",
+			"scale",
+			"span",
+			"tv",
+			"con5",
+			"con",
 			"health",
 			"scale",
 			"img",
@@ -542,18 +553,7 @@
 			"z-index",
 			"scale",
 			"toggle",
-			"scale",
-			"margin",
-			"padding",
-			".row",
-			"media",
-			"NAME",
-			"vw",
-			"display",
-			"br",
-			"1vw",
-			"border",
-			"panel"
+			"scale"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -964,15 +964,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 76215,
+						"buffer_size": 94507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27443,
-								27443
+								94314,
+								94314
 							]
 						],
 						"settings":
@@ -983,7 +983,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8802.0,
+						"translation.y": 16992.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
