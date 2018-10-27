@@ -126,7 +126,7 @@
 			"file": "Blog/Tracking/Savant.html",
 			"settings":
 			{
-				"buffer_size": 94507,
+				"buffer_size": 94806,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -964,15 +964,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 94507,
+						"buffer_size": 94806,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94314,
-								94314
+								81787,
+								81787
 							]
 						],
 						"settings":
@@ -983,7 +983,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 16992.0,
+						"translation.y": 15037.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
