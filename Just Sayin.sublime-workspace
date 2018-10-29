@@ -126,7 +126,7 @@
 			"file": "Blog/Tracking/Savant.html",
 			"settings":
 			{
-				"buffer_size": 94806,
+				"buffer_size": 106360,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -155,7 +155,7 @@
 			"file": "Blog.html",
 			"settings":
 			{
-				"buffer_size": 29703,
+				"buffer_size": 29712,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -281,6 +281,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Tracking/17.html",
@@ -288,7 +289,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High5.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Changes.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/navigation.js",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/test.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Trouble Cruise.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/footer.js",
@@ -412,7 +412,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -426,6 +426,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Spec Ops",
+			"Heart of Dar",
+			"a:hover",
+			"Cowboy Be",
+			"Japan",
+			"unogs",
+			"box-shadow",
+			"img",
 			"Culture",
 			"loop",
 			"pagination",
@@ -545,15 +553,7 @@
 			"vw",
 			"background",
 			"video",
-			"<pre>",
-			"<code>",
-			"code",
-			"76",
-			"767",
-			"z-index",
-			"scale",
-			"toggle",
-			"scale"
+			"<pre>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -911,8 +911,8 @@
 						"selection":
 						[
 							[
-								1783,
-								1783
+								22145,
+								23126
 							]
 						],
 						"settings":
@@ -922,10 +922,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 419.0,
+						"translation.y": 6443.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -964,15 +964,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 94806,
+						"buffer_size": 106360,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81787,
-								81787
+								50518,
+								50518
 							]
 						],
 						"settings":
@@ -983,7 +983,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 15037.0,
+						"translation.y": 12488.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1016,7 +1016,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1046,7 +1046,7 @@
 						"translation.y": 3524.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1055,15 +1055,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29703,
+						"buffer_size": 29712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7919,
-								7919
+								7973,
+								7863
 							]
 						],
 						"settings":
@@ -1073,10 +1073,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2706.0,
+						"translation.y": 2890.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1240,8 +1240,8 @@
 						"selection":
 						[
 							[
-								9682,
-								9503
+								10315,
+								10240
 							]
 						],
 						"settings":
@@ -1251,10 +1251,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10605.0,
+						"translation.y": 3411.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
