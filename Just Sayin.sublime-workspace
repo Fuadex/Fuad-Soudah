@@ -200,7 +200,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 29664,
+				"buffer_size": 29658,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -412,7 +412,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -1202,15 +1202,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29664,
+						"buffer_size": 29658,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15061,
-								15061
+								15398,
+								15398
 							]
 						],
 						"settings":
