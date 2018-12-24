@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"swiper-container",
+				"swiper-container-h"
+			],
+			[
+				"swiper-containe",
+				"swiper-container-h"
+			]
 		]
 	},
 	"buffers":
@@ -12,6 +20,24 @@
 			"settings":
 			{
 				"buffer_size": 29667,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "MusicVideos.html",
+			"settings":
+			{
+				"buffer_size": 31214,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Eudaimonia/10.html",
+			"settings":
+			{
+				"buffer_size": 36858,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -30,6 +56,58 @@
 			"settings":
 			{
 				"buffer_size": 31045,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Coverflow.html",
+			"settings":
+			{
+				"buffer_size": 10684,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Savant.html",
+			"settings":
+			{
+				"buffer_size": 106417,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index - Copy.html",
+			"settings":
+			{
+				"buffer_size": 14997,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "fuad css.css",
+			"settings":
+			{
+				"buffer_size": 36740,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "footer.js",
+			"settings":
+			{
+				"buffer_size": 1793,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Changes.html",
+			"settings":
+			{
+				"buffer_size": 16956,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -111,6 +189,10 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Savant.html",
+		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High8.html",
+		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia/0.html",
+		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia Ludicrous/1.html",
 		"/C/Users/Fuad/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/fuad css.css",
 		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/index.html",
@@ -120,7 +202,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -134,6 +216,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lazy\"",
+			"src",
+			"img",
+			"<img",
+			"img",
+			"scale",
+			"opacity",
+			"scale",
+			"website",
+			"pagination",
+			"scaleX",
+			"photograp",
+			"apolog",
 			"attack",
 			"index",
 			"top"
@@ -154,7 +249,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -170,8 +265,8 @@
 						"selection":
 						[
 							[
-								572,
-								572
+								13710,
+								13710
 							]
 						],
 						"settings":
@@ -181,14 +276,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 349.0,
+						"translation.y": 6786.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "MusicVideos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4177,
+								4177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1104.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Blog/Eudaimonia/10.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29736,
+								29736
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3944.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "Blog/High Pitch Void/High6.html",
 					"semi_transient": false,
 					"settings":
@@ -200,8 +355,8 @@
 						"selection":
 						[
 							[
-								6476,
-								6476
+								5649,
+								5588
 							]
 						],
 						"settings":
@@ -211,14 +366,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2226.0,
+						"translation.y": 588.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "Blog/High Pitch Void/High7.html",
 					"semi_transient": false,
 					"settings":
@@ -241,14 +396,192 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3306.0,
+						"translation.y": 329.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Coverflow.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								583,
+								583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
+					"file": "Savant.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4773,
+								4758
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "index - Copy.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3804,
+								3626
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1929.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "fuad css.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11764,
+								11764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4434.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "footer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1793,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Changes.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1727,
+								1727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4060.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "Blog.html",
 					"semi_transient": false,
 					"settings":
@@ -271,10 +604,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3132.0,
+						"translation.y": 38.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -357,7 +690,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

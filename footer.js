@@ -1,7 +1,15 @@
 document.write('\
   \
         <script src="scrollreveal.js"><\/script>\
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"><\/script>\
 \
+<script>\
+$(\'.col-md-3, .col-md-4, .col-md-5, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-8\').tilt({\
+    glare: true,\
+    maxGlare: .1,\
+    transition: true\
+})\
+<\/script>\
       <script>\
 window.sr = ScrollReveal({ mobile: false, reset: true });\
 \
@@ -25,7 +33,7 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
-        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
+        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
       <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
       <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9 BETA</a></li>\
     </ul>\
