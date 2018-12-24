@@ -35,7 +35,7 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
         <ul class="nav navbar-nav navbar-right list-inline">\
         <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>\
       <li><a href="Timeline.html"><span class="glyphicon glyphicon-zoom-in"></span> Retrospection</a></li>\
-      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.9 BETA</a></li>\
+      <li><a href="Changes.html"><span class="glyphicon glyphicon-erase"></span> Ver: 0.95 Pre-Release</a></li>\
     </ul>\
 \
 </nav>\
