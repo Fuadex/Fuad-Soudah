@@ -82,7 +82,7 @@ document.write('\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Web\
         <ul class="dropdown-menu">\
           <li><a href="noigitara.html">No i Gitara!</a></li>\
-          <li><a href="https://fuadex.github.io/Fuad-Soudah/">Fuad</a></li>\
+          <li><a href="Fuad.html">Fuad</a></li>\
           <li><a href="HCI2 Web.html">LMU</a></li>\
           <li><a href="Web Design & Technologies.html">Virgin Airlines</a></li>\
           <li><a href="Fuadex 6.0.html">First</a></li>\
