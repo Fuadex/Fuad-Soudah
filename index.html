@@ -116,7 +116,7 @@ align-items: center;
 @media (min-width:480px){
 	a.darken img {
 		display: block;
-		
+
 		-webkit-transition: all 0.5s linear;
 		-moz-transition: all 0.5s linear;
 		-ms-transition: all 0.5s linear;
@@ -350,6 +350,16 @@ p a:hover{
 /* THere was a weird error where div text was dislocated over the other element
 I fixed it by displaying none and displaying once I hovered over the element*/
 
+	.mober1{
+		display:none;
+	}
+
+	.mober{
+		margin-top:0px !important;
+		width:45vw !important;
+	}
+
+
 @media (max-width:480px){
 	.swiper-button-next, .swiper-button-prev{
 		display:none !important;
@@ -392,6 +402,23 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 		padding: 150% 16px 0 13px !important;
 	}
 
+	.mober{
+		margin-top:15vh !important; transform:translate(0,50%); width:42.5vw !important;
+	}
+
+	.mober1{
+		width:42.5vw !important;
+		display:block !important;
+	}
+
+	.tilt .mober1{
+		font-size:14px !important;
+	}
+
+	.tilt .mober{
+		font-size:12px !important;
+	}
+
 }
 
 </style>
@@ -408,7 +435,8 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 					<div class="col-md-4 grid-item" style="width:75%">
 						<p>People call me <a href="CV.pdf">Fuad</a></p>
 						<p>I'm a <a href="home.html">Designer</a>.</p>
-						<p>Check out my <a href="Portfolio.pdf">Portfolio</a></p>
+						<p>Check out my 
+							<a href="Portfolio.pdf">Portfolio</a></p>
 					</div>
 				</div>
 				<div class="swiper-slide" data-swiper-autoplay="70000">
@@ -416,37 +444,51 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 						<div class="swiper-wrapper">
 							<div class="swiper-slide tilt data-swiper-autoplay="16000"">
 								<div class="col-md-4">
-									<a href="Savant.html" class="darken iframe-link ho"><div class="text"><p>Quantified Self</p></div><img class="swiper-lazy zwei" src="Korea.jpg" style="width:45vw"  id="n0"></a>
+									<p class="mober1">Savant</p>
+									<a href="https://www.youtube.com/watch?v=FvnOUr7jmNM" class="darken popup-youtube ho"><div class="text"><p>Savant</p></div><img class="swiper-lazy zwei" src="Korea.jpg" style="width:45vw"  id="n0"></a>
+									<p class="mober">Quantified Self + Front-End + UX </p>
 								</div>
 							</div>
 							<div class="swiper-slide tilt">
 								<div class="col-md-4">
-									<a href="https://noigitara.pl" class="darken iframe-link ho"><div class="text"><p>Website & Branding</p></div><img class="swiper-lazy zwei" src="https://9p32ng.by.files.1drv.com/y4mdvR02x6W8nmDUVtWTDyfpNjZQ4No4zJ5NBNfvPfYuat0-Kc5eH10nPdlI2fk9kDmycnQUkCUdBy9w5fvb4bU6OzhMXeMGKiDPZmk_Z4xMUI3-cK-Wkbo6lYl3gKYFBt9TwuOTltkYLG6de3-6krF5jkrN8owd8buUXnelpPIjka-HBCTkKZP_IypQLEn1XAP6AQtoQrLLLvoFdEH0TNBCA?width=3240&height=1620&cropmode=none" style="width:45vw"  id="n1"></a>
+									<p class="mober1">No i Gitara!</p>
+									<a href="https://noigitara.pl" class="darken iframe-link ho"><div class="text"><p>No i Gitara!</p></div><img class="swiper-lazy zwei" src="https://9p32ng.by.files.1drv.com/y4mdvR02x6W8nmDUVtWTDyfpNjZQ4No4zJ5NBNfvPfYuat0-Kc5eH10nPdlI2fk9kDmycnQUkCUdBy9w5fvb4bU6OzhMXeMGKiDPZmk_Z4xMUI3-cK-Wkbo6lYl3gKYFBt9TwuOTltkYLG6de3-6krF5jkrN8owd8buUXnelpPIjka-HBCTkKZP_IypQLEn1XAP6AQtoQrLLLvoFdEH0TNBCA?width=3240&height=1620&cropmode=none" style="width:45vw"  id="n1"></a>
+									<p class="mober">Front-End + Branding + Photography</p>
 								</div>
 							</div>
 							<div class="swiper-slide tilt">
 								<div class="col-md-4">
-									<a href="https://www.youtube.com/watch?v=zKQmqL0yc34" class="darken popup-youtube ho"><div class="text"><p>Placemaking & UX</p></div><img class="swiper-lazy zwei" src="Leaf.jpg" style="width:45vw"  id="n2"></a>
+									<p class="mober1">Leaf</p>
+									<a href="https://www.youtube.com/watch?v=zKQmqL0yc34" class="darken popup-youtube ho"><div class="text"><p>Leaf</p></div><img class="swiper-lazy zwei" src="Leaf.jpg" style="width:45vw"  id="n2"></a>
+									<p class="mober">Placemaking + UX + Physical Computing</p>
 								</div>
 							</div>
 							<div class="swiper-slide tilt">
 								<div class="col-md-4">
-									<a href="//e.issuu.com/embed.html#34415519/64823171" class="darken iframe-link ho"><div class="text"><p>Curation & VR</p></div><img class="swiper-lazy zwei" src="https://g1ntww.bn.files.1drv.com/y4mJYN58Wh0aV0EzuBTYBIZc8s6sjdSYxnXvfFJiyjKZ48tklTXFNUGUiJuhCiRMQI-pLPGmnta6-zA9ioHCH_CSIUS9ZopVq0_2D8MLJlIHUsCjE9PctyopxUWaOqL0YVzla4sxEAo3HgbZO4FT8K9c3QRIBk1j_LkmWNazHVEdTO9-iKd2auQ0IhgZtZvqHDV1NwzMcSGqq-XMBhI4orzlQ?width=1433&height=635&cropmode=none" style="width:45vw"  id="n3"></a>
+									<p class="mober1">Graduation Show</p>
+									<a href="//e.issuu.com/embed.html#34415519/64823171" class="darken iframe-link ho"><div class="text"><p>Graduation Show</p></div><img class="swiper-lazy zwei" src="https://g1ntww.bn.files.1drv.com/y4mJYN58Wh0aV0EzuBTYBIZc8s6sjdSYxnXvfFJiyjKZ48tklTXFNUGUiJuhCiRMQI-pLPGmnta6-zA9ioHCH_CSIUS9ZopVq0_2D8MLJlIHUsCjE9PctyopxUWaOqL0YVzla4sxEAo3HgbZO4FT8K9c3QRIBk1j_LkmWNazHVEdTO9-iKd2auQ0IhgZtZvqHDV1NwzMcSGqq-XMBhI4orzlQ?width=1433&height=635&cropmode=none" style="width:45vw"  id="n3"></a>
+									<p class="mober">Curation + VR</p>
 								</div>
 							</div>
 							<div class="swiper-slide tilt">
 								<div class="col-md-4">
-									<a href="https://www.youtube.com/watch?v=XSiFtmgFcKc" class="darken popup-youtube ho"><div class="text"><p>Vivid Sydney<br>Projection Mapping</p></div><img class="swiper-lazy zwei" src="https://farm5.staticflickr.com/4694/27993583069_97c07b276a.jpg" style="width:45vw"  id="n4"></a>
+									<p class="mober1" style="padding-bottom:2vh !important">Vivid Sydney</p>
+									<a href="https://www.youtube.com/watch?v=XSiFtmgFcKc" class="darken popup-youtube ho"><div class="text"><p>Vivid Sydney<br>We Are Waterfall</p></div><img class="swiper-lazy zwei" src="https://farm5.staticflickr.com/4694/27993583069_97c07b276a.jpg" style="width:45vw"  id="n4"></a>
+									<p class="mober">Projection Mapping</p>
 								</div>
 							</div>
 							<div class="swiper-slide tilt">
 								<div class="col-md-4">
+									<p class="mober1">Photography</p>
 									<a href="Photos.html" class="darken ho"><div class="text"><p>Photography</p></div><img class="swiper-lazy zwei" src="https://farm5.staticflickr.com/4189/34554697631_97670690ed.jpg" style="width:45vw"  id="n5"></a>
+									<p class="mober">Travel Photography + Post-Processing</p>
 								</div>
 							</div>
 							<div class="swiper-slide tilt">
 								<div class="col-md-4">
+									<p class="mober1">Find out more!</p>
 									<a href="home.html" class="darken ho"><div class="text"><p>More</p></div><img class="swiper-lazy zwei" src="linkedinb.jpg" style="width:45vw"  id="n6"></a>
+									<p class="mober">...HCI, 3D Modelling, Videography, Blog, Radio...</p>
 								</div>
 							</div>
 						</div>
