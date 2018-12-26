@@ -12,14 +12,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
-	<script src="jquery-3.2.1.min.js"></script>
 	<!--   <link rel="stylesheet" href="fuad css.css" type="text/css"> -->
 
 	<!-- Magnific Popup core CSS file -->
 	<link rel="stylesheet" href="magnific-popup.css">
 
-	<!-- Magnific Popup core JS file -->
-	<script src="jquery.magnific-popup.js"></script>
+
 
 
 	<!-- Demo styles -->
@@ -205,7 +203,7 @@ p:hover{
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	transform: scale(0.8);
+	transform: perspective(1px) scale(0.8);
 }
 
 a{
@@ -399,7 +397,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 	}
 
 	.iframo{
-		padding: 150% 16px 0 13px !important;
+		padding: 130% 16px 0 13px !important;
 	}
 
 	.mober{
@@ -421,6 +419,44 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 
 }
 
+.swiper-pagination-bullet:hover{
+			-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	transform: scale(1.5) !important;
+}
+
+.swiper-pagination-bullet{
+				-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.swiper-button-next, .swiper-button-prev{
+					-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+					-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	transform:scale(1.5);
+}
+
+.swiper-pagination-bullet-active{
+	transform:scale(1.2);
+}
+
 </style>
 </head>
 <body>
@@ -430,7 +466,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 			<div class="swiper-wrapper">
 				<div class="swiper-slide ">
 					<div class="col-md-4" id="wooaaar" style="width:25%">
-						<a href="index - Copy.html" class="darken"><div class="text"><p>About Me</p></div><img src="https://farm2.staticflickr.com/1768/43459156672_c367bc69b1_b.jpg" class="eins" width="100%"></a>
+						<a href="index - Copy.html" class="darken"><div class="text"><p>About Me</p></div><img src="https://farm2.staticflickr.com/1768/43459156672_c367bc69b1_b.jpg" class="eins tilt" width="100%"></a>
 					</div>
 					<div class="col-md-4 grid-item" style="width:75%">
 						<p>People call me <a href="CV.pdf">Fuad</a></p>
@@ -503,7 +539,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 						<p><a href="CV.pdf">CV</a></p>
 					</div>
 					<div class="col-md-4" id="wooaaar" style="width:25%">
-						<a href="home.html" class="darken"><div class="text"><p>Full Fuad</p></div><img src="DSC_0306.jpg" width="100%"></a>
+						<a href="home.html" class="darken"><div class="text"><p>Full Fuad</p></div><img src="DSC_0306.jpg" class="tilt" width="100%"></a>
 					</div>
 				</div>
 			</div>
@@ -514,10 +550,13 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 		</div>
 	</div>
 
-	<!-- Swiper JS -->
+			<script src="jquery-3.2.1.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+	<script src="jquery.magnific-popup.js"></script>
 
 	<script>
 		$('.tilt').tilt({
