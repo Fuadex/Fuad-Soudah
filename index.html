@@ -72,6 +72,46 @@ justify-content: center;
 align-items: center;
 }
 
+@media(max-width:480px){
+		a:not(.iframe-link):not(.popup-youtube){
+		-webkit-animation: inter 1s infinite alternate;
+		-moz-animation: inter 1s infinite alternate;
+		-o-animation: inter 1s infinite alternate;
+		-ms-animation: inter 1s infinite alternate;
+		animation: inter 1s infinite alternate;
+	}
+
+	@-webkit-keyframes inter {
+		0% {color: #000;}
+		75% {color: #444;}
+		100% {color: #999;}
+	}
+
+	@-moz-keyframes inter {
+				0% {color: #000;}
+		75% {color: #444;}
+		100% {color: #999;}
+	}
+
+	@-ms-keyframes inter {
+						0% {color: #000;}
+		75% {color: #444;}
+		100% {color: #999;}
+	}
+
+	@-o-keyframes inter{
+						0% {color: #000;}
+		75% {color: #444;}
+		100% {color: #999;}
+	}
+
+	@keyframes inter{
+						0% {color: #000;}
+		75% {color: #444;}
+		100% {color: #999;}
+	}
+}
+
 @media(min-width:480px){
 	.swiper-slide{
 		font-size:1.2vw;
