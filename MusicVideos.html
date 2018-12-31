@@ -75,31 +75,37 @@ a.wob:hover .text{color:black;
 
 
 
-.mfp-fade.mfp-bg {
+ .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out; 
   -moz-transition: all 0.15s ease-out; 
   transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-bg.mfp-ready {
+ }
+ .mfp-fade.mfp-bg.mfp-ready {
   opacity: 0.8;
-}
-.mfp-fade.mfp-bg.mfp-removing {
+ }
+ .mfp-fade.mfp-bg.mfp-removing {
   opacity: 0;
-}
+ }
 
-.mfp-fade.mfp-wrap .mfp-content {
+ .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out; 
   -moz-transition: all 0.15s ease-out; 
   transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+ }
+ .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
   opacity: 1;
-}
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+ }
+ .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
-}
+ }
+
+ @media(min-width:480px){
+  .mfp-content{
+    max-width:85vw !important;
+  }
+ }
 
 </style>
 
@@ -121,12 +127,12 @@ a.wob:hover .text{color:black;
 </div>
 <br>
 
-<!-- <div class="row">
+<div class="row">
 <div class="col-md-6 col-md-offset-3">
-  <a href="https://onedrive.live.com/embed?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2187775&authkey=AFfqouH7Sa-MZFQ" class="wob"><div class="text">Starlight in Abyss</div>
-<img src="https://7rebma.db.files.1drv.com/y4m4tiopiSvHHPRwpjzh_jW9tepAIyE4mzn5MM2pmp3Wm0X7v83tXhGuO7M14wW0dbAEs5YaMV0sQBpF5fdI0pWQ9JxwTQnxPJHjXoJcJb5pSNWwgDCrRyPY3iHgOx1hJZV-9jUl-elonlsqcCJksR3un64Yi2_IgbptxN1bub-yHmlBeufwGJ1D0VS-gsW5sr-FdW0En8PIoIhKNZuHVMnLg?width=3240&height=1816&cropmode=none" width="100%"></a><br>
+  <a href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2125053&authkey=ACDAb7GcpgsDIFo" class="wob"><div class="text">Point in Resonance</div>
+<img src="https://iiui8a.by.files.1drv.com/y4mm1hxJDDl4bW8XdhdY22Syahf5r-8Nv3wriyUd84JPPoh0yU4JXEWX9JzlVGR0b41XYiOPz1xh05GNkLD_Kw_0Ub1AB5caOv04G27q6dyIklyU_wcD2b4TS5o8a68LaeQdZ6cY8bhbruHOJgJGgPUWvVWOEDjiLLeHDSEstfpuabNoq0307uv7LQNIvBvlSBW6yE4QwdJCq4yVOuN4oGPlQ?width=1024&height=574&cropmode=none" width="100%"></a><br>
 </div>
-</div> -->
+</div>
 
 <div class="row">
 <div class="col-md-5 col-md-offset-1"><a href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2125052&authkey=AGax_9mPrymfd7w" class="wob"><div class="text">on Aurorae</div>
@@ -505,6 +511,18 @@ $('#foo').magnificPopup({
         }
     }
 });
+
+  // $('.iframe-link').magnificPopup({
+  //   type: 'iframe',
+  //   iframe: {
+  //     markup: '<div class="mfp-iframe-scaler iframo">'+
+  //     '<div class="mfp-close"></div>'+
+  //     '<iframe class="mfp-iframe" frameborder="0" allowfullscreen>            </iframe>'+
+  //     '</div>'
+  //   },
+  //   mainClass: 'mfp-fade'
+
+  // });
 </script>
 
 </body>
