@@ -33,11 +33,8 @@ document.write('\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog\
         <ul class="dropdown-menu">\
         <li><a href="Blog.html">Blog</a></li>\
-          <li><a href="Tracking.html">Tracking Self</a></li>\
-          <li><a href="NewMediaAudiences.html">New Media Audiences</a></li>\
-          <li><a href="Labs.html">Leaf Lab</a></li>\
-          <li><a href="Grasausschuss.html">Gras</a></li>\
           <li><a href="RadioX.html">Radio</a></li>\
+                    <li><a href="Grasausschuss.html">Gras</a></li>\
       </ul>\
             \
         </li>\
@@ -54,6 +51,7 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">VR\
         <ul class="dropdown-menu">\
+          <li><a href="NewMediaAudiences.html">NMA (Essays)</a></li>\
           <li><a href="GradShow.html">Graduation Show (2017)</a></li>\
           <li><a href="Lone Island.html">Lone Island</a></li>\
           <li><a href="Trouble Cruise.html">Trouble Cruise</a></li>\
@@ -67,6 +65,7 @@ document.write('\
               <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">HCI\
         <ul class="dropdown-menu">\
+          <li><a href="Tracking.html">Savant</a></li>\
           <li><a href="keto.html">Keto</a></li>\
           <li><a href="LMS.html">Collaborative LMS</a></li>\
           <li><a href="BoomBox.html">Boombox</a></li>\
