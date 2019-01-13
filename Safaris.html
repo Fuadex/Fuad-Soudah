@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+  background-image: url(https://farm8.staticflickr.com/7921/39656416403_fb68d80ab3_k.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-lg-6:hover, .col-lg-8:hover{background:none;}
+
+/*img{
+padding:1.5vw;
+}*/
+
+</style>
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'https://c1.staticflickr.com/5/4196/34070156813_71d2accbf8_n.jpg';
+    ImageArray[1] = 'https://c1.staticflickr.com/5/4204/34717635622_67741a7180_n.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<div class="row">
+<center><h2>Design for Safaris</h2></center><br>
+</div>
+
+<div class="row">
+
+<center>
+<div class="col-lg-8 col-lg-offset-2">
+<a data-flickr-embed="true" class="darken"  href="Lab 7.html"><div class="text">Week 1</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="50%"></a><br>
+</div>
+</center>
+</div>
+
+<div class="row">
+	<center>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken"  href="Lab 6.html"><div class="text">Lab 10 & 11</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="50%"></a><br>
+  </div>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken" href="Lab 5.html" ><div class="text">Lab 8 & 9</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="50%"></a><br>
+</div></div>
+</center>
+
+<div class="row">
+
+<center>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken"  href="Lab 4.html"><div class="text">Lab 6 & 7</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="33%"></a><br>
+</div>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken"  href="Lab 3.html"><div class="text">Lab 5</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="33%"></a><br>
+  </div>
+</div>
+</center>
+
+<div class="row">
+	<center>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken" href="Lab 2.html" ><div class="text">Lab 3 & 4</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="25%"></a><br>
+</div>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken" href="Lab 1.html" ><div class="text">Lab 1 & 2</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="25%"></a><br>
+</div></div>
+</center>
+
+<div class="row">
+  <center>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken"  href="Lab 6.html"><div class="text">Lab 10 & 11</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="20%"></a><br>
+  </div>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken" href="Lab 5.html" ><div class="text">Lab 8 & 9</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="20%"></a><br>
+</div></div>
+</center>
+
+<div class="row">
+
+<center>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken"  href="Lab 4.html"><div class="text">Lab 6 & 7</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="15%"></a><br>
+</div>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken"  href="Lab 3.html"><div class="text">Lab 5</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="15%"></a><br>
+  </div>
+</div>
+</center>
+
+<div class="row">
+  <center>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken" href="Lab 2.html" ><div class="text">Lab 3 & 4</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="10%"></a><br>
+</div>
+<div class="col-lg-6">
+<a data-flickr-embed="true" class="darken" href="Lab 1.html" ><div class="text">Lab 1 & 2</div><img src="https://farm8.staticflickr.com/7921/39656416403_d33f15266a_b.jpg" width="10%"></a><br>
+</div></div>
+</center>
+
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+  <div class="col-sm-8 col-sm-offset-2">
+    <br>Labrador.<br><br>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+<script src="footer.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
