@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+background-color: white !important;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://farm8.staticflickr.com/7864/46569457131_f4a58d035e_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm5.staticflickr.com/4901/46569456541_062f75ce8e_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm8.staticflickr.com/7886/46569455081_b4f692de3b_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm8.staticflickr.com/7840/46517945962_9ec464dbc8_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Daejeon, Daegu, Kioto</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/46569455891/in/dateposted-public/" class="darken"><div class="text">Fusion</div><img src="https://farm5.staticflickr.com/4872/46569455891_406626cc09_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Finding my way out</h4></center>
+    
+    <p>
+      There is something very sad about endings. Even if they are at last positive, then they can hurt a little bit more, especially as they drive you towards the unexpected. My parting with Korea was a bit towards the positive vibes, although seeing the vacated now corridors... the empty spaces, the schoolkids trips to KAIST and siege of the cafeteria. I could now do a few things like go up the highest tower and take some pictures, go for longer walks and discover the western part of the area of where technically few universities were located not just KAIST. Discover a bit a hill covered with trees and so obscurring of what would be an amazing view over the entire city. One paradoxically gorgeous city as it is surrounded with quite high hills and rivers, larger concentrations of water and forests. A glimpse could always be pictured even from within the city and the campus themselves. 
+    </p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Sho</h4></center>
+    
+    <p>
+      As I returned certain things, I discovered accidently what an amazing library KAIST has. I discovered even more things. I discovered Daejeon to be a really interesting city. Is it wonderful? Weeell... not quite. I've been wondering whether I should put together a post clearly about Daejeon itself but I think revealing blanks in my previous first six episodes will do better. Here, I could just express how this month, a very uncertain and full of a bit of everything actually month just sprawled off again. I don't know how else I could express that. The only times when actually something did appear, it would be the guy overseeing the building, opening my room in the morning, was it? Surprised to see me and me telling him that nah, I'm here until the last day I can. Then a few other friendly faces that I would accidently see on my walk somewhere. Some others that I did not really get to know n' all. And at least one that I did and saw a few times before, well, me seeing off eventually. It was a time of goodbyes. I saw one other person too. And a few others at the taxi stand. Surprisingly, I got to know quite a few people then! Quite amazing actually. Most of them undergraduates, so somewhat something quite surprising as well. Perhaps the exchangees from the programs to KAIST were one of the more social in the end, although it all started a bit less overall, until the field trip kicked off. Then I started seeing more local students returning to campus. Hearing students play in the rehearsal rooms and discovering a few more, of what would seem the clubs. Me just walking around and discovering what I should have discovered soon enough. Like I said at some point, this month blazed through like no-time. Some still were around, travelling, finishing their journey off. I had one other commencing very shortly. One of the reasons I go on exchange, is this sudden boost of freedom. It's like no other, one that I still did not get to experience here in Sydney in the end. Just me, being a little bit of me, ultimately I think trying to be even more of the better me and actually somehow accomplishing it. There's no substitute for such feeling. So me returning to yet another Paradise but me not really feeling as such, yeah that hurts even more and my hands were tied.
+    </p>
+
+    <p>
+      There was nobody to see me off, I think I was the last one. I think, it was actually different, I was travelling the same direction as one more person. We ate and then we took a taxi. After all, students at KAIST, they move around in taxis. Highly reminds me of one guy I know in Poland. After getting to the terminal, I had to run to get some cash, cause you can't pay for the bus with card at the bus terminals. You can at the train stations but not the bus stops and that kept to recurring many times. A friend did not have cash so I made an errand to one ATM but it was not open because the shop next to it was closed indefinitely. So I had to run to yet another ATM, which was a different one. So I ran to another which actually did work and so I returned my friend got the ticket, I saw her off and then got into mine to Daegu. I thought I'd have time in Daegu, the trip was short, around an hour and in there I seriously thought I'd have a bit of time to look around, I certainly had it to look before outside the window and the ever-gorgeous Korean landscape. But, all I could do was get lost at the massive hub, this one actually combined with the train station which ended up as a massive confusion too, as the buses would stop and take off from multiple directions. And I had no idea which one was which, except for one Korean showing with his hands that I look like Jesus. He'd know where's east and west, though. Eventually I figured that out and contemplated on the security of this place, nothing can probably ever happen when you have soldiers around, commuting from everywhere to everywhere. Daegu was a bit different to Daejeon, which was a bit different to every single other place. Daejeon was a good example of this older, oldfashioned Korea in many parts, especially outside the station where you had a bit marketplace going on. This time, I didn't get to experience that at the bus stop and Daegu certainly didn't have that view at all. Except, masses of concrete poured into this large complex, a very well sorted complex too but a bit too complex. Taking a bus to the airport was just as it was coming to the station originally. Departure? Easy.
+    </p>
+
+    <p>
+      With my flight passing over the peninsula, I had one last glimpse, I'm not sure if at Busan, perhaps some other city. A mass of sea and... sleep. Or was it? Eventually, I got another glimpse but not of Osaka. Ohhhhh how spread out an massive metropoly that was. Seriously massive, one'd say little New York, even despite I have not seen New York just yet. Just yet... This city, kept on sprawling but did not lose on its momentum, until the very end of it in KIK, which was literally an island and an airport on this Island. Here, I actually was interviewed and luggage checked by an authority. I think it was more of a, kind of a new person was being tested in terms of how she performed at arriving people, as there was someone overseeing on the side. I had questions asked, where I was, where I was going, how long I will stay in Osaka, I had to show my documents... and at some point I think I kind of did not provide the document in a ruly fashion and she dropped it. I didn't care, the guy overseeing her actually helped pick up what I dropped, so super polite people... And then I got one more question, the guy gave her a signal to let me through and I was in... well, it's not really Osaka. But soon I'd be in Kioto. In Kioto, where I reserved a very interesting place. And Kioto, which was a very interesting place. And me not knowing much about it. But once I got in... I absolutely fell in love with it.
+    </p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/46569457131/in/dateposted-public/" class="darken"><div class="text">Bugis Shopping Centre</div><img src="https://farm8.staticflickr.com/7864/46569457131_f4a58d035e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+<div class="con2">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Arrival</h4></center>
+
+<p>
+  It's quite a striking experience to put into high regards two equidistant cities, well... not so equidistant but in fact, both closer to each other than the airport itself (I just checked this, it's not true, Osaka is in the middle but I could swear the time difference of getting to Kioto compared to Osaka, was not that radically different)(which again is not true, the difference and time were in fact double, just the price was not as much more expensive). And respect both, value really highly but for radically different reasons, as if maxing out the scale leading to what I personally consider a phenomenal city to visit but somehow each managed to outperform in two radically different scales but leading towards the very same conclusion. You getting lost already? As I'm writing this, now in Oz I'm managing a heatwave, in the end my watch told me it's 30 degrees outside but felt like 37 and if that was the case, I wouldn't really be surprised if it broke the 40 threshold, turning my room into a sauna and my head with some sort of a trauma. Still, gotta write this piece and believe me, it wasn't that particularly different on the northern hemisphere, as I drooled into the Japanese-Oriental vibes in the midst of a full-blown out summer. One that I would start feeling and that would become a quite severe case at times, as I continued to visit one temple after the other, ultimately checking into a total of 9 located on the eastern part of the city. See, Kioto was already radically different in these terms, as tripadvisor was literally booming with landmarks and sights to visit. With so many and just a bit over a day and a half, I knew I would not be able to see all of it. What I would not expect, was that even by very actively compassing the eastern side, I would still fail to check into a few destinations with just so many waiting on the rest of the sides and within the city itself with the addition of quite numerous and bulky museums, and many of the pretier areas around the city itself. This stood out on the radically different path compared to Osaka, which I valued primarily due to other vantages. Ones that once I think about, just totally do not make sense, as Kioto just seems now far superior but still all-considering, I think I loved each on the very same level.
+</p>
+
+<p>
+  There were a few options for me at hand: Osaka again, Kobe, Kioto or perhaps the other way along the coastline towards Wakayama. I assume I could have actually reached any city relatively fast by train but I also pressed on keeping my finances at bay, as so far the entire trip depleted my account by a quite overwhelming sum. True, 1/4 went to pay for the KAIST program itself, the money coming as a scholarship. 1/4 were the flights themselves, I think at least, I would have to double check as these were fragmented and had extras like baggage. Then I think I'd assume it was between another 1/4-1/6 that went on even more travelling, with the rest spent on regular consumption of primarily food. One might ask what do these fractions stand for. Well... I think 4000 AU$ were sunk into this particular month. I do not tend to throw around these particular numbers but bear in mind that this particular month was very one-of-a-kind, in which I did my best at binding: studying-travelling-leisure and in the end, becoming quite surprisingly successful at all this. But each, does come at a price, especially if you're about to do all this extensively. There will be no second opportunity to do all this and I truly believe it was for the benefit, even if it did make me roll into my research semester just simply, tired but in at least one way, very content, despite some other few ways but they're always around. Kioto was a choice I have made already a while ago, as many suggested that this is the cultural centerpiece of Japan and everyone just simply loves it. And knowing that this time I will hardly be able to pull all-nighters and similar craziness, I decided to make an exception and actually book a place. Not just any place. I came across these capsule hotels in Kioto and quite discounted as well. I figured, I just need to try this. Did I mention I crashed at Kioto for a 1.5 day? Well, it kinda spanned across 3 distinct days, except on the first I arrived in the afternoon at Osaka KIX and then already evening at Kioto itself. At KIX, I left my primarily luggage so it was just me and my backpack and trying to figure out where to eat food at Kioto's maaasssivve train station. I'd say Osaka's was even more monumental than this but Kioto's seemed more functional, with actual 9 levels (!) with scattered food places and a rooftop, from which there was a limited view over the city. Still there was more and in the evening there was some quite nice projection mapping also happening. Getting to the hotel was a bit of a pain, I kind of picked the wrong bus in the process but I eventually reached the area of where I would crash at pretty much around 10 PM, just when everything was being closed down.
+</p>
+
+<p>
+  I figured, daum, no food for me then. Except I think I actually did manage to check in first, pay for the night and I was explained how the system works if I'm for 2 days, as I would have to check out and in again, although conveniently for me, I would be allowed to keep my backpack in the locker. Then, I would take a quick look around and as most places seemed closed, I surprisingly found one, well, restaurant just next door. Okay, so far I was amazed by the station, that I messed up my bus connections which have the stops scattered inconveniently everywhere and that one of what would seem as most lively commercial areas was just becoming a shanty town, all more or less distinct, with the capsule hotel definitely being one of the distinct parts but what I would have not imagined to come across, would be a restaurant in which the menu would seem so unfamiliar, that I would have a quite hard time deciding what I actually wanted to eat, knowing just that I really actually wanted to try something as most choices just seemed amazing, even if so... exotically unique. I ordered eventually some sort of a soup with noodles made of, was it, buckwheat? As the menu would indicate, as it was in English. The soup itself was interestingly thick... and the noodles semi-hard, even bit harder than expected and now, I don't remember the taste, especially that the portion wasn't large but nonetheless, amazing in the end. What they also had was deserts, which I would not know and drinks, which again I would not know. Can you imagine, going to a different country and dwelling on how you don't even know what do these alcohols here mean? It's radical, even to think that all this was even different to what I saw not that far away in Osaka. And this was even different to Fukuoka. Such massive differences between cities which are located literally in the same country, one that is not even that large to constitute such enormous disparity. And yet it was... and God how amazing it was.
+</p>
+
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/46569456541/in/dateposted-public/" class="darken"><div class="text">Chijmes</div><img src="https://farm5.staticflickr.com/4901/46569456541_062f75ce8e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Wink Wink</h4></center>
+
+<p>
+  Once I finished, I think I took a quick look around and seeing as how everything is really closed, it was time to go to sleep. Again, a very different kind of sleep. Think, this place has a lobby, which was seperated from women's space. The seperation was taken to such degree that the elevators are seperate as they take to seperate floors dedicated for men and women only. Which kind of made sense once I discovered the rest of the complex, which was literally: few floors with toilets and quite spacious capsules stack one next and on top of the other. They were really spacious which was nice, the bedding was prepared beforehand and the instructions were simple. You could even set up the 'alarm clock', which would literally just light up brightly your capsule. It does work, trust me. Another floor was basically lockers, toilets, sinks and showers and these were interestingly interconnected, presumably in case of emergencies. The design of this place was overwhelmingly great, some really amazing team had to have the pleasure of designing it all, the building itself isn't really large but it still managed to position multiple levels, many living spaces and keep them all in a very tidy manner. It was very clean, perhaps also due to them providing slippers and you'd have to keep your shoes (probably doesn't matter). But also the uniformity of all the spaces, iconography, positioning of all key places, availability of quite solid wifi (and not much available in the capsules), all seemed new, high quality and very well managed and you would also be set with everything you needed, towels that you'd dispose of at the end of the day in a basket clearly indicated. Shampoo, conditioner, liquid soap were also available (although I really need to use my own), tooth brush and toothpaste, this was practically like some form of a hotel, very closly resembling many standards offered, you'd even get a keycard operating on... QR codes. I think some people might need much more space for themselves and perhaps at more loaded times, it can get less comfy, as I was lucky to not have noisy neighbours (at all). You can't really close the capsule, just set the blinds down. But still, for me, it was just optimal. I liked it and I'd probably do it again if I could, certainly an experience worth having and I'd see these kinds being built elsewhere in the world.
+</p>
+
+<p>
+  Me going back to the airport is not that interesting. I just had to wake up early in the morning, get my stuff, prepare myself, check out and ziuu to the train station and ziuuuu to the airport, where I would be reminded to take a seat somewhere else cause I took the one that is more expensive. And I would have some decent takoyaki at the airport. But before all that I started yet another full day this time in Kioto and in this case I didn't wake up at a radically different hour either, as I had a very tight plan that I, yyyyeaaah somewhat meticulously crafted a day before. Literally how it looked like was me being: okay, here's this, here's that, let's walking like this.... And by walking like this I managed to check off most of the notorious attractions on the east side, by starting off with the east further down to the south and then after taking a train (and kinda getting slightly lost again) going back to the north east and treading back towards the middle and taking a bus downtown, where I figured I'd return perhaps back to see the sunset but got a bit late for that + the buses here, maaan I have no idea how this system here works, except that me as a tourist could not figure this out at all, at least for some buses showcased on google maps. Perhaps it's just google maps being google maps then.
+</p>
+
+<p>
+  Concentrating on visiting the sights took priority, one very pleasant change that I have noticed was how much easier it is to wander when you're actually well-rested. And as I'm writing these words I actually found out just now that in fact, I have surprisingly written some stuff about Japan and a bit more, except, I never got to finish any of it. So I'll post this part, cause I actually liked how it reads and you, the reader, forgive me for putting some very much overlapping details.
+</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://9l5iog.db.files.1drv.com/y4mcmE2dRy5u_RhUg4kZu2KGIGTIcfQI6qm8IufsYwyinTBAN7nJUPr6QRqVHCvZCGFeX_Vhag21Xg8MVc17BAQhV6MtzEQgsnKgiC-2svy6dTalHDVf53CHNIOTFUsqcE5nc7oNMHJcW59vqJ0B1kwRqZBpy6JOlvQR7o07WlFrBVd0XxjqljNAEdPx5hhV66W4CaiqXd40TUTkQwcPUwAaA?width=4032&height=2268&cropmode=none" class="darken"><div class="text">Vantage Point</div><img src="https://9l5iog.db.files.1drv.com/y4mcmE2dRy5u_RhUg4kZu2KGIGTIcfQI6qm8IufsYwyinTBAN7nJUPr6QRqVHCvZCGFeX_Vhag21Xg8MVc17BAQhV6MtzEQgsnKgiC-2svy6dTalHDVf53CHNIOTFUsqcE5nc7oNMHJcW59vqJ0B1kwRqZBpy6JOlvQR7o07WlFrBVd0XxjqljNAEdPx5hhV66W4CaiqXd40TUTkQwcPUwAaA?width=4032&height=2268&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>South Korea</h4></center>
+    My last day at KAIST was... well, it ain't was a day, literally a few hours. I made sure everything was packed etc. I even got up without my alarm ringing. A little startled still, as I was literally bankrupt for a few days, I checked whether my money pulled through... omg, it did. Citibank did a number on me this time, as it took over a full 48h to check a bank transfer, something that I did not expect to happen. I usually apply a system, which keeps me and my resources in check. Long story short, I have an account for international travels and this one will usually hold a rather smaller amount of money, just in case that I don't go crazy, no sorts of fraud could affect me substantially, so that I can control myself and so that if I ever get intoxicated a bit too much, I really won't do anything too crazy. It never really happens but hey, murphy and stuff, so better keep it organised. This time the tables have turned a bit and here I was, a day before heading back home, with 1.75$ on my account. I guess citibank decided to make a laugh on me, although I was the one who should have kept close attention to my finances as money gets siphoned fast in Korea.<br><br>
+
+    This morning everything turned out quite fine. I got up, did my thing as any morning, prepared, started marching out little, maybe more before 8 and checked out. A thing as straightforward as to telling which room you were at and pointing at a pile holding your pillow, sheets and cover. This was it. KAIST came to an end. Now, time to eat I guess at the cafeteria and meet a friend who's rolling back same as I am? This was literally the max, as many students have left on or after the 28th of July. It became so quiet, vacated that it just hit me right in the feels. Nostalgia of enormous amounts, despite that I didn't really get to know all these people here, primarily due to all the work that had to be done, as how packed the summer program was. But I knew, that a great majority of the people who did attend the Summer School, were a really great, friendly bunch. All of us were really, after all. Eventually that kicked off, especially after the first week went.<br><br>
+
+    And so, the breakfast was as breakfast. At the cafeteria. I had the typical Korean mix of dishes, consisting primarily of meat and pickled veggies. My friend had a wrap, as the Cafeteria was under siege from a great number of... who was it again? Young, high school students willing to get to KAIST? Young scientists? Yeah, KAIST really made a name for themselves and with time you start to see what studying at the best Korean Technical University really is. Not just in terms of how demanding the workload is but the name stands firm and everyone in South Korea will know the institution by its name.<br><br>
+
+    It was really sad to leave all this. Especially that I got to know the campus better with time. At first glimpse, holding nothing. I don't even know what to compare it to. It literally is an old complex but it's built to feature everything that a student might need and want to do. A high-tech, meticulously well-design Library, that makes you want to read and study? Rehearsal rooms to play instruments? A room to chill and play piano? A bar to have a few beers (that I did not manage to visit :'()? How about Karaoke? A pizza place? Wanna play pool? Or Badminton? Ping-pong? Basketball? Buy a bicycle and sell it after you leave? This time I was though and for good. A little bit further down from campus, you had a town that could be truly called a Hong-Kong. But I have never been to Hong-Kong and in fact, I have not seen such a flashy cluster of neons in my life. This entire country is built in a way, that you don't see much until you get exploring the details. Literally all the best places were hidden on various floors of buildings. The competition feels so fierce as in in no other city I have visited and they seem to manage, especially with the interior design I kept on stumbling upon.<br><br>
+
+    We took a cab to Daejeon Bus Station. It felt as if it was taking us the wrong direction. But it was me how was at a wrong, especially once it made its way closer, unravelling a painful experience of me getting lost in this city. It was really crazy the other night. It takes usually over 2 hours to get my foot from Daejeon KTX station, I know this, I made this journey a few times, as there are no night buses in Daejeon and I was too stingy to pay a taxi. The bus station in theory is closer. And I was doing well but decided to bounce back from doing well due to my hunch that there must be somewhere a river that I never crossed. Ultimately, spending an entire night at a highrise university building located somewhere in the eastern part of Daejeon. Oh well. This time, at the terminal, there was a problem with paying by card. Literally, at no bus terminal in South Korea, was I able to pay by card. So what I had to do, go find a 7-eleven to withdraw fee-free money. I reached one 7-eleven, with the right Lotte ATM but the establishment closed. I ran to the next one, with the wrong ATM and then the next, that had what I needed. Enough cash to get us both moving, in seperate directions<br><br>
+
+    South Korea is a gorgeous country. One might easily fall in love with all these mountain chains, hills, rivers and lakes. Just how wonderfully it is all arranged and composed with urbanised areas, infrastructure and literally just highrises popping out of nowhere. This is a country with a population, well not that radically larger than Poland, but highrises popping out of nowhere was news, culture shock let's say to me. And then they've got a shitton in cities, especially Seoul of which metro hosts half the country. I'll put it again, half - the - country. This is impressive by any standards. This is almost like the entire population of Australia. It's scary a bit. What if the war between Koreas goes out? I'm not sure if a humanitarian catastrophe of such both large-small scale ever really happened.<br><br>
+
+    I was looking forward to exploring Daegu but it turned out I would have not had enough time, so I just looked around their massive complex pertaining of a train station, bus terminal, shopping mall, a park and who the hell knows what else was there. I actually got lost a few times so I really had to pick up the pace to get to the airport. And there, the quite straightforward check-out process, me leaving my luggage, going through the processes, I think I had a toast or two, quite interesting as they were sweet and salty. And voila, I'm out of Korea.<br><br>
+
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://9l5iog.db.files.1drv.com/y4mcmE2dRy5u_RhUg4kZu2KGIGTIcfQI6qm8IufsYwyinTBAN7nJUPr6QRqVHCvZCGFeX_Vhag21Xg8MVc17BAQhV6MtzEQgsnKgiC-2svy6dTalHDVf53CHNIOTFUsqcE5nc7oNMHJcW59vqJ0B1kwRqZBpy6JOlvQR7o07WlFrBVd0XxjqljNAEdPx5hhV66W4CaiqXd40TUTkQwcPUwAaA?width=4032&height=2268&cropmode=none" class="darken"><div class="text">Vantage Point</div><img src="https://9l5iog.db.files.1drv.com/y4mcmE2dRy5u_RhUg4kZu2KGIGTIcfQI6qm8IufsYwyinTBAN7nJUPr6QRqVHCvZCGFeX_Vhag21Xg8MVc17BAQhV6MtzEQgsnKgiC-2svy6dTalHDVf53CHNIOTFUsqcE5nc7oNMHJcW59vqJ0B1kwRqZBpy6JOlvQR7o07WlFrBVd0XxjqljNAEdPx5hhV66W4CaiqXd40TUTkQwcPUwAaA?width=4032&height=2268&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Ilbon</h4></center>
+    Okay, time for Japan vol. 2. Actually 3, as I managed to visit two cities so far: Osaka and Fukuoka. Especially the latter turned out as surprising, nothing quite special but I should have made more ground-up research beforehand, as I honestly thought I'd be hitting a town or something. Hesus, how wrong was I, especially after departing to Korea, when I took 6 minutes of a mesmerising cityscape. But still, there wasn't too much but the food was honestly quite good. Although, Osaka was king at the time.<br><br>
+
+    So there was Osaka and now time for... Kyoto, was it? I had a little bit over a day, likely amounting to two. Many have especially recommended me visiting Kyoto. Even Tripadvisor said: go to Kyoto, cause there's nothing in Osaka. Well, I still loved Osaka. It was just this crush against my own vision and expectations with a view of something that was truly different but great on its own to the extent that made me think, whether living in this country wouldn't be a great idea now. Now, imagine how different Kyoto could be, that it sort of did the very same number on me, except it was again radically different from Osaka now. But in the end, it sort of almost become my favorite city, I would verify this if only I had more time.<br><br>
+
+    So, the rolling in process was almost same as before, quite straightforward. Just, at immigration, this time it took slightly longer, as I was being shown: 'hey man, do you have any of those?', paraphrasing of course but asked in such ridiculously calm tone by the lady checking me, that I just almost as ridiculously replied 'no I don't have any of those', with following questions asked in relation to whether I have any gold, if she could see my bag 'which one?', 'this one', my wallet, which she cleaned before inspecting, asking questions which time was it for me in Japan etc. Then I went through, had to withdraw money from 7-eleven bank, get into a long queue to get my Haruka ticket to Kyoto, pack myself into a train once it got cleaned and Ohayo Japan! Once again, now what the hell am I supposed to see in this country?<br><br>
+
+    Yeah, so I should have remembered they had these pages or sth for visiting Kyoto, although I sat at the first row and didn't have the opportunity to see them at first. Especially with the amount of luggage I was carrying on my back and forth(back?). Tripadvisor said, 'hey man, you've got temples here'. 'Okay man, what else you got'. 'Well... temples. And tours.', 'No tours, show me something interesting'. 'Well, we've got temples...'. Yeah, actually at first that was not the first impression I received but I definitely saw, that there is plenty to visit in this city and wondering as to whether I will be able to see it all. I did a bit of research this time beforehand but once I entered Kyoto, well, heck, again they've got a garganteously monumental train station. I don't honestly know what's with Japanese and their train stations but if there was a special type of temple mankind could build, well, here you go. These places are truly mega and to try to illustrate that, I was looking for food in the area and it recommended me a place... on the 11th floor of the station, which still took me 15 minutes to figure out how to reach it. And on my way back I could not find easily from where my train was departing, again around 20 minutes of wandering around. And still, the foodplace was surrounded by people queuing up to eat, so I had to leave to get some sleep.<br><br>
+
+    
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://itpc8w.db.files.1drv.com/y4md1o6AaF5qOIiLaUGtcN_824pVbTu0NBGWfdA4-RSxpKJ8LT1Gnfak83Gi1qM2xQbu1tIE4gZz64TQMzdyVLsIHw7kfUR0APSXdKDGaT4_j53A6W_SEZcpjfCi9j9alQYS6M2QeIrf4pkSfFcTL4TLjixbhDSLjKvEmntk8j5121Cd5IUrjSzwn7EJrSOACo6fyIhX8HtCa2VBatu5MNvQA?width=4032&height=3024&cropmode=none" class="darken"><div class="text">Here's some food</div><img src="https://itpc8w.db.files.1drv.com/y4md1o6AaF5qOIiLaUGtcN_824pVbTu0NBGWfdA4-RSxpKJ8LT1Gnfak83Gi1qM2xQbu1tIE4gZz64TQMzdyVLsIHw7kfUR0APSXdKDGaT4_j53A6W_SEZcpjfCi9j9alQYS6M2QeIrf4pkSfFcTL4TLjixbhDSLjKvEmntk8j5121Cd5IUrjSzwn7EJrSOACo6fyIhX8HtCa2VBatu5MNvQA?width=4032&height=3024&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>And so../</h4></center>
+
+<p>
+  I got this out of the way? Cool. Well, in such case lets get down to brass tacks. It is important to stress a few things: that I don't remember what I have eaten this morning. For all I care I could have had nothing, especially that everything seemed still closed shut along with people still asleep or just setting up their stores. See, I have been located a little bit north east from the station but it seemed still like sort of the center of Kyoto, in the end I was located right next to one of the what would seem as busier streets. One that is filled up to the last meter by enterprises, at least along it and deeper up north, it was just simply one of the distinct Japanese malls, mixed with local and international brands selling a vast majority of whatever your needs were, especially if you were a tourist. Here later today I would discover Wendys, closed Ramen and same-grade yet highly occupied joints. Shrines squeezed between the continuation of stores, as if the Japanese not only cared about the natural landscape but also the cultural one, although I can't judge like this, as the mall did feel as if it dated way back. It wasn't in fact a mall in a western sense, more of a crossover between a mall and a market, from the outer outlook more like a market but instead of stalls you'd have those burried and carried out as in like a typical store or joint that you'd find at any mall. I somehow prefer the Japanese type, it just feels more down-to-earth, certainly not as artificial and open-space, which has the bad in terms of the lack of air conditioning but makes it up with the natural flow of people in and out and fluid transitions to other alike areas, extension of the so-called mall but what would seem as even more local, not to mention the scattered at the back and corners of these smaller joints, which made it a bit of a pleasure for anyone would like to discover every, bits and pieces scattered around. I'd constitute myself as one of those.
+</p>
+
+<p>
+  But in the very morning there was a dire lack of people projecting over the shutdown shopping district of Kyoto. Some cars pulling through, also do you recall perhaps of a certain contemporary but of yesterday's image of Japan? Of the bit older cars, industrial lamps, extensive cabling above the streets, just as if an area just stopped in a yesterday's era? Well this district certainly looked in such way. I don't know of many reference titles to which I could compare this too, perhaps Man in the High Castle had it depicted alike, although in this title it was much more dirtier which contrasted radically with how Kyoto actually was. Remember me mentioning how Osaka was clean? This did not change with Kyoto or mentioned Fukuoka in any length, which brought along some other issue: lack of trashbins but that you could always cope with somehow, usually by dropping by a convenience store. What was a bit different, was the visibly lesser amount of vending machines that I would stumble upon but perhaps that was due to me being deep in the city. Although bit outside on the outskirts, it was still a more moderate view to have. Another thing I did not mention, was that what they usually sold at these vending machines usually didn't really derange much in case of pricing compared to regular convenience stores and I did not have an opportuntiy to visit a typical supermarket in Japan, just a bit larger store in Fukuoka but like I mentioned, still the prices seemed alike.
+</p>
+
+<p>
+  I took a longer walk east. The interesting thing, surprisingly, as I found were the back alleys of Kyoto. One of them, I lived at. But many of them seemed, well, like normal backalleys, except most of them were built in an alike manner and did not generate much of vehicle presence. At some, there was additional vegetation and the blending of the urban and natural was quite exciting, at times creating very photogenic moments. Very soon I would reach a bridge and have a much wider outlook over the area. Japan is one of these beautiful countries, which are well, literally a archipelago, bit more massive with each island but also with hill and mountain ranges. You could see much of this from this open area, even actually by walking along the commercial district you'd see those larger masses popping in the horizon. That showcases yet another, in this case good urban decisionmaking, as the street here tend to be quite straight and settled in a form of a checkerboard. Due to this, wherever you go, you'll have a chance of seeing what's at the end of each street. I expect that is also due to good air quality, as expected from, well, Kyoto is not a coastal city but to be fair, most of the cities in Japan are at least close to the coast and the mountains. They do look amazing from above and enable its residents to thrive. I'm not aware of Japanese inner politics but the society does seem to work in a very organised and nature aware formula. Korea was a bit different to this, while bins would not be ubiquitous (at least not in all cities), you could come across a bit of dirtiness and throwing out trash in piles at some corners. That, I'd assume you would never come across here, not sure if across entire Japan but certainly the cities I came across.
+</p>
+
+<p>
+  I think I'm broaching the topic of nature a bit too often. I wouldn't consider myself a person crazy about eco and sustainability ideas, vegan, much to the green left, recycling and all this but I certainly do respect elements or at times as whole some ideas that consist of the aforementioned. Especially once I see them enforced and due to my knowledge, I just see the radical difference that the presence of nature makes on the urban world. I think any of us would not hesitate to prefer living in an unpolluted environment, where the air and streets are clean, tap water is safe and drinkable and where plants brighten up and soothen our senses. But that having said, I did not experience as much of a fresh approach to the food culture during my time here in Japan. This agitates my other senses and just makes me think that they must have some other system in motion, 'cause Japan certainly does have farmlands and what they do serve at stores does seem to be fresh, think - sushi, you'd hardly get any fresher and better at a just regular store anywhere in the world, except for Japan.
+</p>
+
+</div>
+</div>
+
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/46569456541/in/dateposted-public/" class="darken"><div class="text">Chijmes</div><img src="https://farm5.staticflickr.com/4901/46569456541_062f75ce8e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>The view/</h4></center>
+
+<p>
+  The view from the bridge wasn't extremely stunning, ot, just a river with a nice outlook to the primarily east and north, showing the glory of larger land masses. Then I had to keep going east, go through the underground passage and eventually go along a temple area's walls, also deprived of living souls around but having some conducting rituals, looking like some Budhhist rituals. Here it was my first time, seeing now the really distinct Japanese architecture, with primarily the... oh man, how do I describe this. Bit bent and subtly rolled up roof tiles, stone obelisks, plain although subtly decorated with wooden planks white walls, which seemed thin and made of something I would not know, I'd assume wood again. Trees around, rocks and stones positioned purposefully to create as if natural walkways... main pathways filled with gravel... man, these were temples, what do you expect me to say, imagine yourself a typical Japanese temple. But then again, these were temples that I was visiting for most of the day, so weltschmerz and broken heart affecting my aching mind of how amd I going to keep driving my words to describe all of those temples, especially that in many cases I could get away by just saying that words cannot describe of what I here discovered. Except that they do and can and anyone saying they can't are looking for a cheap way to deter from what would be a meaningful conversation or... a blog post. Pictures can do a better job of describing all this. No doubt there but man, I wish I kept learning English now at C2 level, as then I would have all the vocab to burry you with. Living abroad and even English-speaking countries does not make you detail-proficient unfortunately, rather dilutes what you have learned in the end. Sad reality, that does not always replicate from person to person.
+</p>
+
+<p>
+  One of the problems I have been encountering this early morning was how to really interact with the environment, as in, I was at a temple and I was not entirely sure what the code of conduct was. I guess as long as nobody's yelling at me, it is fine, or crossing their hands which would mean haram in one of the languages originally spoken in part of my ancestors' land. Visiting the temples in the early morning has some nice vibe to it, for once, not that many people around. Two: the monks are conducting their ceremonies, bit limited, not sure if I was really allowed to watch them but still I guess they're more focused on what they're doing rather than a bearded entity just wandering around. All this changed later in the day as tourists were waking up. Despite Japense summer can deliver quite some heat, none of it deters tourists from swarming in, as people have discovered over the years just how much of a different amaze and cultural distinct this country delivers. But between 6 and 10, I was quite safe still and so to accommodate my time, I'd start gliding towards one of the main attractions of the city - another temple (hehe).
+</p>
+
+<p>
+  From all of the ones I discovered, this one had one of the more pleasant paths leading to it. Perhaps it was just me, who decided to take this route and it turned out to be something what any tourist would travel for the mere sight of. Again, how should I put this... it all started in a rather innocent way... (daum this reads like an interlude to some other sort of a blog) Secluded entry to the netherworld. Okay, that's taking it too far but then, does anyone recall My Neighbor Totoro or Alice in the Wonderland? Even The Chronicles of Narnia when the character proceeds to enter through some sort of a, lets call it a vacuum. Except, that this was no vacuum, just a simple pedestrian walkway that was squeezed between walls that seemed to reach even much further back than the industrial era streets next to which I was living at. Trees popping up above them and me just hovering around, glancing between up ahead and google maps to figure out whether I am actually on track to somewhere or nowhere. Eventually the path leading me to another distinct area that seemed associated with the rather way back era feel, because from walls, traditional Japanese buildings started popping up but like, really traditional as in, imagine European quaint villages up at the steppes of a mountain and the markets they have embuilt in the also traiditonally wooden buildings. And try to adapt this sight to the Japenese setting, that's what I was encountering here and considering there was hardly any soul around, the feel was truly magical. So magical, I got lost into some alleyway which lead me to a hidden graveyard. I'm not going to talk about graveyards, as much they differ here just as much as any country in some ways always. But I would soon discover, that the Japense, at least here, do establish graveyard at the outskirts but such that seem as vantage points over the city, as in orientation point. These might have to do with the shrines located at similar, adjacent locations. The path here was also quite a bit uncanny, yet another narnia form with plenty of greenery around. Except this was no narnia.
+</p>
+
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/46569456541/in/dateposted-public/" class="darken"><div class="text">Chijmes</div><img src="https://farm5.staticflickr.com/4901/46569456541_062f75ce8e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>The view/</h4></center>
+
+<p>
+  After finding my way out I would get a bit more upwards and eventually at the temple with a very vibrant Orange rooftop. This is a very well known destination, very often pictured by others to depict Kyoto. Just a small chunk here was really available for free, if you wanted to see more, you'd have to pay a bit which I did, opening me to a bit larger area to discover. The main temple was being renovated but past that, there was a good view over the city, the back of the temple and a bit deeper which would be the more foresty area, which would span along a road leading towards what would seem as a hiking route, except I'm not sure if the ticket really covered that. I guess what I'm getting at is that there was a bit to see and that the entry and exit points were a bit lax in terms of how they were secured, in fact exiting literally lacked any form of security. I think on my way to this destination I passed through yet another temple but there wasn't much to see, due to the temple being closed early in the morning but there was a nice view over the city. From the other temple I just described, the view was quite vast and the case would remain for this trip, not for all, as some temples in the east side were located a bit closer towards the city but some would be established more up the mountains, have additional constructs that allowed you to have a great vantage point view and one, later on, which would literally have points hidden deep in the mountains and despite not having much of a view for most of it, at least two destinations allowed for a very nice, broad view over, well, in fact most of Kyoto and further to the western ridges.
+</p>
+
+<p>
+  The distances were killing me a bit, the battery in my phones eventually too as I had to pay close attention to my google maps for a lot of the time. Bouncing between the temples was a bit of a hassle, at times I would have to pay for the entry, at times not quite. Usually you would get a substantial extra once you decided for the prevalently low extra fees, except in my case these would be recurrent so in the end, I would have ended up squandering a lot for just short bursts of eye candy. I don't think there was one ticket to buy which would cover many of these areas as one. Perhaps there was but I did not dig deep enough. Well it was what it was. At some destinations you had to take your shoes off and taking pictures was strictly forbidden. Some destinations were just average but every single each did differentiate from others in some way. The colour of the details of the buildings, their size, deatils themselves, garden population and cultivation, spread of the temple areas, additional objects and accommodation of the terrain. I would eventually come across one area, which seemed to have an aqueduct. I was like, what is it doing here, I thought it was a Roman invention? At some other temple I would get blown away by how the vegetation was cultivated, despite being full-on summer, the bushes, trees and others would be arranged, what would seem as naturally with a breadth of colours, as if it was autumn already. No idea how they managed that, except that it was fantastic to gaze at and I guess contemplate, which would be likely the purpose of it all. The one where photography was forbidden had, what it seemed, like a thousand Buddhas. Incredibly arranged and ultimately authentic, perhaps the lack of photography was due to maintance after all. Or perhaps due to not bothering religiously but did they have camera sensors back in the ancient times? I wonder?
+</p>
+
+<p>
+  The number one destination proved to be a little underwhelming and that was due to a crazy amount of tourists. I mean it, it felt as if most of the people travelling decided to ultimately pop up here because... it seems it's nr. 1 destination on tripadvisor. I ate first here, being hungry by not eating breakfast and walking already for quite a bit. Then eventually discovering this place which was in fact a complex covering a massive amount of land. What was very different about this one had to do with colour Orange and Pillars. Orange Pillars arranged in line in the number of tens or hundreds. And these would continue at times for just a bit or for longer, depending on whether you decided to keep to the entrypoint of the destination or... climb, which I've done. This took me a bit nowhere, except for an area where it seemed as if a firm line between a normal leaflike forest and a bamboo forest. Now that's quite something. Except that I have been walking kilometers not knowing whether I am eventually going to end up somewhere or not and I was starting to get thirsty and tired, no caffeine no energy you see. As it turned out, the area you spit me out at a higher ground, some deceptive crossroads with a vending machine that was powered... yeah, I had quite a bit of riddle to crack as how secluded this machine and the house it was next to, I had no idea how each was being powered, no solar panels nor cables in powercables in sight. I kept climbing, coming across some smaller as if remote venues or lesser shrines and as I kept on climbing to what would seem as a mountain overall, getting all covered in sweat in the end and sad that it took me nowhere, just to another shrine but also a shop selling cans with caffeine and water, I continued to just walk as a map disclosed that I was at the other end of this complex and that the oriention points were, well, closer to the entrance. After passing some stops... well, I'd like to clarify this except I don't know how. It seemed like a long religious path in the end that is nowadays swarming with tourists, see. It had checkpoints, partially functioning as commercial and partially as religious establishments. And at some point I popped out at a place with a good view but as not good enough, I climbed a bit more north and reached a place I was in theory not supposed to enter but overlooking a serious scour of Kyoto. There was one more vantage point that I discovered later, at the so mentioned temple with a majestic as if autumn-like cultivated garden but this here was a really cool sight. 
+</p>
+
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/46569456541/in/dateposted-public/" class="darken"><div class="text">Chijmes</div><img src="https://farm5.staticflickr.com/4901/46569456541_062f75ce8e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Rolling back/</h4></center>
+
+<p>
+  I was rolling back in a bit of a weird fashion. On one hand my legs were dying. On the other, the time was pressing too. I had to skip some museums that I discovered on the way. Interesting temples that had AC and wifi (I think I chilled at one for a moment, though). I had to take public transport, in this case a train to reach more temples bit more up north now and discovered that while the roads are constructed well, the trains are a bit wobbly and interestingly all over, yet extremely reliable. Another conundrum I had was, how exactly did I pay for all this. I think I had some sort of a sweet Helo Kitty like public transport card in the end. And a bit of credit to use too. I passed over a bit quieter destinations now, with the other mentioned temple with an aqueduct. Kind of, now perhaps not so traditional but in a way yes but also modern suburban Kyoto. The one that is actually quite nice to walk along and through and that was mixed with some of the other tourist destinations, again temples but also embuilt gardens. There was some elevated ground with unused railtracks, which didn't quite seem like railroad but as if, perhaps remnants of the mining industry in the area with young people doing their thing by socialising. The elevation lead to some sort of a river/canal, which looked really nice. I was running a bit short on time, so I just walked along and took a bus towards the area that I belonged to for the time being.
+</p>
+
+<p>
+  After I came back, I decided to look a bit around, get a bus to get a vantage point and see the sunset but as the bus never came and the sun started already going over the horizon, I figured, hey I'm gonna get some amazing matcha ice cream sold by what would seem as early age girls, then I would go along the commercial alley and I think I just looked around the market, ending up in a ramen spot which was fair (I had better). Once I saw my funds were almost gone (again), I went back, got some stuff at 7-eleven, did my evening chores and gone to sleep. Waking up in the morning, taking a stroll around and then back to catch a bus and a train to the airport I was looking back on this amazing city, which in the end cannot be entirely described in words. In the end I did not convey it entirely in the proper fashion as literally what it was, it was the quintessence of difference but in a very positive way. One that you could fall in love with and which made me think that one day, I'd like to perhaps move here, once I learned enough of the culture, customs and language. And with coming months, after getting accustomed with a bit more of the culture, which seems to be consumed internally and increasingly envied internationally, the hype is getting even more real, reaching new highs and pushing me to dropping ball on all this, because of how much time it is devouring from me.
+</p>
+
+</div>
+</div>
+</div>
+
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
