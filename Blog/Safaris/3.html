@@ -186,11 +186,15 @@ function getRandomImage() {
   <center><h4><p style="margin-top:15px">Hatching</p></h4></center>
     
     <p>
-      So, to start this part, I wanted to clarify a few things. First of all, creating projects in Arduino environment is hard. And it is not hard just because of the syntax and what you could do to program in this environment but just that you don't always get what you want and what you usually end up with is something that just kinda works or doesn't work and you have no idea why. Life in programming, in short. Then, think about adding animals into the mix, how do you really design for them? How do you design to imitate them? Now, the first part is tricky enough but designing to empathise with them is some form of an abstraction, that I love to think about but actually executing a meaningful project? Hell, that is not easy at all. And to throw on top of it all, my sparkfun kit just does not cut it. The 5$ ultrasonic sensor, is bad. Many other modules I have? Are bad too. Harbouring the kit across the world, I figured would be a good idea but then it turns out it all is just simply not enough. Also, I am still doing orientations for the fabrication labs (at that time) So come to think of it all, I had a mission impossible, especially that I read 'no presentations in powerpoint/keynote' as a challenge (and I loveeee challenges!), so I decided - to do a presentation but in front-end with a js library. Which was fun but rrrrreally time consuming and naturally it deterred me from doing what needed to be done. And what needed to be done? Well. The rest!
+      So, to start this part, I wanted to clarify a few things. First of all, creating projects in Arduino environment is hard. And it is not hard just because of the syntax and what you could do to program in this environment but just that you don't always get what you want and what you usually end up with is something that just kinda works or doesn't work and you have no idea why. Life in programming, in short. Then, think about adding animals into the mix, how do you really design for them? How do you design to imitate them? Now, the first part is tricky enough but designing to empathise with them is some form of an abstraction, that I love to think about but actually executing a meaningful project? Hell, that is not easy at all. And to throw on top of it all, my sparkfun kit just does not cut it. The 5$ ultrasonic sensor, is bad. Many other modules I have? Are bad too. Harbouring the kit across the world, I figured would be a good idea but then it turns out it all is just simply not enough. Also, I am still doing orientations for the fabrication labs (at that time) So come to think of it all, I had a mission impossible, especially that I read 'no presentations in powerpoint/keynote' as a challenge (and I loveeee challenges!), so I decided - to do a presentation but in front-end with a js library. Which was fun but rrrrreally time consuming and naturally it deterred me from doing what needed to be done. And what needed to be done? Well. The rest!<br><br>
+
+      More updates coming rrrreal soon.
     </p>
 
       </div><br>
 </div>
+
+
 
 <div class="row">
 <center><h4>Arduino Code</h4></center>
@@ -393,6 +397,293 @@ void onBluetoothDataEvent(String who, byte[] data) {
     <a href="https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater" class="darken"><div class="text"><center>Humans<br></center></div><img src="https://kabh2g.by.files.1drv.com/y4ms1kLBZxQzHCct4zHChSo0UnRDR6H4JJ7gnbISsmv-7nB--0m0a7THIlp5QxnjIzb-IUBcaimRl4jam1V2mn7eb9PelQ4oZcFx_Q6eyG2TDCiDAqee9z53Ib1wI70u90DmFDnnnKP1Z47c6GXdEs5e3iquxznIIGAvyyJ-q28XuCs3n88Kxx1-N3Bf-BE_SeQVhW-qWmoUeFCA5C5hgpj2A?width=2297&height=1798&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
 </div> -->
+
+<div class="row">
+<center><h4>Processing Code (Reworked)</h4></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 noborder">
+<pre>
+ import ketai.camera.*;
+import ketai.cv.facedetector.*;
+import ketai.ui.*;
+
+//import blobDetection.*;
+KetaiCamera cam;
+KetaiVibrate vib;
+
+//BlobDetection theBlobDetection;
+boolean newFrame= false;
+
+String[] img = {"roo1.png", "emu1.png", "quokka1.png"};
+PImage[] images = new PImage[img.length];
+
+PImage myImage;
+int MAX_FACES = 1;
+KetaiSimpleFace[] faces = new KetaiSimpleFace[MAX_FACES];
+
+int handle;
+int k = -1;
+long[] pat  = {5, 125};
+
+void setup() {
+  
+    for (int i=0; i< img.length; i++) {
+    String imgs = img[i];
+    images[i] = loadImage(imgs);
+  }
+
+  orientation(PORTRAIT);
+  //cam.setCameraID(0);
+//destimg = createImage(640, 320, RGB);
+  vib = new KetaiVibrate(this);
+  cam = new KetaiCamera(this, 640, 320, 30);
+    println(cam.list());
+    cam.setCameraID(1);
+// img =new PImage(80,60);
+//  theBlobDetection = new BlobDetection(img.width, img.height);
+//  theBlobDetection.setPosDiscrimination(true);
+//  theBlobDetection.setThreshold(0.2f); // will detect bright areas whose luminosity > 0.2f;
+//theBlobDetection.setBlobMaxNumber(1);//Max blob detected = 1;
+
+cam.start();
+
+ }
+
+void draw() { 
+  imageMode(CENTER);
+  background(0);
+  
+  pushMatrix();
+  translate(0,640);
+    rotate(-PI/2);
+image(cam, 0, width/2, 640,480);
+  faces = KetaiFaceDetector.findFaces(cam, MAX_FACES); 
+popMatrix();
+
+current();
+FaceDetection();
+
+  imageMode(CORNER);
+//cam.loadPixels();
+  roo();
+emu();
+quok();
+
+if (k==-1){
+    textAlign(CENTER);
+  textSize(width/20);
+  text("How will an animal react to you?", width/2, height/16);
+}
+  }
+
+//void onPause()
+//{
+//  super.onPause();
+//  //Make sure to releae the camera when we go
+//  //  to sleep otherwise it stays locked
+//  if (cam != null && cam.isStarted())
+//    cam.stop();
+//}
+
+void onCameraPreviewEvent()
+{
+  cam.read();
+  //  cam.manualSettings();
+  newFrame = true;
+}
+
+int vale;
+int vale1;
+int vale2;
+boolean valeCounter = true;
+boolean valeCounter1 = true;
+boolean valeCounter2 = true;
+
+void roo() {
+  
+  if (valeCounter==true){
+    vale++;
+    vale++;
+    vale++;
+    vale++;
+    vale++;
+    if (k==0){
+      tint(255,0,0);
+    }
+    image(images[0], width/7,height*6/8,100+vale,100+vale);
+    noTint();
+    if (vale>150){
+      valeCounter=false;
+    }
+  }
+  else if (valeCounter==false){
+    vale--;
+    vale--;
+    vale--;
+    vale--;
+    vale--;
+        if (k==0){
+      tint(255,0,0);
+    }
+        image(images[0], width/7,height*6/8,100+vale,100+vale);
+        noTint();
+            if (vale<150){
+      valeCounter=true;
+    }
+  }
+  //fill(#7ED321);
+  //rect(width/7,height*6/8,width/7,height/8);
+  //textAlign(CENTER);
+  //textSize(width/20);
+  //text("Kangaroo", width/7, height/8);
+
+}
+
+void emu() {
+    if (valeCounter1==true){
+    vale1++;
+    vale1++;
+    vale1++;
+        vale1++;
+            vale1++;
+                if (k==1){
+      tint(255,255,0);
+    }
+    image(images[1], width*3/7,height*6/8, 100+vale1, 100+vale1);
+    noTint();
+        if (vale1>150){
+      valeCounter1=false;
+    }
+  }
+  else if (valeCounter1==false){
+    vale1--;
+    vale1--;
+    vale1--;
+        vale1--;
+            vale1--;
+                if (k==1){
+      tint(255,255,0);
+    }
+        image(images[1], width*3/7,height*6/8, 100+vale1, 100+vale1);
+        noTint();
+            if (vale1<150){
+      valeCounter1=true;
+    }
+  }
+  //fill(#7ED321);
+  //  rect(width*3/7,height*6/8,width/7,height/8);
+  //textAlign(CENTER);
+  //textSize(width/20);
+  //text("Emu", width*3/7, height/8);
+}
+
+void quok() {
+      if (valeCounter2==true){
+    vale2++;
+    vale2++;
+    vale2++;
+        vale2++;
+            vale2++;
+                if (k==2){
+      tint(255,0,255);
+    }
+      image(images[2], width*5/7,height*6/8, 100+vale2, 100+vale2);
+      noTint();
+          if (vale2>150){
+      valeCounter2=false;
+    }
+  }
+  else if (valeCounter2==false){
+    vale2--;
+    vale2--;
+    vale2--;
+        vale2--;
+            vale2--;
+                if (k==2){
+      tint(255,0,255);
+    }
+    image(images[2], width*5/7,height*6/8, 100+vale2, 100+vale2);
+    noTint();
+                if (vale2<150){
+      valeCounter2=true;
+    }
+  }
+  //fill(#7ED321);
+  //  rect(width*5/7,height*6/8,width/7,height/8);
+  //textAlign(CENTER);
+  //textSize(width/20);
+  //text("Quokka", width*5/7, height/8);
+}
+
+void current(){
+  if (pmouseX > width/7 && pmouseX < width/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){
+  k = 0;
+}
+
+else if(pmouseX > width*3/7 && pmouseX < width*3/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){
+  k = 1;
+}
+
+else if (pmouseX > width*5/7 && pmouseX < width*5/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){
+  k = 2;
+}
+
+else if (pmouseX > width/2-320 && pmouseX < width/2+320 && pmouseY > 240 && pmouseY < 720){
+  k = -1;
+    fill(255,255,255);
+    text("Nah, that's you, click an animal", width/2, height*8/16);
+}
+}
+
+void FaceDetection(){
+if (k >= 0 && k<= 2){
+  for (int i=0; i < faces.length; i++)
+  {
+      imageMode(CORNER);
+    //We only get the distance between the eyes so we base our bounding box off of that 
+    //rect(faces[i].location.x, faces[i].location.y, 2.5*faces[i].distance, 3*faces[i].distance);
+    image(images[k], faces[i].location.x+320, faces[i].location.y+240, 2.5*faces[i].distance, 3*faces[i].distance);
+    println("Face Detected!");
+    
+    
+    if(k==0){
+    vib.stop();
+    vib.vibrate(1);
+      textAlign(CENTER);
+  textSize(width/20);
+  fill(255,0,0);
+  text("Kangaroo?", width/2, height/16);
+  text("IT WILL FIGHT YOU", width/2, height*8/16);
+}
+
+if(k==1){
+    vib.stop();
+    vib.vibrate(100);
+      textAlign(CENTER);
+  textSize(width/20);
+  fill(255,255,255);
+  text("Emu?", width/2, height/16);
+  text("IT WILL RUN LIKE HELL", width/2, height*8/16);
+}
+
+else if(k==2){
+  vib.stop();
+      vib.vibrate(10);
+        textAlign(CENTER);
+  textSize(width/20);
+  fill(255,0,255);
+  text("Quokka?", width/2, height/16);
+  text("It will wanna HUG you!", width/2, height*8/16);
+}
+  }
+}
+}
+
+  </pre>
+</div>
+</div>
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2 panel">
