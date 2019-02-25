@@ -162,6 +162,14 @@ function getRandomImage() {
 
 </script>
 
+    <link rel="shortcut icon" href="SafariUnity/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="SafariUnity/TemplateData/style.css">
+    <script src="SafariUnity/TemplateData/UnityProgress.js"></script>
+    <script src="SafariUnity/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "SafariUnity/Build/Safari Unity.json", {onProgress: UnityProgress});
+    </script>
+
 </head>
 <body onload="getRandomImage()">
 <script src="navigation.js"></script>
@@ -287,6 +295,49 @@ Based on the readings, frameworks seem to need to be developed for the assessmen
 </div>
 </div>
 
+<center><h1>Research</h1></center><br>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
+<p>
+  Some research was previously conducted around the theme of Kangaroos, Wallabies and other endemic species of Australia in conjunction with the idea of core theme of Enrichment itself.
+</p>
+</div>
+</div>
+
+<center>
+<iframe src="4.html" width="80%" style="height:50vw"></iframe>
+</center><br>
+
+<div class="row">
+<center>
+<div class="col-lg-8 col-lg-offset-2">
+<a data-flickr-embed="true" class="darken"  href="Blog/Safaris/5.html"><div class="text">That's next level</div><img src="https://jkbf2g.by.files.1drv.com/y4mC2yicjLdcIC81PvfCTwQpai7rQv18T3SVS5NnvbOhbVmr9KuhuyG1qYKdcdlKMJPXJ3H9b9g1xIt-8d3LfTYp2r4LLm68IY93qYhLT1Ud19WMZ6FytxubMfbHf6ySoREttlNBv3bb_6fp-N9Z6ckQHjIn-mntqTUQV8F8CBSCqhvIsqW6W3u59DcLJOu_1_dQG1Bohw1b6oqHFyD3RN5XQ?width=3240&height=1819&cropmode=none" width="75%"></a><br>
+</div>
+</center>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
+<p>
+  Following up on Harpreet's proposed source of postdoctoral research conducted at University of Melbourne by Sarah Webber, in line with the mixed reality idea suggested for Enrichment II for Design in Safaris, I read into the details of how mixed reality was introduced to Orangutans. This is almost exactly what I am proposing, although at a limited degree and for non-human species that are very closely related to humans themselves, which seems to entail a focus on interaction and having the technologies introduced at limited capacity as opposed to Enrichment II idea of turning an entire room into a rather static, yet still mixed reality environment. At this point, I have a hunch that introducing dynamic elements into the place will generate natural anxiety in animals, triggering a fight or flight response, which may be different for those kept in enclosures. Although at this point I assume all animals kepts at Zoos are in fact wild animals, non-domesticated.
+</p>
+
+<p>
+  Related work could include Koko, which (it feels weird by saying it but I guess you could call it a lifelong) project in which a Gorilla was raised, technically by a human and taught as much as thought best in terms of how to communicate, primarily by the use of sign language. I believe in terms of cognitive capabilities these species are related, to humans as well and therefore more aware and as showcased during one of the lectures, they can exceed in certain tasks compared to humans, such as selecting a series of numbers in a sequence that are scattered across a monitor after showcasing which is which for a fraction of a second (as I believe it was?). It may be worth exploring how other animals react to mixed reality technologies, wallabies ought to be more open due to them being highly adaptable species but we'll see. I wonder whether the concept of uncanny valley exists in a form in case of animals or whether low-fidelity projected environments will be enough.
+</p>
+
+<p>
+  Apparently Orangutans were very involved with the technology, however they could not interact with them the way they wanted as it limited them to using fingertips. Instead, Kinect was used to create dynamic projection mappings by the use of abstract forms, art created by Orangutans themselves. The aim was the enrichment of their lives, therefore very in line with what they do. Natural user interfaces were the focus, as the collaboration involved multiple parties: Microsoft, University of Melbourne and Victoria Zoo itself. Using the brain is apparently very important part of enrichment. Improving animal welfare and improving Conservational Behavioural Change, perception of not just betterment of humans but betterment of animals as well. Food and social interactions have potential to be explored in terms of the digital technologies.
+</p>
+</div>
+</div>
+
+<center>
+<iframe width="50%" src="https://www.youtube.com/embed/SNuZ4OE6vCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<br>
 </div>
 <div class="con3">
 <center><h1>Prototyping</h1></center><br>
@@ -332,9 +383,21 @@ Based on the readings, frameworks seem to need to be developed for the assessmen
 </center>
 </div>
 
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
 <p>
-  
+  I have introduced a variety of assets that originate from Creative Coding: Unity course, Unity's Standard Assets with the addition of some scripts that I have reworked in conjunction with the engine's trigger system, resulting in the simulation of a variety of environments. Two sounds were ripped from Call of Duty: Modern Warfare 2 videogame, as I am familiar with the file system and have knowledge of what the game entails in terms of the sounds themselves, which I found to be relevant to the environment involved.
 </p>
+
+<p>
+  I had some issues getting the WebGL version up and running. On one hand, I'm kinda running out of space on my GitHub repository, the limit is usually 1 GB, in my case I'm reaching 750MB and while there is a lot of assets that I should easily get rid of, this will take time, lots of it I just simply don't have. Then, there is a different color profile for WebGL, Gamma instead of Linear. Personally I prefer Linear due to enhanced contrast and just simply nicer rendering but it seems that only gamma is allowed for Web browsers (and so WebGL), which imposes some serious constraints and generated additional workload to calibrate the color system. The endgame is relatively rewarding, there is much that could have been introduced to make the experience much better (which I may improve later on) but the basic simulation of how the system would work is in place. After having looked into the interactive part of how projection mapping could be combined with Kinect however, now I am starting to think about incorporating interactive elements but that can come later.
+</p>
+
+<p>
+  What I personally find particularly interesting is that based on the Unity prototype, I could potentially introduce interactive elements within the Unity system itself. Therefore, what I am in fact constructing here is an evolutionary prototype, which I can continuously improve without dedicating much of any resources. If I want to, I can create a virtual experience within a web browser, I can also port that into smartphones (on which it just may work to some degree once scripts are iterated), virtual reality headsets of all sorts - google cardboard, oculus go, htc vive and alike. All of which is exactly, what I aimed for by constructing this prototype in Unity, so that there is little liability, maximum performance and flexibility and to give the most appropriate idea of what I am in fact aiming for to achieve here. And I am happy to see that perhaps my attempt at enrichment may not quite be amiss in the end.
+</p>
+</div>
+</div>
 
 <div class="row">
 <center>
@@ -349,10 +412,36 @@ Based on the readings, frameworks seem to need to be developed for the assessmen
 
 - Unity Standard Assets<br>
 - Assets supplied with for Creative Coding: Unity course at Parsons School of Design
-- Quite a bit of time</p>
+- Call of Duty: Modern Warfare 2 nature sounds (ripped from game's directory)<br>
+- Quite a bit of time<br><br>
 
+Academic Resources:<br><br>
+
+<a href="http://dx.doi.org/10.1145/3025453.3025729">1. Sarah Webber, Marcus Carter, Sally Sherwen, Wally Smith, Zaher Joukhadar, and Frank Vetere. 2017. Kinecting with Orangutans: Zoo Visitors' Empathetic Responses to Animals? Use of Interactive Technology. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17). ACM, New York, NY, USA, 6075-6088. DOI: https://doi.org/10.1145/3025453.3025729</a></p>
+<p>
+<a href="https://www.researchgate.net/publication/303293635_Interactive_Technology_and_Human-Animal_Encounters_at_the_Zoo">2. Webber, Sarah & Carter, Marcus & Smith, Wally & Vetere, Frank. (2016). Interactive Technology and Human-Animal Encounters at the Zoo. International Journal of Human-Computer Studies. 10.1016/j.ijhcs.2016.05.003. </a></p>
+<p>
+<a href="https://dl.acm.org/citation.cfm?id=2837011">3. Marcus Carter, Sarah Webber, and Sally Sherwen. 2015. Naturalism and ACI: augmenting zoo enclosures with digital technology. In Proceedings of the 12th International Conference on Advances in Computer Entertainment Technology (ACE '15). ACM, New York, NY, USA, Article 61, 5 pages. DOI: https://doi.org/10.1145/2832932.2837011
+</a></p>
+<p>
+<a href="https://dl.acm.org/citation.cfm?id=2837014">4. Jean-Loup Rault, Sarah Webber, and Marcus Carter. 2015. Cross-disciplinary perspectives on animal welfare science and animal-computer interaction. In Proceedings of the 12th International Conference on Advances in Computer Entertainment Technology (ACE '15). ACM, New York, NY, USA, Article 56, 5 pages. DOI: https://doi.org/10.1145/2832932.2837014
+</a></p>
+<p>
+  <a href="http://dx.doi.org/10.1145/2995257.3014066">5. Fiona French, Mark Kingston-Jones, David T. Schaller, Sarah Ellen Webber, Heli Väätäjä, and Mark Campbell. 2016. Don't cut to the chase: hunting experiences for zoo animals and visitors. In Proceedings of the Third International Conference on Animal-Computer Interaction (ACI '16). ACM, New York, NY, USA, Article 19, 6 pages. DOI: https://doi.org/10.1145/2995257.3014066</a></p>
+
+</p>
 </div>
 </div>
+
+<center>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 80vw; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo" style="transform:translate(90%)"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)" style="transform:translate(-480%)"></div>
+      </div>
+    </div>
+  </center>
 
 
       </div><br>
