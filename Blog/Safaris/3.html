@@ -149,6 +149,10 @@ pre:hover{
             transition: all 0.5s ease !important;
 }
 
+iframe {
+    height: 26.5vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+
 </style>
 
 
@@ -186,14 +190,133 @@ function getRandomImage() {
   <center><h4><p style="margin-top:15px">Hatching</p></h4></center>
     
     <p>
-      So, to start this part, I wanted to clarify a few things. First of all, creating projects in Arduino environment is hard. And it is not hard just because of the syntax and what you could do to program in this environment but just that you don't always get what you want and what you usually end up with is something that just kinda works or doesn't work and you have no idea why. Life in programming, in short. Then, think about adding animals into the mix, how do you really design for them? How do you design to imitate them? Now, the first part is tricky enough but designing to empathise with them is some form of an abstraction, that I love to think about but actually executing a meaningful project? Hell, that is not easy at all. And to throw on top of it all, my sparkfun kit just does not cut it. The 5$ ultrasonic sensor, is bad. Many other modules I have? Are bad too. Harbouring the kit across the world, I figured would be a good idea but then it turns out it all is just simply not enough. Also, I am still doing orientations for the fabrication labs (at that time) So come to think of it all, I had a mission impossible, especially that I read 'no presentations in powerpoint/keynote' as a challenge (and I loveeee challenges!), so I decided - to do a presentation but in front-end with a js library. Which was fun but rrrrreally time consuming and naturally it deterred me from doing what needed to be done. And what needed to be done? Well. The rest!<br><br>
+      So, to start this part, I wanted to clarify a few things. First of all, creating projects in Arduino environment is hard. And it is not hard just because of the syntax and what you could do to program in this environment but just that you don't always get what you want and what you usually end up with is something that just kinda works or doesn't work and you have no idea why. Life in programming, in short. Then, think about adding animals into the mix, how do you really design for them? How do you design to imitate them? Now, the first part is tricky enough but designing to empathise with them is some form of an abstraction, that I love to think about but actually executing a meaningful project? Hell, that is not easy at all. And to throw on top of it all, my sparkfun kit just does not cut it. The 5$ ultrasonic sensor, is bad. Many other modules I have? Are bad too. Harbouring the kit across the world, I figured would be a good idea but then it turns out it all is just simply not enough. Also, I am still doing orientations for the fabrication labs (at that time) So come to think of it all, I had a mission impossible, especially that I read 'no presentations in powerpoint/keynote' as a challenge (and I loveeee challenges!), so I decided - to do a presentation but in front-end with a js library. Which was fun but rrrrreally time consuming and naturally it deterred me from doing what needed to be done. And what needed to be done? Well. The rest!
+    </p>
 
-      More updates coming rrrreal soon.
+    <p>
+      So there were two approaches I have undertaken. First was to address the assignment due to the constraints I was bound by, primarily: equipment and surprisingly at that point also imagination. Therefore I quickly thought of some phenomena that captured my interest in the past. In this case, a moose.
     </p>
 
       </div><br>
 </div>
 
+          <center>
+  <div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <a href="http://www.pourvoiries.com/wp-content/uploads/2010/11/Orignal.jpg" class="darken"><div class="text"><center>Moose<br></center></div><img src="http://www.pourvoiries.com/wp-content/uploads/2010/11/Orignal.jpg" style="margin-top:20px"width="50%"></a><br>
+  </div>
+</div>
+</center>
+
+          <center>
+<video autoplay muted loop id="videor" data-swiper-autoplay="1" style="width:50%"> <!--120 seconds-->
+  <source src="https://onedrive.live.com/download?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2125214&authkey=ABRXkBBWPLNTomg" type="video/mp4"">
+</video>
+</center>
+
+
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
+    
+  <center><h4><p style="margin-top:15px">Moose</p></h4></center>
+    
+    <p>
+      The thing is that some differences between us and animals have its basis also in how our metabolical systems work. For instance: humans can get intoxicated in a variety of ways, one is alcohol, casualy drank primarily in the form of ethanol as a result of other metabolical processes undertaken by yeast, which by eating sugar, processes it and releases among some chemical compounds - alcohol. The very same thing does not quite happen for humans, though, as carbohydrates are used as primary fuel for, well, life. And so eating an apple, which is primarily carbohydrates in the forms of sugars, does not quite generate much of a response, except for the joy of how (often) crunchy and sweet it is. That doesn't quite go for some species like Moose, though, which get intoxicated by eating apples. After digging into the subject, I discovered this was not quite exactly the case but still I was looking forward to exploring why that was happening and I figured ever since I have an alcohol sensor, perhaps I could make use of it.
+    </p>
+
+    <p>
+      Moose also have a different body temperature, many animal species vary in these terms from humans who's normal body temperature is set at 36.6 degrees Celsjus. I had a temperature sensor so perhaps I could emulate some responses made in case of: what if the air temperature plummets, how does this affect the animal in question? 
+    </p>
+
+      </div><br>
+</div>
+
+<center>
+    <iframe width="50%" src="https://www.youtube.com/embed/9GmWnn20-JY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center><br>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
+    
+  <center><h4><p style="margin-top:15px">Issues</p></h4></center>
+    
+    <p>
+      Then after a while I discovered some interesting things about my Arduino setup. Not only did I not have enough modules but some of them seemed to not work quite properly, like the temperature sensor. Tight deadlines never go in pair with problems, especially those of programming nature that you'd just keep bouncing back and forth for hours but seeing how I could not get the project through, I just decided to drop this idea. One that kind of went beyond just any specific animal. I just decided to target the idea from the perspective of communication, something essential to us all (and which I often have problems with but that's a different subject matter).
+    </p>
+
+    <p>
+      And so I started by showcasing some ways that humans communicated back in the days before internet was here, by smoke signals. I believe Indians used it and it was good enough. These kinds of forms, more in an auditory manner was utilized in Game of Thrones, a popular HBO TV Show based on a series of books, in which horns blown in a specific manner would communicate a particular event taking place. And then I figured that, hm, I've also seen Meerkats in Planet Earth and it was explained that they have a very elaborate ways and means of communicating, where particular nuances in how they speak matter. Also they are very social species. I'm not sure why I wanted to mention polar bears, though. Now that I think about it, me not remembering why I threw it in bothers me. Perhaps I wanted the audience to bear with me? Or just showcase the great rift between how animals communicate and how humans developed a multitude of languages that go into a variety forms of complexity. For instance a morse code, which in some way I was looking forward to emulating.
+    </p>
+
+      </div><br>
+</div>
+
+          <center>
+<video autoplay muted loop id="videor" data-swiper-autoplay="15000" style="width:50%"> <!--120 seconds-->
+  <source src="https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2196411&authkey=ACqRb3Dg1qQV8nU" width="50%" type="video/mp4">
+</video>
+</center>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
+    
+  <center><h4><p style="margin-top:15px">Obvious Approach</p></h4></center>
+    
+    <p>
+      So I decided to take an obvious approach, by incorporating a set of code that I worked for, I think it wouldn't be an overstatement if I said over hundred(s) of hours, at the very least trying to get a specific form of communication working - Bluetooth. So I restudied the code and extracted parts specific to what I was trying to achieve and made a very basic setup in which accordingly to the horizontal touch position, I would generate specific piezo buzzer sound frequencies. This way, I wanted to emulate communication. Cause you could do something with it, send morse codes, elicit specific forms of emotions. Yeah, I know it was a bit far-fetched but potentially it was doable and there was an idea hatched in my head that took reality within an extremely pressing amount of time.
+    </p>
+
+    <p>
+      And so I improvised...
+    </p>
+
+      </div><br>
+</div>
+
+ <div class="row">
+  <div class="col-md-2 col-md-offset-2">
+    <a href="http://www.mormonshare.com/wp-content/uploads/2014/08/cg_indian-smoke-signals.gif" class="darken"><div class="text"><center>Smoke Signals<br></center></div><img src="http://www.mormonshare.com/wp-content/uploads/2014/08/cg_indian-smoke-signals.gif" style="margin-top:20px"width="100%"></a><br>
+  </div>
+    <div class="col-md-2">
+    <a href="https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Dragonglass.jpg/revision/latest?cb=20150407175226" class="darken"><div class="text"><center>Game of Thrones<br>Hornblasts<br></center></div><img src="https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Dragonglass.jpg/revision/latest?cb=20150407175226" style="margin-top:20px"width="100%"></a><br>
+  </div>
+      <div class="col-md-2">
+    <a href="https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/meerkat-group.adapt.945.1.jpg" class="darken"><div class="text"><center>Meerkats<br></center></div><img src="https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/meerkat-group.adapt.945.1.jpg" style="margin-top:20px"width="100%"></a><br>
+  </div>
+      <div class="col-md-2">
+    <a href="https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_small/polar-bear-hero.jpg?1345901694" class="darken"><div class="text"><center>Polar Bear<br></center></div><img src="https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_small/polar-bear-hero.jpg?1345901694" style="margin-top:20px"width="100%"></a><br>
+  </div>
+  </div>
+
+   <div class="row">
+  <div class="col-md-3 col-md-offset-3">
+    <a href="https://cdn-images-1.medium.com/max/1600/1*nNxybrXr-YPikYvaXyDbkQ.jpeg" class="darken"><div class="text"><center>Human Languages<br></center></div><img src="https://cdn-images-1.medium.com/max/1600/1*nNxybrXr-YPikYvaXyDbkQ.jpeg" style="margin-top:20px"width="100%"></a><br>
+  </div>
+    <div class="col-md-3">
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/315px-International_Morse_Code.svg.png" class="darken"><div class="text"><center>Morse Code<br>Hornblasts<br></center></div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/315px-International_Morse_Code.svg.png" style="margin-top:20px"width="100%"></a><br>
+  </div>
+  </div>
+
+            <center>
+  <div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://farm8.staticflickr.com/7866/46445588542_8b774cd934_k.jpg" class="darken"><div class="text"><center>Leaf Project<br></center></div><img src="https://farm8.staticflickr.com/7866/46445588542_8b774cd934_k.jpg" style="margin-top:20px"width="50%"></a><br>
+  </div>
+    <div class="col-md-4">
+    <a href="https://kabd2g.by.files.1drv.com/y4m9wSHKbUSAMe0KxDJHFAZYhza901CWBjRqKbQb_EEOVWryTMNcctMML3Xo5wS1eaVQX_ir4D9EQ0mHr2whklOWm_JQXHIndfrm4llHxqCuU2vt2yuqiWLbCKrmsCvTr5p5Jf01qvaBgzZJUyISyatz_bSeseoje5905Y4fHygvaMW6qMv8Hnc09Joq-EPF7wMRxeVWCytYSi5JdifrtCkQA?width=3240&height=2160&cropmode=none" class="darken"><div class="text"><center>GitHub<br></center></div><img src="https://kabd2g.by.files.1drv.com/y4m9wSHKbUSAMe0KxDJHFAZYhza901CWBjRqKbQb_EEOVWryTMNcctMML3Xo5wS1eaVQX_ir4D9EQ0mHr2whklOWm_JQXHIndfrm4llHxqCuU2vt2yuqiWLbCKrmsCvTr5p5Jf01qvaBgzZJUyISyatz_bSeseoje5905Y4fHygvaMW6qMv8Hnc09Joq-EPF7wMRxeVWCytYSi5JdifrtCkQA?width=3240&height=2160&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+  </div>
+</div>
+</center>
+
+   <div class="row">
+    <div class="col-md-4 col-md-offset-2">
+    <a href="https://kabb2g.by.files.1drv.com/y4m_T62qdMgfkjKxmuFiD8ojsWBaLdBKn86WM-VMPgjWi2g13OUj1A2jj5Lpaf6ujhMfSCAtyGqf3YgaE4Gnm3KTd6l_EydFeSmEBGcoSgnq2MPzdN5s_BArzUJwaXdefy9CzldNFhymjD2JpAqwUphURPiGJYeUg2jAP7kS5OSyz15_mQFhFH6MEapjLCeEzTBFNXxL5Aeu0OJKEIk8p-jCQ?width=3240&height=2160&cropmode=none" class="darken"><div class="text"><center>Processing<br></center></div><img src="https://kabb2g.by.files.1drv.com/y4m_T62qdMgfkjKxmuFiD8ojsWBaLdBKn86WM-VMPgjWi2g13OUj1A2jj5Lpaf6ujhMfSCAtyGqf3YgaE4Gnm3KTd6l_EydFeSmEBGcoSgnq2MPzdN5s_BArzUJwaXdefy9CzldNFhymjD2JpAqwUphURPiGJYeUg2jAP7kS5OSyz15_mQFhFH6MEapjLCeEzTBFNXxL5Aeu0OJKEIk8p-jCQ?width=3240&height=2160&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+  </div>
+      <div class="col-md-4">
+    <a href="https://kabc2g.by.files.1drv.com/y4mmGMu-3IMO4x9u_rRmWfRe4NQypOLNpASSgU04jrGiOJfUUXziCzIss2UJ0CNNglyEtL0ktxccNGaKtEdRv4uXeiktaya5vxYXYKW5c5yscQJRjrqTdFrfsMZ9AbBW_XQ3xv9h9cLEa2-NJRaEZCcpv9tP0mJaaZeayeAeVEzUhCD3o03o96zlrX7-hNi3dnaM8Y9xPJVwMldrmttMN6aZA?width=3240&height=2160&cropmode=none" class="darken"><div class="text"><center>Prepping Arduino<br></center></div><img src="https://kabc2g.by.files.1drv.com/y4mmGMu-3IMO4x9u_rRmWfRe4NQypOLNpASSgU04jrGiOJfUUXziCzIss2UJ0CNNglyEtL0ktxccNGaKtEdRv4uXeiktaya5vxYXYKW5c5yscQJRjrqTdFrfsMZ9AbBW_XQ3xv9h9cLEa2-NJRaEZCcpv9tP0mJaaZeayeAeVEzUhCD3o03o96zlrX7-hNi3dnaM8Y9xPJVwMldrmttMN6aZA?width=3240&height=2160&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+  </div>
+  </div>
 
 
 <div class="row">
