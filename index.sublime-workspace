@@ -19,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 29667,
+				"buffer_size": 18939,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -28,7 +28,7 @@
 			"file": "MusicVideos.html",
 			"settings":
 			{
-				"buffer_size": 31214,
+				"buffer_size": 37154,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -52,21 +52,94 @@
 			}
 		},
 		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"../../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"../../jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"../../fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\n\nbody{\n/*  background:url(https://veigzw.by.files.1drv.com/y4m8Eo2MwGucqLEIiM1YCjhqNbLlJ8jJFqG3atfxBFQHF0zhucnCwQRK0IpDJRnLocz2zKL1UoQJHWpKHs3DFGkK_-szQPp4HFad6Gh5IgBga--hwI0VA7j9HA0hgLijyMesWvFW1xgMM3u_bo6kRSRo_Ybp0yq-SuWeY67hlXlhJU-piUZewxOJT5OpjuCiXwRI5IDJJVKhf9z7vPtwOBVnQ?width=3240&height=1816&cropmode=none);*/\nbackground:url();\nbackground-color: black !important;\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:2vw;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    \n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 0.7;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\n.con1{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://jdpfcg.db.files.1drv.com/y4mD8Olmv2YvGUJ0ScIM3YOQlvySgJhNxk5h0EJT_l77L-8OjY_480M-w12mhYGxgLzRkdvlTvf3-K8HWPQWRwSko1h7bV07x3wcItnQEhZtDFO9IQXJ2I-ZbT8vDF05B7Dkx4AO16GULsoyNswIVOVACaEnQB4yWTtTeWPRnYZihjd_Db5oDPsKGz_Lh8hfEkJyI67p4JmKMpvL9_M1a5a0g?width=1920&height=1080&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://hyui8a.by.files.1drv.com/y4mpONn7gwzI4tlpGanujm3cdcj2vH3NkFgxHTU0RG_SYZ8o2kR5H6gcGjkEUdeQgbjj2kACJxKMmy3ZWvp05SibI6jXm3NyoifKCCB-2eCMZHh4j-iavHd3kWnWkDvr3tYQjfvHyZIPTFw08A81P-N0HfJc1yLp7duHa48fVQK3ip2sextqp1JTEP_xEjvrxscYwZbzZl5N7GbZ07RHy3o_g?width=3240&height=1816&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con3{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://icuz8a.by.files.1drv.com/y4mkAoPvBoBaMRLfHutuOozv-y-BxPm4EBTI5QPgjxBXsh8oxtI8jRSiCmAAFzsleauISr8NYKIuYcYc_qxS87pIKOHGellNkre6od5AxQcON4Pd6_M754-1e6ONjTBcNh2yrH2ExFup7MM4SxwKBW5UcUPqZSWGObrqHDxXvygYJ5xCKNnv40jJgSfWYIsm4PoazP4stcZ1KEem4TqLPk23A?width=3240&height=1810&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con4{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://icuy8a.by.files.1drv.com/y4mjrGUfgzYa9mfhFO54yE_rGdz_vvIDx8jfMweK4IaPSQUb8UviLM5qllU8s_9QvG_PIiVIKj4LkKKu9rkYEE2SHQVcItDpwl_G8FZyBrQGjmAbcbsF5wzmY7ajyEu0tTrhF-g5fAg_74toATzEkDdRnOrbr2oM6S294SgoMt972SDRghGM-DYfr8-8T6QM--P-3X6XoXZPuWp4HAwTCMmdQ?width=2048&height=1080&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n@media (max-width: 1024px){\n\n.d{\n\tmargin-bottom:15px;\n}\n\n}\n\n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n</head>\n<body onload=\"getRandomImage()\">\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<center><h1>Time-Off</h1></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-4 col-md-offset-2\">\n    <a href=\"https://iiui8a.by.files.1drv.com/y4mm1hxJDDl4bW8XdhdY22Syahf5r-8Nv3wriyUd84JPPoh0yU4JXEWX9JzlVGR0b41XYiOPz1xh05GNkLD_Kw_0Ub1AB5caOv04G27q6dyIklyU_wcD2b4TS5o8a68LaeQdZ6cY8bhbruHOJgJGgPUWvVWOEDjiLLeHDSEstfpuabNoq0307uv7LQNIvBvlSBW6yE4QwdJCq4yVOuN4oGPlQ?width=1024&height=574&cropmode=none\" class=\"darken\"><div class=\"text\">Bliss</div><img class=\"d\" src=\"https://iiui8a.by.files.1drv.com/y4mm1hxJDDl4bW8XdhdY22Syahf5r-8Nv3wriyUd84JPPoh0yU4JXEWX9JzlVGR0b41XYiOPz1xh05GNkLD_Kw_0Ub1AB5caOv04G27q6dyIklyU_wcD2b4TS5o8a68LaeQdZ6cY8bhbruHOJgJGgPUWvVWOEDjiLLeHDSEstfpuabNoq0307uv7LQNIvBvlSBW6yE4QwdJCq4yVOuN4oGPlQ?width=1024&height=574&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div>\n  <div class=\"col-md-4 col-md-offset-0 panel\">\n    <center><h4>Ohhh...</h4></center>\n    <p>Such a wonderful feeling, my semester's done, I managed to tie a number of loose ends and create more. I have time for myself and with the help of some mate, I can get right to business! This time, I'll go in reverse schedule and showcase what I've seen recently. All the way to my last reported material.</p>\n\n    <p>Do you have the same feeling when you open up Netflix or even bloody Steam and realise, there is nothing for you to play? I guess having too many options eventually leaves you empty handed and I usually set my aims on particular subjects, so here: a few movies, a few animes, series... Some of those were not so easy to track down in fact.</p>\n    \n    <p>But let's get started!</p>\n  </div><br>\n</div>\n\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n  <center><h4>Code Geass: Lelouch of the Rebellion</h4></center>\n\n  <p>R1 (Season 1)</p>\n\n  <p>One of the shows that I did not intend on seeing, especially through. It's so bad that it's ridiculous, the scenario is all over the place, beaten up, with so many holes that if it was a ship, aircraft or literally anything, it would go down in minutes. But somehow there is something about its dynamism and general fun that comes out of it with the addition of quite interesting historical and cultural nuances, making it a teeny bit more enjoyable, even if cringy and adolescent for a quite substantial time. I can't help but notice this is a show created to accommodate literally everyone, high school audience, adults, perhaps even younger ones as well, although considering the thick themes embedded, I am still struggling on figuring out exactly for whom is this series after all. With princesses, high schoolers, magic, racism, totalitarian empires, mechs, war, ethnical cleansing and many more. This is so thick with elements that it's difficult to establish a clear answer for what this actually is. In the end, the plot takes a hit due to its looseness but it remains enjoyable. How come?</p>\n\n  <p>I guess I have a soft spot for productions which showcase an array of details, I hate when it ultimately crumbles but this one does not deteriorate to any extent. It is a peculiar case of entailing the middle ground with solid hints of all the best and worst that, well, anime so far can deliver. There is a decent balance between drama and action. I made a connotation to Neon Genesis Evangelion due to the presence of mechs but unlike in Evangelion, Code Guess has much less wearisome disruptors in terms of how drama features interfere with action. Even though there is an overwhelming lack of coherence in terms of what the characters know and don't, what Code Guess doesn't have what I also tend to hate, is sudden changes that occurr in characters' psychological profile. These are often subtle here and despite all the unnatural happening, some form of natural feel remains due to the lack of all the real bad.</p>\n\n  <p>Still, despite all that I cannot recommend this show with clear conscience. It is sort of perfect if you need something to kill time with while you commute, as it is fun to watch. But is there anything really valuable coming out of this show? Nothing that I have not seen before, it also mixes a lot of interesting concepts which makes it an interesting standalone and even an engaging one but once I rethink of what I've actually seen, it all turns a little dry.</p>\n\n    <p><center>7/10</center></p><br>\n\n    <p>R2 (Season 2)</p>\n\n    <p>The second season managed to improve in many ways, first of all by making sure the plot is tightly defined and consistent with itself. An especially important feature missing from its original and despite rolling in, in a very unnatural setting, all somewhat became quite logically explained, kudos to the creators. The flow is quite nicely constructed and unravels into geopolitical spheres and entwines the reality foreset in the original. I am starting to appreciate the complexity of the world even more now and the number of themes embedded, also the show feels a bit less adolescent which is another good thing. But as they did that, somehow some of the more interesting and rough sequences happening in R1 became slightly, well, not present and a slight push towards sexualising characters was established. Which is fine, that all are still kept within confinements. The dynamism remains here and the consistency of characters. It watches really well overall and progresses nicely.</p>\n\n    <p>In the end, the show maintains its course and coherency, despite detaching a notch at specific points to the verge of becoming way too far-fetched. But the complexity is brought out in this season and showcased at full scale by the subtle introduction of new characters, maintanance of current archetypes and the induction of paramount and strong themes. The dynamism picks up with a few twists, not as major as in season one but with enough fuel to shape the structure of the next episodes. The show also feels complete towards its concluding episodes. The amount of cultural nuances thickens and leaves the viewer with a particular awe, in my case, my first approach towards the show ended up with a straight-out rejection due to its overal chaos revolving around its screenplay. Season 2 improves heaps, although I still can't give any more than 8. It really upped its game but its overall cringiness, ecchiness and moralisatory course just shakes off on me. It still got really good nevertheless, to the point that now I could potentially even recommend the show.</p>\n\n    <p><center>8/10</center></p><br>sa\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://jdoqcg.db.files.1drv.com/y4mqEkHlnX4nGGz4qzuSUGsV_W9SOVhh2aeGK77qRTYASxLGgwQit8VwsVNk8yvrWMy55DgGan9iZNXa9bwdhxPVUtDb-5W8OBsBHneHHZOR0tBbt2Dihq6L293NM88lGVBYe9TrmksqDaf6Cg6JQTMY7_T_sfYLSodT8-B5AN16_PyIJ_zLd-iApMtRsmjvF8xM071fhkvfuIBUPDi7wb7Fw?width=1920&height=1080&cropmode=none\" class=\"darken\"><div class=\"text\">In the vast...</div><img src=\"https://jdoqcg.db.files.1drv.com/y4mqEkHlnX4nGGz4qzuSUGsV_W9SOVhh2aeGK77qRTYASxLGgwQit8VwsVNk8yvrWMy55DgGan9iZNXa9bwdhxPVUtDb-5W8OBsBHneHHZOR0tBbt2Dihq6L293NM88lGVBYe9TrmksqDaf6Cg6JQTMY7_T_sfYLSodT8-B5AN16_PyIJ_zLd-iApMtRsmjvF8xM071fhkvfuIBUPDi7wb7Fw?width=1920&height=1080&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div>\n\n<div class=\"con2\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Ślepnąc od Świateł</h4></center>\n\n    <p>Ohh... This was so difficult to find that it took almost a miracle for me to hunt it down. For some reason, HBO has better VPN-protection technologies than its competitors, which obviously turned against me, as I was not able to see any of it with my commercial NordVPN. Still, I managed to get my hands on this and see what's with the general appraisal of the polish community for a new production made by a guy I only know from... making a really good music video for a polish reggae band? If that's not already triggering alarms, then let me just add, that this was exactly which got me a bit excited for this show. In fact, I haven't really seen many overwhelmingly good polish tv shows for... well, as far as I can remember?</p>\n\n    <p>And so the with the first minutes the series decided to impress me with stale acting and disattached scene combination. I figured, that's fine, this will soon kick off but as the show progressed, I realised a few things: first, that the color-grading feels below set expectations. That started to trigger some alarms, as the promotionals shots I've come across were stellar and what I was presented with, was somewhat, well, just as bland as the acting was. Turned out, my colour profiles got hijacked by one of the recent windows insider updates. Eventually I double checked and it was good, the arrangement of lightning all in all is quite impressive in this show. Not just that but the approach to inject continuous longshots. Note, this is a drama, I don't come across that often such directorship but it is extremely difficult to pull it all off well and unfortunately, in this show one can see how a combination of really good concepts get lost a bit in the crowd of. Well. As said, really good concepts but with mixed execution.</p>\n\n    <p>Let's see. The main character doesn't strike as particularly interesting. His play is fine, there were many issues raised as if he was just bland. Sure he was but the role he was given seemed to be just as such, hence I cannot say much against him, except at times there is a specific feel of plasticity that comes and goes, nothing to be helped really. Then there are other actors who again range from very close, to if just plain incredible performance (Frycz!) to others who just do below expectations, mainly consisting of minor/supporting roles. Characterisation was kept to high standards, special effects were average. The storyline was surprisingly consistent, even if at times (although rarely) quite naiive. There were numerous supernatural sequences, stepping outside the formal drama-style of the show itself. The fine artsy parts felt overall mediocre, I just couldn't identify any values attached or anything that could contribute to the show itself, in fact it disrupted unnecessarily the flow. Some others were plain interesting, still disruptive but blended well with the crawling insanity that progressed with the show, finally something particularly interesting blended in! Which points towards another really good thing: the storyline is fairly, although not overly complex by the addition of a variety of characters who come through, vanish and happen again, all in consistent manner. It's nice to see a show, which does this well, there are no clearly defined protagonists and antagonists, the concept shifts smoothly throughout the show and concludes in a satisfactory manner.<br>\n    (this is not a spoiler, I just stated I liked how the show came to its conclusion).</p>\n\n    <p>I have mentioned previously of the disruptive scenes, as there were more and frankly, most of them felt obsolete. I understand the intentions and as I understand, the director/producer of this show has a tendency to introduce experimental features and perform a bit more ambitiously. All of this, I always welcome with my arms open wide. However, I can't help but notice the issues ruffling up the show, which are just plain production-related mistakes: badly handled camerawork, acting feeling mocky, stiff dialogues, at times unsynchronized soundtrack and tendencious sound effects. But despite it all, there is a lot of things happening in the show and overall, despite being fairly exaggerated in all directions in terms of how the reality is portrayed in the show it all feels... beliveable. I feel that's an accomplishment, the ability to keep the natural feel of it all, especially that I couldn't say any scene felt detached from the showcased reality at any inch. It's a very interesting watch and considering the number of elements imbued, it might bring more joy with subsequent binging.</p>\n    \n    <p><center>8/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://hyua8a.by.files.1drv.com/y4mNGHrL0EM-2SkQQBntrhtMpQKazMg44IHAZ7NVbrRhVCCwEwMGujSalfaWv2zqes70Lb-vlV3JtpimH1huaLxlfRUysiyRjqmmhOxil3lgSMT4uemueRGrMN1saf2bT1EPlEmehvHCzvrAGFh4xp4pagfGBVMc820UE5h9CucK4UPRwOe2xPGFek7DFirCk76Vss3Hy9tS_KzoUchsT4Oww?width=1024&height=574&cropmode=none\" class=\"darken\"><div class=\"text\">Bit of Beyond</div><img src=\"https://hyua8a.by.files.1drv.com/y4mNGHrL0EM-2SkQQBntrhtMpQKazMg44IHAZ7NVbrRhVCCwEwMGujSalfaWv2zqes70Lb-vlV3JtpimH1huaLxlfRUysiyRjqmmhOxil3lgSMT4uemueRGrMN1saf2bT1EPlEmehvHCzvrAGFh4xp4pagfGBVMc820UE5h9CucK4UPRwOe2xPGFek7DFirCk76Vss3Hy9tS_KzoUchsT4Oww?width=1024&height=574&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n</div>\n<br>\n</div>\n</div>\n\n\n<!-- \t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Attack on Titan</h4></center>\n    Really pat(h)etic and cringy. Really good introduction to the show. Gets somewhat weaker in the process.\n\n    <center>9/10</center><br><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none\" class=\"darken\"><div class=\"text\">Hello :D</div><img src=\"https://8q3yng.by.files.1drv.com/y4mfFYw7ExSqjNoATvCYk0MoUFdHNhLZeI0hIXounaf0sEJpTvMiuTFdPFf9eXJZ_934ArtCymbpQc795s1iIlznHUz1VrEDN-S1gdyvdLOER0SMIjsw5YSI--kFGbP4ITVqIJcxxVFb6BcaxU94vbVANi2wPbM43ePsKOc5E7tpXrI-lVT1MLdcc4_SADB81cQ8B3AX0KayPSMKONuNDB5Qg?width=3240&height=1822&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div> -->\n\n<!-- <div class=\"con4\"> -->\n  <div class=\"con3\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Kids on the Slope & Terror in Resonance</h4></center>\n    \n    <p>I wanted to see a bit more work of Mr. Watanabe, the mastermind behind Cowboy Bebop and Samurai Champloo. Two shows came across as particularly interesting and I decided to roll in and binge through each. I'll start by giving an overview of Kinds on The Slope, a show I... did not eventually come a fan of.</p>\n\n    <p>I'll provide a brief explanation: It was just a regular drama, close to being a soap opera. I can value productions which have quite interesting themes imbued but the joker here with jazz, didn't take the cue at the forefront. The best parallel to establish here is Your Lie in April, a show very close in case of the showcased themes, except for jazz you had piano and violin, and classical music. The depth came close, although Your Lie was more heartfelt and deeper in terms of how it tangles emotions. In the end, there was a similar propotion of adolescent love themes portrayed, cliched and overused in a number of contemporary productions. All in all, everything has been said and told, portrayed and conveyed. I expected more from Shinichirô Watanabe. But as a show it felt complete and had an interesting span of life involved. Let me quickly note, this is not a bad show. But I don't think I'm a target audience for this anymore. If you're after some not too demanding drama with a solid hint of more refined musical themes, this could be something for you.</p>\n    <p><center>6/10</center></p><br>\n\n    <p>Terror in Resonance was something else, though. It doesn't start perhaps on the best page but it unravels nicely with a good portion of action. I became dissapointed with how it advanced and the involvement of as I'd call supercharacters and some lacking of themes of particular depth. But the execution felt good, the soundtrack was stellar and the presentation was phenomenal, entailing the cartoon itself and the especially the color-grading. It was a notch cliched but the characters were well defined and in the end I really enjoyed watching it, all in all. It might be a spoiler but if you enjoyed Fight Club and what the plot of it entailed, you could treat Terror in Resonance as a quite interesting extension as it builds upon some of it. In the end, a show which I'd consider to be far from dissapointing but it didn't really excel at the same time.</p>\n\n    <p><center>7/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://iiuh8a.by.files.1drv.com/y4me3NZ601HVIBpXUvoLRyCxcKaTUu25uBuK5OAaL-OxhDEGYWrZ7qYdLkNYVTTCTAbJUZ_W30-juBWx1GPTz1ZrmK0o7uM8yNHcqFfe3d452YuN_1oYxyZ5aTLNLRjFV8tGaNbp7Xudbonz-n3WTE3M55qShR4pfaAWw8iBb8CXyrRoVxBIxJgAPS4o1BWe720mIM1EDoWf-qSQnsdv4Vdmg?width=1024&height=574&cropmode=none\" class=\"darken\"><div class=\"text\">Phenomenal Visuals</div><img src=\"https://iiuh8a.by.files.1drv.com/y4me3NZ601HVIBpXUvoLRyCxcKaTUu25uBuK5OAaL-OxhDEGYWrZ7qYdLkNYVTTCTAbJUZ_W30-juBWx1GPTz1ZrmK0o7uM8yNHcqFfe3d452YuN_1oYxyZ5aTLNLRjFV8tGaNbp7Xudbonz-n3WTE3M55qShR4pfaAWw8iBb8CXyrRoVxBIxJgAPS4o1BWe720mIM1EDoWf-qSQnsdv4Vdmg?width=1024&height=574&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n</div>\n</div>\n\n<br>\n\n<div class=\"con4\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Incredibles 2 & Antman and the Wasp</h4></center>\n    \n    <p>I had the opportunity to travel quite recently. I found some good cheap tickets to Europe but I did not expect to get any entertainment as these were the cheapest tickets I'm probably ever going to get in my lifetime, moving me halfway across the world. At times, good fortune comes and in this particular case, a charter flight managed by Singapore airlines came as a replacement for Scoot from Sydney to Singapore and vice versa. That, surprisingly, meant in-flight entertainment, food and... well, entertainment! Usually there are quite new movies involved and so I decided to take a look at what they had onboard and so I did.</p>\n\n    <p>Incredibles 2, a continuation from the original released.. oh my, when was it released? I must have been in secondary or even primary school at the time and if I recall well, I liked it, even the game they released, it was quite fun. The continuation strikes the viewer with... the animation and characterisation both of which are executed in a very... down-to-earth and real feel, as if it is a typical American family in its... well... advanced age. Here confined in the superhero realm, all blended nicely. What I also liked about it was how they merged the classic and the new. The cast was a bit funny, a bit as if I was watching animated Better Call Saul but I got used to it. The voiceovers were executed professionally, in fact the movie was executed professionally and provided the viewer with joy. Is there anything else that a good animation movie should do? Well, perhaps introduce some cool contents to relate to and it does this too, as this movie is probably about family as a whole. And that is actually cool.</p>\n\n    <p><center>8/10</center></p><br>\n\n    <p>Ant-Man and the Wasp is a complete different spectrum. The performance was rather bland, the dialogues bad most of the time. The world too confined and storyline often naiive. A blockbuster that just doesn't watches too well. Combat was nicely defined. Antagonists turned out quite pale. In short, nothing to see here.</p>\n\n    <p><center>4/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://iiut8a.by.files.1drv.com/y4m4BOqx1spD1t1k_1NdbC6CFfpnQ4Yt0-jsI-TSUUU8u842C-4aUXXQMvlO8Cz_RgO1NwZjhemAEfRdujjrcEHQPGma1S8HcXHznexeltyNrf-RY8ZBNa7WrYqSv5O5QS-PRp3A02i0PB-1ubherDRseMNwcpWcW5tXKwHr_Js9TzWCeq9EqLyDjsG7e-0YjvVPSpTUJZd4fDPowba6otO6Q?width=1280&height=590&cropmode=none\" class=\"darken\"><div class=\"text\">Team Better Call Saul</div><img src=\"https://iiut8a.by.files.1drv.com/y4m4BOqx1spD1t1k_1NdbC6CFfpnQ4Yt0-jsI-TSUUU8u842C-4aUXXQMvlO8Cz_RgO1NwZjhemAEfRdujjrcEHQPGma1S8HcXHznexeltyNrf-RY8ZBNa7WrYqSv5O5QS-PRp3A02i0PB-1ubherDRseMNwcpWcW5tXKwHr_Js9TzWCeq9EqLyDjsG7e-0YjvVPSpTUJZd4fDPowba6otO6Q?width=1280&height=590&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Another Day of Life</h4></center>\n    \n    <p>I do this at times, that I show up in the country I grew up in and take a look at something that I kept my eye on for an insurmountable time. That is peculiar wording but hey, there was no other way of seeing this unless I popped up back in Poland and... based on the promotional materials I've seen, I didn't believe it would turn out really good. I know Platige Image as a professional studio that gained on recognition over the years. If I received an offer to work there even as an intern, I wouldn't think twice of moving back. But at times, their production can become a bit... too exaggerated. And that's what it felt based on what I've seen. Once I popped up at a local cinema in Warsaw, oh yes I love these smaller joints, surprisingly well maintained and the feel of... oh wow, what's that feel, how do I frame it. It's a bit fastbackward to the communist times, except it didn't feel as such, just a good, really nice cafe with a cinema embedded into it. But hey, I'm here to talk about the movie, ain't I?</p>\n\n    <p>What it does depict, is a war-torned Angola. With a polish correspondent Ryszard Kapuściński. Very interesting character based on what I've read, a person who lived and breathed with war but primarily to showcase what is happening instead of actively participating in it. In the movie, he's showcased in just that way, although the impartiality is dissolved a notch. I was watching the movie with polish dub which held up quite well, although I would have liked to see how it turned out in English. All of a sudden, problems became apparent with how the movie's flow would become numerously disturbed with shots taken in the contemporary times, showcasing the point of view of characters depicted in the movie who are still alive to this day. At first, this was a bit unforgiveable. But as the course of the movie went by, it became tolerable and even understandable.</p>\n\n    <p>In the end, it wasn't exactly what the movie has shown what took the centerplace, although it probably should. Despite there was a bit of glorifying the eastern block and communist and resistance forces there was a bit of interesting discussion going on, geopolitical themes implemented and just how people, cities, soldiers behave in times of social unrest and civil war. The dialogues were good and the deeper sequences thought-provoking. But what this movie truly shined out with was the animation and the exaggerated, surreal sequences. Artistically, this is yet another stellar work performed by the Polish. Absolute top-grade work that I would love to be able to conduct myself. Regardless, my worries associated with the averagely enticing trailers in the end did not deliver the dissapointment. I left the movie satisfied, although with a bit of conflicting thoughts scouring my mind. There were a lot of parties involved in the creation of this movie too, I guess there is a specific importance associated with the movie as war correspondents don't get too much of the spotlight they diserve too often.</p>\n\n    <p><center>8/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://iiuu8a.by.files.1drv.com/y4mUoKTjDKZ0pDUb7BGgsUjH0JzETl5pENqLaeYBtn2taglfkN9fV_DXUhnGu80cQnfn9oN0A4wEb8Kyb3Fd3YTRPJ_p0LLWLkif-GUrDMgvbknfesfrXgFZuY3l12fQh-muASeegCIYbgo05NfXK_Q4Li2XpMkB2c-3QJzAUxyDA45PKKqOfgAQA4UL6RyalF6vnGWPVAKr8fouGEAkHmAgA?width=940&height=400&cropmode=none\" class=\"darken\"><div class=\"text\">Imagination</div><img src=\"https://iiuu8a.by.files.1drv.com/y4mUoKTjDKZ0pDUb7BGgsUjH0JzETl5pENqLaeYBtn2taglfkN9fV_DXUhnGu80cQnfn9oN0A4wEb8Kyb3Fd3YTRPJ_p0LLWLkif-GUrDMgvbknfesfrXgFZuY3l12fQh-muASeegCIYbgo05NfXK_Q4Li2XpMkB2c-3QJzAUxyDA45PKKqOfgAQA4UL6RyalF6vnGWPVAKr8fouGEAkHmAgA?width=940&height=400&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n\n<br>\n</div>\n</div>\n\n<script src=\"footer.js\"></script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n    <script src=\"../../js/bootstrap.min.js\"></script>\n</body>\n</html>",
 			"file": "Blog/High Pitch Void/High7.html",
+			"file_size": 31440,
+			"file_write_time": 131916603135472498,
 			"settings":
 			{
-				"buffer_size": 31045,
+				"buffer_size": 31047,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Coverflow.html",
+			"file": "Safaris.html",
 			"settings":
 			{
-				"buffer_size": 10684,
+				"buffer_size": 15701,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"../../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"../../jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"../../fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\n\nbody{\n/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/\nbackground:url();\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con1{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://farm1.staticflickr.com/852/42072351800_dce6f49186_k.jpg);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm1.staticflickr.com/833/28620123727_3b61bf1fd3_k.jpg);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:1.5em;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 1 !important;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\n\n.noborder{\n  border-width:0px !important;\n  box-shadow:none !important;\n}\n\npre{\n  border-width:1px;\n  border-color:black;\n  margin-top:1vw;\n  padding:1vw;\n      -webkit-transition: all 0.5s ease !important;\n       -moz-transition: all 0.5s ease !important;\n        -ms-transition: all 0.5s ease !important;\n         -o-transition: all 0.5s ease !important;\n            transition: all 0.5s ease !important;\n}\n\npre:hover{\n  border-width:2px;\n  border-radius:2vw;\n  padding:5vw;\n  background:white;\n    -webkit-transition: all 0.5s ease !important;\n       -moz-transition: all 0.5s ease !important;\n        -ms-transition: all 0.5s ease !important;\n         -o-transition: all 0.5s ease !important;\n            transition: all 0.5s ease !important;\n}\n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n</head>\n<body onload=\"getRandomImage()\">\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<center><h1>Week 3</h1></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Hatching</p></h4></center>\n    \n    <p>\n      So, to start this part, I wanted to clarify a few things. First of all, creating projects in Arduino environment is hard. And it is not hard just because of the syntax and what you could do to program in this environment but just that you don't always get what you want and what you usually end up with is something that just kinda works or doesn't work and you have no idea why. Life in programming, in short. Then, think about adding animals into the mix, how do you really design for them? How do you design to imitate them? Now, the first part is tricky enough but designing to empathise with them is some form of an abstraction, that I love to think about but actually executing a meaningful project? Hell, that is not easy at all. And to throw on top of it all, my sparkfun kit just does not cut it. The 5$ ultrasonic sensor, is bad. Many other modules I have? Are bad too. Harbouring the kit across the world, I figured would be a good idea but then it turns out it all is just simply not enough. Also, I am still doing orientations for the fabrication labs (at that time) So come to think of it all, I had a mission impossible, especially that I read 'no presentations in powerpoint/keynote' as a challenge (and I loveeee challenges!), so I decided - to do a presentation but in front-end with a js library. Which was fun but rrrrreally time consuming and naturally it deterred me from doing what needed to be done. And what needed to be done? Well. The rest!\n    </p>\n\n    <p>\n      \n    </p>\n\n      </div><br>\n</div>\n\n\n\n<div class=\"row\">\n<center><h4>Arduino Code</h4></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 noborder\">\n<pre>\n  const int buzzer = 8;\nbyte incoming;\n\nvoid setup()\n{\n\n  pinMode(buzzer, OUTPUT);\n  Serial.begin(115200);\n}\n\n\nvoid loop()\n{\n  \nincoming = Serial.read();\nif (incoming==255){\n  noTone(buzzer);\n  }\nelse{\nSerial.println(incoming, DEC);\n\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\n}\n}\n  </pre>\n</div>\n</div>\n\n\n<div class=\"row\">\n<center><h4>Processing Code</h4></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 noborder\">\n<pre>\n  import android.content.Intent;\nimport android.os.Bundle;\nimport ketai.net.bluetooth.*;\nimport ketai.ui.*;\nimport ketai.net.*;\nimport android.os.Environment;\n\nimport java.util.*;\n\nbyte checkmate;\nfloat lastX;\n\nvoid setup() {\n  background(0);\n  frameRate(30);\n  fullScreen(P2D);\n  strokeWeight(4);\n  orientation(PORTRAIT);\n\n\n  //start listening for BT connections\n  bt.start();\n  //at app start select device…\n  isConfiguring = true;\n  //font size\n  fontMy = createFont(\"SansSerif\", 40);\n  textFont(fontMy);\n  //selectionUpdate(1);\n}\n\nvoid draw() {\n  \n    if (isConfiguring)\n  {\n    ArrayList names;\n    background(78, 93, 75);\n    klist = new KetaiList(this, bt.getPairedDeviceNames());\n    isConfiguring = false;\n  } else\n  {\n    lastX = mouseX;\n\n    float na = map(constrain(map(lastX, width/12, width*11/12, 0, 100), 0, 100), 0, 100, 0, 127);\n    byte naa = (byte)na;\n    if (checkmate != naa) {\n      checkmate=naa;\n      bReleased = true;\n      byte[] data = {naa};\n      bt.broadcast(data);\n      //first tap off to send next message\n      bReleased = false;\n      println(naa);\n      delay(50);\n    }\n\n  background(50);\n\n  fill(#7ED321);\n  textAlign(CENTER);\n  textSize(width/20);\n  text(\"Empathy Machine\", width/2, height/16);\n}\n}\n\nPFont fontMy;\n\nboolean bReleased = true; //no permament sending when finger is tapped\nKetaiBluetooth bt;\nboolean isConfiguring = true;\nString info = \"\";\nKetaiList klist;\nArrayList devicesDiscovered = new ArrayList();\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\nvoid onCreate(Bundle savedInstanceState) {\n  super.onCreate(savedInstanceState);\n  bt = new KetaiBluetooth(this);\n}\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\nvoid onActivityResult(int requestCode, int resultCode, Intent data) {\n  bt.onActivityResult(requestCode, resultCode, data);\n}\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\n\nvoid onKetaiListSelection(KetaiList klist) {\n  String selection = klist.getSelection();\n  bt.connectToDeviceByName(selection);\n  //dispose of list for now\n  klist = null;\n}\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\n//Call back method to manage data received\nvoid onBluetoothDataEvent(String who, byte[] data) {\n  if (isConfiguring)\n    return;\n  //received\n  info += new String(data);\n  //clean if string to long\n  if (info.length() > 16)\n    info = \"\";\n}\n  </pre>\n</div>\n</div>\n\n<!-- <div class=\"row\">\n  <div class=\"col-md-2 col-md-offset-2\">\n    <a href=\"https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Panda vol. 1<br></center></div><img src=\"https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n    <div class=\"col-md-2\">\n    <a href=\"https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Panda vol. 2<br></center></div><img src=\"https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Humans vol. 1<br></center></div><img src=\"https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Humans vol. 2<br></center></div><img src=\"https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n  </div>\n\n  <div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2\">\n    <a href=\"https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater\" class=\"darken\"><div class=\"text\"><center>Panda<br></center></div><img src=\"https://kabf2g.by.files.1drv.com/y4mJhgCMfuFRBDng2gu8rlk0th0Ke4F1zd0kYKmpu233CxdkbwZhcjUBbV8BylKI6MAxZ5GYIx0clFXf1QAdEIXbWGzU2sD4eZyoHbP2oaJ8oU2JKKToO6Z6JyIARrB5jpHvTGSzE9Ky9vgab5SFft142NdNEfekkpBPeoATcrQFBBHAZPz3SsxtYOCLPCFs2n2Suo1IJ2mYvW9ovyvivcW7g?width=3240&height=2160&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n</div>\n\n  <div class=\"row\">\n  <div class=\"col-md-6 col-md-offset-3\">\n    <a href=\"https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater\" class=\"darken\"><div class=\"text\"><center>Humans<br></center></div><img src=\"https://kabh2g.by.files.1drv.com/y4ms1kLBZxQzHCct4zHChSo0UnRDR6H4JJ7gnbISsmv-7nB--0m0a7THIlp5QxnjIzb-IUBcaimRl4jam1V2mn7eb9PelQ4oZcFx_Q6eyG2TDCiDAqee9z53Ib1wI70u90DmFDnnnKP1Z47c6GXdEs5e3iquxznIIGAvyyJ-q28XuCs3n88Kxx1-N3Bf-BE_SeQVhW-qWmoUeFCA5C5hgpj2A?width=2297&height=1798&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n</div> -->\n\n<div class=\"row\">\n<center><h4>Processing Code (Reworked)</h4></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 noborder\">\n<pre>\n import ketai.camera.*;\nimport ketai.cv.facedetector.*;\nimport ketai.ui.*;\n\n//import blobDetection.*;\nKetaiCamera cam;\nKetaiVibrate vib;\n\n//BlobDetection theBlobDetection;\nboolean newFrame= false;\n\nString[] img = {\"roo1.png\", \"emu1.png\", \"quokka1.png\"};\nPImage[] images = new PImage[img.length];\n\nPImage myImage;\nint MAX_FACES = 1;\nKetaiSimpleFace[] faces = new KetaiSimpleFace[MAX_FACES];\n\nint handle;\nint k = -1;\nlong[] pat  = {5, 125};\n\nvoid setup() {\n  \n    for (int i=0; i< img.length; i++) {\n    String imgs = img[i];\n    images[i] = loadImage(imgs);\n  }\n\n  orientation(PORTRAIT);\n  //cam.setCameraID(0);\n//destimg = createImage(640, 320, RGB);\n  vib = new KetaiVibrate(this);\n  cam = new KetaiCamera(this, 640, 320, 30);\n    println(cam.list());\n    cam.setCameraID(1);\n// img =new PImage(80,60);\n//  theBlobDetection = new BlobDetection(img.width, img.height);\n//  theBlobDetection.setPosDiscrimination(true);\n//  theBlobDetection.setThreshold(0.2f); // will detect bright areas whose luminosity > 0.2f;\n//theBlobDetection.setBlobMaxNumber(1);//Max blob detected = 1;\n\ncam.start();\n\n }\n\nvoid draw() { \n  imageMode(CENTER);\n  background(0);\n  \n  pushMatrix();\n  translate(0,640);\n    rotate(-PI/2);\nimage(cam, 0, width/2, 640,480);\n  faces = KetaiFaceDetector.findFaces(cam, MAX_FACES); \npopMatrix();\n\ncurrent();\nFaceDetection();\n\n  imageMode(CORNER);\n//cam.loadPixels();\n  roo();\nemu();\nquok();\n\nif (k==-1){\n    textAlign(CENTER);\n  textSize(width/20);\n  text(\"How will an animal react to you?\", width/2, height/16);\n}\n  }\n\n//void onPause()\n//{\n//  super.onPause();\n//  //Make sure to releae the camera when we go\n//  //  to sleep otherwise it stays locked\n//  if (cam != null && cam.isStarted())\n//    cam.stop();\n//}\n\nvoid onCameraPreviewEvent()\n{\n  cam.read();\n  //  cam.manualSettings();\n  newFrame = true;\n}\n\nint vale;\nint vale1;\nint vale2;\nboolean valeCounter = true;\nboolean valeCounter1 = true;\nboolean valeCounter2 = true;\n\nvoid roo() {\n  \n  if (valeCounter==true){\n    vale++;\n    vale++;\n    vale++;\n    vale++;\n    vale++;\n    if (k==0){\n      tint(255,0,0);\n    }\n    image(images[0], width/7,height*6/8,100+vale,100+vale);\n    noTint();\n    if (vale>150){\n      valeCounter=false;\n    }\n  }\n  else if (valeCounter==false){\n    vale--;\n    vale--;\n    vale--;\n    vale--;\n    vale--;\n        if (k==0){\n      tint(255,0,0);\n    }\n        image(images[0], width/7,height*6/8,100+vale,100+vale);\n        noTint();\n            if (vale<150){\n      valeCounter=true;\n    }\n  }\n  //fill(#7ED321);\n  //rect(width/7,height*6/8,width/7,height/8);\n  //textAlign(CENTER);\n  //textSize(width/20);\n  //text(\"Kangaroo\", width/7, height/8);\n\n}\n\nvoid emu() {\n    if (valeCounter1==true){\n    vale1++;\n    vale1++;\n    vale1++;\n        vale1++;\n            vale1++;\n                if (k==1){\n      tint(255,255,0);\n    }\n    image(images[1], width*3/7,height*6/8, 100+vale1, 100+vale1);\n    noTint();\n        if (vale1>150){\n      valeCounter1=false;\n    }\n  }\n  else if (valeCounter1==false){\n    vale1--;\n    vale1--;\n    vale1--;\n        vale1--;\n            vale1--;\n                if (k==1){\n      tint(255,255,0);\n    }\n        image(images[1], width*3/7,height*6/8, 100+vale1, 100+vale1);\n        noTint();\n            if (vale1<150){\n      valeCounter1=true;\n    }\n  }\n  //fill(#7ED321);\n  //  rect(width*3/7,height*6/8,width/7,height/8);\n  //textAlign(CENTER);\n  //textSize(width/20);\n  //text(\"Emu\", width*3/7, height/8);\n}\n\nvoid quok() {\n      if (valeCounter2==true){\n    vale2++;\n    vale2++;\n    vale2++;\n        vale2++;\n            vale2++;\n                if (k==2){\n      tint(255,0,255);\n    }\n      image(images[2], width*5/7,height*6/8, 100+vale2, 100+vale2);\n      noTint();\n          if (vale2>150){\n      valeCounter2=false;\n    }\n  }\n  else if (valeCounter2==false){\n    vale2--;\n    vale2--;\n    vale2--;\n        vale2--;\n            vale2--;\n                if (k==2){\n      tint(255,0,255);\n    }\n    image(images[2], width*5/7,height*6/8, 100+vale2, 100+vale2);\n    noTint();\n                if (vale2<150){\n      valeCounter2=true;\n    }\n  }\n  //fill(#7ED321);\n  //  rect(width*5/7,height*6/8,width/7,height/8);\n  //textAlign(CENTER);\n  //textSize(width/20);\n  //text(\"Quokka\", width*5/7, height/8);\n}\n\nvoid current(){\n  if (pmouseX > width/7 && pmouseX < width/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){\n  k = 0;\n}\n\nelse if(pmouseX > width*3/7 && pmouseX < width*3/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){\n  k = 1;\n}\n\nelse if (pmouseX > width*5/7 && pmouseX < width*5/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){\n  k = 2;\n}\n\nelse if (pmouseX > width/2-320 && pmouseX < width/2+320 && pmouseY > 240 && pmouseY < 720){\n  k = -1;\n    fill(255,255,255);\n    text(\"Nah, that's you, click an animal\", width/2, height*8/16);\n}\n}\n\nvoid FaceDetection(){\nif (k >= 0 && k<= 2){\n  for (int i=0; i < faces.length; i++)\n  {\n      imageMode(CORNER);\n    //We only get the distance between the eyes so we base our bounding box off of that \n    //rect(faces[i].location.x, faces[i].location.y, 2.5*faces[i].distance, 3*faces[i].distance);\n    image(images[k], faces[i].location.x+320, faces[i].location.y+240, 2.5*faces[i].distance, 3*faces[i].distance);\n    println(\"Face Detected!\");\n    \n    \n    if(k==0){\n    vib.stop();\n    vib.vibrate(1);\n      textAlign(CENTER);\n  textSize(width/20);\n  fill(255,0,0);\n  text(\"Kangaroo?\", width/2, height/16);\n  text(\"IT WILL FIGHT YOU\", width/2, height*8/16);\n}\n\nif(k==1){\n    vib.stop();\n    vib.vibrate(100);\n      textAlign(CENTER);\n  textSize(width/20);\n  fill(255,255,255);\n  text(\"Emu?\", width/2, height/16);\n  text(\"IT WILL RUN LIKE HELL\", width/2, height*8/16);\n}\n\nelse if(k==2){\n  vib.stop();\n      vib.vibrate(10);\n        textAlign(CENTER);\n  textSize(width/20);\n  fill(255,0,255);\n  text(\"Quokka?\", width/2, height/16);\n  text(\"It will wanna HUG you!\", width/2, height*8/16);\n}\n  }\n}\n}\n\n  </pre>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\nResources:\nhttps://idangero.us/swiper/api/\n\n\nKetai Detector: https://forum.processing.org/one/topic/ketaifacedetector-in-portrait-mode-on-tablet.html\nRotating Image: https://forum.processing.org/two/discussion/16641/how-to-only-rotate-an-image-without-changing-the-background\nPImage Resize: https://forum.processing.org/one/topic/problem-with-pimage-resize.html\nEye of the Tiger Piezo: http://forum.arduino.cc/index.php?topic=215687.0\nFace Detect with Front Camera: https://github.com/ketai/ketai/issues/62\nVideo Recording with Ketai: https://forum.processing.org/two/discussion/3643/is-it-possible-to-do-a-video-recording-using-ketai-lib\nKetai syntax for Face Detection: http://ketai.org/examples/facedetector/\nOpenCV and Android: https://forum.processing.org/one/topic/computer-vision-libraries-and-android.html\n\n\n\n<br>\n</div>\n</div>\n\n<script src=\"footer.js\"></script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n    <script src=\"../../js/bootstrap.min.js\"></script>\n</body>\n</html>",
+			"file": "Blog/Safaris/3.html",
+			"file_size": 23793,
+			"file_write_time": 131955720515052554,
+			"settings":
+			{
+				"buffer_size": 23021,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Lab 4.html",
+			"settings":
+			{
+				"buffer_size": 27481,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/4.html",
+			"settings":
+			{
+				"buffer_size": 18327,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"../../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"../../jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"../../fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\n\nbody{\n/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/\nbackground:url();\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con1{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://jkbi2g.by.files.1drv.com/y4maU55LeuqkSP2d0L6OpeeEj1vDeN1ecFoEB8Od7m855Bz-Nh22LzotN518upZ3bIJGixW-B_Ns2AoBzZ8BgxMMdHcLyuuz77oRpe76zMX_UCHap3X-MdhhpzHrGQLD_SoCiPym08TiXAeqRiRMB0cYAhF0RTyyuLgryf_M-DTFWwUjFJPBAcWhghRZQmYcDWVHWk4vJYMlB98aCqGrkE3kw?width=2124&height=1255&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://jkbh2g.by.files.1drv.com/y4mWahWDaTaTo42cX8Jt6U3dlGpT4OBP9WkTy63e7W3vjlCobtB6aeEbEV-kBjnGh_8StTeO87wuwt-EY8ZhwBJ4_lj25USg3Dqdo2x9n0eARcH1cgHFrWoq7fC1yd451MgWWiEtRNM1vsYgEE4gfL3U478WxnfjsfUywYWaaGDYbP6u05JOJVTq1WTrRPwjGpepAsRkcfUeesquTzlit0yNA?width=2127&height=1256&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con3{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://jkbg2g.by.files.1drv.com/y4mK-6EVngFwvsMltN966FNt_Nh7uRmdE3LE6q7wRJChS-N05IS9RttLW61E1IaUqUiNYkOzYA26KwsBkOZpePvNhhn45_9YhOolhkP97m5xA0jOM-Oq8uh8SuejRKXUl_NcQ9RfQFKAdwNIm1MzKNq5rOlc0YTPRjA1DRyIFnPQ8xgTg-Gq-eLW0gx7g_5MIp29DX0ebD1e4nDFW9M3Pi_Ww?width=2124&height=1257&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con4{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://jkbi2g.by.files.1drv.com/y4maU55LeuqkSP2d0L6OpeeEj1vDeN1ecFoEB8Od7m855Bz-Nh22LzotN518upZ3bIJGixW-B_Ns2AoBzZ8BgxMMdHcLyuuz77oRpe76zMX_UCHap3X-MdhhpzHrGQLD_SoCiPym08TiXAeqRiRMB0cYAhF0RTyyuLgryf_M-DTFWwUjFJPBAcWhghRZQmYcDWVHWk4vJYMlB98aCqGrkE3kw?width=2124&height=1255&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:1.5em;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 1 !important;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\np{\n  margin:15px 5px 15px;\n}\n\niframe {\n    height: 26.5vw; /* 100/56.25 = 560/315 = 1.778 */\n}\n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n    <link rel=\"shortcut icon\" href=\"SafariUnity/TemplateData/favicon.ico\">\n    <link rel=\"stylesheet\" href=\"SafariUnity/TemplateData/style.css\">\n    <script src=\"SafariUnity/TemplateData/UnityProgress.js\"></script>\n    <script src=\"SafariUnity/Build/UnityLoader.js\"></script>\n    <script>\n      var gameInstance = UnityLoader.instantiate(\"gameContainer\", \"SafariUnity/Build/Safari Unity.json\", {onProgress: UnityProgress});\n    </script>\n\n</head>\n<body onload=\"getRandomImage()\">\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<center><h1>Week 5 - Enrichment II</h1></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Reflections</p></h4></center>\n    \n    <p>\nAs for the the Enrichment II assignment I decided to go ahead with the idea of enriching part of a space of where wallabies roam freely about. First of all, I should mention that the idea could potentially be extended to any species that sees the environment in colour. Despite that some animals have slightly and/or radically different way of perceiving the world to make their lives easier, to make it more convenient for them to have access to particular types of food, escape any potential predators nearby and areas that could potentially do harm. Building upon that, I am curious to see whether projected environments, as I would call augmented or even as far as I would go and just call them virtual, although without placing any form of species into any widely known as virtual reality environments but, in order to further elaborate, project those spaces into empty, enclosed spaces by the use of a projection mapping device and a set of prisms and mirrors, refracting and bouncing light of each to throw and disperse the mapping all around the environment.\n</p>\n\n<p>\n  Effects that I could call as relatively similar to what I'm trying to achieve are attached underneath:\n</p>\n\n<!-- Empathy Machine\n\nFace detection as a cue: predator\n\nWallaby: Doesn't care\nKangaroo: Ready to rumble\nQuokka: love you human\nEmu: RUN RUN RUN\n\nResponse: appropriate sounds\n\nAim: educating on how different species are likely to respond to\nNocturnal Species\n\n...\nBased on the readings, frameworks seem to need to be developed for the assessment of what exactly is the enrichment itself -->\n    </p>\n\n      </div><br>\n</div>\n\n<center>\n    <iframe width=\"50%\" src=\"https://www.youtube.com/embed/PoJI59K5eAc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</center><br>\n\n<center>\n  <a href=\"https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiJxeWo8M3gAhUMVd8KHVTwAmQQMwhtKCEwIQ&url=https%3A%2F%2Fwww.emergingedtech.com%2F2015%2F10%2Fmake-3d-hologram-with-smartphone-tablet-class-project%2F&psig=AOvVaw0hSF942hhS5krkeRi6YMaH&ust=1550874622498837&ictx=3&uact=3\"><img style=\"width:50%;\" src=\"https://www.emergingedtech.com/wp/wp-content/uploads/2015/10/3d-holographic.png\"></a>\n</center>\n</div>\n\n<!-- <div class=\"row\">\n  <div class=\"col-md-2 col-md-offset-2\">\n    <a href=\"https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Panda vol. 1<br></center></div><img src=\"https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n    <div class=\"col-md-2\">\n    <a href=\"https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Panda vol. 2<br></center></div><img src=\"https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Humans vol. 1<br></center></div><img src=\"https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Humans vol. 2<br></center></div><img src=\"https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n  </div> -->\n\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n\n<p>\n  By augmenting the environment, there are a few things that I aim at achieving: introducing a new, unfamiliar environment to the animal by introducting a set of new visuals and auditory cues, along with perhaps adjusted temperature and humidity to emulate the environment. While with such a setting it would certainly be possible to augment a reality centered around humans, as they have developed a range of devices set for the purpose of themselves, to the extent of even calibrating all the machinery to imitate the exact representation of audiovisual environments perceived by humans or even augmenting them, I would expect to have such an environment not work appropriately at least straightaway perhaps just due to the fact of how the senses vary between the species. Nevertheless, I wonder if wallabies would feel comfortable to spend time at an environment that would resemble tropical forests and now while tammar wallabies can't survive when it's over 40 degrees Centigrade (and rendering such environments with temperature and humidity would certainly be have no sense and be expensive), perhaps they may become comfortable if it's just the forest itself, with appropriate sounds elicited by other animals and the temperature just appropriate for them. Or even environments resembling the north pole, perhaps not due to the representation of the north pole itself but perhaps just the set of visual cues of white and blue could appeal to them, rendering a new appropriate environment for them to rest at and spend time.\n</p>\n\n<p>\n  While I understand such an environment cannot be provided as a substitute to an actual, natural environment and the fidelity of the projection will never be of absolutely sufficient quality due to shadows generated by moving objects such as kangaroos themselves and just the resolution is not going to be ever appropriate. Nevertheless, it might be the case, that for kangaroos/wallabies/wallaroos who are not familiar with such new environments, may actually become interested. These particular species need to migrate (depending on the kangaroos, could go up to tens of kilometers of search for food) and so they need to be able to adapt to a variety of environments. I also think, many people like to travel. Some animals do travel for the purpose of their survival, think - many different birds, which will fly seasonally at times for thousands of kilometers. Perhaps kangaroos do not quite do that, certainly not wallabies but perhaps, despite there might not be one specific evolutionary benefit for them, they still may find some usecase of liking in such (environments) and hence, potentially lead to enriching their lives, in the end defining what enrichment is remains as a quite difficult task in term of refering that term to animals, especially wild and those placed in enclosures.\n</p>\n\n\n      </div><br>\n</div>\n\n</div>\n<div class=\"con2\">\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n\n<p>\n  There are some issues that I foresee nevertheless, especially in terms of Tammar Wallabies in particular. They are apparently nocturnal species, although many of their activities will take place during the same, some will take place during the night. Projecting dark environments is a particularly difficult task, as long as I know, that is hardly possible due to a projection mapping, well, being literally projection of light. There are probably some ways to alleviate that issue, perhaps it might be possible to just render some environments in grayscale and by that, giving an impression of an environment that is explored during the night. There is also the question whether wallabies would perceive the environment as one that really differs based on different projections mapped. Perhaps physical changes to the environment would be necessary by the introduction of specific leaves, grass, ground and other props to truly enhance the potentially enriching experience. Although, naturally such augmentations have been already portrayed in the mass media, at times in quite gloomy way such as in Black Mirror but they are also still being experimented on in forms of prototypes for enrichment of human lives. Still, seeing the potential problems with such solutions should not be overlooked.\n</p>\n\n\n      </div><br>\n</div>\n\n<center>\n<iframe width=\"50%\" src=\"https://www.youtube.com/embed/H8FwT1LCxew\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</center><br>\n\n<center>\n  <iframe width=\"50%\" src=\"https://www.youtube.com/embed/2MqGrF6JaOM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</center><br>\n\n<center>\n<img width=\"50%\" src=\"http://geekroniques.fr/wp-content/uploads/2014/08/vlcsnap-2014-08-26-14h37m46s8.png\">\n</center><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n\n<p>\n  For the purpose of the prototype I created a few environments, that could give an idea of how the prototype could potentially work. In real world, it would not be that immersive that you would see so far outside, although potentially that could be simulated in a few ways by changing the actual 'dome' environment, perhaps involving a few projectors instead of a system of prisms and mirrors. Nevertheless, the combination of audiovisual cues kept at a fidelity enough to keep, potentially, a wallaby immersed within the space to perhaps interact with other wallabies and or rest, first of all generate interest and see how it reacts, whether it likes it or not. This could lead to an idea that what I am trying to achieve is to perhaps introduce a toy of sorts which I'd argue against, as what I'm trying to do is simulate an environment that would be otherwise just difficult to introduce, pretty much as humans do for augmenting their own reality and introducing a mixed reality systems of their own (I should have used this term probably from the very beginning, although with so many different realities existing even I found myself quite lost).\n</p>\n\n<p>\n  I introduced three conceptual environments: arctic, subtropical and temperate.\n</p>\n</div>\n</div>\n\n<center><h1>Research</h1></center><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n<p>\n  Some research was previously conducted around the theme of Kangaroos, Wallabies and other endemic species of Australia in conjunction with the idea of core theme of Enrichment itself.\n</p>\n</div>\n</div>\n\n<center>\n<iframe src=\"4.html\" width=\"80%\" style=\"height:50vw\"></iframe>\n</center><br>\n\n<div class=\"row\">\n<center>\n<div class=\"col-lg-8 col-lg-offset-2\">\n<a data-flickr-embed=\"true\" class=\"darken\"  href=\"Blog/Safaris/5.html\"><div class=\"text\">That's next level</div><img src=\"https://jkbf2g.by.files.1drv.com/y4mC2yicjLdcIC81PvfCTwQpai7rQv18T3SVS5NnvbOhbVmr9KuhuyG1qYKdcdlKMJPXJ3H9b9g1xIt-8d3LfTYp2r4LLm68IY93qYhLT1Ud19WMZ6FytxubMfbHf6ySoREttlNBv3bb_6fp-N9Z6ckQHjIn-mntqTUQV8F8CBSCqhvIsqW6W3u59DcLJOu_1_dQG1Bohw1b6oqHFyD3RN5XQ?width=3240&height=1819&cropmode=none\" width=\"75%\"></a><br>\n</div>\n</center>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n<p>\n  Following up on Harpreet's proposed source of postdoctoral research conducted at University of Melbourne by Sarah Webber, in line with the mixed reality idea suggested for Enrichment II for Design in Safaris, I read into the details of how mixed reality was introduced to Orangutans. This is almost exactly what I am proposing, although at a limited degree and for non-human species that are very closely related to humans themselves, which seems to entail a focus on interaction and having the technologies introduced at limited capacity as opposed to Enrichment II idea of turning an entire room into a rather static, yet still mixed reality environment. At this point, I have a hunch that introducing dynamic elements into the place will generate natural anxiety in animals, triggering a fight or flight response, which may be different for those kept in enclosures. Although at this point I assume all animals kepts at Zoos are in fact wild animals, non-domesticated.\n</p>\n\n<p>\n  Related work could include Koko, which (it feels weird by saying it but I guess you could call it a lifelong) project in which a Gorilla was raised, technically by a human and taught as much as thought best in terms of how to communicate, primarily by the use of sign language. I believe in terms of cognitive capabilities these species are related, to humans as well and therefore more aware and as showcased during one of the lectures, they can exceed in certain tasks compared to humans, such as selecting a series of numbers in a sequence that are scattered across a monitor after showcasing which is which for a fraction of a second (as I believe it was?). It may be worth exploring how other animals react to mixed reality technologies, wallabies ought to be more open due to them being highly adaptable species but we'll see. I wonder whether the concept of uncanny valley exists in a form in case of animals or whether low-fidelity projected environments will be enough.\n</p>\n\n<p>\n  Apparently Orangutans were very involved with the technology, however they could not interact with them the way they wanted as it limited them to using fingertips. Instead, Kinect was used to create dynamic projection mappings by the use of abstract forms, art created by Orangutans themselves. The aim was the enrichment of their lives, therefore very in line with what they do. Natural user interfaces were the focus, as the collaboration involved multiple parties: Microsoft, University of Melbourne and Victoria Zoo itself. Using the brain is apparently very important part of enrichment. Improving animal welfare and improving Conservational Behavioural Change, perception of not just betterment of humans but betterment of animals as well. Food and social interactions have potential to be explored in terms of the digital technologies.\n</p>\n</div>\n</div>\n\n<center>\n<iframe width=\"50%\" src=\"https://www.youtube.com/embed/SNuZ4OE6vCk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</center>\n\n<br>\n</div>\n<div class=\"con3\">\n<center><h1>Prototyping</h1></center><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n\n<p>\n  With no doubt, I am having some difficulties addressing assignments at sufficient quality on a weekly basis. I guess to draw a parallel, think of a functioning business. If it gets into trouble, it could go through a process called restructuring or just simply transformation, when it sees the bumpy road ahead. IBM apparently went through 7 major of those and look where they are. Exactly, you don't seem them anymore but they remain a very powerful firm nevertheless. Adjusting my way of working, thinking, the resources I need and the process of delivering assignments here at The New School are quite radically different, in terms that it is much more demanding at a much more significant manner, which is good. But it takes time to adjust and like usual, I get kind of none.\n</p>\n\n<p>\n  In any case, over with the personal reflections and off to the prototyping part. I am not sure whether I addressed that sufficiently in the paragraphs before but one of the reasons I decided to go prototyping with unity is fairly simple, here I am drawing a parallel to a <a href=\"../../GradShow.html\">graduation show I was designing as part of a team.</a> That having said, I went solo at a bit more specific venture: of recreating the idea of the team and rapidly prototyping in a virtual environment. Think about it, why should anyone first buy all resources to test out ideas, softcode/hardcode stuff, keep getting frustrated, bounce back and forth from failing prototypes and delivering something that ultimately you were not happy with, you would if you spent much more time on it but it seems I'll never be getting for a couple of next weeks now. So instead of spending $$$$ on materials, wasting time of the fabrication staff and going through a very complicated process of raising a prototype, involving multiple stakeholders in the process, I decided to go Fuad way and go through a very complicated process but one, that just has very few (and so less) potential failing points that can appear underway - as I would call it - extreme prototyping in Unity.\n</p>\n</div>\n</div>\n\n<div class=\"row\">\n<center>\n<div class=\"col-lg-8 col-lg-offset-2\">\n<a data-flickr-embed=\"true\" class=\"darken\"  href=\"Blog/Safaris/5.html\"><div class=\"text\">Arctic Environment</div><img src=\"https://jkbi2g.by.files.1drv.com/y4maU55LeuqkSP2d0L6OpeeEj1vDeN1ecFoEB8Od7m855Bz-Nh22LzotN518upZ3bIJGixW-B_Ns2AoBzZ8BgxMMdHcLyuuz77oRpe76zMX_UCHap3X-MdhhpzHrGQLD_SoCiPym08TiXAeqRiRMB0cYAhF0RTyyuLgryf_M-DTFWwUjFJPBAcWhghRZQmYcDWVHWk4vJYMlB98aCqGrkE3kw?width=2124&height=1255&cropmode=none\" width=\"75%\"></a><br>\n</div>\n</center>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n<p>\n  See, the thing is, my idea that concerns a whole area to be transformed, can be potentially tested in a virtual environment. Some elements can be taken quite much further and emulated in a neat fashion. I believe I already mentioned the obvious constraints that can appear but perhaps undertaking the project from the original standpoint: some miniaturized computer and a projector with a set of prisms and mirrors that would allow for a well dispersed colorful environment resembling other environments to be deployed at areas which cannot introduce too much of a variety for the animals it is home to. Emulating a variety of features is tricky and my knowledge of Unity is still developing but I believe in this particular case the use of Unity in particular is the optimal way of addressing this part of an assignment/homework. One, that potentially can extend onto other animals, once you think about it and get be flexed to quite great propotions and in addition, it may be possible to combine it with other systems such as Arduino, Processing, all stitched up in any way that may be relevant so that the enrichment actually occurs. One that is certainly very hard to define, ever since animals do not tend to speak in the very same language as humans but even if we take an aim for improving animals' physical wellbeing, this may be achieved with technologies. If not physical wellbeing itself, introducing what about psychological? Perhaps I'll go a bit anthropodenial here but don't at least certain animals share at least some humans' need for exploration? Sensing new cues, previously unknown? To learn about the surrounding environment? Like I said, there are some serious limitations in terms of how all this can be portrayed in a virtual environment but I think you get the idea so far and you may run those yourself if you're interested as I am attaching the prototype underneath.\n</p>\n</div>\n</div>\n\n\n</div>\n<div class=\"con4\">\n\n<div class=\"row\">\n<center>\n<div class=\"col-lg-8 col-lg-offset-2\">\n<a data-flickr-embed=\"true\" class=\"darken\"  href=\"Blog/Safaris/5.html\"><div class=\"text\">Subtropical Environment</div><img src=\"https://jkbh2g.by.files.1drv.com/y4mWahWDaTaTo42cX8Jt6U3dlGpT4OBP9WkTy63e7W3vjlCobtB6aeEbEV-kBjnGh_8StTeO87wuwt-EY8ZhwBJ4_lj25USg3Dqdo2x9n0eARcH1cgHFrWoq7fC1yd451MgWWiEtRNM1vsYgEE4gfL3U478WxnfjsfUywYWaaGDYbP6u05JOJVTq1WTrRPwjGpepAsRkcfUeesquTzlit0yNA?width=2127&height=1256&cropmode=none\" width=\"75%\"></a><br>\n</div>\n</center>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n<p>\n  I have introduced a variety of assets that originate from Creative Coding: Unity course, Unity's Standard Assets with the addition of some scripts that I have reworked in conjunction with the engine's trigger system, resulting in the simulation of a variety of environments. Two sounds were ripped from Call of Duty: Modern Warfare 2 videogame, as I am familiar with the file system and have knowledge of what the game entails in terms of the sounds themselves, which I found to be relevant to the environment involved.\n</p>\n\n<p>\n  I had some issues getting the WebGL version up and running. On one hand, I'm kinda running out of space on my GitHub repository, the limit is usually 1 GB, in my case I'm reaching 750MB and while there is a lot of assets that I should easily get rid of, this will take time, lots of it I just simply don't have. Then, there is a different color profile for WebGL, Gamma instead of Linear. Personally I prefer Linear due to enhanced contrast and just simply nicer rendering but it seems that only gamma is allowed for Web browsers (and so WebGL), which imposes some serious constraints and generated additional workload to calibrate the color system. The endgame is relatively rewarding, there is much that could have been introduced to make the experience much better (which I may improve later on) but the basic simulation of how the system would work is in place. After having looked into the interactive part of how projection mapping could be combined with Kinect however, now I am starting to think about incorporating interactive elements but that can come later.\n</p>\n\n<p>\n  What I personally find particularly interesting is that based on the Unity prototype, I could potentially introduce interactive elements within the Unity system itself. Therefore, what I am in fact constructing here is an evolutionary prototype, which I can continuously improve without dedicating much of any resources. If I want to, I can create a virtual experience within a web browser, I can also port that into smartphones (on which it just may work to some degree once scripts are iterated), virtual reality headsets of all sorts - google cardboard, oculus go, htc vive and alike. All of which is exactly, what I aimed for by constructing this prototype in Unity, so that there is little liability, maximum performance and flexibility and to give the most appropriate idea of what I am in fact aiming for to achieve here. And I am happy to see that perhaps my attempt at enrichment may not quite be amiss in the end.\n</p>\n</div>\n</div>\n\n<div class=\"row\">\n<center>\n<div class=\"col-lg-8 col-lg-offset-2\">\n<a data-flickr-embed=\"true\" class=\"darken\"  href=\"Blog/Safaris/5.html\"><div class=\"text\">'Strayan' Environment</div><img src=\"https://jkbg2g.by.files.1drv.com/y4mK-6EVngFwvsMltN966FNt_Nh7uRmdE3LE6q7wRJChS-N05IS9RttLW61E1IaUqUiNYkOzYA26KwsBkOZpePvNhhn45_9YhOolhkP97m5xA0jOM-Oq8uh8SuejRKXUl_NcQ9RfQFKAdwNIm1MzKNq5rOlc0YTPRjA1DRyIFnPQ8xgTg-Gq-eLW0gx7g_5MIp29DX0ebD1e4nDFW9M3Pi_Ww?width=2124&height=1257&cropmode=none\" width=\"75%\"></a><br>\n</div>\n</center>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n<p>Resources used for prototyping in Unity:<br><br>\n\n- Unity Standard Assets<br>\n- Assets supplied with for Creative Coding: Unity course at Parsons School of Design\n- Call of Duty: Modern Warfare 2 nature sounds (ripped from game's directory)<br>\n- Quite a bit of time<br><br>\n\nAcademic Resources:<br><br>\n\n<a href=\"http://dx.doi.org/10.1145/3025453.3025729\">1. Sarah Webber, Marcus Carter, Sally Sherwen, Wally Smith, Zaher Joukhadar, and Frank Vetere. 2017. Kinecting with Orangutans: Zoo Visitors' Empathetic Responses to Animals? Use of Interactive Technology. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17). ACM, New York, NY, USA, 6075-6088. DOI: https://doi.org/10.1145/3025453.3025729</a></p>\n<p>\n<a href=\"https://www.researchgate.net/publication/303293635_Interactive_Technology_and_Human-Animal_Encounters_at_the_Zoo\">2. Webber, Sarah & Carter, Marcus & Smith, Wally & Vetere, Frank. (2016). Interactive Technology and Human-Animal Encounters at the Zoo. International Journal of Human-Computer Studies. 10.1016/j.ijhcs.2016.05.003. </a></p>\n<p>\n<a href=\"https://dl.acm.org/citation.cfm?id=2837011\">3. Marcus Carter, Sarah Webber, and Sally Sherwen. 2015. Naturalism and ACI: augmenting zoo enclosures with digital technology. In Proceedings of the 12th International Conference on Advances in Computer Entertainment Technology (ACE '15). ACM, New York, NY, USA, Article 61, 5 pages. DOI: https://doi.org/10.1145/2832932.2837011\n</a></p>\n<p>\n<a href=\"https://dl.acm.org/citation.cfm?id=2837014\">4. Jean-Loup Rault, Sarah Webber, and Marcus Carter. 2015. Cross-disciplinary perspectives on animal welfare science and animal-computer interaction. In Proceedings of the 12th International Conference on Advances in Computer Entertainment Technology (ACE '15). ACM, New York, NY, USA, Article 56, 5 pages. DOI: https://doi.org/10.1145/2832932.2837014\n</a></p>\n<p>\n  <a href=\"http://dx.doi.org/10.1145/2995257.3014066\">5. Fiona French, Mark Kingston-Jones, David T. Schaller, Sarah Ellen Webber, Heli Väätäjä, and Mark Campbell. 2016. Don't cut to the chase: hunting experiences for zoo animals and visitors. In Proceedings of the Third International Conference on Animal-Computer Interaction (ACI '16). ACM, New York, NY, USA, Article 19, 6 pages. DOI: https://doi.org/10.1145/2995257.3014066</a></p>\n\n</p>\n</div>\n</div>\n\n<center><h1>Prototype</h1></center><br>\n\n<center>\n    <div class=\"webgl-content\">\n      <div id=\"gameContainer\" style=\"width: 80vw; height: 600px\"></div>\n      <div class=\"footer\">\n        <div class=\"webgl-logo\" style=\"transform:translate(90%)\"></div>\n        <div class=\"fullscreen\" onclick=\"gameInstance.SetFullscreen(1)\" style=\"transform:translate(-480%)\"></div>\n      </div>\n    </div>\n  </center>\n\n  <div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\nUse W to move forward and mouse to look around (there are some other interactions embedded too but these are the two most important ones)\n  </div>\n</div>\n\n\n      </div><br>\n\n<script src=\"footer.js\"></script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n    <script src=\"../../js/bootstrap.min.js\"></script>\n</body>\n</html>",
+			"file": "Blog/Safaris/5.html",
+			"file_size": 34811,
+			"file_write_time": 131955925310129013,
+			"settings":
+			{
+				"buffer_size": 34313,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/SafariUnity/TemplateData/style.css",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en-us\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <title>Unity WebGL Player | Week 4</title>\n    <link rel=\"shortcut icon\" href=\"TemplateData/favicon.ico\">\n    <link rel=\"stylesheet\" href=\"TemplateData/style.css\">\n    <script src=\"TemplateData/UnityProgress.js\"></script>\n    <script src=\"Build/UnityLoader.js\"></script>\n    <script>\n      var gameInstance = UnityLoader.instantiate(\"gameContainer\", \"Build/Safari Unity.json\", {onProgress: UnityProgress});\n    </script>\n  </head>\n  <body>\n    <div class=\"webgl-content\">\n      <div id=\"gameContainer\" style=\"width: 960px; height: 600px\"></div>\n      <div class=\"footer\">\n        <div class=\"webgl-logo\"></div>\n        <div class=\"fullscreen\" onclick=\"gameInstance.SetFullscreen(1)\"></div>\n        <div class=\"title\">Week 4</div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+			"file": "Blog/Safaris/Safari Unity/index.html",
+			"file_size": 920,
+			"file_write_time": 131955902363985801,
+			"settings":
+			{
+				"buffer_size": 920,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Desktop/Parsons/Safaris/Week 5 Safari/Safari Unity/index.html",
+			"settings":
+			{
+				"buffer_size": 920,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -98,25 +171,7 @@
 			"file": "footer.js",
 			"settings":
 			{
-				"buffer_size": 1793,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Changes.html",
-			"settings":
-			{
-				"buffer_size": 16956,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog.html",
-			"settings":
-			{
-				"buffer_size": 30736,
+				"buffer_size": 1800,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -182,13 +237,15 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah",
-		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog",
-		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void",
-		"/C/Users/Fuad/Documents/GitHub"
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris"
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Changes.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Coverflow.html",
 		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Savant.html",
 		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High8.html",
 		"/C/Users/Fuad/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia/0.html",
@@ -216,6 +273,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"position: absolute",
+			"iframe",
+			"http",
 			"lazy\"",
 			"src",
 			"img",
@@ -249,7 +309,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -258,28 +318,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29667,
+						"buffer_size": 18939,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13710,
-								13710
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 6786.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -288,15 +348,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 31214,
+						"buffer_size": 37154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4177,
-								4177
+								0,
+								0
 							]
 						],
 						"settings":
@@ -309,7 +369,7 @@
 						"translation.y": 1104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -339,7 +399,7 @@
 						"translation.y": 3944.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -369,7 +429,7 @@
 						"translation.y": 588.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -378,15 +438,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 31045,
+						"buffer_size": 31047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12066,
-								12066
+								12842,
+								12842
 							]
 						],
 						"settings":
@@ -396,27 +456,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 329.0,
+						"translation.y": 2788.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "Coverflow.html",
+					"file": "Safaris.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10684,
+						"buffer_size": 15701,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								583,
-								583
+								14178,
+								14178
 							]
 						],
 						"settings":
@@ -429,11 +489,219 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "Blog/Safaris/3.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6248,
+								6248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2232.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Lab 4.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 27481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2930,
+								3679
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Blog/Safaris/4.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8923,
+								8923
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2812.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Blog/Safaris/5.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33189,
+								33189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7650.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Blog/Safaris/SafariUnity/TemplateData/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								191
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 17.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Blog/Safaris/Safari Unity/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/Fuade/Desktop/Parsons/Safaris/Week 5 Safari/Safari Unity/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								920
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "Savant.html",
 					"semi_transient": false,
 					"settings":
@@ -459,11 +727,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 14,
 					"file": "index - Copy.html",
 					"semi_transient": false,
 					"settings":
@@ -475,8 +743,8 @@
 						"selection":
 						[
 							[
-								3804,
-								3626
+								884,
+								884
 							]
 						],
 						"settings":
@@ -486,14 +754,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1929.0,
+						"translation.y": 3639.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 15,
 					"file": "fuad css.css",
 					"semi_transient": false,
 					"settings":
@@ -519,95 +787,37 @@
 						"translation.y": 4434.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 16,
 					"file": "footer.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1793,
+						"buffer_size": 1800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								298,
-								298
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Changes.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16956,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1727,
-								1727
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4060.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Blog.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 30736,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8640,
-								8640
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 38.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
