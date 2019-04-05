@@ -4,7 +4,7 @@ document.write('\
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"><\/script>\
 \
 <script>\
-$(\'.col-md-3, .col-md-4, .col-md-5, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-8\').tilt({\
+$(\'.col-md-3, .col-md-4, .col-md-5, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8\').tilt({\
     glare: true,\
     maxGlare: .1,\
     transition: true\
