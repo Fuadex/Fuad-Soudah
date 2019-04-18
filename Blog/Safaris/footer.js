@@ -1,9 +1,9 @@
 document.write('\
   \
-        <script src="scrollreveal.js"><\/script>\
+        <script src="../../scrollreveal.js"><\/script>\
 \
       <script>\
-window.sr = ScrollReveal({ mobile: false, reset: true });\
+window.sr = ScrollReveal({ mobile: false, reset: false });\
 \
 sr.reveal(\'.row\', {opacity: 0,duration:1000, mobile: true});\
 sr.reveal(\'h2\', {origin:\'left\', distance: \'1000px\',duration:1500});\
