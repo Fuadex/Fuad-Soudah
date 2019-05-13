@@ -550,11 +550,91 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 	transform:scale(1.2);
 }
 
+svg {
+  animation: 2s linear infinite svg-animation;
+  max-width: 100px;
+}
+
+@keyframes svg-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg)
+  }
+}
+
+circle {
+  animation: 1.4s ease-in-out infinite both circle-animation;
+  display: block;
+  fill: transparent;
+  stroke: #2f3d4c;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  stroke-width: 10px;
+  transform-origin: 50% 50%;
+}
+
+@keyframes circle-animation {
+  0%,
+  25% {
+    stroke-dashoffset: 280;
+    transform: rotate(0);
+  }
+  
+  50%,
+  75% {
+    stroke-dashoffset: 75;
+    transform: rotate(45deg);
+  }
+  
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(360deg);
+  }
+}
+  .circle {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+  transform: translateY(-50%);
+}
+
+
 </style>
+
+		<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+	  	document.getElementById("loader").style.opacity = "0";
+	  	document.getElementById("loader").style.height = "0";
+	});
+
+  function dada() {
+    document.getElementById("loaded").style.opacity = "1";
+};
+</script>
+
+
 </head>
-<body>
+<body onload="dada()">
+
+	<div style="opacity:1; transition: 1s ease;" id="loader" class="animate-bottom">
+<div class="circle">
+  <svg class="circle__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle class="circle__svg-circle" cx="50" cy="50" r="45"/>
+  </svg>
+</div>
+</div>
+
 	<!-- Swiper -->
-	<div class="container-fluid">
+	<div class="container-fluid" id="loaded" style="opacity: 0; transition: 1s ease">
 		<div class="swiper-container swiper-container-h">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide ">
@@ -568,10 +648,10 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 							<a href="Portfolio.pdf">Portfolio</a></p>
 						</div>
 					</div>
-					<div class="swiper-slide" data-swiper-autoplay="70000">
+					<div class="swiper-slide" data-swiper-autoplay="80000">
 						<div class="swiper-container swiper-container-v">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide tilt data-swiper-autoplay="16000"">
+								<div class="swiper-slide tilt data-swiper-autoplay="16000">
 									<div class="col-md-4">
 										<p class="mober1"><a href="https://www.youtube.com/watch?v=FvnOUr7jmNM" class="popup-youtube">Savant</a></p>
 										<a href="https://www.youtube.com/watch?v=FvnOUr7jmNM" class="darken popup-youtube ho"><div class="text"><p>Savant</p></div><img class="swiper-lazy zwei" src="i/2.jpg" style="width:45vw"  id="n0"></a>
@@ -597,6 +677,13 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 										<p class="mober1"><a href="//e.issuu.com/embed.html#34415519/64823171" class="iframe-link">Graduation Show</a></p>
 										<a href="//e.issuu.com/embed.html#34415519/64823171" class="darken iframe-link ho"><div class="text"><p>Graduation Show</p></div><img class="swiper-lazy zwei" src="i/5.png" style="width:45vw"  id="n3"></a>
 										<p class="mober"><a href="//e.issuu.com/embed.html#34415519/64823171" class="iframe-link">Curation + VR</a></p>
+									</div>
+								</div>
+																<div class="swiper-slide tilt">
+																										<div class="col-md-4">
+										<p class="mober1"><a href="https://www.youtube.com/watch?v=JmEaL9e097U" class="popup-youtube">Reflection</a></p>
+										<a href="https://www.youtube.com/watch?v=JmEaL9e097U" class="darken popup-youtube ho"><div class="text"><p>Reflection</p></div><img class="swiper-lazy zwei" src="i/1a.jpg" style="width:45vw"  id="n0"></a>
+										<p class="mober"><a href="https://www.youtube.com/watch?v=JmEaL9e097U" class="popup-youtube">Unity + Motion Capture + VFX</a></p>
 									</div>
 								</div>
 								<div class="swiper-slide tilt">
@@ -643,6 +730,8 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 			</div>
 		</div>
 
+
+
 		<script src="jquery-3.2.1.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
@@ -650,6 +739,8 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
 		<script src="jquery.magnific-popup.js"></script>
+
+
 
 		<script>
 			$('.tilt').tilt({
@@ -728,6 +819,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
       },
   });
 </script>
+
 
 <script>
 	$(document).ready(function() {

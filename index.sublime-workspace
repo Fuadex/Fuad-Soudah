@@ -19,179 +19,17 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 18939,
+				"buffer_size": 21046,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/p5/empty-example/index.html",
+			"file": "Changes.html",
 			"settings":
 			{
-				"buffer_size": 448,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "MusicVideos.html",
-			"settings":
-			{
-				"buffer_size": 37154,
+				"buffer_size": 19207,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Fuade/Documents/New Unity Project (3)/Packages/manifest.json",
-			"settings":
-			{
-				"buffer_size": 1618,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Fuade/Desktop/Parsons/Unity/Assets/VisualEffectGraph-Samples-master/Packages/manifest.json",
-			"settings":
-			{
-				"buffer_size": 1618,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Blog/Eudaimonia/10.html",
-			"settings":
-			{
-				"buffer_size": 36858,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High6.html",
-			"settings":
-			{
-				"buffer_size": 23580,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High7.html",
-			"settings":
-			{
-				"buffer_size": 31047,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Safaris/4.html",
-			"settings":
-			{
-				"buffer_size": 18317,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"../../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"../../jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"../../fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\n\nbody{\n/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/\nbackground:url();\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con1{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://farm1.staticflickr.com/852/42072351800_dce6f49186_k.jpg);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm1.staticflickr.com/833/28620123727_3b61bf1fd3_k.jpg);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:1.5em;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 1 !important;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\n\n.noborder{\n  border-width:0px !important;\n  box-shadow:none !important;\n}\n\npre{\n  border-width:1px;\n  border-color:black;\n  margin-top:1vw;\n  padding:1vw;\n      -webkit-transition: all 0.5s ease !important;\n       -moz-transition: all 0.5s ease !important;\n        -ms-transition: all 0.5s ease !important;\n         -o-transition: all 0.5s ease !important;\n            transition: all 0.5s ease !important;\n}\n\npre:hover{\n  border-width:2px;\n  border-radius:2vw;\n  padding:5vw;\n  background:white;\n    -webkit-transition: all 0.5s ease !important;\n       -moz-transition: all 0.5s ease !important;\n        -ms-transition: all 0.5s ease !important;\n         -o-transition: all 0.5s ease !important;\n            transition: all 0.5s ease !important;\n}\n\niframe {\n    height: 26.5vw; /* 100/56.25 = 560/315 = 1.778 */\n}\n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n</head>\n<body onload=\"getRandomImage()\">\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<center><h1>Week 3: Empathy Machine vol. 1</h1></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Hatching</p></h4></center>\n    \n    <p>\n      So, to start this part, I wanted to clarify a few things. First of all, creating projects in Arduino environment is hard. And it is not hard just because of the syntax and what you could do to program in this environment but just that you don't always get what you want and what you usually end up with is something that just kinda works or doesn't work and you have no idea why. Life in programming, in short. Then, think about adding animals into the mix, how do you really design for them? How do you design to imitate them? Now, the first part is tricky enough but designing to empathise with them is some form of an abstraction, that I love to think about but actually executing a meaningful project? Hell, that is not easy at all. And to throw on top of it all, my sparkfun kit just does not cut it. The 5$ ultrasonic sensor, is bad. Many other modules I have? Are bad too. Harbouring the kit across the world, I figured would be a good idea but then it turns out it all is just simply not enough. Also, I am still doing orientations for the fabrication labs (at that time) So come to think of it all, I had a mission impossible, especially that I read 'no presentations in powerpoint/keynote' as a challenge (and I loveeee challenges!), so I decided - to do a presentation but in front-end with a js library. Which was fun but rrrrreally time consuming and naturally it deterred me from doing what needed to be done. And what needed to be done? Well. The rest!\n    </p>\n\n    <p>\n      So there were two approaches I have undertaken. First was to address the assignment due to the constraints I was bound by, primarily: equipment and surprisingly at that point also imagination. Therefore I quickly thought of some phenomena that captured my interest in the past. In this case, a moose.\n    </p>\n\n      </div><br>\n</div>\n\n          <center>\n  <div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2\">\n    <a href=\"http://www.pourvoiries.com/wp-content/uploads/2010/11/Orignal.jpg\" class=\"darken\"><div class=\"text\"><center>Moose<br></center></div><img src=\"http://www.pourvoiries.com/wp-content/uploads/2010/11/Orignal.jpg\" style=\"margin-top:20px\"width=\"50%\"></a><br>\n  </div>\n</div>\n</center>\n\n          <center>\n<video autoplay muted loop id=\"videor\" data-swiper-autoplay=\"1\" style=\"width:50%\"> <!--120 seconds-->\n  <source src=\"https://onedrive.live.com/download?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2125214&authkey=ABRXkBBWPLNTomg\" type=\"video/mp4\"\">\n</video>\n</center>\n\n\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Moose</p></h4></center>\n    \n    <p>\n      The thing is that some differences between us and animals have its basis also in how our metabolical systems work. For instance: humans can get intoxicated in a variety of ways, one is alcohol, casualy drank primarily in the form of ethanol as a result of other metabolical processes undertaken by yeast, which by eating sugar, processes it and releases among some chemical compounds - alcohol. The very same thing does not quite happen for humans, though, as carbohydrates are used as primary fuel for, well, life. And so eating an apple, which is primarily carbohydrates in the forms of sugars, does not quite generate much of a response, except for the joy of how (often) crunchy and sweet it is. That doesn't quite go for some species like Moose, though, which get intoxicated by eating apples. After digging into the subject, I discovered this was not quite exactly the case but still I was looking forward to exploring why that was happening and I figured ever since I have an alcohol sensor, perhaps I could make use of it.\n    </p>\n\n    <p>\n      Moose also have a different body temperature, many animal species vary in these terms from humans who's normal body temperature is set at 36.6 degrees Celsjus. I had a temperature sensor so perhaps I could emulate some responses made in case of: what if the air temperature plummets, how does this affect the animal in question? \n    </p>\n\n      </div><br>\n</div>\n\n<center>\n    <iframe width=\"50%\" src=\"https://www.youtube.com/embed/9GmWnn20-JY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</center><br>\n\n          <center>\n<video autoplay muted loop id=\"videor\" data-swiper-autoplay=\"15000\" style=\"width:50%\"> <!--120 seconds-->\n  <source src=\"https://onedrive.live.com/download?cid=FCD0FC5C0BEE35A2&resid=FCD0FC5C0BEE35A2%2196411&authkey=ACqRb3Dg1qQV8nU\" width=\"50%\" type=\"video/mp4\">\n</video>\n</center>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Issues</p></h4></center>\n    \n    <p>\n      Then after a while I discovered some interesting things about my Arduino setup. Not only did I not have enough modules but some of them seemed to not work quite properly, like the temperature sensor. Tight deadlines never go in pair with problems, especially those of programming nature that you'd just keep bouncing back and forth for hours but seeing how I could not get the project through, I just decided to drop this idea. One that kind of went beyond just any specific animal. I just decided to target the idea from the perspective of communication, something essential to us all (and which I often have problems with but that's a different subject matter).\n    </p>\n\n    <p>\n      And so I started by showcasing some ways that humans communicated back in the days before internet was here, by smoke signals. I believe Indians used it and it was good enough. These kinds of forms, more in an auditory manner was utilized in Game of Thrones, a popular HBO TV Show based on a series of books, in which horns blown in a specific manner would communicate a particular event taking place. And then I figured that, hm, I've also seen Meerkats in Planet Earth and it was explained that they have a very elaborate ways and means of communicating, where particular nuances in how they speak matter. Also they are very social species. I'm not sure why I wanted to mention polar bears, though. Now that I think about it, me not remembering why I threw it in bothers me. Perhaps I wanted the audience to bear with me? Or just showcase the great rift between how animals communicate and how humans developed a multitude of languages that go into a variety forms of complexity. For instance a morse code, which in some way I was looking forward to emulating.\n    </p>\n\n      </div><br>\n</div>\n\n <div class=\"row\">\n  <div class=\"col-md-2 col-md-offset-2\">\n    <a href=\"http://www.mormonshare.com/wp-content/uploads/2014/08/cg_indian-smoke-signals.gif\" class=\"darken\"><div class=\"text\"><center>Smoke Signals<br></center></div><img src=\"http://www.mormonshare.com/wp-content/uploads/2014/08/cg_indian-smoke-signals.gif\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n    <div class=\"col-md-2\">\n    <a href=\"https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Dragonglass.jpg/revision/latest?cb=20150407175226\" class=\"darken\"><div class=\"text\"><center>Game of Thrones<br>Hornblasts<br></center></div><img src=\"https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Dragonglass.jpg/revision/latest?cb=20150407175226\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/meerkat-group.adapt.945.1.jpg\" class=\"darken\"><div class=\"text\"><center>Meerkats<br></center></div><img src=\"https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/meerkat-group.adapt.945.1.jpg\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_small/polar-bear-hero.jpg?1345901694\" class=\"darken\"><div class=\"text\"><center>Polar Bear<br></center></div><img src=\"https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_small/polar-bear-hero.jpg?1345901694\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n  </div>\n\n     <div class=\"row\">\n  <div class=\"col-md-3 col-md-offset-3\">\n    <a href=\"https://cdn-images-1.medium.com/max/1600/1*nNxybrXr-YPikYvaXyDbkQ.jpeg\" class=\"darken\"><div class=\"text\"><center>Human Languages<br></center></div><img src=\"https://cdn-images-1.medium.com/max/1600/1*nNxybrXr-YPikYvaXyDbkQ.jpeg\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n    <div class=\"col-md-3\">\n    <a href=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/315px-International_Morse_Code.svg.png\" class=\"darken\"><div class=\"text\"><center>Morse Code<br>Hornblasts<br></center></div><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/315px-International_Morse_Code.svg.png\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n  </div>\n\n\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Obvious Approach</p></h4></center>\n    \n    <p>\n      So I decided to take an obvious approach, by incorporating a set of code that I worked for, I think it wouldn't be an overstatement if I said over hundred(s) of hours, at the very least trying to get a specific form of communication working - Bluetooth. So I restudied the code and extracted parts specific to what I was trying to achieve and made a very basic setup in which accordingly to the horizontal touch position, I would generate specific piezo buzzer sound frequencies. This way, I wanted to emulate communication. Cause you could do something with it, send morse codes, elicit specific forms of emotions. Yeah, I know it was a bit far-fetched but potentially it was doable and there was an idea hatched in my head that took reality within an extremely pressing amount of time.\n    </p>\n\n    <p>\n      And so I improvised...\n    </p>\n\n      </div><br>\n</div>\n\n\n            <center>\n  <div class=\"row\">\n  <div class=\"col-md-4 col-md-offset-2\">\n    <a href=\"https://farm8.staticflickr.com/7866/46445588542_8b774cd934_k.jpg\" class=\"darken\"><div class=\"text\"><center>Leaf Project<br></center></div><img src=\"https://farm8.staticflickr.com/7866/46445588542_8b774cd934_k.jpg\" style=\"margin-top:20px\"width=\"50%\"></a><br>\n  </div>\n    <div class=\"col-md-4\">\n    <a href=\"https://kabd2g.by.files.1drv.com/y4m9wSHKbUSAMe0KxDJHFAZYhza901CWBjRqKbQb_EEOVWryTMNcctMML3Xo5wS1eaVQX_ir4D9EQ0mHr2whklOWm_JQXHIndfrm4llHxqCuU2vt2yuqiWLbCKrmsCvTr5p5Jf01qvaBgzZJUyISyatz_bSeseoje5905Y4fHygvaMW6qMv8Hnc09Joq-EPF7wMRxeVWCytYSi5JdifrtCkQA?width=3240&height=2160&cropmode=none\" class=\"darken\"><div class=\"text\"><center>GitHub<br></center></div><img src=\"https://kabd2g.by.files.1drv.com/y4m9wSHKbUSAMe0KxDJHFAZYhza901CWBjRqKbQb_EEOVWryTMNcctMML3Xo5wS1eaVQX_ir4D9EQ0mHr2whklOWm_JQXHIndfrm4llHxqCuU2vt2yuqiWLbCKrmsCvTr5p5Jf01qvaBgzZJUyISyatz_bSeseoje5905Y4fHygvaMW6qMv8Hnc09Joq-EPF7wMRxeVWCytYSi5JdifrtCkQA?width=3240&height=2160&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n</div>\n</center>\n\n   <div class=\"row\">\n    <div class=\"col-md-4 col-md-offset-2\">\n    <a href=\"https://kabb2g.by.files.1drv.com/y4m_T62qdMgfkjKxmuFiD8ojsWBaLdBKn86WM-VMPgjWi2g13OUj1A2jj5Lpaf6ujhMfSCAtyGqf3YgaE4Gnm3KTd6l_EydFeSmEBGcoSgnq2MPzdN5s_BArzUJwaXdefy9CzldNFhymjD2JpAqwUphURPiGJYeUg2jAP7kS5OSyz15_mQFhFH6MEapjLCeEzTBFNXxL5Aeu0OJKEIk8p-jCQ?width=3240&height=2160&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Processing<br></center></div><img src=\"https://kabb2g.by.files.1drv.com/y4m_T62qdMgfkjKxmuFiD8ojsWBaLdBKn86WM-VMPgjWi2g13OUj1A2jj5Lpaf6ujhMfSCAtyGqf3YgaE4Gnm3KTd6l_EydFeSmEBGcoSgnq2MPzdN5s_BArzUJwaXdefy9CzldNFhymjD2JpAqwUphURPiGJYeUg2jAP7kS5OSyz15_mQFhFH6MEapjLCeEzTBFNXxL5Aeu0OJKEIk8p-jCQ?width=3240&height=2160&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-4\">\n    <a href=\"https://kabc2g.by.files.1drv.com/y4mmGMu-3IMO4x9u_rRmWfRe4NQypOLNpASSgU04jrGiOJfUUXziCzIss2UJ0CNNglyEtL0ktxccNGaKtEdRv4uXeiktaya5vxYXYKW5c5yscQJRjrqTdFrfsMZ9AbBW_XQ3xv9h9cLEa2-NJRaEZCcpv9tP0mJaaZeayeAeVEzUhCD3o03o96zlrX7-hNi3dnaM8Y9xPJVwMldrmttMN6aZA?width=3240&height=2160&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Prepping Arduino<br></center></div><img src=\"https://kabc2g.by.files.1drv.com/y4mmGMu-3IMO4x9u_rRmWfRe4NQypOLNpASSgU04jrGiOJfUUXziCzIss2UJ0CNNglyEtL0ktxccNGaKtEdRv4uXeiktaya5vxYXYKW5c5yscQJRjrqTdFrfsMZ9AbBW_XQ3xv9h9cLEa2-NJRaEZCcpv9tP0mJaaZeayeAeVEzUhCD3o03o96zlrX7-hNi3dnaM8Y9xPJVwMldrmttMN6aZA?width=3240&height=2160&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n  </div>\n\n  <div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\n    \n  <center><h4><p style=\"margin-top:15px\">Reflection</p></h4></center>\n    \n    <p>\n      The prototype was not successful. It was praised for the value of portraying communication but many among the audience just did not simply understand what I was trying to achieve. The use of Bluetooth communication was valued here as well. But ever since the prototype was bare basic, all I had was the idea that I did my best to present but there are limits to how much you can depict with a minimal presentation slidedeck and a prototype which on its own just simply does not convey what it is.\n    </p>\n\n    <p>\n      Nevertheless, I felt that I should show off some skills and figuring out the bluetooth communication was not so simple as it may seem. Especially that I essentially hacked a bluetooth module dedicated for mBot robots, this stuff takes some time to figure out (although I managed 2 semesters ago). I reference a method that I researched also these 2 semesters ago, created by Prof. Takaya and I think this is pretty much it from the referenced code. <a href=\"https://github.com/Fuadex/Leaf\">Oh, of course there is the Leaf project source code that I keep on Github based on which I have got this setup up to full speed</a>.\n    </p>\n\n      </div><br>\n</div>\n\n\n<div class=\"row\">\n<center><h4>Arduino Code</h4></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 noborder\">\n<pre>\n  const int buzzer = 8;\nbyte incoming;\n\nvoid setup()\n{\n\n  pinMode(buzzer, OUTPUT);\n  Serial.begin(115200);\n}\n\n\nvoid loop()\n{\n  \nincoming = Serial.read();\nif (incoming==255){\n  noTone(buzzer);\n  }\nelse{\nSerial.println(incoming, DEC);\n\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\ntone(buzzer,map(incoming, 0, 127, 100, 900));\n}\n}\n  </pre>\n</div>\n</div>\n\n\n<div class=\"row\">\n<center><h4>Processing Code</h4></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 noborder\">\n<pre>\n  import android.content.Intent;\nimport android.os.Bundle;\nimport ketai.net.bluetooth.*;\nimport ketai.ui.*;\nimport ketai.net.*;\nimport android.os.Environment;\n\nimport java.util.*;\n\nbyte checkmate;\nfloat lastX;\n\nvoid setup() {\n  background(0);\n  frameRate(30);\n  fullScreen(P2D);\n  strokeWeight(4);\n  orientation(PORTRAIT);\n\n\n  //start listening for BT connections\n  bt.start();\n  //at app start select device…\n  isConfiguring = true;\n  //font size\n  fontMy = createFont(\"SansSerif\", 40);\n  textFont(fontMy);\n  //selectionUpdate(1);\n}\n\nvoid draw() {\n  \n    if (isConfiguring)\n  {\n    ArrayList names;\n    background(78, 93, 75);\n    klist = new KetaiList(this, bt.getPairedDeviceNames());\n    isConfiguring = false;\n  } else\n  {\n    lastX = mouseX;\n\n    float na = map(constrain(map(lastX, width/12, width*11/12, 0, 100), 0, 100), 0, 100, 0, 127);\n    byte naa = (byte)na;\n    if (checkmate != naa) {\n      checkmate=naa;\n      bReleased = true;\n      byte[] data = {naa};\n      bt.broadcast(data);\n      //first tap off to send next message\n      bReleased = false;\n      println(naa);\n      delay(50);\n    }\n\n  background(50);\n\n  fill(#7ED321);\n  textAlign(CENTER);\n  textSize(width/20);\n  text(\"Empathy Machine\", width/2, height/16);\n}\n}\n\nPFont fontMy;\n\nboolean bReleased = true; //no permament sending when finger is tapped\nKetaiBluetooth bt;\nboolean isConfiguring = true;\nString info = \"\";\nKetaiList klist;\nArrayList devicesDiscovered = new ArrayList();\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\nvoid onCreate(Bundle savedInstanceState) {\n  super.onCreate(savedInstanceState);\n  bt = new KetaiBluetooth(this);\n}\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\nvoid onActivityResult(int requestCode, int resultCode, Intent data) {\n  bt.onActivityResult(requestCode, resultCode, data);\n}\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\n\nvoid onKetaiListSelection(KetaiList klist) {\n  String selection = klist.getSelection();\n  bt.connectToDeviceByName(selection);\n  //dispose of list for now\n  klist = null;\n}\n\n//Following void appropriated from Prof. Takaya's Blog: http://prof-takaya.blogspot.com.au/2013/02/connecting-android-and-arduino-by.html\n//Call back method to manage data received\nvoid onBluetoothDataEvent(String who, byte[] data) {\n  if (isConfiguring)\n    return;\n  //received\n  info += new String(data);\n  //clean if string to long\n  if (info.length() > 16)\n    info = \"\";\n}\n  </pre>\n</div> \n</div>\n\n<center><h1>Week 3: Empathy Machine vol. 2</h1></center>\n\n<!-- <div class=\"row\">\n  <div class=\"col-md-2 col-md-offset-2\">\n    <a href=\"https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Panda vol. 1<br></center></div><img src=\"https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n    <div class=\"col-md-2\">\n    <a href=\"https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Panda vol. 2<br></center></div><img src=\"https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Humans vol. 1<br></center></div><img src=\"https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n      <div class=\"col-md-2\">\n    <a href=\"https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none\" class=\"darken\"><div class=\"text\"><center>Humans vol. 2<br></center></div><img src=\"https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n  </div>\n\n  <div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2\">\n    <a href=\"https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater\" class=\"darken\"><div class=\"text\"><center>Panda<br></center></div><img src=\"https://kabf2g.by.files.1drv.com/y4mJhgCMfuFRBDng2gu8rlk0th0Ke4F1zd0kYKmpu233CxdkbwZhcjUBbV8BylKI6MAxZ5GYIx0clFXf1QAdEIXbWGzU2sD4eZyoHbP2oaJ8oU2JKKToO6Z6JyIARrB5jpHvTGSzE9Ky9vgab5SFft142NdNEfekkpBPeoATcrQFBBHAZPz3SsxtYOCLPCFs2n2Suo1IJ2mYvW9ovyvivcW7g?width=3240&height=2160&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n</div>\n\n  <div class=\"row\">\n  <div class=\"col-md-6 col-md-offset-3\">\n    <a href=\"https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater\" class=\"darken\"><div class=\"text\"><center>Humans<br></center></div><img src=\"https://kabh2g.by.files.1drv.com/y4ms1kLBZxQzHCct4zHChSo0UnRDR6H4JJ7gnbISsmv-7nB--0m0a7THIlp5QxnjIzb-IUBcaimRl4jam1V2mn7eb9PelQ4oZcFx_Q6eyG2TDCiDAqee9z53Ib1wI70u90DmFDnnnKP1Z47c6GXdEs5e3iquxznIIGAvyyJ-q28XuCs3n88Kxx1-N3Bf-BE_SeQVhW-qWmoUeFCA5C5hgpj2A?width=2297&height=1798&cropmode=none\" style=\"margin-top:20px\"width=\"100%\"></a><br>\n  </div>\n</div> -->\n\n<div class=\"row\">\n<center><h4>Processing Code (Reworked)</h4></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 noborder\">\n<pre>\n import ketai.camera.*;\nimport ketai.cv.facedetector.*;\nimport ketai.ui.*;\n\n//import blobDetection.*;\nKetaiCamera cam;\nKetaiVibrate vib;\n\n//BlobDetection theBlobDetection;\nboolean newFrame= false;\n\nString[] img = {\"roo1.png\", \"emu1.png\", \"quokka1.png\"};\nPImage[] images = new PImage[img.length];\n\nPImage myImage;\nint MAX_FACES = 1;\nKetaiSimpleFace[] faces = new KetaiSimpleFace[MAX_FACES];\n\nint handle;\nint k = -1;\nlong[] pat  = {5, 125};\n\nvoid setup() {\n  \n    for (int i=0; i< img.length; i++) {\n    String imgs = img[i];\n    images[i] = loadImage(imgs);\n  }\n\n  orientation(PORTRAIT);\n  //cam.setCameraID(0);\n//destimg = createImage(640, 320, RGB);\n  vib = new KetaiVibrate(this);\n  cam = new KetaiCamera(this, 640, 320, 30);\n    println(cam.list());\n    cam.setCameraID(1);\n// img =new PImage(80,60);\n//  theBlobDetection = new BlobDetection(img.width, img.height);\n//  theBlobDetection.setPosDiscrimination(true);\n//  theBlobDetection.setThreshold(0.2f); // will detect bright areas whose luminosity > 0.2f;\n//theBlobDetection.setBlobMaxNumber(1);//Max blob detected = 1;\n\ncam.start();\n\n }\n\nvoid draw() { \n  imageMode(CENTER);\n  background(0);\n  \n  pushMatrix();\n  translate(0,640);\n    rotate(-PI/2);\nimage(cam, 0, width/2, 640,480);\n  faces = KetaiFaceDetector.findFaces(cam, MAX_FACES); \npopMatrix();\n\ncurrent();\nFaceDetection();\n\n  imageMode(CORNER);\n//cam.loadPixels();\n  roo();\nemu();\nquok();\n\nif (k==-1){\n    textAlign(CENTER);\n  textSize(width/20);\n  text(\"How will an animal react to you?\", width/2, height/16);\n}\n  }\n\n//void onPause()\n//{\n//  super.onPause();\n//  //Make sure to releae the camera when we go\n//  //  to sleep otherwise it stays locked\n//  if (cam != null && cam.isStarted())\n//    cam.stop();\n//}\n\nvoid onCameraPreviewEvent()\n{\n  cam.read();\n  //  cam.manualSettings();\n  newFrame = true;\n}\n\nint vale;\nint vale1;\nint vale2;\nboolean valeCounter = true;\nboolean valeCounter1 = true;\nboolean valeCounter2 = true;\n\nvoid roo() {\n  \n  if (valeCounter==true){\n    vale++;\n    vale++;\n    vale++;\n    vale++;\n    vale++;\n    if (k==0){\n      tint(255,0,0);\n    }\n    image(images[0], width/7,height*6/8,100+vale,100+vale);\n    noTint();\n    if (vale>150){\n      valeCounter=false;\n    }\n  }\n  else if (valeCounter==false){\n    vale--;\n    vale--;\n    vale--;\n    vale--;\n    vale--;\n        if (k==0){\n      tint(255,0,0);\n    }\n        image(images[0], width/7,height*6/8,100+vale,100+vale);\n        noTint();\n            if (vale<150){\n      valeCounter=true;\n    }\n  }\n  //fill(#7ED321);\n  //rect(width/7,height*6/8,width/7,height/8);\n  //textAlign(CENTER);\n  //textSize(width/20);\n  //text(\"Kangaroo\", width/7, height/8);\n\n}\n\nvoid emu() {\n    if (valeCounter1==true){\n    vale1++;\n    vale1++;\n    vale1++;\n        vale1++;\n            vale1++;\n                if (k==1){\n      tint(255,255,0);\n    }\n    image(images[1], width*3/7,height*6/8, 100+vale1, 100+vale1);\n    noTint();\n        if (vale1>150){\n      valeCounter1=false;\n    }\n  }\n  else if (valeCounter1==false){\n    vale1--;\n    vale1--;\n    vale1--;\n        vale1--;\n            vale1--;\n                if (k==1){\n      tint(255,255,0);\n    }\n        image(images[1], width*3/7,height*6/8, 100+vale1, 100+vale1);\n        noTint();\n            if (vale1<150){\n      valeCounter1=true;\n    }\n  }\n  //fill(#7ED321);\n  //  rect(width*3/7,height*6/8,width/7,height/8);\n  //textAlign(CENTER);\n  //textSize(width/20);\n  //text(\"Emu\", width*3/7, height/8);\n}\n\nvoid quok() {\n      if (valeCounter2==true){\n    vale2++;\n    vale2++;\n    vale2++;\n        vale2++;\n            vale2++;\n                if (k==2){\n      tint(255,0,255);\n    }\n      image(images[2], width*5/7,height*6/8, 100+vale2, 100+vale2);\n      noTint();\n          if (vale2>150){\n      valeCounter2=false;\n    }\n  }\n  else if (valeCounter2==false){\n    vale2--;\n    vale2--;\n    vale2--;\n        vale2--;\n            vale2--;\n                if (k==2){\n      tint(255,0,255);\n    }\n    image(images[2], width*5/7,height*6/8, 100+vale2, 100+vale2);\n    noTint();\n                if (vale2<150){\n      valeCounter2=true;\n    }\n  }\n  //fill(#7ED321);\n  //  rect(width*5/7,height*6/8,width/7,height/8);\n  //textAlign(CENTER);\n  //textSize(width/20);\n  //text(\"Quokka\", width*5/7, height/8);\n}\n\nvoid current(){\n  if (pmouseX > width/7 && pmouseX < width/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){\n  k = 0;\n}\n\nelse if(pmouseX > width*3/7 && pmouseX < width*3/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){\n  k = 1;\n}\n\nelse if (pmouseX > width*5/7 && pmouseX < width*5/7+200 && pmouseY > height*6/8 && pmouseY < height*6/8+200){\n  k = 2;\n}\n\nelse if (pmouseX > width/2-320 && pmouseX < width/2+320 && pmouseY > 240 && pmouseY < 720){\n  k = -1;\n    fill(255,255,255);\n    text(\"Nah, that's you, click an animal\", width/2, height*8/16);\n}\n}\n\nvoid FaceDetection(){\nif (k >= 0 && k<= 2){\n  for (int i=0; i < faces.length; i++)\n  {\n      imageMode(CORNER);\n    //We only get the distance between the eyes so we base our bounding box off of that \n    //rect(faces[i].location.x, faces[i].location.y, 2.5*faces[i].distance, 3*faces[i].distance);\n    image(images[k], faces[i].location.x+320, faces[i].location.y+240, 2.5*faces[i].distance, 3*faces[i].distance);\n    println(\"Face Detected!\");\n    \n    \n    if(k==0){\n    vib.stop();\n    vib.vibrate(1);\n      textAlign(CENTER);\n  textSize(width/20);\n  fill(255,0,0);\n  text(\"Kangaroo?\", width/2, height/16);\n  text(\"IT WILL FIGHT YOU\", width/2, height*8/16);\n}\n\nif(k==1){\n    vib.stop();\n    vib.vibrate(100);\n      textAlign(CENTER);\n  textSize(width/20);\n  fill(255,255,255);\n  text(\"Emu?\", width/2, height/16);\n  text(\"IT WILL RUN LIKE HELL\", width/2, height*8/16);\n}\n\nelse if(k==2){\n  vib.stop();\n      vib.vibrate(10);\n        textAlign(CENTER);\n  textSize(width/20);\n  fill(255,0,255);\n  text(\"Quokka?\", width/2, height/16);\n  text(\"It will wanna HUG you!\", width/2, height*8/16);\n}\n  }\n}\n}\n\n  </pre>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-8 col-md-offset-2 panel\">\nResources:\nhttps://idangero.us/swiper/api/\n\n\nKetai Detector: https://forum.processing.org/one/topic/ketaifacedetector-in-portrait-mode-on-tablet.html\nRotating Image: https://forum.processing.org/two/discussion/16641/how-to-only-rotate-an-image-without-changing-the-background\nPImage Resize: https://forum.processing.org/one/topic/problem-with-pimage-resize.html\nEye of the Tiger Piezo: http://forum.arduino.cc/index.php?topic=215687.0\nFace Detect with Front Camera: https://github.com/ketai/ketai/issues/62\nVideo Recording with Ketai: https://forum.processing.org/two/discussion/3643/is-it-possible-to-do-a-video-recording-using-ketai-lib\nKetai syntax for Face Detection: http://ketai.org/examples/facedetector/\nOpenCV and Android: https://forum.processing.org/one/topic/computer-vision-libraries-and-android.html\n\n\n\n<br>\n</div>\n</div>\n\n<script src=\"footer.js\"></script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n    <script src=\"../../js/bootstrap.min.js\"></script>\n</body>\n</html>",
-			"file": "Blog/Safaris/3.html",
-			"file_size": 36508,
-			"file_write_time": 131964801167462772,
-			"settings":
-			{
-				"buffer_size": 35616,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Eudaimonia/2.html",
-			"settings":
-			{
-				"buffer_size": 30194,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Safaris.html",
-			"settings":
-			{
-				"buffer_size": 19502,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "home.html",
-			"settings":
-			{
-				"buffer_size": 30574,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Safaris/9.html",
-			"settings":
-			{
-				"buffer_size": 38763,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
-			"settings":
-			{
-				"buffer_size": 18604,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Safaris/7.html",
-			"settings":
-			{
-				"buffer_size": 22735,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Safaris/6.html",
-			"settings":
-			{
-				"buffer_size": 20189,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High8.html",
-			"settings":
-			{
-				"buffer_size": 39654,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n    <link href=\"../../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<script src=\"../../jquery-3.2.1.min.js\"></script>\n<link rel=\"stylesheet\" href=\"../../fuad css.css\" type=\"text/css\">\n<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n\n<style>\n\nbody{\n/*  background:url(https://veigzw.by.files.1drv.com/y4m8Eo2MwGucqLEIiM1YCjhqNbLlJ8jJFqG3atfxBFQHF0zhucnCwQRK0IpDJRnLocz2zKL1UoQJHWpKHs3DFGkK_-szQPp4HFad6Gh5IgBga--hwI0VA7j9HA0hgLijyMesWvFW1xgMM3u_bo6kRSRo_Ybp0yq-SuWeY67hlXlhJU-piUZewxOJT5OpjuCiXwRI5IDJJVKhf9z7vPtwOBVnQ?width=3240&height=1816&cropmode=none);*/\nbackground:url();\nbackground-color: black !important;\n      background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\nh2{\n  background:none;\n  padding-top:8px;\n  padding-bottom:0px;\n}\n\n.panel{\n  background-color:rgba(255,255,255,0.65);\n  color: black; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\nborder:1px solid black;\n}\n\nh4{\n  padding-top:13.5px;\n  padding-bottom:15px;\n}\n\n.parallax { \n    /* The image used */\n    background-image: url(\"DSC_3698b.jpg\");\n\n    /* Full height */\n    min-height: 100%; \n\n    /* Create the parallax scrolling effect */\n    position: relative;\n    opacity: 0.65;\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n\n.text{\n    opacity:0;\n      font-weight: bold;\n    z-index: 1;\n    position: absolute;\n    font-size:2vw;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\nbackground-color:rgba(255,255,255,0.65);\n    color: white; text-shadow: white 0em 0em 0.5em;\n  font-family:'Roboto', sans-serif;\n  padding-top:0.25em;\n  padding-bottom:0.25em;\n  padding-left:0.5em;\n  padding-right:0.5em;\n  border-radius: 10px;\n  border-style:solid;\n  border-width:1px;\n  border-color:black;\n      -webkit-transition: all 0.2s linear;\n       -moz-transition: all 0.2s linear;\n        -ms-transition: all 0.2s linear;\n         -o-transition: all 0.2s linear;\n            transition: all 0.2s linear;\n}\n\na.darken img {\n    display: block;\n    \n    -webkit-transition: all 0.5s linear;\n       -moz-transition: all 0.5s linear;\n        -ms-transition: all 0.5s linear;\n         -o-transition: all 0.5s linear;\n            transition: all 0.5s linear;\n}\n\na.darken:hover img {\n    opacity: 0.7;           \n}\n\na.darken:hover .text{color:black;\n   opacity:1;\n    -webkit-transition: all 0.3s linear;\n       -moz-transition: all 0.3s linear;\n        -ms-transition: all 0.3s linear;\n         -o-transition: all 0.3s linear;\n            transition: all 0.3s linear;\n}\n\n.con1{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://verh3g.db.files.1drv.com/y4mv-fEzgZQRHQcfWbD0-825tCCx2o7qc_hwlu030PU93kRp3CwGnwuTCbYEmhUEW1LHCqD201BzZhYbrYUNR7yaPd4608j9wFaOcldmHkYoLCTQkW4OKTHfj9q86oBEc2voyNPYcoiLBvRwCxX1QgyjGYEGROfhW-wPtGbXgIG7lXmTBNqsrz63SufvO1nYBg3uaRpioG3AyxFr6LPlnKUUQ?width=1920&height=1080&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con2{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://wepquw.db.files.1drv.com/y4mxMByCBAzuiPVciQIpuXRibJQYLNTWBwZzoHLS-lCWpuB-ZNM8fe4AjuTORKjU1J6udqPJ-kXJTSoT5lGURdsiZGPm6z_eOuiKeZZ7VRFvrK-b_wGCOX8FrR-wD6bF_e7Yz2WSUb2IvXZq4jZ02bBAQ-fGDICuks4-c0GY-2uuBxiLTs93DNRehRHcLSaNV8ku2OFCHN0MlF91usp4mb42w?width=1920&height=1080&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con3{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://knmplg.db.files.1drv.com/y4mY0A63BpQYIMDcYwH0yfi3OXLklVNHv_OPVMUgYVT3zWjz4NasSYN0qiuTm0ASgnAjutnDHozFneJxGfscq5pPtxp4B_a8z31XHMl8TAQIwyUSBAGFenrRkOzdthvbqwQ07ZJYX9up2YN0b2ArhzF1SLeNPVmj8Rnl8V7DhHjan32RI60UCu9EHpRbnfdvEBNiiDHjZB1PbWyti5cufnEtw?width=1920&height=1080&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n.con4{\n  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://icuy8a.by.files.1drv.com/y4mjrGUfgzYa9mfhFO54yE_rGdz_vvIDx8jfMweK4IaPSQUb8UviLM5qllU8s_9QvG_PIiVIKj4LkKKu9rkYEE2SHQVcItDpwl_G8FZyBrQGjmAbcbsF5wzmY7ajyEu0tTrhF-g5fAg_74toATzEkDdRnOrbr2oM6S294SgoMt972SDRghGM-DYfr8-8T6QM--P-3X6XoXZPuWp4HAwTCMmdQ?width=2048&height=1080&cropmode=none);\n        background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    overflow-x: hidden;\n}\n\n@media (max-width: 1024px){\n\n.d{\n\tmargin-bottom:15px;\n}\n\n}\n\n\n</style>\n\n\n  <script type=\"text/javascript\">\n    ImageArray = new Array();\n    ImageArray[0] = 'DSC_3698bb.jpg';\n    ImageArray[1] = 'DSC_3698cc.jpg';\n  \n\nfunction getRandomImage() {\n    var num = Math.floor( Math.random() * 2);\n    var img = ImageArray[num];\n    document.getElementById(\"randImage\").innerHTML = ('<img src=\"' + img + '\" width=\"100%\">')\n\n}\n\n</script>\n\n</head>\n<body onload=\"getRandomImage()\">\n<script src=\"navigation.js\"></script>\n\n<!-- BODY BODY BODY-->\n\n<div class=\"con1\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<center><h1>Oblique</h1></center>\n</div><br>\n\n<div class=\"row\">\n  <div class=\"col-md-4 col-md-offset-2\">\n    <a href=\"https://voro3g.db.files.1drv.com/y4mZO5cOeZgQ2K5bdP9ze--LxYHcoQfK76MxoUsDfGcHdL1MYboM5221-WSWtqGT7skANDSbpWkku0Swb8MrxB7IylMWT9I8mKVtOKumeu1RyI8XJHLMuDzkxmKx6OdqkumJGXT2sSRnyIh64rzXwgfieLsZTuO81kdfBwwaVgJX9prKAxeqpgrL7PvUzuM9KbqMjOOg_7M_CfbE0rOC7T6AA?width=1024&height=576&cropmode=none\" class=\"darken\"><div class=\"text\">(.)</div><img class=\"d\" src=\"https://voro3g.db.files.1drv.com/y4mZO5cOeZgQ2K5bdP9ze--LxYHcoQfK76MxoUsDfGcHdL1MYboM5221-WSWtqGT7skANDSbpWkku0Swb8MrxB7IylMWT9I8mKVtOKumeu1RyI8XJHLMuDzkxmKx6OdqkumJGXT2sSRnyIh64rzXwgfieLsZTuO81kdfBwwaVgJX9prKAxeqpgrL7PvUzuM9KbqMjOOg_7M_CfbE0rOC7T6AA?width=1024&height=576&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div>\n  <div class=\"col-md-4 col-md-offset-0 panel\">\n    <center><h4>Ufff...</h4></center>\n    <p>Final stream for this year, eh? Ough... Wait, it's already new year? 2019? Hey, I'm not looking to bad now except I have no idea how I'll be looking in 2020. It would be cool to have a quiet house, a case of pale ale and roughly a few good media to roll over and squeeze till I munched on the very last bit. But what I'll likely end up with is a crazy ass city, bag of mate and a bunch of media I'll have to create myself and I'll never be satisfied with</p>\n\n    <p>\n      That having said, it didn't go off to a really bad start. Here's some of the stuff I caught up with.\n    </p> \n  </div><br>\n</div>\n\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n  <center><h4>Love, Death & Robots</h4></center>\n\n  <p>\n    Ep 1: 8/10\n    Ep 2: 10/10\n    Ep 3: 9/10\n    Ep 4: 9/10\n    Ep 5: 8/10\n    Ep 6: 9/10\n    Ep 7: 6/10\n    eP 8: 8/10\n    EP 9: 7/10\n    Ep: 10: 8/10\n    Ep: 11 8/10\n    Ep 12: 8/10\n    Ep 13: 9/10\n    Ep 14: 10/10\n    Ep 15: 9/10\n    Ep 16: 8/10\n    Ep 17: WTF\n    Ep 18: 8/10\n\n  </p>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://verh3g.db.files.1drv.com/y4mv-fEzgZQRHQcfWbD0-825tCCx2o7qc_hwlu030PU93kRp3CwGnwuTCbYEmhUEW1LHCqD201BzZhYbrYUNR7yaPd4608j9wFaOcldmHkYoLCTQkW4OKTHfj9q86oBEc2voyNPYcoiLBvRwCxX1QgyjGYEGROfhW-wPtGbXgIG7lXmTBNqsrz63SufvO1nYBg3uaRpioG3AyxFr6LPlnKUUQ?width=1920&height=1080&cropmode=none\" class=\"darken\"><div class=\"text\">Gliding Away</div><img src=\"https://verh3g.db.files.1drv.com/y4mv-fEzgZQRHQcfWbD0-825tCCx2o7qc_hwlu030PU93kRp3CwGnwuTCbYEmhUEW1LHCqD201BzZhYbrYUNR7yaPd4608j9wFaOcldmHkYoLCTQkW4OKTHfj9q86oBEc2voyNPYcoiLBvRwCxX1QgyjGYEGROfhW-wPtGbXgIG7lXmTBNqsrz63SufvO1nYBg3uaRpioG3AyxFr6LPlnKUUQ?width=1920&height=1080&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div>\n\n<div class=\"con2\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Man in the High Castle</h4></center>\n\n    <p>\n      Season 1\n    </p>\n\n    <p>\n      Well, there was Blade Runner so I figure chucking in Man in the High Castle seems about right. Ever feel like opening netflix but there's nothing interesting to see? Or opening steam and there's nothing to play all of a sudden? Or opening your laptop and realising that it's +35 degrees and the thing won't run even google chrome well? Oh well, good thing there's power saving mode and streaming services are optimised to run even on a bunch of calculators. That having said, there was literally nothing on netflix and I figured, perhaps it could be a good idea to look into Amazon Prime and what it has in store, as I did not quite use it much but turns out, it was a mistake. It's a very weird platform but in combination with my vpn and even without it, I am able to play an impressive selection from Australia, German and American services in some weird combination that's either a success or fail, same goes for the availability of specific shows. Where Amazon Prime seems to have an upper hand in, is the availability of HBO shows and (WB?) movies. It's a shame I've seen so many of them, already. But not from Amazon Prime, not quite and yet, though...\n    </p>\n\n    <p>\n      Man in the High Castle came as an interesting title due to it gathering pretty good reviews back from what I recalled. So that + me being excited with Dick Universe (no pun intended) I figured I'd check what so many were crazed about (I'm serious, no puns intended, he's a real author, don't blame me for English/Americans naming their kids 'Dick's), so I delved into the show which greeted with a quite inviting pilot... Very promising introduction to a rather detailed alternate world, characters being introduced in a proper, unraveling manner, although quite tendentious manner. Then a bit of a letdown as the drama progressed in such bit hollowy formula with the introduction of better and lesser bits, however with it all progressing into more intricate and deeper storyline tanglements and eventually leading further up those without any doubt more interesting bits. With this, it seemed to me that the actors' performance also kicked up and managed to link up, or perhaps it just remained in line the entire time, just the plot didn't have too much earlier to offer but as it did become highly thickening, there was much to be enjoyed from practically almost the entire cast. Some more nuanced direction was also present and uncertainty of where the story was headed and the motivation of the many depicted characters. In terms of the characters and the world they were set in, it gets a bit unnecessarily too much at times, at other even overly. But I also quite enjoyed the setting as I found it an interesting crossover of cultures and the entire alternate history presented in a, well, I'd say mostly coherent manner that you could follow. I think for some it might be too much with much of the yesterday's totalitarian symbolism and I'd even push it to say as even washing out history. But all in all it is an alternate history and there was much to be seen behind the provided frameset, as in the depicted world.</p>\n\n<p>Towards the end, I actually grew quite impressed. I can't still purely recommend this one due to the bland introduction and advancement within this show but it certainly takes off and grows on you, as the world takes on colour with time and many features become stronger with coming episodes. Still, it may be boring at times and too far-fetched at the other, hard to grasp due to quite radical events of which outcomes are too difficult to believe but it all becomes a bit more fruitful eventually, especially once the audience develops some forms of emotional attachment of the showcased characters, which I felt to have been accomplished in this show. Not only that but it seemed to have some depth into which it slowly managed to dig in with a very highly interesting detail matrix. I'm inclined to see more.\n\n\n    </p>\n    \n    <p><center>8/10</center></p><br>\n\n    <p>\n      Season 2\n    </p>\n\n    <p>\n      I've been casually consuming this season, in a bit of a turtle pace and rather on my smartphone than computer. That takes a toll on how much I actually see but surprisingly the quality is still quite good on mobile devices and I can praise a few things and cut back and down on a few (I don't think that's what the meaning of the used words are made for but whatever). One of the really good things about this show is just how many details there are and how well depicted and conveyed, and performed all of them are. The interior design, showcasing the array of emotions and how each action counteracts the others. The interior design, the costumes, the vehicles, creation of this unique universe. All the smalltalk taking place and the really solid adherence to, yeaaah I guess the philosophy of the fascist states of yesterday and the projection of what if they won, how would they have built the new world?\n    </p>\n\n    <p>\n      Well the team behind the show does continue to nail the job, except it sort of does drop slightly the ball on the advancement of the plot, loses a bit of track of the endgame and the layers associated. It build a few storylines independently, in a quite proper manner and overall well managed, which is not easy to achieve. But I just don't see any arc building and just what the actors play, seem to not serve any particular end, despite of how they they're playing, if they're not accommodating any purposeful storyline, I guess it's just all kind of fetching to the waste.\n    </p>\n\n    <p>\n      Considering some lines, I guess there is some sort of substantial plotlines which serve contradictory to what I am saying but it's all also deprived a bit of the more artistic and nuanced direction which I really liked to see in the first season. Perhaps the aim was to satisfy the critics overall, technically it's literally just flawlessly executed, professional work there is no doubt. But I think in the world of myriad of dramas existing, Man in the High Castle was supposed to shine out with just more than what's on the market. And it does but just... it's not building anywhere towards and from where it actually started, nothing really exciting or profoundly deep was presented. Still, certainly a good watch.\n    </p>\n\n     <p><center>8/10</center></p><br>\n</div>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://wepquw.db.files.1drv.com/y4mxMByCBAzuiPVciQIpuXRibJQYLNTWBwZzoHLS-lCWpuB-ZNM8fe4AjuTORKjU1J6udqPJ-kXJTSoT5lGURdsiZGPm6z_eOuiKeZZ7VRFvrK-b_wGCOX8FrR-wD6bF_e7Yz2WSUb2IvXZq4jZ02bBAQ-fGDICuks4-c0GY-2uuBxiLTs93DNRehRHcLSaNV8ku2OFCHN0MlF91usp4mb42w?width=1920&height=1080&cropmode=none\" class=\"darken\"><div class=\"text\">(..)</div><img src=\"https://wepquw.db.files.1drv.com/y4mxMByCBAzuiPVciQIpuXRibJQYLNTWBwZzoHLS-lCWpuB-ZNM8fe4AjuTORKjU1J6udqPJ-kXJTSoT5lGURdsiZGPm6z_eOuiKeZZ7VRFvrK-b_wGCOX8FrR-wD6bF_e7Yz2WSUb2IvXZq4jZ02bBAQ-fGDICuks4-c0GY-2uuBxiLTs93DNRehRHcLSaNV8ku2OFCHN0MlF91usp4mb42w?width=1920&height=1080&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n</div>\n<br>\n\n<div class=\"con3\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n  <center><h4>Attack on Titan</h4></center>\n\n  <p>Season 1</p>\n\n  <p>I'd say at times it's remarkable to come across shows which upon its entry, you become so dissatisfied with what you've experienced that you can't help but get back watching and eventually enduring the first painful but then quite increasingly pleasant experiences. That's what happened with Code Geass, which became incredibly good, although still within the very good threshold with season 2 but how it started got all sorts of negative comments spouting right through my keyboard, spamming whomever I felt most sharing my concerns with at the time. And now's the time for Attack on Titan and there are quite a few thoughts strolling through my mind. But I'll start from the beginning.</p>\n\n  <p>The problem was.. um, actually there was no problem at the beginning. It rolled in with all its glory actually, beautiful scenery, gorgeous animation, very unique style... well, maybe not that unique but still the dirty blend conceived of medieval and fantasy elements... which one would call just purely might & magic but still as if some fine sort of mythodology implemented. And then going full berserk with no restraints whatsoever, daum it was a ride in which the extremes were definitely not held back. This is something that I do envy from the creators originating from the land of the rising sun, cherry blossoms and mind-melting sushi. They do stretch out the extremes too far though and that did take place with Code Geass, Attack on Titan and pretty much anything that originates from Japan but as always, even in the crowd of badly made decisions, there are some that will strike as something that you have not seen, as in that good, in quite sometime. Attack on Titan didn't really have any of those... with many elements that I disliked.. but it grew.</p>\n\n  <p>What did I dislike, though? First of all, the overly cringy characters (oh how I love to remark the cringiness, fuck yeah!). Then the unbelieavable plot lines imbued, with reason but presented beyond except for the effects that took place, which may not make sense at this point. Imagine characters who are driven by a purpose based on an event that took place in their story. The drive is justified by the event but the event itself is just way too far-fetched, not so much to dissolve the joy coming from the show but making it a notch painful watch. Then there are the titans themselves, who look as if they were just parodies or caricature. Perhaps seeing those eating people is something that kicks the sense of what you're perceiving but making a show to the point of being laughable while introducing a horde of elements skewed with seriousness does not serve as much value. Except, it is something novel. And in fact, the all seriousness in the end was presented, deployed very well. And even if there is more that I notch disliked, like diverting action to retrospection or annoying characters, all somewhat became moderate and helped me focus on what was good.</p>\n\n  <p>And there was plenty of good, starting with the already mentioned bleak world filled with dirt. But the animation here was something from an almost long-gone dimension. It was so terrific and mesmerising to follow at times with so many details retained that it all just felt fluidly natural. I really enjoyed the world-building and the characters' development. It's a bit like Game of Thrones happening here but frankly, Attack on Titan delivers a much more natural and thought-out batch and drives the story in a way that you can't be sure of who will survive this. In fact, the entire world is made to be very fragile but still complex and I loved how it progressed and uncovered more details with coming episodes. The supporting auditory elements were prevalently stellar. The dynamism kept the show watchable and incredibly entertaining. And even the weaker elements could not mess with how much I enjoyed watching it, especially with the closing episodes. It was a show more worth of an 8 but the way it was ultimately delivered from start to finish, makes it a prime watch and a clear recommendation.</p>\n\n    <p><center>9/10</center></p><br>\n\n    <p>Season 2</p>\n\n    <p>The same cannot be said about the season 2, though. Although, I must mention at this point that it didn't start so badly. In fact, most of the world's structure was retained with the extremely alike styling and characters too. I couldn't say that these two seasons were published in so different times which is a massive praise. So how the fuck did the creators manage to screw it up so badly halfway through? Let's see, new elements were introduced which were great. The progression was clear, the dynamism was there. Technically, all the characters and the story just took on from the first season. New fears and unknowns were introduced and many of the bad stuff was also retained which paradoxically projected for a clear 8/10 continuation. Which even the increasingly apparent defects could not entirely drive off. I counted at least 3 characters who had their personalities, at least slightly altered, as if to make them seem a bit more human. But even more of them became equalised. Normally that could work except Attack on Titan featured highly polarised archetypes which surprisingly worked in this convention, as the emphasis was put on the characters' drives rather than emotions per say. In anime there is a tendency to convey feelings and emotions to the point the viewer could barf. So this is the only explanation for which I could find what happened but this just drove the show to being more tendentious. In fact, many techniques were introduced which were just simply not present before, strengthening the other qualities of the show and its uniqueness but in addition, the show just shows how either the budget was cut or some other people were involved, as the animations also took a quality dive, not integrating so many nuances which I have loved in the first season.</p>\n\n    <p>None of it all can compare to what happened mid-way in the season, though by introducing such a twist that it managed to obliterate a lot of what the show was actually good with. This was truly one of the worst twists I have experienced in the recent, at least months. And the way it was further driven... see, the good thing about shows where there are uncovered secrets is that it has good uncovered secrets that remain ambiguous and somewhat freightening. We want to know the answer behind but it's best we did not so that the world remains concise and within a prime set of integrity. This show unfortunately all threw out the window. From which point, everything started to literally just fall apart: the nuances, the details, the atmosphere, the structure and especially world-building and dialogues. You could still see this is Attack on Titan but the joy just evaporated and many structural parts of the show were meddled with, with Titans not being as difficult to address anymore. It's a shame, from an unforgiving and very unique universe, somewhat it all was steered towards... I don't even know to be frank, except I can only express the lows that I have experience and dissatisfaction for the course the what I would call, one of the best anime series has taken.</p>\n\n    <p><center>6/10</center></p><br>\n\n    <p>Season 3</p>\n\n    <p>Once again, the show kicks off properly by introducing a series of powerful schemata. Out of a sudden, the key characters regained their core personalities to a certain extent, which came as a very welcoming sight as finally it would have seemed the show was being restored to its glory. But with that, many flaws came along originating from season 1 and unfortunately 2 as well. To pinch in, there are hardly any titans in Attack on Titans this time. Instead, we receive a western-like blend and new intrigues that pushes on a 'till bit of freshness but also a grand confusion right in the middle of already stirred up clusterfuck with which this show became all thanks to the massive lame twist. We get something similar of grandeur but it doesn't lead anywhere and that's my main issue, especially that many of the newly introduced characters just lack the power that was conceived in season 1. In fact, much of the world's power and fears somehow managed to dissapate along the way, the fragility of the world, the particular bleak style of the show which made it truly unique in the crowd of schematic tv shows, which this title unfortunately attained. It did improve however in some episodes considerably, so you may give it a chance. But I just wish the show's creators could flash with just a bit of consistency because it just doesn't watch well when many elements begin showing contradictory elements defying rather itself and trying to become something that it's just not. In other words, the original had everything, all there's required is follow and concentrate on the world and its progression which is already in place. Once you start meddling with it, nothing interesting comes out, just a pulpy mess.</p>\n\n    <p><center>7/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://knmplg.db.files.1drv.com/y4mY0A63BpQYIMDcYwH0yfi3OXLklVNHv_OPVMUgYVT3zWjz4NasSYN0qiuTm0ASgnAjutnDHozFneJxGfscq5pPtxp4B_a8z31XHMl8TAQIwyUSBAGFenrRkOzdthvbqwQ07ZJYX9up2YN0b2ArhzF1SLeNPVmj8Rnl8V7DhHjan32RI60UCu9EHpRbnfdvEBNiiDHjZB1PbWyti5cufnEtw?width=1920&height=1080&cropmode=none\" class=\"darken\"><div class=\"text\">Earth</div><img src=\"https://knmplg.db.files.1drv.com/y4mY0A63BpQYIMDcYwH0yfi3OXLklVNHv_OPVMUgYVT3zWjz4NasSYN0qiuTm0ASgnAjutnDHozFneJxGfscq5pPtxp4B_a8z31XHMl8TAQIwyUSBAGFenrRkOzdthvbqwQ07ZJYX9up2YN0b2ArhzF1SLeNPVmj8Rnl8V7DhHjan32RI60UCu9EHpRbnfdvEBNiiDHjZB1PbWyti5cufnEtw?width=1920&height=1080&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div>\n\n\n<!-- \t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Attack on Titan</h4></center>\n    Really pat(h)etic and cringy. Really good introduction to the show. Gets somewhat weaker in the process.\n\n    <center>9/10</center><br><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://uuivzw.by.files.1drv.com/y4mWaxizFLxcpsS2gC1eUuXWZc00zfZ8tDezGT8BZHFyiljVdRFJLZ1Qdc15dH3RaLr9mrldymM6TBJRuElpuoxKu_hgFYYJehduIcqRrFl5rzijJiMXyYNjK0DXY1jj-ZXvEIhAbAejmCr_t7nL7_3Ni0u2f7hxn2wWNKppHNj9BMeAP4rn_4nQ5zf6EyKbyUPVHqX6K2Jiu5C0N0tqOdgKQ?width=3240&height=1821&cropmode=none\" class=\"darken\"><div class=\"text\">Hello :D</div><img src=\"https://8q3yng.by.files.1drv.com/y4mfFYw7ExSqjNoATvCYk0MoUFdHNhLZeI0hIXounaf0sEJpTvMiuTFdPFf9eXJZ_934ArtCymbpQc795s1iIlznHUz1VrEDN-S1gdyvdLOER0SMIjsw5YSI--kFGbP4ITVqIJcxxVFb6BcaxU94vbVANi2wPbM43ePsKOc5E7tpXrI-lVT1MLdcc4_SADB81cQ8B3AX0KayPSMKONuNDB5Qg?width=3240&height=1822&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n</div>\n</div> -->\n\n<!-- <div class=\"con4\"> -->\n<!--   <div class=\"con3\">\n\t<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Kids on the Slope & Terror in Resonance</h4></center>\n    \n    <p>I wanted to see a bit more work of Mr. Watanabe, the mastermind behind Cowboy Bebop and Samurai Champloo. Two shows came across as particularly interesting and I decided to roll in and binge through each. I'll start by giving an overview of Kinds on The Slope, a show I... did not eventually come a fan of.</p>\n\n    <p>I'll provide a brief explanation: It was just a regular drama, close to being a soap opera. I can value productions which have quite interesting themes imbued but the joker here with jazz, didn't take the cue at the forefront. The best parallel to establish here is Your Lie in April, a show very close in case of the showcased themes, except for jazz you had piano and violin, and classical music. The depth came close, although Your Lie was more heartfelt and deeper in terms of how it tangles emotions. In the end, there was a similar propotion of adolescent love themes portrayed, cliched and overused in a number of contemporary productions. All in all, everything has been said and told, portrayed and conveyed. I expected more from Shinichirô Watanabe. But as a show it felt complete and had an interesting span of life involved. Let me quickly note, this is not a bad show. But I don't think I'm a target audience for this anymore. If you're after some not too demanding drama with a solid hint of more refined musical themes, this could be something for you.</p>\n    <p><center>6/10</center></p><br>\n\n    <p>Terror in Resonance was something else, though. It doesn't start perhaps on the best page but it unravels nicely with a good portion of action. I became dissapointed with how it advanced and the involvement of as I'd call supercharacters and some lacking of themes of particular depth. But the execution felt good, the soundtrack was stellar and the presentation was phenomenal, entailing the cartoon itself and the especially the color-grading. It was a notch cliched but the characters were well defined and in the end I really enjoyed watching it, all in all. It might be a spoiler but if you enjoyed Fight Club and what the plot of it entailed, you could treat Terror in Resonance as a quite interesting extension as it builds upon some of it. In the end, a show which I'd consider to be far from dissapointing but it didn't really excel at the same time.</p>\n\n    <p><center>7/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://iiuh8a.by.files.1drv.com/y4me3NZ601HVIBpXUvoLRyCxcKaTUu25uBuK5OAaL-OxhDEGYWrZ7qYdLkNYVTTCTAbJUZ_W30-juBWx1GPTz1ZrmK0o7uM8yNHcqFfe3d452YuN_1oYxyZ5aTLNLRjFV8tGaNbp7Xudbonz-n3WTE3M55qShR4pfaAWw8iBb8CXyrRoVxBIxJgAPS4o1BWe720mIM1EDoWf-qSQnsdv4Vdmg?width=1024&height=574&cropmode=none\" class=\"darken\"><div class=\"text\">Phenomenal Visuals</div><img src=\"https://iiuh8a.by.files.1drv.com/y4me3NZ601HVIBpXUvoLRyCxcKaTUu25uBuK5OAaL-OxhDEGYWrZ7qYdLkNYVTTCTAbJUZ_W30-juBWx1GPTz1ZrmK0o7uM8yNHcqFfe3d452YuN_1oYxyZ5aTLNLRjFV8tGaNbp7Xudbonz-n3WTE3M55qShR4pfaAWw8iBb8CXyrRoVxBIxJgAPS4o1BWe720mIM1EDoWf-qSQnsdv4Vdmg?width=1024&height=574&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n</div>\n</div>\n\n<br>\n\n<div class=\"con4\">\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Incredibles 2 & Antman and the Wasp</h4></center>\n    \n    <p>I had the opportunity to travel quite recently. I found some good cheap tickets to Europe but I did not expect to get any entertainment as these were the cheapest tickets I'm probably ever going to get in my lifetime, moving me halfway across the world. At times, good fortune comes and in this particular case, a charter flight managed by Singapore airlines came as a replacement for Scoot from Sydney to Singapore and vice versa. That, surprisingly, meant in-flight entertainment, food and... well, entertainment! Usually there are quite new movies involved and so I decided to take a look at what they had onboard and so I did.</p>\n\n    <p>Incredibles 2, a continuation from the original released.. oh my, when was it released? I must have been in secondary or even primary school at the time and if I recall well, I liked it, even the game they released, it was quite fun. The continuation strikes the viewer with... the animation and characterisation both of which are executed in a very... down-to-earth and real feel, as if it is a typical American family in its... well... advanced age. Here confined in the superhero realm, all blended nicely. What I also liked about it was how they merged the classic and the new. The cast was a bit funny, a bit as if I was watching animated Better Call Saul but I got used to it. The voiceovers were executed professionally, in fact the movie was executed professionally and provided the viewer with joy. Is there anything else that a good animation movie should do? Well, perhaps introduce some cool contents to relate to and it does this too, as this movie is probably about family as a whole. And that is actually cool.</p>\n\n    <p><center>8/10</center></p><br>\n\n    <p>Ant-Man and the Wasp is a complete different spectrum. The performance was rather bland, the dialogues bad most of the time. The world too confined and storyline often naiive. A blockbuster that just doesn't watches too well. Combat was nicely defined. Antagonists turned out quite pale. In short, nothing to see here.</p>\n\n    <p><center>4/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://iiut8a.by.files.1drv.com/y4m4BOqx1spD1t1k_1NdbC6CFfpnQ4Yt0-jsI-TSUUU8u842C-4aUXXQMvlO8Cz_RgO1NwZjhemAEfRdujjrcEHQPGma1S8HcXHznexeltyNrf-RY8ZBNa7WrYqSv5O5QS-PRp3A02i0PB-1ubherDRseMNwcpWcW5tXKwHr_Js9TzWCeq9EqLyDjsG7e-0YjvVPSpTUJZd4fDPowba6otO6Q?width=1280&height=590&cropmode=none\" class=\"darken\"><div class=\"text\">Team Better Call Saul</div><img src=\"https://iiut8a.by.files.1drv.com/y4m4BOqx1spD1t1k_1NdbC6CFfpnQ4Yt0-jsI-TSUUU8u842C-4aUXXQMvlO8Cz_RgO1NwZjhemAEfRdujjrcEHQPGma1S8HcXHznexeltyNrf-RY8ZBNa7WrYqSv5O5QS-PRp3A02i0PB-1ubherDRseMNwcpWcW5tXKwHr_Js9TzWCeq9EqLyDjsG7e-0YjvVPSpTUJZd4fDPowba6otO6Q?width=1280&height=590&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n\n<div class=\"row\">\n<div class=\"col-md-8 col-md-offset-2 panel\">\n    <center><h4>Another Day of Life</h4></center>\n    \n    <p>I do this at times, that I show up in the country I grew up in and take a look at something that I kept my eye on for an insurmountable time. That is peculiar wording but hey, there was no other way of seeing this unless I popped up back in Poland and... based on the promotional materials I've seen, I didn't believe it would turn out really good. I know Platige Image as a professional studio that gained on recognition over the years. If I received an offer to work there even as an intern, I wouldn't think twice of moving back. But at times, their production can become a bit... too exaggerated. And that's what it felt based on what I've seen. Once I popped up at a local cinema in Warsaw, oh yes I love these smaller joints, surprisingly well maintained and the feel of... oh wow, what's that feel, how do I frame it. It's a bit fastbackward to the communist times, except it didn't feel as such, just a good, really nice cafe with a cinema embedded into it. But hey, I'm here to talk about the movie, ain't I?</p>\n\n    <p>What it does depict, is a war-torned Angola. With a polish correspondent Ryszard Kapuściński. Very interesting character based on what I've read, a person who lived and breathed with war but primarily to showcase what is happening instead of actively participating in it. In the movie, he's showcased in just that way, although the impartiality is dissolved a notch. I was watching the movie with polish dub which held up quite well, although I would have liked to see how it turned out in English. All of a sudden, problems became apparent with how the movie's flow would become numerously disturbed with shots taken in the contemporary times, showcasing the point of view of characters depicted in the movie who are still alive to this day. At first, this was a bit unforgiveable. But as the course of the movie went by, it became tolerable and even understandable.</p>\n\n    <p>In the end, it wasn't exactly what the movie has shown what took the centerplace, although it probably should. Despite there was a bit of glorifying the eastern block and communist and resistance forces there was a bit of interesting discussion going on, geopolitical themes implemented and just how people, cities, soldiers behave in times of social unrest and civil war. The dialogues were good and the deeper sequences thought-provoking. But what this movie truly shined out with was the animation and the exaggerated, surreal sequences. Artistically, this is yet another stellar work performed by the Polish. Absolute top-grade work that I would love to be able to conduct myself. Regardless, my worries associated with the averagely enticing trailers in the end did not deliver the dissapointment. I left the movie satisfied, although with a bit of conflicting thoughts scouring my mind. There were a lot of parties involved in the creation of this movie too, I guess there is a specific importance associated with the movie as war correspondents don't get too much of the spotlight they diserve too often.</p>\n\n    <p><center>8/10</center></p><br>\n</div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-8 col-lg-offset-2\">\n    <a href=\"https://iiuu8a.by.files.1drv.com/y4mUoKTjDKZ0pDUb7BGgsUjH0JzETl5pENqLaeYBtn2taglfkN9fV_DXUhnGu80cQnfn9oN0A4wEb8Kyb3Fd3YTRPJ_p0LLWLkif-GUrDMgvbknfesfrXgFZuY3l12fQh-muASeegCIYbgo05NfXK_Q4Li2XpMkB2c-3QJzAUxyDA45PKKqOfgAQA4UL6RyalF6vnGWPVAKr8fouGEAkHmAgA?width=940&height=400&cropmode=none\" class=\"darken\"><div class=\"text\">Imagination</div><img src=\"https://iiuu8a.by.files.1drv.com/y4mUoKTjDKZ0pDUb7BGgsUjH0JzETl5pENqLaeYBtn2taglfkN9fV_DXUhnGu80cQnfn9oN0A4wEb8Kyb3Fd3YTRPJ_p0LLWLkif-GUrDMgvbknfesfrXgFZuY3l12fQh-muASeegCIYbgo05NfXK_Q4Li2XpMkB2c-3QJzAUxyDA45PKKqOfgAQA4UL6RyalF6vnGWPVAKr8fouGEAkHmAgA?width=940&height=400&cropmode=none\" width=\"100%\" alt=\"DSC_6000\"></a>\n  </div><br>\n</div>\n<br>\n -->\n<br>\n</div>\n</div>\n\n<script src=\"footer.js\"></script>\n\n<script>\ndocument.getElementById('button').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Games and Play\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Games and Play\";\n        setTimeout(function() {\n       window.scrollTo(0,window.scrollY-300);\n        TopscrollTo();\n    }, 0);\n    }\n}\n</script>\n\n<script>\ndocument.getElementById('button2').onclick = function() {\n    this.__toggle = !this.__toggle;\n    var target = document.getElementById('hidden_content2');\n    if( this.__toggle) {\n        target.style.height = target.scrollHeight+\"px\";\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n    else {\n        target.style.height = 0;\n        this.firstChild.nodeValue = \"Human-Computer Interaction 2\";\n    }\n}\n</script>\n\n    <script src=\"../../js/bootstrap.min.js\"></script>\n</body>\n</html>",
-			"file": "Blog/High Pitch Void/High9.html",
-			"file_size": 38517,
-			"file_write_time": 131971870520705699,
-			"settings":
-			{
-				"buffer_size": 38208,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Photos.html",
-			"settings":
-			{
-				"buffer_size": 19975,
 				"line_ending": "Windows"
 			}
 		}
@@ -208,6 +46,26 @@
 		"selected_items":
 		[
 			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Remove Package"
+			],
+			[
 				"auto",
 				"Toggle AutoSave: all files"
 			],
@@ -218,10 +76,6 @@
 			[
 				"auto save",
 				"Toggle AutoSave: all files"
-			],
-			[
-				"package control",
-				"Package Control: Install Package"
 			],
 			[
 				"livereload",
@@ -240,7 +94,7 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 124.0,
 		"history":
 		[
 		]
@@ -262,6 +116,32 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/p5/empty-example/index.html",
+		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/index.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/MusicVideos.html",
+		"/C/Users/Fuade/Documents/New Unity Project (3)/Packages/manifest.json",
+		"/C/Users/Fuade/Desktop/Parsons/Unity/Assets/VisualEffectGraph-Samples-master/Packages/manifest.json",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia/10.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High6.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High7.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/4.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/3.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Eudaimonia/2.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Safaris.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/footer.js",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/home.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/9.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/7.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/6.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High9.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/tiestor.html",
+		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/Vue/index.html",
+		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/Vue/style.css",
+		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/Vue/app.js",
+		"/C/Users/Fuade/Desktop/Parsons/Unity/Unity Multi/Assets/SpawnerPlayer.cs",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Photos.html",
+		"/C/Users/Fuade/Desktop/Parsons/Unity/Week6 Asserts/Final HDRP/Packages/manifest.json",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/5.html",
 		"/C/Users/Fuade/Desktop/Parsons/Safaris/Week 5 Safari/Safari Unity/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Savant.html",
@@ -270,7 +150,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/SafariUnity/TemplateData/style.css",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/Safari Unity/index.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Safaris.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Changes.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Coverflow.html",
@@ -301,6 +180,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"style",
+			"loaded",
+			"1f",
 			"involved",
 			"tempera",
 			"bootstrap",
@@ -345,7 +227,7 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -354,594 +236,57 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18939,
+						"buffer_size": 21046,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								11841,
+								11841
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7048.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/p5/empty-example/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 448,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								439,
-								439
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "MusicVideos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 37154,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17034,
-								16927
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4577.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Fuade/Documents/New Unity Project (3)/Packages/manifest.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1424,
-								1424
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Fuade/Desktop/Parsons/Unity/Assets/VisualEffectGraph-Samples-master/Packages/manifest.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								472,
-								472
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Blog/Eudaimonia/10.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36858,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29736,
-								29736
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3944.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Blog/High Pitch Void/High6.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5649,
-								5588
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 588.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Blog/High Pitch Void/High7.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 31047,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1833,
-								1833
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2352.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Blog/Safaris/4.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18317,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15719,
-								15719
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4042.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Blog/Safaris/3.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35616,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1312,
-								1312
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Blog/Eudaimonia/2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 30194,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7311,
-								7311
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 183.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Safaris.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10110,
-								10110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3041.0,
+						"translation.y": 7611.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "home.html",
+					"buffer": 1,
+					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 30574,
+						"buffer_size": 19207,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								934,
-								934
+								1311,
+								1311
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Blog/Safaris/9.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 38763,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7083,
-								7083
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2433.0,
+						"translation.y": 297.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18604,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12227,
-								12227
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5640.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "Blog/Safaris/7.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11398,
-								11401
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1505.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "Blog/Safaris/6.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11661,
-								11661
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3273.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "Blog/High Pitch Void/High8.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 39654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4176.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "Blog/High Pitch Void/High9.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 38208,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7356,
-								7356
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 128.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "Photos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19975,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16019,
-								15956
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3898.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
