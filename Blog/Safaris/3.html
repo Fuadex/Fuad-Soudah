@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src="../../jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="../../fuad css.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 <style>
 
 body{
@@ -19,7 +18,7 @@ background:url();
     overflow-x: hidden;
 }
 
-.con1{
+/*.con1{
   background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://farm1.staticflickr.com/852/42072351800_dce6f49186_k.jpg);
         background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +32,7 @@ background:url();
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
-}
+}*/
 
 
 h2{
@@ -46,7 +45,7 @@ h2{
   background-color:rgba(255,255,255,0.65);
   color: black; text-shadow: white 0em 0em 0.5em;
   font-family:'Roboto', sans-serif;
-border:1px solid black;
+border:none;
 }
 
 h4{
@@ -104,6 +103,7 @@ a.darken img {
         -ms-transition: all 0.5s linear;
          -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
+                                    border:1px solid lightgray !important;
 }
 
 a.darken:hover img {
@@ -151,6 +151,11 @@ pre:hover{
 
 iframe {
     height: 26.5vw; /* 100/56.25 = 560/315 = 1.778 */
+      border-radius:0;
+}
+
+video{
+                          border:1px solid lightgray !important;
 }
 
 </style>
@@ -181,7 +186,7 @@ function getRandomImage() {
 <div class="con1">
 <div class="container-fluid">
 <div class="row">
-<center><h1>Week 3: Empathy Machine vol. 1</h1></center>
+<center><h2>Week 3: Empathy Machine vol. 1</h2></center>
 </div><br>
 
 <div class="row">
@@ -230,7 +235,7 @@ function getRandomImage() {
     </p>
 
       </div><br>
-</div>
+</div><br>
 
 <center>
     <iframe width="50%" src="https://www.youtube.com/embed/9GmWnn20-JY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -252,7 +257,7 @@ function getRandomImage() {
     </p>
 
     <p>
-      And so I started by showcasing some ways that humans communicated back in the days before internet was here, by smoke signals. I believe Indians used it and it was good enough. These kinds of forms, more in an auditory manner was utilized in Game of Thrones, a popular HBO TV Show based on a series of books, in which horns blown in a specific manner would communicate a particular event taking place. And then I figured that, hm, I've also seen Meerkats in Planet Earth and it was explained that they have a very elaborate ways and means of communicating, where particular nuances in how they speak matter. Also they are very social species. I'm not sure why I wanted to mention polar bears, though. Now that I think about it, me not remembering why I threw it in bothers me. Perhaps I wanted the audience to bear with me? Or just showcase the great rift between how animals communicate and how humans developed a multitude of languages that go into a variety forms of complexity. For instance a morse code, which in some way I was looking forward to emulating.
+      And so I started by showcasing some ways that humans communicated back in the days before internet was here, by smoke signals. I believe Indians used it and it was good enough. These kinds of forms, more in an auditory manner were utilized in Game of Thrones, a popular HBO TV Show based on a series of books, in which horns blown in a specific manner would communicate a particular event taking place. And then I figured that, hm, I've also seen Meerkats in Planet Earth and it was explained that they have very elaborate ways and means of communicating, where particular nuances in how they speak matter. Also they are very social species. I'm not sure why I wanted to mention polar bears, though. Now that I think about it, me not remembering why I threw it in bothers me. Perhaps I wanted the audience to bear with me? Or just showcase the great rift between how animals communicate and how humans developed a multitude of languages that go into a variety forms of complexity. For instance a morse code, which in some way I was looking forward to emulating.
     </p>
 
       </div><br>
@@ -513,7 +518,7 @@ void onBluetoothDataEvent(String who, byte[] data) {
 </div> 
 </div>
 
-<center><h1>Week 3: Empathy Machine vol. 2</h1></center>
+<center><h2>Week 3: Empathy Machine vol. 2</h2></center>
 
 <!-- <div class="row">
   <div class="col-md-2 col-md-offset-2">
@@ -831,18 +836,18 @@ else if(k==2){
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2 panel">
-Resources:
-https://idangero.us/swiper/api/
+<p>Resources:<br>
+<a href="https://idangero.us/swiper/api/">https://idangero.us/swiper/api/</a><br></p>
 
 
-Ketai Detector: https://forum.processing.org/one/topic/ketaifacedetector-in-portrait-mode-on-tablet.html
-Rotating Image: https://forum.processing.org/two/discussion/16641/how-to-only-rotate-an-image-without-changing-the-background
-PImage Resize: https://forum.processing.org/one/topic/problem-with-pimage-resize.html
-Eye of the Tiger Piezo: http://forum.arduino.cc/index.php?topic=215687.0
-Face Detect with Front Camera: https://github.com/ketai/ketai/issues/62
-Video Recording with Ketai: https://forum.processing.org/two/discussion/3643/is-it-possible-to-do-a-video-recording-using-ketai-lib
-Ketai syntax for Face Detection: http://ketai.org/examples/facedetector/
-OpenCV and Android: https://forum.processing.org/one/topic/computer-vision-libraries-and-android.html
+<p>Ketai Detector: <a href="https://forum.processing.org/one/topic/<br>ketaifacedetector-in-portrait-mode-on-tablet.html">https://forum.processing.org/one/topic/<br>ketaifacedetector-in-portrait-mode-on-tablet.html</a><br>
+Rotating Image: <a href="https://forum.processing.org/two/discussion/16641/how-to-only-rotate-an-image-without-changing-the-background">https://forum.processing.org/two/discussion/16641/how-to-only-rotate-an-image-without-changing-the-background</a><br>
+PImage Resize: <a href="https://forum.processing.org/one/topic/problem-with-pimage-resize.html">https://forum.processing.org/one/topic/problem-with-pimage-resize.html</a><br>
+Eye of the Tiger Piezo: <a href="http://forum.arduino.cc/index.php?topic=215687.0">http://forum.arduino.cc/index.php?topic=215687.0</a><br>
+Face Detect with Front Camera: <a href="https://github.com/ketai/ketai/issues/62">https://github.com/ketai/ketai/issues/62</a><br>
+Video Recording with Ketai: <a href="https://forum.processing.org/two/discussion/3643/is-it-possible-to-do-a-video-recording-using-ketai-lib">https://forum.processing.org/two/discussion/3643/is-it-possible-to-do-a-video-recording-using-ketai-lib</a><br>
+Ketai syntax for Face Detection: <a href="http://ketai.org/examples/facedetector/">http://ketai.org/examples/facedetector</a><br>
+OpenCV and Android: <a href="https://forum.processing.org/one/topic/computer-vision-libraries-and-android.html">https://forum.processing.org/one/topic/computer-vision-libraries-and-android.html</a></p>
 
 
 
