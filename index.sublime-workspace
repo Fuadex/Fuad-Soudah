@@ -25,6 +25,149 @@
 			}
 		},
 		{
+			"file": "home.html",
+			"settings":
+			{
+				"buffer_size": 31939,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Education.html",
+			"settings":
+			{
+				"buffer_size": 9942,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/1.html",
+			"settings":
+			{
+				"buffer_size": 9319,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/2.html",
+			"settings":
+			{
+				"buffer_size": 14575,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/3.html",
+			"settings":
+			{
+				"buffer_size": 36593,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/4.html",
+			"settings":
+			{
+				"buffer_size": 18564,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/5.html",
+			"settings":
+			{
+				"buffer_size": 34534,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/6.html",
+			"settings":
+			{
+				"buffer_size": 20198,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/7.html",
+			"settings":
+			{
+				"buffer_size": 29447,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Safaris/10.html",
+			"settings":
+			{
+				"buffer_size": 29908,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Desktop/Safaris Repo/footer.js",
+			"settings":
+			{
+				"buffer_size": 1374,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/footer.js",
+			"settings":
+			{
+				"buffer_size": 1386,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/navigation.js",
+			"settings":
+			{
+				"buffer_size": 456,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Safaris.html",
+			"settings":
+			{
+				"buffer_size": 19771,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Desktop/Safaris Repo/index.html",
+			"settings":
+			{
+				"buffer_size": 19771,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/High Pitch Void/High10.html",
+			"settings":
+			{
+				"buffer_size": 34494,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Changes.html",
 			"settings":
 			{
@@ -116,6 +259,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/p5/empty-example/index.html",
 		"/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/index.html",
@@ -147,7 +291,6 @@
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Savant.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/index - Copy.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/fuad css.css",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/footer.js",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/SafariUnity/TemplateData/style.css",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog/Safaris/Safari Unity/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Blog.html",
@@ -166,7 +309,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -180,6 +323,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"color",
+			"spanner",
 			"style",
 			"loaded",
 			"1f",
@@ -227,7 +372,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 16,
 			"sheets":
 			[
 				{
@@ -243,8 +388,8 @@
 						"selection":
 						[
 							[
-								11841,
-								11841
+								11369,
+								11369
 							]
 						],
 						"settings":
@@ -253,14 +398,494 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7611.0,
+						"translation.y": 7079.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16617,
+								16617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7215.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Education.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1793,
+								1793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Blog/Safaris/1.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3303,
+								3285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Blog/Safaris/2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3584,
+								3584
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1713.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Blog/Safaris/3.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3411,
+								3338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1281.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Blog/Safaris/4.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10011,
+								10011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4673.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Blog/Safaris/5.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31222,
+								31222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6608.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Blog/Safaris/6.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19665,
+								19665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6221.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Blog/Safaris/7.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23200,
+								23200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7498.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Blog/Safaris/10.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3864,
+								3814
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7143.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/Fuade/Desktop/Safaris Repo/footer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1374,
+								1374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/footer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1368,
+								1368
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/navigation.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Safaris.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10190,
+								10190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/C/Users/Fuade/Desktop/Safaris Repo/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4490,
+								4490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2532.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 16,
+					"file": "Blog/High Pitch Void/High10.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11131,
+								11131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2587.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
@@ -286,7 +911,7 @@
 						"translation.y": 297.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 17,
 					"type": "text"
 				}
 			]
