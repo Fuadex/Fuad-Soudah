@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pagination",
+				"swiper-pagination-bullet"
+			],
+			[
 				"swiper-container",
 				"swiper-container-h"
 			],
@@ -19,7 +23,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 21046,
+				"buffer_size": 24816,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "newfuad.css",
+			"settings":
+			{
+				"buffer_size": 12535,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -171,7 +184,7 @@
 			"file": "Changes.html",
 			"settings":
 			{
-				"buffer_size": 19207,
+				"buffer_size": 19455,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -309,7 +322,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -323,6 +336,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mober",
+			"color",
+			"mober",
+			"color",
+			"mober",
+			"wtff",
+			"swiper-button-next",
+			"var cardDeck",
+			"rgb",
+			".swiper-slide",
 			"color",
 			"spanner",
 			"style",
@@ -372,7 +395,7 @@
 	"groups":
 	[
 		{
-			"selected": 16,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -381,15 +404,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21046,
+						"buffer_size": 24816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11369,
-								11369
+								6902,
+								6885
 							]
 						],
 						"settings":
@@ -398,14 +421,43 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7079.0,
+						"translation.y": 4940.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "newfuad.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12535,
+								12535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10262.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "home.html",
 					"semi_transient": false,
 					"settings":
@@ -428,14 +480,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7215.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "Education.html",
 					"semi_transient": false,
 					"settings":
@@ -461,11 +513,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "Blog/Safaris/1.html",
 					"semi_transient": false,
 					"settings":
@@ -488,14 +540,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1153.0,
+						"translation.y": 1195.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "Blog/Safaris/2.html",
 					"semi_transient": false,
 					"settings":
@@ -518,14 +570,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1713.0,
+						"translation.y": 1961.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "Blog/Safaris/3.html",
 					"semi_transient": false,
 					"settings":
@@ -548,14 +600,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1281.0,
+						"translation.y": 1323.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "Blog/Safaris/4.html",
 					"semi_transient": false,
 					"settings":
@@ -578,14 +630,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4673.0,
+						"translation.y": 5375.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "Blog/Safaris/5.html",
 					"semi_transient": false,
 					"settings":
@@ -608,14 +660,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6608.0,
+						"translation.y": 7622.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "Blog/Safaris/6.html",
 					"semi_transient": false,
 					"settings":
@@ -638,14 +690,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6221.0,
+						"translation.y": 7053.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "Blog/Safaris/7.html",
 					"semi_transient": false,
 					"settings":
@@ -668,14 +720,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7498.0,
+						"translation.y": 8528.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "Blog/Safaris/10.html",
 					"semi_transient": false,
 					"settings":
@@ -698,14 +750,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7143.0,
+						"translation.y": 8171.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "/C/Users/Fuade/Desktop/Safaris Repo/footer.js",
 					"semi_transient": false,
 					"settings":
@@ -731,11 +783,11 @@
 						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/footer.js",
 					"semi_transient": false,
 					"settings":
@@ -761,11 +813,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/navigation.js",
 					"semi_transient": false,
 					"settings":
@@ -791,11 +843,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "Safaris.html",
 					"semi_transient": false,
 					"settings":
@@ -821,11 +873,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "/C/Users/Fuade/Desktop/Safaris Repo/index.html",
 					"semi_transient": false,
 					"settings":
@@ -848,14 +900,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2532.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "Blog/High Pitch Void/High10.html",
 					"semi_transient": false,
 					"settings":
@@ -878,27 +930,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2587.0,
+						"translation.y": 3045.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19207,
+						"buffer_size": 19455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1311,
-								1311
+								1607,
+								1607
 							]
 						],
 						"settings":
@@ -908,10 +960,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 297.0,
+						"translation.y": 434.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -919,7 +971,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -956,7 +1008,7 @@
 	"project": "index.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
