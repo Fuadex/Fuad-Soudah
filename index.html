@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			<div class="swiper-wrapper">
 				<div class="swiper-slide ">
 					<div class="col-md-4" id="wooaaar" style="width:25%">
-						<a href="index - Copy.html" class="darken"><div class="text"><p class="arrr">About Me</p></div><img src="i/1.jpg" class="eins tilt" width="100%" style="transition: 1s ease !important;"></a>
+						<a href="index - Copy.html" class="darken"><div class="text"><p class="arrr">About Me</p></div><img src="i/1.jpg" class="eins tilt" width="100%"></a>
 					</div>
 					<div class="col-md-4 grid-item" style="width:75%">
 						<p class="arrr">People call me <a href="CV.pdf">Fuad</a></p>
@@ -538,7 +538,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 //Here goes vertical vertical
 
-
+if (window.innerWidth > 900) {
 				swiperV.on('transitionStart', function(){
 
 					  if (swiperH.realIndex == 1 && swiperV.realIndex == 0){
@@ -816,6 +816,7 @@ new Swiper('.arrr', {
 
 // })
 			});
+}
 </script>
 
 
