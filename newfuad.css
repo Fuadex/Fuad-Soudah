@@ -292,7 +292,7 @@ p a:hover{
 @media(min-width:480px){
 	p a:hover{
 		font-size:2vw !important;
-		color:rgb(255,0,0) !important;
+/*		color:rgb(255,0,0) !important;*/
 	}
 }
 
