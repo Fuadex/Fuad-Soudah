@@ -52,6 +52,10 @@ align-items: center;
 		color:#222;
 	}
 
+		.swiper-slide{
+		font-size:14px !important;
+	}
+
 		a:not(.iframe-link):not(.popup-youtube){
 		-webkit-animation: inter 1s infinite alternate;
 		-moz-animation: inter 1s infinite alternate;
