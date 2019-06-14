@@ -410,7 +410,7 @@ p a:hover{
 /* THere was a weird error where div text was dislocated over the other element
 I fixed it by displaying none and displaying once I hovered over the element*/
 
-.mober1{
+.mober1, .mober2{
 	display:none;
 }
 
@@ -466,12 +466,12 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 		margin-top:15vh !important; transform:translate(0,50%); width:42.5vw !important;
 	}
 
-	.mober1{
+	.mober1, .mober2{
 		width:42.5vw !important;
 		display:block !important;
 	}
 
-	.tilt .mober1{
+	.tilt .mober1, .tilt .mober2{
 		font-size:14px !important;
 	}
 
@@ -508,16 +508,20 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 
 	}
 
-	.mober a:hover, .mober1 a:hover{
+	.mober2{
+		padding-bottom:20px;
+	}
+
+	.mober a:hover, .mober1 a:hover, .mober2 a:hover{
 		font-size:16px !important;
 	}
 
-	.mober1:hover + a + .mober{
+	.mober1:hover + a + .mober, .mober2:hover + a + .mober{
 		transform:scale(0.8);
 		padding-top:40px !important;
 	}
 
-	.col-md-4:hover > .mober1, .col-md-4:hover > .mober{
+	.col-md-4:hover > .mober1, .col-md-4:hover > .mober, .col-md-4:hover > .mober2{
 		transform: scale(0.8);
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -526,7 +530,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 }
 
 @media (max-width: 360px) and (aspect-ratio: 1/1), (max-width: 319px){
-	.mober, .mober1{
+	.mober, .mober1, .mober2{
 		display:none;
 	}
 
@@ -618,6 +622,7 @@ circle {
 }
 
 .ve0{
+	stroke: rgba(0,100,255) !important;
 		fill:rgba(0,100,255) !important;
 }
 
@@ -626,6 +631,7 @@ circle {
 }
 
 .ve1{
+	stroke: rgba(255,200,0) !important;
 		fill:rgba(255,200,0) !important;
 }
 
@@ -634,6 +640,7 @@ circle {
 }
 
 .ve2{
+	stroke: rgba(0,150,50) !important;
 		fill:rgba(0,150,50) !important;
 }
 
@@ -642,6 +649,7 @@ circle {
 }
 
 .ve3{
+	stroke: rgba(255,0,0) !important;
 		fill:rgba(255,0,0) !important;
 }
 
@@ -650,6 +658,7 @@ circle {
 }
 
 .ve4{
+	stroke: rgba(100,0,255) !important;
 		fill:rgba(100,0,255) !important;
 }
 
@@ -658,6 +667,7 @@ circle {
 }
 
 .ve5{
+	stroke: rgba(150,150,0) !important;
 		fill:rgba(150,150,0) !important;
 }
 
@@ -666,6 +676,7 @@ circle {
 }
 
 .ve6{
+	stroke: rgba(50,100,255) !important;
 		fill:rgba(50,100,255) !important;
 }
 
@@ -674,6 +685,7 @@ circle {
 }
 
 .ve7{
+	stroke: rgba(200,100,150) !important;
 		fill:rgba(200,100,150) !important;
 }
 
