@@ -20,13 +20,30 @@
 	<link rel="stylesheet" href="newfuad.css">
 
 		<script>
+    ImageArray = new Array();
+    ImageArray[0] = 'w/p/0.jpg';
+    ImageArray[1] = 'img/ARVR.jpg';
+    ImageArray[2] = 'img/Dome.jpg';
+    ImageArray[3] = 'img/VFX2.jpg';
+    ImageArray[4] = 'img/UX2.jpg';
+    ImageArray[5] = 'img/Tech.jpg';
+    ImageArray[6] = 'img/UX.jpg';
+    ImageArray[7] = 'img/AR.jpg';
+
 window.addEventListener('DOMContentLoaded', (event) => {
 	  	document.getElementById("loader").style.opacity = "0";
 	  	document.getElementById("loader").style.height = "0";
 	});
 
+
   function dada() {
     document.getElementById("loaded").style.opacity = "1";
+
+
+    var num = Math.floor( Math.random() * 7);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
 };
 </script>
 
@@ -57,7 +74,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 							<a href="Portfolio.pdf">Portfolio</a></p>
 						</div>
 					</div>
-					<div class="swiper-slide" data-swiper-autoplay="80000">
+					<div class="swiper-slide" data-swiper-autoplay="90000">
 						<div class="swiper-container swiper-container-v">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide tilt data-swiper-autoplay="16000">
@@ -116,8 +133,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
 								</div>
 								<div class="swiper-slide tilt">
 									<div class="col-md-4">
+										<p class="arrr mober1"><a href="w/Parsons.html" class="iframe-link">Parsons School of Design</a></p>
+										<a href="w/Parsons.html" class="darken ho iframe-link"><div class="text"><p class="arrr">Parsons School of Design</p></div><!-- <img class="swiper-lazy zwei" src="w/p/0.jpg" style="width:45vw"  id="n6"></a> -->
+										<div id="randImage" style="width:45vw"></div>
+										<p class="arrr mober"><a href="w/Parsons.html" class="iframe-link">Creative Technologies</a></p>
+									</div>
+								</div>
+								<div class="swiper-slide tilt">
+									<div class="col-md-4">
 										<p class="arrr mober1"><a href="home.html">Find out more!</a></p>
-										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">More</p></div><img class="swiper-lazy zwei" src="i/8.jpg" style="width:45vw"  id="n6"></a>
+										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">More</p></div><img class="swiper-lazy zwei" src="i/8.jpg" style="width:45vw"  id="n5"></a>
 										<p class="arrr mober"><a href="home.html">...HCI, 3D Modelling, Videography, Blog, Radio...</a></p>
 									</div>
 								</div>
@@ -543,6 +568,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 //Here goes vertical vertical
 
+// var a    = document.querySelector(".ver1");
+// var b    = document.querySelector(".ver2");
+// var c  = document.querySelector(".ver3");
+// var d   = document.querySelector(".ver4");
+// var e    = document.querySelector(".ver5");
+// var f    = document.querySelector(".ver6");
+// var g  = document.querySelector(".ver7");
+// var h = document.querySelector(".ver8");
+
+
+// var abcdefgh = [a, b, c, d, e, f, g, h];
+
 if (window.innerWidth > 900) {
 				swiperV.on('transitionStart', function(){
 
@@ -550,7 +587,6 @@ if (window.innerWidth > 900) {
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
-    	this.$el.removeClass('ver0');
     	this.$el.removeClass('ver1');
     	this.$el.removeClass('ver2');
     	this.$el.removeClass('ver3');
