@@ -41,6 +41,7 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">UX\
         <ul class="dropdown-menu">\
+        <li><a href="Education.html">UX Curriculum</a></li>\
           <li><a href="Placemaking.html">Leaf</a></li>\
           <li><a href="UX.html">Museum of Contemporary Art</a></li>\
           <li><a href="Design Thinking.html">Dance at Campus</a></li>\
@@ -51,6 +52,9 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">VR\
         <ul class="dropdown-menu">\
+          <li><a href="Unity.html">Reflection</a></li>\
+          <li><a href="TMD.html">Placeholder</a></li>\
+          <li><a href="Ed.html">Blussion</a></li>\
           <li><a href="NewMediaAudiences.html">NMA (Essays)</a></li>\
           <li><a href="GradShow.html">Graduation Show (2017)</a></li>\
           <li><a href="Lone Island.html">Lone Island</a></li>\
@@ -65,6 +69,7 @@ document.write('\
               <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">HCI\
         <ul class="dropdown-menu">\
+        <li><a href="Safaris.html">Safaris</a></li>\
           <li><a href="Tracking.html">Savant</a></li>\
           <li><a href="keto.html">Keto</a></li>\
           <li><a href="LMS.html">Collaborative LMS</a></li>\
