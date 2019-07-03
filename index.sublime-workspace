@@ -23,7 +23,88 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 26208,
+				"buffer_size": 27915,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Unity/index.html",
+			"settings":
+			{
+				"buffer_size": 472,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Blog/Safaris/SafariUnity/index.html",
+			"settings":
+			{
+				"buffer_size": 918,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "w/Vivid.html",
+			"settings":
+			{
+				"buffer_size": 23759,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\thtml, body{\n\t\t/*position:relative;*/\n\t\t/*height:90%;*/\n\t}\n\n\tbody {\n\t\tbackground: rgba(0,0,0,0);\n\t\tfont-family: Roboto, sans-serif;\n\t\tfont-weight:300;\n\t\tfont-size: 14px;\n\t\tcolor:#000;\n\t\tmargin: 0;\n\t\tpadding: 0;\n\t}\n\n\t.swiper-container {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t}\n\n\t.container-fluid{\n\t\tmargin-top:12.5vh;\n\t}\n\n\t.swiper-slide {\n/*      background-position: center;\nbackground-size: cover;*/\nwidth: 50vw;\nheight:75vh;\n\ntext-align: center;\nfont-size: 18px;\nbackground: #fff;\n/* Center slide text vertically */\ndisplay: -webkit-box;\ndisplay: -ms-flexbox;\ndisplay: -webkit-flex;\ndisplay: flex;\n-webkit-box-pack: center;\n-ms-flex-pack: center;\n-webkit-justify-content: center;\njustify-content: center;\n-webkit-box-align: center;\n-ms-flex-align: center;\n-webkit-align-items: center;\nalign-items: center;\n}\n\n@media(max-width:480px){\n\n\tbody{\n\t\tcolor:#222;\n\t}\n\n\t\t.swiper-slide{\n\t\tfont-size:14px !important;\n\t}\n\n\t\ta:not(.iframe-link):not(.popup-youtube){\n\t\t-webkit-animation: inter 1s infinite alternate;\n\t\t-moz-animation: inter 1s infinite alternate;\n\t\t-o-animation: inter 1s infinite alternate;\n\t\t-ms-animation: inter 1s infinite alternate;\n\t\tanimation: inter 1s infinite alternate;\n\t}\n\n\t@-webkit-keyframes inter {\n\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@-moz-keyframes inter {\n\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@-ms-keyframes inter {\n\t\t\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@-o-keyframes inter{\n\t\t\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@keyframes inter{\n\t\t\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n}\n\n@media(min-width:480px){\n\t.swiper-slide{\n\t\tfont-size:1.2vw;\n\t}\n}\n\n.swiper-container-v {\n\theight:100%;\n\t/*      background: #eee;*/\n}\n\n.text{\n\topacity:0;\n\tfont-weight: thin;\n/*\tcolor:#222 !important;*/\n\tcolor:#222;\n\tz-index: 1;\n\tposition: absolute;\n\ttext-align:center;\n\tfont-size:1.4vw;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tbackground-color:rgba(255,255,255,0.65);\n\tcolor: white; text-shadow: white 0em 0em 0.5em;\n\tfont-family:'Roboto', sans-serif;\n\tpadding-top:0.25em;\n\tpadding-bottom:0.25em;\n\tpadding-left:0.5em;\n\tpadding-right:0.5em;\n\tborder-radius: 10px;\n\tborder-style:solid;\n\tborder-width:1px;\n\tborder-color:#666;\n\t-webkit-transition: all 0.2s linear;\n\t-moz-transition: all 0.2s linear;\n\t-ms-transition: all 0.2s linear;\n\t-o-transition: all 0.2s linear;\n\ttransition: all 0.2s linear;\n}\n\n@media (min-width:480px){\n\ta.darken img {\n\t\tdisplay: block;\n\n\t\t-webkit-transition: all 0.5s linear;\n\t\t-moz-transition: all 0.5s linear;\n\t\t-ms-transition: all 0.5s linear;\n\t\t-o-transition: all 0.5s linear;\n\t\ttransition: all 0.5s linear;\n\t}\n\n\ta.darken:hover img {\n\t\t/*    opacity: 0.9; */          \n\t}\n\n\ta.darken:hover .text{color:black;\n\t\topacity:1;\n\t\t-webkit-transition: all 0.3s linear;\n\t\t-moz-transition: all 0.3s linear;\n\t\t-ms-transition: all 0.3s linear;\n\t\t-o-transition: all 0.3s linear;\n\t\ttransition: all 0.3s linear;\n\t}\n}\n\n.col-md-4{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\n.col-md-4 img{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tborder-radius: 10px;\n\ttransform: scale(0.75);\n\tborder-style:solid;\n\tborder-width:1px;\n\tborder-color:#999;\n\tbox-shadow: 0 2px 24px rgba(0,0,0,0.25), 0 2px 24px rgba(0,0,0,0.22);\n}\n\n.col-md-4:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\ttransform: scale(1.2);\n}\n\n.col-md-4:hover img,{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tborder-radius: 10px;\n\tborder-style:solid;\n\tborder-width:1px;\n\tborder-color:black;\n}\n\nimg:hover{\n\t-webkit-transition: all 0.2s ease;\n\t-moz-transition: all 0.2s ease;\n\t-ms-transition: all 0.2s ease;\n\t-o-transition: all 0.2s ease;\n\ttransition: all 0.2s ease;\n\tbox-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 15px 28px rgba(0,0,0,0.22);\n}\n\n.text:hover ~ img{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n/*filter:blur(5px) !important;*/\nfilter:invert(100);\n}\n\na img:hover{\n\t\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\np{\n\tmargin:8px !important;\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\np:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\na{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tcolor:#222;\n\ttext-decoration: none;\n}\n\np:hover a{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tcolor:rgb(0,100,170);\n\tfont-size:24px;\n}\n\n@media(min-width:480px){\n\n/*\tp:hover{\n\t\tfont-size:0.8vw;\n\t}\n\n\tp:hover a{\n\t\tfont-size:1.5vw;\n\t}*/\n\n\t.text:hover p{\n\t\tfont-size:0.8vw;\n\t}\n\n\t.text:hover p a{\n\t\tfont-size:1.5vw;\n\t}\n}\n\np a:hover{\n\n\tcolor:rgba(0,150,255);\n\tfont-size:30px !important;\n}\n\n@media(min-width:480px){\n\tp a:hover{\n\t\tfont-size:2vw !important;\n/*\t\tcolor:rgb(255,0,0) !important;*/\n\t}\n}\n\n.swiper-button-next{\n\tmargin-right:20vw;\n}\n\n.swiper-button-prev{\n\tmargin-left:20vw;\n}\n\n#wooaaar:hover{\n\twidth:100% !important;\n}\n\n\n/* #n0:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,150,200,1);\n}\n\n #n1:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,255,255,1);\n}\n\n#n2:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(255,255,50,1);\n}\n\n#n3:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(255,150,0,1);\n}\n\n#n4:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(255,0,0,1);\n}\n\n#n5:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,155,0,1);\n}\n\n#n6:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,50,0,1);\n              }*/\n\n/**\n * Simple fade transition,\n */\n .mfp-fade.mfp-bg {\n \topacity: 0;\n \t-webkit-transition: all 0.15s ease-out; \n \t-moz-transition: all 0.15s ease-out; \n \ttransition: all 0.15s ease-out;\n }\n .mfp-fade.mfp-bg.mfp-ready {\n \topacity: 0.8;\n }\n .mfp-fade.mfp-bg.mfp-removing {\n \topacity: 0;\n }\n\n .mfp-fade.mfp-wrap .mfp-content {\n \topacity: 0;\n \t-webkit-transition: all 0.15s ease-out; \n \t-moz-transition: all 0.15s ease-out; \n \ttransition: all 0.15s ease-out;\n }\n .mfp-fade.mfp-wrap.mfp-ready .mfp-content {\n \topacity: 1;\n }\n .mfp-fade.mfp-wrap.mfp-removing .mfp-content {\n \topacity: 0;\n }\n\n @media(min-width:480px){\n \t.mfp-content{\n \t\tmax-width:85vw !important;\n \t}\n }\n\n\n .iframo {\n/*    max-width: 320px !important;\n    height: 85%;\n    margin: auto;\n    max-height: 780px;*/\n    /*    padding: 80% 16px 0 13px !important;*/\n}\n\n.text{\n\tdisplay:none;\n}\n\n.col-md-4:hover .text{\n\tdisplay:block;\n}\n\n/* THere was a weird error where div text was dislocated over the other element\nI fixed it by displaying none and displaying once I hovered over the element*/\n\n.mober1, .mober2{\n\tdisplay:none;\n}\n\n.mober{\n\tmargin-top:0px !important;\n\twidth:45vw !important;\n}\n\n\n@media (max-width:480px){\n\t.swiper-button-next, .swiper-button-prev{\n\t\tdisplay:none !important;\n\t}\n\n\t.col-md-4{\n\t\twidth:100% !important;\n\t}\n\n\t.swiper-slide:not(.tilt){\n\t\tdisplay:block !important;\n\t}\n\n\t.eins{\n\t\tmargin-top:15vh;\n\t}\n\n\t.zwei{\n\t\tdisplay:block;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\t/*  left: 50%;*/\n\t\t/* bring your own prefixes */\n\n\t}\n\n\t.col-md-4 .ho img{\n\t\ttransform: translate(0%, -50%) scale(0.75);\n\t}\n\n\t.drei{\n\t\tmargin-top:15vh;\n\t}\n\n\t.swiper-pagination-v{\n\t\ttop:50vh;\n\t}\n\n\t.iframo{\n\t\tpadding: 130% 16px 0 13px !important;\n\t}\n\n\t.mober{\n\t\tmargin-top:15vh !important; transform:translate(0,50%); width:42.5vw !important;\n\t}\n\n\t.mober1, .mober2{\n\t\twidth:42.5vw !important;\n\t\tdisplay:block !important;\n\t}\n\n\t.tilt .mober1, .tilt .mober2{\n\t\tfont-size:14px !important;\n\t}\n\n\t.tilt .mober{\n\t\tfont-size:12px !important;\n\t}\n\n}\n\n.swiper-pagination-bullet:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\ttransform: scale(1.5) !important;\n\tbackground:rgba(0,100,255);\n\t/*\topacity:0.5;*/\n}\n\n.swiper-pagination-bullet{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\n@media(max-width:480px){\n\t.swiper-pagination-bullet{\n\t\tmargin: 0 0.3vw;\n\t\theight: 0.5vw;\n\t\twidth: 0.5vw;\n\n\t}\n\n\t.mober2{\n\t\tpadding-bottom:20px;\n\t}\n\n\t.mober a:hover, .mober1 a:hover, .mober2 a:hover{\n\t\tfont-size:16px !important;\n\t}\n\n\t.mober1:hover + a + .mober, .mober2:hover + a + .mober{\n\t\ttransform:scale(0.8);\n\t\tpadding-top:40px !important;\n\t}\n\n\t.col-md-4:hover > .mober1, .col-md-4:hover > .mober, .col-md-4:hover > .mober2{\n\t\ttransform: scale(0.8);\n\t\tpadding-top: 20px;\n\t\tpadding-bottom: 20px;\n\t}\n\n}\n\n@media (max-width: 360px) and (aspect-ratio: 1/1), (max-width: 319px){\n\t.mober, .mober1, .mober2{\n\t\tdisplay:none;\n\t}\n\n\t.swiper-slide{\n\t\tfont-size:12px !important;\n\t}\n}\n\n.swiper-button-next, .swiper-button-prev{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\n.swiper-button-next:hover, .swiper-button-prev:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\ttransform:scale(1.5);\n}\n\n.swiper-pagination-bullet-active{\n\ttransform:scale(1.2);\n}\n\nsvg .circle__svg {\n  animation: 2s linear infinite svg-animation;\n  max-width: 100px;\n}\n\n@keyframes svg-animation {\n  0% {\n    transform: rotateZ(0deg);\n  }\n  100% {\n    transform: rotateZ(360deg)\n  }\n}\n\ncircle {\n  animation: 1.4s ease-in-out infinite both circle-animation;\n  display: block;\n  fill: transparent;\n  stroke: #007AAF;\n  stroke-linecap: round;\n  stroke-dasharray: 283;\n  stroke-dashoffset: 280;\n  stroke-width: 5px;\n  transform-origin: 50% 50%;\n}\n\n@keyframes circle-animation {\n  0%,\n  25% {\n    stroke-dashoffset: 280;\n    transform: rotate(0);\n  }\n  \n  50%,\n  75% {\n    stroke-dashoffset: 75;\n    transform: rotate(45deg);\n  }\n  \n  100% {\n    stroke-dashoffset: 280;\n    transform: rotate(360deg);\n  }\n}\n  .circle {\n\twidth: 100px;\n\theight: 100px;\n\tposition: absolute;\n\ttop:0;\n\tbottom: 0;\n\tleft: 0;\n\tright: 0;\n  \t\n\tmargin: auto;\n  transform: translateY(-50%);\n}\n\n.swiper-slide{\n\tbackground:rgba(0,0,0,0);\n}\n\n.ve0{\n\t\tfill:rgba(0,100,255) !important;\n}\n\n.ve0:hover a{\n\t\t\t\tcolor:rgba(0,100,255) !important;\n}\n\n.ve1{\n\t\tfill:rgba(255,200,0) !important;\n}\n\n.ve1:hover a{\n\t\t\t\tcolor:rgba(255,200,0) !important;\n}\n\n.ve2{\n\t\tfill:rgba(0,150,50) !important;\n}\n\n.ve2:hover a{\n\t\t\t\tcolor:rgba(0,150,50) !important;\n}\n\n.ve3{\n\t\tfill:rgba(255,0,0) !important;\n}\n\n.ve3:hover a{\n\t\t\t\tcolor:rgba(255,0,0) !important;\n}\n\n.ve4{\n\t\tfill:rgba(100,0,255) !important;\n}\n\n.ve4:hover a{\n\t\t\t\tcolor:rgba(100,0,255) !important;\n}\n\n.ve5{\n\t\tfill:rgba(150,150,0) !important;\n}\n\n.ve5:hover a{\n\t\t\t\tcolor:rgba(150,150,0) !important;\n}\n\n.ve6{\n\t\tfill:rgba(50,100,255) !important;\n}\n\n.ve6:hover a{\n\t\t\t\tcolor:rgba(50,100,255) !important;\n}\n\n.ve7{\n\t\tfill:rgba(200,100,150) !important;\n}\n\n.ve7:hover a{\n\t\t\t\tcolor:rgba(200,100,150) !important;\n}\n\n.ver0{\nbackground:rgba(0,100,255);\ntransition: 1s ease;\n}\n\n.ver1{\nbackground:rgba(255,200,0);\ntransition: 1s ease;\n}\n\n.ver2{\nbackground:rgba(0,150,50);\ntransition: 1s ease;\n}\n\n.ver3{\nbackground:rgba(255,0,0);\ntransition: 1s ease;\n}\n\n.ver4{\nbackground:rgba(100,0,255);\ntransition: 1s ease;\n}\n\n.ver5{\nbackground:rgba(150,150,0);\ntransition: 1s ease;\n}\n\n.ver6{\nbackground:rgba(50,100,255);\ntransition: 1s ease;\n}\n\n.ver7{\nbackground:rgba(200,100,150);\ntransition: 1s ease;\n}\n\n.swiper-button-next,\n.swiper-container-rtl .swiper-button-prev,\n.swiper-button-prev, \n.swiper-container-rtl .swiper-button-next{\n    background-image: none;\n        fill:rgba(0,121,255);\n}",
+			"file": "newfuad.css",
+			"file_size": 14331,
+			"file_write_time": 132049821573023590,
+			"settings":
+			{
+				"buffer_size": 13294,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
+			"settings":
+			{
+				"buffer_size": 21568,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Photos.html",
+			"settings":
+			{
+				"buffer_size": 19975,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "w/Parsons.html",
+			"settings":
+			{
+				"buffer_size": 46544,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "w/Photos.html",
+			"settings":
+			{
+				"buffer_size": 20991,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "navigation.js",
+			"settings":
+			{
+				"buffer_size": 5424,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -60,21 +141,10 @@
 			}
 		},
 		{
-			"contents": "\thtml, body{\n\t\t/*position:relative;*/\n\t\t/*height:90%;*/\n\t}\n\n\tbody {\n\t\tbackground: rgba(0,0,0,0);\n\t\tfont-family: Roboto, sans-serif;\n\t\tfont-weight:300;\n\t\tfont-size: 14px;\n\t\tcolor:#000;\n\t\tmargin: 0;\n\t\tpadding: 0;\n\t}\n\n\t.swiper-container {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t}\n\n\t.container-fluid{\n\t\tmargin-top:12.5vh;\n\t}\n\n\t.swiper-slide {\n/*      background-position: center;\nbackground-size: cover;*/\nwidth: 50vw;\nheight:75vh;\n\ntext-align: center;\nfont-size: 18px;\nbackground: #fff;\n/* Center slide text vertically */\ndisplay: -webkit-box;\ndisplay: -ms-flexbox;\ndisplay: -webkit-flex;\ndisplay: flex;\n-webkit-box-pack: center;\n-ms-flex-pack: center;\n-webkit-justify-content: center;\njustify-content: center;\n-webkit-box-align: center;\n-ms-flex-align: center;\n-webkit-align-items: center;\nalign-items: center;\n}\n\n@media(max-width:480px){\n\n\tbody{\n\t\tcolor:#222;\n\t}\n\n\t\t.swiper-slide{\n\t\tfont-size:14px !important;\n\t}\n\n\t\ta:not(.iframe-link):not(.popup-youtube){\n\t\t-webkit-animation: inter 1s infinite alternate;\n\t\t-moz-animation: inter 1s infinite alternate;\n\t\t-o-animation: inter 1s infinite alternate;\n\t\t-ms-animation: inter 1s infinite alternate;\n\t\tanimation: inter 1s infinite alternate;\n\t}\n\n\t@-webkit-keyframes inter {\n\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@-moz-keyframes inter {\n\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@-ms-keyframes inter {\n\t\t\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@-o-keyframes inter{\n\t\t\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n\n\t@keyframes inter{\n\t\t\t\t\t\t0% {color: #222;}\n\t\t75% {color: #444;}\n\t\t100% {color: #999;}\n\t}\n}\n\n@media(min-width:480px){\n\t.swiper-slide{\n\t\tfont-size:1.2vw;\n\t}\n}\n\n.swiper-container-v {\n\theight:100%;\n\t/*      background: #eee;*/\n}\n\n.text{\n\topacity:0;\n\tfont-weight: thin;\n/*\tcolor:#222 !important;*/\n\tcolor:#222;\n\tz-index: 1;\n\tposition: absolute;\n\ttext-align:center;\n\tfont-size:1.4vw;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tbackground-color:rgba(255,255,255,0.65);\n\tcolor: white; text-shadow: white 0em 0em 0.5em;\n\tfont-family:'Roboto', sans-serif;\n\tpadding-top:0.25em;\n\tpadding-bottom:0.25em;\n\tpadding-left:0.5em;\n\tpadding-right:0.5em;\n\tborder-radius: 10px;\n\tborder-style:solid;\n\tborder-width:1px;\n\tborder-color:#666;\n\t-webkit-transition: all 0.2s linear;\n\t-moz-transition: all 0.2s linear;\n\t-ms-transition: all 0.2s linear;\n\t-o-transition: all 0.2s linear;\n\ttransition: all 0.2s linear;\n}\n\n@media (min-width:480px){\n\ta.darken img {\n\t\tdisplay: block;\n\n\t\t-webkit-transition: all 0.5s linear;\n\t\t-moz-transition: all 0.5s linear;\n\t\t-ms-transition: all 0.5s linear;\n\t\t-o-transition: all 0.5s linear;\n\t\ttransition: all 0.5s linear;\n\t}\n\n\ta.darken:hover img {\n\t\t/*    opacity: 0.9; */          \n\t}\n\n\ta.darken:hover .text{color:black;\n\t\topacity:1;\n\t\t-webkit-transition: all 0.3s linear;\n\t\t-moz-transition: all 0.3s linear;\n\t\t-ms-transition: all 0.3s linear;\n\t\t-o-transition: all 0.3s linear;\n\t\ttransition: all 0.3s linear;\n\t}\n}\n\n.col-md-4{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\n.col-md-4 img{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tborder-radius: 10px;\n\ttransform: scale(0.75);\n\tborder-style:solid;\n\tborder-width:1px;\n\tborder-color:#999;\n\tbox-shadow: 0 2px 24px rgba(0,0,0,0.25), 0 2px 24px rgba(0,0,0,0.22);\n}\n\n.col-md-4:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\ttransform: scale(1.2);\n}\n\n.col-md-4:hover img,{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tborder-radius: 10px;\n\tborder-style:solid;\n\tborder-width:1px;\n\tborder-color:black;\n}\n\nimg:hover{\n\t-webkit-transition: all 0.2s ease;\n\t-moz-transition: all 0.2s ease;\n\t-ms-transition: all 0.2s ease;\n\t-o-transition: all 0.2s ease;\n\ttransition: all 0.2s ease;\n\tbox-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 15px 28px rgba(0,0,0,0.22);\n}\n\n.text:hover ~ img{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n/*filter:blur(5px) !important;*/\nfilter:invert(100);\n}\n\na img:hover{\n\t\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\np{\n\tmargin:8px !important;\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\np:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\na{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tcolor:#222;\n\ttext-decoration: none;\n}\n\np:hover a{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\tcolor:rgb(0,100,170);\n\tfont-size:24px;\n}\n\n@media(min-width:480px){\n\n/*\tp:hover{\n\t\tfont-size:0.8vw;\n\t}\n\n\tp:hover a{\n\t\tfont-size:1.5vw;\n\t}*/\n\n\t.text:hover p{\n\t\tfont-size:0.8vw;\n\t}\n\n\t.text:hover p a{\n\t\tfont-size:1.5vw;\n\t}\n}\n\np a:hover{\n\n\tcolor:rgba(0,150,255);\n\tfont-size:30px !important;\n}\n\n@media(min-width:480px){\n\tp a:hover{\n\t\tfont-size:2vw !important;\n/*\t\tcolor:rgb(255,0,0) !important;*/\n\t}\n}\n\n.swiper-button-next{\n\tmargin-right:20vw;\n}\n\n.swiper-button-prev{\n\tmargin-left:20vw;\n}\n\n#wooaaar:hover{\n\twidth:100% !important;\n}\n\n\n/* #n0:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,150,200,1);\n}\n\n #n1:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,255,255,1);\n}\n\n#n2:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(255,255,50,1);\n}\n\n#n3:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(255,150,0,1);\n}\n\n#n4:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(255,0,0,1);\n}\n\n#n5:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,155,0,1);\n}\n\n#n6:hover{\n      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n    border-color:rgba(255,255,255,1);\n              box-shadow: 0 10px 300px -20px rgba(0,50,0,1);\n              }*/\n\n/**\n * Simple fade transition,\n */\n .mfp-fade.mfp-bg {\n \topacity: 0;\n \t-webkit-transition: all 0.15s ease-out; \n \t-moz-transition: all 0.15s ease-out; \n \ttransition: all 0.15s ease-out;\n }\n .mfp-fade.mfp-bg.mfp-ready {\n \topacity: 0.8;\n }\n .mfp-fade.mfp-bg.mfp-removing {\n \topacity: 0;\n }\n\n .mfp-fade.mfp-wrap .mfp-content {\n \topacity: 0;\n \t-webkit-transition: all 0.15s ease-out; \n \t-moz-transition: all 0.15s ease-out; \n \ttransition: all 0.15s ease-out;\n }\n .mfp-fade.mfp-wrap.mfp-ready .mfp-content {\n \topacity: 1;\n }\n .mfp-fade.mfp-wrap.mfp-removing .mfp-content {\n \topacity: 0;\n }\n\n @media(min-width:480px){\n \t.mfp-content{\n \t\tmax-width:85vw !important;\n \t}\n }\n\n\n .iframo {\n/*    max-width: 320px !important;\n    height: 85%;\n    margin: auto;\n    max-height: 780px;*/\n    /*    padding: 80% 16px 0 13px !important;*/\n}\n\n.text{\n\tdisplay:none;\n}\n\n.col-md-4:hover .text{\n\tdisplay:block;\n}\n\n/* THere was a weird error where div text was dislocated over the other element\nI fixed it by displaying none and displaying once I hovered over the element*/\n\n.mober1, .mober2{\n\tdisplay:none;\n}\n\n.mober{\n\tmargin-top:0px !important;\n\twidth:45vw !important;\n}\n\n\n@media (max-width:480px){\n\t.swiper-button-next, .swiper-button-prev{\n\t\tdisplay:none !important;\n\t}\n\n\t.col-md-4{\n\t\twidth:100% !important;\n\t}\n\n\t.swiper-slide:not(.tilt){\n\t\tdisplay:block !important;\n\t}\n\n\t.eins{\n\t\tmargin-top:15vh;\n\t}\n\n\t.zwei{\n\t\tdisplay:block;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\t/*  left: 50%;*/\n\t\t/* bring your own prefixes */\n\n\t}\n\n\t.col-md-4 .ho img{\n\t\ttransform: translate(0%, -50%) scale(0.75);\n\t}\n\n\t.drei{\n\t\tmargin-top:15vh;\n\t}\n\n\t.swiper-pagination-v{\n\t\ttop:50vh;\n\t}\n\n\t.iframo{\n\t\tpadding: 130% 16px 0 13px !important;\n\t}\n\n\t.mober{\n\t\tmargin-top:15vh !important; transform:translate(0,50%); width:42.5vw !important;\n\t}\n\n\t.mober1, .mober2{\n\t\twidth:42.5vw !important;\n\t\tdisplay:block !important;\n\t}\n\n\t.tilt .mober1, .tilt .mober2{\n\t\tfont-size:14px !important;\n\t}\n\n\t.tilt .mober{\n\t\tfont-size:12px !important;\n\t}\n\n}\n\n.swiper-pagination-bullet:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\ttransform: scale(1.5) !important;\n\tbackground:rgba(0,100,255);\n\t/*\topacity:0.5;*/\n}\n\n.swiper-pagination-bullet{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\n@media(max-width:480px){\n\t.swiper-pagination-bullet{\n\t\tmargin: 0 0.3vw;\n\t\theight: 0.5vw;\n\t\twidth: 0.5vw;\n\n\t}\n\n\t.mober2{\n\t\tpadding-bottom:20px;\n\t}\n\n\t.mober a:hover, .mober1 a:hover, .mober2 a:hover{\n\t\tfont-size:16px !important;\n\t}\n\n\t.mober1:hover + a + .mober, .mober2:hover + a + .mober{\n\t\ttransform:scale(0.8);\n\t\tpadding-top:40px !important;\n\t}\n\n\t.col-md-4:hover > .mober1, .col-md-4:hover > .mober, .col-md-4:hover > .mober2{\n\t\ttransform: scale(0.8);\n\t\tpadding-top: 20px;\n\t\tpadding-bottom: 20px;\n\t}\n\n}\n\n@media (max-width: 360px) and (aspect-ratio: 1/1), (max-width: 319px){\n\t.mober, .mober1, .mober2{\n\t\tdisplay:none;\n\t}\n\n\t.swiper-slide{\n\t\tfont-size:12px !important;\n\t}\n}\n\n.swiper-button-next, .swiper-button-prev{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n}\n\n.swiper-button-next:hover, .swiper-button-prev:hover{\n\t-webkit-transition: all 0.5s ease;\n\t-moz-transition: all 0.5s ease;\n\t-ms-transition: all 0.5s ease;\n\t-o-transition: all 0.5s ease;\n\ttransition: all 0.5s ease;\n\ttransform:scale(1.5);\n}\n\n.swiper-pagination-bullet-active{\n\ttransform:scale(1.2);\n}\n\nsvg .circle__svg {\n  animation: 2s linear infinite svg-animation;\n  max-width: 100px;\n}\n\n@keyframes svg-animation {\n  0% {\n    transform: rotateZ(0deg);\n  }\n  100% {\n    transform: rotateZ(360deg)\n  }\n}\n\ncircle {\n  animation: 1.4s ease-in-out infinite both circle-animation;\n  display: block;\n  fill: transparent;\n  stroke: #007AAF;\n  stroke-linecap: round;\n  stroke-dasharray: 283;\n  stroke-dashoffset: 280;\n  stroke-width: 5px;\n  transform-origin: 50% 50%;\n}\n\n@keyframes circle-animation {\n  0%,\n  25% {\n    stroke-dashoffset: 280;\n    transform: rotate(0);\n  }\n  \n  50%,\n  75% {\n    stroke-dashoffset: 75;\n    transform: rotate(45deg);\n  }\n  \n  100% {\n    stroke-dashoffset: 280;\n    transform: rotate(360deg);\n  }\n}\n  .circle {\n\twidth: 100px;\n\theight: 100px;\n\tposition: absolute;\n\ttop:0;\n\tbottom: 0;\n\tleft: 0;\n\tright: 0;\n  \t\n\tmargin: auto;\n  transform: translateY(-50%);\n}\n\n.swiper-slide{\n\tbackground:rgba(0,0,0,0);\n}\n\n.ve0{\n\t\tfill:rgba(0,100,255) !important;\n}\n\n.ve0:hover a{\n\t\t\t\tcolor:rgba(0,100,255) !important;\n}\n\n.ve1{\n\t\tfill:rgba(255,200,0) !important;\n}\n\n.ve1:hover a{\n\t\t\t\tcolor:rgba(255,200,0) !important;\n}\n\n.ve2{\n\t\tfill:rgba(0,150,50) !important;\n}\n\n.ve2:hover a{\n\t\t\t\tcolor:rgba(0,150,50) !important;\n}\n\n.ve3{\n\t\tfill:rgba(255,0,0) !important;\n}\n\n.ve3:hover a{\n\t\t\t\tcolor:rgba(255,0,0) !important;\n}\n\n.ve4{\n\t\tfill:rgba(100,0,255) !important;\n}\n\n.ve4:hover a{\n\t\t\t\tcolor:rgba(100,0,255) !important;\n}\n\n.ve5{\n\t\tfill:rgba(150,150,0) !important;\n}\n\n.ve5:hover a{\n\t\t\t\tcolor:rgba(150,150,0) !important;\n}\n\n.ve6{\n\t\tfill:rgba(50,100,255) !important;\n}\n\n.ve6:hover a{\n\t\t\t\tcolor:rgba(50,100,255) !important;\n}\n\n.ve7{\n\t\tfill:rgba(200,100,150) !important;\n}\n\n.ve7:hover a{\n\t\t\t\tcolor:rgba(200,100,150) !important;\n}\n\n.ver0{\nbackground:rgba(0,100,255);\ntransition: 1s ease;\n}\n\n.ver1{\nbackground:rgba(255,200,0);\ntransition: 1s ease;\n}\n\n.ver2{\nbackground:rgba(0,150,50);\ntransition: 1s ease;\n}\n\n.ver3{\nbackground:rgba(255,0,0);\ntransition: 1s ease;\n}\n\n.ver4{\nbackground:rgba(100,0,255);\ntransition: 1s ease;\n}\n\n.ver5{\nbackground:rgba(150,150,0);\ntransition: 1s ease;\n}\n\n.ver6{\nbackground:rgba(50,100,255);\ntransition: 1s ease;\n}\n\n.ver7{\nbackground:rgba(200,100,150);\ntransition: 1s ease;\n}\n\n.swiper-button-next,\n.swiper-container-rtl .swiper-button-prev,\n.swiper-button-prev, \n.swiper-container-rtl .swiper-button-next{\n    background-image: none;\n        fill:rgba(0,121,255);\n}",
-			"file": "newfuad.css",
-			"file_size": 14331,
-			"file_write_time": 132049821573023590,
-			"settings":
-			{
-				"buffer_size": 13294,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "w/Reflection.html",
 			"settings":
 			{
-				"buffer_size": 23687,
+				"buffer_size": 24342,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -83,7 +153,7 @@
 			"file": "w/Graduation.html",
 			"settings":
 			{
-				"buffer_size": 24641,
+				"buffer_size": 24745,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -92,7 +162,7 @@
 			"file": "w/Me.html",
 			"settings":
 			{
-				"buffer_size": 24412,
+				"buffer_size": 24973,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -101,7 +171,7 @@
 			"file": "w/Leaf.html",
 			"settings":
 			{
-				"buffer_size": 28197,
+				"buffer_size": 28200,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -118,33 +188,7 @@
 			"file": "w/Savant.html",
 			"settings":
 			{
-				"buffer_size": 27151,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
-			"settings":
-			{
-				"buffer_size": 18626,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Tracking.html",
-			"settings":
-			{
-				"buffer_size": 23730,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "w/Photos.html",
-			"settings":
-			{
-				"buffer_size": 21550,
+				"buffer_size": 27154,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -166,7 +210,6 @@
 			"settings":
 			{
 				"buffer_size": 4882,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -184,32 +227,6 @@
 			"settings":
 			{
 				"buffer_size": 4091,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "keto.html",
-			"settings":
-			{
-				"buffer_size": 4666,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ed.html",
-			"settings":
-			{
-				"buffer_size": 4330,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Instagram.html",
-			"settings":
-			{
-				"buffer_size": 6516,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -233,14 +250,6 @@
 			}
 		},
 		{
-			"file": "/C/Users/Fuade/Desktop/Safaris Repo/index.html",
-			"settings":
-			{
-				"buffer_size": 19771,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Blog/High Pitch Void/High10.html",
 			"settings":
 			{
@@ -253,16 +262,7 @@
 			"file": "Changes.html",
 			"settings":
 			{
-				"buffer_size": 19702,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Photos.html",
-			"settings":
-			{
-				"buffer_size": 19975,
+				"buffer_size": 20236,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -350,11 +350,17 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Ed.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/keto.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/w/Photos.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Photos.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Tracking.html",
+		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Instagram.html",
+		"/C/Users/Fuade/Desktop/Safaris Repo/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Grasausschuss Pho.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Grasausschuss Vid.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/DE.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Unity.html",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Ed.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/EdTech.html",
 		"/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/navigation.js",
 		"/C/Users/Fuade/Desktop/Safaris Repo/Blog/Safaris/footer.js",
@@ -390,7 +396,6 @@
 		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/Vue/style.css",
 		"/C/Users/Fuade/Desktop/Parsons/zzz Justins Workshops/Vue/app.js",
 		"/C/Users/Fuade/Desktop/Parsons/Unity/Unity Multi/Assets/SpawnerPlayer.cs",
-		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Photos.html",
 		"/C/Users/Fuade/Desktop/Parsons/Unity/Week6 Asserts/Final HDRP/Packages/manifest.json",
 		"/C/Users/Fuade/Desktop/Parsons/Safaris/Week 5 Safari/Safari Unity/index.html",
 		"/C/Users/Fuade/Documents/GitHub/Fuad-Soudah/Savant.html",
@@ -428,6 +433,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"DisableOn: 700",
+			"Disable",
+			"iframe-link",
+			"a href",
+			"Tech Media",
+			"1drv",
+			"iframe-link",
+			"autoplay",
+			"iframe-link",
+			"woo",
+			"dada",
+			"randIma",
+			"getrandom",
+			"rgb",
+			"Best",
+			"realIndex",
 			"Bavar",
 			"#",
 			"loader",
@@ -512,7 +533,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 26,
 			"sheets":
 			[
 				{
@@ -521,15 +542,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 26208,
+						"buffer_size": 27915,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4993,
-								4993
+								1946,
+								1946
 							]
 						],
 						"settings":
@@ -538,14 +559,281 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 621.0,
+						"translation.y": 86.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "Unity/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Blog/Safaris/SafariUnity/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								918,
+								918
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "w/Vivid.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23431,
+								23431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11706.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "newfuad.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12529,
+								12529
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7401,
+								7404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4581.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Photos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4238,
+								3766
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1806.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "w/Parsons.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27027,
+								27027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "w/Photos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								984,
+								984
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "navigation.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3053,
+								3053
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "Blog/American Dream/I.html",
 					"semi_transient": false,
 					"settings":
@@ -571,11 +859,11 @@
 						"translation.y": 3404.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 11,
 					"file": "Blog/American Dream/II.html",
 					"semi_transient": false,
 					"settings":
@@ -601,11 +889,11 @@
 						"translation.y": 2293.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 12,
 					"file": "Blog/American Dream/III.html",
 					"semi_transient": false,
 					"settings":
@@ -631,53 +919,24 @@
 						"translation.y": 2047.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "newfuad.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13294,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12067,
-								12053
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 9202.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 13,
 					"file": "w/Reflection.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23687,
+						"buffer_size": 24342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3915,
-								3872
+								23899,
+								23878
 							]
 						],
 						"settings":
@@ -686,56 +945,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 971.0,
+						"translation.y": 11856.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "w/Graduation.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24423,
+								24423
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11871.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "w/Graduation.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5374,
-								5374
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1088.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 15,
 					"file": "w/Me.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24412,
+						"buffer_size": 24973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3951,
-								3951
+								5158,
+								5158
 							]
 						],
 						"settings":
@@ -744,27 +1003,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 357.0,
+						"translation.y": 1371.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 16,
 					"file": "w/Leaf.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28197,
+						"buffer_size": 28200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1707,
-								1707
+								27802,
+								27802
 							]
 						],
 						"settings":
@@ -773,14 +1032,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 707.0,
+						"translation.y": 12619.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 17,
 					"file": "Placemaking.html",
 					"semi_transient": false,
 					"settings":
@@ -803,27 +1062,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 609.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 18,
 					"file": "w/Savant.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27151,
+						"buffer_size": 27154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6724,
-								6724
+								26837,
+								26837
 							]
 						],
 						"settings":
@@ -832,104 +1091,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 487.0,
+						"translation.y": 12351.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "/C/Users/Fuade/Documents/GitHub/NotoGitara/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18626,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14570,
-								14570
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 8292.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Tracking.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23730,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16673,
-								16631
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "w/Photos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21550,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16571,
-								16571
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 495.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
+					"buffer": 19,
 					"file": "home.html",
 					"semi_transient": false,
 					"settings":
@@ -941,8 +1110,8 @@
 						"selection":
 						[
 							[
-								17002,
-								17002
+								28242,
+								28242
 							]
 						],
 						"settings":
@@ -952,14 +1121,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8365.0,
+						"translation.y": 11731.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 20,
 					"file": "Unity.html",
 					"semi_transient": false,
 					"settings":
@@ -971,8 +1140,8 @@
 						"selection":
 						[
 							[
-								2850,
-								2850
+								4002,
+								4002
 							]
 						],
 						"settings":
@@ -982,14 +1151,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1230.0,
+						"translation.y": 1647.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 21,
 					"file": "DE.html",
 					"semi_transient": false,
 					"settings":
@@ -1015,11 +1184,11 @@
 						"translation.y": 824.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 22,
 					"file": "Tech.html",
 					"semi_transient": false,
 					"settings":
@@ -1045,101 +1214,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "keto.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4666,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 680.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "Ed.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4330,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								672,
-								672
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "Instagram.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4222,
-								4213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2537.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
+					"buffer": 23,
 					"file": "Education.html",
 					"semi_transient": false,
 					"settings":
@@ -1165,11 +1244,11 @@
 						"translation.y": 73.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 24,
 					"file": "Safaris.html",
 					"semi_transient": false,
 					"settings":
@@ -1195,41 +1274,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
-					"file": "/C/Users/Fuade/Desktop/Safaris Repo/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19771,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4490,
-								4490
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
+					"buffer": 25,
 					"file": "Blog/High Pitch Void/High10.html",
 					"semi_transient": false,
 					"settings":
@@ -1255,24 +1304,24 @@
 						"translation.y": 375.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 26,
 					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19702,
+						"buffer_size": 20236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1257,
-								1257
+								1808,
+								1808
 							]
 						],
 						"settings":
@@ -1282,40 +1331,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 262.0,
+						"translation.y": 703.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 26,
-					"file": "Photos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19975,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13968,
-								13968
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4481.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1323,7 +1342,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -1360,7 +1379,7 @@
 	"project": "index.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
