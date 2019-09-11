@@ -53,7 +53,7 @@ document.write('\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">VR\
         <ul class="dropdown-menu">\
           <li><a href="Unity.html">Reflection</a></li>\
-          <li><a href="TMD.html">Placeholder</a></li>\
+          <li><a href="Tech.html">Placeholder</a></li>\
           <li><a href="Ed.html">Blussion</a></li>\
           <li><a href="NewMediaAudiences.html">NMA (Essays)</a></li>\
           <li><a href="GradShow.html">Graduation Show (2017)</a></li>\
