@@ -41,7 +41,7 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">UX\
         <ul class="dropdown-menu">\
-        <li><a href="Education.html">UX Curriculum</a></li>\
+        <li><a href="DE.html">UX Curriculum</a></li>\
           <li><a href="Placemaking.html">Leaf</a></li>\
           <li><a href="UX.html">Museum of Contemporary Art</a></li>\
           <li><a href="Design Thinking.html">Dance at Campus</a></li>\
