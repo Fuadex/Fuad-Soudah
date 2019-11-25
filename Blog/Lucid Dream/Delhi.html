@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49113305503_cdfa650b88_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113305183_fd6227e6c4_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113304703_4ef00b88cb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113304048_31c4c356cf_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113303528_c5284c86c8_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con6{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113302773_f0c26669c3_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con7{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113812031_57c56ffa6b_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Delhi</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49113305503_a0e22bc0f7_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49113305503_a0e22bc0f7_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+            In my experience with travelling, there are cities that you can do alone, all the way from seeing nothing to see everything. And there are cities, with which it'd be best if you travelled with someone. And that's just a protip.</p>
+
+<p>I am quite well accustomed towards visiting any city, I'd presume. There must be some in which it'd be dangerous without me knowing at the very least the language but general orientation would be correct. Bit of research beforehand and spearhead the damn venture, even if pissed all over my legs over the case that I'm carrying a shitload of electronics. Such a large pile of shitload that if all of this was to begone, the last 5 years of my life, the most fruitful ones would be in quite great extent also gone.
+</p>
+
+<p>
+  I wrote this bit while I was still in Delhi, so mind the landmines.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+So imagine how I felt once I realized that I was left without eyes and ears. Hold on, the case is, Delhi is a very cautious city. Think about this: you have security checks at metro stations and at many other different places. I heard of this to be the case across Asia but once I learned of the Kashmir case and that they'd naturally be tightening up the security, the ramp-up likely blowing back on me, a customer who'd be travelling all round Delhi, started making a bit of an unsettling response. I thought of perhaps doing the HOHO scheme but then I learned there are different pricing systems - for domestic and international. This is not very often found around the world but when it does, it's usually a rip-off, although you'd get some form of special treatment.</p>
+
+<p>I survived the first security checks and they went relatively fine, as long as fine goes for the tons of shit I was carrying in my pants. And then at one security check, I had my stuff in my palm, like powerbank, phone, charger, wallets. Then, my phone slipped. The military-man made an impression as if being wounded. I didn't react. I started packing my stuff into my pockets, then another guy picked it up and handed it over - I must admit, as much as I keep acting reserved and guarded throughout my journey here, eventually I admitted it, some folks here are just genuinely nice. Or seem like so. The phone this time didn't. As it landed centrally onto the granite (?) surface screen-down, the cracks were... There. Not. What became quickly apparent wasn't the lack of cracks on the surface but on the inside, as the screen would glitch and become as if fluidly artifactious.</p>
+
+<p>At this point, I realized, that what I am about to discover, is not even the hassle, the need to constantly keep a lookout for power plug or keeping mind of the data I had so little on my phone. All of a sudden, I was deprived of a set of senses. As if visually impaired now. Partially hearing impaired. And the other set of sensory revelations, the ones that we perhaps do feel but can't really precisely estimate, as fast as we do with colours or tend to. Location. And the database of all the places. Delhi is a huge city and you know it, a map is priceless when you use it. A guide is something, that even if you set it yourself, you'd love to know where you're going, especially in such a widespread city as Delhi is. That reality was not mine. And soon I had to experience this mad city on my own, without a map, just a vague placement of metro stations and me making rounds at times, pointlessly on a tragically humid and not-so-hot-as-it-gets weather but still enough to start me sweatin' all round. And once the rainfall came down... Oh boy.</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49113305183_fd6227e6c4_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49113305183_fd6227e6c4_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+<div class="con2">
+	<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      If it at least was clean water. And perhaps many in Delhi do see it that way, rain falls down, now many can become bit cleaner or clean altogether. I kept thinking before, how is it that a city as huge as Delhi, has problems with sourcing clean water. Eventually I discovered, that trash in Delhi is being treated, as in... It is not being treated and is being piled up all around the districts. And it ends up in water. And other things too. All this goes into the ground and groundwater becomes not suitable for, not even taking a shower. And imagine all the water that evaporates into the sky, with all the pollution generated by industries and private transportation, that ain't clean. You'll bounce back and forth at times from buildings equipped with solar panels. But then you start asking, how much did these end up costing and whether they are used at all? The endgame is, the water that comes down, most likely is acidic. And I'll need to clean my coat and backpack from all this nonsense that came down. Nonsense, as you'll often bounce back from ads that elevate the solutions used by some parts of India, like metro, as ecofriendly. Holy shit.</p>
+
+<p>The thing, though, is. I was wondering what is it with India. I mean, China and India were both starting from a relatively the same economic standpoint. Although, India didn't seem to have gone through the cataclysmic communism that left it as low as, well, Ukraine was at a point in time. And now, after all these years, sure India went through colonialism period and so did China actually. And India seems to have a longer shoreline. And it has mountains. It's strategic by all means. And I mean, it's part of G8. So its economy in theory is actually big. It is just so amusing, seeing countries with high GDP but not quite equating the general feel of the country and how it performs and behaves at the same time, becoming a far cry from what it should have been.</p>
+
+<p>The issue is, I just don't understand it. Piss away the thing I can't find a normal restaurant on the streets of Delhi. Take a shit on many issues that I've been coming across. But how on earth, is the poverty so strong in this country. I mean, honest to god. So far, I have not been in a second country that had its poverty so striking that made me feel rather uncomfortable strolling away with all the electronics in my backpack. Honest, I'd think and I believe I understand this, these people and there are many many many, they don't have anything to lose, to just grab a camera or anything else, they could make an attempt, do it. I mean with the entire backpack and the contents, they could probably live for a year in this country, if they sold the items at relatively-market price. These people, often they don't have anything. The tales of people dying on the streets, dogs too. I haven't seen many but I did see at least one person, who was at least half-decayed. Probably still alive. But how many are really?</p>
+
+<p>I'm not going to drive a tale of how people should go, become equal and how to conceive an egalitarian society. But lots of questions come to mind and it only creates chaos from which I can't happen to derive anything of importance as it counters what I'd believe it. A, what would seem as, well prospering country, yet not presenting itself in nearly-as what it could.
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49113304703_4ef00b88cb_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49113304703_4ef00b88cb_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+  Now... After these few paragraphs, very poorly written should I say, let's shed some light on what actually happened on that day. First of all, the previous paragraphs? They were written while I was still en-route and I think some of them got transcribed also a bit later in my journey, when I didn't feel that well. Oh my god! Fuad didn't feel well! What happened??? Would might ask. Before we travel all the way to the latter part of my journey, if you're perceptive, you'll likely notice that I survived it all after all! Plot twist! I mean, how else would you be reading these words if it wasn't for this?
+</p>
+
+<p>
+  Apologies for kicking you out of immersion for a brief moment there. Let's start from me hitting New Delhi. In fact, I have been here already too! You might be wondering, what is this Fuad blabbing about, if he's already been to Delhi then why the fuck is he here again for? You might be wondering again, for a person who perhaps sees all this travelling in a positive manner, well, what the hell are you talking about, travelling is fun! Well, honestly, can't argue there except, I tried picking some minds before heading there. And many were not too positive. Especially once I got back to Australia, I would hear that, oh man, people who went to India found it so amazing, well, except for Delhi. And when you arrive, you kind of start to see what they meant. I mean, once you leave the airport that is. The airport itself is a bit of an interesting journey itself. And me leaving it, was also a quite interesting journey, so that I just follow up on that.
+</p>
+
+<p>
+  So, leaving it was... straightforward. Almost. The thing was, I think I didn't have much issues, the lines for passport check were a bit weird and, obviously, I had to explain why I did not put any hotel down, since I was transfering. I think the guy was a bit sceptic but it became quite clear soon enough that yeah, I'm going pretty much tomorrow, pretty much the same day. So as usual, I'd squeeze through and go down to the airport. Um, at this point, I think I realized I needed some money. And I recalled, oh man, I've been to India already and I had some money back home! Back home in Australia, some money at least that amounted to spare change but it could've helped you know? I think I read that it may be tricky to use card payments in this country, so while at the airport I began hunting for atms. One would not work. The other one wouldn't too. And from the looks of the military guys in the arrival hall, it would seem if I left this hall, I would not be able to get back here in any circumstances. I found one atm, though. I did a test withdrawal, it seemed to not take any percentage off this. So I did another withdrawal for about a highet amount. And boy oh boy how I was surprised when without even warning me, it would eat, I think about over 11% of the entire thing. Proportionally, I got ripped off on my first withdrawal. Welcome to India!
+</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120552241_42098fdb62_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120552241_42098fdb62_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+
+<div class="con4">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      Now the second attempt was... ueh, I tried getting a cup of coffee. I don't remember how my flight was, I think I slept but I also watched some movies in the airplane. The food was okay. Finnair isn't exactly a marvel but it wasn't that bad either. So, the guy at the counter would refuse to change my 10000 rupies or was it even 100000? And I think I ended up getting some change from the note but I had to pay for the coffee with my card. Didn't quite get ripped off now, I think it was also Costa Coffee joint. And I thought that, well, at least the water with which they brew a cup of coffee here ought to be okay. And the coffee was, okay, like Costa-like. Ok! Time to move. Also with all my luggage which I had to research as to how to keep this somewhere. Funnily enough, apparently, it's not legal to transport your luggage on the metro connecting the airport to the city! They have actual rules that, apparently, they enforce, although can't say how they do it, though. So I moved on to the hall up next, where I did some final checks and where they had a small window where you could keep you luggage. I got a quick calculation, the joint looked a bit shady but, what else could I do? The lady gave me a piece of paper with some marks on it and I think I was supposed to pay later but she told me to take a picture of this, cause I can't lose this paper under any circumstances. Well, the least they could fucking do is maybe... oh wait, maybe they did take notes from my passport after all? Or maybe they didn't cause they're not allowed to? That would justify why I could not lose my paper now.
+    </p>
+
+    <p>
+      Oh I also got harassed on my way to leave my luggage by a couple of taxi drivers. This is a bit of a frequent picture around developing countries, once you leave the airport or whatever key infrastructural piece you'd get at least one taxi driver trying to pounce you off the street. The first guy I think quickly realised I won't be hopping in. Then there was the other guy who seemed to have argued with the first one and then tried a bit more to get me into his taxi, which started getting on my nerves actually. This was also probably the first raw encounter with this city, the guy didn't seem healthy, the space between his teeth seemed to have blood. It was clear my best interest wasn't considered here. But then again, the metro to Delhi wasn't perfect either. It was just so... raw. Whoever's in charge here, I mean, why would anyone build such a raw structure, it clearly cost a lot. But you would not see... any shops around? The other building outside I left my luggage, the place that you leave you luggage was probably the only one that actually served anyone. There were some people resting there, felt a bit like a homeless shelter. Downstairs it was maybe one or two shops. And then you'd move downstairs and, here began the security check. Then you'd go to buy a ticket as you'd be instructured with signs but they would say they don't sell any and point you somewhere else. It was confusing at first. And it remained confusing, cause the return ticket was only slightly discounted and, really, getting the two tickets to keep you going (it was, I think a card and some other form of a card), it wasn't the easiest thing to get.
+    </p>
+
+    <p>
+      Once I got in, I was engaged in a conversation with an Indian person. It felt very... weird.
+    </p>
+
+    <p>The guy was clearly travelling with someone. But he would sit right next to me. And he'd try engaging me with a conversation but I would be really tired and guarded to. I think he asked me where I was from, where I was travelling, what I was doing. He asked me about PubG. And we'd briefly talk about the games. About football. And about India. He asked me what my plan was, how expensive my flight was... and once I told him, he told me his flight to Delhi was much more expensive! It was like about, idk, let's say, equivalent of 300 USD to maybe, 1300 or 2300 USD? I noticed this guy's wristwatch and it seemed expensive, actually. The guy suggested that I could perhaps join him, as he's staying in Delhi just for a bit, as he tried to get a ticket back somewhere else in India but they wouldn't let him for some reason. I told him, politely, that I was here only briefly and we kind of remained seat by seat all the way to Delhi. I'd come across the guy twice more in the next hour, as everyone made way through a maze to connect to the regular metro. I admit, I got lost, cause the station was massive and freakin' empty in a way. He, I think he was a good person, he was likely just very interested in travellers like me, I saw him engage in a conversation with someone else. In the end, I think I realised that, Indian people are actually quite nice and polite people. Very nice and polite. At the end of my journey I'd come across another guy at the airport, whom I asked for wifi but I could not get it without an Indian phone number and we'd talk for a bit. He'd tell me about how he had a job at different counters for Emirates and some other airlines. And tell him a bit about me but not too much. And then there was another guy who sit with me at the cafe and he would not provide his number. But the guy working there, actually fixed me up with a wifi connection, using his own mobile number. I'd come across some kids kind of harassing me, not exactly, they were just messing around. They wanted me to take a picture of them to which I was like 'nahhh'. One tried to say something but then they ran away. I think by the end of that day I realised that, you shouldn't really be that negatively stanced to other people, because here even in Delhi, there were many who were really pleasant, just by nature and it got me curious as to where it was coming from. But as I had my entire life in my backpack, I decided to remain guarded for the rest of my stay here.</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49113304048_31c4c356cf_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49113304048_31c4c356cf_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con5">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      I mean, it was quite straightforward afterwards, once I figured out where I was and which way was what. I got some recommendations so I started from some older part of Delhi that I was recommended to see. Aaand... I got there. I got out. And I realised that, holy shit. I am in India. And these people, they don't really have much at all. Let's drop anything related to hygiene, which would be terribly difficult to maintain, considering just how dusty this city is. How much dirt and probably after raining also mud there is everywhere. And the quality of air wasn't that terrific on that day either. Many, many, many of these people, just didn't have anything on them. Some cloth, basic clothes but I don't think they even had any money or documents or, like I said, anything really. The street were, chaos. Some people sitting something to sit on, between the streets, next to the streets. Some people driving, a truck on which you'd see many other people sitting on. People were driving as they pleased and there didn't seem a single rule they were adhering to. I started feeling a bit... at an unease because, I think people started noticing me and I felt I was the only guy, clearly not from here, that was strolling around. I decided to continue, it was about 8 am so the city, I guess, was waking up as well. The plan was to pierce through this district all the way to an old fort. So I'd walk around and keep, I guess, discovering, how much of a... I can't even say it was rundown place. It was just, a raw place as itself. Think colonialism but kinda without the colonial anymore but with all these people left to themselves to figure the rest out. You'd say, victory! But really? I felt if anything happened to me right there, nobody would really bat an eye. Cause all these people carried on with their lives as if not minding, just purely oblivious to all the other lives around. I could only compare it to some form of a human jungle but, maybe actually, more of a dystopian future where it's all robots but reversed a couple hundreds of years, where the robots are substituted by human robots.
+    </p>
+
+    <p>
+      I eventually discovered there was some construction work happening but no work was happening at all. There was some sort of a shrine with a long queue and it was a bit of a hassle to get through this crowd to the other side towards the fort. There were some people starting to set up their stalls but, in the tightier streets I started to feel much more being bombarded by the eyegaze of the people being here. There were people also driving their scooters. Quite fast as well. With 3 or 4 fellas on one. A bit later I would see a dozen or two of kids, definitely eyeballing me and acting out in some weird ways. Now that you're reading this, you may think, whoa, this guy's paranoid am I right? But once you realise you're packing equipment worth a couple of thousand and for those here much much much much much more, then they might ever see in their lifetime, you just realise that you gotta keep walking. Cause you really never know what might happen. Cause in this huge freakin' city, anything could happen and it would be as if it really never happened at all.
+    </p>
+
+    <p>
+      It took a long time to get to this Fort. About an hour even. And I swear on google maps it was just like a blip, shouldn't have taken me that long. And just once I reached the Fort, I realised that, I can't get in properly. First of all I had to go through a... now, they have freakin' military checkpoints upon entering (!) the underground as itself. They do this, so that people don't go there, to chill or just sleep. This is one of the cleaner places in Delhi and where the temperature and humidity doesn't really affect you as severely. Then once I got to the other side, I had to walk among a maze of freakin' police and military vehicles and once I got around and some vehicles speeding the road that I was navigating amongst, the military guy told me, that it's closed, cause they have some sort of a parade or something. And I should have expected this. A few other places around the city would be similarly closed but I had not much of a way knowing, especially that google maps told me it'd be open.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con6">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://live.staticflickr.com/65535/49113303528_c5284c86c8_k.jpg" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49113303528_c5284c86c8_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+<p>
+  I'm gonna ramp up here. Once I got back to the metro, which seemed a bit more difficult than it was supposed to, I had to go through the checkpoint again. The problem was, my pockets were full with a phone, wallets, passports. Freaking getting it off for the check was a hassle. Except this time, my phone decided to slip off and land on the ground in a rather unnecessary manner. One guard already saw that it'd be a disaster. I was like, naaah, it happened before, it'll be fine. It wasn't. The phone was clearly fucked. It didn't look this way but the screen would not work properly and... this was a big issue now. I had a bit over 15 hours left in Delhi. And it was as if I was blind now. I didn't have a map, I only knew where I was but, getting to any other place anywhere in Delhi now, I just knew, I'm fucked. I decided to go to one place first but once I made my way there and I went out, I realised, I can't figure out where is what, where is east, where is north, south etc. Trying getting lost now, you may become lost for a longer time now. So then I was like, ok, back to the metro, let's go see the Lotus Temple. And that was a bit easier as the subway would power off eventually into a line that was built over the streets. Again, this fuckin' structure must have cost a fortune, they don't even build such structures in many countries like this, I mean it was going on for tens of kilometers! But finding my way to the temple was easy, cause it was large and looked like a Lotus. Problem was? It was raining now. Quite severely. Good I had my jacket and my backpack I was packing for almost 6-7 years now, has this nice orange condom I can put over it. And it'd be okay, moisture free. The problem was, the temple was closed. So I had to move back. And I saw the first supermarket at the subway. Leaving which was a hassle again and it was guarded by the military again. They really guard everything with military in this country, seriously!
+</p>
+
+<p>
+  I'd have to walk for about 10 minutes through a maze of enclosed lofts, I felt as if I was in an airport to get to another metroline. This time I was going... somewhere to the Parliament was it? Some key area, where... I got lost. I got harassed a bit by taxi and tuktuk drivers. People would eyeball me. And there were not that many people around. The street would be freakin' huge as if they were made for military parades. And I'd get to see some key building here. I'd visit a toilet, which was in a state of agony. I'd see some tourists... I'd walk around, get a bit lost... they kind of restrict you from going places through places which in many cases doesn't make any sense in this city at all. And then I decided to do something really stupid, as I made my way to Qutab Minar area. Now, by saying area, I mean - AREA. Because to get to where I was going, I got off some station and then decided to just walk. And I could not walk right in, I'd hover around cause each entry into this, would be barred from entry which was not very enticing per say. Eventually, there were some weird, minor entry points. I'd get again some attention from local folks that was feeling very unsettling. And I'd continue walking but I was feeling a bit tired then. It was hot and humid and I didn't really know where I was going actually. Eventually I'd reach something but that was about after 20-30 mintues of walking? Through the fumes of cars and shit. The problem was that even if you had a road with clearly stated lanes, you'd every now and then come across someone who'd be driving crazily against the flow of the traffic. Sometimes driving on the pavement! Think, one wrong move and you're caught into this and, could be, you'd not be going back in one piece home!
+</p>
+
+<p>
+  I had a larger problem that I was getting really tired and dehydrated now. And I was getting lost in this Qutab Minar area. I had no idea where I was going. There weren't many people at all in this area. The only living thing I'd find is... cows. And these cows here got me thinking actually cause, they're holy in this country right? But they didn't look good at all. They seemed.. skinny. Kind of skinny like a few cats that my grandpa in Poland is taking care of and they're obviously untamed but these cows, oh boy, how skinny they were! And I started thinking that, the cows back in Germany, in Bavaria they seemed much... happier? They also roamed wherever they wanted. And they had their bellies full. And they were okay with people walking around. It just felt so weird that, cows in a country where they literally just adore them in a holy fashion look worse compared to countries where they essentially eat them... but they do all this in a rather more civilised manner. And hey, at least the cows in Bavaria get to live and eat in the mountains, with clear air and sights to behold, really wonderful sights... At this point, I knew I had to evacuate anywhere and preferably back to the station but without much strength or... water... I got through somewhere with even more people eyeballing me now. I asked a policeman, a bit shady policeman, where is someplace. He pointed some direction. I started discovering some bit worse places now. This was clearly an area that was residential but bordering with a place that in theory would get tourists and whatnot. And on the verge you'd see... trash. Trash everywhere. Piles of trash. It would stink. And I would be forced to walk through this trash to keep going. There was so much of this everywhere, though... And the trash would be also in the creeks around this area. The water would look really like shit. And they had wells around here and I knew, that clearly this water, was not made to be done anything with.
+</p>
+
+<p>
+  You know, Petra, in Jordan, is this interesting city. In the middle of desert. One day, it itself became deserted. Why? Because someone poisoned their water. These people here, they're doing it to themselves, though.
+</p>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://live.staticflickr.com/65535/49113302773_f0c26669c3_k.jpg" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://live.staticflickr.com/65535/49113302773_f0c26669c3_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+
+
+<div class="con7">
+    <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+<p>
+  As I started making my way back, I started seeing some exclusive places. Seemed like shopping centres with internationally renowned brands. And some restaurants, clearly. I was walking along a busy street without a sidewalk, it had some form of a sewer that wasn't all well covered with concrete, some of it shattered. Eventually as I followed down this road, which wasn't safe at all, I found a... costa coffee place. Where I decided to chill for about... 30 minutes or 40? I got some juices, water, a sandwich, some food. I think I got some water earlier, which was clearly bottled but it didn't help. I looked at my smartwatch and it clearly stated that my pulse was going like crazy, peaking 150 on average now, if not getting closer to 180. Smartwatches are very fiddly things, I know but once you walk for so much and you feel so tired and you're packing quite a bit in your backpack and you're forced to breath this air in this city... believe me when I say it, I wouldn't have been able to carry on like this for the next 10-15 minutes. Crashing on a comfy couch, at a clearly place that not that many in India can afford to go to but, airconditioned and such... it was... something that I really needed.
+  </p>
+
+  <p>
+    I prepared and asked for some directions. They said it's too far away the station and I should get a cab. I was very stubborn and decided to walk back. This wasn't easy. Again. Fucking hell actually. But after these minutes becoming longer and longer I made it. And I decided to go to one more spot. Very busy, a couple of subways cross here. I decided to walk out, I think I had a pitstop and I got to see a bit of the environment with google maps since the guy working there lend him mobile number so I could get wifi. I checked what I needed but once I walked out... Oh man, so busy. Reminded me a bit of Munich but it was nothing like it. The central roundabout was closed. The flag of India did its thing with the wind. And I tried figuring out where the hell I was. Got bothered a couple of times to get into a cab. At this point I was like, it's time to go back, I can't go anywhere, I don't know which way is what, I did a few rounds and got back to the subway and off I went, the direction to the the airport.
+  </p>
+
+  <p>
+    And, I got unpleasantly surprised as, to get into the airport, you need to be... 2 hours before departure. I had my luggage that was in one piece now. And I saw huge queues coming into terminals. I realised that they were checking passenger tickets. And my phone was shattered. And my laptop had about 10% left of charge on it. I had a ticket on it, which I redownloaded just in case but... Oh man, this was such a tight thing now. They wouldn't let me into the terminal, I showed the ticket on my laptop but then I was redirected to a very small waiting area by the end of it. And again I had to present the ticket and... oh lord, I could do it with the remaining 8-9% left on it. I don't want to even think what would have happened if I was left without any proof that I had connecting tickets afterwards. No way to call anyone. No way to do anything. I'd be ultimately fucked. But I got in. I even found power sockets. And a nice worker there got my up with internet. And I spent alive the next few hours doing, whatever. Eventually it was time and I managed to get my next things set. Ticket to Male. Over Colombo.
+  </p>
+
+  <p>
+    Holy shit, this was an intense day. You know, it's always the case that, when you do nothing for an extended period of time, you think you can't survive this type of voyages. And then, somehow, you end up pulling through. At least I do. My legs are like a couple of tanks by now. But honestly, don't try being like me. Prepare better for this kind of trips, will you?
+  </p>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://live.staticflickr.com/65535/49113812031_57c56ffa6b_k.jpg" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://live.staticflickr.com/65535/49113812031_57c56ffa6b_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
