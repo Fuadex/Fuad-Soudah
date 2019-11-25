@@ -50,8 +50,9 @@ document.write('\
             \
         </li>\
       <li class="dropdown">\
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VR\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">XR\
         <ul class="dropdown-menu">\
+          <li><a href="VFX.html">VFX</a></li>\
           <li><a href="Unity.html">Reflection</a></li>\
           <li><a href="Tech.html">Placeholder</a></li>\
           <li><a href="Ed.html">Blussion</a></li>\
