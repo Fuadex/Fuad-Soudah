@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+I'm at a loss here.</p>
+
+<p>Absurd? Irrational?</p>
+
+<p>Basically, all I thought was, after the exams, whatever the outcome, it will be ridiculous.</p>
+
+<p>I'm pass 'em all? Ridiculous.<br>
+I won't pass even one? Ridiculous.<br>
+I will pass just some? Ridiculous.</p>
+
+<p>Ridiculous, Ridiculous, Ridiculous.</p>
+
+
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      Przez ostatnie dni dużo myślałem. A w związku z myśleniem pojawia się dużo wniosków, często zamglonych.</p>
+
+<p>Ostatnio żyłem bardzo szybko. Starałem się szybciej, goniąc króliczka, który nie istnieje. Jedynie projekcję, nieuchwytną. Podczas gdy odpowiedź wydaje się zgoła... prosta.</p>
+
+<p>Ostatnio zastosowałem ciekawy myk. Stwierdziłem, że chuj. Spróbuję. Morze nadinterpretacji i okaleczona psychika popchnęła mnie w stanie nietrzeźwości do czynów, których nigdy w sumie nie wykonałem. Po czym, choć niewyraźny negatyw, ukierunkował mnie i pozostawił mnie w stanie euforycznym.</p>
+
+<p>Zapomniałem, pewnych kroków. Najpierw wypadałoby je wykonać, bo właśnie wyryłem ładnie w glebę.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      After all I've done, all my travels, as if, something with my head went wrong and completely nuts. Deciding to (bon) voyage myself halfway around literally anywhere and everywhere. Each week? Bloody somewhere else, cruising and wearing myself out. Kinda hating my guts, in it's own skewed way, running away and towards somewhere. Not able to stomach, the gigantic, purely irrational amount and contents of the material, that were comprehensible, in its most extreme version, just in the forth run, when I actually started reading, instead of re-watching the lectures.</p>
+
+<p>And yet, still, over 1900 slides to run through, half of it alone for one turbo insane, unbelievably intense and as if it could have been written in some other language, almost was lectured in German, but despite, it being hosted in English, did not clarify or explain nada. Taking all the struggles and compressing them in my head, purely relying on my memory skills and logical thinking, plus an extra output for conjuring magic with my English glibness. Somehow, somewhat, someway, that was the best and last exam that I've written. And you know what? It turned out as the worst, in the overall, despite all the others performing or even outperforming way over and way ahead, across and above. Still;</p>
+
+<p>The next one, truly titan, the lectures that I actually enjoyed and comprehended. But the material included to be learned through the hard means and way. Around 600 slides alone. A handful of theory. Stuff that I knew and a lot that inspired but was not that easy to learn. The first exam, by European standards, the one that I knew could crash me. Because I didn't know what to expect and how to approach it. Standard, full throttle, take on everything they've got and I've got. Put it on my chest, go straight on and head on. Use my flexibility, go around the target, dodge it, pierce and transcend through it. Percolate, filter off the redundant. Still, the first exam. I approached it and for 1/3 I spent half of the entire time. Lack of luck? Fuck! The big bloody over 900 pages, I actually wrote just in time, but that was the last exam all in all! Got my head blown, torn and enlarged to its limits, even bloody black holes can't get that big. And still, I wrote as much as I could. And I knew, that the liter of strong yerba mate, by some bloody chance, didn't hold. My brain felt tired. I wrote in a such pitiful fashion, that it was plane ridiculous, gave myself a 66% chance that I passed that one. Still;</p>
+
+
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+The second in line. An exam, which I finished half an hour before it was supposed to end. Basically, it wasn't peanuts, but I kind of blitz through the material, despite, the entirety relied on the projects that we've made during the course. Details and everything that we've learned. You know, I've attended all of the tutorials and had to re-watch all the lectures, because the incomprehensible one actually was at the same time. And believe me, I would have loved to attend this one instead of the incomprehensible one. Cause these lectures were actually great and so intuitive! In fact, the incomprehensible was too, once I started reading through it. But the amount of material to be learned! This one actually kicked off as a new lecture. And you know what? It was a good choice. But still, I had doubts and had to write the exam, after which I figured. Uff, 2/3? Perhaps, maybe... Still;</p>
+
+<p>Still, Still, Still. If that's not enough, in the midst of all the exams I had... A BLOCKPRAKTIKUM. Information Visualization with Processing, which required programming skills, which I believed I lacked in total. Absolute. No skills whatsoever. Could stuff myself with a handful of computer hardware, I would not be able to write a bloody single line, 'cause I could be so bad and shit. As a matters of turning worse (shit English, I know), my team member left, leaving me alone with all the programming and shit. Plus the exams! Still;</p>
+
+<p>Still, Still, Still, Still;<br>
+I knew just one thing.<br>
+If I survived?</p>
+
+<p>That would be just. .</p>
+
+<p>No words can describe that.<br>
+Putting an Australian Bachelor into a German Master's.<br>
+Providing 5 tuff units, instead of 4.<br>
+Requiring to learn a handful of new skillsets as part of the new courses.<br>
+Adjusting to a new environment and life.</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+And in the midst and highlight? Getting stirred up with deadlines, pushing me and squeezing, instantly squarifiying and making a solid paste of glue stuck into the wall. With no room to go, say, think or act. Any living space. All squeezed and crushed down.</p>
+
+<p>Discontent with life. Despite all the successes, ridiculous. As if they were Pyrrhic victories, but they were not, just simply, yet, victories!</p>
+
+<p>Potentially and heavily hit, from multiple sides, mainly my own, internal, from within. Bombarded and working on multiple vectors, to get out, run, chase down something in the horizon, something that I wanted, to create an aim, refashion the target. Make it visible, hunt it down, hunt it down! Down! Up! Left! Back! Within? In another dimension perhaps?</p>
+
+<p>Doing all the travels and running, away from myself, my own, my mental, psychological states and minds, from all the problems, making rounds, making space, trying to push myself ahead, make room inside my head, inspire, touch, create and visit the uncharted, space it out, cultivate and, revitalize it.</p>
+
+<p>Initiate a sequence, with which I would be able to complete the impossible. Something out of reach, but yet, I was already living the dream, that I knew was real, but how it became what it became? It had to find a wall, hit hard, bury me underneath all the ridiculous and the rubble of thoughts and myself. Falling apart or being apart, being the rubble itself, personifying this state.</p>
+
+<p>.</p>
+
+<p>..</p>
+
+<p>...</p>
+
+<p>It certainly took it toll on me.<br>
+It released its' toll on me.<br>
+It is a toll, after all.<br>
+A toll. What is?<br>
+What toll?<br>
+A toll?<br>
+Toll..</p>
+
+<p>...</p>
+
+<p>..</p>
+
+<p>.</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      I don't know how I did it. I don't know how I survived it. I'm at a loss.</p>
+
+<p>Despite all the ridiculous. Despite all the irrational. I need to stop. Take a look at my inner inventory. Find if I actually did get so far. And how much 'till I'll actually find my peace.</p>
+
+
+
+<p>In fact there was much more to the story. I got an extra bonus 9 points for my projects for MMI2, in which I thought I'd lose everything. The exercises themselves? I did pretty much all of them last minute, relatively diligently. The trick was? For the main exercises, instead of being a part of a larger team (up to 4 people!) I did everything alone. Last minute. And still got a total o 9 points. That's just a mere example.</p>
+
+
+<p>The question remains? What next. I have pretty much 4 months left on this continent. And there are a number of problems that I will need to face, better earlier than never than later than... well, ever. Which makes absolutely no sense but none of it does anymore.</p>
+
+<p>Inwentaryzacja.</p>
+
+<p>A magic clusterfuck inside your brain that makes all the magic.
+And make things where they're supposed to be.</p>
+
+https://endemirage.blogspot.com/2017/03/sehnsucht.html?token=APq4FmC0Qd5LLFzaF9EZZtsoICkD56DcOphMEnUF3_FFA14alOdx2fGmqAUtobzIgg4CIA7oE-ry8FprZaCQvhwFHOV7gRK2q3xU3sxN3fqLYc9R3zLcrTVMVGmqnja_tLDlmesiQI_U&postId=8820036052079416023&type=POST
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      Czym jest perfekcja? Stan, bądź pojęcie, pod którym kryje się tak wiele znaczeń. Przecież każdy może mieć inną definicję perfekcji. A chuj, każdy ma inną! Tylko te ułamki i elementy, kryją co innego. Nieco inny koncept, historię, cokolwiek. A można perfekcję też pod innymi epitetami bądź pojęciami określić. Dla niektórych stan melancholijny będzie optymalny. Dla innych euforyczny. Być może dla niektórych nawet neurotyczny. Kto wie, różne zboczenia mamy.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      Co czyni nas ludźmi? Że jesteśmy ludzcy? Co nas różni od zwierząt? Dlaczego mielibyśmy się zbytnio od nich różnić? Einstein ponoć kiedyś prawił, że wyobraźnia jest najważniejsza, a choćby w nauce. Bez niej, jakoś ciężko byłoby nam w sumie cokolwiek osiągnąć. A choćby to, że teraz piszę na wirtualnej gigantycznej, beztrosko kartce papieru. Przy czym kartką, którą widzę to swój monitor, a informację zapisuję w sekwencjach danych na urządzeniu przypominającym typu flash usb, a la pendrive. Dokonaliśmy gigantycznego postępu. Co i rusz, tworzą się nowe technologie, które mogą dosłownie zmienić nasze życie. I cóż z tego mamy? Wyobraźnia to miecz o dwóch końca, a la miecz obosieczny. Z energii nuklearnej/atomowej (???) możemy zrównać z ziemią całe metropolie, ale możemy je również zasilić tę samą energią, by się rozwijały.</p>
+
+<p>A skąd bierzemy minerały i energię? A chuj nam to, skoro i tak donikąd nie zmierzamy? W każdej chwili jakiś meteor może w nas pierdyknąć. Albo słońce wyzwolić gigantyczną falę magnetyczną (?). Albo ziemia zmienić pole magnetyczne. Tyle się może wydarzyć, że cóż poradzić. No ale świat idzie do przodu. Może i z tym sobie poradzimy. Tymczasem ja czekam na nowy odcinek Black Mirror. Może być kosmiczny.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      Czasem zastanawiam się, czy w zasadzie nie zboczyłem zanadto ze swojej uprzednio obranej ścieżki. Jasne, wyznaczyłem sobie cele, filozofie i inne duperele, którymi kierować się miałem swoim życiem, aby to miało jakieś ciekawsze znaczenie. Pomimo tego, bywają takie dni... może inaczej, człowiek po prostu nie myśli o tym wszystkim, a te wartości nie są wystarczająco głęboko umiejscowione, aby nie mogły zostać, powiedzmy, zamienione na wcześniejsze, którymi się kierowałem. I tym samym, ostatnio znowu podszedłem do oglądania seriali, w zasadzie po nolife'iłem kilka dni i jakoś tak zostało, że stare nawyki dają mi teraz w kość.</p>
+
+<p>To jest ciekawy mechanizm samoobrony, jaki organizm ma swoim arsenale i naprawdę lubi go używać. Coś w rodzaju przywracania systemu, przy czym w przypadku organizmu to chyba serio ciężko, aby w jego przypadku coś miało wyjść nie tak. Ja to bym chciał w zasadzie wyekstraktować wszystkie te najlepsze cechy, czy elementy z moich poprzednich nawyków, powiązać w nowym systemie i próbować być elastycznym. Improwizować, iść do przodu. Do tej pory się udawało.</p>
+
+<p>No nic, zbaczam znowu z kursu. Tak jakoś stwierdziłem, że sobie pooglądać kilka seriali, a miałem nieco zaległości. Polecone mi zostały: Peaky Blinders, kątem oka dostrzegłem Westworld, a osobiście gorąco wyczekiwałem premiery Black Mirror, kontynuacji na netflixie. No i cóż, trochę smutałem, bo wydawało mi się, że zaczynam jednak gubić swoje zacięcie przy analizie i ocenie tych utworów, tych specyficznych utworów, bo np.: Black Mirror to generalnie mikro filmy, lecz... cóż, czasem wizję artystyczną trzeba zawrzeć i przekazać w znacznie bardziej wyelaborowanej wizji, ciągnącej się choćby i 12 godzin zamiast 3'ech. To serio działa.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+ No ale inna sprawa jest taka, że człowiek czasem chciałby się klepnąć i po prostu obejrzeć bezstresowo coś, bez oceniania wszystkich pojedynczych aspektów. W szczególności zapamiętanie ich i uformowanie potrafi przysporzyć mi nie lada kłopotów, ale cóż poradzić. Tymczasem, odpalam Peaky Blinders i... jestem zadowolony. Są ciekawe ujęcia, bohaterowie, tutaj trochę majzdurzyłem (chyba nie istnieje to słowo), ale w zasadzie dobrze ogarnięte. Prawidłowy klimat, fabularnie kupy się trzyma. Dobrze się ogląda ten show, ale w zasadzie nie wybija się jakoś bardzo bardzo, a tu... zaglądam na filmweba i oceny są wyjątkowo wysokie. Czym to wytłumaczyć? Czasem kminiłem, a nuż się rozmyśliłem, a może i rozmarzyłem, że warto przyjąć perspektywę innych osób ço tu takiego intrygujcego w tym serialu? Ano to, że jest po prostu dobry. A la Narcos. Tymczasem chyba, nieelegancko powiem, za dużo się naoglądałem tych seriali i jednak szukam czegoś z czymś, co by odstawało od reszty. To zaprawdę śmieszna historia i wciąż mnie to bawi. Ale jako człowiek, który książek raczej nie czyta, zaskakująco szczegółowo podchodzę do analizy utworów, tu, telewizyjnych.</p>
+
+<p>Przybył i Westworld. I ten serial, mnie wyniósł w czasoprzestrzeń, daleko i dalej. Chociaż nie od razu. Moja technika analizy niestety obejmuje powtarzanie scen, co nieco potrafi przeszkodzić naturalnemu flow, kiedy się ogląda, konsumuje coś. Mimo wszystko zawsze potrafiłem nanosić odpowiednie poprawki, aby choćby intelektualnie wypośrodkować zamysł, wykonanie i efekt, jaki potrafi utwór wywołać na widzu. A poprzez zastosowanie tych wątpliwych, lecz z mojej perspektywy efektywnych w miarę technik, jestem w stanie wyłowić najdrobniejsze szczegóły. A jak też w serialu Hopkins stwierdził, to właśnie te szczegóły sprawiają, że ludzie wracają po więcej.</p>
+
+<p>Cóż, serial w którym AI posz... wróć. Stworzony został inny świat. Dosłownie inny, lecz nie Grudzińskiego, a perfekcyjny, w którym możemy robić wszystko co żywnie nam się podoba. Za cenę 40.000$ na dzień, wjeżdżamy do świata, w którym jesteśmy nieśmiertelni. Możemy wybrać się na wyprawę, złapać bądź zastrzelić morderców. Pójść to burdelu i zaznać wszelkich rozkoszy na jakie tylko nasza wyobraźnia nam pozwala. Wyzwolić się i wywołać gigantyczną burdę. Poczuć się jak w gigantycznej grze, bo taką w zasadzie Westworld jest. Jak w GTA, robić co nam się żywnie podoba. Tylko że w prawdziwym życiu i kontra humanoidalnym stworzeniom, które doskonale odwzorowane są jak my sami, lecz z tą jedną zasadniczą różnicą. Ich samoświadomość zaczyna się i kończy każdego dnia. Przynajmniej tak było w zamyśle...
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      I cóż w tym serialu jest takiego niezwykłego? To co zawsze doceniałem, mnogość nawiązań do dziedzin naszego życia. Sztuczna inteligencja i niebezpieczeństwa z nią związanymi. Sposób myślenia człowieka i granice naszego człowieczeństwa. Wplecione zostały wątki informatyczne, filozoficzne, a nawet literatura poważna. Skalowanie świata, począwszy od ludzi biorących udział w tej grze, po organizację, która tym wszystkim zarządza. Aktorstwo wysokich lotów oraz obsada, w której miejsce znalazł Anthony Hopkins. Udźwiękowienie, z motywami przewodnimi, które z miejsca można nazwać klasykami. Zastosowanie rozlicznych motywów i technik. Jednak najważniejsze z tego wszystkiego i tak jest jedno: skupienie się na całej gamie ujętych problemów i prowadzeniu ich w subtelny sposób, zostawiając fabularne zawiłości na drugim miejscu, przy czym dbając by jednak obyło się bez błędów technicznych. Serial z potencjałem, na który czekałem długo, a do tego wnosi orzeźwiający powiew świeżości.</p>
+
+<p>Tymczasem Black Mirror. Nie będę się rozpisywał o oryginale, bo tutaj warto by było i z kilka kartek A4 rozpisać, przybliżając czemu ten serial jest tak genialny, a i mój ulubiony. Emocje to śmieszna rzecz. Można je tak łatwo odpalić, ciężko czasem je odstawić na bok. Mimo wszystko, wszyscy potrafią docenić utwór, który faktycznie oddziałuje silnie, wręcz rezonuje na tyle silnie, że aż w oku się łza zakręci. Albo człowiek zazna silnej nienawiści. Albo się nawet zakocha. A są też różne emocje, jakie utwór może wywołać, lecz chodzi mi prawdopodobnie o te wyższe, o których szczerze wiele jeszcze nie wiem sam. Ta magia, która wyzwala jednak w człowieku coś, przy czym sam utwór rozpierdala pomysłowością i wykonaniem. Niestety, nowy Black Mirror zawiódł, choć miał swoje momenty i potencjał, który pozostał przez zdecydowanie większą ilość czasu niewykorzystany.</p>
+
+<p>Pierwszy odcinek: doskonały motyw, przyziemny i bardzo aktualny. Ciekawe wstawki, dla przykładu brata głównej bohaterki, który wręcz odzwierciedla głos rozsądku. Kilka trafnych porównań. Lecz odcinek się rozkleił i poprowadził donikąd. Zakończył się słabo, bez sensu. Kilka ciekawych cytatów. I duży, gigantyczny potencjał, który poleciał wręcz do kosza.</p>
+
+<p>Drugi odcinek, genialne rozpoczęcie. Niesamowite podejście, sposób w jaki zbudowano postać w 15 minut, jej tło, motywacje i całość, absolutny majstersztyk. Fenomenalne aktorstwo, w szczególności głównego bohatera. Potem z kolei zaczynało się robić ździebko tendencyjnie, choć wciąż poziom był utrzymany odpowiedni. Potem z kolei nastąpiła szczególna, niezwykła, bardzo ciekawa, choć źwieńczona problematycznie incepcja. Chciałbym rzec, że to jednak niezły epizod, był dobry, ale nie można tak kończyć fenomenalnych epizodów. Plus, jedna scena autentycznie rozwaliła. Lecz to było za mało.
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      Trzeci odcinek, słaby. Tylko tyle powinienem w sumie powiedzieć. Słabe motywy. Dziwne rzeczy się działy. Kilka niby wstawek, na które warto zwrócić uwagę, lecz to nie był dobry odcinek. Aktostwo było niezłe, ale scenariusz bez fajerwerków. Potencjał jakiś był, ale też nieduży. Szkoda.</p>
+
+<p>Czwarty odcinek to problematyczny epizod. Z początku mi się nie podobał, niemal jak White Bear z poprzedniego sezonu. To jest ciekawa sprawa, bo odcinek donikąd nie prowadził w zasadzie, choć przypominał się dość intrygująco, że coś jeszcze może... z tego wyjdzie ciekawego. I faktycznie wyszło. Wyszło tak dobrze, że aż łzy się pojawiły w moich oczach. O taki Black Mirror nic nie robiłem, hah! Scenariusz jak się rozkręcił, to aż byłem zaskoczony. Takiego Love Story to jeszcze chyba nie było, aale koncept był taki mocny.. szkoda, że szczegóły nie wszystkie były dopięte na ostatni guzik. Zdecydowanie highlight sezonu, szkoda że jedyny.</p>
+
+<p>Piąty odcinek... Znów niewykorzystany potencjał. Nieźle był prowadzony, ale nic szczególnego w nim nie było w zasadzie. Do czasu. Końcówka już zaczynała robić ciekawe wrażenie. Dystopijna przyszłość, heh. Zaskakujące dla mnie z kolei jest jak niektórzy recenzenci nie interpretują do końca dobrze tego odcinka, bo niekoniecznie dotyka on rasizmu, lecz problemów znacznie głębiej dystopijnych. Jedna dość potężna, choć nie aż tak scena. Po której nastąpiła już taka, że na kolana mnie niemal rzuciła. Niemal, bo jedna potężna scena nie zawsze zmieni percepcję całej reszty, którą widz doświadczył. Tak było w tym przypadku. Klasyczny niewykorzystany potencjał.</p>
+
+<p>Szósty odcinek, to już klasyczny black mirror. Półtorej godzinny seans, stworzony na styl filmu detektywistycznego, co nieco już razi tandetą, lecz niekoniecznie. Ciężko powiedzieć cokolwiek bez spoilerowania. Ale jak mi się nie podobały poprzednie odcinki często ze względu na to, że technologia nie była tą stalową ramą, na której był focus, bez której to ramy wewnętrznej wątki fabularne nie miałyby jakiegokolwiek oparcia. Tutaj już widać było silne skupienie na wątku technologicznym i w jaki sposób może rzutować na naszą cywilizację. Odcinek daje w końcu solidnego kopa, wyreżyserowany jest odpowiednio, a i nieźle napisany. Tylko, że zakończenie... Chciałem urwać jaja Charliemu Brookerowi, za to co tam odjebał, tylko totalny kutas byłby w stanie tak tandetnie zakończyć tak znakomity odcinek. Cóż... pozostał Westworld. Albo nowy black mirror za rok. Z ambitniejszych.
+    </p>
+
+    https://endemirage.blogspot.com/2016/10/sehnsucht-iiib.html?token=APq4FmDb5PgNKi2pE-gXbzjG20YmWC7vwM-xMA7vdC25jLdetOum4W-apaKLqRXXVGyCt653lOv0vgAizCP7i-DNbcXwze88Hi5G3mApio3YrqZqyduK0YWrwjr6oPWk2CYrbALRaXkw&postId=5091137995220405531&type=POST
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

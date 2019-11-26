@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+     Jak wiele można zobaczyć w 3 dni? Są takie miasta, które z góry uznaję za przehypowane. Takie, do których może i warto wpaść, ale wszyscy tam ciągną. Czyżby wyznacznik jakości? Być może, ale mnie zawsze ciągnęło do perełek, tych najmniej znanych, choć... trzeba przyznać, że mam swoje zaległości i trzeba korzystać, póki wymiana się trzyma. Ostatecznie, teraz żyję po drugiej stronie globu, więc nie wiadomo kiedy nadarzy się okazja, a transport w europie jest stosunkowo tani. Więc trzeba korzystać, prawdopodobnie w przyszlym semestrze i tak zabraknie mi tego komfortu.</p>
+
+<p>Jest taka stosunkowo podstawowa różnica, między wieloma miastami w Niemczech, które sobie sprawdzam i przemierzam, a takim Paryżem. Dla przykładu, ostatnio byłem w Lipsku, nie? Miałem 3.5 godziny na zwiedzanie, tymczasem ścisłe centrum udało mi się przemierzyć wzdłuż i wszerz w ciągu nie więcej jak 45 minut. Na Paryż, potrzebowałem bite kilka godzin. I to ledwo, bym przebył wzdłuż Paryż i, powiedzmy, wszerz Wersal. Te 3 dni okazały się wręcz mordercze dla moich stóp, o przebyłem bodaj ~100 km, jeśli wierzyć elektronicznym gadżetom. Prawdopodobnie przesadza, ale nie mnie to oceniać. Paryż zrobił na mnie wrażenie, z przeważającymi plusami.
+
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      W pewnym sensie zacząłem nawet gdybać, co by było gdyby jednak Warszawy nie zrównano z ziemią. Czy mielibyśmy aż tak bujną, na moje, secesyjną architekturę jak w północno-zachodniej części Paryża? Czy mielibyśmy, budowane z tak gigantycznym rozmachem pałace, w których wystawiane byłyby najznamiennitsze dzieła sztuki? Być może ludzie byliby równie mili w codziennym życiu? Być może mielibyśmy wysoki odsetek mniejszości? Zintegrowanych społecznie, choć odmiennych kulturowo, lecz kompatybilnych z nacją? Być może stworzylibyśmy światowych gigantów, nieobecnych w stolicy, choć zbijającym kokosy za granicą?</p>
+
+<p>Zacznę od początku. Dotarłem do Paryża, jak już wspomniałem, na 3 dni. Wybrałem się flixbusem, nocnym połączeniem i postanowiłem zobaczyć jak najwięcej. To wręcz ostatnio życiowe motto, ale ja serio do tego podszedłem i jak się okazało, był to strzał w dziesiątkę, choć pomimo przemierzenia dziesiątek kilometrów, wciąż pozostało trochę nieodkrytego. Dotarłem do portu D'Orleans, dość spóźniony o ponad pół godziny. Choć nie czułem czasu, bo godzinę wcześniej w ogóle nawet nie świtało. Toteż wrażenie, że jeszcze daleka droga pozostawała chwilę. Później zaś zaczęło się miasto. Dość spore miasto. Naprawdę spore miasto i choć utknęliśmy nagle w korku i myślałem, że już dojechaliśmy, tak okazało się, że jest jeszcze stosunkowo spory kawałek. Jedno słowo, które mi się nasuwa: Metropolis. Autentycznie, na całych połaciach terenu rozpościerały się bloki mieszkalne, wieżowce i.. potem strefa przemysłowa, która ciekawie dopełniała klimat, ot ździebka tego miasta.</p>
+
+<p>Po wyjściu, w zasadzie bez szału. Zabiegani ludzie, ruchliwe skrzyżowanie. To co? Lecim na północ. Metrem? Pieszo! Szczerze, pomysł sam w sobie nie był zły, chociaż brakowało mi energii. Poznałem przynajmniej kawałek tego miasta, i resztę przeszedłem też raczej pieszo przez większość mojego pobytu. I teraz mógłbym przejść do opisywania całej mojego podróży, ale kogo to interesuje? Mnie słabo, a liczą się kluczowe szczegóły. Więc, po pierwsze: dzielnicami, Paryż się różni, powiedziałbym że diametralnie, ale to zbyt wyolbrzymione określenie. W zasadzie układa się to w logiczną całość. Jest taki piękny powiew, naturalnego, lekkiego chaosu. Dajmy na to: układ ulic. Paryż wydaje się, jakby projektował go autystyk z tourettem. Od wielu kluczowych alei, schludnych i utrzymanych w odpowiedniej konfiguracji, odbijają mnogie uliczki. Niektóre wyprofilowane, równie dobrze zaprojektowane, ale chaos jest widoczny, w szczególności na skrzyżowaniach. Lecz, widoczna jest pewna harmonia, bo i w tym chaosie, gdzie przechodzenie na czerwonej sygnalizacji uznawane jest za normę, wszystko wydaje się... działać całkiem dobrze.
+
+
+    </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      Ten chaos harmonijny jest wielopoziomowy. Ot, dajmy na to: etnicznie. To jest ciekawa sprawa, bo dochodziły do mnie bardzo różne sygnały, sam na własne oczy dostrzegłem jak to się prezentuje w Lille, które wywarło na mnie negatywne wrażenie. Też chaos, ale niekontrolowany i zepsuty, wręcz utylizujący magię tego miasta, czegoś podobnego nie doświadczyłem w Paryżu. Z ludzi, których dostrzegałem, przeważali Francuzi. Rodowici Francuzi i to było dość charakterystyczne uczucie, bo w takim Berlinie, czy Monachium, miasta te wydają się znacznie bardziej wieloetniczne, lecz niezintegrowane. Dla przykładu, jest dość wysoki współczynnik ludności czarnoskórej w Paryżu, lecz większość z tych, które napotykałem na swej drodze, to osoby, wydające się wręcz w pełni zintegrowane z tym społeczeństwem, płynnie operujące francuszczyzną, w zasadzie Francuzi, z obycia, z tego jak się ubierają itd. Choć, napotkałem kilka grupek bliskowschodnich, które już zdecydowanie odstawały od tego obrazu, bardzo młode, co nie rokuje zbytnio dobrze.</p>
+
+<p>Jedziemy dalej, co mi się, pomimo, ponoć stricte socjalistycznego obrazu, Paryż podobał, to właśnie ten naturalny chaos. Otóż, w niedziele sklepy nie są zbytnio zamykane. Wręcz trwają do późnych godzin, ot Carrefour do 23'ciej i nie on jedyny. Chociaż Carrefour to zły przykład, bo to w formie delikatesowej sklep był i niewiele w zasadzie z tych sieciówek jest widocznych w stolicy. Marzycie o wielkoformatowych supermarketach? Zapomnijcie, co mnie nawet zaskoczyło, choć istnieją sieci piekarni, to większość wydaje się jakby prowadzona prywatnie, przez właścicieli, oferujących różne produkty i do tego, znacząca większość Francuzów, których napotkałem na swojej drodze, byli mili, uprzejmi. Taka niby drobnostka, tylko tutaj faktycznie, wydawało się to niewymuszone, ot takie naturalne.</p>
+
+<p>Wracając do sieciówek i niesieciówek. Ciekawy obraz, jeżeli chodzi o butiki, a tych jest mnóstwo, rozliczne, przynajmniej w niektórych dzielnicach było ich mnóstwo i.. design tych strojów, ciuchów (złe słowo), ubrań (neutralne), w zasadzie wszędzie mi się podobał. Jak często miewam problemy ze znalezieniem czegoś ciekawego (a, cholera, nie należę do osób, które specjalnie fatygują się do sklepów, nawet by wybrać cholerną parę butów), tak w tych wszystkich butikach, zawsze miałem na czym zawiesić oko i ubrać się w jednym z nich, to byłaby wręcz przyjemność. Co ciekawe, te malutkie biznesy (mam nadzieję, że mam tutaj rację), faktycznie są prowadzone indywidualnie wręcz, co skłania ku konkluzji, że Francuzi faktycznie skłonni są wybierać, no nie wiem czy lokalne jedzenie (straganów na alejach trochę się ustawia w weekendy, co też swoja drogą ciekawe jest), ale zaopatrywać się w odzież u lokalnych krawców? Gdyby się nie zaopatrywali, to nie byłaby ich liczba aż tak mnoga, tymczasem... i ta jakość! Francuzi swoją drogą, ubierają się dość dobrze, nader dobrze.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+ Hm. Może teraz o muzeach słów kilka. Tak sobie ostatnio stwierdziłem, że jak podróżują sobie, to zasmakuję trochę kultury wysokiej, aka muzea, noo dla przykładu, jakoś się niby wychowałem na tym, więc polecę dalej, a nuż, czemu nie, no cholera, wypadałoby, nu. I wiecie co? Too, ja zacznę od tego. Gdyby, jakiekolwiek miasto na świecie.. cholera, mamusia wspomniała, że w Nowym Jorku, generalnie w stanach mają dobre muzea (ale to inny świat, ciii). Noo, chwila, muszę zebrać słowa.</p>
+
+<p>Generalnie, to zacznę od tego, że wybrałem się na Wersal. Aaaale, to w następnej kolejności wspomnę. Wybrałem się też na Luwr. Iii, skupmy się na tym Pałacu-Muzeum, bo warto odnotowania jest, szczególnie warte. Drodzy Państwo, jest to kompleks olbrzymi, obejmujący... no, wiele wiele hektarów ziemi, z budynkiem rozpościerającym się przez wiele kondygnacji i aby przejść całość, zwiedzić całość, DOGŁĘBNIE. Wypadałoby spędzić w tym muzeum.. noo.. przeszło.. Powiedzmy, że ponad 7 godzin, a i tak z pewnością część eksponatów by się przeoczyło. Tak jest, jest to olbrzymie muzeum, które ma w swoich podwojach komplet antyków z bardzo szerokiej gamy czasowej. Znajdziemy tak Starożytny Egipt, Rzym, Grecję, bliski wschód, trochę orientalnej o ile pamiętam... oczywiście sporo francuskich eksponatów, ale te koncentrowały się raczej na sztuce dekoracyjnej i... no, mieli tam nawet całe pokoje, zaprezentowane w kluczowych stylach i tak np.: kwatery napoleona, zrobimy na mnie.. cóż, czegoś podobnego, powiedzmy, że jeszcze na oczy nie widziałem. A to nie koniec. To dopiero ze 2-3 piętra!</p>
+
+<p>Na kolejnych, no, powiedzmy, że 1.5 piętra, ale to nie fair tak do tego podejść. Choć, potem dopiero spostrzegłem, że to muzeum raczej jednak na antykach się koncentruje (nawet istnieją 3 różne główne wejścia na różne skrzydła tego muzeum). Lecz, mimo wszystko, jest pokaźna kolekcja obrazów włoskich (głównie religijnych), ale również dostrzegłem z 5 + 1 obrazów Leonarda da Vinci.. tak, tego ziomka, mają tam Mona Lisę, dość obleganą swoją drogą. Do tego troszkę hiszpańskiej.. francuskiej, cała masa, z Delacroix chyba na czele. Rubens.. Sporo obrazów wielkoformatowych, widzieliście Bitwę pod Grunwaldem w Muzeum Narodowym w Warszawie? No to wyobraźcie sobie nawet większe obrazy, tam takie mają, a przynajmniej się wydawały jeszcze większe. No ale dobra, gigantyczny pałac-muzeum, atrakcja turystyczna, chuj, jedziemy dalej.
+
+
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    <p>Nie mało wam muzeów? Dobra. Jedziemy z kolejnym koksem, D'Orsay. Um.. powiedzmy, mają Picasso, ale kogo tam przede wszystkim mają, to Moneta, Maneta, Degas, Cezanne, Gauguin, Van Gogha.. Powiedzmy, że wielkością muzeum było.. noo, z połowę, może nawet 2/3 mniejsze od Luwru, tylko że praktycznie w całości zapełnione było.. no, obrazami. I to, całkiem solidną kolekcją, po której, no, już w zasadzie 4 muzeum po D'Orsay miałem zwiedzone, więc moglibyście sobie wyobrazić, że mój łeb już praktycznie, wołał o zuploadowanie tej pamięci na jakąś chmurę, czy coś, a moje stopy już praktycznie wołały o pomstę do nieba i sprawiedliwy osąd torturującego (mnie). Ot, protesty w kraju protestów, ale jakoś przekonałem by jednak dokończyć i to jakże fascynujące muzeum.</p>
+
+<p>Ooo, jeszcze mało? No to, aah, Orangerie. Chcecie więcej Moneta? Tam macie ze dwa pokoje, z obrazami wręcz rozpościerającymi się, tak 360 stopni, obrazy Moneta. Ma też tam więcej, no ale znajdziemy również więce Cezanne'a, Matisse'a. Picasso, Renoir'a, Rousseau... ale wiecie co? To nie wszystko, bo akurat była tymczasowa wystawa artystów amerykańskich. I wiecie co? Nikogo nie znałem. Absolutnie. Nikogo. Było ogromne zainteresowanie, fotografować nie można było nic. Ale to obrazuje wręcz... koncentruję się na sztuce europejskiej, a tymczasem.. istnieje inny świat. Tam gdzieś za oceanem. I za pustyniami. W Ameryce Południowej, w Azji mniejszej i większej... w Ameryce. Oni naszych państw nie znają, my ich stanów nie znamy. Tymczasem tu i tam istnieje kultura i Paryżanie się tą kulturą interesują, obopólnie.</p>
+
+<p>Dobra, ostatni budyneczek: Centre Pompidou. Niby centrum sztuki nowoczesnej, ale cholera rozpościera się znowu na ciut hektarach i wznosi się na taką wysokość, że można podziwiać panoramę Paryża (!!). Miałem okazję zobaczyć tylko jedno piętro ekspozycji stałej. I wiecie co? Warto było. To jedno piętro, obrazowało.. całe epoki, generalnie styli, które z pokoju na pokój, zmieniały się, sztuka coraz dalej ewoluowała... nawet poznałem nowy styl tam. Panie, tam był Dali, Pollock, Warhol, Ernst. Picasso, Beckmann, Dubuffet, Dali, Rothko... Eh, do wyboru do koloru.</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+     A teraz, wiecie co w tym wszystkim jest najlepsze? Wiecie co w tym wszystkim jest naprawdę najlepsze? Jak jechałem na Wersal, to już liczyłem, ile musiałbym się wykosztować na tych wszystkich muzeach i wiecie co? Wiecie co jest w tym wszystkim najlepsze? WSTĘP DARMOWY. Poniżej 26 roku życia. Wiecie na czym cały trick polega? Wchodzisz 'bez kolejki' (i tak kolejki są) i pokazujesz dowód. Pokazujesz dowód przy wejściu na wystawę. Nie wszyscy ogarniają zawsze, ale zwykle tak, patrzą, jesteś poniżej 26'tego roku życia, wchodzisz. ZA DARMO. Zdajecie sobie sprawę ile w ten sposób można pieniędzy zaoszczędzić? Wiecie jakiej sztuki można zakosztować? Ile tego wszystkiego, jest wręcz na wyciągnięcie ręki? Jeżeli jest jedna rzecz, która powinna zachęcić do odwiedzenia paryża, to darmowe muzea. Na, jebany, dowód, za darmo, wszędzie. Poezja! Cóż za artyzm! Pogarda dla warchlostwa i.. ee, w każdym razie. Wow, sam Wersal to nawet 18 euro, które BAM, uniknąłem, ot ziuu...</p>
+
+<p>Ahh, i wersal, Co tu dużo mówić. Wiecie co? W tej stolicy, wszystko jest budowane z rozmachem. Pałacy, jest w pizdu. W piździec i do tego z rozmachem budowany, każdy kolejno z nich. Pomyślałem, aaa, Pałac Elizejski se zobaczę. Wiecie co ujrzałem? Wyjątek od normy, wyglądał jak więzienie i w zasadzie nie widać było nic, prócz murów, barierek i policji poprzecinanej żołnierzami. W zasadzie, muszę tutaj zaznaczyć, że myślałem, iż jak na stan wyjątkowy, miasto będzie nieco bardziej.. zwyjątkowane? Grupkę żołnierzy widziałem pod wieżą Eiffel'a, na Sacre-Coeur (stamtąd całkiem niezła panorama na południe (z północy)) i.. pod Pałacem Elizejskim. Do tego sprawdzają bagaże przy wejściu do każdego muzeum (luźniej, bądź bardziej skrupulatnie, paradoksalnie na Luwrze mniej skrupulatnie (!)), a nawet do centrów handlowych i katedr sprawdzają bagaże i skanują. Spostrzeżenie mojej mamy: czy oni bardziej dbają o dzieła sztuki, czy o ludzi? Bo czysto teoretycznie gigantyczne kolejki chyba pardoksalnie ułatwiają potencjalny zamach...</p>
+
+<p>Ah, od Wersalu zacząłem. Niby warto zobaczyć, ale to typowy przepych, dużo złota, dużo Baroku, dużo wszystkiego. Kilka ciekawych pokoi, np.: ten z rozlicznymi żyrandolami oraz inny, z wielkimi obrazami i wygrawerowanym, złotym poddaszem. A tak poza pałacem, to ogromne połacie terenu, olbrzymi plac po obu stronach, kilka mniejszych struktur, np.: farma.. i jeszcze więcej pokoi to zobaczenia, jak to kiedyś sobie żyli, monarchowie. Przepych serio spory. Jak na pałac, służący raczej do przesiadówki i polowania, to rozmach był wręcz.. niebotyczny. Ale cóż, kiedyś inne standardy były, może gdybym wiedział o tym jak wtedy żyli, to sam bym protestował i rewolucje wzniecał, kto wie, czerwony Fuad, ciekawe to byłoby zjawisko, nie powiem.
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      Miasto różni się również, wzdłuż. Po południowej stronie miałem wrażenie, że miasto jest znacznie bardziej ożywione, ludzie zabiegani, kafejki, piekarnie, spory ruch generalnie. Taki piękny, wysublimowany chaos, nie wiem jak to inaczej nazwać. No po prostu cud, malina, piękno w swojej postaci, harmonijnej i.. ale, to południowa strona. Dalej, w obrzeżach sekwany, mamy typową, imperialną architekturę.. ze złotymi bodaj... gryfami? Tu i ówdzie. Pałaców... wiele, rozlicznych, pompatycznych i z olbrzymimi połaciami terenu, a la pola elizejskie, czy plac inwalidów. Mają też swój łuk triumfalny (olbrzymi!), z niezwykle szerokim rondem (cholera ma 12 połączeń). No i północna strona, która się wydaje... cicha... jedynie pokaźna.. secesyjna? Architektura, tu i tam, i wszędzie, ale bez kafejek, bez niczego... surowe budynki, trochę zieleni... zaparkowanych samochodów wzdłuż wiele... I tak do czasu nic, dopóki nie sięgnąłem okolicznego wzgórza.</p>
+
+<p>Wiecie co jest ciekawe? Niby chaos. Niby porządek. Niby kontrastów brak, ale są, subtelne. Tymczasem, słyszałem wiele złego, o tym co się dzieje w tym kraju, czego raczej nie doświadczyłem. Wręcz, bardzo pozytywne wrażenia, wielowektorowo nawet patrząc. Nawet przebywając w metrze, pomimo dość archaicznej struktury transportu publicznego, pomimo że w piekarniach drogo, pomimo że.. próbowałem bardzo ciężko, wymyśleć coś, co byłoby autentyczną wadą w Paryżu. Nie udało się zbytnio. Choć momentami miałem okazję wyczuć, że coś jest nie tak, np.: w okolicach dworca Gare du Nord, gdzie już faktycznie, nie czułem się do końca bezpiecznie. Muszę przyznać, że kuchnia francuska w Paryżu, choć starałem się, nie znalazłem za bardzo. W piekarniach faktycznie nieco inny asortyment, Galette bardzo ciekawy przysmak, którego większe kawałki sprzedają nawet po ~30 euro za sztukę. Ale w restauracjach próżno było szukać czegoś autentycznie, francuskiego. Po prostu. Crepes chyba pozycja oczywista, ale szczerze tego typu naleśniki babcia mi w domu robi, podobnie.</p>
+
+<p>Paryż faktycznie prezentował się jak Paryż, co mnie bardzo ucieszyło. Centrum jest spore i przeszedłem wiele kilometrów, by poczuć jak to miasto wygląda, jak ludzie się zachowują, jakie to miasto w zasadzie jest, jako samo miasto. 3 dni, wydaje mi się, wystarczy by akurat uchwycić klimat i zobaczyć stosunkowo sporo. Niemniej jednak, pomimo iż zobaczyłem mniej więcej 80% tego co chciałem zobaczyć, wciąż wschodnią i południowo-wschodnią dzielnicę zostawiłem. Z wielką przyjemnością zwiedziłbym jeszcze raz wszystkie te muzea i sprawdziłbym również inne. Odwiedziłbym Sacre Coeur z samego rana i może sprawdziłbym inną lokalizacją o zachodzie. Takie miasto, w zasadzie to można zwiedzać nawet tydzień. A warto przy tym pamiętać, że Paryż jest naprawdę olbrzymim miastem, więc być może to co mówią, o pewnych bardzo niebezpiecznych dzielnicach, ma jednak pokrycie w rzeczywistości.</p>
+
+<p>Niemniej jednak, jest to miasto, z mojej perspektywy bardzo kulturalne, wielopłaszczyznowe, uniwersalne. Przemówi ono do każdego, obojętnie z jakim nastawieniem się szykuje do zwiedzenia miasta. Cóż, Paryż warto zobaczyć. I to by było chyba na tyle.
+
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      These IC trains seem to continuously keep on getting filled up even at extreme times, such as 1-2 AM. Funny enough, they get filled up by partying people. And I'm talking of IC's. Other trains are... well, quieter. The regional ones by far were not full at all. And these are just normal one-deck passenger trains with ample leg space. However, I really preferred the IR (also kinda-regional, inter-regional?) trains, which had one basic difference that shifted worlds for me compared to the other two and which made me prefer them way over all the other. Do you know the key secret? POWER SOCKETS! That came in numbers! All set up by twos for each two pairs of chairs. And there were hardly any passengers travelling anyway. So? At peak times I even had to use up to three available. A perfect set up as I had time to charge up all of my devices twice throughout my trip. Pure Perfection!</p>
+
+<p>Anyhow, anyway, I reached Bern. The capital city. An eerie central train station, with a relatively interesting, quite spacious shopping center and just one venue: McDonald's operating at these crazy hours (I was not fully aware how expensive it actually was at the time) and selling their assortment at what it kinda seemed as hefty prices. But then, I was in need of energy. Who could've blamed me for having a box of Caesar salad? I was not ready for taking off before I knew all my gears were up n' running, including the ones in my head. My body compass was seriously off to its verge. It took me 20 minutes of strolling around the train station before I've realized; That there is a university right next to the station. Then I realized, that the university campus is actually located ON TOP of the train station. Seriously, the train departure complex had around 4 floors and it included a top area, which in fact was the outdoor area of its University (of Bern) with a wonderful (dimmed back then) 180 degree view of the city and its surroundings such as a marvelous mountains outline. At that particular time, they were still slightly visible. But, considering that the university was right here, right now. Eduroam activate! Get the map on my phone and bon voyage! Straight off towards the location of where the city center actually was (or presumed to be held at).</p>
+
+
+
+<p>I found Bern to be quite fairytalish. Not necessarily as huge as I kind of had preliminary figured. The western part consisted of some clubs, quite fondly attended. The southern part most had its older virtues to present upon its visitors. Although, you wouldn't have made a mistake calling the entire area per 'old town'. I haven't had the pleasure of bushing through the eastern part (it wasn't marked as potentially of any interest). All in all, the southern part was the destination that I had to penetrate thoroughly. The buildings reflected back in yellow from multiplicitous lamps hanging either in between or next to the buildings. which meant: that I invaded the right area. The older part? It was quite old. Apologies for not mentioning the styles, I would have to take my time analyzing what I've seen. I felt is as one of a kind, literally just flat buildings, tiny balconies on which you may just merely lit a cigarette up. Furthermore, the streets here looked quite different compared to Zurich's. Or, did I not mention how Zurich looked like? Well, perhaps let's reverse back to Zurich then.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      In Zurich I haven't seen much. But the city has castle-like river on the western part and a normal one of the eastern part. Oh well, wasn't that the exactly same case with Bern? Well, slightly, except for the lake on the southern part of the city. Instead, we had hills encompassing, which could've proven Bern to be quite an easier city to win over. Get rid of these thoughts. The embankments on which this city is build upon, massive structures. The view from the bridges were one of a kind, despite being pitch black, eh. Although, there was a lower part not that far away... But, the view from the hill, was like, wow, this city! Took plenty of photos. Then headed back as I had ample time and enjoyed the... damn, these structures actually felt... roman. Yeah, that's the style, although I was already severely tired, it felt like a mixture of roman and this kind of basically Italian structural feel. Funny, that was still the german-speaking canton in which I actually did paradoxically understand the people.</p>
+
+<p>Mmm, did I mention that Switzerland felt like a safe country? Well, the feel is one thing but the feeling... or better yet. I learned a few things about this country, I mean: gunsgunsguns. Could mean it's not safe, better yet, crazily dangerous, butt. Gunsgunsguns actually has proven this country safe as a safety hatch on gunsgunsguns. And, by the way. All you could experience at 2, 3, even 4 am in this county was just an overflow, a magic stream of drunk people, actually having fun! The trains? Filled with people, drunk and getting drunker and having fun! Bloody decadence? Or just living the life? Adhering to the law I guess, as the police didn't give a few damns about the drunk people. But gave about some people, hard to say whether drunk, probably looking stranger. Better yet, at these super late-early times, bursting into a McDonald joint meant... Well, a shitload of people, that's for sure. But what struck my eyes, and of whom eyes were hanging on top of me for a few minutes and mine on the McDonald's menu, disgusted with the not that or quite contemptible menu, were the two black wearing set of guys, quite clearly overlooking the joint as if people were trashing the place constantly. Yeah, security you may call them. What turned out was, it was not only this joint that hired security. Burger king and other McDonald's around the country did the same. Was it law? Eh.</p>
+
+<p>But I did run into some sort of trouble from some shady looking guy. For taking pictures, being quite diligently (that a right word?), convincing me that I've taken a picture of him and invoking that I should do something about it. After I deleted a-not-a-picture of that guy I was left alone, but felt strange. Drug dealer? Immigrant? Whoever the fuck? Anyway, Bern is the capital of Switzerland and there were quite a few police cars passing around so probably any problems (if any) would not happen, but, yeah, just one of the situations where it felt quite eerie at the very least. One of the disadvantages of travelling alone I guess.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      I might also mention, that, Bern somehow reminded me very, very closely of Sydney under certain aspects. The university position, overlooking the city. The laid-back chairs, although just five of 'em. The overall feel, while walking down the hill and overlooking the city. I don't know, it just felt like homish homy home? Sydney? Well, further down, further further... Fast forward, train to Geneva.</p>
+
+<p>Well, to be honest, as so far I enjoyed my stay in Swiss and I was really, really counting on that the weather would turn out to be quite splendid. 'Cause, the forecasts were looking quite, quite bad, so unfortunate for me. But, I had to do it. Cause, why the fuck not, right? 15 euro voucher is a nice voucher, after all. So, bam. There I was. In Geneva. And there I was. At the Genevian lake. And there I was, waiting for the sunrise, which never came by the way. Bloody, fuckin' clouds, just filling up the skies... And being lit up but with no light really visible, at least the sun. Some mountains in the background were visible. An outline, shady one. Well, welcome to paradise, one might say.
+    </p>
+  </div>
+</div> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

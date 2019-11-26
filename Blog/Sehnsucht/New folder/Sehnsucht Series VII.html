@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Olydorf</h4></center>
+    
+    <p>
+Fritzcola sugarfree in one hand. Bottle of mineral water in the basket. Taking a left in a still being modernized intersection, where I was not supposed to. Steering the bicycle without hands, while one is still gripping on the fritzcola flask and the other is trying find and play out hadouken in my smartphone. No eyes on the road. Can't hear anything that's happening on the road with my custom in ear monitors. Then I put the smartphone inside my pocket, take a quick look at what time it is on my smartwatch, as I usually forget why I get my phone in the first place. And still mildly drunk after yesterday make my way towards a lecture for which I'm already 5 minutes late, after having eaten a beautifully crafted breakfast at the mensa, for 4 euros, consisting of crumbed chicken breast slices, green salad, walnuts, and marinated, kinda grilled zucchinis, sprinkled with sea salt, freshly grounded pepper, extra virgin olive oil. I woke up at 6 am, but did kinda nothing. Slept for around 5 hours. Watered my herbs, all 11 of 'em. Did really nothing for around 2.5 hours. I might have taken a shower and eaten an apricot but can't really say for sure.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+Jedno pytanie trzeba zadać. A jak już się je wystawi, kolejne się pojawi. Wtem, zrobi się z 2'ch, pięć. A gdy i tego nie starczy, całą tablicę zaleje, a odpowiedzi ścisłych, wciąż człowiek nie uświadczy.</p>
+
+<p>Pytań, które należałoby zadać, właściwie jest tylko kilka. Należy je znaleźć, zadać w odpowiednim momencie, skonstruować i w odpowiedniej inonacji, a dowiedzieć się można bardzo ściśle: np.: dlaczego pojechałem na wymianę, dlaczego tyle podróżowałem. Dlaczego to, dlaczego tamto.</p>
+
+<p>Czy w Australii było mi źle? No prawie, życie stosunkowo wygodne, lecz w końcu wytrzymać do końca nie mogłem. Stąd moje migracje, nie mogłem w jednym miejscu usiedzieć, a na kolejne przeprowadzki i mieszkania wydałem niemałą fortunę, na tyle, że nawet z Polski musiałem środki ściągać. Od początku był taki plan, skromny, bardzo skromny, a wiódł on za granicę. Wymiana, o stosunkowo dobrych warunkach jak na to co wyczytałem. Musiałem tylko, ze 3 semestry przeżyć nieźle, a potem? Hulaj dusza, zobaczymy.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+Czemu chciałem wyruszyć na wymianę? Z bardzo prostego powodu, tego samego dla którego opuściłem Polskę, choć w poszukiwaniu lepszego życia by się już na tym etapie zgadzało, przede wszystkim chciałem wolności dla siebie, a której nie byłem w stanie zagwarantować sobie w życiu doczesnym. Brak perspektyw... Który pojawił się również w Australii. Chroniczny brak perspektyw. Absolutnie, co dalej, jak dalej, nie wiem dalej... Umiejętności, jakie niby miałem, ale kto tam wiedział, tym bardziej ja, nikt nie dawał wiary, ani za wygraną, co w moim przypadku, jak w moim przypadku, co z moim życiem, jak z moim życiem...</p>
+
+<p>Pracowałem na tą wymianę chyba najciężej w swoim życiu, starając się jak najmniejszy szczegół wypełnić co do ioty. I się niemal udało, wystarczyło. Udało się, choć... Nie do końca, bo wyszło znacznie... lepiej niż to miało wyglądać.</p>
+
+<p>Powiem w ten sposób. Pojawiłem się w miejscu, w którym pojawić się nie powinienem. Moje umiejętności, to fizyczne, to językowe, to na wielu innych płaszczyznach nie odpowiadały temu, co uzyskałem jako student na wymianie. Mieszkanie dla siebie, o parametrach których wielu mogłoby sobie pomarzyć... fundusze, które absolutnie starczały mi tutaj na wyżycie. Oraz studia, których program idealnie wpasowywał się w to co robiłem w Australii.</p>
+
+<p>Wszystko byłoby w porządku, ale...
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Introspekcja</h4></center>
+    
+<p>
+4 pary butów
+- Stare reeboki do biegania ~??? zł
+- Zielone skórzane Ecco ~300 zł
+- Czarne Timberlandy ~400 zł
+- Czarne Hanwagi ~650 zł
+
+3 kurtki
+- Stara oliwna hipsterka, ~??? zł
+- Niebieska Zhik, do żaglowania, ~540 zł
+- Czarny płaszcz Vistula, ~1200 zł
+
+4 krótkie spodnie
+- Granatowe Ralph Lauren ~300 zł
+- Czerwone Ralph Lauren ~300 zł
+- Ciemny Beż H&M ~100 zł ?
+- Oliwkowe H&M ~100 zł ?
+
+3 długie spodnie
+- Czarne Vistuli ~150 zł
+- Czerwone Vistuli ~150 zł
+- Purpowe Vistuli (zniszczone) ~150 zł
+- Beżowe (???) ~? zł
+- Oliwkowe cargo, ~120 zł
+
+Swetry
+- Purporowy cos wełniany, ~300 zł
+- Oliwkowy cos wełniany, ~300 zł
+- Czarny cos wełniany, ~300 zł
+
+Bluzy
+- Granatowy cos, ~200 zł
+- Oliwkowy cos, ~200 zł
+- Ciemny H&M, ~100 zł
+
+T-Shirty
+- Oliwkowy cos len, ~150 zł
+- 7x cos, ~100 zł
+- 12x seriale, ~100 zł
+
+Plecaki
+- Oliwkowy Timberland ~300 zł
+- Czarny Timberland ~100 zł
+- Niebieski ??? ~200 zł
+- Czarny Jack Wolfskin ~700 zł</p>
+
+
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Dwelve</h4></center>
+    
+    <p>
+Tak już jakoś jak zwykle. Nie wiem jak się to wszystko potoczyło. Nie wiem jak się to wszystko zdarzyło.</p>
+
+<p>Czasem mam wrażenie że niektórzy na wydziale poznali się na mnie. Wręcz mnie nie lubią ale jakoś jednak przyjaźnie jednak w stosunku do mnie się porozumiewają. Niemal wszyscy, nie tylko ma wydziale ale i poza nim, moi znajomi tam gdzie mieszkałem w Monachium. Tak jakby wszyscy mnie szanowali być może za robotę jaką wykonywałem. A może za dokonania jakie mi się udało do tej pory... a może za to, że jestem po prostu znakiem zapytania. Nie wiem, naprawdę nie wiem.</p>
+
+<p>W szczególności teraz kiedy mi wymiana zmierza ku epilogowi, to jest spore wyzwanie, określić jego przebieg. W teorii to uzyskiwałem i prowadziłem życie jakby wydarte z jakiegoś krzywego zwierciadła. Wszystko się nie zgadzało, po elipsoidalnej równi pochyłej prowadziłem paradox jaki z mojego życia był, tak doskonałe, że aż absurdalne. By w moim wieku dostać do swojej dyspozycji takie możliwości, których nikt, nawet ja sam nie ogarniałem. Można to tylko przyrównać do irrocjalności i rozbiegiem myślowym kiedy kowalski, który ledwo stówkę wyskrobie, słyszy w telewizji o milionach i miliardach. Pytanie takie, jak żyć? Moje życie tak absurdalne się stało że nawet nie wiem czy chce spowrotem do Australii lecieć. Bez sensu, nawet w Niemczech gały mogą wystawiać, a co dopiero w sumie gdziekolwiek. Ale wiem lepiej, bo tam bylem, bo tam żyłem i wiem, że najlepsze warunki to miałem w Monachium.</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+    Jest jeszcze sporo miejsca do poprawy wielu ujemnych punktów i ja sam niestety bardzo ciężko miewałem, ale w ostatecznym rozrachunku? Ktoś się podjął budowy utopii? Która całkiem nawet wyszła.</p>
+
+<p>Jakimś cudem pomimo wszystkiego udało mi się pozostać na plusie. Pytanie czy udało mi sie wykorzystać pełny potencjał jaki w tej wymianie drzemie. Mogłem dwa razy więcej uzyskać. Tymczasem wprowadziłem  sie do takiego już stanu</p>
+
+<p>No inna kwestia. Doprowadzilem się do takiego statku że zatwierdzili.. po prostu egzaminy.. podszedlem do nich ale czekalem dobre 3 msc. 2 msc. 1 msc.
+3-2-1.. o kurwa tydzień. No i jak ten materiał juz mi deptal po pietach to rekurencyjnie wracalem do niego ale mialem motywacji by nic dokonczyc. Pierdolone zycie.</p>
+
+<p>Pisze teraz z innsbrucka. Mam jeszcze z mniej niz godzine do autobusu do freiburga. Jak myslicie, jak wypadnie?
+</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<!-- 
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Chasing The Future</h4></center>
+    
+    <p>
+      Defying the epilogue / Chasing The Future
+    </p>
+
+<p>
+Once the Future uncertain<br>
+Once succumbed into disdain<br>
+Once featured in an unholy limbo<br>
+Tried finding my way out and yet fail
+</p>
+
+<p>
+Once I knew of the possibilities<br>
+Once I managed to unlock potential<br>
+Once I'd broken the impossible sphere<br>
+One sensitive soul chose another
+</p>
+
+<p>
+Once succumbed in disdain, unfree in limbo, with no clear view yet a mind seeking paths, a way out, all my synapses - burnt out and my brain - imploded
+</p>
+
+<p>
+Once I learned of the possibilities<br>
+Not enough.<br>
+Once I became valued and appreciated<br>
+Not enough.<br>
+Once I decided that what's next is better<br>
+Not enough.<br>
+One unknown feature broke the circle:<br>
+'It doesn't make sense to stop now'
+</p>
+
+<p>
+And you know what?<br>
+There is no right.<br>
+Because it's right.<br>
+And it is my right.
+</p>
+
+<p>
+It doesn't make sense to stop now
+</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

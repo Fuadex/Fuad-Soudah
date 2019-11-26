@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      Well, my first destination and probably my second trip to Croatia as a whole. Yaaay, I figured, it's time to see the capital at last and as I figured, my first destination was obviously Ljubljana, but then I did some calculations and came up with a solution. Zagreb comes first, I'll have more time afterwards and, well, heh, okay here I go.</p>
+
+<p>Ahh, Zagreb, Zagreb. The funny thing, I easily got inside Croatia but less easily got out, as I was asked for some sort of declaration or something on the border. The officer didn't speak English, but well, anyway, it felt kinda strange and funny how slow things at the border worked and how scrupulous the officers were in checking the identity. But, well, what I remembered and it was the great highways that were already built quite some time ago, but how humongous and high quality they seemed, that remained. But I'm not here to talk about highways and border control, right?
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      Right, Zagreb. I reached the city at.. Was it 6:45? Pitch-black and to be honest, felt maybe not scary, but besetting, enthralling, especially that, again, I did not have cellular and got, despite having a map, by some miracle, lost, by heading south, instead of north. And trust me, it did feel quite eerie, stumbling around and not seeing practically much. Single people around, relative-high traffic and... well yet, still pitch black and feeling as if a stereotypical East European city. Urban Sprawled. Oh I forgot to mention, that Ljubljana was urban sprawled too, but it felt like a nice and well composed sprawl. In Zagreb, I couldn't really tell.</p>
+
+<p>The impressions started to hit a rise once I reached an alley, well maintained, with working mini-fountains. Quite vast, lengthy and actually precipitous with tunnels drilled underneath the roads for people to cross freely. Seemed like an independence square. And the sun was just about to rise so it was perfect. And not that long ago I corrected myself and figured where I actually was.</p>
+
+<p>The interesting thing about Zagreb was, I was quite unsure of how am I supposed to visit it. I started from circling the area because I did not actually know if the city has a main center, google maps didn't really clarify it. There I was, encircling the area and I experienced an interesting history lesson. Well, as alluring as it was, an actual, typical, just straight out of social realism wildest dreams, blockhouses, set one by one in an entire ginormous area. Funny, I didn't expect that, but, ya know. Felt a bit empty, as there were not that many stores around, at all to be honest. But then I headed towards to city center, eventually. And it started changing, growing on me, the city, as it was.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+     Then it turned out, there was plentiful to see as multiplicitous signs indicated in key areas. But I still couldn't really figure out the exact location of where I was. I had a wonderful cup of coffee in a kinda stylish hipster place (seriously, the coffee was amazing with all its flavor values and aroma, each cup tasted actually a notch different from the previous one and had an smooth, soothing taste. A notch fruity, then less and.. wow). Had a bit less tasty pastries. And went around, experiencing a densely packed secessionist architecture. Then one of the main squares and stumbled along, what it seemed, as a main road, piercing horizontally the city. I knew there was a vantage point. Oh, did I not mention it? The bloody city actually had an enormous mountain in the background. Felt so... wow.</p>
+
+<p>I did not climb the mountain, but I did reach a vantage point, what it seemed as an old town section of Zagreb. It's funny, how the architecture changes from district to district, it's got a knack to it. The problem was, the sun was rising and the horizon was.. well, the visibility was not that great, all-in-all. Seemed smoggy, but the air felt clear and quite fresh. I took a handful of pics and made my way around the northern part of the city. A combination of hills and... well I landed up soon enough in a recommended by a friend joint, where I ordered a selection of beers and, what it seemed as, meat rolls with a paprika-like dip. A solid selection.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+Visited a medical campus of University of Zurich. And a cathedral, which seemed as a combination of Notre Dame and Sainte-Chappele. Visited the city markets. And an alley in which many important buildings were kept. Found my way back to the bus station which now, in daylight, seemed quite more welcoming, although still a little worn down.</p>
+
+<p>The thing is, that the city does look quite East European. People are clothed quite alike, in not so vibrant colors. The youth seems as typically East European alike. Transportation system seems quite worn down and what kind of made me thing for a moment is that there is a great gulf between the actual part of the city and the part which attracts the tourists the most, which are significantly better kept and maintained. As if it's being carried by the tourists. And maintained by them. From what I remember, the country seems radically different in the coastal parts, which flourish by the steady influx of tourists. Is Zagreb a good city to visit? Probably, but I believe that Croatia has much more to offer from its coastal parts.
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      Wycinek z mojego życia. Jakże piękny, co? Szczerze, myślałem, że w wieku 18 lat już stanę się dorosły. W zasadzie to nie ma tu nic przeciw, wszystko się zgadza, w wieku 18 lat wypierdoliłem na drugi skraj ziemi, usadowiłem się w kraju, którego nie widziałem na oczy przez przeszło 12 lat i udało mi się, z wieloma trudnościami, gigantycznymi na tyle, że potrafiłem Australię, Sydney, spoglądać przez szkliwo, peh, szkiełko, percepcję rozszerzoną na tyle, że gdy inni spoglądają na nią jak na raj, ja potrafiłem przejrzeć ją w całym skraju i przestrzeni, ale ukierunkowanej na negatyw.</p>
+
+<p>Coś takiego jest, że będąc z dala od czegoś, można zacząć tego pragnieć, na tyle, że zaczynasz dostrzegać te niesamowitości. Ten element, który odróżnia, wyróżnia. No ale chuj. Wyruszyłem tam. Głowa mi wyparowała, nic, pustkowie w niej. Potem zaś musiałem odnaleźć się w brutalnej rzeczywistości, w której przyświecała mi jedyna taka idea, której nazewnictwo jest najprostsze i najbardziej naturalne na świecie - Wolność, bo do tego się wszystko sprowadza, co?</p>
+
+<p>Po brutalnym pierwszym roku, nastał dobry kolejny. A po nim, absurdalny. Ale, życie chodzi w czwórkach, toteż, w zasadzie absurdalnym był też czwarty, a niesamowity trzeci. Dopiero w wieku 21 lat, w zasadzie spoglądając wstecz, mogę stwierdzić, że w zasadzie można bardzo wiele w życiu osiągnąć. W zasadzie niewielkim kosztem. Ale również dość sporym. Zależy przez jakie szkiełko spoglądać, bo można to wszystko obrócić do okoła, w gruncie rzeczy, dość małym wyzwaniem.</p>
+
+<p>..
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      Zastanawiam się jak to będzie w przyszłości. Gdzie się widzisz w wieku 24? Wiesz co, pytanie gdzie wyląduję w wieku 24. Przekroczyłem już granice, teraz lewituję. Dokąd zmierzam, gdzie wyląduję? Życie jest śmieszne. Życie jest brutalne. Życie jest prawdziwe. Ale wiecie co? Może..</p>
+
+<p>Może wyląduję jako geek, pracując w korporacji, odwalając robotę i ciesząc się ze swojego maluczkiego życia, krzycząc: I'm Freee! Kosztując standardowego australijskiego życia, będąc cząstką społ(eczności)eczeństwa, zizolowanego, zindoktrynowanego. Ale o czym ja teraz mówię? Raj na ziemi co? Nie wiem, z przewidywaniem przyszłości nigdy nie byłem dobry, w słowach, w ekspresji tego, co się nadarzy, bo w mojej głowie chaos, a w tym chaosie sie odnajduję i znajduję drogi, wyjscia takie, że absurd potrafię przetrawić w dobrą perspektywę. Ale jakim ja cudotwórcą, jakim bym nie był, tak może wyjść jak w pokerze.</p>
+
+<p>Zyskałem więcej od wszystkich innych. Straciłem na końcu.
+    </p>
+
+    https://endemirage.blogspot.com/2017/01/sehnsucht-21.html?token=APq4FmDpaqT8z5I0KRSfOVy5BKILLaR9uRKs939qKGnRvZ05q8xDo6bsHzwe6eKPCoTeqtCBXl-70oO5EnNFHIKAW-l1JtbmQeFI0fBhqkLDu4OYQM3wlYURjpXgpzYYLR98tJOVNhuw&postId=9100397422017155594&type=POST
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

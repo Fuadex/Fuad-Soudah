@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+     So that I kick off properly. Have I already mentioned how exhausted I am? Despite that I keep on making tens of kilometers each day, it seems that the mental stress and the direness + exhaustion that comes along with it is finally reaching me. On top of that? Considering how much I've seen so far I'm starting having trouble figuring out which is which, what is what and how do I ought to recognize elements of the environments I perceive and interact with. Especially the percepion part is starting to become quite quite, blasting outta the roof and making sure that I'm not able to process and output what I see as is, with a tiny hint of magic attached to it.
+
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      Especially the expenses are starting to surface as irrational, as if any of what's happening was rational to begin with, but still spending money and seeing it's stream being squandered especially on food (which is a must, although I could potentially cut down on it by about half). One of the major disadvantages that now I'm seeing quite clearly of moving places with the use of vehicles feeling better once they're up in the sky rather than on the ground is obvious. To get by plane from point A to B cheaply is not the stretch that makes it insane, expenses-wise. Obviously them being so low kinda makes people think what the heck is wrong with them. But then actually trying to arrive at these so-called cheap flight airports and leaving them. Trying to use some advantages of its 'free wifi' and finding out what if you miss your flight. Well, it's fair to say that it's not the flight that you're paying for but for everything else.</p>
+
+<p>Just the same goes for London's museums. The National Museum, more or less packes with art in a pantheon-like building, with just one + a notch more floor filled with mostly Italian, but also British, Flemish and French art is for free alright. But would you like to purchase a map for only 1 pound? Or hang your coat or leave your small or large (they do distinguish both!) for 1, 2, 4 pounds? How about entree to special exhibitions which have a hefty price tag attached to it, like 9 pounds (discounted!) To experience Michaelangelo masterpieces (raphael was there as well I think..). How about a bottle of water for over 2 pounds? A small sandwich for 3-4? And they are proud that they prepare them all freshly and it's all made even the coffee, roasted specially and only for them and you as their customer! British Museum goes even further. How about 2 pounds for a map?</p>
+
+<p>Well, despite all of that and obviously me being rather not that fancy of the idea of 'art for free, pay for everything else', there are rather some interesting collections to be seen. It's not the level of what I've seen in Paris, but man. In tate you may see some French impressionists as well. I believe, Monet, Degas were there. And then a festival of styles, which I rated 50:50, with Rothkos kinda 360 room not being able to rate consistently and straight off the bat! Delacroix in the National, plus sunflowers from van Gogh, cezanne, bit more impressionism, cause why the heck not. With some highlights that I believe everyone will recognize, even some kinda ripoffs.. although, it's not super powerful, took me easily 3 hours to see everything. For kinda free not such a bad deal.
+
+
+    </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      British Museum was the wild card here. The second most packed and wildly attended to museum in the world. The only problem (2) were. Well, it's all about the antiques there. And I had just around an hour left to see the museum. Not that bad, eh? Also, a queue to the bag check tent. But, 15 minutes and I'm in... eating a cookie and having a cup of coffee, not believing that I'd be able to get anything out of it otherwise. Some temporary exhibitions.. nah, let's head straight to the regular! And... i gotta hand it over to the museum. They prepared their exhibitions on such a diligent, pure level, so forthcoming to the audience.. design-wise? It's a dream come true! Although I felt they were rather inconsistent throughout all of their rooms but still. How about you learned about history by actually learning about the items straight off the bat. What the problems were. How they fixed them? (The item). The exhibitions were rather not exactly overcrowded and even when there was a sudden influx of objects, these were grouped rather consistently. A rathet surprise, design-wise it could've beaten Louvre as how it approached the audience, it just felt natural. The problem usually is the presentation. And in this, with the use of specific color sensations, object relocation and use of language, were in general rather phenomenal. But then... there were quite a few rooms and all did not keep up with its highlights.</p>
+
+<p>But design-wise. Do you know what made quite an enormous impression on me? The public transport. Oh, fuck the train links to airport-city, alright, I'm speaking of what's already in the city. And I'm still not speaking of the reeaaaaally extensive system, the abundance of lines located all over London, the tubes that are (some of which were built with some momentum, by the way). I'm still not speaking of the double-decker red buses, which seem to be the only type functioning in London public transport wise, in which the view of the city on its second deck is just pure greatness. I'm still not speaking of the delays being displayed in real time that google showcases up to to the minute whether the transport is delayed or... ahead of time! And fuck the oystercard, which is designed quite neatly not to overcharges Londons dwellers but to maximise the revenue from tourists (2.4-2.6 pounds for one tube station?!). Take this: You show up at the gate. And put your contactless debit/credit card to the reader. Simple? Genius? Dream come true for designers? Tick tick tick! Why the hell bother with how the system works. Just use your card with which you normally issue payments. This IS the perfect system, except it didn't work for my visa (unfortunately). But apparently it does for tourists from outside GB as well! How about a niff of future coming your way? Use your apple watch, put it close to the terminal, bon voyage!
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+Another approach. Kentucky fried bananas. My left arm feels a little sore. My feet? Ah, standars aching. Nothing new. Ooo, how about, how about. My head? Oh yeah, I might be in dire need of water. Of waaateeer..</p>
+
+<p>Oki, how do I continue. London? It's a very difficult city to rate. I had to spend some time there and I'm still unsure how to approach it. Is it blasting mad? Maybe. Is it so nice and alike its people? Well, they kinda are. Is it a metropolis? Well, quite definitely but come on. The thing is I've still got Lisbon in the back of my head and alike, Cambridge felt 'more British' than the capital. But then, London actually has its virtues still attached and it's relatively clear which direction it's moving towards.</p>
+
+<p>First of all, all the classics. Gothic architecture of all its ministerial, government operated buildings. Westminster, big ben, buckingham palace. There are some deviations, such as the museums which look more like as if they were built as ancient with all its greek (jonski?) Columns. But then, that's hardly a whiff. The most dominant architecture is the regular brick rows of houses. Perfect for labourers to live at and so the city reminds me of this great industrial revolution remainder, which is, in fact, still dominant especially in its closer (also further?) Suburbs. And then... all the new that surfaces eventually. Actually, not even eventually but kicks it off right in ya eye, once you roll with your bus on one of the estacades guiding you towards the city center. Billboards huge and wide, interactive as if drawn directly from Bradbury's Fahrenheit 451. Near-futuristic architecture of its new buildings, crossover with others in the area, reminding of classic modernism. But it's clear that the city is heading towards not modern but future. With the emblems seducing the drivers to pay for their parking using an app. With the access to metro, being enabled by merely touching your debit card. It's getting increasingly more and more intuitive and seamless and the city kinda reflects in style of how it prefers to grow. Although, it will be years until it proceeds through its entire metamorphosis.</p>
+
+<p>What about Londoners themselves? Well, the accent is ridiculously nice and kind. That's for once and pretty much the majority is able to operate fluently in, let's say, pronunciation dialects, out of which most are so pleasant that it makes me question whether French is nicer at this stage. Classic British. It takes years to acquire such a fluency and it might be the case that how people carry on with their everyday lives actually supports their accent altogether. They are nice. They excuse and sorry everytime even if they scratch you a notch. They get into conversations seamlessly and understand each other even if the pronounciation seems radically different. But all in all? Pleasant people. And London? Hypermulticultural, we're talking of 66% of original Londoners still remaining with the rest having imigrated from elsewhere.
+
+
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    <p>How does it reflect on the everyday life and its society? In a quite interesting fashion. Seems that race does not play a role in social intetactions. And abundance of languages could be heard, although mostly from tourists. English is definitely dominant and even in museums, it's English only (although guides acquired for a free may have a selection). You may figure out where the person comes from based on the pronounciation, although it's getting increasingly frequent that it this art becomes not that easy after all. There are some worse outcomes, but in general, London seems to be working kinda fine.</p>
+
+<p>I was surprised that after hours the city dies off a little, though. I learned of some night mayors or somebodies operating the city after hours. But most of the tubes close down after midnight and the streets and its pedestrian alleys become kinda vacated (remains safe, which is great!). Perhaps I didn't wander into some more colourful districts, but still, the center is just like I said it is. Also, in contrary to what I said. The atms do not seem to be modern and there are not that many to be seen on the streets either, which feels a little funny at the very least. A lot of food joints and pubs, though.</p>
+
+<p>Cambridge popped up suddenly. Out of the ordinary out of the blue. Imagine. I didn't change my smartphone clock, right? Right. And so, it was said in my automatically filled calendar, that the flight is departing at 9.40. So, I set up the alarm at 4.20 to get to the bus departing at 5.40 to get to the airport at 7, so that I can easily catch the flight at 9.40. What happened was? I woke up at 3.20. Wandered around the city center and walked to the bus terminal and caught the bus at 5.40. Reached the airport at 7 and went to the bag check area. But it was full. I figured, I've got a shitload of time and it did say 9.40 on the departure screen. But you know what? Maybe I was mistaking. I went to eat something, took a look through the magazines. Went to thr bag check queue which was bloody long and.. just recalled that on my ryanair bording pass it says 8.40. I reached the gate 5 minutes before departure. And then did some magic around the airport, even the train stopped working and had to do some more magic. Nothing worked
+My flight was gone. I booked a next one, for not such a hefty price tag (it did hurt though..) and figured. I've got... 10 hours. What should I do? The trip to London is expensive and I've seen it so... cambridge is near? How about Cambridge?</p>
+
+<p>The trip was fast. The train was pleasant. The other way around. I reached it. Took it. Travelled. And began experiencing the remainder. But it was quite fairly pleasant experience despite the drizzle and finally rain pouring down heavily. Still, I wish I used the same time to see Glasgow...</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+     Ale dobra, Lizbona. Z tym miastem mam problem, miałem duży problem. Taki podstawowy problem? Jest to spore, rozległe miasto. Trzeba dużo chodzić. Kolejny problem? Zabrałem buty, które kompletnie nie nadawały się na typowo kamienne ulice, pnące się to w dół, to w górę, bowiem jest to miasto położone, jakoś ponoć typowo, na siedmiu wzgórzach (chyba walory obronne). Mimo wszystko, dzięki takiemu miksowi, nie byłem w stanie bić rekordów jak przy Paryżu czy Szwajcarii. Odległości w linii prostej to jedno, trudny teren (a konkretnie jego kamienne wyłożenie) to jeszcze inna para kaloszy, a że przy tym trzeba się piąć to w górę, to w dół? Po 20 kilometrach człowiek miał już dosyć, a do tego raz to mroźne przedpołudnie (poniżej 14), raz to upalne popołudnie (ponad 20 stopni) doprowadzało człowieka, tak subtelnie ale do, szewskiej pasji to jeszcze nie, ale zdezorientowania. Gęste, nie do końca logicznie toto wystrzelone, toto zapętlone uliczki, z chodnikiem na tyle co to by jeden przechodzień się zmieścił. Przy tym pędzące samochody, nie zważające do końca na pieszych i vice versa. Architektura, która niczym się w zasadzie nie wyróżniała, ew. czerwone dachówki większości budynków w przestrzeni, raz już człowiek wspiął się na jeden z wielu robiących imponujące wrażenie punktów widokowych w Lizbonie.</p>
+
+<p>To naprawdę nie jest łatwe miasto, przy tym, na tyle rozległe i różnorodne, że szczerze mówiąc, podobnie jak Paryż, wypadałoby tu spędzić jednak z tydzień, aby odkryć wszystko co trzeba, obejrzeć muzea, a przy tym wybrać się do kilku suburbiów, albo lepiej: terenów, które wypadałoby po prostu zobaczyć jak np.: Sintra, którą miałem okazję odwiedzić, z kompletnie obolałymi stopami (do tego stopnia, że serio już tylko kulałem od punktu A do B). Wydaje mi się, że udało mi się zwiedzić dosłownie wszystko, prócz samych ew. atrakcji płatnych + muzeów. Niestety, sama Lizbona, jej centrum oraz przedmieścia... po prostu nie zachwyciły mnie niczym szczególnym. Klimat jakiś jest, ale brakuje go, byłbym rzekł, nawet monumentalnie. Może to wynik trzęsienia ziemi, jakie nawiedziło to miasto nie tak znowu bardzo dawno (40-50 lat temu)? Jedyna dzielnica, która faktycznie zachowała integralną zabudowę, oryginalną, niby faktycznie dość charakterystyczne, ale podupadłe, byłbym rzekł, nawet trochę zapyziałe. Po prostu, brakowało tego klimatu. Serio, chcesz zapierających dech w piersiach widoków na miasto? Tych jest tutaj nadto i faktycznie warto. Być może autentycznego portugaleskiego jadła? Tutaj też znajdziesz, chociaż, tutaj muszę z przykrością zauważyć, że wszędzie tylko loga, loga i jeszcze więcej emblemantów, knajpek oblepionych wręcz na bogato "TRIPADVISOR RECOMMENDED", czy innymi portalami, które ponoć zachwalają to miejsce. Osobiście? Bardzo złe skojarzenia mi to przywołuje, bo takie retoryczne pytanie: Jeśli twoja knajpka jest dobra, to po chuj ci te wszystkie emblematy? Przecież miejscowi będą oblegać, turyści też bo będą wiedzieć na swoich apkach i przewodnikach turystycznych. Jeśli gotujesz dobrze, to nie musisz mówić wszystkim, że gotujesz dobrze. Nawet jeśli inni mówią, że gotujesz dobrze, to przecież liczba klientów oblegających lokal i pozytywnie recenzująca twoje jadło będzie wyznacznikiem jakości, a nie emblematami zaspamowane drzwi wejściowe?
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      Tak ze swojej strony muszę przyznać też, że tym razem podszedłem wyjątkowo krytycznie do tego miasta, w ogóle coś dały mi się we znaki jakieś przeobrażenia psychiczne, na moje negatywne, ale kto tam wie. Tak na dobrą sprawę raczej nie miałem za bardzo na co tak szczególnie narzekać w tym mieście, po prostu nic się tutaj nie wybijało za bardzo. Nic szczególnie ciekawego. Nic szczególnie wartego uwagi. Trochę ładnych widoków. W zasadzie, to dalekie przedmieścia dopiero ukazywały jakąś taką wartość, że to faktycznie nie była Lizbona i że to się dobrze prezentowało nawet. Tymczasem w samym centrum, co chwila zaczepiający szemrani ludzie (serio, nie mogą zatrudnić jakichś nie wybijających się osobników, tylko takich typowych spod ciemnej latarnii?). Zastanawiam się co to za standardy, do tej pory to jedynie w Hiszpanii i w Portugalii takie numery, że zaczepiają ludzi i gadają coś po swojemu byle opchnąć jakieś gówno. Autentycznie mąci z wrażeniami jakie człowiek zgarnia po wizycie, ale... w zasadzie to nie miało to z czym kolidować, bo w tym mieście tak w zasadzie to nic specjalnego nie ma, co by autentycznie zachwycało, no prócz widoków.</p>
+
+<p>Co mnie również zaskoczyło to lawina turystów już o tej porze roku. Autentycznie, byli oni wszędzie. Może nie w suburbiach, od których zacząłem swoją przygodę. Swoją drogą zaklepałem sobie 15 giga za 15 euro w vodafone na 15 dni, co uznałem, za całkiem w porządku deal jak na standardy europejskie. Chwilę czekałem, ale ekspedientka autentycznie płynnym angielskim wytłumaczyła to i owo, chociaż wydawała się ździebko tak sobie uprzejma (?). Co swoją drogą jest jakby standardem tam, wszyscy raczej operują angielskim, płynnym nawet, lecz nie są do końca uprzejmi. Nie wiem czy to przeze mnie, że ja nieuprzejmy, czy oni faktycznie tak na codzień nie lubią po prostu turystów, chociaż starałem się lastminute nauczyć podstawowych zwrotów jak dzień dobry, dziękuję etc. A może po prostu nieogarnięty byłem. Również mają ciekawy styl w uniwersytetach. Pierwszy rocznik ubierany jest na czarno (och, jak żałobnie! - suchar). Ponoć jest z tym jakaś większa kultura związana, w szczególności ze studentami w Coibrze, starej stolicy Portugalii. Mają nawet powiedzenie: Braga się modli, Porto pracuje, Lizbona się bawi, a Coimbra studiuje. Więc, no taka kombinacja, że się skarżą, w szczególności Porto, że podatki idą tylko w jedną stronę (i gdzie przepraszam bardzo giną? Bo serio w tej Lizbonie nic szczególnego nie ma, nawet renowacji nie widać by przeprowadzali za bardzo...)
+
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      Jeżeli chodzi o jedzenie i picie to miałem okazję zjeść niezłego dorsza (no, może dwa) w takim kompleksie jakby pofabrycznym, gdzie akurat można tanio, choć turystycznie ździebko zjeść całkiem nieźle. Kelner nawet doradził co warto i co warto popić do tego (zielone wino! - VERDE). Winko faktycznie fantastyczne. Dorsz siedział na bodaj, gotowanym szpinaku? Czy rukoli? Takie jakby gotowane, pieczone młode ziemniaczki. Deser z kolei smakował jak syrop glukozowo-fruktozowy. Wróć, nie wiem jak ten smakuje, ale deser smakował jak syrop. Jak tak smakuje typowy portugalski deser, to dziękuję bardzo. Innym razem znów dorsz, niezwykle łagodny i subtelny w smaku. Też, podobne połaczenie, choć z oliwą i być może ździebko przyprawami (których nie pamiętam). Do tego zupa rybna, która... niczym nie zachwycała w sumie, była jakaś taka zupna, bez szału, bez zachwytu. Mają też takie świetne niby-babeczki, z budyniowym wypełnieniem i wypiekane z kardamonem i cynamonem. Wszędzie są, wszędzie smakują tak samo, ew. trochę bardziej czerstwawe tu i tam. Zjadłem ich w luj. W Sintrze mieli trochę inne smakołyki, które były po prostu niezłe. Znowu, niczym się nie wyróżniały. Nawet taki kompleks LX (coś tam), które miało być takim rozrywkowym supercentrum, gdzie świetne jedzenie (i imprezy po godzinach) miały być. Wiecie co? Nic tam nie było, takie opuszczone wręcz miasteczko, gdzie ledwo co było otwarte. Tylko takie te żeby latały jak w filmie w realiach dzikiego zachodu brakowało.</p>
+
+<p>Niektóre kluczowe atrakcje dawały mi na myśl, że jestem obecnie niemalże w Rio de Janerio. To pewnie ze względu na Jezusa spoglądającego na miasto, ciekaw jestem kto był pierwszy, Brazylia czy Lizbona? Jezus tylko, tym razem po drugiej stronie zatoki (cieśniny?). Ogółem odczuwałem jakby klimat Ameryki Południowej, bodaj może Łacińskiej, choć do końca nie wiedziałem dlaczego. Że Brazylia, to ok, bo Portugalski. Ale feel był niemal autentyczny, stylistyka, zachowywanie się ludzi, a nawet ich karnacja, gdzie wiele osób o ciemniejszej bądź i również czarnoskórych można było spotkać często (swoją drogą, studenci przeważali biali, takie rasistowskie, lecz serio obiektywne spostrzeżenie). Wszystko takieś takie leniwe. Sprzedawcy przed sklepem, tutaj jacyś miejscowy gaworzą po portugalsku o czymś, jakichś problemach chyba. Innym razem z samego rana wszyscy ciągną do jedynej kawiarni otwartej o 6 rano, w szczególności pracownicy ranni, którzy gromko biorą raz po raz (ludzie znaczy) po espresso. Ale tak już popołudniu wszystko toto leniwe. Sklepy wyglądają dość biednie, jakby też zapadłe. Jakby jakaś Kuba, tylko że zaryzykowałbym stwierdzenie, że bez tego autentycznego klimatu jak tam.
+
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      To wszystko wymieniam generalnie z dużym zaskoczeniem jak dla mnie, ponieważ Lizbona ma wszelkie predyspozycje do bycia strzałem w dziesiątkę, takim faktycznym młodszym bratem Hiszpanii, który wciąż jest chyba traktowany jakby trochę po macoszemu. Odrębna stosunkowo kultura od Hiszpan. Z bogatą historią, kiedy faktycznie mieli dość olbrzymią flotę. Dość mocno religijną, z ogromnie obleganą Fatimą na czele. A sama Lizbona, położona na wspomnianych siedmiu wzgórzach, co powinno gwarantować genialne widoki oraz przy malowniczej zatoce, wokół której wieczorem tlą się miliony światełek. Do tego: dwa widowiskowe mosty Vasco de Gama (jeden z najdłuższych mostów świata!) oraz w zasadzie replika malownicz... no przyjmijmy, że malowniczego, choć osobiście stwierdziłbym: monomentalnego Golden Gate Bridge z San Francisco. Z góry to wyglądało dość urokliwie i w rzeczywistości wciąż jest. Ale co z tego, że powierzchnia wygląda cudownie, skoro wewnątrz próżno szukać czegoś równie urokliwego? Może faktycznie to trzęsienie ziemi wywaliło pół kultury i ducha miasta w... Przestrzegę jednak przed podróżą tam w porze faktycznego ruchu turystycznego. Bo o ile teraz faktycznie ruch był SPORY, tak nie chce mi się myśleć jak bardzo źle to musi wyglądać już w pełni lata. Tam chyba autentycznie ruch staje. A właśnie, ruch? Tam metro przepełnione w godzinach szczytu, faktycznie funkcjonują kieszonkowcy, a na ziemi...? Samochody stoją w korkach, na niektórych kluczowych skrzyżowaniach nawet policja musi kierować ruchem.</p>
+
+<p>A nie wspomniałem o służbach? To ciekawy wątek, bo oni wyglądają jakby mieli wakacje na służbie, generalnie cały czas wszystko w dupie. Ludzie przechodzą nie na pasach? Mają to w dupie. Chodzisz jakoś nie tak jak powinieneś? Też mają to w dupie. Tak w zasadzie mało ich było widać, czasem ew. na sygnale, lecz autentycznie wychillowani i na luzie się wydawali. Co więcej? W tym kraju wszystko wychillowane, minąłem kilka kotów, wszystkie wydawały się jakby im życie mijały dosłownie powolutku, bez pośpiechu, jakby podnarkotyzowane samym życiem... Do tego wszechobecna marka lodów Algida pod nazwą bodaj Ola!, brak raczej domowych lodów (wtf?)... ogółem, nic specjalnego dostać nie było można. Sklepy jakieś takie dość drobne (chociaż mają niby hipermarkety w sumie, z dużym asortymentem!), gdzie woda mineralna to przede wszystkim... no po prostu woda, ponoć gazowanej unikają bo uważają, że tylko dla chorych. Bardzo dziwne wrażenie na mnie stolica zrobiła, przy czym dałem jej drugą szansę i w zasadzie, nic szczególnego znowu nie wyciągnąłem, prócz tego, że były tam może dwie nieco ciekawiej prezentujące się dzielnice z taką autentyczną portugalską architekturą, bogato zdobione, jakby porcelana zdobiona, tak budynki w te wszystkie wzorki. Ale to była mniejszość.</p>
+
+<p>Co innego Porto, które już wywarło na mnie dość autentycznie spore, bardzo pozytywne i już faktycznie portugalskie wrażenie...
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      I might also mention, that, Bern somehow reminded me very, very closely of Sydney under certain aspects. The university position, overlooking the city. The laid-back chairs, although just five of 'em. The overall feel, while walking down the hill and overlooking the city. I don't know, it just felt like homish homy home? Sydney? Well, further down, further further... Fast forward, train to Geneva.</p>
+
+<p>Well, to be honest, as so far I enjoyed my stay in Swiss and I was really, really counting on that the weather would turn out to be quite splendid. 'Cause, the forecasts were looking quite, quite bad, so unfortunate for me. But, I had to do it. Cause, why the fuck not, right? 15 euro voucher is a nice voucher, after all. So, bam. There I was. In Geneva. And there I was. At the Genevian lake. And there I was, waiting for the sunrise, which never came by the way. Bloody, fuckin' clouds, just filling up the skies... And being lit up but with no light really visible, at least the sun. Some mountains in the background were visible. An outline, shady one. Well, welcome to paradise, one might say.
+    </p>
+  </div>
+</div> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
