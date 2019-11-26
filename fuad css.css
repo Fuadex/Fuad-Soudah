@@ -888,9 +888,6 @@ h5{
         margin-top:1vw;
       margin-bottom:1vw;
     }
-      p{
-    margin:0.1vw 0.1vw 1vw;
-  }
 }
 
 /*
@@ -1241,6 +1238,15 @@ a.darken:hover img {
     transform: scale(1.65);
   }
 
+ /* High-Res Compatibility fix*/
+
+  h4{
+        margin-top:1vw;
+      margin-bottom:1vw;
+    }
+      p{
+    margin:0.1vw 0.1vw 1vw;
+  }
 }
 
 @media (max-width: 768px) {
