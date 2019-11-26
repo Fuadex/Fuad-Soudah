@@ -1052,10 +1052,12 @@ div:hover {
         -ms-transition: all 0.1s ease;
          -o-transition: all 0.1s ease;
             transition: all 0.1s ease;
-            padding-top:10px;
-            padding-bottom:10px;
-            margin-top:5px;
+/*            padding-top:10px;
+            padding-bottom:10px;*/
+            /*margin-top:5px;*/
 }
+
+
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
     color: #333;
@@ -1159,12 +1161,28 @@ transform: scaleX(1);
     background-color: rgba(255,255,255,0);
 }
 
+@media(min-width:1280px){
+
+/*That's the responsiveness component to be activated on non-mobile*/
+
+.navbar-inverse .navbar-nav > li > a {
+            padding:0.8vw;
+            margin:0.2vw;
+          }
+
+  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:not(.dropdown-toggle) {
+  padding: 0.35vw 0.8vw;
+  font-size:0.78vw;
+  margin:0vw;
+}
+
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:not(.dropdown-toggle) {
     position:relative;
     display:inline-block;
     color: #262626;
     background-color: rgba(255,255,255,0);
 }
+
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:not(.dropdown-toggle):after {
     display: block;
@@ -1185,6 +1203,8 @@ transform: scaleX(1);
     background-color: rgba(255,255,255,0);
     border-bottom: none;
 }
+
+
 
 @media (min-width: 1200px) {
 
