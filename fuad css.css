@@ -876,8 +876,6 @@ h5{
 
     h4{
       font-size:1vw; <!-- 1.1 1.2 -->
-      margin-top:1vw;
-      margin-bottom:1vw;
     }
 
     h5{
@@ -885,7 +883,15 @@ h5{
     }
   }
 
-
+@media(min-width:1921px){
+  h4{
+        margin-top:1vw;
+      margin-bottom:1vw;
+    }
+      p{
+    margin:0.1vw 0.1vw 1vw;
+  }
+}
 
 /*
    @media (min-width: 992px){
@@ -1235,9 +1241,6 @@ a.darken:hover img {
     transform: scale(1.65);
   }
 
-  p{
-    margin:0.1vw 0.1vw 1vw;
-  }
 }
 
 @media (max-width: 768px) {
