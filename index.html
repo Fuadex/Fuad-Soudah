@@ -71,6 +71,105 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		}
 	}
 
+	a.nop img {
+    display: block;
+    margin:0.5vw;
+    object-fit:cover;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+a.nop:hover img {
+    opacity: 0.7;           
+}
+
+a.nop:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+	.landscape {
+        float:left;
+        width:8vw;     
+        height:8vw;    
+        overflow:hidden;    
+    }
+
+.landscape  img{
+        width:auto;
+        height: 8vw;   
+    }
+
+.portrait {
+        float:left;
+        width:8vw;
+        height:8vw;
+        overflow:hidden;    
+    }
+
+.portrait img {
+        width:8vw;    <-- notice these
+        height: auto;   <-- have switched
+    }
+
+    .square {
+        float:left;
+        width:8vw;
+        height:8vw;
+        overflow:hidden;    
+    }
+
+.square img {
+        width:8vw;    <-- notice these
+        height: 8vw;   <-- have switched
+    }
+
+/*@media (max-width: 1024px) {
+
+.landscape {
+        float:left;
+        width:35.5vw;
+        height:35.5vw;    
+        overflow:hidden;    
+    }
+
+.landscape  img{
+        width:auto;
+        height: 35.5vw;   
+    }
+
+.portrait {
+        float:left;
+        width:35.5vw;
+        height:35.5vw;
+        overflow:hidden;    
+    }
+
+.portrait img {
+        width:35.5vw;    <-- notice these
+        height: auto;   <-- have switched
+    }
+
+    .square {
+        float:left;
+        width:35.5vw;
+        height:35.5vw;
+        overflow:hidden;    
+    }
+
+.square img {
+        width:35.5vw;    <-- notice these
+        height: 35.5vw;   <-- have switched
+    }
+}*/
+
 </style>
 
 </head>
@@ -164,6 +263,27 @@ window.addEventListener('DOMContentLoaded', (event) => {
 										<p class="arrr mober"><a href="w/Parsons.html" class="iframe-link">Creative Technologies</a></p>
 									</div>
 								</div>
+																								<div class="swiper-slide tilt">
+									<div class="col-md-4" style="margin-left:2vw; transform: scale(0.9);">
+								  <div id="instafeed"></div>
+  <script src="instafeed.min.js"></script>
+  <script>
+    var feed = new Instafeed({
+      get: 'user',
+      userId: 237976118, // Ex: 1374300081
+      // accessToken: '237976118.6df541c.20f5b8ffda1e4104b619ebe950ab3a88',
+      // accessToken: 'b327eb59858f4de9b242ced078b6ed6c',
+      // accessToken: '03f4549acdf04c87a823e7bc74ae51b5',
+      accessToken: '237976118.6df541c.ef707c2f478649e1b283a6cfa5cd2275',
+      resolution: 'standard_resolution',
+      template: '<a href="{{link}}" target="_blank" class="nop"><img src="{{image}}" class="{{orientation}}" alt="{{caption}}"/></a>',
+      limit: '15'
+    });
+    feed.run();
+  </script>
+<!--     <p class="arrr mober"><a href="https://www.instagram.com/fuadex/" class="iframe-link">Work in Progress</a></p> -->
+  	</div>
+  </div>
 								<div class="swiper-slide tilt">
 									<div class="col-md-4">
 										<p class="arrr mober1"><a href="home.html">Find out more!</a></p>
@@ -192,7 +312,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 						</div>
 				</div> -->
 <!-- 														<div class="swiper-slide">
-  <div id="instafeed" style="transform:scale(0.1);"></div>
+  <div id="instafeed"></div>
   <script src="instafeed.min.js"></script>
   <script>
     var feed = new Instafeed({
@@ -203,13 +323,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
       // accessToken: '03f4549acdf04c87a823e7bc74ae51b5',
       accessToken: '237976118.6df541c.ef707c2f478649e1b283a6cfa5cd2275',
       resolution: 'standard_resolution',
-      template: '<a href="{{link}}" class="wob"><img src="{{image}}" class="{{orientation}}"/></a>'
+      template: '<a href="{{link}}" class="nop"><img src="{{image}}" class="{{orientation}}" alt="{{caption}}"/></a>',
+      limit: '18'
     });
     feed.run();
   </script>
 </center>
 				</div> -->
-				</div>
+			</div>
 				<!-- Add Pagination -->
 				<div class="swiper-pagination swiper-pagination-h"></div>
 				<div class="swiper-button-next arrr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z"></svg></div>
@@ -642,6 +763,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver0');
     }
   }
@@ -658,6 +781,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve0');
     }
   }
@@ -677,6 +802,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver1');
     }
   }
@@ -693,6 +820,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve1');
     }
   }
@@ -711,6 +840,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver2');
     }
   }
@@ -727,6 +858,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve2');
     }
   }
@@ -745,6 +878,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver3');
     }
   }
@@ -761,6 +896,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve3');
     }
   }
@@ -779,6 +916,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver4');
     }
   }
@@ -795,6 +934,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve4');
     }
   }
@@ -813,6 +954,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver5');
     }
   }
@@ -829,6 +972,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve5');
     }
   }
@@ -847,6 +992,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver6');
     }
   }
@@ -863,6 +1010,8 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve6');
     }
   }
@@ -881,6 +1030,8 @@ new Swiper('.swiper-pagination-bullet', {
     	this.$el.removeClass('ver5');
     	this.$el.removeClass('ver6');
     	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
       this.$el.addClass('ver7');
     }
   }
@@ -897,7 +1048,85 @@ new Swiper('.arrr', {
     	this.$el.removeClass('ve5');
     	this.$el.removeClass('ve6');
     	this.$el.removeClass('ve7');
+    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
       this.$el.addClass('ve7');
+    }
+  }
+})
+}
+
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 8){
+new Swiper('.swiper-pagination-bullet', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ver0');
+    	this.$el.removeClass('ver1');
+    	this.$el.removeClass('ver2');
+    	this.$el.removeClass('ver3');
+    	this.$el.removeClass('ver4');
+    	this.$el.removeClass('ver5');
+    	this.$el.removeClass('ver6');
+    	this.$el.removeClass('ver7');
+    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
+      this.$el.addClass('ver8');
+    }
+  }
+})
+
+new Swiper('.arrr', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ve0');
+    	this.$el.removeClass('ve1');
+    	this.$el.removeClass('ve2');
+    	this.$el.removeClass('ve3');
+    	this.$el.removeClass('ve4');
+    	this.$el.removeClass('ve5');
+    	this.$el.removeClass('ve6');
+    	this.$el.removeClass('ve7');
+    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
+      this.$el.addClass('ve8');
+    }
+  }
+})
+}
+
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 8){
+new Swiper('.swiper-pagination-bullet', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ver0');
+    	this.$el.removeClass('ver1');
+    	this.$el.removeClass('ver2');
+    	this.$el.removeClass('ver3');
+    	this.$el.removeClass('ver4');
+    	this.$el.removeClass('ver5');
+    	this.$el.removeClass('ver6');
+    	this.$el.removeClass('ver7');
+    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
+      this.$el.addClass('ver9');
+    }
+  }
+})
+
+new Swiper('.arrr', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ve0');
+    	this.$el.removeClass('ve1');
+    	this.$el.removeClass('ve2');
+    	this.$el.removeClass('ve3');
+    	this.$el.removeClass('ve4');
+    	this.$el.removeClass('ve5');
+    	this.$el.removeClass('ve6');
+    	this.$el.removeClass('ve7');
+    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
+      this.$el.addClass('ve9');
     }
   }
 })
