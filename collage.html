@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<style>
+
+body{
+/*  background-image: url(DSC_0719.jpg);
+*/    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    background:black;
+          font-weight: 300 !important;
+}
+
+h2{
+        font-weight: 300 !important;
+}
+
+.text{
+    opacity:0;
+      font-weight: 300 !important;
+    z-index: 1;
+    position: absolute;
+    font-size:1vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.75);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 1px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+a.darken:hover img {
+    opacity: 0.5;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.col-lg-1:hover, .col-lg-2:hover, .col-lg-3:hover, .col-lg-2:hover, .col-lg-5:hover, .col-lg-6:hover, .col-lg-8:hover, .col-lg-10:hover {
+     -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+/*              background-color:rgba(255,255,255,0.9);*/
+background-color: black;
+              overflow: hidden;
+                border-radius: 10vw;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.col-lg-1:hover img, .col-lg-2:hover img, .col-lg-3:hover img, .col-lg-2:hover img, .col-lg-5:hover img, .col-lg-6:hover img, .col-lg-8:hover img, .col-lg-10:hover img{
+       -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+         -o-transition: all 2s ease;
+            transition: all 2s ease;
+    transform: scale(1.65);
+  }
+
+  .lozad{
+           -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+         -o-transition: all 2s ease;
+            transition: all 2s ease;
+            opacity:0;
+    background:#111;
+  }
+
+  @media(max-width:1200px){
+    .lozad{
+          height:66.6vw;
+    width:100vw;
+    }
+  }
+
+  @media(min-width:1201px){
+    .lozad{
+        height:22vw;
+    width:33vw;
+  }
+  }
+
+
+  .fade {
+           -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+         -o-transition: all 2s ease;
+            transition: all 2s ease;
+  height:initial;
+  animation-name: fade;
+  animation-duration: 2s;
+  opacity:1;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+</style>
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'https://c1.staticflickr.com/5/4196/34070156813_71d2accbf8_n.jpg';
+    ImageArray[1] = 'https://c1.staticflickr.com/5/4204/34717635622_67741a7180_n.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img class="lozad" data-src="' + img + '" width="100%">')
+
+}
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<!-- <script src="navigation.js"></script> -->
+
+<!-- BODY BODY BODY-->
+
+<div class="container-fluid">
+
+<div class="row">
+<center><h2>Works</h2></center><br>
+</div>
+
+
+
+<center>
+<div class="row">
+<div class="col-lg-2 col-lg-offset-4">
+<a target="_blank" data-flickr-embed="true"  class="darken" href="https://www.flickr.com/photos/70140987@N03/42053456220/in/dateposted-public/" title="_DSC3699"><div class="text">ALA Project 1</div><img class="lozad" data-src="https://farm2.staticflickr.com/1816/42053456220_53fa63470a_b.jpg" width="100%" alt="_DSC3699"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/28925460797/in/dateposted-public/" title="_DSC7335b"><div class="text">AT</div><img class="lozad" data-src="https://farm2.staticflickr.com/1838/28925460797_eca21cd736_b.jpg" width="100%" alt="_DSC7335b"></a><br>
+  </div>
+</div>
+</center>
+
+<center>
+<div class="row">
+<div class="col-lg-2 col-lg-offset-3">
+<a target="_blank" data-flickr-embed="true"  class="darken" href="https://www.flickr.com/photos/70140987@N03/42053456220/in/dateposted-public/" title="_DSC3699"><div class="text">Reflection</div><img class="lozad" data-src="i/1a.jpg" width="100%" alt="_DSC3699"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/28925460797/in/dateposted-public/" title="_DSC7335b"><div class="text">Unity CC: Project 2</div><img class="lozad" data-src="https://farm2.staticflickr.com/1838/28925460797_eca21cd736_b.jpg" width="100%" alt="_DSC7335b"></a><br>
+  </div>
+<div class="col-lg-2">
+<a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43849236242/in/dateposted-public/" title="_DSC6205"><div class="text">Unity CC: Project 1</div><img class="lozad" data-src="https://farm1.staticflickr.com/931/43849236242_4cb42723f8_b.jpg" width="100%" alt="_DSC6205"></a><br>
+</div>
+</div>
+</center>
+
+<center>
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1">
+<a target="_blank" data-flickr-embed="true"  class="darken" href="https://www.flickr.com/photos/70140987@N03/42053456220/in/dateposted-public/" title="_DSC3699"><div class="text">Osaka</div><img class="lozad" data-src="https://farm2.staticflickr.com/1816/42053456220_53fa63470a_b.jpg" width="100%" alt="_DSC3699"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/28925460797/in/dateposted-public/" title="_DSC7335b"><div class="text">Seoul</div><img class="lozad" data-src="https://farm2.staticflickr.com/1838/28925460797_eca21cd736_b.jpg" width="100%" alt="_DSC7335b"></a><br>
+  </div>
+<div class="col-lg-2">
+<a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43849236242/in/dateposted-public/" title="_DSC6205"><div class="text">Busan</div><img class="lozad" data-src="https://farm1.staticflickr.com/931/43849236242_4cb42723f8_b.jpg" width="100%" alt="_DSC6205"></a><br>
+</div>
+<div class="col-lg-2">
+      <a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/40968709350/in/dateposted-public/" title="_DSC2803"><div class="text">Sydney</div><img class="lozad" data-src="https://farm2.staticflickr.com/1730/40968709350_8f9fec4d0f_b.jpg" width="100%" alt="_DSC2803"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/42072351800/in/dateposted-public/" title="_DSC6743"><div class="text">Jeju</div><img class="lozad" data-src="https://farm1.staticflickr.com/852/42072351800_19b2bc3836_b.jpg" width="100%"" alt="_DSC6743"></a><br>
+  </div>
+</div>
+</center>
+
+<center>
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1">
+<a target="_blank" data-flickr-embed="true"  class="darken" href="https://www.flickr.com/photos/70140987@N03/42053456220/in/dateposted-public/" title="_DSC3699"><div class="text">Osaka</div><img class="lozad" data-src="https://farm2.staticflickr.com/1816/42053456220_53fa63470a_b.jpg" width="100%" alt="_DSC3699"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/28925460797/in/dateposted-public/" title="_DSC7335b"><div class="text">Seoul</div><img class="lozad" data-src="https://farm2.staticflickr.com/1838/28925460797_eca21cd736_b.jpg" width="100%" alt="_DSC7335b"></a><br>
+  </div>
+<div class="col-lg-2">
+<a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43849236242/in/dateposted-public/" title="_DSC6205"><div class="text">Busan</div><img class="lozad" data-src="https://farm1.staticflickr.com/931/43849236242_4cb42723f8_b.jpg" width="100%" alt="_DSC6205"></a><br>
+</div>
+<div class="col-lg-2">
+      <a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/40968709350/in/dateposted-public/" title="_DSC2803"><div class="text">Sydney</div><img class="lozad" data-src="https://farm2.staticflickr.com/1730/40968709350_8f9fec4d0f_b.jpg" width="100%" alt="_DSC2803"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/42072351800/in/dateposted-public/" title="_DSC6743"><div class="text">Jeju</div><img class="lozad" data-src="https://farm1.staticflickr.com/852/42072351800_19b2bc3836_b.jpg" width="100%"" alt="_DSC6743"></a><br>
+  </div>
+</div>
+</center>
+
+<center>
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1">
+<a target="_blank" data-flickr-embed="true"  class="darken" href="https://www.flickr.com/photos/70140987@N03/42053456220/in/dateposted-public/" title="_DSC3699"><div class="text">Osaka</div><img class="lozad" data-src="https://farm2.staticflickr.com/1816/42053456220_53fa63470a_b.jpg" width="100%" alt="_DSC3699"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/28925460797/in/dateposted-public/" title="_DSC7335b"><div class="text">Seoul</div><img class="lozad" data-src="https://farm2.staticflickr.com/1838/28925460797_eca21cd736_b.jpg" width="100%" alt="_DSC7335b"></a><br>
+  </div>
+<div class="col-lg-2">
+<a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43849236242/in/dateposted-public/" title="_DSC6205"><div class="text">Busan</div><img class="lozad" data-src="https://farm1.staticflickr.com/931/43849236242_4cb42723f8_b.jpg" width="100%" alt="_DSC6205"></a><br>
+</div>
+<div class="col-lg-2">
+      <a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/40968709350/in/dateposted-public/" title="_DSC2803"><div class="text">Sydney</div><img class="lozad" data-src="https://farm2.staticflickr.com/1730/40968709350_8f9fec4d0f_b.jpg" width="100%" alt="_DSC2803"></a><br>
+</div>
+<div class="col-lg-2">
+  <a target="_blank" data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/42072351800/in/dateposted-public/" title="_DSC6743"><div class="text">Jeju</div><img class="lozad" data-src="https://farm1.staticflickr.com/852/42072351800_19b2bc3836_b.jpg" width="100%"" alt="_DSC6743"></a><br>
+  </div>
+</div>
+</center>
+
+
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <div id="button"><h1><center>Additional Information</center></h1></div> <!-- A whole button block will definitely draw attention-->
+</a>
+<br>
+
+<div class="row">
+<div id="hidden_content">
+  <div id="test"></div>
+
+  <div class="col-sm-8 col-sm-offset-2">
+
+    <br>
+    Ahhh, photos. After selectively editing single shots sourced from tens of thousands of photos shot over the course of last couple of years, finally I can present something that I honestly believe looks quite decent. Maybe not yet absolutely phenomenal but hey, bit of practice does lead you somewhere and in my case, it took me to maxing out what's store with my RAWs.<br>
+
+    I intended to introduce a much more expansive version, one that could be considered as... a semantic version, in which by chosing a particular location on a map, you'd be presented with a range of photos. But on one hand, I did not post-process that many photos and before I figure out how to get an interactive map on my page, I'd have to spend at least a few weeks learning javascript with according libraries. It may come eventually. Hey, I envisioned my website and look how it presents itself now! Maybe once 1.0 comes out... who knows.<br><br>
+
+    I recently made a shift to new FX hardware, I fuel my work up with discounted hardware. Such as this beauty Nikon D750 in combination with a stock lens, 24-120. Hey, it's great! The amount of details that I can bring out is straight from another world! And I was questioning my decision to get this bad boy. Although it takes some adjusting, especially with the relatively new ergonomics to master and a new hardware I'm postprocessing images on. I think the results speak for themselves along with the aesthetics I like to impose.<br><br>
+
+<!--     The reason for why it was left unfinished lays behind the following: My Nikon D5200 already took more than 20000 shots, which weigh close to the amount I have readily available on onedrive. I have visited more than 180 cities spanning over 20 countries. Which is not much yet, they do also cover a few continents, but! On top of that I am still a university student and have other duties, out of which spending hours on selecting and postprocessing relevant photos is not necessarily the most pressing matter, well, currently that is.<br><br>
+
+    Nevertheless, I plan on leaving some text on and about each of my voyages and relevant photos will be attached. Therefore you may expect a strong portfolio, being regularly published in the upcoming months.<br><br> -->
+
+    What you see here is a foretaste. Brace yourselves for much, much more.<br><br>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script src="scrollreveal.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+<script>
+$('.col-md-3, .col-md-4, .col-md-5, .col-lg-3, .col-lg-2, .col-lg-5, .col-lg-6, .col-lg-8').tilt({
+    glare: true,
+    maxGlare: .1,
+    transition: true
+})
+</script>
+      <script>
+window.sr = ScrollReveal({ mobile: false, reset: true });
+
+sr.reveal('.row', {opacity: 0,duration:1000, mobile: true});
+// sr.reveal('h2', {origin:'left', distance: '1000px',duration:1500});
+// sr.reveal('h1', {origin:'right', distance: '1000px',duration:1500});
+sr.reveal('h4', {opacity: 0,duration:1500, mobile: false});
+sr.reveal('h5', {origin:'bottom', distance: '1000px',duration:1000});
+sr.reveal('span', {opacity: 0,duration:1000, mobile: false});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Info";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Show Info";
+    }
+}
+</script>
+
+<script>
+lozad('.lozad', {
+    load: function(el) {
+        el.src = el.dataset.src;
+        el.onload = function() {
+            el.classList.add('fade')
+        }
+    }
+}).observe()
+</script>
+
+<!-- <script src="footer.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
