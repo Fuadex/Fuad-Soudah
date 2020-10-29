@@ -109,7 +109,7 @@ document.write('\
         <ul class="dropdown-menu">\
           <li><a href="Photos.html">Flickr</a></li>\
           <li><a href="Grasausschuss Pho.html">Grasausschuss</a></li>\
-          <li><a href="Instagram.html">Instagram</a></li>\
+          <li><a href="Instagram.html">Snapshots</a></li>\
       </ul>\
             \
         </li>\
