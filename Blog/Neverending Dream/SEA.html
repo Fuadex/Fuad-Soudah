@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>SEA Intro</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      Ever been to a shop and wondered what to get. Looking at one product and then at a similar, another. Trying to figure out what's that you're really after, what will better suit your needs? Years ago in some systems people didn't necessarily have this kind of problems, more of, to get food at all. In some parts of the world, you don't get much choice either, I mean, your belly will likely process anything you'll munch through. But I still at times end up, literally, anywhere, wondering what's the better choice, ultimately, the most efficient, effective, finding the balance between it all.
+</p>
+
+<p>
+	It becomes bit more difficult in certain circumstances, though. There's a chance your senses will be relatively stable while shopping for something your eyes can reach. Think, shopping for a pair of headphones? Suddenly, not only do you have to deal with sound signatures but once, at least I, go listening through a selection with a playlist of songs of such array of genres and mixed in so many distinct formats, chances are, you'll end up very confused. Oh, I like this pair, it sounds so good in these frequencies but drops ball on those. Oh, hold on, do they? Oh no, this pair is better, no, it's the former! Oh fuck!
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      Fortunatelly for me, I didn't necessarily have this sort of problems while I was making my mind on going overseas. My eardrums do not necessarily come into action when it comes to choosing my routes and, unfortunatelly for me, I had to deal with a quite expensive season. My bad, that, I did not take a look at what I could travel through earlier but, I didn't look that far past certain months while I was busy working on my uni stuff. Honestly, I didn't think I could do any sort of travels anytime soon. But, an opportunity opened up and I really needed some sort of a relief for my head. Truth is, I can't stay in one place for longer than half a year, coming to think of, it might even not be longer than 4 months until I start becoming a bit out of my mind. Not that I am in my primetime but there is a difference, between a Fuad who's able to think relatively clearly and come up with some meaningful and quality stuff and Fuad who's just plain tired and unresponsive to his bland surrounding. Perhaps, because it is bland in the first place? Still, there always needs to be something new, something that I believe is going to benefit me in a selection of ways so that I feel I keep on progressing, rather than its antagonistic and blander counter-triad-parts.
+  </p>
+
+<p>
+	This journey was being researched, I think, the most heavily of all my former journeys. First of all, due to its very scarce time-schedule. There is no hiding, that it was very ambitious, to put it all in a matter of 12-13 days. And considering what I planned to pack into this journey, even more ambitious to go ahead and execute it. But it was the planning part that proved the most wobbly. First of all, as mentioned, it's an expensive season. December is when many people decide to go on holidays, whether to use up their vacation days that they didn't have a chance of using up yet (why would you reckon big corps hire interns in December-January?) or, you know, just Christmas and all. So, immediately, the prices jump like crazy! Twice or thrice as much as usual. To add into this, it is a good season to really go on holidays in this region, as in theory it's winter. Thing is, winter as winter, they don't really get snow but it's just a dry season. Usually all they get is: Dry and hot, Humid and hot, Humid and superhot seasons. Welcome to South East Asia. I was going in the dry and hot, although, honestly, looking at weather and knowing my own experiences from different seasons around the world, it looked quite civil overall. Still, this meant - potentially more tourists.
+</p>
+
+<p>
+	Now, the last problem, was that I wanted to pack everything into this. This is a problem, because the more flights you throw in, the more expensive it potentially gets. Doesn't matter that flights around south east asia are relatively cheap, if you pack 17 like I did, suddenly you're looking at expenditures that could potentially become absurd. Anyone looking from elsewhere would think it's a pure aberration and a complete jockey and lunatic would do this, not knowing how to spend money in life. Truth is, that was partially the case. I was looking at a myriad of ways of connecting my journey to keep it economically viable if I really wanted to keep it relatively cheap. Truth is, South East Asia is a relative unknown for me, I haven't seen too much and I didn't know too much. So the more I explored, the more I established the key ports, from where I could potentially fly cheaply. But I also needed to figure out a transitional period for myself, preferably at the beginning of my journey, so that I would be sure I could cope with what was to come. That meant, accommodation, at least for the first few days, as my body and biological clock were not used to at this time to extreme changes and rapid pacing that I'd expect myself to do. So, yeah, expeditures and research...
+</p>
+    
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      At first I established some routes. I planned to keep it a bit more civil and do perhaps half of South East Asia, due to deemed costs. I also considered Japan, since there were some interesting offers and, truth be told, I love Japan, so much I want to comeback and see it properly this time. But I kind of run out of time and, I don't know if this was bad ultimately. I think it would've been a very nice and decent destination to wind off. Of course, winter. But the more reason, to just head up there and observe a bit of the environment and life, being in this microcosm, perhaps under the wraps of snow falling down. I think it would've been quite magical, also to employ myself under the room of a speeding shinkansen, all the way through different provinces. It's a fascinating country with incredibly strong culture that keeps this, almost an archipelago, amazing place to see through the eyes of a visitor. But, I'll need to keep this away for a bit, there should be time in the future. Instead, I opted for a bit newer direction, yet very unknown in so many lengths.
+    </p>
+
+    <p>
+    	In parallel to looking for flight connections and prices, I'd look at visa conditions. The good thing, is that in pretty much all of the region, you can quite easily roll into. Some are visa free, some are visa on arrival. The only exception was really Vietnam, which required an application prior, although they didn't call it a visa. More of a letter of invitation. It's sort of what USA uses as ESTA, where you need to file in an application and it's cheap and with this, you can kind of get the visa. Except, for USA, you don't really need a visa afterward with ESTA, with Vietnam you need to state the type you'll need. It's not that complicated. But the process is fairly fast, also processing time. I think the American system is fairy-tale-like fast, though. As once I had an urgent situation, which I managed to resolve within one hour, during which an application was filed in and processed within minutes with an approved result. Especially impressive, since I was doing this for another person. In any case, other countries were very much straightforward. But some of the Visa on Arrival countries, obviously, required fees to be regulated. And that was a bit of a sad reality seen through my eyes.
+    </p>
+
+    <p>
+    	The first combinations covered most of SEA excluding Myanmar, Laos and Brunei. Sometimes Hong Kong could not get counted too. The problem was, that certain directions were just too expensive. Flights to or especially from Brunei were insane, the standard cost would be about 350 AU$ one-way and this was something I could not agree to. My limits usually stuck to a 100 AU$ per flight and I didn't intend to bend it much. In the end, I'd discover some hacks. For instance, during Christmas season, Brunei to Philippines would be excessively expensive, but the other way, not at all. Some fligts out to Jakarta would be cheap, though. Flights to Kuala Lumpur or Singapore would almost always have a cheap connection. Flights within countries would usually be cheap, which, after some time, I added 2 to 2. One thing you'll need to understand is, that the countries around this region, at times, have really massive populations. Indonesia is a quarter billion. Philippines is over a hundred mil. Vietnam is almost a hundred mil. Other countries in the region are perhaps not as populous but still relatively quite. This would explain a fair bit after having visited but even before, how come the domestic flights are relatively cheap. International flights would also usually come with taxes which would compose at times even a huge chunk of the ticket's price. So even if I wanted to go lower, it would be close to impossible getting a better deal even at a better season. Also, keep in mind, that with such surmountable populations, much of the region was colonized. And many of the countries had different colonists: French, English, Spanish, Portugese, Dutch. Later on, Japanese, American and many other influences. Honestly, it's a very intelectually rich region to learn about and fascinating, after having seen it all, to experience first-hand. The differences, being, legacy, everything that confluenced in the matter of past centuries and deriving from times that reach much further prior. It also opens a completely new perspective on things.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+<p>
+ In the end, after days of putting up flight connections and stuffing up my Chrome tabs with google flights options, in the end I managed to find a very promising connection option. It got stuck a bit on Jakarta in the end. The connections would take me through Bali (Indonesia), Phnom Penh and Siem Reap (Cambodia), Hong Kong, Ho Chi Minh (Vietnam), Manila (Philippines), Brunei, Jakarta (Indonesia) with some connections over Kuala Lumpur (Malaysia). This, in the end, amounted to 1400 AU$, which wasn't too bad. I had a few extra days and my goal was to include Myanmar and Laos in this mix, which seemed to have the most absurd prices. In the end, I had to become bit more flexible and I found a few hacks in google flights to find more interesting options. Basically, I was running out of time and the cheapest flights out were from Singapore back to Australia. So in the end, I managed to add: Jangon (Myanmar), transfer in Thailand (Bangkok), Luang Prabang (Laos), transfer in Hanoi (Vietnam) and Singapore, which elevated my total price to 2200 AU$. I make no mistake, this is a lot of money. But keep in mind that with this combination, I managed to stuff in 17 different flights in total which covered pretty much 12 countries. Of course, some I would not really visit, which doesn't mean I haven't earlier such as Thailand, Malaysia and later on Vietnam. By just the transportation itself, I managed to cover literally everything, although I found a glitch in my reasoning just recently, as I missed Macau. Kinda more China but still considered a thing of its own, which I can fix sometime in the future. I think this can still be considered as remarkable, for one, that I actually managed to get this done.
+</p>
+
+<p>
+	Putting together is just one thing, as I had to be really in clean mind to make sure I didn't make any mistakes. It's quite easy to do so, considering the different timezones. Also, prices like to change within hours or even minutes. Sometimes, you need to rely on booking aggregates such as Expedia, which I usually do not do at all. The sites can be confusing and sometimes your bank will send you a message, saying, that something suspicious just happened (like wtf is trying to take out of your account a million of indonesian somethings??). Sometimes, the site will not take your card for some reason and you'll need to figure out a workaround. Sometimes the price on the flight carrier will be significantly higher than on aggregates like Expedia. So navigating through all these complexities suddenly make your booking journey massively complicated and fragile af. I had to get this done in chunks, first booking the first wave of tickets and some of the more fragile ones. Sometimes, the websites would disassemble, as in, I would not be able to complete the booking due to some reason and I'd need to navigate through a different browser or incognito, like for Cebu Air. Ridiculous. Some tickets could be booked via Google, which made things extremely smooth. But sometimes it would become unnecessarily weird, later on, seeing how my name printed on my boarding pass coming from Singapore to Sydney would be just Fuad Soudah, instead of Fuad Philip Soudah. Despite clearly writing my full name in Google, which seemed to not tick properly. Earlier, I found another few issues. Like the law in Cambodia preventing you from arriving and departing from Siem Reap on the same day for some reason, which I essentially would do (I used a loophole). And some issues with transfer times, like in Thailand, where I'd arrive close to when the bus would stop running, the one that connects airports, which eventually I got bit on. But usually I would find a way to get all resolved and find my ass happily carried on an air carrier. That's all that mattered in the end. Although getting to this point would be at times, dire, even dangerous in fact. But i'd get that done anyway.
+</p>
+
+<p>
+	The next part was booking my few stays. For this I'd use booking.com. It was quite reliable by far and it allows to book places by looking at a map. The most effective way to do stuff like this imho. For this region, the location could veer off a bit at times. The prices would also seem unnecessarily high too. I picked something on Bali, close to airport and in Phnom Penh, same drill. That was pretty much it. In Manilla I'd also get something at the airport (!), at a cheaper rate than in the city (!!) but that happened once I got there. I, had a bit on my plate with my flights so surprisingly, I would not read too much about the cities I'd visit. Surprisingly. A bit of a stupid move I'd say. Instead, I downloaded maps for each city and downloaded extensive articles on wikitravel. The plan was to read as much as possible before visiting each city. This worked only halfway, as reading texts that go into a lecture you'd need to sustain for at times even an hour or two, is just too much when you're travelling. You're tired, coming to an airport, charging your shit and you're reading, can you imagine how weary you become through this drill? But usually, even if I could not pull through the entirety, I'd manage to find key points and bookmark them on google maps. A bit later in my travels I'd do the same for food. It's always good to have bookmarked a stopover to fill your belly. Although this region is, again, tricky with food joints and google maps. So like, public transport, insane to figure this out with g maps. At times, doesn't work, only showcases routes, sometimes not even this works. Sometimes, you can't get the public transportation maps off google at all, sometimes it's heavily outdated. The only reliable thing I found to work was Grab, which was like an Uber. Which essentially is the Uber in South East Asia.
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      Cheap in this region. So cheap, you can essentially rent a car with a driver for 20 US$. I swear, if this was a joke, I'd come with a more hedonic tone on this one. For 8 hours, in a car, in Siem Reap, I spent 20 US$ and gave 3 dollars tip to the guy who got me riding around Angkor Wat. This is the reality in this region. Not everywhere but it's essentially unbelieveably cheap to the point, that you can afford daily drivers in the price of your accommodation, essentially. In Vietnam, a Bahm Mi sandwich would cost an equivalent of 1 dollar. And it would be delicious. At the airport in Vietnam, the same one would cost 7-8 US$ and not be nearly as good (probably, didn't try). Endgame, I thought I wouldn't have to care about expenditures on food in this region. But in the end, with so little time on my hands, it starts to become slightly an issue, that is, to pack in food in the city and sightseeing, so ultimately, I would be forced to feast a bit at airports. Kind of a bit of a sad reality but not necessarily, as at times, I'd find some really decent places to eat at airports. And even then, I'd deduct that the prices would not exceed what I'd experience back in Australia, so I felt it was all good in the end. Can you imagine, getting a decent meal at an airport for an equivalent of 10 US$, with everything? Again, welcome to South East Asia. And they'd even wear Santa hats around.
+    </p>
+
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+
+
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

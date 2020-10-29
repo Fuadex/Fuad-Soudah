@@ -24,10 +24,10 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
     <div class="row">\
 <nav class="navbar navbar-inverse navbar-bottom footer" role="navigation">\
   <div class="navbar-header">\
-    <a class="navbar-brand" href="#"><ol>Future Projects:</ol></a>\
   </div>\
     <div class="container-fluid">\
     <ul class="nav navbar-nav">\
+  <li><a href="#">Future Projects:</a></li>\
   <li><a href="Blog.html">Blogs</a></li>\
   <li><a href="noigitara.html">No i Gitara!</a></li>\
     </ul>\

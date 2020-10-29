@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://vm0z8g.by.files.1drv.com/y4mg1kv0FOG7c6ZSgBGQy3LF-bkI6-AX0KAoSZ5a4jgzS8-o1bttzdkDXMsB2sbRTr5RHGbRCwA2b7jUukeFbacPzLQUBTz2b-3P6xrx8n7SY0NYGenlcfaq6LsM15cdz2ye1dHDxrZhQdac0JufRrJYlEzK3cpGUAHat51lJq_uMXvDABDK_i7wSWqwsSaZBLSAEyVIf-9BgkCo7hDFV0TkA?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vm0q8g.by.files.1drv.com/y4mZGZ9XAlZf_WAbOBbubFGF6LfyxHr-qEsAR0QL8NDuMpeqCbkbwl3NjBX6CIT2HNS97TYQmBZIQ7p8MHixo2ja1TRyN9K5n4P4k533jI8EvqjsAZrsjS0zxXLQ63iBZL9SF4BmexCYd5uLvLKxZn2OSDq9_j3CLdtm6oSFq2f3JBGZtow7v7-F1FntMAYHvGaxjtk9lhysgt23Eog1la4ZA?width=3240&height=4050&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vm1a8g.by.files.1drv.com/y4mkWRr4ZfKIA2I0AWZIaiHrBsjSpC47w4UR430_-tpdLFfOIZbzFeoZWCz212hMSb5MU5_yQce2kz3RxTKJt_RIOa0-jeB4hYTmkkSrTRGq4dDGttQUZiCL7eE4o8Ap4YfeunN9toUIkKDhqt60xO7AjQXycnC1x6SDz4qDkIF-8987lDO0bBomitCQ0gaKU3WJT9C-bs4IWaHGrrHtvlY0Q?width=4000&height=4000&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Sehnsucht V</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://vm0z8g.by.files.1drv.com/y4mg1kv0FOG7c6ZSgBGQy3LF-bkI6-AX0KAoSZ5a4jgzS8-o1bttzdkDXMsB2sbRTr5RHGbRCwA2b7jUukeFbacPzLQUBTz2b-3P6xrx8n7SY0NYGenlcfaq6LsM15cdz2ye1dHDxrZhQdac0JufRrJYlEzK3cpGUAHat51lJq_uMXvDABDK_i7wSWqwsSaZBLSAEyVIf-9BgkCo7hDFV0TkA?width=3840&height=2160&cropmode=none" class="darken"><div class="text">Outside the station</div><img src="https://vm0z8g.by.files.1drv.com/y4mg1kv0FOG7c6ZSgBGQy3LF-bkI6-AX0KAoSZ5a4jgzS8-o1bttzdkDXMsB2sbRTr5RHGbRCwA2b7jUukeFbacPzLQUBTz2b-3P6xrx8n7SY0NYGenlcfaq6LsM15cdz2ye1dHDxrZhQdac0JufRrJYlEzK3cpGUAHat51lJq_uMXvDABDK_i7wSWqwsSaZBLSAEyVIf-9BgkCo7hDFV0TkA?width=3840&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+
+    <p>
+      Today short. I had a tour around Munich, by bus, 2 hours-long. Afterwards I ate lunch and returned home, in which I was doing completely nothing. I went out for a stroll around the hood, I figured, it could be a good idea. It turned out splendid, as it turned out, that this olympic village is the best that can be. But as it usually turns out, once you receive something, you'd like more afterwards. The feeling of value can be so fleeting...
+    </p>
+
+    <p>
+      Sehnsucht VI: I'm writing these messages, as I realised, it could be a good idea to come back to life. I have still a fuckton of things to settle, first and foremost, I must write a fuckton of emails.
+    </p>
+
+    <p>
+      ...
+    </p>
+
+    <p>
+      And I'm writing again. The thing is, that I'm thinking how should I in fact approach, arrive, set foot and another and even further. I'm wondering, whether it could be a good idea to shift by attitude and try publish everything as it goes, go forward. But then. Maybe. No.
+    </p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Sehnsucht X</h4></center>
+    <br>
+
+    <p>
+      I'm sitting now at 4 o'clock in the morning, woken up by loosely lead conversations from students a few blocks down. It's hot but usually in the morning it can be really chilly. Despite this, I keep my doors wide open, because if I have to choose between waking up and living in a tightly sealed room, I prefer the better first option. 'Tis merely I get to be a bit more alive and figuring. A consistent flow of air is the basis and this bungalow in which I normally am is like a bunker! They were building this village during the cold war, so perhaps that's the reason?
+    </p>
+
+    <p>
+      The last 1.5 weeks were abundant. After previous posts you could deduct what sort of a brothel (yyy, I meant mess) I have in life, I lack routine, a bit of figuring myself out. And despite this, I managed by far to sort out lots of stuff, although it's still relatively not enough. In which, I had many things left for later, due to which lots continuously accumulate into a pack that continuously fade away in my eyes, not disappearing altogether, yet remaining on the horizon. For instance, I'm writing a few important emails for a few good months (to be honest, I'm not sure what these emails were at the time. Could've been to my lecturers back in Sydney, I had a thing to write extensive emails but a few months? damn). And what? The Australian illness got me good, eh? (can't recall what illness that was, could be a metaphor). Now there is no time but a good weather considerably improved my feeling of wellbeing. From stone cold tropics right into a scorching hot moderate climate. Despite that these are practically the same climate zones.
+    </p>
+
+    <p>
+      It's weird, oh weird.
+    </p>
+
+    <p>
+      I think what I meant by this was that I was leaving a country that is considered very hot, in fact even extremely hot, yet, in Sydney during winter, temepratures can drop even down to 0, with an average of 17 as I know. That may still not be considered cold by relatively high humidity can amplify the feeling of cold in many circumstances. In addition, the living conditions, while in fact phenomenal, since everyone was living in enclosed bungalows, it also introduced a feeling of loneliness, as the walls were thick and I hardly have known many people. There were also some other feelings in development, from the perspective of things, I wish they didn't happen, otherwise my exchange might've become a much more pleasant experience. Instead, I had a lot of time and the structure of the course allowed for... well, myself, with whom I did not have clear idea of what I was looking forward to do. It was a feeling of great accomplishment of freedom and... trying to figure out what to do with this freedom and how to ensure that I keep it after the 11 months, hopefully building a better future not just for myself.
+    </p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vm0q8g.by.files.1drv.com/y4mZGZ9XAlZf_WAbOBbubFGF6LfyxHr-qEsAR0QL8NDuMpeqCbkbwl3NjBX6CIT2HNS97TYQmBZIQ7p8MHixo2ja1TRyN9K5n4P4k533jI8EvqjsAZrsjS0zxXLQ63iBZL9SF4BmexCYd5uLvLKxZn2OSDq9_j3CLdtm6oSFq2f3JBGZtow7v7-F1FntMAYHvGaxjtk9lhysgt23Eog1la4ZA?width=3240&height=4050&cropmode=none" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://vm0q8g.by.files.1drv.com/y4mZGZ9XAlZf_WAbOBbubFGF6LfyxHr-qEsAR0QL8NDuMpeqCbkbwl3NjBX6CIT2HNS97TYQmBZIQ7p8MHixo2ja1TRyN9K5n4P4k533jI8EvqjsAZrsjS0zxXLQ63iBZL9SF4BmexCYd5uLvLKxZn2OSDq9_j3CLdtm6oSFq2f3JBGZtow7v7-F1FntMAYHvGaxjtk9lhysgt23Eog1la4ZA?width=3240&height=4050&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+
+
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      Nie pamiętam do końca co robiłem we środę. Zwiedzałem trochę Olydorf, trochę fot robiłem (a może to było w czwartek?). W każdym razie, w czwartek prócz regularnego kursu, po nim wyruszyłem we własną okolicę i poleciałem do urzędu. Ogarnijcie fazę, wbijam przez budynek a tam pan ochroniarz, łamanym angielskim stwierdza, że nie wbiję, bo full. Tymczasem urząd miał zostać zamknięty za... 1 godzinę, 10 minut. No jak tak to tak i chuj, pytam się w takim razie czy jest inny urząd. Jest. W chuj daleko, ale może zdążę na pół godziny przez zamknięciem...</p>
+
+<p>Hehs. Zdążyłem. Nikt mnie nie wyprosił. A nawet mnie pani w okienku skierowała, w lewo, w prawo, w lewo i coś tam coś tam. 5 minut szukałem tego coś tam coś tam, czym okazał się po prostu numerek. I z tym numerkiem czekałem z 1.5 godziny, a może godzinkę... Wbiłem, dobry ziomek urzędnik władał angielskim w stopniu super git majonez. Dałem dokumenty, dałem paszporty, złożyłem podpisy. 5-10 minut, 'Welcome to Munich', dostaję dokumencior i dzięki, siemano. Teraz mogę założyć konto bankowe.</p>
+
+<p>A zapomniałem, we środę poszedłem do sklepu. No co? Wiem, że chuja was to obchodzi, ale zapomniałem zapytać się o torebkę foliową i musiałem czmyhać do domciu z papierem toaletowym władowanym w kieszeń od bluzy. Cierpiałem! Tym bardziej, że sklep miałem dużo bliżej, 5 minut zamiast 45 minut ode mnie.
+
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+ Wracamy do czwartku. Konto założyłem w 10-15 minut i w sumie trochę smutałem, bo dziwnie proces wyglądał. Ziomek nie stwierdził jakie konto mi zakłada, pytał tylko: będę korzystał z internetu? Będę to robił? Coś tam mi pobieżnie wytłumaczył itd. No ale taki experience 50:50, w każdym razie założyłem konto, potem tylko kilka formalności: założyłem jakiś klucz do konta bankowego internetowy, potem przekształciłem konto bym miał mieć account statement elektronicznie (zamiast musieć samemu dymać co miesiąc by go wydrukować (WTF)) i karta powinna dotrzeć do mnie w przyszłym tygodniu. Fajnie co?</p>
+
+<p>Pod koniec dnia miało być oprowadzania po Olydorf + chciałem kupić sobie router, dwie sprawy nieco się pokrywały. Niestety, w czasie wakacji, router można tylko kupić od 20-21 w Czwartki. Można też wtedy problemy rozwiązywać odnośnie internetu itp. No ale jednak zdecydowałem się na TourDeOlyDorf, a jakoś w trakcie niego udało mi się i tak zakupić ten router. Ominęło mnie zwiedzanie OlyDisco i jeszcze jakiegoś punktu, ale dostałem darmowego browara w BierStube (pub). Tam się przełamałem, pogadałem z ludźmi i wygląda na to, że mi szło całkiem nieźle, bo zostały się 4 osoby ze staffu studenckiego, reszta poszła (nie było nas dużo) po czym zaprosili na sheeshę.</p>
+
+<p>Sheesha była bardzo spoko. Z trzema rurami. O smaku,... co to był za smak. Brzoskwiniowo miętowy? Palili też z węgielkami kokosowymi, czy coś, które jakoś dłuuuugo prażyli. Plus poczęstowali białym winem. Całkiem spoko jak na trzeci dzień w Niemczech, nawet się udało kogoś poznać, z kimś napić i się okazało, że jeden z ziomków mieszka kilka drzwi dalej. Wszystko zgodnie z planem.
+</p>
+
+https://endemirage.blogspot.com/2016/09/sehnsucht-ii-iii.html?token=APq4FmCZQHFcb02bqbo20ldrnhrx4WkqbkPvt9JsPeXA_yjbVUHZhv-dX2RlNTtOFlF5o0KUkRA3XfO5lMksK7gTRfykpDU9wBbUk3bXe212QFm0jgps7RjVq5BA3rdYcjJrWscC84z7&postId=4778240006174155650&type=POST
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      A few words about sports. Upon entering Male I was actually quite amazed with how narrow streets there were. And how cheap it kinda was. And then I saw also some people playing some weird game I have not seen by flicking pieces on a board. Now I am at the airport. And they were some thing popping up. A rock concert running for quite a bit by an Asian rock band. Then some Criquette. And then, holy shit, Premiere League and whoever's left at the airport. Hindi, Mali, flight attendants, police officers, they're watching. To speak of an experience binding cultures and generations. Amazing.</p>
+
+<p>I mean, Male is not a special place. In fact, this is a country that you'll go to, only and solely for the purpose of going for a holiday but only to a resort. A private resort. One you'll need a speedboat or a water plane to get to. The hotel I was in, which was an inn actually, wasn't that bad. I had some problems with finding a good place and eventually I booked this last-minute which was a good decision, although a bit stressful one. Basically I put forward a bit more money but I received the bang for the buck - taxi all the way to the place and from the hotel to the airport at the place's cost. I got breakfast, which was a set of take what you need: fried eggs, sausages, broccoli, some pastries, fruits etc. I got a refill and some coffee. Also you had a coffee machine in the place and tea and bottles of water, all complimentary. All this, for a bit like 70U$. I felt like it was a good decision in the end. Although I feel I should have booked something else, also had wifi and the luggage carried which was unexpected. Got wifi. And the other complimentary stuff, I mean it was literally a 4-star hotel. Perhaps 3 but on the verge of being a 4. And I got my sleep. 7.5 hours. That's a lifesaver, trust me folks on this one.</p>
+
+<p>One of the last problems that I am standing in front of, is my condition. Usually when I assemble my travel puzzle pieces I don't really take under consideration the fact that me, as any other person, can fall ill. I mean, obviously there are the hazard of eating in Delhi or getting some forms of malaria etc. But what I usually don't really take seriously is my condition to just fall ill and it all starts from dust. I started feeling a bit off while in Poland and then for serious in Helsinki, although it got better. Eventually, perhaps the large rollercoaster of AC and humid heat decided to stir shit in my body and in the end, at the airport, I am basically inept a bit. As in, sneezing, yellow phlegm. Kinda standard and the funniest part - it always gets to me at least once or twice a year. It's great that I decided to cut short my trip, hehe, as shorter it gets I mean, by having a shorter transfer in Kuala Lumpur. This way I will be able to get home faster but at the same time, there are hazard associated - cold aircraft's AC, the need for food and water. Basically I won't end up seeing anything in KUL but perhaps I'll be able to go to sleep faster. That's what I'm counting on. It's good that they had showers at Male's airport, this way I was able to get off all this sweat that I've accumulated in hectolitres while stumbling through Male. That probably also contributed negatively. Oh well.</p>
+
+<p>Side notes: Neon Genesis Evangelion - Stratosphere Love<br>
+    Chernobyl - Northlane 4D</p>
+    
+<p>Being deprived of sleep creates very interesting cognitive patterns. At times you'd feel as if you've seen something, like a mild form of -nesia kicks in. Also, listening to music makes you realize, that it is kind of deprived a bit of bass. Tonal environment and reception is especially interesting.</p>
+
+<p>And UFC is running.<br>
+Also, remember!!!11 Human Trafficking is illegal!!!!!111
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div> -->
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

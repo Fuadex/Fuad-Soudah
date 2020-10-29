@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/4653/39379103674_35c6d00bf3_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/4225/34772885321_05353cb06c_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/4275/34643726810_d2fe9fc587_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Sehnsucht XI</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/4653/39379103674_35c6d00bf3_k.jpg" class="darken"><div class="text">First Encounter</div><img src="https://live.staticflickr.com/4653/39379103674_35c6d00bf3_k.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>11 September 2016</h4></center>
+
+    <p>
+      Translated from Polish: I took off from Australia. No wait, hold on, first I took off to Perth. A mere coincidence. At first while I was looking for a flight, I got dreadfully surprised. Qatar Airways and a good deal? I had this unpleasantness that Qatar put Adeleide as a hub to carry out its flights from (speaking from 2020, I'm not so sure that was the case but sth). I'm curious whether they turned out alright on this. Nonetheless, the thing is, I had to make use of this battered system in which Qatar operates, so I could not book my beloved flight for the 4th of September, so I set up the 5th. Not necessarily cheaper (although it was), yet it collided with my German preperation course. Have you already managed to get lost in all this? Well, get ready, the funs are about to roll wide in.
+    </p>
+
+    <p>
+      Let's say the first day is the second day and the second is the first. I took off the first day yet I arrived on the first (day). When I arrived that first day, the first's day was its second already. Can you make more or less sense of that? Notwithstanding, changing flights in Perth at 11 PM and pshhht, flying away far away. In fact, I deceived y'all a bit, as I did arrive on the second day, yet the second day was in Sydney as well. It's a little something of a Perpetuum Mobile of sorts.
+    </p>
+    
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>First Reception</h4></center>
+    <br>
+
+    <p>
+      I really enjoyed the service in Virgin Airlines. The plane was alright, with a USB hub and a regular international AC plugin for any better chargers. The offered movies did make my jaw drop, yet the featured shows were quite alright. Or, perhaps the other way around. Nevertheless, considering its a national carrier, I was quite pleasantly surprised. Even the food was quite good and the wine I received was exceptionally great! The airplane in Perth made a sad impression on me, as I had to transfer in a way as if I was not transferring at all and normally had to queue up for another flight. Even I was starting to get late, as more or less I had an hour left to depart and I didn't even have a printed boarding pass at that time, not to mention I had to go through customs all again... In the end it all turned out fine and, oh right. Have I mentioned that my plane arrived about 40 minutes before scheduled arrival? Identico in Doha. Yet it got delayed upon reaching Munich, fucker.
+    </p>
+
+    <p>
+      Let's reverse to Perth and Qatar Airways. Or perhaps we shouldn't, the food was average, hub usb did not work. There was a charging dock but I had no way of making use of it (my bad actually). The flight went through somehow, in all due honesty, without any fireworks. From Doha to Munich there wasn't much worth putting your eye on either, a bit more marketing rather than service on these Qatar Airways lines. Quite different at theairport, where all was expensive as hell (a Burger King set cost about 35 PLN ~10 AUD, the AUD was stronger in 2015). Nonetheless it presented itself well, I found a bit of weird objects (a huge bear with a cooking pot on its head, yeah, looking back I think lot's of the airports design felt like steel and metal everywhere, even stuff that was supposed to be a bit cuter, I had some reservations in regards to all this). Although there were some surprising images, like sections with docked iPads to use by anyone. Luxury! But the airport was immense, so lots of walking to see anything. As a plus in any case.
+    </p>
+
+    <p>
+      From today's perspective I think the airport wasn't as huge and I think it wasn't ultimately that bad. It was decent but all in all, yeah, no fireworks, folks.
+    </p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/4225/34772885321_05353cb06c_k.jpg" class="darken"><div class="text">Southern side of where I lived</div><img src="https://live.staticflickr.com/4225/34772885321_05353cb06c_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+
+    <p>
+      Quite different case with Munich. It ain't Chopin (airport), not as modern (umm.. not so sure by 2020 now), yet it was much more nicely plugged into the public transport so like the train system (which would get its ass all the way to, well, almost the city center. -today, I'm quite sure it did reach the city center in each case heh). And yeah, the ease of transferring to the public transport was really amazing, not really something out of the ordinary after having seen a bit but it's a well-designed airport in any case. One problem I found was that with each arrival there was only one (-Problem). Huge queues for people arriving from outside EU and express lanes for people from EU, electronically verified and it takes a picture of you and you roll in. The mate Polizeiman shows you to go left, I go right. I stop, took a dash left and Mr Polizeiman says, go right. So I gesticulate, right or left? Didn't matter. And in fact, that was the case as to pick up my luggage, I had to wait a massive (honestly, not that massive these days) 15 minutes. Perhaps it was better to stay in the queue after all?
+    </p>
+
+    <p>
+      So, this is the first/second day, I took a trip by S1 to Moosach (something like this), after which I changed to an U-Bahn to the Olympic Park. Over there I took my eyes to fill with the beautiful immensity of the complex, I get myself into a.. building, in which a few people were waiting to register. After which two people let me in (I don't know why) and I still had to wait up a few minutes. One, slice slice with a person, who managed English well. Sign here and there. I may read if I feel like so, or not. Here a bit more info, perhaps a bit more, oh, sign here too. Register your place and set up a bank account, as we want money from your bungalow, do you know where you live, yes I checked and hop, siup, I'm going.
+    </p>
+    
+<p>
+  Today when I think back, this was the optimal way to get to the Olympic center. However, if I did take a different flight, I would likely have ended up without a place to stay, as there are clear times and days when you can pick up your keys and such. I think at the time I arrived around 2 PM on a Tuesday, which was perfect in my circumstances. Especially, that I knew nobody at the time on the spot, so that meant, that I was practically all on my own. Some universities do buddy programs and assign at least one person to help you out. In my case, I actually knew a student who was doing a Master's research exchange at USYD, so I had a bit clearer overview and he helped me a lot with information. I should probably speak about this another time, as it was also an interesting thing, all the stuff preceding to how my exchange actually had happened. It's really a bit of a tale to be told.
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/4275/34643726810_d2fe9fc587_k.jpg" class="darken"><div class="text">Neuschwanstein</div><img src="https://live.staticflickr.com/4275/34643726810_d2fe9fc587_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+    <p>
+      At this stage it'd be decent to mention what is this place, how on earth am I living in an olympic village? But that's for another story (and pictures). I feel good here and I will have the following 11 months, which is best.
+    </p>
+
+    <p>
+      Hold the fuck on, I really wrote that? 11 months? Hmm... From what I recall, at that particular time, my exchange was set only for about 5 months... I exchanged emails to get it prolonged to 2 semesters... Did I do that before I set out on an exchange? I don't think so, I think I got this sorted afterwards. Am I a freakin' shaman or whaat?
+    </p>
+
+    <p>
+      So, I did a quick washy washy and happy I took off to register for the language course. Should I mention at this point the Bungalow I was in? Or how well communicated I was? A fuck it, I'll carry on with the translation: Here I did a pushing to the limit, as at 4 PM they were closing and I arrived exactly a minute after 4 PM. I was scouring the area, I look around every single corner where I was supposed to end up yet nobody could point where I should be going. Only at one point, a Mr., which quite well carried on with English explained that... the room nr. 42 is located right behind the toilet. And that I should tread through the toilet to arrive there. I was like, well I don't think so mate but I thanked him and took a mimic as if he just released a quite weird-ass joke. Yet, it turned out that the toilet was in fact an old wardrobe (?) (I think I wanted to make a weird reference to Narnia) and in there, and, behind it, there in fact was located a hallways with bureaus and bam, through the toilet I ended up registering for my language course. Carpe Diem, the metaphore of life and so on. Self-explanatory, I think it depicts the situation the best. I think I should add that not only did I arrive at a bureau after hours and got it all sorted out (interesting how already some things about German punctuality did not exactly hold up and how flexible folks in Munich turned out to be) and the place itself was, well, let's just say under the same toilet roof you'd find a couple of more interesting things. Like the mensa student eatery, where many students eat cheaply and a set of two cafes, where you could grab salads and... in any case, I was connected to this place, at Giselastrasse, just I think it was 4 metro stations away from where I was living. Crazy.
+    </p>
+
+    <p>
+      Afterwards I returned with documents and took a flight to the city center as I still had a ticket, nice ticket for an entire day. It's nice over there. A bit small this Munich's center, in a way no fireworks mate but in a way, despite no fireworks, it's got something cool about it. And surprisingly often I'd stumble upon eduroam, so even despite I'd complain as fook on the internet availability, I managed to remain online, at least I figured out some way.
+    </p>
+
+    <p>
+      Aaaand I also did some groceries, how could I not! A bun, some toilet paper, some washy washy ingredients. After which I found out I did not get a bag so I had to drag it all, plucked into my pockets (at the time, I'd usually wear a set of pants that were REALY spacious). I need to also point out how warm it is in this country (land, state). The next day it was freakin' cold and again it was warm as hell. I'm drinking a litre version of a cola-mutant (25mg caffein per 100ml of beverage) and I'm somehow still runnin'.
+    </p>
+
+    
+</div>
+
+<!-- <div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      A few words about sports. Upon entering Male I was actually quite amazed with how narrow streets there were. And how cheap it kinda was. And then I saw also some people playing some weird game I have not seen by flicking pieces on a board. Now I am at the airport. And they were some thing popping up. A rock concert running for quite a bit by an Asian rock band. Then some Criquette. And then, holy shit, Premiere League and whoever's left at the airport. Hindi, Mali, flight attendants, police officers, they're watching. To speak of an experience binding cultures and generations. Amazing.</p>
+
+<p>I mean, Male is not a special place. In fact, this is a country that you'll go to, only and solely for the purpose of going for a holiday but only to a resort. A private resort. One you'll need a speedboat or a water plane to get to. The hotel I was in, which was an inn actually, wasn't that bad. I had some problems with finding a good place and eventually I booked this last-minute which was a good decision, although a bit stressful one. Basically I put forward a bit more money but I received the bang for the buck - taxi all the way to the place and from the hotel to the airport at the place's cost. I got breakfast, which was a set of take what you need: fried eggs, sausages, broccoli, some pastries, fruits etc. I got a refill and some coffee. Also you had a coffee machine in the place and tea and bottles of water, all complimentary. All this, for a bit like 70U$. I felt like it was a good decision in the end. Although I feel I should have booked something else, also had wifi and the luggage carried which was unexpected. Got wifi. And the other complimentary stuff, I mean it was literally a 4-star hotel. Perhaps 3 but on the verge of being a 4. And I got my sleep. 7.5 hours. That's a lifesaver, trust me folks on this one.</p>
+
+<p>One of the last problems that I am standing in front of, is my condition. Usually when I assemble my travel puzzle pieces I don't really take under consideration the fact that me, as any other person, can fall ill. I mean, obviously there are the hazard of eating in Delhi or getting some forms of malaria etc. But what I usually don't really take seriously is my condition to just fall ill and it all starts from dust. I started feeling a bit off while in Poland and then for serious in Helsinki, although it got better. Eventually, perhaps the large rollercoaster of AC and humid heat decided to stir shit in my body and in the end, at the airport, I am basically inept a bit. As in, sneezing, yellow phlegm. Kinda standard and the funniest part - it always gets to me at least once or twice a year. It's great that I decided to cut short my trip, hehe, as shorter it gets I mean, by having a shorter transfer in Kuala Lumpur. This way I will be able to get home faster but at the same time, there are hazard associated - cold aircraft's AC, the need for food and water. Basically I won't end up seeing anything in KUL but perhaps I'll be able to go to sleep faster. That's what I'm counting on. It's good that they had showers at Male's airport, this way I was able to get off all this sweat that I've accumulated in hectolitres while stumbling through Male. That probably also contributed negatively. Oh well.</p>
+
+<p>Side notes: Neon Genesis Evangelion - Stratosphere Love<br>
+    Chernobyl - Northlane 4D</p>
+    
+<p>Being deprived of sleep creates very interesting cognitive patterns. At times you'd feel as if you've seen something, like a mild form of -nesia kicks in. Also, listening to music makes you realize, that it is kind of deprived a bit of bass. Tonal environment and reception is especially interesting.</p>
+
+<p>And UFC is running.<br>
+Also, remember!!!11 Human Trafficking is illegal!!!!!111
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div> -->
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

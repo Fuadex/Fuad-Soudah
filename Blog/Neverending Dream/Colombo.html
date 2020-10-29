@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49119480073_4d8eccb0df_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49113389028_45f7e3bbb0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49119475203_242d0d4f1e_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49119472113_2efd2a3f5b_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120164142_4c21cfcc40_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con6{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49119968046_11ecf5519b_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Colombo</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49119480073_d949b755e2_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49119480073_d949b755e2_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      The issue with being in under a 10-hour transfer is that, chances are, that your flight will arrive later than expected. Let's say, an hour. Then chances are, that you'll need time to get processed through arrivals. For instance, you'd need to get a visa, that can take a short time or a longer time. Depending on how many people just came and whether you made a mistake by not hitting the 'visa-on-arrival' spot that I did not know about. So, basically you end up sitting at a place for longer than expected, up to an hour. So you know, an hour here and an hour there and eventually you end up stuck looking for an ATM, which is at the other hall and then looking for the bus which is back at the hall you just walked out from and even further up next to it. Then you need to deal with the people there bugging you to take a taxi.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+  - Ohhh, where are you going<br>
+  - Ohhh, just a few hours?<br>
+  - Ohhh, Colombo is such a huge city<br>
+  - Ohhh, for 5000 we'll take you anywhere and back<br>
+</p>
+
+<p>I'm like, nah man, I'm good, I just want a bus.<br>
+Then they're like:</p>
+
+  <p>- Ohhh, today is holiday, it's not certain that the bus will come today.</p>
+
+<p>Then I'm like:</p>
+
+  <p>- Ohhh, I'm good.</p>
+
+<p>Then you still end up waiting next to about, just two tourists. A bus comes up and a guy walks out and bugs you to get in. But the bus doesn't look like an official one and there is a bus stop which looked quite 'locally'. Still, you end up entering, you ask for the price and they're like 150.</p>
+
+  <p>- Could be 1500, we don't care.</p>
+
+<p>I'm like, yeah, 150 sounds good, although wikitravel mentioned 120, so a bit more than I expected but ya know.<br>
+That's fine.</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49113389028_45f7e3bbb0_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49113389028_45f7e3bbb0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+
+<div class="con6">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      Except for the windows that were totally blinded so you could not see really much outside, such a shade of everything. On my return trip while I was waiting for well about 20-30 minutes, could not get ahold of a guy at information, as he approached the counter but was on the phone all the time and then he left, whatever, I saw a ripped opening. I swear it was not there before and I swear it was the same bus as I was before in (with different drivers) but, well, yeah. It's a subtropical island. It looks like a subtropical island then. It must look like a subtropical island. I mean, really.</p>
+
+<p>Palm trees and even more palm trees. What I did not expect however for Sri Lanka to be is kinda a more bustling and civilized place than Delhi. I mean, civilized is still a big word. It's civilized as civilized it was during the colonial times, except now not being a colony. And having lots of new buildings set and a, what would seem as, a brand new tower with a purple or lavender top. In fact, the tower does look like a lavender sprout. Or asparagus. Or a dildo. Actually, it doesn't look like a dildo. It's actually a nice symbol of Sri Lanka, I didn't expect this. There are lots of new developments underway as well but I am also curious, they're not afraid of more shit happening? This country was at civil war and they just managed it relatively recently. Now opening up to the world and people discovering Sri Lanka to be, a rather, raw country. Not so much ventured and explored by others and you can tell even by exploring the middle of it. It's not accustomed to tourists, just to locals and it took me a long time to figure out what's where. No maps no nothing. Although, lots of signs were in English and that was great! It's a bit of a regular thing, all the three countries I came through were kinda duolingual. I mean, one part in some forms I could not comprehend. And the other in English. You have no idea how helpful that is for people newly introduced to wherever, I mean, as a tourist, even if I were to come from a country of which English ain't the primary thing to go by, it would still make life much easier.</p>
+
+<p>The other thing I discovered upon returning to the airport, except for all the security checks of which there were a fuckton: entering the airport area, checkpoint, soldier checking passports. Then soldiers checking your bag and passport with boarding pass, next to the door of the departure area. Then another security check and a bit more thorough, to enter check-in area. Then passport/visa control up next to get to the departure hall. And then another check to get to the gate, the longest one of them all. But before this particular check, you get to experience a, what would seem as, a sudden dip in prices compared to outside of it. Just kidding, the prices are now shown in dollars. And they're even more comparatively to the ones listed at the outer part of the airport. And these are still outrageous, for a bottle of water you could get an entire meal in the capital city. 1$ is about 180 LKR, I bought a glass of soda at the bus station for 50 LKR and I was still feeling being ripped off. Food was about 180 LKR for a portion. Water doesn't cost normally 180 LKR.</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49119475203_242d0d4f1e_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49119475203_242d0d4f1e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+
+<div class="con3">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+  I was so surprised to see such hikes but then it was different in Male, where many, many establishments list their prices in US$. At the airport, they charge fees at US$ rates. At the airport, you can pay with USD but you won't be offered LKR in return. 1 US$ is 15 MVR. INR was also a bit funny. All the numbers start running so weird at some point. International power outlets are a standard in Male as well. That's amazing, when you go to this coffee place and... Oh, they're no wifi there. Bummer but you know, finding a cafe place in supposedly a paradise city, that's not bad. Not bad at all.</p>
+
+<p>I've seen them doing a drip coffee, an aeropress. What a hip place damn.</p>
+
+<p>...anyway moving on. Oh, I'm supposed to be talking about Sri Lanka? Nevermind. What bothered me was being sold an international brand tea at the airport. Perhaps it's not tragic. But you'd expect something else than a form of Lipton at the land where they are literally just making it! The other funny thing? This place looks so surreal with all these Coca-Cola, Pepsi and Sprite signs. I wonder, whether it is a marketing thing but these billboards look so outdated. One model forming a 'metal' sign to advertise pepsi. Another posing to be refreshed by Sprite. And they all look white. But others do not deem Coca-Cola bad here either. They don't seem to really care at seeing all the trash washing up at the shore either and that, now, is disturbing. All the trash that I'd end up at on the streets in India, I did not expect to find similar cases in Sri Lanka. I wonder on which Island do they keep all the trash in Maldives, eh...?
+</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49119472113_2efd2a3f5b_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49119472113_2efd2a3f5b_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+
+<div class="con4">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+<p>
+  Damn, all this text must have got you all confused right now, right? Here I'm in Delhi, then I'm in Male. Then I'm freakin' everywhere. Truth to be told? I started losing track myself. I mean, what are the chances? One of the less expensive routes to Sydney leads through Male over Colombo. And of all, Colombo, I'd have 10 hours tops to stay in. And out of all, I'd get to go in for free. Visa-free. Because they had some sort of terrorist attacks. And I think they enjoyed getting all them dollars spurring into the country, ever since they figured, oh we like tourists. I mean, I can't exactly blame them, they were in Civil war and I don't know what's so civil about either, the problem was, though, the tacticals one side would use, would be suicide bombings. I think from all the nations or religions in the world, usually it'd be the latter and it would be, for some weird reason, that it'd be muslims who'd figure, bombing themselves and taking some other lives with them, would be such a prime thing to do. You know, even when there was a large outbreak of Japanese prisoners in Australia, as evil as they were at the time, these soldiers would not attack civilians. As crazy as they would be to try to do a Prison Break in the middle of nowhere on a stranded Island which Australia is, with what was that, about a thousand of captives loose, they would just not attack civilians. But here, even far away from the middle east, they'd do car bombings, they'd use suicide belts. They'd do this too in the Philipines. I mean, honestly, what kind of sick fuck, would come up with an idea of blowing themselves up as a good tactic to use?
+</p>
+
+<p>
+  Well, in Sri Lanka, they figured that perhaps making tea would be a better way to make a living. And since they were a nation, that kind of did not quite let other people in, due to their internal problems and conflicts, opening up served a bit like, you know. I mean, it used to be a British Colony after all. I assumed that after seeing the Coca-Cola billboards and names of the streets being duolingual. With one name being crazy long and the other being, English. And the typical colonial architecture downtown Colombo. I mean, you see the signs here and there. Any store you'd visit, you'd see a selection of... Coca-Cola, Sprite, the international brands. This got so confusing, does that mean that's still british or is it American now?
+</p>
+
+<p>
+  See, here's the thing. Throwback, Poland 20 years ago. Shit, I wasn't in Poland even then, make it 15 years. I remember very similar symptoms. Ice Tea tubes! Pepsi, Coca-Cola, Sprite! The difference was, you'd see also alternatives, like Hop Cola! Or some other rip-offs but they usually weren't just as tasty, cheaper but also many would see them as inferior. People would still buy those, some would know that it's not really good for you. I didn't know that. I didn't understand that. But what was the alternative? Apple Juice? We'd get that from concentrate. Unless you lived in the countryside, you wouldn't have really access to good quality products. It would be a norm on the western side of the border but surprisingly, not near where I lived. I started changing very recently, now there's a boom for all the freshly squeezed juices, apple, orange, now it got to the point they get some even more interesting fruits that I'd never see before. Carbonate it, mixed it with other good stuff. Especially in the beer market, it got bonkers to the verge the market will likely survive as it is. It's good. Bit ridiculous but good for consumers. But, 15 years ago, it was Pepsi, Coca-Cola and all the international brands, which, to think about it. This was what was considered cool. Trendy. Good. Someplace you'd go to get something nice to eat. I think it's kind of this actually still in Poland, since these fastfood joints, they were not that bad actually quality-wise, they really keep an eye on all the spectrum, appearances and whatnot. In Zurich or Helsinki, that's the place to get shit but tasty food, once you're drunk and not going to party anymore. See, there's the entire spectrum. Coca-Cola, is a bit of a thing, that is kind of like a neocolonial thing. Thing, that gets introduced and it's like, what the hell is this. Tasty, not exactly too pricey. Something maybe to show you're a person of the world? If you wanted to buy one here, you'd get a plastic straw. And they don't even show the prices, they just tell you 50 LKW. And, I'd assume I was being ripped off but, this is the country where you haggle and I didn't have time or feel like it.
+</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120164142_4c21cfcc40_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120164142_4c21cfcc40_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+
+<div class="con5">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      I mentioned already this is a country, which, is a bit new to tourists. And you can see all this by the lack of swarms trying to get a buck out of you. To make it a bit more interesting for you reader, many places in Europe that you'll end up in. You will find more people trying to get a buck out of you compared to Colombo. Sure, outside of the airport, that's an exception. But, inside Colombo, what you'll find is, people go about with their lives. And that's what I found truly fascinating actually. Once the bus rolled into the bus loop, it was going through a very, very, very busy street filled with vendors, it was a market in the very sense a market is. A massive number of people, walking everywhere, people carrying their produce on their heads and haggling with other people, actively. All the time. A bit dusty but not too much. It felt like a, market of a, 17th or 18th century type. And soon, just that early, I realised, I'm in a place that is actually quite unique actually. You can walk around and, figure it out for yourself, where you are and just, get your senses rattled.
+    </p>
+
+    <p>
+      I unfortunately, for once, I got out a bit too late from the Airport. And I realised once I reached the city, that I'd have, max 3-3.5h here. And without a phone or a map, well, I had to do my best to see as much without getting lost. In theory, this large purple dildo of a highrise would serve nicely as a 'being lost' indicator. I'd just stroll around and see maybe if I could have a bite or not, with the food looking cheap but I figured, I wanna go see the sea! It was supposed to rain in theory on this day but it never did. And so I walked, towards the, I guess, old town area. And what I found myself, was, quite a bit of police set around. A police guy with a huge moustache. Some people with riot gear. And people protesting. Nice! They protest in this city. Interesting. I'd keep on walking and walking towards the beach and a guy would stumble upon me and I'd walk with him for a bit and I told him I just want to see the beach and then make my way back. He tried to get me into a tuktuk, so I could apparently see some sort of a Buddhist festival happening downtown but, as I was guarded, I said, I can't. And he headed off without me and his humour seemed to have got a dip.
+    </p>
+
+    <p>
+      The seaside was weird. On one hand, it was clearly under development, some things were being done there on one part. On other there were clearly massive highrises being built. Like, I mean, actual, huge, large buildings being built right there. Probably hotels. Maybe corporate holdings. Couldn't say, looked impressive. But back to the seaside, you'd see some stalls being closed. Some people, just chilling, with kids running around. Plain grass and the sea, being a bit unruly considering the weather being cloudy and clearly stormy over the horizon. And with the sea wrecking against the land, you'd see... trash. Trash all around. And that just makes you sad. In this, a bit of a nice paradise, people just don't give a shit about the environment, which is a very sad picture. A bit later, I'd walk around and try to make my way back which seemed like a hurdle cause I did not see this big purple dildo anymore. I started getting a bit stressed. I'd walk into some weird district that felt a bit more rundown. Suddenly I was thinking India all over. And my time was running out. I'd walk, walk. Go through a maze of streets. Walk by some airforce district. And then eventually I'd figure out where I was and through a maze of stairs, I'd walk about the riverside, quite stenchy ones, all the way back to where I was. Since I had still a bit of time, I head off some other direction for a bout 20 minutes, where there really, weren't any sidewalks. I think I saw a church or two. And then I made back cause I felt as if I was about to get rundown by a car or something. And then, the slight panic of, where is my bus departing from. Where from? The information didn't have a guy afterwards. I couldn't find my bus. I'd wait for 20 or 30 minutes for it but eventually, uff, I got in. I was en route. I got to see the dark cloudy sky with the palm trees being left behind. And eventually, again, checkpoints and checking tickets. Seeing how prices changed with each checkpoint surpassed but the service wouldn't necessarily improve. Eventually, I was in the airplane. 
+    </p>
+
+        <p>
+      Also, I figure I forgot to mention that, while in India. I'd get in line with people going to Sri Lanka that were Christian. Honestly, I don't know why I had to say this. And they also disembark buses while these are still in motion (also similarly they embark them)
+    </p>
+  </div>
+</div>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+
+  </div>
+</div>
+
+</div>
+</div> -->
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://live.staticflickr.com/65535/49119968046_11ecf5519b_k.jpg" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49119968046_11ecf5519b_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+
+
+<!-- <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

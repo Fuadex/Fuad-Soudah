@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120099713_18da77d514_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120601211_04fa71b217_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120793722_15f88e3e9e_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120793447_c612abf099_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120793317_77dfc6522b_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Kuala Lumpur</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120099713_0a11cd9307_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120099713_0a11cd9307_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      And here I was. Up in the skies. Ascending and feeling the pain. The pain of your eardrums becoming a useless pair. The thing was I did not foresee this. The other thing was, I would have likely not been able to counteract this. Just simply because I would have needed to withdraw somewhere to Male, where I'd need to find a pharmacy and oh boy I didn't even have any internet at the airport or anywhere near, as how they do it? You need a mobile number, that is somewhat, from here. Otherwise? No sms. No internet.
+</p>
+
+<p>
+  Thing is, public wifi is supposed to be for public benefit but it is slowly becoming more of a hassle. Not only you need to mind being hacked or something, you also can't even get a chance of becoming so, just because, you can't enter the damned network. And it doesn't help, that Male is one of those countries, where you kind of can't really get access to an unscathed access to your mobile provider. As in, roaming? Forgetaboutit.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      It's really one feeling of a kind, when you end up back home, without any insurance, sick but in one piece and with all your gear. Well, almost, I lost my broken water bottle with a filter somewhere, I guess in Malaysia. Or perhaps elsewhere, on a plane perhaps? Still, due to my flu/sickness, one thing I did not foresee, is that with a blocked nose, any forms of acceleration, ascension and descension will cast mayhem on my eardrums. There just kinda ain't any way for the pressure to release and so, I ended up half-deaf for about a day. I got real worried once I hopped on the plane to Sydney, in the end ascending wasn't that bad, in fact it managed to help to put those two in order but descending again created a truly miserable pain. Hearing everything at about -10-20 dB doesn't feel nice. Going under shower and massaging my head and being able to hear the scratches better than the water running didn't keep myself in an optimistic state either. And then, one major issue that made me feel even worse was, that in the airplane while descending to Malaysia and waiting for the plane to eventually stop doing all the circles in the sky and eventually just land, I realized as if my right ear was punctured of sorts. As if I was hearing a seashell kind of sound. Back in Sydney it was even more interesting, depending on how I would sit, I would hear differently. Less bass, more treble or just as it's supposed to. Clearly something was wrong but the next day it did get better. Ears are very interesting organs.</p>
+
+<p>Still, with my nose constantly running and blocking my nostrils, coughs and never-ending piles of phlegm, a diarrhea, weird sense of temperature, probably mild fever and just not comprehending the world and remembering much of the previous days at least what was being told, I'm kinda in a state of point below 0, where I am trying to make sense but can't really make much of it. There is so much that I would like to do and I am slowly doing them all but it all takes time.
+    </p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120601211_04fa71b217_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120601211_04fa71b217_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+<div class="con2">
+	<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+     In any case, I had larger problems to bear on my mind. For once, more of my proceedings were wasted in the vast ocean of... damn it, I don't know, where all the deceased and deleted information of this world go to? Think of, I don't know. The big limbo. I had some stuff written actually but, as I could not back it all up and I got to update my laptop, my Onenote decided to fuck me over and there it all went, down into the heart of darkness. Shame.
+    </p>
+
+    <p>
+      Well, where was I. Aha. Yeah. Let's fastforward a bit. To the time I was in the aircraft. The pain would kind of cease to be once you were on a specific altitude. I really don't get the physics of this, I mean as if it was about the acceleration happening upwards and downwards, it's got to do something with G Forces but, damn it, it hurt so much. Still, it was rather rapid once you were going up. And up there it was, just was, I even managed to get some sleep up there. But then the descent was pure agony. Beforehand I would manage to get some photos taken. I had actually my seat next to me free so I, at last minute, took the advantage and grabbed my backpack and shoved it underneath the next seat. Unpacked my DSLR and in the first event ever I would document part of my journey up in the skies. And it was a good decision. Now I could see Male from up in the skies. Leaving behind a... actually, kind of clear paradise. Cause Male, was, well, Male. Most people coming and going would be primarily just going to their resorts. Where they wouldn't need to care and all went in American $.
+    </p>
+
+    <p>
+      Ahh, where was I. Eventually even I had to chill. Cause I literally had the chills now. The timing was near perfectly amazing, I mean, so close to home, I had the opportunity to see Male and I think it might have been the AC that did it. Plus all this walking around in heat and humidity and, really, my shirt was like a rug, all in moisture. No kidding. I figured, it would end up like this, maybe. But on the other hand, keeping all my body in heat, this usually has a positive effect. Not this time, though. Good I had a shower before departing! Good I kept myself alive beforehand and survived the night before! Good I had a place to stay and rest the night earlier! Well, this time I managed to pull through and I had the idea of taking a train to a city, seemed like a governmental complex between Kuala Lumpur and the airport. But, not a chance in this case. I really felt it, once I pulled off the airplane and boy oh boy I felt the descent, the agony was so great that I haven't felt as bad in a long time now.
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120793722_15f88e3e9e_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120793722_15f88e3e9e_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+  The Airport was cool. In fact, it reminded me of why I deemed KLA airport as my favorite. First of all, it looks great. The architecture really is. Secondly, it's very well connected and it's got a diabolically great set of stores just right outside the airport. You may ask, what about inside it? Well, good you asked (I mean I did), cause I ended up in an area I have not been to. And it was a good area. It had a phenomenal dining area. It had Maccas, Popeyes, Asian, Indian, Malaysian. I think I went with the latter, some sort of an original soup and I had some of the Asian (now that I think about it, what I said before was actually in many cases Asian), so I'll elaborate: it was like Chinese actually. The Malaysian dish I had was great, though. Can't remember what it was. But what amazed me was how tasty and how cheap all this was. Turned out that Malaysian currency is pretty much the same as the Polish one. In fact, slightly less strong. So that meant, that whatever cost about 20, cost about 8 AU$ and that was a meal up there, a tasty and a relatively good portion one. They had wifi, a bit jobby but it worked, one of them at least cause they had a couple of different ones. Finding a power socket was, near, impossible, so that's a minus. Another minus was that the area was a bit of a maze and getting money out of an ATM and withdrawing from it was difficult. Another minus was, that once I got to my terminal, the bloody thing doesn't have stores selling water. This must be some sort of a feat on the AirAsia carrier side. And I was a bit mad but also tired, so I couldn't really figure out, you know. I mean, I had to survive this thing. I don't know what else to tell you. Perhaps just that the KLA staff is more than competent and they all operate in fluent English, from my experience. Malaysia, from this experience I had? It feels like a developed country. No kidding. I think it actually is.
+</p>
+
+<p>
+  Now, for the part that got me a bit concerned. The symptoms. Oh boy. I sweat there must have been a mild fever. I had my runs. My right ear was pretty much deaf. Like -40dB, easy. My cognition was barely working. I was tired. But not enough to know that, ok, for once I gotta eat. And that I need some sort of Otrivin to clear my nostrils. That cost me actually about 30 rupees, or was it 50? Anyway, they have nice polymer currency. In any case, I got that, I spent my few hours at this airport. And then, I got myself through all the checks and... the guy at the airport had doubts whether the guy in the passport was really me! Damn. Hot damn. Well, I got through. On my way to Australia.
+</p>
+
+<p>
+  Lots of mixed feeling up there. Lots of pain, although this time, ascension was painless. Lots of time to chill, trying to figure out what next but, honestly, not that far, more like, how do I survive up there without, idk, like swarming pathogens and such. But honestly, this was the final bit of the trip. So far, I managed to walk through trash, not sleep much at all in Helsinki, catch one of the last buses that I could to Colombo's airport, show my ticket on a nearly uncharged laptop and get my phone shattered in Delhi, survive Delhi without a map, survive most of the trip without almost any internet. I mean, the heat, the weather forecasts, this was not supposed to be a trip that I could get through with. And then the illness and my fucking eardrums that sometimes I feel up to this very day I'm writing these words. With each next trip it's as if I'm becoming more of a daredevil and asking myself to just, snap and fuck something up in this machine that I create and the cogs I put in. The total trip did not end up too expensive but it certainly was a bit more compared to as if I just booked a ticket to Sydney over some city on the way. But I guess I just had to do my thing.
+</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120793447_c612abf099_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120793447_c612abf099_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      Well, back home was a bit of a weird thing. I was coming in unannounced honestly. Most of the people coming off the airplane, not from here. Could I call myself from here? Well, I do have the passport but does having a passport really make me, let's say, Australian? I am riding this boat and the system it's embuilt into. I mean, even the machines would not recognise me usually once I got back, the passport machine reading thing. This time, though. For the first time, it let me through. With me, barely alive, staring at the damn camera, looking like, who knows how I looked like. I just knew I had to go find a toilet at that stage. Diarrhea is nothing nice to have. I just got my things. Went through the check, the guy ticked it off, I think he asked some sort of a question but I don't know what it was. He let me through. I think I asked just to be sure which number he said but it was the one that means, fuck off the airport now.
+    </p>
+
+    <p>
+      Being back, well, it wasn't as cold as I imagined. Usually whenever I was coming back to Australia, theoretically, not exactly but, I usually would recall it as a cold paradise. It was this time but, honestly, what is the time it's not cold really? The damn island near Sydney usually is cold and it's not only during these damn 3 months of summer, when it's either scorching crazy or it also can dip solidly and on the other days? Bit warmer, colder nights and the winter it's just chill but can get bit warm midday. Am I complaining? Maybe I am. But here I was, making my way to the train and... realising I don't really have my Opal running so I recalled that now I can use my debit card! To get me through to the network. A-ha! Like usual, when I figured this could become the future, it actually became! Nice that Sydney is improving, slowly, going some way and improving. With each year, more gigabytes on vodafone, something better suited to travellers on Opal, perhaps the alcohol becoming more expensive (it does). Ah, well, that's Sydney, alright.
+    </p>
+
+    <p>
+      And here I was, coming home. The damn trip, especially walking back was something. The first thing I did back home, was go to the toilet. And say hello to my dad, who did not expect me back. Because I didn't say a word. Because that's what I usually do, not say a damn word to anyone about me coming home or not coming home or arriving somewhere but not here. Freakin' anywhere, whatever. It's just how it is and honestly, that's how I kind of like it to be. Just me being damn free and perhaps saying hello all of a sudden, coming out of nowhere, drinking double pulp orange juice and doing whatever in the most bizarre and bizzare way possible. It certainly doesn't bring me any fans out there. But it worked quite well for me so far. I need some sort of independence and feeling of being autonomous in my life. It's a really nice feeling to have. Being free.
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120793317_77dfc6522b_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120793317_77dfc6522b_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+
+<!-- 
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/50171902827_929e65d40d_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://xc2xfq.by.files.1drv.com/y4mA5TfG3TcoH9NERXlBVlrtjr9VhNGtkrWPF9UQrBXOQ0w25_4jX1mTvyNpiDQ_WU0zc5zyjdY-CDOJV5ZlULQPIK2mJjWLkhc0awg2JrlUdfhjxIcSgRUPw7ZC6Ko0oy8QUcYoWulMiYlgvYquNy28LTKBAWlI4EoYZUaM1t3QZu9P6wcpLFzoKTJE8BVmLTw5x1crQpkzTTkUOuHC602DQ?width=4000&height=4000&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://xc2mfq.by.files.1drv.com/y4mu73t_7G-2UJbMKH22hhw-h1gUOvV19AH5-AAJGoCYq-1Y0sxYAXbqP9A5pVfK9Uli8YWPqtKr8ZF7-2dUAEprbLp8clYm-RMDEBPM0cjSYMcP8v4GhGtbHY2LJyJAsk52BoX6CifejyvM6K7tkUIz4GXPBjGLkHDHb5Y9gFgtYHrNuFd963bCyCo9_aKHhO0XCnnNbj4BNY6T3dgfOlH4w?width=3240&height=4050&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Sehnsucht II</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/50171902827_929e65d40d_k.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/50171902827_929e65d40d_k.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>First Steps</h4></center>
+
+    <p>
+      Translated from Polish: Today I took a ride from an early morning to the language course. I met a Croatian, learned how an asshole is spelled in German and how to pronounce all the variations of beer both in German and Munich's dialect (major differences)(It's not exactly in Munich's dialect - it's Bayernisch, so a dialect they speak around Bavaria, mostly, presumably outside of Munich). I got to learn that BITCHY in German means BITTE SCHOEN, so more or less YES PLEASE (with a pleasant undertone). And stuff like this, it's an interesting course. Afterwards I did another walkabout of the olympic village, roamed through the fields (reference to an apparently cool setbook from my polish years, I think it's translated differently though), bought a simcard starter from Aldi, internet for 15 Euros a month with 5 GB of internet. At the time, after registration, as it turned out, I had to wait a freakin' 6 hours until they activate my fookin' account. With which I also had a bit of a mess, as I could not register, because the olympic village is a jungle and their system does not handle such elaborate schemes. The next day I plan to take a hike again to the German language course, after which I will register in the local government branch and I hope, I will manage to set up a German bank account.
+    </p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Throwback Thursday.</h4></center>
+    <br>
+
+    <p>
+  In the meantime, I still have to send out a shitton of emails (at freakin' last), perhaps I'll knock on the door on one of my neighbours, as I'm literally surrounded by the whole lot of 'em and I know nobody (and I have no idea whether I'll get to know anybody, as I reached out to one person in English and I only received a mute mode instead). That having said, it's a good idea to make use of the warm Munich days, especially the Biergartens. I'm wondering whether I will manage to drop by Warsaw for 24h, as I also need to figure out myself a bicycle (otherwise the ticket prices will murder me). Eh... Lots of shit to take care of, life is expensive yet I'm quite lovin' this place. From this day to be fair on its own good accord, I'm de facto on my own and... due to this, for the foreseeable 11 months/48 weeks, it's lookin' sooo pretty. It will be beautiful. It already is.
+</p>
+
+    <p>
+      I'm not sure where to start. I'm not sure why I didn't continue with my writing. As you can see, Sehnsucht is not only a title aa metaphor of everything you see here. I'm not sure whether I want to write. I'm not sure whether it's worth writing. I know however, that something like a routine could help me with acclimitising on the spot and I know, that I will need to blitz about through all the days. Otherwise.. where did I finish up.. oh right, let's move back to Wednesday.
+    </p>
+
+    <p>
+      I managed to register a number in Aldi. I kickstarted my Fuad-Fu, language version VERSTEHEN DEUTSCH, EIN BISSCHEN (understand German, a bit) and it pulled through, bam, bam, bam. Perhaps 15 minutes, yet by some miracle I managed to get through in Aldi, that I need a starter. By some chance, I managed to figure out and understand what's happening with the starter. Somehow I managed to get it started and after 3 hours it was swinging like a mate cream (yeah, I know, that's what I said). 5 GB for 30 days for 15 Euros, can't beat this!
+    </p>
+
+    <p>
+      Each day I spring out for breakfast. Jet lag only with time flicked the switch on and generally I wake up at 6, half an hour before a random number of Sodom bracing up to transform my room into an abattoir (what I meant by this, was that I had Sodom - Get What Your Deserve as an alarm set, I used to listen to a lot of thrash metal and I think they released a fairly good album at the time) that made me get up from bed to throw my phone the hell away from my balkony. To make things pleasant, I'd wake up about half an hour before the alarm. Bread is typically cheap and I like to grab myself a sandwich with a cucumber... tomato and ham or maybe fromage cheese (I guess any French person will start putting up some question marks up in the air, what I meant by this was like this type of cheese that you can spread out on bread, really nice and fresh-tasting). Such deal is 2 Euros, yet this sandwich + a bottle of cola + caffeine or Spezi which is coke + some form of lemonade and caffeine and I am ready for another day, another battle. And that, despite every single next day felt somehow a little bit less interesting... Perhaps I should become a traveller. That said, in fact somehow I am one already...
+    </p>
+
+<p>
+  At this stage, looking back from 2020 I should specifically point out that these early years felt recursively quite dark to me. Interestingly, it is said that Senhsucht II and III were written on the same day, along with IV, V and VI. You can clearly devise from the tone I was writing, that suddenly it all started becoming a bit more eerie, I was mixing some more darker and regular tones of just me carrying out with life. I'll get back to overviewing this but it's good to remark that, in the course of my 11 months, before and after I had lots of stuff in my head that kind of kept me back and aback, even if I managed to complete quite a journey overall, it kind of came ultimately with a mental pricetag attached that went up and down over my lifespan.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    <a href="https://xc2xfq.by.files.1drv.com/y4mA5TfG3TcoH9NERXlBVlrtjr9VhNGtkrWPF9UQrBXOQ0w25_4jX1mTvyNpiDQ_WU0zc5zyjdY-CDOJV5ZlULQPIK2mJjWLkhc0awg2JrlUdfhjxIcSgRUPw7ZC6Ko0oy8QUcYoWulMiYlgvYquNy28LTKBAWlI4EoYZUaM1t3QZu9P6wcpLFzoKTJE8BVmLTw5x1crQpkzTTkUOuHC602DQ?width=4000&height=4000&cropmode=none" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://xc2xfq.by.files.1drv.com/y4mA5TfG3TcoH9NERXlBVlrtjr9VhNGtkrWPF9UQrBXOQ0w25_4jX1mTvyNpiDQ_WU0zc5zyjdY-CDOJV5ZlULQPIK2mJjWLkhc0awg2JrlUdfhjxIcSgRUPw7ZC6Ko0oy8QUcYoWulMiYlgvYquNy28LTKBAWlI4EoYZUaM1t3QZu9P6wcpLFzoKTJE8BVmLTw5x1crQpkzTTkUOuHC602DQ?width=4000&height=4000&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+
+    <p>
+      I'm not entirely sure what I was doing on Wednesday. I visited a bit Olydorf, took some photos (wasn't that on Thursday?). I any case, on Thursday apart from the regular course, I went out into my own neighbourhood and went off to the local government building, whatever it's actually called. Figure this, I boing in through a building and over there a mr guard in a broken English expressed that I can't go in, as it's full. In the meantime, the place was about to close in... an hour and 10 minutes. Well, how can this be like this and whatever, I ask in this case if there's another bureau. There is. Really freakin' far but perhaps I can make it in half an hour before closure...
+    </p>
+
+    <p>
+      Hehs. I made it. Nobody asked me to leave. The lady in the window routed me left and right and left and something something. 5 minutes I was looking for this something something, which turned out to be just a (printed) number. And with this number I was waiting for 1.5h, or maybe an hour... I got in, good mate bureaucrat had a really great command of English, like super great mayonnaise. I provided my documents, passports, put down my signatures. 5-10 minutes, 'Welcome to Munich', I receive a document and thanks, bye bye. Now I can set up my bank account.
+    </p>
+
+<p>
+  Oh, I forgot, on Wednesday I went to the shop. Well what? I know you don't give af but I forgot to ask for a plastic bag and I had to spring home with toilet paper packed into my blouse's pocket. I was in pain! Especially, that the shop I had was much closer, 5 minutes instead of 45 minutes away. Here I should add that the Aldi I took a hike to the other day was, in fact, fairly far away, as I had to tread kind of around and across the entire olympic village + park. It's a beautiful walk nonetheless but it does take 45 minutes to get there. I wasn't aware there was a local shop just 5 minutes away from where I lived, though. Kinda a fun fact y'all. At times I find places much further than what's just pretty much right at my grasp.
+</p>
+
+
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    <a href="https://xc2mfq.by.files.1drv.com/y4mu73t_7G-2UJbMKH22hhw-h1gUOvV19AH5-AAJGoCYq-1Y0sxYAXbqP9A5pVfK9Uli8YWPqtKr8ZF7-2dUAEprbLp8clYm-RMDEBPM0cjSYMcP8v4GhGtbHY2LJyJAsk52BoX6CifejyvM6K7tkUIz4GXPBjGLkHDHb5Y9gFgtYHrNuFd963bCyCo9_aKHhO0XCnnNbj4BNY6T3dgfOlH4w?width=3240&height=4050&cropmode=none" class="darken"><div class="text">Sculpture in the park</div><img src="https://xc2mfq.by.files.1drv.com/y4mu73t_7G-2UJbMKH22hhw-h1gUOvV19AH5-AAJGoCYq-1Y0sxYAXbqP9A5pVfK9Uli8YWPqtKr8ZF7-2dUAEprbLp8clYm-RMDEBPM0cjSYMcP8v4GhGtbHY2LJyJAsk52BoX6CifejyvM6K7tkUIz4GXPBjGLkHDHb5Y9gFgtYHrNuFd963bCyCo9_aKHhO0XCnnNbj4BNY6T3dgfOlH4w?width=3240&height=4050&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+
+    <p>Let's roll forward to Thursday. I set up my account in 10-15 minutes and I was in summary a bit sad, as the process looked weird. The mate did not tell me what sort of account he was setting up, he just asked: will I use the internet? Will I be doing it? He explained a few things quite superficially etc. However, such experience felt 50:50, in any case I setup the account, I had to only fulfill a few formalities: I asetup some sort of a key to my internet banking, then I converted my account to have had an account statement electronically (instead of needing to have to fly each month to print it out WTF) and my card should arrive at my place next week. Nice, eh? Looking back, there were a few weird things, like this statement printing thing, I'd see people doing this every now and then. I'd get a weird 0 Euro bill each month I think that was for this. Also, the account was setup as a jugendgirokonto which meant it was for youth. This was perfect, as I beared literally no expenses in such case until I turn I think 25. It wasn't a visa/mastercard card but instead an EC karte, so it could work only with German ATMs rather and I could withdraw up to 200 Euros. Still some extra internet banking was allowed and I used it.</p>
+    
+<p>
+  By the end of the day there was supposed to be an Olydorf sightseeing + I wanted to buy myself a router, two things kind of overlapped. Unfortunately, throughout the vacation period (I was at Olydorf BEFORE the semester started, with a language course kinda spanning through), router can be bought only between 8-9PM on Thursdays (some places in Germany have weird opening hours, like once a day for just an hour like that place). During that time you can always fix issues regarding the internet etc. I decided to still take part in the TourDeOlydorf and yet I managed to buy this router during this tour as well. I missed seeing OlyDisco and some other point, yet I received a free beer in Bierstube (local pub, I'll explain in depth in some blog about what exactly was at Olydorf and why it's the best place on earth for students to live in). In Bierstube, I broke the ice, had a conversation with people and it turned out that I was doing quite well, as some folks from the student staff remained and the rest just departed (there wasn't a lot of us) after which they invited me for sheesha. I think that's the first time I met a group of very welcoming folks that I'd meet every now and then at Olydorf. I think this was still my first week, day 3 in fact.
+</p>
+
+<p>
+  Sheesha was really cool. With 3 pipes. With a taste of... what taste was this. Peach-mint? They smoked something with the coco coal (yeah, could bear a different name in English), or something, which they'd heat up for a long time. They offered white wine. It was really cool for a third day in Germany, I even managed to get to know somebody, have a drink and it turned out that one of the folks lives just a few doors down my bungalow row. Everything according to plan.
+</p>
+    
+</div>
+</div>
+<!-- </div> -->
+
+<!-- <div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      A few words about sports. Upon entering Male I was actually quite amazed with how narrow streets there were. And how cheap it kinda was. And then I saw also some people playing some weird game I have not seen by flicking pieces on a board. Now I am at the airport. And they were some thing popping up. A rock concert running for quite a bit by an Asian rock band. Then some Criquette. And then, holy shit, Premiere League and whoever's left at the airport. Hindi, Mali, flight attendants, police officers, they're watching. To speak of an experience binding cultures and generations. Amazing.</p>
+
+<p>I mean, Male is not a special place. In fact, this is a country that you'll go to, only and solely for the purpose of going for a holiday but only to a resort. A private resort. One you'll need a speedboat or a water plane to get to. The hotel I was in, which was an inn actually, wasn't that bad. I had some problems with finding a good place and eventually I booked this last-minute which was a good decision, although a bit stressful one. Basically I put forward a bit more money but I received the bang for the buck - taxi all the way to the place and from the hotel to the airport at the place's cost. I got breakfast, which was a set of take what you need: fried eggs, sausages, broccoli, some pastries, fruits etc. I got a refill and some coffee. Also you had a coffee machine in the place and tea and bottles of water, all complimentary. All this, for a bit like 70U$. I felt like it was a good decision in the end. Although I feel I should have booked something else, also had wifi and the luggage carried which was unexpected. Got wifi. And the other complimentary stuff, I mean it was literally a 4-star hotel. Perhaps 3 but on the verge of being a 4. And I got my sleep. 7.5 hours. That's a lifesaver, trust me folks on this one.</p>
+
+<p>One of the last problems that I am standing in front of, is my condition. Usually when I assemble my travel puzzle pieces I don't really take under consideration the fact that me, as any other person, can fall ill. I mean, obviously there are the hazard of eating in Delhi or getting some forms of malaria etc. But what I usually don't really take seriously is my condition to just fall ill and it all starts from dust. I started feeling a bit off while in Poland and then for serious in Helsinki, although it got better. Eventually, perhaps the large rollercoaster of AC and humid heat decided to stir shit in my body and in the end, at the airport, I am basically inept a bit. As in, sneezing, yellow phlegm. Kinda standard and the funniest part - it always gets to me at least once or twice a year. It's great that I decided to cut short my trip, hehe, as shorter it gets I mean, by having a shorter transfer in Kuala Lumpur. This way I will be able to get home faster but at the same time, there are hazard associated - cold aircraft's AC, the need for food and water. Basically I won't end up seeing anything in KUL but perhaps I'll be able to go to sleep faster. That's what I'm counting on. It's good that they had showers at Male's airport, this way I was able to get off all this sweat that I've accumulated in hectolitres while stumbling through Male. That probably also contributed negatively. Oh well.</p>
+
+<p>Side notes: Neon Genesis Evangelion - Stratosphere Love<br>
+    Chernobyl - Northlane 4D</p>
+    
+<p>Being deprived of sleep creates very interesting cognitive patterns. At times you'd feel as if you've seen something, like a mild form of -nesia kicks in. Also, listening to music makes you realize, that it is kind of deprived a bit of bass. Tonal environment and reception is especially interesting.</p>
+
+<p>And UFC is running.<br>
+Also, remember!!!11 Human Trafficking is illegal!!!!!111
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div> -->
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49120005418_256cb172fb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49120005418_8faa443cf8_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+     What may surface, and I, come across once I hit the road 2 hours before actually making my mind of actually doing so? Apparently, quite a lot. And as it turned out, quite a bit did actually happen and not happen as a result of me making prompt and last minute decisions, swiftly altering my already stretched out, yet flexible schedule. Knowing only rather vaguely the destinations I decided to hit, combining and researching them beforehand, relatively diligently. So that I did not turn up frozen at one destination, yet constantly in motion. From point A to B during the day. Point B to C during the night. Once I've done tens of kilometers during the day. Even over hundreds of miles were made during the night. This is not a dream. This is kinda the reality I decided to face, although even had second thoughts once I flicked the switch and up and went.
+
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      And so, Montpellier, Lyon, to be honest even Barcelona had to wait. In fact, I didn't really know if I would be able to complete the entire trip with keeping my integrity in tact. Sanity-wise, as sleeping in the bus in theory does work, in fact, the trips are usually extreme. Bear in mind, multiple stops mean lights turning bright every couple of hours (even in shorter time spans). The seats, despite that, yet again in theory, comfortable and possible to alter its angle to enhance yours sleeping comfort. In the end, caffeine was not the only thing you needed to prevail your mind in being able to draw out all the tasty and particular details, that you and everyone might like and be willing to capture deep in your mind. As apparently travels educate people on one of the highest levels (I made that up, yep). Although, mister and missus (), you do realize that is true, once you actually have reached a certain point in life, right? As in order to make all the even spicier connotations, you need to relate them to something, anything in your mind. It's good to have a solid library already sponged, thereafter all the travels might prove to not be, objectively, a mere waste of time and money, whichever, low- or high-cost adventures we're speaking of.</p>
+
+<p>And in relation. Recently I've started having second thoughts regarding having done all of these travels so far. Despite me trying quite hard to make all of my plans really low-cost and making sure that I could get the best bang for the buck, I'm afraid that once I start doing all the calculations, the endgame will not look that pretty as I previously have thought it might. But therefore, life is about decisions, question if the once I decided to make were as optimal as I preferred them to be. Sure, exchange is the best time to do all the travels and so-forth and even then, I guess I were quite late with trying to do so many, yet, not that many of them. I could have pre-planned them in a better fashion, find even more sophisticated ways to conduct them. But then, even if I guess, I might've reached around 70% of the capacity of my strength, research and use of my knowledge, there are always ways to cut down on this and that and pretty much everything to be quite frank. So far I've managed to cut the total expenses by around a third by saving up on accommodation and probably more than half of the time it took me to experience villages and cities. But where I make saving, somewhere else I make expenses (probably badly formulated use of English, I know). They do not vanish, rather get redirected. For instance, when I was really rather content about saving up 15 euros on my two way trip to Switzerland (79 minus 15 Euros, yippi!!), it turned out that I might have spent over the original values just on food itself. I know, life is expensive and so food must be alike. The problem lays a little elsewhere, though. One thing is travelling itself. But if you'd like to learn a little about the country's culture, one of the best ways to do so, is just go out and eat. Unfortunately, a hefty price tag is attached to it.
+
+
+    </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      And while I'm at it. The price tag itself for conducting all of these trips is ever heftier in reality. The truth that I am actually the one bearing the ultimate price for all of it, the trips, food, living in Munich, so on and so forth kind of makes it a headache. It's not a thing that pains me ultimately, as somehow I was able to set myself up nicely on an insane ground, from which I didn't really have to bother much about expenses all in all to begin with. A nice turn of events, considering all the struggle I had to put up with throughout my first 1-2 years spent in Sydney. Once I applied the Australian standards, including regular life and income to what's the reality in Europe and all that goes with it. Then added my Polish citizenship and some benefits it brings along. Plus threw in even a little more, plus kinda a shitload to it, by some additional means I would rather not get into (maybe some day), it seems that I acquired a really one of a kind perspective so early in my age (that I recently was being reminded of on a number of occasions) and that I really neglect to see, so much that the idea in my mind dissipates to a degree I can't even recognize it anymore. So spending money was and to be truthful to my words, is still not much of a problem in my case, which, again, is absolutely absurd, because, once again, it is my own money that I'm operating on day to day basis and it did not come in substantial part from my upbringers. It is my own and that actually makes my mind struggle every now and then, as it could have been invested in so many different ways. How about I start a company? How about I start learning different languages? Buy myself new, professional equipment that I'd put to use for my future? How about I put it aside and let it grow on some bank account or perhaps put it in motion and play on some markets? How about I did not actually give a fuck about anything, just live minimally, set the money aside, learned and waited until I was done with my studies and then lived relatively comfortably for years back home near Warsaw? How about, how about...</p>
+
+<p>To make it easier for my life and primarily my head, was to tell myself that the majority of this money ought to be spent on research. As a designer, it is crucial to make connotations and see what works and doesn't and applying solutions that were used in different (even if similar) cultures may bring ideas and actually benefit what I create and come up with. A new perspective, solid grounds from which I may draw an ocean and restructure it to make people thrive by it. Even more than by what it already delivers. I consider it investment. I consider it research. I consider it a great basis to hop on off, to start a company in the future. Staying put for to long eventually fucks up with my mind, I find this peculiar pleasure which comes with travelling, especially every now and then. It somewhat relaxes my mind, by actually introducing an ocean of incentives based on which I may draw so many details from and transcribe what I see and learn on, let's assume, electronic paper. I guess, it may be somehow true that I can write. I guess, it may somehow be true that I can take pictures. I guess, it may be true that I am able to postprocess them. And I guess, it could be true that I may somehow do a tiny little bit of more than anything and by approaching each in a subtly quite appropriate ways, something really good may surface. Take, conclusions from all the travels that I made. All presented in a neat way. Ultimately using what I've learned. Combining highlights with drawback and turning both synergically into an even brighter highlight, which may be used as a vehicle to an even brighter future. I wonder, if I ever will be able to match what I'm living now.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+What a sudden turn of events! The suspense, the explosions.. Oh, wait. No explosions yet. But then I kinda sliced and torn my trip along and apart. The one that hardly withheld its own integrity, as there was hardly any. The plan was designed just for pure orientation of where and when (primarily: what time). How, what and why were kind of secondary concern and within its' limits, showcased its' wrath, of negligence and dullness. So: Cannes, Monaco, Nice, Marseilles, Toulouse, Bord.. hold on. No Bordeaux. See, the plan spanned already two days and I was supposed to survive quite over five. Bordeaux, Lyon (a day), Barcelona (another day), Montpellier, again Marseilles and then bon voyage back to Munich. The morning spent in Toulouse at one of its university campuses, with the primary intention of charging up my electronics and booking up the following tickets (I haven't booked the remaining!) pushed me into thinking of some alternatives, especially moved by the idea that, to be absolutely honest and sane by what I'm about to say: flights could actually come cheaper than bus and trains. Yeah, ridiculous right? But I'm all about ridiculous and it seems I'm better off this way. And so, as a needle in a haystack, there it freakin' was, ridiculous in all its bloody glory and wholeness. It's highness, 200 zł przelot, yy, flight. One way by the polish national carrier. Which meant: no additional expenses, just get to the frickin' airport and bon voyage. The only issue that remained: the flight was scheduled the next day, midday and I was in Toulouse. Should I sacrifice the rest of my trip for getting some rest (and along some beers with friends) back home? I figured, fuck yeah. Last ticket, let's do this. I'm already dead tired, not making any trips for a while and the examination period, with some late night working and drinking and smashing my head heavily with a combination of obligations and deadlines left its toll and came down pretty hard, prevailing my status of an isolated alien not able to cope with everyday life. I thought of going somewhere. Withheld my decision. After one, two days finally made the decision that I didn't really want to make. And throughout the journey, another have arisen. I have seen a paradise one may have dreamed off, a paradise lost which seems to be the quintessence of modern times apparently stereotypical problems, a paradise in which there's pretty much nothing, a paradise split, in which the main part was nicer than the modern part, a classic paradise, which was not a paradise but felt as such in terms of the feel of in which country I was. Then I kinda made a paella, in which instead of going somewhere I decided to go somewhere else. This is one of the worst metaphors, but I did eventually turn up in Barcelona just for the night, though.</p>
+
+<p>So, instead of staying home I landed up... home. About which I had, let's assume, third thoughts now. I mean, I'm still in between semesters. What the flying f... am I doing here instead of trying to make the best out of my exchange? So, ziuuu... what's available around Europe. Oh, Rome, 120 zł. That seemed like a good deal, but it was already gone. Everything was pretty much gone, except for Lisbon, A little expensive, around 230 zł one way... but with return, a total of 340 zł. Now, bear in mind, it's an equivalent of 110 AUD and perhaps 80 EUR. While the distance is approximately around... well, 3000 km, so perhaps it's a trip equivalent of Melbourne - Perth. I thought of hitting this area, but then even flixbus runs into its own limits. So, instead, I guess I took a round trip through Warsaw, somehow bouncing back and forth between cities. And I would probably have continued the voyages, however, I still need to learn of my exam results. So I imagine that I'll need to wait up for these and eventually just pick up on some other last minute tickets. Well, living my live off discounts. The only catch was? I had to take my flight from Katowice. To which I had a student discounted train ticket by half (if studying abroad: need to be under 26, have an ISIC card and prove you're a... Polish citizen. Although, I was checked for the latter just once in my life!). And a transport by bus, which took half the time the train took me, but the full of the discounted train price.
+
+
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    <p>The first impressions were not as distinct. First of all, I was met upon with 10 degrees during this lovely evening. Perhaps the coach that took us to the terminal seemed like a tank and kind of felt as if it was driven like a tank. The airport itself? Relatively huge, but then a few elements reminded me of Warsaw. The airport was located really close to the city center. In fact our approach to it was really close, next to some highrises and such.</p>
+
+<p>po polsku bo mi się nie chce inaczej</p>
+
+<p>Być może na Okęciu nie przelatuje się koło wieżowców, innych budynków mieszkalnych. Na pewno nie wieje aż tak bardzo, że trochę się człowiek czuł, jakby ten samolot miał zaraz pierdolnąć w jeden z tych budynków. Aczkolwiek, jako tako, Okęcie a lotnisko w Lizbonie mają wiele podobieństw. Tanie linie z nich również odlatują, choć z innego terminatu (u nas też niby, ale nie trzeba jeździć dookoła). Do tego... Lizbona jest połączona główną linią metra, czerwoną, czyli w zasadzie bardzo łatwo dojechać blisko centrum. Autobusy również jeżdżą tanie i regularnie. Jeden przejazd to jakieś 1.45 Eur + 0.5 za kartę wielokrotnego użytku, którą potem odpowiednio się doładowuje. Wygodnie.</p>
+
+<p>Cóż, zimno było, pierwsza noc, to jest zakwaterowanie, tutaj zielony jestem, ale postanowiłem, tym razem turbo bez sensu, że znajdę sobie zakwaterowanie jeszcze na lotnisku w Katowicach. Pomyśleć chwilę i wyjdzie, że coś tu się nie zgadza. Ano lot zabookowałem na dosłownie kilka dni przed wylotem, bodaj 3, czy 5 w sumie... A na miejscu szczerze nie miałem na nic czasu, bo odsypiałem poprzedniego tripa, bo jakoś tak wyskakiwałem na piwo wieczorami i wracałem o 4 nad ranem... swoją drogą, przed wyjazdem do Lizbony to samo miałem, piwo wieczorem i powrót o 4 nad ranem (dzięki Ryczek! - choć biedny, o wyjeździe wtedy nie wiedział za bardzo.). Toteż, tak naprawdę szczegóły dopracowywałem już last minute, z wyjątkiem pociągu do Porto, które wyjątkowo się niby opłacało za 27 Euro w dwie strony zakupić z wyprzedzeniem. 20 Euro za noc w jednoosobowym pokoju ze wspólną łazienką na korytarzu. Blisko centrum, dobre opinie, booking.com i jedziemy. Wyszło nieźle. Noc była przyjemna, chociaż ciut hałaśliwie za drzwiami bo podróżni też byli kwaterowani po godzinach. Ale generalnie to minimum było zapewnione, plus gratis kawa z rana i łazienka była całkiem całkiem. Ad hocem, wciąż przy temacie. Kolejny drugi nocleg już był za 30 Euro i jedyną przewagę jaką miało, to sporo przestrzeni i łóżko, i blisko dworca, z którego startowałem następnego dnia do Porto, na który wybrałem się o godzinę za wcześnie (nie ma to jak różnica 1 godziny i dziurawa, pseudo-profesjonalna apka stworzona przez narodowego przewoźnika kolejowego!).</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+     Ale dobra, Lizbona. Z tym miastem mam problem, miałem duży problem. Taki podstawowy problem? Jest to spore, rozległe miasto. Trzeba dużo chodzić. Kolejny problem? Zabrałem buty, które kompletnie nie nadawały się na typowo kamienne ulice, pnące się to w dół, to w górę, bowiem jest to miasto położone, jakoś ponoć typowo, na siedmiu wzgórzach (chyba walory obronne). Mimo wszystko, dzięki takiemu miksowi, nie byłem w stanie bić rekordów jak przy Paryżu czy Szwajcarii. Odległości w linii prostej to jedno, trudny teren (a konkretnie jego kamienne wyłożenie) to jeszcze inna para kaloszy, a że przy tym trzeba się piąć to w górę, to w dół? Po 20 kilometrach człowiek miał już dosyć, a do tego raz to mroźne przedpołudnie (poniżej 14), raz to upalne popołudnie (ponad 20 stopni) doprowadzało człowieka, tak subtelnie ale do, szewskiej pasji to jeszcze nie, ale zdezorientowania. Gęste, nie do końca logicznie toto wystrzelone, toto zapętlone uliczki, z chodnikiem na tyle co to by jeden przechodzień się zmieścił. Przy tym pędzące samochody, nie zważające do końca na pieszych i vice versa. Architektura, która niczym się w zasadzie nie wyróżniała, ew. czerwone dachówki większości budynków w przestrzeni, raz już człowiek wspiął się na jeden z wielu robiących imponujące wrażenie punktów widokowych w Lizbonie.</p>
+
+<p>To naprawdę nie jest łatwe miasto, przy tym, na tyle rozległe i różnorodne, że szczerze mówiąc, podobnie jak Paryż, wypadałoby tu spędzić jednak z tydzień, aby odkryć wszystko co trzeba, obejrzeć muzea, a przy tym wybrać się do kilku suburbiów, albo lepiej: terenów, które wypadałoby po prostu zobaczyć jak np.: Sintra, którą miałem okazję odwiedzić, z kompletnie obolałymi stopami (do tego stopnia, że serio już tylko kulałem od punktu A do B). Wydaje mi się, że udało mi się zwiedzić dosłownie wszystko, prócz samych ew. atrakcji płatnych + muzeów. Niestety, sama Lizbona, jej centrum oraz przedmieścia... po prostu nie zachwyciły mnie niczym szczególnym. Klimat jakiś jest, ale brakuje go, byłbym rzekł, nawet monumentalnie. Może to wynik trzęsienia ziemi, jakie nawiedziło to miasto nie tak znowu bardzo dawno (40-50 lat temu)? Jedyna dzielnica, która faktycznie zachowała integralną zabudowę, oryginalną, niby faktycznie dość charakterystyczne, ale podupadłe, byłbym rzekł, nawet trochę zapyziałe. Po prostu, brakowało tego klimatu. Serio, chcesz zapierających dech w piersiach widoków na miasto? Tych jest tutaj nadto i faktycznie warto. Być może autentycznego portugaleskiego jadła? Tutaj też znajdziesz, chociaż, tutaj muszę z przykrością zauważyć, że wszędzie tylko loga, loga i jeszcze więcej emblemantów, knajpek oblepionych wręcz na bogato "TRIPADVISOR RECOMMENDED", czy innymi portalami, które ponoć zachwalają to miejsce. Osobiście? Bardzo złe skojarzenia mi to przywołuje, bo takie retoryczne pytanie: Jeśli twoja knajpka jest dobra, to po chuj ci te wszystkie emblematy? Przecież miejscowi będą oblegać, turyści też bo będą wiedzieć na swoich apkach i przewodnikach turystycznych. Jeśli gotujesz dobrze, to nie musisz mówić wszystkim, że gotujesz dobrze. Nawet jeśli inni mówią, że gotujesz dobrze, to przecież liczba klientów oblegających lokal i pozytywnie recenzująca twoje jadło będzie wyznacznikiem jakości, a nie emblematami zaspamowane drzwi wejściowe?
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      Tak ze swojej strony muszę przyznać też, że tym razem podszedłem wyjątkowo krytycznie do tego miasta, w ogóle coś dały mi się we znaki jakieś przeobrażenia psychiczne, na moje negatywne, ale kto tam wie. Tak na dobrą sprawę raczej nie miałem za bardzo na co tak szczególnie narzekać w tym mieście, po prostu nic się tutaj nie wybijało za bardzo. Nic szczególnie ciekawego. Nic szczególnie wartego uwagi. Trochę ładnych widoków. W zasadzie, to dalekie przedmieścia dopiero ukazywały jakąś taką wartość, że to faktycznie nie była Lizbona i że to się dobrze prezentowało nawet. Tymczasem w samym centrum, co chwila zaczepiający szemrani ludzie (serio, nie mogą zatrudnić jakichś nie wybijających się osobników, tylko takich typowych spod ciemnej latarnii?). Zastanawiam się co to za standardy, do tej pory to jedynie w Hiszpanii i w Portugalii takie numery, że zaczepiają ludzi i gadają coś po swojemu byle opchnąć jakieś gówno. Autentycznie mąci z wrażeniami jakie człowiek zgarnia po wizycie, ale... w zasadzie to nie miało to z czym kolidować, bo w tym mieście tak w zasadzie to nic specjalnego nie ma, co by autentycznie zachwycało, no prócz widoków.</p>
+
+<p>Co mnie również zaskoczyło to lawina turystów już o tej porze roku. Autentycznie, byli oni wszędzie. Może nie w suburbiach, od których zacząłem swoją przygodę. Swoją drogą zaklepałem sobie 15 giga za 15 euro w vodafone na 15 dni, co uznałem, za całkiem w porządku deal jak na standardy europejskie. Chwilę czekałem, ale ekspedientka autentycznie płynnym angielskim wytłumaczyła to i owo, chociaż wydawała się ździebko tak sobie uprzejma (?). Co swoją drogą jest jakby standardem tam, wszyscy raczej operują angielskim, płynnym nawet, lecz nie są do końca uprzejmi. Nie wiem czy to przeze mnie, że ja nieuprzejmy, czy oni faktycznie tak na codzień nie lubią po prostu turystów, chociaż starałem się lastminute nauczyć podstawowych zwrotów jak dzień dobry, dziękuję etc. A może po prostu nieogarnięty byłem. Również mają ciekawy styl w uniwersytetach. Pierwszy rocznik ubierany jest na czarno (och, jak żałobnie! - suchar). Ponoć jest z tym jakaś większa kultura związana, w szczególności ze studentami w Coibrze, starej stolicy Portugalii. Mają nawet powiedzenie: Braga się modli, Porto pracuje, Lizbona się bawi, a Coimbra studiuje. Więc, no taka kombinacja, że się skarżą, w szczególności Porto, że podatki idą tylko w jedną stronę (i gdzie przepraszam bardzo giną? Bo serio w tej Lizbonie nic szczególnego nie ma, nawet renowacji nie widać by przeprowadzali za bardzo...)
+
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      Jeżeli chodzi o jedzenie i picie to miałem okazję zjeść niezłego dorsza (no, może dwa) w takim kompleksie jakby pofabrycznym, gdzie akurat można tanio, choć turystycznie ździebko zjeść całkiem nieźle. Kelner nawet doradził co warto i co warto popić do tego (zielone wino! - VERDE). Winko faktycznie fantastyczne. Dorsz siedział na bodaj, gotowanym szpinaku? Czy rukoli? Takie jakby gotowane, pieczone młode ziemniaczki. Deser z kolei smakował jak syrop glukozowo-fruktozowy. Wróć, nie wiem jak ten smakuje, ale deser smakował jak syrop. Jak tak smakuje typowy portugalski deser, to dziękuję bardzo. Innym razem znów dorsz, niezwykle łagodny i subtelny w smaku. Też, podobne połaczenie, choć z oliwą i być może ździebko przyprawami (których nie pamiętam). Do tego zupa rybna, która... niczym nie zachwycała w sumie, była jakaś taka zupna, bez szału, bez zachwytu. Mają też takie świetne niby-babeczki, z budyniowym wypełnieniem i wypiekane z kardamonem i cynamonem. Wszędzie są, wszędzie smakują tak samo, ew. trochę bardziej czerstwawe tu i tam. Zjadłem ich w luj. W Sintrze mieli trochę inne smakołyki, które były po prostu niezłe. Znowu, niczym się nie wyróżniały. Nawet taki kompleks LX (coś tam), które miało być takim rozrywkowym supercentrum, gdzie świetne jedzenie (i imprezy po godzinach) miały być. Wiecie co? Nic tam nie było, takie opuszczone wręcz miasteczko, gdzie ledwo co było otwarte. Tylko takie te żeby latały jak w filmie w realiach dzikiego zachodu brakowało.</p>
+
+<p>Niektóre kluczowe atrakcje dawały mi na myśl, że jestem obecnie niemalże w Rio de Janerio. To pewnie ze względu na Jezusa spoglądającego na miasto, ciekaw jestem kto był pierwszy, Brazylia czy Lizbona? Jezus tylko, tym razem po drugiej stronie zatoki (cieśniny?). Ogółem odczuwałem jakby klimat Ameryki Południowej, bodaj może Łacińskiej, choć do końca nie wiedziałem dlaczego. Że Brazylia, to ok, bo Portugalski. Ale feel był niemal autentyczny, stylistyka, zachowywanie się ludzi, a nawet ich karnacja, gdzie wiele osób o ciemniejszej bądź i również czarnoskórych można było spotkać często (swoją drogą, studenci przeważali biali, takie rasistowskie, lecz serio obiektywne spostrzeżenie). Wszystko takieś takie leniwe. Sprzedawcy przed sklepem, tutaj jacyś miejscowy gaworzą po portugalsku o czymś, jakichś problemach chyba. Innym razem z samego rana wszyscy ciągną do jedynej kawiarni otwartej o 6 rano, w szczególności pracownicy ranni, którzy gromko biorą raz po raz (ludzie znaczy) po espresso. Ale tak już popołudniu wszystko toto leniwe. Sklepy wyglądają dość biednie, jakby też zapadłe. Jakby jakaś Kuba, tylko że zaryzykowałbym stwierdzenie, że bez tego autentycznego klimatu jak tam.
+
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      To wszystko wymieniam generalnie z dużym zaskoczeniem jak dla mnie, ponieważ Lizbona ma wszelkie predyspozycje do bycia strzałem w dziesiątkę, takim faktycznym młodszym bratem Hiszpanii, który wciąż jest chyba traktowany jakby trochę po macoszemu. Odrębna stosunkowo kultura od Hiszpan. Z bogatą historią, kiedy faktycznie mieli dość olbrzymią flotę. Dość mocno religijną, z ogromnie obleganą Fatimą na czele. A sama Lizbona, położona na wspomnianych siedmiu wzgórzach, co powinno gwarantować genialne widoki oraz przy malowniczej zatoce, wokół której wieczorem tlą się miliony światełek. Do tego: dwa widowiskowe mosty Vasco de Gama (jeden z najdłuższych mostów świata!) oraz w zasadzie replika malownicz... no przyjmijmy, że malowniczego, choć osobiście stwierdziłbym: monomentalnego Golden Gate Bridge z San Francisco. Z góry to wyglądało dość urokliwie i w rzeczywistości wciąż jest. Ale co z tego, że powierzchnia wygląda cudownie, skoro wewnątrz próżno szukać czegoś równie urokliwego? Może faktycznie to trzęsienie ziemi wywaliło pół kultury i ducha miasta w... Przestrzegę jednak przed podróżą tam w porze faktycznego ruchu turystycznego. Bo o ile teraz faktycznie ruch był SPORY, tak nie chce mi się myśleć jak bardzo źle to musi wyglądać już w pełni lata. Tam chyba autentycznie ruch staje. A właśnie, ruch? Tam metro przepełnione w godzinach szczytu, faktycznie funkcjonują kieszonkowcy, a na ziemi...? Samochody stoją w korkach, na niektórych kluczowych skrzyżowaniach nawet policja musi kierować ruchem.</p>
+
+<p>A nie wspomniałem o służbach? To ciekawy wątek, bo oni wyglądają jakby mieli wakacje na służbie, generalnie cały czas wszystko w dupie. Ludzie przechodzą nie na pasach? Mają to w dupie. Chodzisz jakoś nie tak jak powinieneś? Też mają to w dupie. Tak w zasadzie mało ich było widać, czasem ew. na sygnale, lecz autentycznie wychillowani i na luzie się wydawali. Co więcej? W tym kraju wszystko wychillowane, minąłem kilka kotów, wszystkie wydawały się jakby im życie mijały dosłownie powolutku, bez pośpiechu, jakby podnarkotyzowane samym życiem... Do tego wszechobecna marka lodów Algida pod nazwą bodaj Ola!, brak raczej domowych lodów (wtf?)... ogółem, nic specjalnego dostać nie było można. Sklepy jakieś takie dość drobne (chociaż mają niby hipermarkety w sumie, z dużym asortymentem!), gdzie woda mineralna to przede wszystkim... no po prostu woda, ponoć gazowanej unikają bo uważają, że tylko dla chorych. Bardzo dziwne wrażenie na mnie stolica zrobiła, przy czym dałem jej drugą szansę i w zasadzie, nic szczególnego znowu nie wyciągnąłem, prócz tego, że były tam może dwie nieco ciekawiej prezentujące się dzielnice z taką autentyczną portugalską architekturą, bogato zdobione, jakby porcelana zdobiona, tak budynki w te wszystkie wzorki. Ale to była mniejszość.</p>
+
+<p>Co innego Porto, które już wywarło na mnie dość autentycznie spore, bardzo pozytywne i już faktycznie portugalskie wrażenie...
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      I might also mention, that, Bern somehow reminded me very, very closely of Sydney under certain aspects. The university position, overlooking the city. The laid-back chairs, although just five of 'em. The overall feel, while walking down the hill and overlooking the city. I don't know, it just felt like homish homy home? Sydney? Well, further down, further further... Fast forward, train to Geneva.</p>
+
+<p>Well, to be honest, as so far I enjoyed my stay in Swiss and I was really, really counting on that the weather would turn out to be quite splendid. 'Cause, the forecasts were looking quite, quite bad, so unfortunate for me. But, I had to do it. Cause, why the fuck not, right? 15 euro voucher is a nice voucher, after all. So, bam. There I was. In Geneva. And there I was. At the Genevian lake. And there I was, waiting for the sunrise, which never came by the way. Bloody, fuckin' clouds, just filling up the skies... And being lit up but with no light really visible, at least the sun. Some mountains in the background were visible. An outline, shady one. Well, welcome to paradise, one might say.
+    </p>
+  </div>
+</div> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

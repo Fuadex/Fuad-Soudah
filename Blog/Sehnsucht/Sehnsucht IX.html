@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/4671/40090789581_848b8495fd_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/4189/34554697631_d2ca1a96ac_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/4196/34187708664_e7c2e49392_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Sehnsucht IX</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/4659/39191863995_575c4d86db_k.jpg" class="darken"><div class="text">First Encounter</div><img src="https://live.staticflickr.com/4659/39191863995_575c4d86db_k.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>8 October 2020</h4></center>
+
+    <p>
+      Writing from the perspective of years feels off in many ways. I'm not sure where to begin and where to end, as there doesn't seem to be a beginning nor an end yet. But also the all in-between seem to continue becoming a bland mish-mash. The details dissapate. The data becomes corrupted and shifts everywhere. The amount of which ever-increases and becomes harder to manage and sort out. And it all just simply fades.
+    </p>
+
+    <p>
+      Who am I writing for? Should I alter what I've written and update with my current viewpoint? Should I reflect, who am I reflecting for? Who my end-audience is? Why am I writing and where should I begin to write? What's the end goal of all this? Can I create something that could be worthwhile for everyone but in particular for myself? Will I benefit of this to any degree anytime in the future?
+    </p>
+    
+<p>
+  There are so many questions and so many ways in which I could lead all this. But I guess I can at least make an attempt to sort out key parts that have been bugging me for a while in order to move forward.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Whereabouts</h4></center>
+    <br>
+
+    <p>
+      I'm not entire sure how to drive this. I guess the key parts are who I was before and after this exchange. Also what I've discovered and learned in the process. But it could be worth reversing way back and seeing a bit closer at what I was built of and how I perceived myself and days leading to this quite golden period in my life.
+    </p>
+
+    <p>
+      To think about 2 years earlier I was on my way to Sydney with no thoughts, no past to back up any future of any kind. It was the obvious approach, yet not exactly what would one call a smart or even a pragmatic decision. Who decides to embark on such potentially perilous journeys like this? I didn't really have that much cash, I didn't really have that much of a plan to begin with, just a rough idea that I might get myself into higher education with not that great qualifications to back it up with. At this stage I might think that perhaps it was my bad, not being diligent enough to perform as well to become considered anywhere. Which isn't all that true. But in the end it all beared enough to put me pretty much in the only place I would have really, speaking from perspective.
+    </p>
+
+    <p>
+      Then, the higher education turned out to be the only thing that really actually pulled off and I had yet another goal, of going on a semester exchange, or preferably two semesters. As this, would potentially secure an almost entire year of my life financially. 6500$ of a loan provided by the Australian government, per semester. About 850$ of ongoing financial support per 2 fortnights. With that kind of power, I could focus on whatever I deemed the most worthy. And in this case, it was education.
+    </p>
+
+    <p>
+      Now, while I'm at the topic of finances, I think this will be a topic that everyone would like for me to clear even before I embark anywhere else forward on. At the time, I was extremely reluctant to share any info of the kind for an entire swath of reasons. On one hand, because I just felt a form of shame of being set in such remarkable position, having access to as amazing circumstances and resources as I had at the time. In fact, I knew pretty much of nobody having better circumstances than I had at the time. It was ultimately unique, considering every single student I have met up until even I had finished my exchange journey. The other thing was, I'm not very eager to talk about finances. Which is probably absolutely an understandable fact. The other thing which amplified this was that I was not even 20 years old at the time. I started this being just nearly 19 years of age! Oh, excuse me, I was actually 20, barely 21 then. How details get all blurry at this day and age eh..
+    </p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    <a href="https://live.staticflickr.com/4189/34554697631_d2ca1a96ac_k.jpg" class="darken"><div class="text">Southern side of where I lived</div><img src="https://live.staticflickr.com/4189/34554697631_d2ca1a96ac_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Well</h4></center>
+
+    <p>
+Well, let's make it crystal clear. At the very beginning I could count on 6500$ of a OS HELP government loan, a maximum 2 of these loans could be taken in a lifetime but my exchange for preliminarily set only for one semester. Then there's the "Youth Allowance", which has a couple of variations. Essentially I could get in Australia about 450$ per two fortnights but if I went on exchange, this amount would total up to about 850$. Multiply this for 5 months and you get another 4500$ and that's not a loan, just money into your account. I thought that'd be about it and it would have likely satisfied me already but it would be meeting ends meet at this stage if I went on an exchange. And there were issues in the process as I was on an even different governemnt program so I had to transfer which hit roadblocks and got derailed for a few months in fact. Once that got cleared up, I realised I was granted at some point an excessive extra, which was a "relocation scholarship" - that's 4000$. Not everyone can get that, the baseline was that you could get it if you were relocating from a rural to a city area or sort of if you also went on an exchange. There were following 2000$ and 1000$ in certain cases but not in mine. Then there was the 1500$ that I received from my University for... oh wait I might have not received that one due to a lower WAM (uni average). It would've been 1500$ but I'm not 100% sure I got that one. And then there's the golden ticket that I received out of nowhere before I head out on exchange - 800 Euros + 1100 Euros of a relocation grant - Erasmus Plus scholarship. You don't have to be a genius to figure out that this was close or even more compared to what I was guaranteed from the Australian counter-part. With a currency exchange rate topping around at EUR 1.5 AUD, this was something that secured my life for good. Very rapidly, I managed to get to prolong my exchange along with all the benefits I had at the time from 5 to 11 months. So in the end, from what I recall, it all came down to something that I deemed absolutely imaginary if I were back in high school - about 45000$ that came through my hands at the age of 20-21 in the course of 11 months all for the purpose of completing an international exchange program. There was some additional money I had on my account before I went. My family would also supply me with some stuff and resources.
+</p>
+
+<p>
+  And to sweeten this up a bit, my rent was 335 Euros a month. This included everything: rent, electricity, water, internet all the facilities right at the olympic village where I had access to everything, metro 2 minutes away, university 15-20 minutes by bicycle, a pub 2 minutes away, supermarket 3-4 minutes, everything everything everything on the spot, can't get more ridiculous than this. You can easily deduct that, well, I didn't have that massive expenditures in the end. Food expenses? I think it was about 20 Euros per day, give or take, especially if I ate at home but there were great student meals for 5 Euros at the pub in the evenings and the student cafeteria usually has great and cheap meals for 5-10 Euros, so I managed. In the end in the end, I think I saved up about half of all the money for the purpose of using it later back in Australia and to potentially to support me through Master's.
+</p>
+
+<p>
+  I must say that I am, speaking from perspective, remarkably surprised how well I was managing my finances at the time. I could've splurged on anything and yet I kept my head strong, knowing that this was a time in my life, that's come from nowhere and about which I could not even fantasize about even in my wildest dreams. Dreams that I did not dream about came just true. And I think I put all my resources to good use, although, I always thought I could have done better than this. Even twice as better. But people kept telling me that that's not really true and I have really done so many things, especially considering my age and all. I guess I might have been even an inspiration to some. All the stuff that came into my life at the time was compared to nothing in my life. It was a dimension that should have not existed and yet I entered it and got through it as there were strings attached. I dreaded a possibility in which I could have failed some units and I would be forced to return much of the money that went into my hands. In the end, apparently that wasn't a rule strictly enforced. But still it put a boot to my ass and I made attempt at squeezing out not 60 ECTS but 78 ECTS. I managed to top it out at 66 in the end. And this was still a ridiculous amount.
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/4196/34187708664_e7c2e49392_k.jpg" class="darken"><div class="text">Neuschwanstein</div><img src="https://live.staticflickr.com/4196/34187708664_e7c2e49392_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Some</h4></center>
+    
+    <p>
+     Many might know by now that I have also travelled like crazy during this time. Partially due to the fact that I had money, well, obviously you need funds to travel. But some folks might have noticed that my travel structure was so immense that it was just beyond ridiculous what I have been doing at the time. In fact, it looked beyond ridiculous. Even outrageous. Just plainly surreal in fact. The truth though was that I have not travelled barely enough in my opinion, I could have doubled that. Now that wouldn't even be in the league of being ludicrous but beyond that you may think but think about it. I was in the middle of Europe. How could I not travel, especially if I have barely really seen Europe during my years in Poland? And after seeing bus deals that would carry my ass around for... 20 Euros a ride? From Munich to Budapest, as an example? Or even longer routes with a set of flixbus vouchers, 100 Euros - 5 vouchers, choose any ride, so even the more expensive routes suddenly became cheap. I didn't quite have access to cheap flights, though. Ryanair is remarkably cheap in Europe (flights for even 5 Euros, like, what?) but these were not quite exactly accessibly in Munich. So... okay, 20 Euros per ride, I get to one destination, perhaps a few along the way, so what about accommodation? Well, what about it? I just slept on the bus! On overnight connections from city to city, sleeping in the bus. Didn't feel like a luxury but I definitely saved minimum double on accommodation. Train rides at a time could also come just as cheap. In any case, with such a system, traversing Europe became like as cheap as a day's worth of food. And food would be something I'd spend on, exceeding my daily food budget quite well over but that was okay, since I had saved on accommodation - hehs my rationale.
+    </p>
+
+    <p>
+      From other expenses, I could consider maybe... semester ticket, which I think exceeded 200 Euros per semester but I could ride as much within the city limits as I pleased. I guess Oktoberfest made a dent in my budget as I made 4 trips, drank an ocean of golden beverages and each cost over 10 Euros. So one outing usually ended up with 50 Euros gone from my wallet. I guess some travel arrangements came down to larger amounts... for instance when I needed to get to Poland to my family. I think monthly I had to spend about 30-40 Euros on my sim card. Some initial expenses for utensils like frying pan, plates and stuff after a couple of excursions I've completed to ikea. This stuff was cheaper than I expected, though. Didn't top up over 150-200 Euros, tops. What else was there?
+    </p>
+
+    <p>
+      In the end there were a few other things that turned out pleasantly for me and some that did not turn out quite right. From things that did, were, well, about 300 Euros of deposit that were returned to me and then some extra Euros that came as part of... well, returned money from rent that went into stuff happening in the olympic village. I don't recall how much that was, I think it exceeded 100 Euros. And it happened again sometime after I left Munich as well. And then sometime after at some point while I was travelling (after exchange) I received 250 Euros of compensation from ryanair for their delayed over 3 hours flight (upon arrival in Greece). In addition, I didn't have to pay about 50 Euros a month for insurance due to me being covered by a European Health Card, which apparently changed a year or two later. And I also didn't pay for the audiovisual surcharge, that they keep bugging everyone in Germany. And I think this ramped up to a bit of a sum, well over 100 or 200 Euros - didn't pay for this. And once I received a free package of shampoo and conditioner from Amazon as they sent two packages and charged for both but I didn't need two. So I asked for a refund and they did it and didn't ask me to give the package back. There might have been some other arrangements that also happened but I can't exactly recall those. Perhaps it was the flight I took from Amsterdam to Poland which was sort of free? Sort of, as I paid for it, except it was two-way from Poland to Amsterdam and I booked a return one as it was for the same price as one-way, with a return scheduled on my birthday or so (and the outbound to amsterdam happening about before I came on exchange). Or perhaps it was some vouchers I scored for volunteering at the village festival called Fasching? Or perhaps the free beers I scored at the organisation I was part of GRAS? And gluhwein? Or some free beers I received from friends who worked at Olydisco and Bierstube? Or the bike I was given (which I gave back after my exchange ceased) after my old bike was stolen from the village, with which I had so many fond memories of?
+    </p>
+
+    <p>
+      I'm sure there was more. I think and I'm sure there was even more. This was a really gorgeous time in my life. I expected to go downhill from then on but it didn't. Not quite. But it didn't go all along the way I thought it would.
+    </p>
+
+    
+</div>
+
+<!-- <div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      A few words about sports. Upon entering Male I was actually quite amazed with how narrow streets there were. And how cheap it kinda was. And then I saw also some people playing some weird game I have not seen by flicking pieces on a board. Now I am at the airport. And they were some thing popping up. A rock concert running for quite a bit by an Asian rock band. Then some Criquette. And then, holy shit, Premiere League and whoever's left at the airport. Hindi, Mali, flight attendants, police officers, they're watching. To speak of an experience binding cultures and generations. Amazing.</p>
+
+<p>I mean, Male is not a special place. In fact, this is a country that you'll go to, only and solely for the purpose of going for a holiday but only to a resort. A private resort. One you'll need a speedboat or a water plane to get to. The hotel I was in, which was an inn actually, wasn't that bad. I had some problems with finding a good place and eventually I booked this last-minute which was a good decision, although a bit stressful one. Basically I put forward a bit more money but I received the bang for the buck - taxi all the way to the place and from the hotel to the airport at the place's cost. I got breakfast, which was a set of take what you need: fried eggs, sausages, broccoli, some pastries, fruits etc. I got a refill and some coffee. Also you had a coffee machine in the place and tea and bottles of water, all complimentary. All this, for a bit like 70U$. I felt like it was a good decision in the end. Although I feel I should have booked something else, also had wifi and the luggage carried which was unexpected. Got wifi. And the other complimentary stuff, I mean it was literally a 4-star hotel. Perhaps 3 but on the verge of being a 4. And I got my sleep. 7.5 hours. That's a lifesaver, trust me folks on this one.</p>
+
+<p>One of the last problems that I am standing in front of, is my condition. Usually when I assemble my travel puzzle pieces I don't really take under consideration the fact that me, as any other person, can fall ill. I mean, obviously there are the hazard of eating in Delhi or getting some forms of malaria etc. But what I usually don't really take seriously is my condition to just fall ill and it all starts from dust. I started feeling a bit off while in Poland and then for serious in Helsinki, although it got better. Eventually, perhaps the large rollercoaster of AC and humid heat decided to stir shit in my body and in the end, at the airport, I am basically inept a bit. As in, sneezing, yellow phlegm. Kinda standard and the funniest part - it always gets to me at least once or twice a year. It's great that I decided to cut short my trip, hehe, as shorter it gets I mean, by having a shorter transfer in Kuala Lumpur. This way I will be able to get home faster but at the same time, there are hazard associated - cold aircraft's AC, the need for food and water. Basically I won't end up seeing anything in KUL but perhaps I'll be able to go to sleep faster. That's what I'm counting on. It's good that they had showers at Male's airport, this way I was able to get off all this sweat that I've accumulated in hectolitres while stumbling through Male. That probably also contributed negatively. Oh well.</p>
+
+<p>Side notes: Neon Genesis Evangelion - Stratosphere Love<br>
+    Chernobyl - Northlane 4D</p>
+    
+<p>Being deprived of sleep creates very interesting cognitive patterns. At times you'd feel as if you've seen something, like a mild form of -nesia kicks in. Also, listening to music makes you realize, that it is kind of deprived a bit of bass. Tonal environment and reception is especially interesting.</p>
+
+<p>And UFC is running.<br>
+Also, remember!!!11 Human Trafficking is illegal!!!!!111
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div> -->
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
