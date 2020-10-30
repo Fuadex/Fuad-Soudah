@@ -12,6 +12,8 @@
 
   <style>
 
+html, body { overscroll-behavior: none; }
+
     html{
       margin:0; 
       padding:0; 
@@ -768,9 +770,12 @@ h1{
                                                                                   </script> -->
 
                                                                                   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script> -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
 
                                                                                   <script>
+
+
+
                                                                                     var swiper = new Swiper('.swiper-container', {
                                                                                       lazy: true,
                                                                                       spaceBetween: 30,
@@ -800,6 +805,12 @@ h1{
                                                                                         modifier: 1,
                                                                                         slideShadows : false,
                                                                                       },
+                                                                                      				freeMode: true,
+				freeModeSticky: true,
+				mousewheel: true,
+				keyboard: {
+					enabled: true,
+				},
                                                                                       pagination: {
                                                                                         el: '.swiper-pagination',
                                                                                         dynamicBullets: true,
