@@ -27,9 +27,8 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
   </div>\
     <div class="container-fluid">\
     <ul class="nav navbar-nav">\
-  <li><a href="#">Future Projects:</a></li>\
+  <li><a href="Index.html">Index</a></li>\
   <li><a href="Blog.html">Blogs</a></li>\
-  <li><a href="noigitara.html">No i Gitara!</a></li>\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
