@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://vm078g.by.files.1drv.com/y4m0XFsDeO-Jl-a5tOB7sEzT2ZxzEO-F_iPCKqEOOKmhRzDwUHk9SahHvyTxmDZxtTfwbLc6m4rZ6I2ZCyq2BUJ4CLejdngjlhjUTEc2ymcTJJ43XlC6PPIFKMtCiRIURHA0jZRfTvppJQ04NWXYyIXepddwNBlvul_k4uZ8kFLLFEHGR2k6us_J3PF5H3Gmj6xzsL1Uiw6am_ZIRY01p0mIA?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vm088g.by.files.1drv.com/y4mejjit3VSY3GNl6RcsilYotvU_zlfJ352SKYf7gmnza9NWFxfpO90giP1MLcyjXUCEIdarAZ7xHxYiIwZv6W3QqJkAepJXLARItHrOLf-Tc_LFaT2iw-DpcBTfldBijqMozfccoDevz0Nj59PvEgSF8Vzbgbc1dwkQ0hxTgf_QyXYcLybXRiciKlXf_kWr1QnktdgZBc6mqeLXajmXyfa9A?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vm098g.by.files.1drv.com/y4mj2V88f75ELCYtQPooVShJ3UCPTMBc7_qtQSN7f9WTInQCCATGQHKNAZPm1zUXrNmiK0votd1rd1eXiHcIqgzWdpB54QlfwK591WzSWBxSusReSs80j9vQNRJYl2Z-znNVXVSqgOuOfP6sbQPWYN2mGcwnVlDnF0A4GSf3NZQA6o8SzhjFBxFgyp1V_MKEa7zDNe6TnGZx8a_90L86T8ZeQ?width=4000&height=4000&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Sehnsucht IV</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://vm078g.by.files.1drv.com/y4m0XFsDeO-Jl-a5tOB7sEzT2ZxzEO-F_iPCKqEOOKmhRzDwUHk9SahHvyTxmDZxtTfwbLc6m4rZ6I2ZCyq2BUJ4CLejdngjlhjUTEc2ymcTJJ43XlC6PPIFKMtCiRIURHA0jZRfTvppJQ04NWXYyIXepddwNBlvul_k4uZ8kFLLFEHGR2k6us_J3PF5H3Gmj6xzsL1Uiw6am_ZIRY01p0mIA?width=1024&height=576&cropmode=none" class="darken"><div class="text">Feldmochinger See</div><img src="https://vm078g.by.files.1drv.com/y4m0XFsDeO-Jl-a5tOB7sEzT2ZxzEO-F_iPCKqEOOKmhRzDwUHk9SahHvyTxmDZxtTfwbLc6m4rZ6I2ZCyq2BUJ4CLejdngjlhjUTEc2ymcTJJ43XlC6PPIFKMtCiRIURHA0jZRfTvppJQ04NWXYyIXepddwNBlvul_k4uZ8kFLLFEHGR2k6us_J3PF5H3Gmj6xzsL1Uiw6am_ZIRY01p0mIA?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Effervescing</h4></center>
+
+    <p>
+      I got wasted.
+    </p>
+
+<p>.</p>
+
+<p>..</p>
+
+<p>...</p>
+
+<p>
+  What?
+</p>
+
+<p>
+  It's been a while since I've smoked sheesha, two beers plus a glass of wine perhaps can do something with a humanbeing, after having flown across half the globe and with the addition of a quite dynamic plan. When I went to sleep in one state, I woke in another, the very same state. Eh, life.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>States</h4></center>
+    <br>
+
+    <p>
+  From the very early morning I had to take care of my health insurance, required by my university. There was a bit of a queue. I got a tidy bit late but in fact, I didn't. There was a queue as people were performing some wabajacks. "Aaaaa, I forgot to get myself an EHIC card printed", "aaaa, it's underway", "Aaaa, aaI'm from Canada and I have no idea what to do". And so I wanted, waited ten minutes and then some, with one person it took well over a couple of minutes to explain in English (!) from Canada (?!), what needs to be done. In the meantime, once it was my turn to roll, I provided my EHIC card. 30 seconds and all done. I asked a few more questions just to keep formalities in check and I took a hike by foot home (I have no idea what was wrong with me).
+</p>
+
+<p>
+  I arrived after 1.5h to the very same place. I'm continuing a course. I forgot to find myself caffeine. Oh, right, because the vending maching ate my Euro, yet didn't dispense coffee. Yet I managed to find one. How worthless I was that day, I could not make sense of anything and then as part of the course we went out for beers to the Biergarten. Over there, I figured, aaaa, I'll go nuts and I'll eat some, drink some and it will be great. So perhaps I should pass on telling y'all the receipt I received, I'll just mention that I've given the lady 20 Euros, the lady in exchange asked me if I speak in English. Yet alone a fookin blueberry sauce with other cool ones cost me about 6 Euros. I'd call this madness but even in madness some form of logic should be found, yet here none. (I think I spent that time 48 Euros, which was insane considering I barely had more on my plate than... what I had on my plate. It was clearly a tourist spot, so they milk tourists and locals alike - the spot was cool, though in the middle of the Englischer Garten - the largest park in Europe).
+</p>
+
+<p>
+  Beer did not help. The second one either. At which point I should mention that both were so called masses, so the typical, bavarian, 1 litre large glasses of beer (I think one usually costs at such places 12 Euros each, again, they milk tourists and locals alike but that's pretty much a regular price at Oktoberfest as well, I'll talk a bit about that some other day). At which point, this first litre was some sort of urbock, a stronger fella. So, well, I neither got to speak the same language with my folks around, nor nothing. I returned home, a bit let down, rundown. The very same day there was supposed to be some sort of a party somewhere. So alright, I drop by, I drank Spezi (100mg caffeine, this is the cola-lemonade mix, widespread German beverage, it's got some interesting stuff about it too as there are different Spezis) and I thought, it will be cool. Great location, a student highrise that that climbs up to 19 stories high, with a large outdoor terrace at its almost very top. It was already starting to become a beautiful nightfall, as to all of a sudden... well, with great sadness in my heart I expressed. I bought something, which I thought would be beer. I bought a litre of it. And what it was in fact, was a 0.51l dunkel (dark beer), 0.35l of coke and about 0.1l of raspberry syrup. I thought my teeth will fall out, this beverage I was sipping about 3 hours-long and it turned me into a truly morbid mood. At this stage I should add that it was often the case I was experimenting by trying out new things, as any exchange student should do. In this case, picking out a random thing from the menu I did not understand seemed like a good idea, which it clearly wasn't ;) Normally this beverage might have been decent but I was already after having binged a bit and after hours it gets quite cold especially on top of a highrise, so you may understand the feeble I was in, that I had to down a massive chunk of fluids, that just clashed with everything I felt at the time.
+</p>
+
+<p>
+  I wrapped up myself at 22.30 and my return didn't quite count as the most pleasant of all. My subway chased away literally just before my eyes (+10 minutes of wait), then at the station where I'd transfer, that I supposedly had to wait only 2 minutes, as it turned out, the sub as well, again, vanished before I could embark, so another (+10 minutes) added. If this wasn't enough, the train carriage I was returning at last broke down a station before mine, so I had another (5-10 minutes of wait). And on the spot, barely alive, I reached and yet another party was going on right across my bungalow, in which everyone was talking in German, so perhaps I could've tried asking my way in with a six pack? Meanwhile, it was a combination of something as a cross of russian, so I could not figure this one out (as enigmatic as my writing seems, which it truly is even from my perspective, I think I did manage to invite myself to the party, a natural thing to do if you're the neighbour in student accomodation but I left not long after drilling in). So, well, what should I say? I ended my Friday in such style. But at least administrative fuckery I've left completed and behind me. These primary. At last for now...
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vm088g.by.files.1drv.com/y4mejjit3VSY3GNl6RcsilYotvU_zlfJ352SKYf7gmnza9NWFxfpO90giP1MLcyjXUCEIdarAZ7xHxYiIwZv6W3QqJkAepJXLARItHrOLf-Tc_LFaT2iw-DpcBTfldBijqMozfccoDevz0Nj59PvEgSF8Vzbgbc1dwkQ0hxTgf_QyXYcLybXRiciKlXf_kWr1QnktdgZBc6mqeLXajmXyfa9A?width=3840&height=2160&cropmode=none" class="darken"><div class="text">Broken Bicycle near Giselastrasse Mensa</div><img src="https://vm088g.by.files.1drv.com/y4mejjit3VSY3GNl6RcsilYotvU_zlfJ352SKYf7gmnza9NWFxfpO90giP1MLcyjXUCEIdarAZ7xHxYiIwZv6W3QqJkAepJXLARItHrOLf-Tc_LFaT2iw-DpcBTfldBijqMozfccoDevz0Nj59PvEgSF8Vzbgbc1dwkQ0hxTgf_QyXYcLybXRiciKlXf_kWr1QnktdgZBc6mqeLXajmXyfa9A?width=3840&height=2160&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>A few words more</h4></center>
+    
+<p>
+  I should probably mention at this stage, that I'm finding amusing a couple of things. It might be the case that I failed to mention a few things as they might have just simply not happened just yet, this was merely just the first week, interestingly and tons were already happening, which was a definitely good indication of where this exchange was heading and turning. I'm not 100% sure about the EHIC thing but I think I failed to mention a key component of this voyage that lead me straight into the main building of LMU. It might be the case, that it was actually a bit earlier at Giselastrasse, where I was sorting out my stuff through the WC narnia but there was a building not that far away from this place that I had to pay also some form of student contribution. While most German universities as I know do not charge tuition, it is a standard that a form of student contribution is payed that covers some administrative stuff and a basic student card to travel around by public transport. Now that I mention this, I might have actually done this much later, as my first month had to be covered by my own expense, just before the actual semester starts you may pay your administrative fees and receive the card that lets you travel with heavily limitations (like you can only travel in unlimited capacity before 7 and after 6 or something like this on weekdays and unlimited on weekends). These fees amounted to about 120 Euros. You could pay more at a ticket machine for a semesterticket, which I can't recall how much it was exactly but I think it amounted closer to an extra 200 Euros (which I did get, as it's bloody handy to have). In that meantime, as I was a very young fella, still just merely 20 years old (!) I was eligible for discounted tickets, which cost about 10 Euros for 10 stripes. As a person at 20 or below, I could stamp just one stripe per zone, for adults it's normally two stamps per zone. So, savings already. I'll explain the public transport on another time in greater lengths, it was a thing which continued to confuse me for a while.
+</p>
+
+<p>
+  The more important thing which wasn't exactly the public transport was this EHIC thing I was marking off. See, the important thing about this was, that it wasn't just that I was marking this off. There was a very important part about all of this, as I had an entire list that I had to mark off and EHIC, as I believe, was the very last thing on this list which would allow me to get another, this time, paramountly important key thing. Before I go any further, a note of a vague clarification, I believe by the time I reached Germany, I in fact already have prolonged my exchange up to 2 semesters, as that was the max. Before, I had been doing a lot of research as the plan was to do another exchange somewhere else but as the German student calendar usually ended up a month after any semester anywhere else out in the world would start, I quickly found out that my foreseen dream of imbounding on an exchange to Canada was out of the question. The same went for, if I wanted at the time which wasn't exactly the case, US or maybe anywhere else, all of this was seemingly impossible due to my semester structure in Germany. It got me worried a bit and there were some forms of financial support that I was eligible for but it still kind of did not exactly calculate or if it did, I felt I'd turn out to 0 or close to this, maybe a bit on a minus maybe a plus and there were still a lot of very unflexible things to straighten out which could derail my finances. At one point during the exchange meeting in one of USYD's lecture rooms after it was confirmed where I'd be going, I asked the person in charge whether there are any scholarships or financial support available... in return, at my really genuinely great surprise I heard, that yes, in my case and the 2 other students going to LMU, there will be and a really good one. I don't think I received the details straight off but upon inquiring a bit further at the time, I was told that it could be like 500 Euros a month... Boom. I didn't want to make any assumptions or things for certain as this baloon could burst just anytime now and I was told that I'll get that confirmed. But in the end, it turned out even sweeter - 800 Euros a month + 1100 Euros of a travel grant. This was beyond anything I had imagined and had a hard time beliving that I missed this despite my massive research undertaking of where I should go on an exchange. This was a big reason why I decided to ask whether I could go on 2 semesters, as there seemed a slight chance that this scholarship would extend from 5 to 11 months and scale appropriately. And it did. Except to 10 months, which wasn't in any case a dealbreaker. This was a very well hidden scholarship, that I could in fact only dig out from LMU's website and it seemed only a select few of Australian and Thai universities had access to this. From what I know, many Erasmus students receive only 500 Euros a month for their exchange, which can barely cover accommodation in some cases. I on the other hand had a much larger backing up ultimately but that's for another story. Fastforward back to the EHIC thing, I in fact was still hangover and probably reeking a bit of alcohol. And at that very time, I wasn't just providing my European Health Insurance, which was a sort of a loophole, as typically Australian students and anyone outside of EU has to spend 50 Euros a month on this, I didn't as I had EHIC from Poland that I've got printed about 1-2 months prior to arriving and... at that point in time, I was leaving my signature with my details on the scholarship, as I was agreeing to receiving it upon fulfilling all the requirements.
+</p>
+
+<p>
+  This made me feel very weird at the time. Not perhaps totally uncomfortable, it wasn't the first time that I had to somehow conceal the fact that I was drinking before meeting someone or getting something important done. Written this way it may even seem as if I was an alcoholic or something but none of this was the case, I just was sobering up and had some deadlines attached to when I could also get all this done. So I only left my details along with bank account stuff and my signature. And left the place, contemplating, how could that be, that I, Fuad, a person who didn't really have great grades in school and in German was probably worst of the worst, ended up at a top German and in fact European university with a massive scholarship that surpasses even most of what folks on this continent receive and Australia altogether. It was fairly unimaginable and in the state I was in, leaving my final signature, on a semi-drunken mind. I felt it was like some form of a grim commentary on the state of... I couldn't even tell. 9100 Euros. Half paid soon, 30% on the second semester and 20% at the end, provided that I successfully remain completing all the ECTS and I had great doubts in regards to whether I'll be able to pull all of this off. There were a lot of thoughts going through my head at the time. And in the end, I think I took a hike home. Perhaps it was another day after all that I was describing just now but in many details it did not fall behind much in regards to what I depicted.
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    <a href="https://vm098g.by.files.1drv.com/y4mj2V88f75ELCYtQPooVShJ3UCPTMBc7_qtQSN7f9WTInQCCATGQHKNAZPm1zUXrNmiK0votd1rd1eXiHcIqgzWdpB54QlfwK591WzSWBxSusReSs80j9vQNRJYl2Z-znNVXVSqgOuOfP6sbQPWYN2mGcwnVlDnF0A4GSf3NZQA6o8SzhjFBxFgyp1V_MKEa7zDNe6TnGZx8a_90L86T8ZeQ?width=4000&height=4000&cropmode=none" class="darken"><div class="text">Lerchenauer See</div><img src="https://vm098g.by.files.1drv.com/y4mj2V88f75ELCYtQPooVShJ3UCPTMBc7_qtQSN7f9WTInQCCATGQHKNAZPm1zUXrNmiK0votd1rd1eXiHcIqgzWdpB54QlfwK591WzSWBxSusReSs80j9vQNRJYl2Z-znNVXVSqgOuOfP6sbQPWYN2mGcwnVlDnF0A4GSf3NZQA6o8SzhjFBxFgyp1V_MKEa7zDNe6TnGZx8a_90L86T8ZeQ?width=4000&height=4000&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+
+<p>
+  The other thing that I might have missed out on mentioning was my time spent at the Highrise as I came across someone from my university. Coming across Australians wasn't a rare thing around there. On the Highrise, I just said hello and exchanged a few words. I learned that this person would be staying just for a semester. I felt that was interesting as the money was quite big and reasonable enough to have the exchange longer. There were also some other Australians that I came across earlier. For example during the sightseeing time of Olydorf, these I think two people were from Western Sydney University, though. It was a brief exchange. Then much later on I found a big party with a lot of Australians on an Australia Day and it was a cool event. And I met a good Australian friend too. But all in all, it felt eerie that pretty much all the Australians that I've interacted with, they kind of just appeared and went out somewhere. Didn't keep in touch. Couldn't remain with for a longer period. In a way, same thing was happening in Australia as if many of those Australians just live in their own worlds and live in their own bubbles. And it didn't matter what their roots were, generation of Australians etc. Somehow, most of the time, things just didn't exactly click, it was mostly international folks and in that particular case, Germans who were the friendliest and most welcoming.
+</p>
+
+<p>
+  Also, the time I was at the Bierstube after the sightseeing of Olydorf, I met a person from Thailand. And she was really enjoying this exchange, I think she said it was one of the greatest, best opportunities that she'd ever have. Very quickly have I realised that despite my success with securing this exchange, which all came into my hands a bit out of nowhere and just suddenly, this person sitting right across my table, most likely was coming from one of the same covered by a scholarship universities and receiving that massive bump of cash might have been an even larger opportunity than what I had locked in. It's not that Thailand is poor. But I've seen its capital and there are certainly lots living beyond below the poverty line. Well, it's funny how opportunities scatter to... could be random? Or perhaps actually the right people after all? I'm not sure I could really say at this stage.
+</p>
+    
+</div>
+
+<!-- <div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      A few words about sports. Upon entering Male I was actually quite amazed with how narrow streets there were. And how cheap it kinda was. And then I saw also some people playing some weird game I have not seen by flicking pieces on a board. Now I am at the airport. And they were some thing popping up. A rock concert running for quite a bit by an Asian rock band. Then some Criquette. And then, holy shit, Premiere League and whoever's left at the airport. Hindi, Mali, flight attendants, police officers, they're watching. To speak of an experience binding cultures and generations. Amazing.</p>
+
+<p>I mean, Male is not a special place. In fact, this is a country that you'll go to, only and solely for the purpose of going for a holiday but only to a resort. A private resort. One you'll need a speedboat or a water plane to get to. The hotel I was in, which was an inn actually, wasn't that bad. I had some problems with finding a good place and eventually I booked this last-minute which was a good decision, although a bit stressful one. Basically I put forward a bit more money but I received the bang for the buck - taxi all the way to the place and from the hotel to the airport at the place's cost. I got breakfast, which was a set of take what you need: fried eggs, sausages, broccoli, some pastries, fruits etc. I got a refill and some coffee. Also you had a coffee machine in the place and tea and bottles of water, all complimentary. All this, for a bit like 70U$. I felt like it was a good decision in the end. Although I feel I should have booked something else, also had wifi and the luggage carried which was unexpected. Got wifi. And the other complimentary stuff, I mean it was literally a 4-star hotel. Perhaps 3 but on the verge of being a 4. And I got my sleep. 7.5 hours. That's a lifesaver, trust me folks on this one.</p>
+
+<p>One of the last problems that I am standing in front of, is my condition. Usually when I assemble my travel puzzle pieces I don't really take under consideration the fact that me, as any other person, can fall ill. I mean, obviously there are the hazard of eating in Delhi or getting some forms of malaria etc. But what I usually don't really take seriously is my condition to just fall ill and it all starts from dust. I started feeling a bit off while in Poland and then for serious in Helsinki, although it got better. Eventually, perhaps the large rollercoaster of AC and humid heat decided to stir shit in my body and in the end, at the airport, I am basically inept a bit. As in, sneezing, yellow phlegm. Kinda standard and the funniest part - it always gets to me at least once or twice a year. It's great that I decided to cut short my trip, hehe, as shorter it gets I mean, by having a shorter transfer in Kuala Lumpur. This way I will be able to get home faster but at the same time, there are hazard associated - cold aircraft's AC, the need for food and water. Basically I won't end up seeing anything in KUL but perhaps I'll be able to go to sleep faster. That's what I'm counting on. It's good that they had showers at Male's airport, this way I was able to get off all this sweat that I've accumulated in hectolitres while stumbling through Male. That probably also contributed negatively. Oh well.</p>
+
+<p>Side notes: Neon Genesis Evangelion - Stratosphere Love<br>
+    Chernobyl - Northlane 4D</p>
+    
+<p>Being deprived of sleep creates very interesting cognitive patterns. At times you'd feel as if you've seen something, like a mild form of -nesia kicks in. Also, listening to music makes you realize, that it is kind of deprived a bit of bass. Tonal environment and reception is especially interesting.</p>
+
+<p>And UFC is running.<br>
+Also, remember!!!11 Human Trafficking is illegal!!!!!111
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div> -->
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

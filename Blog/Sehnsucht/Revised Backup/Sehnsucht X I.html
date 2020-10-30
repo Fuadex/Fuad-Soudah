@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://vm0y8g.by.files.1drv.com/y4mzYXfprRW0FaiztuuXqbA1rcXxIgQd7PK-iWXfyxcHzrL3B3jFxU8YnDy18eHLHjEhhUAA7lDZQA8Cyb_KW7gOOzNobr-FHH9vZ5GZ8R4_Oei36m73bAF1QtMtw5pISrrADfH479gyp-04FIrUtUVWwj11NHHYL5Nr33yXujfsEyriRF4GGjcKdleBFOH_DlMGRruBuDxHgpJGyrifsn0KQ?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vm1a8g.by.files.1drv.com/y4mkWRr4ZfKIA2I0AWZIaiHrBsjSpC47w4UR430_-tpdLFfOIZbzFeoZWCz212hMSb5MU5_yQce2kz3RxTKJt_RIOa0-jeB4hYTmkkSrTRGq4dDGttQUZiCL7eE4o8Ap4YfeunN9toUIkKDhqt60xO7AjQXycnC1x6SDz4qDkIF-8987lDO0bBomitCQ0gaKU3WJT9C-bs4IWaHGrrHtvlY0Q?width=4000&height=4000&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vm0p8g.by.files.1drv.com/y4m38rYFWB5zGDD8fsuxi8FFVQbobaGwn2AVuRwNacuVYOOND-P_CYXFK6VGsQze9Ja5mm7SSPRafA1VtogYTZjJPnYrpjAdTVtDL4-Uju5PmVpypsEjJzdqKm896Z22aVp2W17VAHv03hXrupFAejUCOpACujrnrrMuDYKgk-ZFxdN3I3xBxJCO9Hgu3Sah5FTpfJU1ZEF77swKOj2zv8AhA?width=3240&height=4050&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vc078g.by.files.1drv.com/y4mthv7Z4Dmmin2ZET6tPwlg03_5oithJuHzTmX_tFEPVBlCTPTJSBZmGE9QrdZpi8PJN-kFQLOLebAQX8e9nDWJzlcq1FzbQMY2fPDrRcyx6cnF981556HU_zj7p8ccuUExhY3A9-SFUalTlwITSg2FY7sq6coe8Q_FFjWCpNO4Ji21pVcBenHOm4LI-4WKNZFVzSdFeFcoDiZKXnVuceS5Q?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Male</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://vm0y8g.by.files.1drv.com/y4mzYXfprRW0FaiztuuXqbA1rcXxIgQd7PK-iWXfyxcHzrL3B3jFxU8YnDy18eHLHjEhhUAA7lDZQA8Cyb_KW7gOOzNobr-FHH9vZ5GZ8R4_Oei36m73bAF1QtMtw5pISrrADfH479gyp-04FIrUtUVWwj11NHHYL5Nr33yXujfsEyriRF4GGjcKdleBFOH_DlMGRruBuDxHgpJGyrifsn0KQ?width=3840&height=2160&cropmode=none" class="darken"><div class="text">Outside the station</div><img src="https://vm0y8g.by.files.1drv.com/y4mzYXfprRW0FaiztuuXqbA1rcXxIgQd7PK-iWXfyxcHzrL3B3jFxU8YnDy18eHLHjEhhUAA7lDZQA8Cyb_KW7gOOzNobr-FHH9vZ5GZ8R4_Oei36m73bAF1QtMtw5pISrrADfH479gyp-04FIrUtUVWwj11NHHYL5Nr33yXujfsEyriRF4GGjcKdleBFOH_DlMGRruBuDxHgpJGyrifsn0KQ?width=3840&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Sehnsucht X I</h4></center>
+    
+<p>
+  Education? Happiness? Freedom? So many different concepts I've been introducing myself throughout last couple of years of my life, attempting to explain what motivates me to further actions. 'Nothing's impossible', perhaps perpetually returning, in fact course of events, which only recalls these words back and back and back... And despite, that I was riding all the time in a broken circle, attempting the very same mistakes, returning psychologically to the states, in which I already was, to repeat exactly the same mental scenarios, which I already have completed. Munich... Funny thing. If anyone mentioned of Germany, I'd respond I always wanted to end up in Munich. To make a trip, because it's a metropolis. How wrong was I.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>19.10.2016</h4></center>
+    <br>
+
+<p>
+  In principle, it's a funny thing. Within the spread of my entire life I notice moments, in which a major twist had happened, turning my life in a specifically turning, even perverse way. Reading Sapkowski, perhaps the only saga I ever read in life, after many years, yet at the end, I'm drawing lately a specific concept, whether fate in the end has some form of power. I have no idea, perhaps it exists in the end? Something pre-defines our existence? It feels so absurd, as if just bit too much. And yet, by some miracle, despite all my failures, unsuccessful approaches and in general foreseeing, and in the end of ends failures, I managed to turn all of it into something miraculous. True, I had some perks, which at first glimpse, were uncompromising yet in principle useless. Yet something appeared, that I ended up with where I ended up. And that was already Australia.
+</p>
+
+<p>
+  Over there in the end I never experienced happiness. An Australian Dream. Beautiful concept just as its American counterpart, yet how different and again in some form similar. Passport isn't everything, afterwards as my story progressed, which was a carrousel of its own, which was able to wipe my brain, reset everything and put myself back to this neverending cycle, to which I neverendingly return and which I utmostly hate. Something kept me going, though. I had some form of a draft of a plan, which I could potentially execute, although it was in a very delicate form before my departure. And I departed already with an empty head as a nobody. A human from nowhere, without any exceptional achievements, without anything in fact. I didn't expect that I would return to Europe so fast, I didn't expect, that whatever would stand on my path, that is worth pursuing; perhaps vegetating wouldn't be so bad after all? Meanwhile the path I've chosen, was rich in such bumps, that at times a person can... in my case, to some degree, you could just no longer.
+</p>
+
+<p>
+  An entire year I've squandered on a meaningless little things. It could've turned out completely differently. I regret lots, yet on the other hand I can't complain on how I turned out. I ended up in such a place, in which I in fact have wanted, although I still didn't feel satisfied, even then! I created a new plan. I analysed and studied my own capabilities. An exchange was always at my crosshairs, taking under consideration, that it was able to set me for the future in an unprecedented at anytime way. Even with the environment I was living in in Australia, an exchange was able to provide me a year of entire freedom, a concept I placed at the highest possible point of my values and by which I was lead by while I was leaving to a dream, and then again overseas. Meanwhile then, even an exchange turned up with and into unexpected events.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vm1a8g.by.files.1drv.com/y4mkWRr4ZfKIA2I0AWZIaiHrBsjSpC47w4UR430_-tpdLFfOIZbzFeoZWCz212hMSb5MU5_yQce2kz3RxTKJt_RIOa0-jeB4hYTmkkSrTRGq4dDGttQUZiCL7eE4o8Ap4YfeunN9toUIkKDhqt60xO7AjQXycnC1x6SDz4qDkIF-8987lDO0bBomitCQ0gaKU3WJT9C-bs4IWaHGrrHtvlY0Q?width=4000&height=4000&cropmode=none" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://vm1a8g.by.files.1drv.com/y4mkWRr4ZfKIA2I0AWZIaiHrBsjSpC47w4UR430_-tpdLFfOIZbzFeoZWCz212hMSb5MU5_yQce2kz3RxTKJt_RIOa0-jeB4hYTmkkSrTRGq4dDGttQUZiCL7eE4o8Ap4YfeunN9toUIkKDhqt60xO7AjQXycnC1x6SDz4qDkIF-8987lDO0bBomitCQ0gaKU3WJT9C-bs4IWaHGrrHtvlY0Q?width=4000&height=4000&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Have I</h4></center>
+
+    <p>
+      Have I mentioned Munich already? Yet I wanted to Montreal! Why? I don't know! Sehnsucht. This feeling of endless longing of something that of which you cannot satisfy. That's how my new series will be called, as I guess that's how it already works with me. A person receives something, yet the person still doesn't feel enough. Life teaches us lots of things... yet, I digress.
+    </p>
+
+    <p>
+      Why Montreal? I have no idea. I thought, that Australia is the same form of a wildcard as is Canada. Perhaps I could learn French? It ended up on Munich. The second choice, that's where they placed me. My German, as it was, all my friends from high school I think were aware of what level it was on. I received more or less 2 months to grind through to B1 level. I managed to only pass well 2 out of 4. It was enough. I thought, that the 3rd semester I may fuck up due to databases. As major of a challenge it was, with exams and a teacher, who spoke in English just as well as I did in German. Plus a double-credited UX course, in which I got placed in a group, where me with my friend alone have managed to work out the majority of what was expected (hours of monotoneous work), which not always profited or were equal to the massive undertaking performed. I had some many doubts. A sea of conclusions leading everywhere, which contradicted each other. Even, as pessimistic I was while approaching discussions with a visiting student or my course coordinator, who I think shared my views, at the time I thought already, that I have managed to accomplish the impossible.
+    </p>
+
+    <p>
+      I thought, that I have already reached the impossible with Australia already. Meanwhile, things started to unfold just about now. Yet I don't want to touch this topic yet. Not sure even why. I don't see anything special of all. Lots of luck. A shitload of luck. Yet and while by arduously pushing forward. By quite dampened mental state, with all the aspects of my start, in principle on my own, despite that I had an unsecured support of my homecountry to kickstart my new journey. I'm not entirely sure how it happened, yet everything kept falling into place as expected up to a 95% up to somepoint. With larger bumps encountered here and there, yet I got by. Notwithstanding, with success responsibility goes hand in hand. 
+    </p>
+    
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vm0p8g.by.files.1drv.com/y4m38rYFWB5zGDD8fsuxi8FFVQbobaGwn2AVuRwNacuVYOOND-P_CYXFK6VGsQze9Ja5mm7SSPRafA1VtogYTZjJPnYrpjAdTVtDL4-Uju5PmVpypsEjJzdqKm896Z22aVp2W17VAHv03hXrupFAejUCOpACujrnrrMuDYKgk-ZFxdN3I3xBxJCO9Hgu3Sah5FTpfJU1ZEF77swKOj2zv8AhA?width=3240&height=4050&cropmode=none" class="darken"><div class="text">Sculpture in the park</div><img src="https://vm0p8g.by.files.1drv.com/y4m38rYFWB5zGDD8fsuxi8FFVQbobaGwn2AVuRwNacuVYOOND-P_CYXFK6VGsQze9Ja5mm7SSPRafA1VtogYTZjJPnYrpjAdTVtDL4-Uju5PmVpypsEjJzdqKm896Z22aVp2W17VAHv03hXrupFAejUCOpACujrnrrMuDYKgk-ZFxdN3I3xBxJCO9Hgu3Sah5FTpfJU1ZEF77swKOj2zv8AhA?width=3240&height=4050&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+
+    <p>
+      Meanwhile, the conditions on which I was sent to Munich, were fairytale-like. With each step I took, fear came along. Meanwhile, I always had some aces up my sleeve. They placed me in the Olympic Village. I was secured financially. In addition, I was let to study a course similar to what I was doing in Australia, yet at a more specialised level. In time, something even more unbelieveable had happened. They treat me as a Master's student. This is cosmic-like, at the age of 20 I am doing coursework made for people who are at a Master's level, I have no idea how it will all turn out, yet I already got a sense of what to expect and just that. The actual journey is right ahead of me.
+    </p>
+
+    <p>
+      Meanwhile, I'm left with just one question. This one, only question, for which I expect to receive an answer. As there is a limit, in which case, how much one may achieve and what could be achieved in life. Some things stop weighing as important. A person begins to look into mechanisms by which life is lead by, especially your own life is lead by. Then I start binding analogies between analogies, in case of life of other people and my own. Based on everyday life and educated based on artistic visions. In general the question in my case is based on one thing. How far can I go? What else is within my reach? I managed to receive so much and meanwhile it seems, as if it was just the beginning... yet, the problem is this broken circle. The environment here really positively reinforces me, yet for long-term accommodation to life, such subliminally learned reaction to life and impulses coming to a person... There is no way to counter with just merely a two weeks long leisure. A person will comeback to the old routines, style of life, which doesn't fit. If I want changes, these must be executed long-term. I know well that without success, I won't be able to go further.
+    </p>
+
+    <p>
+      A snowball effect, as they say. I am meanwhile a locomotive. I feel like one. It's hard to make the first step, yet once I take on velocity... Meanwhile I'd like to be like a universal locomotive. Such, that can suddenly change its appearance, form, mass and ascend, alight and dive. Such, that can adapt to its environment. To not say, one may say anything on and about me. And in any and either case, you will be right.
+    </p>
+    
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vc078g.by.files.1drv.com/y4mthv7Z4Dmmin2ZET6tPwlg03_5oithJuHzTmX_tFEPVBlCTPTJSBZmGE9QrdZpi8PJN-kFQLOLebAQX8e9nDWJzlcq1FzbQMY2fPDrRcyx6cnF981556HU_zj7p8ccuUExhY3A9-SFUalTlwITSg2FY7sq6coe8Q_FFjWCpNO4Ji21pVcBenHOm4LI-4WKNZFVzSdFeFcoDiZKXnVuceS5Q?width=3840&height=2160&cropmode=none" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://vc078g.by.files.1drv.com/y4mthv7Z4Dmmin2ZET6tPwlg03_5oithJuHzTmX_tFEPVBlCTPTJSBZmGE9QrdZpi8PJN-kFQLOLebAQX8e9nDWJzlcq1FzbQMY2fPDrRcyx6cnF981556HU_zj7p8ccuUExhY3A9-SFUalTlwITSg2FY7sq6coe8Q_FFjWCpNO4Ji21pVcBenHOm4LI-4WKNZFVzSdFeFcoDiZKXnVuceS5Q?width=3840&height=2160&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      A few words about sports. Upon entering Male I was actually quite amazed with how narrow streets there were. And how cheap it kinda was. And then I saw also some people playing some weird game I have not seen by flicking pieces on a board. Now I am at the airport. And they were some thing popping up. A rock concert running for quite a bit by an Asian rock band. Then some Criquette. And then, holy shit, Premiere League and whoever's left at the airport. Hindi, Mali, flight attendants, police officers, they're watching. To speak of an experience binding cultures and generations. Amazing.</p>
+
+<p>I mean, Male is not a special place. In fact, this is a country that you'll go to, only and solely for the purpose of going for a holiday but only to a resort. A private resort. One you'll need a speedboat or a water plane to get to. The hotel I was in, which was an inn actually, wasn't that bad. I had some problems with finding a good place and eventually I booked this last-minute which was a good decision, although a bit stressful one. Basically I put forward a bit more money but I received the bang for the buck - taxi all the way to the place and from the hotel to the airport at the place's cost. I got breakfast, which was a set of take what you need: fried eggs, sausages, broccoli, some pastries, fruits etc. I got a refill and some coffee. Also you had a coffee machine in the place and tea and bottles of water, all complimentary. All this, for a bit like 70U$. I felt like it was a good decision in the end. Although I feel I should have booked something else, also had wifi and the luggage carried which was unexpected. Got wifi. And the other complimentary stuff, I mean it was literally a 4-star hotel. Perhaps 3 but on the verge of being a 4. And I got my sleep. 7.5 hours. That's a lifesaver, trust me folks on this one.</p>
+
+<p>One of the last problems that I am standing in front of, is my condition. Usually when I assemble my travel puzzle pieces I don't really take under consideration the fact that me, as any other person, can fall ill. I mean, obviously there are the hazard of eating in Delhi or getting some forms of malaria etc. But what I usually don't really take seriously is my condition to just fall ill and it all starts from dust. I started feeling a bit off while in Poland and then for serious in Helsinki, although it got better. Eventually, perhaps the large rollercoaster of AC and humid heat decided to stir shit in my body and in the end, at the airport, I am basically inept a bit. As in, sneezing, yellow phlegm. Kinda standard and the funniest part - it always gets to me at least once or twice a year. It's great that I decided to cut short my trip, hehe, as shorter it gets I mean, by having a shorter transfer in Kuala Lumpur. This way I will be able to get home faster but at the same time, there are hazard associated - cold aircraft's AC, the need for food and water. Basically I won't end up seeing anything in KUL but perhaps I'll be able to go to sleep faster. That's what I'm counting on. It's good that they had showers at Male's airport, this way I was able to get off all this sweat that I've accumulated in hectolitres while stumbling through Male. That probably also contributed negatively. Oh well.</p>
+
+<p>Side notes: Neon Genesis Evangelion - Stratosphere Love<br>
+    Chernobyl - Northlane 4D</p>
+    
+<p>Being deprived of sleep creates very interesting cognitive patterns. At times you'd feel as if you've seen something, like a mild form of -nesia kicks in. Also, listening to music makes you realize, that it is kind of deprived a bit of bass. Tonal environment and reception is especially interesting.</p>
+
+<p>And UFC is running.<br>
+Also, remember!!!11 Human Trafficking is illegal!!!!!111
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div> -->
+<!-- 
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      ...
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

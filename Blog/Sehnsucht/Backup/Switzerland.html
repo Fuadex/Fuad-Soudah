@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/813/40911453734_8bcbf15814_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Switzerland</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/813/40911453734_c19f483c48_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/813/40911453734_c19f483c48_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+     Dreams. What does it feel, to reach your dreams? Fulfill the picture that you always pursued? To grasp what you always wanted. And to become, somebody that you always wanted to?</p>
+
+<p>To be honest, I don't really know. I don't really dream (although that's untrue) and when I remember what I've dreamed of, it's always vague, in pieces. Comprehensible, but hardly usable. Problem was, that I so got used to getting my dreams squashed, that it almost became a routine. And once they got squashed, and myself, quite usually, heavily depressed, I realized that what I pursued of, was fiction. A mirage, something that I imagined and complemented at such a degree, that somewhat, once I shift my mind back in time, I realize that I really needed something, some kind of purpose, some mere sense of objective to accomplish to become fulfilled and most likely yearn for next. But the yearning never ever came. Instead, I jumped. And these jumps always lacked, what I could call, a foundation, it was missing and remained so. In combination with depression and other skews, well, emptiness or an empty head, stripped out of everything, feelings, emotions, the entire culture and detachment.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      It's kind of funny that I still managed to find myself and operate on the remains of what I was, or what was left of it. By the time I finished high school, another blow made all whatever dreams I had, gone. Were there any dreams to begin with? You know, once I pronounce Australia, it's a land that so many yearned and yearn for, would give so much to find themselves there, so many opportunities one might think, so many... well, the funny thing about dreams, eh? In German, it's called der Traum. And you know what? Trauma in polish means something that could be quite reasonably accurately described as PTSD. I guess, considering my magic ability to turn massive failures into... well, I'll refrain from naming it. But, I guess you could call that I was reaching my dreams in a quasi-PTSD sense. Cause, what is changing one cage to another? If you're living in a cage, how can you have dreams? If you kept getting your dreams squashed, what's the point of having them? What the hell are dreams anyway?</p>
+
+<p>Well, but out of all this chaos, I guess I am heading towards, I guess, some resemblance of what my dreams could look like. And I have this funny sense, that, well, this levitating foundation is about to crumble just as much as myself over and over again. With no perspectives, but funny as it may seem, in a world which should be just full of those. Does that not make any sense? I never said you'd find any. Operating on a different level of abstraction. I guess I'm yearning for some kind of foundation. Something on which I believe I could build something. Stop levitating. At last, figure some way of... Having a real, experience. Feel like I should just feel. Experience and... well, it's all a mirage again. Some dreams that at some point I put them there. Some insignificance to which I apply some sense of worth, because, well, that's what life is somewhat about. Having some feelings and operating based on them, feeling attached to things, having goals, having stuff to do basically. Where does it lead to? Perhaps towards even more... Failures. Disappointments. The only bloody thing I got right, could be the magic presentation and ensemble. I'm so many different people in so many different eyes. But how radically, so radically different. I don't see all of them, but I would want to, correctly. But the problem is, I don't see myself in the right way either.</p>
+
+<p>It's. I was nothing. I was nobody. I had nothing. I lived nowhere. Hardly any emotions. Only distant friends. Dis-attached from family. Dis-attached from world. Perspectives on verge. Mentally regressed. Linguistically lacking. Overweight and closed. Nothing, nobody, anybody, a shell with hardly anything in it. Voided and distressed. Yearning subdued. Stranded, figure alone. Living on a prayer, yet, that was gone. Unprepared, semi-decided. Still, rock bottom, yet the other bottom.
+
+
+    </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49120700227_2653475975_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      I guess if you'd have a choice in living in which hell you'd like to, a scorching paradise would not be a bad choice, a bad choice at all. Despite all my misery I always kind of remained this ambitious core, relentlessness that kept on pushing me forward no matter what. Even if I was broken today and tomorrow and the days and weeks after, eventually it'd hit me and say, in a voice and words, as if sprouting straight out of Churchill's mouth 'If you're in hell, keep going'. I don't know, maybe I'm wrong. Perhaps it was the invisible hand that actually kept me going, some incentives coming down from the sky, poking me and saying: hey, yo, look at this. Kickstarting my system, no matter how down it was. And then I'd be like, what is this shit. And this shit would say, 'check it out yourself.'</p>
+
+<p>Funny. I pictured secondary school as shit. Even if it wasn't. I pictured my high school as shit. Even if it wasn't. I pictured my English lessons as shit. Even if it wasn't. I pictured my home as shit. Even if it wasn't. I pictured Australia as shit. Even if it wasn't. I pictured my university as shit. Even if it wasn't. I pictured my exchange university as shit. Even if it wasn't. Always the alternatives seemed as jewels and every single time, they turned out not to be as such, actually not even close, despite its outlook, far out, definitely not a jewel, let alone being jewels. It's got some knack to it. And I'm playing in my own mind, the thing is, I was always best of being myself in not being myself. Applying presentation, despite that I always hit my limits, still, relentlessly, trying in my own ways in some areas. However, the missing part was, living in my own world. The missing itch, the thing that complemented the entire picture and showcased myself as I were and was and am and could become.</p>
+
+<p>But. It's not enough. Never was enough. Never will be.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49120005593_ab3001d2f0_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+    
+<p>
+ I had second thoughts regarding transcribing this blog into English. But then I realized that I've got tons of recordings made primarily in Polish, so most likely complementing the picture with some notes captured by the use of my language-o-mighty, could, well, perhaps not exactly support me throughout my exam period (not anymore!), as its hit landed quite roughly... my language may seem a bit stiff as an overall result, reflecting my thinking process and all its the gnarly structures.</p>
+
+<p>So without further ado, let's... hold up. How about a few words on what I've had expected? I'll try to keep it short (yeah, right.). Switzerland is a country, which I perceived as a form of utopia. Its society enjoying the freedom they worked for years, structural outline of the country with direct democracy spearheading their future backed up by its pacifist history, its multivariate nature with a combination of lakes and mountain chains encompassing the picturesque valleys from which you may enjoy the picturesque landscapes around which many authors have gained great inspiration. All of it, seemed purely amazing. While the world is going nuts and keeps going up in flames, are you after an undisrupted vacation? Well, welcome to the lands made out of cheese, rivers flowing with wine, mountains built out of Toblerone, lakes with guns, francs getting high and whatnot, so forth. A country unspoiled, probably as the only European one, from all the turmoil that kept on shaking this (not so poor) continent every now and then throughout decades. These folks figured, that staying neutral could actually be quite awesome. And kept on being awesome. And it remained this way for centuries. Most of all, the political sphere: direct democracy, guns, low taxes, near libertarian type. It's nice to try meeting your expectations. Eventually facing them. Or your dreams. Everything and nothing.</p>
+
+<p>The trip was fairly straightforward, although a few complications had surfaced. First of all, the trip was supposed to take place at the end of February, right after the exams. It turned out that something huge is happening at my village, thereafter, provided that I still had a 15 Euro voucher so bam bam, off I blitz off to the Neverland! Beforehand, I had to check if I could make another trip, though. I sent out inquiries. One replied with a nay. The other didn't reply. So it's settled! I booked the ticket and decided to make a.. notch of a shortened trip. A blitz trip containing of 5 cities... yeah, well, I guess you could call them cities after all. Zurich, Bern, Geneve, Lozanne and Fribourg. Out of which, I had for each an allocated time of the following: 1.5h, ~4h, ~17h, ~1h, ~3.5h. Geneve turned out to be the only one, that I had time for visiting during the day. Departure on a Friday night. Return on Sunday noon. No sleeping throughout the entire trip. Just a few minor naps taken on the train and bus back. Would you figure, that I managed to remember anything after this?
+
+</p>
+    
+</div>
+</div>
+</div>
+
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    <p>I'm trying to figure out how do I entice all the spicy details into my story and keep it chronological. Perhaps I'll make it different then.</p>
+
+<p>A bit of mouthwatering foretaste, eh? To begin with, this trip was one of the heaviest, psychically and mentally, considering all of my trips that I've made so far. Even my own smartphone agrees, despite all of the vibrating and ringing of how many records I've pulled through, S Health showcases nice statistics of some irrational 57,62 km made, 3199 calories burnt and who-the-fuck-cares how many steps taken. My feet felt so worn down, that (achtung! graphic details!) even my skin turned pale and raggedy, as if I have suddenly turned 80 and worked for entire, seriously scorching days. It was bad and my next fuck up on my way back from Lozanne didn't necessarily make it any better. I thought that was it. Adios! 'Cause I thought I went too far this time.</p>
+
+<p>A person takes a billion steps in a city, to see and experience everything worthwhile. And then makes twice as many steps. Not enough? Make it a threefold then. In conditions that were expected, but quite uncivil regardless, it made me regret taking the entire trip and having made even slightest notches of thoughts, that it could have been a great idea to go straight off nuts, off to the Neverneverland.. The bloody wind unfolded. The rain came down pouring onto the city. Even the mountains got themselves covered behind a thick wall of rain. Quite bad, right? It tackled with the pleasures I've drawn from my trip right from the very beginning, effectively, filling the morning skies with an abundance of clouds, preventing me from enjoying picturesque Genevian sunrise. At some point, it all cleared up, but that wasn't until the very last hours left for me to spend at the city. I did capture some mesmerizing weather effects, though. I wish I knew how to name them.</p>
+
+<p>Walking towards the UN headquarters on a rainy day, with not quite pleasant wind preventing me from pushing forward as easily as I preferred prevailed as a condition for well quite over 10 hours. Did I already mention, that I had thought, provided the weather, that this trip was about to do me for good? Like, over, I'd have got knocked over by the weather eventually and stay in bed for the next weeks, sick and shivering right down to the bones and other quite unpleasant stuff that could come with it. Quite likely picture, if only I made it, reaching home as planned, which was not entirely a picture that I saw being easily fulfilled nevertheless. It did get even better, though. I took the wrong train and landed up in one, that was the very same as the next one, scheduled to depart in a half an hour. No biggie, I figured. My schedule was safe. The train was okay, the time seemed even more than okay. Just, the train moving out a few tens of minutes before it was supposed to didn't seem to check out éntirely as okay. Petrified, but I remained on board. And you know what? Nobody checked the tickets. I actually looked for the guy in uniform throughout the entire train. Who I've stumbled upon, were only the usual partying squads, scattered all over the train. Here some vodka being shared. There some people hardly keeping track of their own footsteps. Quite decadent people, I'd figure. But yep, people partying, drinking liquor, beers, you name it. Being loud and lo(o)sing their shit. I did eventually lose my own shit though and walked out a station before Lozanne.</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+    
+    <p>
+      Passed by a couple of girls, trying to fill up a beer bottle out of a cup and having plenty of fun doing it. Took a quick peek at all the mates and lassies on the train, keeping their regular partying routine. And there was me, planning on hitting the federal ETH technical university, presumed to be extremely elitist Europe and not-Europe alike. Which was good idea all in all, the metro kind of worked, which was just a kinda tram-like object functioning back and forth. The first tram-like object departed right in front of my eyes, 'cause I didn't know how to buy the ticket I actually needed. Then came the next one. The last one. I took it. And the last station wasn't Lozanne. It was ETH. Next metro? At 6 o'clock... It was around 1:30. You see the problem? around 5 kilometers left to destination - Lozanne. And me, left ultimately fucked (over), plus worn out by Geneva... With no choices left, I had to walk and run in turns to Lozanne. 12% of battery left on my phone. Rough overview of how I should be headed. My feet on the verge of unforgiveness for my wild ideas.</p>
+
+<p>Can you believe that I reached the train station 20 minutes before my train's departure? I even checked my feet, (graphic details ahead!) they chalk-like, pale, so pale that I was authentically petrified by its outlook. The question of my well-being shifted towards if I were about to become handicapped or not (for the foreseeable future that is). Any sign of unconstrained feet movement would have probably become a good riddance. Still yet, somehow my body felt like strolling around Fribourg as well. I managed to charge up my shit as the only train with power sockets were IR trains (they had so many inside!) and discovered that my feet became relatively usable. So? I strolled around for ~2 hours, experiencing this lovely city, which after nightfall... had again a handful of mates partying nearby, right next to the train station and just alike throughout the village's center. You know what the real problem was? Waiting for the train station to open up after heading back. Finding the university all closed up. Entering the train station at last and finding it was not entirely a better alternative to staying outside. It was cold, felt cold and remained cold even in the waiting rooms upstairs. Despite being 3 degrees, which ought to have utterly sufficed with my wind-repelling jacket and additional two layers of wool and cotton placed inside. I kinda knew what the reason was. I was getting probably sick. And tired. Ultimately tired. No energy left. I dire need of food that I have actually eaten beforehand. Waiting up for this train was true hell. The best part of this story, though? The train was already here. I was just waiting for it to become opened up, which usually took place around half an hour before its departure. How rude, right?</p>
+
+<p>So, my mind, feet, body were worn down to the limit. Metaphorically, the entire body might have become something close to an adapted terminator. Either this or my strong, insane will of exploring and finding out more and more kept me going and refrained my body from ultimately falling apart. The last trips proved my body to become even more hard skinned, impenetrable and surprisingly, highly durable. Which was a good thing. Despite I really went above and too far this time, beyond and reached a point that I should have not. Today I'm home. And my feet feel quite okay and fine. My brain less, cause I have sleepless nights in order to make sure that I learn the exam material. My body is more or less okay. But well, why am I saying about all of this. What about Swiss itself? (right, the fuck were you thinking back then, Fuad? :/)
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+    
+    <p>
+      Eerie country, eerie indeed. The very moment we rolled in, I noticed that the lands are just simply stunning. The horizon, all lit up, making such a lovely, beautiful picture that I couldn't really capture, as it was pitch black already. Just these... small star-like objects in the background that I managed to capture while running for my train in Lozanne. The road to Zurich was indeed quite intriguing in its own. Once we crossed the border, the entirety revealed itself with all its major outlines and highlights. And I am still speaking of the bus ride during the night, that itself was an experience that I would be looking forward again, day or night, all the same. Once I reached Zurich? I didn't feel marveled as the bus station looked like shit, a standard parking place which by quality didn't stand out far from what I've experienced in worse looking bus stations (Wrocław!). But then the train station was quite a different picture. The trams, again, were not. And then I noticed the church rising up right next to the train station. Some sort of contrast that I did like. And then I walked through the train station and it seemed semi-modern, connecting the dots of the old and the new. Preserving in some sort a way the old. Some sort. On my way back through Zurich I've also discovered, that there were entire layer(s?) underneath. Almost as smart as the train station back in Bern!</p>
+
+<p>I did run into problems, though. I got lost. And my Aldi roaming refused to work. So I just went ahead. Despite not having much time, altogether. What I stumbled upon? Semi-okay architecture. And an okay river and lots and lots of clubs. ...well, okay, you're expecting more from me than just an 'okay architecture, okay river', I get it, all of it seemed mediocre on my way to the lake located south of the city, alright? Then, the people, the people who looked like money. Literally, just money everywhere. Money money money. Their cars looked like money. Lesser or larger stacks all around. The perfect people. Lots of perfect people, looking even more like money. Those, who looked perfect, seemed to enjoy being perfect and were just here for the perfect (parties). Obviously, a fair chunk were drunk but so did all of the other people strolling the streets. Probably drunk with money, altogether. Well, maybe not most of 'em, but definitely the younger generation indeed was going wild. Seriously, cash and wealth at each step. I reached the lake. It looked amazing. Five minutes later? Gotta head back! Again, along and bypassing mates who seemed like a giant swiss franc bill, every one of them. And the stores which advertised expensive shit. All along. Soon enough, I was gone.</p>
+
+<p>Whereabouts? To Bern! For 3 hours. Funnily enough, it was one of the last trains departing at all. At 1:30... How about a few words about the train itself, now? That one was supposed to be tops (almost). An intercity one. And guess who I found inside it? Well, not yet at least. The train was already packed, full, you name it. Plenty of people. Plenty of people partying and recovering from all the partying. They have really funny trains by the way. The intercity one is like a double-deck guy, one continuous train split by motion-sensing doorways. Bit of place for your bags, a trashcan, a small table... No wifi. No AC plug in. But a bar carriage was available, which split the 1st and 2nd classes. And at the very beginning of the train... half of the carriage was a children's' area, with some sort of a playground system installed strictly for them. I've never seen a cooler idea (train-wise) in my life, I'd have never thought of something even remotely similar. Then, guess what. The only stop in between Zurich and Bern. It might have been Baden, but I have no clue, though. Partying people alighting... New party people storming in. Literally. Metals. Metalheads. Tons of 'em. All of 'em. Returning from some concert? Festival? What a shift of colors and faces! Still have no idea what and where. But the shift was quite something. Also I can't remember if I actually had my ticket checked, but if I did, I had it scanned right off my smartphone. QR code via Deutsche Bahn application. A minor product placement, if you may.
+
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      These IC trains seem to continuously keep on getting filled up even at extreme times, such as 1-2 AM. Funny enough, they get filled up by partying people. And I'm talking of IC's. Other trains are... well, quieter. The regional ones by far were not full at all. And these are just normal one-deck passenger trains with ample leg space. However, I really preferred the IR (also kinda-regional, inter-regional?) trains, which had one basic difference that shifted worlds for me compared to the other two and which made me prefer them way over all the other. Do you know the key secret? POWER SOCKETS! That came in numbers! All set up by twos for each two pairs of chairs. And there were hardly any passengers travelling anyway. So? At peak times I even had to use up to three available. A perfect set up as I had time to charge up all of my devices twice throughout my trip. Pure Perfection!</p>
+
+<p>Anyhow, anyway, I reached Bern. The capital city. An eerie central train station, with a relatively interesting, quite spacious shopping center and just one venue: McDonald's operating at these crazy hours (I was not fully aware how expensive it actually was at the time) and selling their assortment at what it kinda seemed as hefty prices. But then, I was in need of energy. Who could've blamed me for having a box of Caesar salad? I was not ready for taking off before I knew all my gears were up n' running, including the ones in my head. My body compass was seriously off to its verge. It took me 20 minutes of strolling around the train station before I've realized; That there is a university right next to the station. Then I realized, that the university campus is actually located ON TOP of the train station. Seriously, the train departure complex had around 4 floors and it included a top area, which in fact was the outdoor area of its University (of Bern) with a wonderful (dimmed back then) 180 degree view of the city and its surroundings such as a marvelous mountains outline. At that particular time, they were still slightly visible. But, considering that the university was right here, right now. Eduroam activate! Get the map on my phone and bon voyage! Straight off towards the location of where the city center actually was (or presumed to be held at).</p>
+
+
+
+<p>I found Bern to be quite fairytalish. Not necessarily as huge as I kind of had preliminary figured. The western part consisted of some clubs, quite fondly attended. The southern part most had its older virtues to present upon its visitors. Although, you wouldn't have made a mistake calling the entire area per 'old town'. I haven't had the pleasure of bushing through the eastern part (it wasn't marked as potentially of any interest). All in all, the southern part was the destination that I had to penetrate thoroughly. The buildings reflected back in yellow from multiplicitous lamps hanging either in between or next to the buildings. which meant: that I invaded the right area. The older part? It was quite old. Apologies for not mentioning the styles, I would have to take my time analyzing what I've seen. I felt is as one of a kind, literally just flat buildings, tiny balconies on which you may just merely lit a cigarette up. Furthermore, the streets here looked quite different compared to Zurich's. Or, did I not mention how Zurich looked like? Well, perhaps let's reverse back to Zurich then.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      In Zurich I haven't seen much. But the city has castle-like river on the western part and a normal one of the eastern part. Oh well, wasn't that the exactly same case with Bern? Well, slightly, except for the lake on the southern part of the city. Instead, we had hills encompassing, which could've proven Bern to be quite an easier city to win over. Get rid of these thoughts. The embankments on which this city is build upon, massive structures. The view from the bridges were one of a kind, despite being pitch black, eh. Although, there was a lower part not that far away... But, the view from the hill, was like, wow, this city! Took plenty of photos. Then headed back as I had ample time and enjoyed the... damn, these structures actually felt... roman. Yeah, that's the style, although I was already severely tired, it felt like a mixture of roman and this kind of basically Italian structural feel. Funny, that was still the german-speaking canton in which I actually did paradoxically understand the people.</p>
+
+<p>Mmm, did I mention that Switzerland felt like a safe country? Well, the feel is one thing but the feeling... or better yet. I learned a few things about this country, I mean: gunsgunsguns. Could mean it's not safe, better yet, crazily dangerous, butt. Gunsgunsguns actually has proven this country safe as a safety hatch on gunsgunsguns. And, by the way. All you could experience at 2, 3, even 4 am in this county was just an overflow, a magic stream of drunk people, actually having fun! The trains? Filled with people, drunk and getting drunker and having fun! Bloody decadence? Or just living the life? Adhering to the law I guess, as the police didn't give a few damns about the drunk people. But gave about some people, hard to say whether drunk, probably looking stranger. Better yet, at these super late-early times, bursting into a McDonald joint meant... Well, a shitload of people, that's for sure. But what struck my eyes, and of whom eyes were hanging on top of me for a few minutes and mine on the McDonald's menu, disgusted with the not that or quite contemptible menu, were the two black wearing set of guys, quite clearly overlooking the joint as if people were trashing the place constantly. Yeah, security you may call them. What turned out was, it was not only this joint that hired security. Burger king and other McDonald's around the country did the same. Was it law? Eh.</p>
+
+<p>But I did run into some sort of trouble from some shady looking guy. For taking pictures, being quite diligently (that a right word?), convincing me that I've taken a picture of him and invoking that I should do something about it. After I deleted a-not-a-picture of that guy I was left alone, but felt strange. Drug dealer? Immigrant? Whoever the fuck? Anyway, Bern is the capital of Switzerland and there were quite a few police cars passing around so probably any problems (if any) would not happen, but, yeah, just one of the situations where it felt quite eerie at the very least. One of the disadvantages of travelling alone I guess.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+    <p>
+      I might also mention, that, Bern somehow reminded me very, very closely of Sydney under certain aspects. The university position, overlooking the city. The laid-back chairs, although just five of 'em. The overall feel, while walking down the hill and overlooking the city. I don't know, it just felt like homish homy home? Sydney? Well, further down, further further... Fast forward, train to Geneva.</p>
+
+<p>Well, to be honest, as so far I enjoyed my stay in Swiss and I was really, really counting on that the weather would turn out to be quite splendid. 'Cause, the forecasts were looking quite, quite bad, so unfortunate for me. But, I had to do it. Cause, why the fuck not, right? 15 euro voucher is a nice voucher, after all. So, bam. There I was. In Geneva. And there I was. At the Genevian lake. And there I was, waiting for the sunrise, which never came by the way. Bloody, fuckin' clouds, just filling up the skies... And being lit up but with no light really visible, at least the sun. Some mountains in the background were visible. An outline, shady one. Well, welcome to paradise, one might say.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

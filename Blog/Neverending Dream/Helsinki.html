@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/49110108277_9de320a5be_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49110106897_ad11e99a2a_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49109911296_52958caef4_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49110106122_c2512b1e4e_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49110105417_afedf7fb1d_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Helsinki</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/49110108277_bc32b4b547_b.jpg" class="darken"><div class="text">Outside the station</div><img src="https://live.staticflickr.com/65535/49110108277_bc32b4b547_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      Compared to the other destinations I was going through, I didn't write a word on Helsinki. On one hand, the reason was simple - I've already been here. I usually don't put together my itenerary in a way it would count the destination I've already been to. But this time, I had to make a longer way up the hemisphere to save money to go down. It makes absolutely no sense, I even checked Finnair flights directly from Helsinki to Delhi and they were more expensive compared to as if I was to take a plane from Warsaw to Delhi over Helsinki. How would anyone create a system to make it this way, beats me. But that meant also me spending about 20 hours in a city I've already been to and that was... a bit tricky at first.
+</p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      The first time I was entering Helsinki was by a ferry. Honestly, I wouldn't call it a ferry. This was literally a freakin' cruise ship and we hunted down a pretty solid offer for the 4 of us when we made our way up to Helsinki. But the ferry ride took about more time than it took me to get by plane to Helsinki from Warsaw. And then I had to make a decision as to what to do, once I landed. As it was a transfer, I didn't have to bother with my larger luggage, that I had to compress quite impressively. I mean, I left Sydney to New York with two pieces of luggage and somehow I managed to get these two compressed to fit the 23 kg limit (it was just 23!) and... yeah, it was a bit stressful at that time. But not more at the moment, now it was what am I going to do for about 20 hours now. Well, first thing first I decided to make my way to the city. It was nighttime but I figured I'd make a visit.
+    </p>
+
+    <p>
+      I decided to take the train. The station itself was positioned deep, deep, very deep under the airport. Honestly, this might be one of the deepest train airport stations I've ever seen in my life. The freakin' thing reminded me of some nuclear vaults. Perhaps it was designed this way considering they've got Russia as a neighbour. You wanna keep an Airport semi-operational, in case a war breaks out, eh? In any case, I bought a day ticket which was about 12 euros, about perfect for my use case as I could go anywhere I pleased with whatever I wanted under 24h. The train was fast and I quickly got a glimpse of the people from Helsinki. Bit of youth, bit of immigrants, bit of working class. The youth'd be noisy, some would play music on speakers on the train. Nothing really surprising really, typical western europe train ride. Except it was Finland, so that's northern but it didn't quite vary much overall. Once I reached the central station, I'd go looking for food. I found a gyros bar and a kebab bar and of the two, I went with Gyros as I felt it'd feel like a bit like New York. They said they didn't have one combo but I settled for some other, got some sauce on top of it and it was pretty darn good. Expensive, 8 euros but quite good. Then I went to get some groceries and I got myself some... juices. Some weird ones too, I don't even remember the names but these were expensive: 2-5 euros per small bottle, as these were 100% juices made of the fruits in question. I think I got myself a lingonberry one and some other as well. A tourist pair let me through as I had just a few items so that was nice. Once I bought what I had, I had to pack it all into my trousers and whatnot and then one person passed onto me an item I forgot by the cashier. It felt nice. Just a couple of nice people, always brings some shine onto humanity in one's own perception.
+    </p>
+
+    <p>
+      Then I decided to make my way to Aalto University. A bit of backstory, the plan was to go there for a short-term exchange. It never happened due to my Univesity's faculty services, which is an utmost incompetent, worthless and wasteful authority at University of Sydney as a whole. I said, I can do this exchange and then they were like 'oh, we didn't know'... In any case, it never happened. But I wanted to see what I missed out on. So I packed myself into the subway and as I made my way, I'd come across lots of party people. As in, there were some noisy clubs around and macdonalds would be freakin' full. This is classic, reminded me much of Zurich in this terms. Rich people going out to have fun. I made my way to mcdonalds to get myself a cup of coffee and to figure out the plan to survive the next 20 hours here. And so I did, then took the subway to Aalto, which was about 15-20 minutes away by the subway.
+    </p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49109912751_e756d6eb8d_k.jpg" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://live.staticflickr.com/65535/49109912751_e756d6eb8d_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+
+<div class="con2">
+	<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      Funny thing about subway. I think this is the first I've come across that is swarming with security. And I mean, not the police, you'd have those patrolling in Sydney. I'd see them patrolling on photos in New York maybe. But actual, security, making rounds at the stations, in the carriages, making conversation with other party people. I didn't quite get what their purpose was and why there was such a ridiculous number of them everywhere either. Was it they were worried about a terrorist attack? Were they worried about people drinking in the subway? They wouldn't keep people from vomiting in those, though. In any case, I'd eventually pop up at Aalto. And I'd start to wonder around, a semi-deserted campus all-in-all. I felt a little bit strange wandering around this place. Not that many people, duh, first of all. But then I didn't really have a plan as to where I'd go around. And I would be a bit worried about my phone keeping its battery life. So I made rounds, I walked around, I finally found some sounds and it was a disco where people seemed to be shouting 'Sex on Fire!'. Interesting choice of music (I know the band but it's been popular a bit years prior right?). Then it would be deserted again.
+    </p>
+
+    <p>
+      Thing was, the campus felt a bit... it wasn't large. There wasn't much. The architecture was a bit of a mix of modern and not so much. I liked that they had some good facilities around, like even to go for a swing on a playground clearly also facilitated towards students as well. The newer architecture was primarily based on wood, rocks and glass. Overall minimal but stylish. Racks to keep your bike locked to. There was a huge garage for startups. I don't know, the campus looked ok but there wasn't much that really surprised me or made me wish, 'shit, I should have really pressed for getting into this program!'. It looked like a decent, although a bit deserted campus. Perhaps it's because students had a break. I reckon, during the break, they're all out of here. Perhaps to go camping somewhere in the country or perhaps they've all taken fleight to some nicer destinations south of Europe or anywhere else in the world. I mean, I've partially done that too, so why would I blame them?
+    </p>
+
+    <p>
+      I took one of the last subways back to central and then wondered on what to do up next. In the end, I spent a bit of time at maccas again but decided, there's not much to do and I was tired so I took a bus up back to the airport again. I didn't quite know what to do with the ticket so the bus driver scanned it for me. The bus go really full actually. And it took a quite good time to get back to the airport, where I... shit I don't quite remember what I've done actually! I think I got up there and saw lots of people trying to sleep all around the airport. It's a quite usual sight these days. Some airports close up altogether, just so that they don't have to deal with this shit. In theory, airports are a good destination to go to sleep if you're trying to see a lot as a traveller. I did this myself. Not much danger in doing so. I personally, well, I think I got inside the airport and decide to take a few hours and sleep. Once I woke up, I left the airport and went sightseeing. Voila. Where did I sleep? I slept on some bench or something. Again, that's what travellers do with a minimal budget like I had. The only problem was, I felt a bit tired like a bit usual but, the way I do all this, eventually, you end up actually energised. Really.
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49110106897_ad11e99a2a_k.jpg" class="darken"><div class="text">Sculpture in the park</div><img src="https://live.staticflickr.com/65535/49110106897_ad11e99a2a_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+<p>
+  You know, it might have been that I didn't actually sleep that night. I don't quite remember actually much in these few hours, perhaps I slept for an hour or two but not more. Eventually I took the train again once they started running and made my way to the city. This part is always tricky, as you need to stay alive and not asleep but your body and mind, especially the latter likes to wander off and that's when you start falling asleep. To keep it properly stimulated, is just problematic. And if you do that, there is always a bit of a fallout, cause you don't really feel as if it influences your decision-making process or anything but... try speaking to anybody around and you'll discover, that this is such a difficult thing to do when you're just so tired.
+</p>
+
+<p>
+  My first stop was a destination that I missed out on the first time I've been to Helsinki. That was, a UNESCO sight that you go by a ferry. I think I kind of fucked up with something here but I could not quite put together what was that. I think it got to do something with payments but, hard to say. Helsinki has an island. I mean, it is literally a bit like an archipelago of sorts but there is one that is a Fort. Not exactly a castle, more of a Fort and it still is, partially, as they have some restricted areas made just for Army men. This felt a bit like Venice actually. But not exactly and we were still in the North to remind you. The act of moving towards the Island was very much straining, as there isn't much happening during the course. I'd sit and not be let on the top of the ferry due to the weather being a bit unpredictable. The move back was also slightly straining if not even slightly more. The island itself, felt a bit like haven. It wasn't well attended at that time, as it was the very morning. Everyone either asleep, either recovering from yesterday's party, either crazy like I was, embarking on a rather crazy tour and the beginning didn't feel quite optimistic, with me being already worn down. In a way, having less people on the ground provided a quite solid charge for me. There are times that my extravertive type activates and people don't quite drain my batteries but, I think after staying in one place for a longer period and finally branching out into the world provided the necessary action to get myself back into business. It felt really mundance but also interesting, as the weather looked like as if it was about to turn to shit. And the island I was on, was rather a mix that I'd associate with, well, on one hand Denmark for some reason but also Great Britain in a way. The subtle mixture of walls and grasslands was quite soothing and despite there was a bit of terrain to cover, it felt nice. Not too warm, a bit of wind, the baltic sea. The near-solitude of just a sole wanderer roaming through the...
+</p>
+
+<p>
+  Well, honestly there wasn't much on the island. But then, there wasn't much left for me to explore in the city either. I'd eventually move back after taking x photos and eventually it would also start pouring a bit of rain. Not until I reach the local market, a bit of tourist attraction as well, where I splurged on reindeer meatballs with frozen veggies and some other stuff. It wasn't particularly good food, in fact, I figure perhaps the meatballs were the only ones that were okayish, this type of food I recalled as being a bit fattier, I think I also got to eat some elk meatballs while I stopped for a bit in Estonia. And the taste was relatively just as 'fatty'. The price was steep, though. I was surprised by all this, as I was after all in Finland. Usually quality comes together with the price and as the price is usually high, the quality usually was just as. Not this time, though.
+</p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49109911296_52958caef4_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49109911296_52958caef4_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+
+<div class="con4">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      There were a couple of things I wanted to check still while here. So, I bounced up Helsinki to a rather famous sculpture depicting... I don't know, some sort of an instrument I'd presume. As if you had a hundred flutes sprung up or church organs. Massive tourist attraction here, this marked especially a larger attendance from the Asian tours here. Many buses were parked right next and despite the early morning and the rain, there were about a hundred of people taking pictures and such, a few vendors selling flags and whatnot. Funnily enough, a hundred meters either way, it would be vacated of any living soul. See, Helsinki is not a big city really. It's the capital alright but with about 650 000 people living in it, it really doesn't feel massive. Although it takes a bit to walk around the central part of it.
+    </p>
+
+    <p>
+      After visiting the organ statue or whatever, considering the weather, I figured I'd drop by my favorite attraction here. There were a few that I did not go to, like the church burried under stones, or built into a stone? I think the latter but I didn't quite care, probably the best tourist attraction there is in Helsinki, is the library. I think this could tell a bit about this country on its own and you may be surprised to read, that a library is the largest attraction, especially that it's not really a library known for hundreds of years of whatever, just being there but it's a totally new one. The library of the contemporary world. Oodi. Where you'll find all different books and magazines. Where you'll play on Playstation and on, I think they have the older gaming consoles like Nintendo 64 etc. Where you can use Adobe Premiere on professional-grade monitors. Where you can practically rent a room to play instruments, record them and master all in the same building. You can knit your own socks and 3D print a miniature car. Or you can just hang. The building's a prime example of nordic, minimalist architecture and is just a pure pleasure to be in. Entry is free and everyone is welcome. Absolute pleasure. I took the time to upload some stuff and charge my equipment and just walk around because it's just that amazing to be in.
+    </p>
+
+    <p>
+      Eventually, I discovered I had still time left but considering the weather being not too great and myself slowly lapsing into slumber, I figured it's time to go back. I discovered, that the airport is awesome and they have sleeping pods. And as I made my way back to the airport I discovered that they were not for free but I still bought about 4 years, sorry, hours. It's not quite hibernation but they were cool, I packed my backpack safely, I think I could charge my phone there, the pod wasn't too comfy and it was a bit noisy outside. Also, I was caffeinated, so I didn't feel like sleeping. But in the end, out of the 4 hours, I think I managed to lapse twice into sleep. Here's the struggle, even if you're sleepy or tired, you may have trouble falling into sleep. It's a bit of a, I don't know. On one hand, you know stealing at an airport is just plain stupid, I think you can get into some very serious trouble if you do that. But sometimes you'll read stories of people going to sleep, listening to something and they'll end up discovering, that, well, the device it was plugged into, is not plugged into anymore.
+    </p>
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49110106122_c2512b1e4e_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49110106122_c2512b1e4e_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con5">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>...</h4></center>
+    
+    <p>
+      For the remainder of my travel I remained guarded, because I had literally all my life packed in my backpack. My laptop. My camera. My hard drives and ssds. A lot of stuff that I kind of had the only backup in my backpack. A lot of very important files, if anything happened to it all, if my backpack went missing or anything I'd end up in a very, very, very dark place. I had to make sure it doesn't fall anywhere. But at the same time, I also knew, that I have a trip to go through with. And honestly, there were many missing details. I didn't even book a place in Mali to stay at, where I had a connecting flight but only after 30 hours of being there. But I think on that day, in Finland, I finalised this. Because I could not know really how would it turn out in Delhi. And, you know, it often is the case that you can't really decide because, you end up researching a lot and you see this not, not this, this is bad. How will it be. How is it going to turn out.
+    </p>
+
+    <p>
+      And you know, the only thing is. You can't exactly fight it all, because it's all on a tight deadline, one that I designed for myself. Whomever I told my plan, they were like, man, wtf. And I was like, yeah, I know. But I gotta get back somehow and this was 'the cheapest option'. The other part was, I didn't really know what to expect back in Australia. Cause I didn't tell anyone that I was coming back really. I just had to count on myself, well, making sure, just counting on myself really ending up in one piece back home. And I also started getting some symptoms, which was unnecessary.
+    </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://live.staticflickr.com/65535/49110105237_a24747b820_k.jpg" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49110105237_a24747b820_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

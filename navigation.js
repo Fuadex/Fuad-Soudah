@@ -109,7 +109,7 @@ document.write('\
         <ul class="dropdown-menu">\
           <li><a href="Photos.html">Flickr</a></li>\
           <li><a href="Grasausschuss Pho.html">Grasausschuss</a></li>\
-          <li><a href="Instagram.html">Instagram</a></li>\
+          <li><a href="Instagram.html">Snapshots</a></li>\
       </ul>\
             \
         </li>\
@@ -117,7 +117,7 @@ document.write('\
     </ul>\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
-      <li><a href="Culture 2.html"><span class="glyphicon glyphicon-heart"></span> Culture</a></li>\
+      <li><a href="Culture.html"><span class="glyphicon glyphicon-heart"></span> Culture</a></li>\
       <li><a href="Education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>\
       <li><a href="Contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>\
       <li><a href="index - Copy.html"><span class="glyphicon glyphicon-qrcode"></span> About Me</a></li>\

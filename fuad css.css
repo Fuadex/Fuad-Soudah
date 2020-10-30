@@ -1038,7 +1038,7 @@ div:hover {
 }
 /* Title */
 .navbar-inverse .navbar-brand {
-    color: #777;
+    color: #333;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -1046,7 +1046,7 @@ div:hover {
 }
 /* Link */
 .navbar-inverse .navbar-nav > li > a {
-    color: #555;
+    color: #222;
               -webkit-transition: all 0.1s ease;
        -moz-transition: all 0.1s ease;
         -ms-transition: all 0.1s ease;
@@ -1069,7 +1069,7 @@ border-radius: 35px;
 .navbar-inverse .navbar-nav > li > a:focus:after {
       display: block;
     content:'';
-    border-bottom: #555 1.5px solid;
+    border-bottom: #222 1.5px solid;
     margin-top:1px;
     transform: scaleX(0);
         transition: transform 250ms ease-in-out;
@@ -1084,20 +1084,20 @@ transform: scaleX(1);
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #555;
+    color: #222;
     background-color: white;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #555;
+    color: #222;
     background-color: rgba(255,255,255,0.5);
     border-radius: 35px;
 }
 /* Caret */
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
+    border-top-color: #333;
+    border-bottom-color: #333;
 }
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
 .navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
@@ -1107,12 +1107,12 @@ transform: scaleX(1);
 .navbar-inverse .navbar-nav > .open > a .caret,
 .navbar-inverse .navbar-nav > .open > a:hover .caret,
 .navbar-inverse .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
+    border-top-color: #222;
+    border-bottom-color: #222;
 }
 /* Mobile version */
 .navbar-inverse .navbar-toggle {
-    border-color: #555;
+    border-color: #222;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
@@ -1125,7 +1125,7 @@ transform: scaleX(1);
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:not(.dropdown-toggle) {
-        color: #777;
+        color: #333;
             background-color: rgba(255,255,255,0.85);
         border-radius: 10px 30px 50px;
   border-style:solid;
@@ -1187,7 +1187,7 @@ transform: scaleX(1);
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:not(.dropdown-toggle):after {
     display: block;
     content:'';
-    border-bottom: #555 1.5px solid;
+    border-bottom: #222 1.5px solid;
     margin-top:1px;
     transform: scaleX(0);
         transition: transform 250ms ease-in-out;

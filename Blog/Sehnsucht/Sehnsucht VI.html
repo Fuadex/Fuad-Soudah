@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://vm1b8g.by.files.1drv.com/y4m6b3lATykmjXpR6JBoWM7jZ49ZosLQg0zjoyTETcOlBQPrBWuDx6Nz0NObKdMhsC8xP_CBvHwur7fd3DvjJeGkonnz9maQotqRYHuEe2eB-Vo2nodmM2-dszgz77ivnuvNYWcxyNkAF3ARa-wHmIYyEW7BoXa2_qmyApQNTVaTUTq2Xe_IepUmFXicb4bjOvN5RPx56XuvTRCLPZxw8UCXw?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vc078g.by.files.1drv.com/y4mthv7Z4Dmmin2ZET6tPwlg03_5oithJuHzTmX_tFEPVBlCTPTJSBZmGE9QrdZpi8PJN-kFQLOLebAQX8e9nDWJzlcq1FzbQMY2fPDrRcyx6cnF981556HU_zj7p8ccuUExhY3A9-SFUalTlwITSg2FY7sq6coe8Q_FFjWCpNO4Ji21pVcBenHOm4LI-4WKNZFVzSdFeFcoDiZKXnVuceS5Q?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://vc098g.by.files.1drv.com/y4mdVwIXJSFeqXslrwra9vrH756_gkDhi5Jclz3aAU5Cit2Ub7vsqAZdprWgXXwq243KCzjmpHk3XdyfLWOnGLGytHO6D0-E6bn150KyRzANmIk1A6HvWpz1b8aHHWO_jYtK62E3SlCUOhZVUYXPe7dYT1vj_3M1J3RUeunkTl7vYm6Klh1ecD8evcwiRBPkUcsek1h3w1_FeCQW06Dj_F4WQ?width=3840&height=2160&cropmode=none);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Sehnsucht VI</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://vm1b8g.by.files.1drv.com/y4m6b3lATykmjXpR6JBoWM7jZ49ZosLQg0zjoyTETcOlBQPrBWuDx6Nz0NObKdMhsC8xP_CBvHwur7fd3DvjJeGkonnz9maQotqRYHuEe2eB-Vo2nodmM2-dszgz77ivnuvNYWcxyNkAF3ARa-wHmIYyEW7BoXa2_qmyApQNTVaTUTq2Xe_IepUmFXicb4bjOvN5RPx56XuvTRCLPZxw8UCXw?width=3840&height=2160&cropmode=none" class="darken"><div class="text">Outside the station</div><img src="https://vm1b8g.by.files.1drv.com/y4m6b3lATykmjXpR6JBoWM7jZ49ZosLQg0zjoyTETcOlBQPrBWuDx6Nz0NObKdMhsC8xP_CBvHwur7fd3DvjJeGkonnz9maQotqRYHuEe2eB-Vo2nodmM2-dszgz77ivnuvNYWcxyNkAF3ARa-wHmIYyEW7BoXa2_qmyApQNTVaTUTq2Xe_IepUmFXicb4bjOvN5RPx56XuvTRCLPZxw8UCXw?width=3840&height=2160&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>...</h4></center>
+
+    <p>
+      What's perfection? The state or concept under which much is concealed deep within. In the end everyone may have a different definition of perfection. Fuckin' hell, everyone does! It's just these mere fractions and elements that conceal all the else. Slightly different concept, history, anything. Perfection can be also expressed and described via other epithets or terms. For some it may be a melancholical state being the most optimal. For others euphoric. Perhaps for some even neurotic. Who knows, we all sway differently.
+    </p>
+    
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>...</h4></center>
+    <br>
+
+    <p>
+      What makes us human? That we're humane? What differentiates us from animals? Why would we necessarily be that different from them? Einstein apparently claimed at a time, that imagination is the most important thing, at least in science. Without, it'd be hard for us to achieve anything. Even the thing that I am currently typing on this virtual, gigantic; worry-free, piece of paper. Meanwhile the paper page which I'm looking at is my computer screen and the information I'm writing in sequences of data on a device similar to a flash usb, known more as pendrives. We have made a gigantic technological advancement. Every now and then new technologies arise which may change our lives. And what comes of all this? Imagination is a double-edged sword. From nuclear energy we may wipe out entire metropolies and yet we may also power them up with the very same energy to keep them progressing.
+    </p>
+
+    <p>
+      Where do we get minerals and energy from? Why the fuck do we need these for if we're not going anywhere anyway? At any time some meteor may charge right into us. Or sun release a massive electromagnetic wave. Or earth shift its magnetic poles. So many things can happen, so what do we do. Yet, our world keeps moving forward. Perhaps we'll manage with this too. Meanwhile I'm waiting for a new episode of Black Mirror. It may be sort-of cosmic.
+    </p>
+
+    <p>
+  Sometimes I wonder whether I haven't detoured from my previously established route I've been following. Sure, I set myself goals, philosophies and other whatnots by which and to what I should adhere to and follow, so that it all had a more interesting worth and meaning. Despite this, there are days... Let's try this different, a man doesn't think about all this and the values are not drilled deep enough to not become, say, changed into some other earlier forms by which I adhered by. And by this, I was lately committed again to watching tv shows, in the end I was a no life for a few days and it sort of remained like so, old habits get into my head nowadays.
+</p>
+
+<p>
+  It's an intriguing self-defense mechanism, which a body has at its disposal and really enjoys taking arms with. Something of sorts of a system restore, while in case of a body it'd be seriously difficult for something to go wrong. I'd like in the end to extracts all the best traits or elements from my previous habits, combine them in a new system and make an attempt at being flexible. Improvise, keep going forward. Up till now it worked (somewhat).
+</p>
+
+<p>
+  Well, whatever. I'm again taking off course. I made a statement to myself, it's okay to watch a few shows and I had some to catch up on. I was recommended: Peaky Blinders, by a chance I found Westworld and I was awaiting tirelessly the premiere of Black Mirror, continuation of it on netflix. And well, I was a bit sad as I thought I was losing track of my analytic capabilities and in case of rating such specific titles, as Black Mirror is practically micromovies, yet... well, sometimes the artistic vision should be collated and conveyed in a more elaborate vision, taking even those 12 hours instead of 3. It really does work.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="con2">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vc078g.by.files.1drv.com/y4mthv7Z4Dmmin2ZET6tPwlg03_5oithJuHzTmX_tFEPVBlCTPTJSBZmGE9QrdZpi8PJN-kFQLOLebAQX8e9nDWJzlcq1FzbQMY2fPDrRcyx6cnF981556HU_zj7p8ccuUExhY3A9-SFUalTlwITSg2FY7sq6coe8Q_FFjWCpNO4Ji21pVcBenHOm4LI-4WKNZFVzSdFeFcoDiZKXnVuceS5Q?width=3840&height=2160&cropmode=none" class="darken"><div class="text">View from the park next to the art Village</div><img src="https://vc078g.by.files.1drv.com/y4mthv7Z4Dmmin2ZET6tPwlg03_5oithJuHzTmX_tFEPVBlCTPTJSBZmGE9QrdZpi8PJN-kFQLOLebAQX8e9nDWJzlcq1FzbQMY2fPDrRcyx6cnF981556HU_zj7p8ccuUExhY3A9-SFUalTlwITSg2FY7sq6coe8Q_FFjWCpNO4Ji21pVcBenHOm4LI-4WKNZFVzSdFeFcoDiZKXnVuceS5Q?width=3840&height=2160&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Critical Dillema</h4></center>
+    
+    <p>
+      Then again, the other thing is that a man wants at times to just sit back and watch something stress-free, without the need to evaluate all the individual aspects. Especially remembering all them and forming such can introduce quite a bit of a debacle in my head but what can I do. Meanwhile, I launch Peaky Blinders and... I'm happy. There are some interesting takes, protagonists, here I'd complain a notch but overall it's all wrapped quite nicely. Right atmosphere, plot-wise it keeps a grip on itself. It's a good watch yet it doesn't really pop its head above its competition more or less. And yet, I take a look at filmweb and the review are surprisingly favourable. How should one explain that? At times I'd dwell, then I'd clear my mind and perhaps I'd dream about, that it'd be a good idea to take a sweep at the perspectives of others as to what's so intriguing in this show. Perhaps it's just because it's good. A la Narcos. Meanwhile yet, I'd say in a non-elegant fashion, that I might have seen just too many shows and I'm just after something, which stands apart from the crowd. It feels a bit bizarre, yet it feels funny on its own. As a person, who rather doesn't read books, it's quite surprising rather how analytically I approach different media products, here, TV-based.
+    </p>
+
+    <p>
+      Westworld approached as well. And this show, elevated and got me timewarped to the brink of what I thought I'd ever be able to experience. Yet, it didn't quite accomplish that straightaway. My way of analysing unfortunately involves repeating scenes, which may damage a bit the natural flow when one watches or consumes something. Despite all this, I always I could apply necessary changes in my perspection so that at least intelectually I could centre out the idea, execution and final effect, which it may evoke in its audience. By the use of such disputable, yet from my perspective effective techniques, I am able to fish out the tiniest details. And as Mr. Hopkins uttered at some point in the show, it's all these details that make all the people comeback (to Westworld).
+    </p>
+
+    <p>
+      Well, a show in which AI went... hold up. There was a new world created. Totally different, not from Grudziński (reference to Herling-Grudziński setbook), yet a perfect one, in which everyone can do whatever they want to do. At the price of 40.000$ a day, we ride into this world, in which we are immortal. We may take a trip somewhere, capture or kill murderers. Go to a brother, enjoy all the pleasures of whatever our imagination provides us with. Set ourselves free, create a masquarade. Feel like in an enormous game, as such Westworld in fact is. As in GTA, we could do whatever we want to. Except in real world against humanoidal creatures, which are a perfect reflection of ourselves, except with one key difference. Their self-awareness starts and ends the very same day. At least, that was the idea...
+    </p>
+
+        <p>
+      So, what's so fantastic about this show? I always found value in the multitude of references to our lives. Artificial Intelligence and the dangers associated with it. The way people think and the verges of our humanity. Embroided were lines associated with IT, philosophy, literature. The scaling of the world, starting from people taking part in this game, moving on towards the organisation which manages it all. Actors' performance of superior quality with Anthony Hopkins being part of the cast. Sound with the leading motives, which may be called classics already. The use of a myriad of motifs, techniques. The most important from all this is the following: the focus on an entire spectrum of captured real-world issues and driving them in a subtle way, leaving the plot complexities at the backseat, while making sure it all continues without any plot-related errors. A show with a potential for which I was waiting a long time, which brings a really refreshing air breeze.
+    </p>
+
+    <p>
+      Meanwhile, Black Mirror. I won't write about the original seasons, as it could do with a few A4 pages to elaborate on what makes it what it makes, my favourite and imho genius show. Emotions are a funny thing. We can launch them easily, yet at times its a fickle to put them aside. Despite it all, everyone may value a title, which realistically evokes strong emotions, even resonates so heavily that you'll begin to cry. Or a human will fall into deep anger. Or even fall in love. And there are many different emotions, which a title can evoke, yet I suspect it's all about those higher ones, about which I do not really know honestly. This magic, which releases something in a person, which the title itself clusters out with imagination and execution. Unfortunately, the new Black Mirror let me down, although it had its moments and potential, which remained underutilised throughout most of its time.
+    </p>
+
+    <p>
+      First episode: great theme, down to earth and current. Really interesting extra themes, for instance the brother of the main character, who's as if the level-headed version of the protagonist. A few interesting comparisons. Yet the episode detached eventually and lead towards nowhere. It ended up weak, leaving the audience without much. A few interesting quotes. A massive, gigantic potential which went straight to the bin.
+    </p>
+
+    <p>
+      Second episode, phenomenal start. Great approach to the way the leading character was built in 15 minutes, the background, motivates and overall, absolute masterpiece. Phenomenal performance, especially of the leading character. Then it starts to become a bit cliched, although quality level remained well. Afterwards, things happened, very interesting things, although very badly concluded inception. I'd rather say it was a rather good episode, although one shouldn't wrap up such phenomenal episodes in such way. Plus one scene completely took me apart. But it wasn't enough.
+    </p>
+
+</div>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://vc098g.by.files.1drv.com/y4mdVwIXJSFeqXslrwra9vrH756_gkDhi5Jclz3aAU5Cit2Ub7vsqAZdprWgXXwq243KCzjmpHk3XdyfLWOnGLGytHO6D0-E6bn150KyRzANmIk1A6HvWpz1b8aHHWO_jYtK62E3SlCUOhZVUYXPe7dYT1vj_3M1J3RUeunkTl7vYm6Klh1ecD8evcwiRBPkUcsek1h3w1_FeCQW06Dj_F4WQ?width=3840&height=2160&cropmode=none" class="darken"><div class="text">Sculpture in the park</div><img src="https://vc098g.by.files.1drv.com/y4mdVwIXJSFeqXslrwra9vrH756_gkDhi5Jclz3aAU5Cit2Ub7vsqAZdprWgXXwq243KCzjmpHk3XdyfLWOnGLGytHO6D0-E6bn150KyRzANmIk1A6HvWpz1b8aHHWO_jYtK62E3SlCUOhZVUYXPe7dYT1vj_3M1J3RUeunkTl7vYm6Klh1ecD8evcwiRBPkUcsek1h3w1_FeCQW06Dj_F4WQ?width=3840&height=2160&cropmode=none" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>eh?</h4></center>
+
+      <p>
+      Third episode, weak. That's all I'm going to say. Weak themes. Weird things happen. A few interesting things happened that may be worth taking a look at but it wasn't a good episode. Fair performance, screenplay without firworks whatsoever. Some good potential was in it, yet not too great. A shame.
+    </p>
+
+    <p>
+      Forth episode was problematic. At first I didn't like it, it's as if a recap of when I watched White Bear for the previous season. It's an interestng thing as the episode didn't lead anywhere really, although it reminded something intriguing, perhaps something that... well perhaps something could still come out of this, interesting. And it did, really. Something really cool came out, to the point I started shedding tears. I didn't do anything for that kind of Black Mirror, heh. The screenplay launched so well that I was surprised. Such a love story, I haven't seen a thing like this yet, yet the concept was strong... I felt the entire thing wasn't all buttoned-up. A highlight of the season, unfortunate that it's the only one.
+    </p>
+
+    <p>
+      Fifth episode... Again, underutilised potential. Well lead but nothing extraordinatory wasn't included. To the point. The ending started to become quite interesting. Dystopian future, heh. It was surprising to me that some reviewers do not interpret well this episode, as it doesn't necessary touch upon realism but thing of a more dystopian nature. One really strong, although not as much scene. After which there was one that almost took me to my knees. Almost, as one powerful scene does not alter the perception of all the rest, which the viewer has experienced. That was the case in here. Classic, untapped potential.
+    </p>
+
+    <p>
+      The sixth episode was the classic black mirror. 1.5h show, created as a conspiracy-thing, which feels a bit cliche but not quite in here. It's hard to explain without providing many spoilers. But as I disliked all the previous episodes, usually due to the technology not being the frame holoding it all and being focused on, without the frame of which the plotlines wouldn't have much to lay against. Here it was a strong draw to the technological aspect in a way that could reflect on our own civilisation. The episode provides a massive kick, it's directed well and quite well written as well. Although the ending... I felt like ripping Charlie Brooker's balls out for what he'd done, only a dick would be able to finish up an episode in such a mediocre way. Well.. There's still Westworld. Or new black mirror coming out in a year. From the more interesting shows.
+    </p>
+
+
+</div>
+</div>
+
+<!-- 
+<div class="con4">
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/49120005293_da1ab703fc_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Phase Two</h4></center>
+    
+    Now once I had my belly full, I could start making my way to the art village. Technically, Gamcheon Culture Village, which is actually a heritage site. At least it feels like one, it might not be one, though. To do that, I had to take yet another bus and upon reaching the, well, start of the area, I was presented with a choice, that was really rather presented just in my own eyes. For some reason, I also wanted to see the city and there was, technically, a path leading towards a park. On the other hand I could dedicate myself to roaming the village. Out of the two, I went with the park, despite I had some bad experiences with parks and peaks in this country, as they usually lead towads... well, no particular views whatsoever. I took the risk, after all, what risk was that? And so it took a while, like usual, a bit of walking along a foresty area. But I was quite quickly rewarded with glimpses and then halfly, unconstrained view of Busan. The temperature and humidity quickly reminded myself via excessing sweating that, it is going to be a hell of a walk and that perhaps I should plan this a bit better. But I continued and upon venturing into a few side tracks... I discovered... not quite what I wanted. But it was still surprising to find out, that in literally, nowhere, the rabbit holes lead me to.. here, for instance: a volleyball pitch, public gym and something that I have not ever seen before. I mean, have you ever seen weightlifting equipment, as in weight/barbells in its all natural form? I mean, as those used as actual rocks. And natural benches to lift those up? And that all of this, remained where it was and was quite eagerly attended always by at least a few people?<br><br>
+
+    Now this view actually repeated itself a few times upon me detouring into the unknown paths. One of the main attractions was however, a open sculpture park. Some of the sculptures, really really good. Koreans can honestly do those to a very nicely perfected level, detailed, surreal at times and powerfully striking if needed. I was very pleasantly surprised by how they managed to populate this park. But I still did not get to see anything from it, despite that it was undoubtedly a hill. I decided to venture off to yet another path. That lead towards yet another... public gym. But I didn't rest at that point, I thought, hell, there must be something. And so I kept on going, went into somewhat a trippy area with grass growing higher than myself on each side, then a few more steps, yet another detour and I arrived at a destination, with a clear, almost entirely unobstructed view on two contrasting sides of Busan. A treat, that I was after for the past, well, almost an hour now. And considering my feet and the altitude I climbed, I also had to rest now.<br><br>
+</div>
+</div> -->
+
+
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>As well</h4></center>
+
+
+    
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken"  href="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" title="_DSC6148"><div class="text">Gamcheok Culture Village</div><img src="https://live.staticflickr.com/65535/49120005783_41a7c79009_k.jpg" width="100%" alt="_DSC6148"></a><br>
+  </div><br>
+</div>
+<br>
+</div>
+</div>
+
+
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Way to Go</h4></center>
+
+ 
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/43242467664/in/dateposted-public/" title="_DSC6389"><div class="text">Hamcheok Culture Village</div><img src="https://farm1.staticflickr.com/930/43242467664_713ce37159_k.jpg" width="100%" alt="_DSC6389"></a><br>
+  </div><br>
+</div>
+<br>
+ -->
+<!-- <div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Epilogue</h4></center>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/29023148007/in/dateposted-public/" title="_DSC6466"><div class="text">Haeundae Beach</div><img src="https://farm2.staticflickr.com/1812/29023148007_fe1b1f603d_k.jpg" width="100%" alt="_DSC6466"></a><br>
+  </div><br>
+</div>
+<br> -->
+
+<!--     </div> -->
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
