@@ -27,7 +27,7 @@ sr.reveal(\'span\', {opacity: 0,duration:1000, mobile: false});\
   </div>\
     <div class="container-fluid">\
     <ul class="nav navbar-nav">\
-  <li><a href="Index.html">Index</a></li>\
+  <li><a href="index.html">Index</a></li>\
   <li><a href="Blog.html">Blogs</a></li>\
     </ul>\
 \
