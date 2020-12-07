@@ -355,7 +355,7 @@ html, body { overscroll-behavior: none; }
   @media (max-width:728px){
 
     .swiper-slide > a > img{
-      width:100%;
+      width:75%;
     }
 
     .swiper-slide > img{
@@ -386,7 +386,7 @@ html, body { overscroll-behavior: none; }
     }
 
     .res3{
-      height:80vh;
+      height:60vh;
       padding:20px;
       margin:20px;
     }
@@ -465,8 +465,24 @@ h1{
 }
 
 /*.swiper-pagination-bullet{
+  width:4px;
+  height:4px;
+        -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+}
+
+
+.swiper-pagination-bullet:hover{
   width:12px;
   height:12px;
+        -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
 }*/
 
 </style>
@@ -586,11 +602,11 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Szkar%C5%82atny+pilot-1992-34658"><img src="https://fwcdn.pl/fpo/46/58/34658/7178349_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Szopy+w+natarciu-1994-111708"><img src="https://fwcdn.pl/fpo/17/08/111708/7178351.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Szkar%C5%82atny+pilot-1992-34658"><img src="https://fwcdn.pl/fpo/46/58/34658/7458502_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Szopy+w+natarciu-1994-111708"><img src="https://fwcdn.pl/fpo/17/08/111708/7671782.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Rodzinka+Yamad%C3%B3w-1999-111709"><img src="https://fwcdn.pl/fpo/17/09/111709/7901356.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Redline-2009-512229"><img src="https://fwcdn.pl/fpo/22/29/512229/7332094.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Kaguya-2013-560009"><img src="https://fwcdn.pl/fpo/00/09/560009/7695549.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Kaguya-2013-560009"><img src="https://fwcdn.pl/fpo/00/09/560009/7576568.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kono+Sekai+no+Katasumi+ni-2016-746761"><img src="https://fwcdn.pl/fpo/67/61/746761/7822264.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kimi+no+Na+wa.-2016-760082"><img src="https://fwcdn.pl/fpo/00/82/760082/7782990.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Fantazja-1940-36316"><img src="https://fwcdn.pl/fpo/63/16/36316/7840726.3.jpg" style="; border:none; box-shadow:none;"></a></div>
@@ -924,6 +940,8 @@ h1{
                                                                                         clickable: true,
                                                                                       },
                                                                                     });
+
+
 
                                                                                     var swiper = new Swiper('.swiper-container5', {
                                                                                       effect: 'coverflow',
