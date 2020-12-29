@@ -32,7 +32,7 @@ document.write('\
       <li class="dropdown">\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog\
         <ul class="dropdown-menu">\
-        <li><a href="Blog.html">Blog</a></li>\
+        <li><a href="Blog.html">Dreams</a></li>\
           <li><a href="RadioX.html">Radio</a></li>\
                     <li><a href="Grasausschuss.html">Gras</a></li>\
       </ul>\

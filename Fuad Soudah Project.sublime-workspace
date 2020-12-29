@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"offs",
+				"col-sm-offset-2"
+			],
+			[
 				"off",
 				"col-sm-offset-2"
 			],
@@ -19,43 +23,106 @@
 			"file": "Blog.html",
 			"settings":
 			{
-				"buffer_size": 57346,
+				"buffer_size": 63981,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Blog/Sehnsucht/Dublin Belfast.html",
+			"file": "Grasausschuss.html",
 			"settings":
 			{
-				"buffer_size": 26193,
+				"buffer_size": 6023,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Blog/Sehnsucht/Portugal.html",
+			"file": "Blog/Neverending Dream/SEA.html",
 			"settings":
 			{
-				"buffer_size": 39066,
+				"buffer_size": 32082,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Blog/Sehnsucht/Lazur.html",
+			"file": "Blog/Neverending Dream/Bali Phnom Siem.html",
 			"settings":
 			{
-				"buffer_size": 33081,
+				"buffer_size": 28501,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Blog/Sehnsucht/Hamburg Copenhagen.html",
+			"file": "Blog/Neverending Dream/1.html",
 			"settings":
 			{
-				"buffer_size": 22715,
+				"buffer_size": 43227,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/1a.html",
+			"settings":
+			{
+				"buffer_size": 15062,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/Instagram/Paintings.html",
+			"settings":
+			{
+				"buffer_size": 60525,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/0.html",
+			"settings":
+			{
+				"buffer_size": 30724,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/0a.html",
+			"settings":
+			{
+				"buffer_size": 13623,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/0babc.html",
+			"settings":
+			{
+				"buffer_size": 38473,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/1.html",
+			"settings":
+			{
+				"buffer_size": 32777,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/0abc.html",
+			"settings":
+			{
+				"buffer_size": 41857,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -64,7 +131,7 @@
 			"file": "Blog/Neverending Dream/2.html",
 			"settings":
 			{
-				"buffer_size": 36752,
+				"buffer_size": 38761,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -73,7 +140,7 @@
 			"file": "Blog/Neverending Dream/3.html",
 			"settings":
 			{
-				"buffer_size": 35981,
+				"buffer_size": 37991,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -82,61 +149,7 @@
 			"file": "Blog/Neverending Dream/4.html",
 			"settings":
 			{
-				"buffer_size": 35064,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Sehnsucht I.html",
-			"settings":
-			{
-				"buffer_size": 27303,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Sehnsucht II.html",
-			"settings":
-			{
-				"buffer_size": 31716,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Sehnsucht III.html",
-			"settings":
-			{
-				"buffer_size": 35968,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Sehnsucht IV.html",
-			"settings":
-			{
-				"buffer_size": 24860,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Sehnsucht VI.html",
-			"settings":
-			{
-				"buffer_size": 26602,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Sehnsucht VII.html",
-			"settings":
-			{
-				"buffer_size": 26278,
+				"buffer_size": 37070,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -145,7 +158,7 @@
 			"file": "Blog/Sehnsucht/Sehnsucht XII.html",
 			"settings":
 			{
-				"buffer_size": 25957,
+				"buffer_size": 25884,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -154,7 +167,7 @@
 			"file": "Blog/Sehnsucht/Sehnsucht XI.html",
 			"settings":
 			{
-				"buffer_size": 25957,
+				"buffer_size": 27165,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -181,7 +194,7 @@
 			"file": "Blog/Sehnsucht/Sehnsucht X.html",
 			"settings":
 			{
-				"buffer_size": 24627,
+				"buffer_size": 30575,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -224,33 +237,6 @@
 			}
 		},
 		{
-			"file": "Trouble Cruise.html",
-			"settings":
-			{
-				"buffer_size": 6582,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Lone Island.html",
-			"settings":
-			{
-				"buffer_size": 6929,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Munster.html",
-			"settings":
-			{
-				"buffer_size": 21389,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Blog/Sehnsucht/Venlo Eindhoven.html",
 			"settings":
 			{
@@ -263,70 +249,8 @@
 			"file": "Instagram.html",
 			"settings":
 			{
-				"buffer_size": 9781,
+				"buffer_size": 10825,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Instagram/2017.html",
-			"settings":
-			{
-				"buffer_size": 61808,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Instagram/2017a.html",
-			"settings":
-			{
-				"buffer_size": 55291,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Instagram/2017b.html",
-			"settings":
-			{
-				"buffer_size": 55033,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Instagram/CG.html",
-			"settings":
-			{
-				"buffer_size": 35282,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Instagram/USA.html",
-			"settings":
-			{
-				"buffer_size": 66866,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Instagram/Preliminary.html",
-			"settings":
-			{
-				"buffer_size": 61932,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Photos.html",
-			"settings":
-			{
-				"buffer_size": 22101,
 				"line_ending": "Windows"
 			}
 		},
@@ -340,28 +264,10 @@
 			}
 		},
 		{
-			"file": "Blog/Instagram/World.html",
-			"settings":
-			{
-				"buffer_size": 43230,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "home.html",
 			"settings":
 			{
 				"buffer_size": 41298,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "ALA.html",
-			"settings":
-			{
-				"buffer_size": 6654,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -385,19 +291,37 @@
 			}
 		},
 		{
-			"file": "Blog/Instagram/2018.html",
+			"file": "Culture.html",
 			"settings":
 			{
-				"buffer_size": 48872,
+				"buffer_size": 86961,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Culture.html",
+			"file": "Blog/High Pitch Void/High20.html",
 			"settings":
 			{
-				"buffer_size": 80581,
+				"buffer_size": 47584,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index - Copy.html",
+			"settings":
+			{
+				"buffer_size": 15820,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Fuadex/Documents/GitHub/NotoGitara/index.html",
+			"settings":
+			{
+				"buffer_size": 22473,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -412,78 +336,6 @@
 			}
 		},
 		{
-			"file": "navigation.js",
-			"settings":
-			{
-				"buffer_size": 5409,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Education.html",
-			"settings":
-			{
-				"buffer_size": 10150,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Switzerland.html",
-			"settings":
-			{
-				"buffer_size": 40536,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/London Cambridge.html",
-			"settings":
-			{
-				"buffer_size": 35940,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "MusicVideos.html",
-			"settings":
-			{
-				"buffer_size": 48323,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High19.html",
-			"settings":
-			{
-				"buffer_size": 44377,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/High Pitch Void/High20.html",
-			"settings":
-			{
-				"buffer_size": 52090,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Blog/Sehnsucht/Lublana.html",
-			"settings":
-			{
-				"buffer_size": 21940,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Blog/Fleeting Dream/Fleet1.html",
 			"settings":
 			{
@@ -493,9 +345,38 @@
 			}
 		},
 		{
+			"file": "Blog/American Dream/I.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 16064,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/II.html",
+			"settings":
+			{
+				"buffer_size": 16268,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/III.html",
+			"settings":
+			{
+				"buffer_size": 18538,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Blog/American Dream/IV.html",
+			"settings":
+			{
+				"buffer_size": 18936,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -511,6 +392,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"livereload",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
 			[
 				"npm instal",
 				"npm: Install Package"
@@ -556,10 +445,6 @@
 				"Package Control: Enable Package"
 			],
 			[
-				"LiveReload: Enable/disable plugins",
-				"LiveReload: Enable/disable plug-ins"
-			],
-			[
 				"Package Control: enab",
 				"Package Control: Enable Package"
 			]
@@ -590,6 +475,45 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht I.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/navigation.js",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Hamburg Copenhagen.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Lazur.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Portugal.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Dublin Belfast.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Munster.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Trouble Cruise.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/2017b.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/2017a.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/2017.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/USA.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/CG.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Tech.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Mocap.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/2018.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/ALA.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/World.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Placemaking.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Tracking.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/BoomBox.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Photos.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Instagram/Preliminary.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Education.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/MusicVideos.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High20.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/High Pitch Void/High19.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Lublana.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/London Cambridge.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Switzerland.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht VII.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht VI.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht IV.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht III.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht II.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Ed.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/DE.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Unity.html",
+		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Lone Island.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Dublin Glasgow.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/fuad css.css",
 		"/C/Users/Fuadex/Desktop/smooth-scrollbar-develop/__demo__/app.js",
@@ -621,9 +545,7 @@
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht Z I.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht X II.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht X I.html",
-		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht VI.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht V.html",
-		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Sehnsucht/Sehnsucht IV.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Fleeting Dream/1.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Neverending Dream/1.html",
 		"/C/Users/Fuadex/Documents/GitHub/Fuad-Soudah/Blog/Australian Dream IV/2.html",
@@ -632,7 +554,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -646,6 +568,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"flow-",
+			"parall",
+			"porco",
+			".swiper-slide > a",
+			"scroll",
 			"Belfast",
 			"Glasgow",
 			"res",
@@ -707,7 +634,7 @@
 	"groups":
 	[
 		{
-			"selected": 42,
+			"selected": 31,
 			"sheets":
 			[
 				{
@@ -716,15 +643,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 57346,
+						"buffer_size": 63981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28398,
-								28398
+								15481,
+								15481
 							]
 						],
 						"settings":
@@ -734,57 +661,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8348.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Blog/Sehnsucht/Dublin Belfast.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 26193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11843,
-								11843
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2415.0,
+						"translation.y": 5313.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Blog/Sehnsucht/Portugal.html",
+					"buffer": 1,
+					"file": "Grasausschuss.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 39066,
+						"buffer_size": 6023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36308,
-								36308
+								2661,
+								2661
 							]
 						],
 						"settings":
@@ -794,27 +691,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7016.0,
+						"translation.y": 1315.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Blog/Neverending Dream/SEA.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29144,
+								29144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5416.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Blog/Sehnsucht/Lazur.html",
+					"file": "Blog/Neverending Dream/Bali Phnom Siem.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 33081,
+						"buffer_size": 28501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21159,
-								21159
+								9985,
+								9985
 							]
 						],
 						"settings":
@@ -824,27 +751,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4894.0,
+						"translation.y": 2272.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Blog/Sehnsucht/Hamburg Copenhagen.html",
+					"file": "Blog/Neverending Dream/1.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22715,
+						"buffer_size": 43227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7156,
-								5144
+								37169,
+								37169
 							]
 						],
 						"settings":
@@ -854,7 +781,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2156.0,
+						"translation.y": 6378.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 9,
@@ -862,19 +789,229 @@
 				},
 				{
 					"buffer": 5,
-					"file": "Blog/Neverending Dream/2.html",
+					"file": "Blog/American Dream/1a.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 36752,
+						"buffer_size": 15062,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34162,
-								34162
+								13620,
+								13620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Blog/Instagram/Paintings.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4456,
+								4456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2724.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Blog/American Dream/0.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Blog/American Dream/0a.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Blog/American Dream/0babc.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								881,
+								881
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Blog/American Dream/1.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Blog/American Dream/0abc.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								945,
+								945
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Blog/Neverending Dream/2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30003,
+								30003
 							]
 						],
 						"settings":
@@ -882,237 +1019,27 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 569.0,
+						"translation.y": 1901.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 52,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Blog/Neverending Dream/3.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35981,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8794,
-								8794
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2257.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 53,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Blog/Neverending Dream/4.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35064,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33941,
-								33941
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 111.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 50,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Blog/Sehnsucht/Sehnsucht I.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 27303,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13174,
-								13174
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3641.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 44,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Blog/Sehnsucht/Sehnsucht II.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 31716,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18701,
-								18701
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3959.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 51,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Blog/Sehnsucht/Sehnsucht III.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35968,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5401,
-								5401
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4208.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 49,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Blog/Sehnsucht/Sehnsucht IV.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24860,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5399,
-								5399
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2210.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 48,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Blog/Sehnsucht/Sehnsucht VI.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 26602,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19027,
-								19027
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3746.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 46,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 13,
-					"file": "Blog/Sehnsucht/Sehnsucht VII.html",
+					"file": "Blog/Neverending Dream/3.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 26278,
+						"buffer_size": 37991,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14360,
-								14360
+								29233,
+								29233
 							]
 						],
 						"settings":
@@ -1122,27 +1049,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4544.0,
+						"translation.y": 5796.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 43,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 14,
-					"file": "Blog/Sehnsucht/Sehnsucht XII.html",
+					"file": "Blog/Neverending Dream/4.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25957,
+						"buffer_size": 37070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9005,
-								9005
+								873,
+								873
 							]
 						],
 						"settings":
@@ -1152,27 +1079,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2899.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 40,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 15,
-					"file": "Blog/Sehnsucht/Sehnsucht XI.html",
+					"file": "Blog/Sehnsucht/Sehnsucht XII.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25957,
+						"buffer_size": 25884,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4727,
-								4727
+								16033,
+								16033
 							]
 						],
 						"settings":
@@ -1182,14 +1109,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2322.0,
+						"translation.y": 3573.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 39,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
 					"buffer": 16,
+					"file": "Blog/Sehnsucht/Sehnsucht XI.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17314,
+								17314
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3220.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "Blog/Sehnsucht/Sehnsucht V.html",
 					"semi_transient": false,
 					"settings":
@@ -1215,11 +1172,11 @@
 						"translation.y": 97.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "Blog/Sehnsucht/Sehnsucht IX.html",
 					"semi_transient": false,
 					"settings":
@@ -1245,24 +1202,24 @@
 						"translation.y": 3705.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 35,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "Blog/Sehnsucht/Sehnsucht X.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24627,
+						"buffer_size": 30575,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4810,
-								4810
+								16377,
+								16377
 							]
 						],
 						"settings":
@@ -1272,14 +1229,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1856.0,
+						"translation.y": 3493.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 36,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "Blog/Sehnsucht/Sehnsucht VIII.html",
 					"semi_transient": false,
 					"settings":
@@ -1305,11 +1262,11 @@
 						"translation.y": 3114.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 45,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 21,
 					"file": "collage.html",
 					"semi_transient": false,
 					"settings":
@@ -1335,11 +1292,11 @@
 						"translation.y": 835.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 47,
+					"stack_index": 39,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 22,
 					"file": "/C/Users/Fuadex/Desktop/smooth-scrollbar-develop/__demo__/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1365,11 +1322,11 @@
 						"translation.y": 1267.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 23,
 					"file": "test.js",
 					"semi_transient": false,
 					"settings":
@@ -1393,101 +1350,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "Trouble Cruise.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6582,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2212,
-								2212
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 871.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 32,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
 					"buffer": 24,
-					"file": "Lone Island.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6929,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2929,
-								2929
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 910.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 31,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "Blog/Sehnsucht/Munster.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9489,
-								9489
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2779.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 41,
-					"type": "text"
-				},
-				{
-					"buffer": 26,
 					"file": "Blog/Sehnsucht/Venlo Eindhoven.html",
 					"semi_transient": false,
 					"settings":
@@ -1513,24 +1380,24 @@
 						"translation.y": 2558.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
-					"buffer": 27,
+					"buffer": 25,
 					"file": "Instagram.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9781,
+						"buffer_size": 10825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4515,
-								4006
+								8906,
+								8906
 							]
 						],
 						"settings":
@@ -1540,224 +1407,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2378.0,
+						"translation.y": 2733.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 28,
-					"file": "Blog/Instagram/2017.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 61808,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60213,
-								60213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 12744.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 27,
-					"type": "text"
-				},
-				{
-					"buffer": 29,
-					"file": "Blog/Instagram/2017a.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 55291,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								53696,
-								53696
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11746.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 30,
-					"file": "Blog/Instagram/2017b.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 55033,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								53438,
-								53438
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11817.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 31,
-					"file": "Blog/Instagram/CG.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35282,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32978,
-								32978
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 232.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 32,
-					"file": "Blog/Instagram/USA.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 66866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								65271,
-								65271
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 14317.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 33,
-					"file": "Blog/Instagram/Preliminary.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 61932,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60337,
-								60337
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 13063.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 26,
-					"type": "text"
-				},
-				{
-					"buffer": 34,
-					"file": "Photos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22101,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								425,
-								425
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1962.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 35,
+					"buffer": 26,
 					"file": "Changes.html",
 					"semi_transient": false,
 					"settings":
@@ -1783,41 +1440,11 @@
 						"translation.y": 107.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 34,
+					"stack_index": 36,
 					"type": "text"
 				},
 				{
-					"buffer": 36,
-					"file": "Blog/Instagram/World.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 43230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								945,
-								778
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 17.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 37,
+					"buffer": 27,
 					"file": "home.html",
 					"semi_transient": false,
 					"settings":
@@ -1829,8 +1456,8 @@
 						"selection":
 						[
 							[
-								19126,
-								19126
+								20986,
+								20986
 							]
 						],
 						"settings":
@@ -1840,44 +1467,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8188.0,
+						"translation.y": 507.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 38,
-					"file": "ALA.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4475,
-								4475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1443.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 39,
+					"buffer": 28,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -1901,11 +1498,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
-					"buffer": 40,
+					"buffer": 29,
 					"file": "footer.js",
 					"semi_transient": false,
 					"settings":
@@ -1931,54 +1528,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 41,
-					"file": "Blog/Instagram/2018.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 48872,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5339,
-								5339
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2428.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 30,
-					"type": "text"
-				},
-				{
-					"buffer": 42,
+					"buffer": 30,
 					"file": "Culture.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 80581,
+						"buffer_size": 86961,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								41218,
-								41218
+								41412,
+								41412
 							]
 						],
 						"settings":
@@ -1988,14 +1555,102 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9903.0,
+						"translation.y": 9680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "Blog/High Pitch Void/High20.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35299,
+								35299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7934.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 43,
+					"buffer": 32,
+					"file": "index - Copy.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11779,
+								11779
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 421.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "/C/Users/Fuadex/Documents/GitHub/NotoGitara/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5374,
+								5374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2636.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
 					"file": "noigitara.html",
 					"semi_transient": false,
 					"settings":
@@ -2018,254 +1673,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 962.0,
+						"translation.y": 1204.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 33,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 44,
-					"file": "navigation.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5248,
-								5248
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 886.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 45,
-					"file": "Education.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10150,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1372,
-								1372
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 46,
-					"file": "Blog/Sehnsucht/Switzerland.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 40536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37361,
-								37361
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6353.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 29,
-					"type": "text"
-				},
-				{
-					"buffer": 47,
-					"file": "Blog/Sehnsucht/London Cambridge.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2071,
-								2071
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 156.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 48,
-					"file": "MusicVideos.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 48323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8226,
-								8226
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2912.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 49,
-					"file": "Blog/High Pitch Void/High19.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 44377,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29800,
-								29800
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7031.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 37,
-					"type": "text"
-				},
-				{
-					"buffer": 50,
-					"file": "Blog/High Pitch Void/High20.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 52090,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6669,
-								6669
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2510.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 38,
-					"type": "text"
-				},
-				{
-					"buffer": 51,
-					"file": "Blog/Sehnsucht/Lublana.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1246,
-								1246
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 15.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 42,
-					"type": "text"
-				},
-				{
-					"buffer": 52,
+					"buffer": 35,
 					"file": "Blog/Fleeting Dream/Fleet1.html",
 					"semi_transient": false,
 					"settings":
@@ -2288,37 +1703,130 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 380.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 53,
+					"buffer": 36,
+					"file": "Blog/American Dream/I.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 16064,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5882,
+								5882
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2343.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "Blog/American Dream/II.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								944,
+								944
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "Blog/American Dream/III.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11474,
+								11474
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "Blog/American Dream/IV.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18936,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7709,
+								7709
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2557.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
 					"type": "text"
 				}
 			]

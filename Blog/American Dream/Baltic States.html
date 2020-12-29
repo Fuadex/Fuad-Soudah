@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../../jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../../fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/50774110021_b72e4b9afb_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/50774159646_8e9a8919f1_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/50774160241_9f2a5aef10_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/50774159396_96b8b5dcf1_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con5{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://live.staticflickr.com/65535/50773423333_ca50dc1634_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Baltic States</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://live.staticflickr.com/65535/50774110021_b72e4b9afb_k.jpg" class="darken"><div class="text">Somewhere around the Baltics</div><img src="https://live.staticflickr.com/65535/50774110021_b72e4b9afb_k.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Fanthom</h4></center>
+    
+    <p>Back and back on the road. This time differently.</p>
+
+    <p>
+      Most of my travels I mark by venturing the world alone. At times it gets a bit mundane, I mean for how long can you keep doing the same thing over and over? Being back in Poland and meeting with friends made me realize that many actually have managed to finish their studies. Although, not all necessarily have their time filled up to their brink, as it's vacation-time. Basing on this, I implied, my friends implied that we could do stuff, like travel somewhere. At first, I decided to go ahead first, alone but upon my return, we eventually loosely added up what's feasible, how much time we had, the options we had and off we went up north.
+    </p>
+
+    <p>
+      But as I was preoccupied with doing nothing, we kinda figured most of the details on the way after drafting the preliminary plan of what's to come.
+    </p>
+
+  </div><br>
+</div>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Firtho</h4></center>
+    
+  <p>
+    At first, most of the work did not necessarily end up on my end. It was actually my friend's end, who had to get his car up and running and take care of all the formalities. There seemed to be a lot of work associated, actually. Especially once I saw with what vehicle we were about to roam. I didn't necessarily care, probably due to my youngbeing, I am open to any form as long as I keep myself on the move. From a form of a delicately ever-increasing hobby it's moving towards an area where one could call it a poison, a vice or even a dependency. In all its form, the way I was preparing and executing my series of travels, were mildly put, tough. With not much sleep dedicated to the entire venture, little spent on transportation with key links put together near, at harms way. However, with all that in mind, considering the overall cost I would put towards such travels, I would still manage to keep all those surprisingly low, especially considering how last-minute most of it was taking place. But as often it is the case, whether continent-bound airlines or on-land transport, last-minute is a thing of the past, at least not applicable to how I roll.
+  </p>
+
+  <p>
+    This week, was rather different, though. More lax, bit more structured in the key areas of sustaining our own lives, keep ourselves moving forward well-conditioned. Which makes overall sense, especially the driver ought to be relatively well-relaxed so that our trip on the road does not bump into some forms of cataclysms. Like one where we end up next to the road. But with all that menace, comes the silver lining, with a roadtrip you get to see, potentially, significantly more. The costs are driven down significantly, although it ain't a rule. But for the number of destinations you may come across, especially the not-as-well-connected villages and etc. this is the way to move around, probably a standard in America, not quite so much from my own perspective, though. And in these 7 days, we did manage to come across, about 7 cities and about the same amount of villages, with perhaps half that we took a closer look around in.
+  </p>
+
+  <p>
+    On a sidenote, I should probably mention that I have perhaps explored some of the most expensive parts of the world by far and took priority in actually doing so, primarily based on where I was positioned for the time and of course provided I had what was necessary to perform all my explorations. By far, I have counted about 45 countries, which is a bit of a feat and once you consider the depth and that I managed to perform, pretty much about most of these travels in my last 5 years and fit all this into my often tight education-bound schedule, by any standards, I'd expect this to be a bit of an impressive accomplishment. Not quite so much often elicited by my peers but, again, to consider I am still being enabled to continue with my not-so-unique anymore but still, a pretty decent hobby leaves me quite happy overall. I have most of this also quite nicely documented but as all the material remains queued up and I never really had the spark to finish exactly what I had in mind, not that many of you could have really had the opportunity to experience even in part of what I had to deal with. The genesis will come eventually for me to depict and analyse in depth, at the moment let's get back to perhaps seeing and describing what was as of recent.
+  </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50774159646_8e9a8919f1_k.jpg" class="darken"><div class="text">Seoul, Town Hall area</div><img src="https://live.staticflickr.com/65535/50774159646_8e9a8919f1_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+<div class="con2">
+	<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Closing The Book</h4></center>
+    
+  <p>
+    After settling a few details, like the destinations, the ferry, the groceries we picked up to survive (in Finland) and establishing the timing, the draft was I'd be picked up at 5. The driver was to wake up at likely about 4, pick up the next passenger, me and then yer another. To my surprise, the pack was on-point at 5. After packing a few additional food-items, a yerba mate matero I figured crucial and the rest of the stuff that was distributed between about 2 backpacks, 1 gym bag, 1 tote bag and a few smaller items, like a sleeping bag, after about 10 mins of drooling back and forth, we were on the road picking up the last passenger. I mean, this was the right decision to take off earlier, as we arrived later about 12:30 at an area called Česukai. A national park on the border with Poland and Belarus, a bit closer towards Lithuania and closer to the border with Belarus, to be fair. And to be fair, the national park didn't seem that particularly exciting, although soothing. With a church in the middle, some houses with small fences or the lack of those, some bit better kept, some rundown. The weather was a bit unstable throughout our travel, especially at the beginning of it. At times it would rain, at times it would not, mostly in intervals that would last for minutes, at times and then some, most of the time - not. We were walking around the Niemen River, it may ring a bell for all those Polish folks, literature-wise. In any case, I was still a bit about half-alive at the time, so my jugging my memory and stimulating myself to act like a proper humanbeing remained a bit of a challenge. After we've left the town from a provisional parking lot next to the church, we sped to Vilnius and arrived at about 3 at a... shopping center. Ya know, we gotta be properly supplied for the rest of our trip.
+</p>
+
+<p>
+  Now, what I did not mention was, well, a few things. First of all, I knocked off and demolished my matero right off the side of car at a gas station in Augustów, close to the Lithuanian border. There was little space really in the car, despite it being a bit more like a truck (being registered as so). I put it where I thought it'd be safe. Once I slid off the door and put my leg to cross the doorstep, 'bang'! Had to clean this up, although parts of the mate remained on the road, looking a bit familiar to something greenalike. Weirdly. Making a guy kinda look back in his car, stop for a few seconds and then drive off.
+</p>
+
+<p>
+  The other part is, that the journey to Vilnius, well, in theory took about half a day, which could be considered like a day. To compare it with, let's say our hike back all the way from Finland, with us not being exactly positioned in Helsinki but deeper west towards a National Park territory, we had to wake up at 5, get going pretty much straightaway (don't even remember if there was time to prepare a cup of coffee or not) and move all the way to Helsinki to get right on time into the ferry back to Tallin in the car. Check-in takes place an hour before departure, with the departure really taking place minutes before it's supposed to depart. People from across nations, Finns but also Estonians, Lithuanians, Ukrainians etc. were all going aboard. With the ferry moving us at 9, we'd arrive a bit after 11. From there, it was tanking Diesel, as we were going a bit dangerous without tanking due to exorbitant prices at Finnish gas stations (~1.3€) and keep going through relatively civil Estonian highway, average speed measurement controlled and then absolute bonkers Latvian highways, where you'd expect, once experienced, total disregard for any road-related regulations and common sense, with buses and trucks overtaking while yet another pair of vehicles were overtaking at the opposite side. Well, intense. Haven't seen anthing alike. So we decided to take a break by the beach, replenish everyday items (in reverse order) and as we chilled by a beach, dominated by not that many, primarily algae at the sea, with the beach and the sea looking nice altogether, we went back to the car at... ehh, I got lost here. At about 3:30 leaving the supermarket, so we had to get to the beach at 4 and then... We were at a gas station at 7:30 south from Riga? Well, we tanked once, to the limit at 1.079€, which we found to be very low + the driver received a discount for some reason. A bit deeper down south, we'd come across 1.06€ and I think it went as down as 1.04€ or so. We arrived at Orlen gas station about 20 past mindnight, with the previous station being closed for a while (half an hour), to, idk, do some servicing, whatever, with preceding queue at the border. As it turns out, yeah, the borders are free for passing, although at night, it would seem a lot of the trucks are required to pass, well, later and they are required to line up for a potential, expected check. Same actually went for a Lithuanian car driving in front of us, which was pulled by a customs officer. After being kept back for about 10 mins, we fastforward back to Orlen, where we ate at a Bar/Restaurant. Most of the items were unavailable and what was supposed to be available for me, was unavailable, a mashup took place in regards to the type of potatoes I've ordered (baked, not smashed, with most of the English translations being wicked) and so I received a quite good portion of pork meat with a bit of pickled cabbage and mash on the side for an equivalent of ~3.5€ (16 PLN). Oh, did I mention fuel in Poland is more expensive than in Lithuania? Over 5 PLN (over ~1.18€), which is about the same as in Latvia or even... Estonia. Or earlier in our trip in Lithuania. So many interesting variables being in place, especially that there are some discounts available for fuel on the Polish side of the border.
+</p>
+
+<p>
+  I got back about 4:30 AM. That marks a full week of travelling and the last few hours were particularly hard to get through. I think it's more about just being in the car, breathing the same air, not being able to move as much around and all, at some point you just feel like kicking back and relaxing off to the wonderland. Except, wonderland could mean so many things here. The best one felt like just arriving home in one piece. So I tried driving discussions for quite some portion of the trip. Under 24h we've managed to get through with about 1200 km by car with some breaks. Perhaps we could have done this faster but yeah, I ain't the driver. Don't even know how to ride a car, honestly.
+</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50774160241_9f2a5aef10_k.jpg" class="darken"><div class="text">Jeju, Jeolmul Forest</div><img src="https://live.staticflickr.com/65535/50774160241_9f2a5aef10_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+<div class="con3">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Here and There</h4></center>
+    
+  <p>
+    The case with Baltic States is a bit unclear (for me) in terms of whether they should be deemed as part of Eastern Europe or not. We could even argue what's the case for Poland but in all due details, we all were part of the Eastern Block and so the soviets left their mark in all the spread of our vast past. Still, things have changed and upon entering the states, there is a bit of a shift that comes upon the visitors' eyes. This already does take place upon seeing the north-east part of Poland, which already seems to become just simply cheaper, especially compared to Warsaw. Here, I have eaten for about half of what I would regularly spend back within the core of the Polish capital. Even more interestingly, the same went for gas stations, at least in terms of what was available inside but! These chains tend to maintain the prices across the country and we didn't really have time to visit convenience stores. That having said, Orlen station does feel a bit as if they tried throwing in all forms of groceries. I think they kind of started the entire thing with being able to buy a hotdog, which now is available pretty much at any larger gas station we've come across the Baltic States (at one their was a kebab shop but, not quite running as it seemed). I especially enjoyed the one wrapped around with bacon, it's junk food, nevertheless tasty. You can get a cup of coffee from a machine, buy a magazine, chips, beer, whatever. Just as any grocery store, except with elevated prices and, due to Polish legislation, on some sundays, you'll most likely be able to come across an open gas station, rather than a shop. Now, the thing with gas stations in the Baltic States, some were alike. Some contained smaller venues but that was just alike what you'd find in Poland. I think we visited one somewhere in there, that was larger, though. You'd find some combos with Carrefour or whatever in Poland two but a supermarket at a gas station, like the K Market we found in Finland? Where the prices were actually pretty much the same as the other K Market we looked into? In fact, the prices didn't seem to diverge that strongly compared to regular stores within the Baltic States as well. A bit of a contrast, compared to what you'd see in Poland... and from what I recall, the western block alike. I just found that curious, interesting and probably reasonably good for our wallets. Especially that we managed to tank most of our fuel in Lithuania, which in the end didn't overblow our budget, just a bit over what you'd pay in Poland, about 5.2 PLN (~1.22€). Still, gotta take note that € does change at times, sometimes closing into 4.5, sometimes becoming slightly weaker. Currencies, eh?
+  </p>
+
+  <p>
+    The other part was, well, sleeping. Our travel wasn't as extreme as I usually perform my travels. I think I already took note of that earlier in this blog post. But it also went in favor, as in, the cities did us a favour by not being just as massive, for most cases. You gotta understand, we're dealing with a few countries that really ain't that big, especially in population. Once the borders opened up and Shengen came in place, a massive swath of people started pouring out in search of a better life. Can't blame them. Honestly, from my perspective though, it's not necessarily a good trend, though. But there are some exceptions that I found, that kinda went in contrary of what I know, believe and see. In any case, 2.8 million people living in Lithuania. That is less than the metropolitan area of Warsaw. But as a country it kinda is a quarter of Polish territory. Vilnius, is about 550 000, metro a bit over 800 000. Metro-wise, it's less than 6 largest cities in Poland. I've visited the five next to Warsaw, honestly you need up to a day to see most of the attractions scattered across the cities, without going too much in-depth. Vilnius, as a city is quite scattered but the core is very much contained. We didn't manage to see everything within the few hours we've been in but we did manage to appreciate how nice it was. The architecture, the tight roads within the old town, with pretty much the entire area clearly revitalised. Before we go any further, I'll give a glimpse of the rest which does differ from one to another. Latvia is even smaller - a bit less than 2 million. Riga metro accounts for a bit over a million. Estonia counts 1.3 million. Tallin, doesn't even say the metro - 440 000, metro probably surprasses 500 000. So... what about Finland? 5.5 million. Helsinki metro - 1.5 million. Altogether, they account for less than the Polish population! But landwise, it's much, much more. Feeling small, already?
+  </p>
+
+  <p>
+    All these differences do materialise in certain forms in interesting ways. First of all, highways. The highways we've been roaming through in Lithuania, seemed better than its Baltic counterparts. Because, honestly, despite having acronyms suggesting being highways, they quite weren't in most parts. I think only Riga had a pretty nice combo of city bypasses. Sure, confusing. But they were in place. Vilnius wasn't that bad either. And Kaunas was okay. Tallin was a nightmare to get into. But the road connecting were a bit funny, all of the cities. As in, as highways, they'd even cross all the way through towns and cities, imposing a 50 km/h limit. Not to say how painfully ridiculous it must be for the people living in these cities, being noisy all the time. It's just, in theory, Poland doesn't really have highways in all all, perhaps about 3, not quite finished lines crossing the country: 2 horizontally and 1 vertically. But we also do have a quite abundant amount of expressways, that honestly don't really differ that much from highways. Sure, the parameters are lower but I mean, how low are they actually? 140 km/h limited on Polish highways, 120 km/h for expressways. Expressways being built contemporarily need to be built with overpasses and intersections in non-collisional way. Each lane being about 3.5 meters from what I recall. All those? Beating what we experienced in the states and even in many cases in Finland. Not to say, we also have regular 'nationwide roads', many of those were remade, some are also non-collisionally constructed and well-maintained. This type, was actually what we would often come across in the Baltics and Finland. In a way, kinda funny, eh? I think the speedlimit was also 120 km/h in Finland and that was the highest amount we've come across around (actually, Lithuania has a 130 enforced but not everywhere, obviously).
+  </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50774159396_96b8b5dcf1_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/50774159396_96b8b5dcf1_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+</div>
+</div>
+<div class="con4">
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Bundle</h4></center>
+    
+  <p>
+    There are more interesting details. Like, did you know 25% of Estonian and Latvian population are Russian? It kind of sheds a slightly different light on all these actions that Russia attempts at, with capturing foreign territory the most problematic of all. It would seem many of the stronger countries care about their citizens, some a bit more profoundly, Russia being among those. Of course, inviolability of borders should be respected in contemporary world but I'd assume such philosophy used to be followed in the past as well. Today it ain't that substantially different, I also start seeing with different set of eyes how perhaps the countries Russians invade, are somehow unable to act effectively enough and why such a major country would attempt to do so, to get in. Still, I could not find much of Russian produce (perhaps due to EU sanctions?). Instead, I'd see some Ukrainian products and a decent lot of Polish, imported stuff. Like sausages (kabanosy!), cheeses and I think I could even find some sweets as well. It all makes sense, even the case that those products were actually competetive pricewise but the thing that they don't even translate the names and description of the products, kind of started setting some alarms in my head. Isn't it the case, that products adapted to the local market and perhaps partially produced within such country, is going to gain on popularity within the country's population? Before you start swinging a bat, pointing out that perhaps nationally-made produce shouldn't take the lead in what we throw into the basket, from my experience many populations especially within the western world, actually follow exactly those principles. Australian-made, German strawberries, America-first, whatever whatever. In Poland there seemed to be a strong trend in recent years to steer away, especially from the foreign-owned conglomerates. 'Made in Poland' became a thing, the current government took actions to repolonise a selection of companies, among which were larger players like banks and stopped considering privatizing some companies like national flight carrier LOT or railway cargo managing company PKP Cargo (according to my knowledge) etc. I'm mentioning all this, as to my surprise, it would be quite usual to see blatantly advertised on Lithuanian shelves, whether the product was Lithuanian or not. Same took place in Latvia, although in this country, you'd have a variety of flags sprawling across the store. In Estonia, I did not see this. I did see however a pricetag split, between what it was and potentially the added value you'd have to pay, for instance, for a plastic bottle. To add on top of it all, it seems Lithuania did not walk away from branding itself primarily with Lithuanian. There was some debate back in the days, whether, was it, Vilnius, that should carry bothlingual forms (Lithuanian and Polish) on its signs and so. To show how much it was self-contained, we had quite a bit of difficulty finding what the correct rates were for parking within Vilnius, with no English website available. Eventually we managed to drill into the details but that involved looking into discussion boards. It's supposed to be a city friendly for tourists, right? Kaunas surprisingly was pleasantly different in this regards and twice as cheap in terms of parking...
+    </p>
+
+    <p>
+      And in case of what we were spending. 0.6€ per hour in Vilnius in the green area. It took us perhaps 10 minutes to get within the scope of the old city, so the distances weren't tragic + we usually moved in later, each day, into the city, which made it slightly easier for each of us to find a free parking spot. All in all, it was quite convenient in this regards, almost everywhere. Kaunas cost us 0.3€ per hour. The meter run towards 6 pm, so we would end up paying, well, rather, just simply cents. Latvia ramped up its costs, I think we ended up paying like 5 Euros for a day in Riga, although we had to park across the eastern bank, where the city literally just is. Tallin was supposed to be much worse, about 3€ per hour, per day the zones were confusing. I hunted down a place where we were to pay 1.8€ per hour until 6 pm but as we kept gazing at the sign depicting how we're supposed to pay for parking with an sms, a lady who was parked right next told us 'It's free!', 'It's free if you park here!'. Asked for how long she replied 'as long as you like! Entire night, two days, how long do you plan on being here?'. Once we told here we have a ferry the next day, she replied that she doesn't know if we can park for that long but after visitng the city, we found the car in one piece. Helsinki was supposed to be worse and to make matters worse, we could not exactly settle on where to really park. Then we found some hacks, among those available, it would have been either a shopping center, the olympic park or... near a beach. Which sounded ridiculous. But as we rolled into Helsinki early before 8, we closed in towards the beach, where... we saw paid parking spaces... and eventually a line of cars, almost filling up the side of the road with a few free spaces, one of which we rolled into. Magical. To compare, just recently here in Warsaw, we rolled into a shopping center Złote Tarasy, it didn't tell its customers it charges them regardless of whether they're doing any shopping and it cost 6 PLN (~1.2€) p/h. 3 PLN p/h with higher rates afterwards within Warsaw itself. Prosperity, eh?
+          </p>
+
+          <p>
+            Subnote here in regards to travelling around the Baltic states, that I briefly licked but didn't go too much in-detail. The reason for this, is that I can't exactly operate on numbers here but there is a substantial problem, also due to the population that is in the region, basically it's not that cheap to travel up there. Interestingly, Flixbus does not operate in any of the mentioned countries, which used to be the cheapest carrier with the highest flexibility pushed onto its customers. You could literally get anywhere with the green guy. In this region, you'd need to take eurolines or luxexpress. The last guy used to move all the way between Berlin and Tallinn with all the major stops on its way until it decided to wrap up its connections with Poland. Oh, they're back? You can get the ticket for as little as about 14€ then. Then about the same, although slightly more to Riga. From Riga to Tallinn about 19€. To get to Helsinki perhaps about 19€ one-way. Damn, maybe actually in the end it's not as bad as I preliminarily have thought. But hey, you gotta get back too so count double, seeing a bit remote areas around Finland all of a sudden generates an entirely new researching game with not quite likely positive results and you still gotta survive food-wise. About half of my overall expenses landed on transportation and partially food. The other half was food, again. Eurolines used to be fairly expensive, now ever since they teamed up with Sindbad, it seems a bit more affordable. Although I wonder what's Somalia's territorial waters doing in their route map. Oh, they seem to also apply student discounts, up to 20%. Although it seems to be a mess and flixbus took over the company. Also, there's infobus. What is infobus? I have no clue.
+          </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50773423333_ca50dc1634_k.jpg" class="darken"><div class="text">Busan, next to the Art Village</div><img src="https://live.staticflickr.com/65535/50773423333_ca50dc1634_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>As Always</h4></center>
+    
+  <p>
+    It is very eye-opening to experience all of this first-hand. Even if it does deplete your sack, the thing is, now that I see this, almost with an MA, that all my free time will eventually come to an end. The very best time and an opening is pretty much right now to see as much as possible, at least before the magical 26 pops up, after which whether you're a student or not, won't really matter as much anymore. At this point my youth is pretty much over, objectively speaking? I'm probably going to take a short break to complete a few things I planned on for a while now and try to discover a few more countries at the very least. And try to go in-depth and describe what I've managed to see by far. A material that may go on for hours and hours. It's nice to a throwbabck, processed in a way I deem fit.
+</p>
+
+<p>
+  I'll continue up next perhaps a bit more in-depth in terms of the cities, some things I found a bit more interesting and the process.
+</p>
+
+</div>
+</div>
+
+<br>
+</div>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
