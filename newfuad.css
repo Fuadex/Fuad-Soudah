@@ -279,7 +279,8 @@ p:hover a{
 	}*/
 
 	.text:hover p{
-		font-size:0.8vw;
+		font-size:2vw;
+		transform: scale(0.9);
 	}
 
 	.text:hover p a{
