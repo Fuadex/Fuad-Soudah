@@ -401,11 +401,11 @@ p a:hover{
 }
 
 .text{
-	display:none;
+/*	display:none;*/
 }
 
 .col-md-4:hover .text{
-	display:block;
+/*	display:block;*/
 }
 
 /* THere was a weird error where div text was dislocated over the other element
