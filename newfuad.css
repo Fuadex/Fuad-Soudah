@@ -189,7 +189,7 @@ align-items: center;
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	transform: scale(1.2);
+	transform: scale(1);
 }
 
 .col-md-4:hover img,{
