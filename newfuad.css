@@ -402,10 +402,13 @@ p a:hover{
 
 .text{
 /*	display:none;*/
+z-index:0;
 }
 
 .col-md-4:hover .text{
 /*	display:block;*/
+z-index:1;
+
 }
 
 /* THere was a weird error where div text was dislocated over the other element
