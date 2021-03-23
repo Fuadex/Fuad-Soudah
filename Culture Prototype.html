@@ -370,6 +370,7 @@ html, body { overscroll-behavior: none; }
 
     .swiper-slide{
       height:50vh;
+      width:auto;
     }
 
     .swiper-slide img{
@@ -568,7 +569,7 @@ border-bottom:none;
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Trzy+kolory%3A+Bia%C5%82y-1994-1160"><img src="https://fwcdn.pl/fpo/11/60/1160/7332587.6.jpg" style="; border:none; box-shadow:none;"></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Bo%C5%BCe+Cia%C5%82o-2019-808863"><img src="https://fwcdn.pl/fpo/88/63/808863/7897041.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Prognoza+pogody-1982-8900"><img src="https://fwcdn.pl/fpo/89/00/8900/7825435.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Pluton-1986-10685"><img src="https://fwcdn.pl/fpo/10/68/1068/7500874.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Pluton-1986-1068"><img src="https://fwcdn.pl/fpo/10/68/1068/7500874.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Czas+Apokalipsy-1979-1092"><img src="https://fwcdn.pl/fpo/10/92/1092/7053688.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Parasite-2019-798143"><img src="https://fwcdn.pl/fpo/81/43/798143/7906577.6.jpg" style="; border:none; box-shadow:none;"></a></div>
               <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mroczny+Rycerz-2008-236351"><img src="https://fwcdn.pl/fpo/63/51/236351/7492877.6.jpg" style=""></a></div>
@@ -1075,9 +1076,11 @@ $('img').tilt({
       centeredSlides: true,
       slidesPerView: 'auto',
       coverflowEffect: {
-        rotate: 2,
-        stretch: -450,
-        depth: 600,
+        rotate: 4,
+        // stretch: -450,
+        // depth: 600,
+        stretch: -250,
+        depth: 450,
         modifier: 1,
         slideShadows : false,
       },
