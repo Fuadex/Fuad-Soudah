@@ -40,10 +40,14 @@ html, body { overscroll-behavior: none; }
       border-width:1px !important;
       border-color:#666 !important;
       box-shadow: 0px 5px 20px 0px #555 !important;
+      z-index:999 !important;
     }
 
     img:hover{
       box-shadow: 0px 5px 50px 0px #555 !important;
+      z-index:9999 !important;
+      display:block !important;
+      transform:scale(1.25);
     }
 
 
@@ -141,9 +145,10 @@ html, body { overscroll-behavior: none; }
     height: 100%;
   }
   .swiper-slide, .swiper-slide2  {
+    width:auto;
     text-align: center;
     font-size: 18px;
-    background:none
+    background:none;
     /* Center slide text vertically */
 /*      display: -webkit-box;
       display: -ms-flexbox;
@@ -245,14 +250,14 @@ html, body { overscroll-behavior: none; }
     */
 
     a:hover img{
-      transition: all 0.7s ease;
-      transform: scale(1.3);
-      filter: none; 
+/*      transition: all 0.7s ease;*/
+/*      transform: scale(1.3);*/
+/*      filter: none; 
       -webkit-filter: blur(0px); 
       -moz-filter: blur(0px); 
-      -ms-filter: blur(0px);
-      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-      z-index:333 !important;
+      -ms-filter: blur(0px);*/
+/*      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');*/
+/*      z-index:0 !important;*/
     } 
 
     .con1{
@@ -355,23 +360,45 @@ html, body { overscroll-behavior: none; }
 
   @media (max-width:728px){
 
-    .swiper-slide > a > img{
-      width:75%;
+    .row{
+            transform:scale(0.25) !important;
+    }
+
+    .swiper-container{
+      height:1vh;
+    }
+
+    .swiper-slide{
+      height:50vh;
+      width:auto;
+    }
+
+    .swiper-slide img{
+      width:auto;
+      height:100vh;
+    }
+
+    img{
+      width:100%;
+    }
+
+/*    .swiper-slide > a > img{
+      width:55%;
     }
 
     .swiper-slide > img{
-      width:100%;
+      width:5%;
     }
-
+*/
     #map{
-      height:50%;
-      width:100%;
+/*      height:50%;
+      width:100%;*/
       /* border:0;box-shadow:0;border-radius:0;*/
       /*height:70%;*/
-      border-radius: 10px;
+/*      border-radius: 10px;*/
     }
 
-    .res{
+/*    .res{
       height:160vh;
       padding:10px;
     }
@@ -400,15 +427,15 @@ html, body { overscroll-behavior: none; }
     .res5{
       height:110vh;
       padding:10px;
-    }
+    }*/
 
-    .swiper-slide p{
+/*    .swiper-slide p{
       padding:15px;
       padding-top:0px;
       padding-bottom:0px;
-    }
+    }*/
 
-    .Been{
+/*    .Been{
       display:block;
     }
 
@@ -427,7 +454,7 @@ html, body { overscroll-behavior: none; }
     .Been3{
       width:100% !important;
       height:auto !important;
-    }
+    }*/
 
   }
 
@@ -456,6 +483,8 @@ h1{
 
 @media(max-width:724px){
   .swiper-pagination{
+/*    top:58vh*/
+/*top:40vh;*/
     display:none;
   }
 
@@ -463,6 +492,15 @@ h1{
     .tv{width:auto !important; height:33% !important;}
   }
 
+}
+
+
+a{
+border-bottom:none;
+}
+
+a:hover{
+border-bottom:none;
 }
 
 /*.swiper-pagination-bullet{
@@ -509,45 +547,45 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Las+Vegas+Parano-1998-772"><img src="https://fwcdn.pl/fpo/07/72/772/7935455.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/To+nie+jest+kraj+dla+starych+ludzi-2007-259289"><img src="https://fwcdn.pl/fpo/92/89/259289/7184354.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Czerwony+smok-2002-32359"><img src="https://fwcdn.pl/fpo/23/59/32359/6970120.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/2001%3A+Odyseja+kosmiczna-1968-1458"><img src="https://fwcdn.pl/fpo/14/58/1458/7930611.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mechaniczna+pomara%C5%84cza-1971-1275"><img src="https://fwcdn.pl/fpo/12/75/1275/7857290.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/L%C5%9Bnienie-1980-1020"><img src="https://fwcdn.pl/fpo/10/20/1020/7922462.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ucieczka+z+kina+%22Wolno%C5%9B%C4%87%22-1990-1181"><img src="https://fwcdn.pl/fpo/11/81/1181/7599376.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/P%C5%82omienie-2018-784582"><img src="https://fwcdn.pl/fpo/45/82/784582/7865336.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Oldboy-2003-115059"><img src="https://fwcdn.pl/fpo/50/59/115059/7168596.3.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Dwunastu+gniewnych+ludzi-1957-30701"><img src="https://fwcdn.pl/fpo/07/01/30701/7492190.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Podziemny+kr%C4%85g-1999-837"><img src="https://fwcdn.pl/fpo/08/37/837/7742670.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Nienawi%C5%9B%C4%87-1995-8106"><img src="https://fwcdn.pl/fpo/81/06/8106/7200447.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Id%C5%BA+i+patrz-1985-35185"><img src="https://fwcdn.pl/fpo/51/85/35185/7659053.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Dola+cz%C5%82owiecza+I+-+Nie+ma+wi%C4%99kszej+mi%C5%82o%C5%9Bci-1958-94613"><img src="https://fwcdn.pl/fpo/46/13/94613/7253946.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Blade+Runner+2049-2017-630798"><img src="https://fwcdn.pl/fpo/07/98/630798/7802664.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/%C5%81owca+jeleni-1978-1045"><img src="https://fwcdn.pl/fpo/10/45/1045/7693548.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/A%C5%BC+poleje+si%C4%99+krew-2007-239166"><img src="https://fwcdn.pl/fpo/91/66/239166/7709400.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kr%C3%B3l+w+Nowym+Jorku-1957-121301"><img src="https://fwcdn.pl/fpo/13/01/121301/7613117.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/%C5%9Awiat%C5%82a+rampy-1952-91770"><img src="https://fwcdn.pl/fpo/17/70/91770/7565925.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Trzy+kolory%3A+Bia%C5%82y-1994-1160"><img src="https://fwcdn.pl/fpo/11/60/1160/7332587.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Bo%C5%BCe+Cia%C5%82o-2019-808863"><img src="https://fwcdn.pl/fpo/88/63/808863/7897041.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Prognoza+pogody-1982-8900"><img src="https://fwcdn.pl/fpo/89/00/8900/7825435.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Pluton-1986-10685"><img src="https://fwcdn.pl/fpo/10/68/1068/7500874.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Czas+Apokalipsy-1979-1092"><img src="https://fwcdn.pl/fpo/10/92/1092/7053688.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Parasite-2019-798143"><img src="https://fwcdn.pl/fpo/81/43/798143/7906577.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mroczny+Rycerz-2008-236351"><img src="https://fwcdn.pl/fpo/63/51/236351/7492877.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Pianista-2002-32225"><img src="https://fwcdn.pl/fpo/22/25/32225/7519150.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Obywatel+Kane-1941-31279"><img src="https://fwcdn.pl/fpo/12/79/31279/7333988.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mi%C4%99dzy+s%C5%82owami-2003-104454"><img src="https://fwcdn.pl/fpo/44/54/104454/6948319.3.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Zakochany+bez+pami%C4%99ci-2004-107855"><img src="https://fwcdn.pl/fpo/78/55/107855/7522344.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Lista+Schindlera-1993-1211"><img src="https://fwcdn.pl/fpo/12/11/1211/7876866.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Nieoszlifowane+diamenty-2019-792989"><img src="https://fwcdn.pl/fpo/29/89/792989/7899445.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Okja-2017-748224"><img src="https://fwcdn.pl/fpo/82/24/748224/7822131.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Matka-2009-490001"><img src="https://fwcdn.pl/fpo/00/01/490001/7710089.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mad+Max+2+-+Wojownik+szos-1981-1496"><img src="https://fwcdn.pl/fpo/14/96/1496/7713878.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Equilibrium-2002-32375"><img src="https://fwcdn.pl/fpo/23/75/32375/7206354.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Matrix-1999-628"><img src="https://fwcdn.pl/fpo/06/28/628/7568005.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Helikopter+w+ogniu-2001-31419"><img src="https://fwcdn.pl/fpo/14/19/31419/7764732.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Roma-2018-805637"><img src="https://fwcdn.pl/fpo/56/37/805637/7856393.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Las+Vegas+Parano-1998-772"><img src="https://fwcdn.pl/fpo/07/72/772/7935455.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/To+nie+jest+kraj+dla+starych+ludzi-2007-259289"><img src="https://fwcdn.pl/fpo/92/89/259289/7184354.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Czerwony+smok-2002-32359"><img src="https://fwcdn.pl/fpo/23/59/32359/6970120.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/2001%3A+Odyseja+kosmiczna-1968-1458"><img src="https://fwcdn.pl/fpo/14/58/1458/7930611.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Mechaniczna+pomara%C5%84cza-1971-1275"><img src="https://fwcdn.pl/fpo/12/75/1275/7857290.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/L%C5%9Bnienie-1980-1020"><img src="https://fwcdn.pl/fpo/10/20/1020/7922462.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ucieczka+z+kina+%22Wolno%C5%9B%C4%87%22-1990-1181"><img src="https://fwcdn.pl/fpo/11/81/1181/7599376.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/P%C5%82omienie-2018-784582"><img src="https://fwcdn.pl/fpo/45/82/784582/7865336.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Oldboy-2003-115059"><img src="https://fwcdn.pl/fpo/50/59/115059/7168596.3.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Dwunastu+gniewnych+ludzi-1957-30701"><img src="https://fwcdn.pl/fpo/07/01/30701/7492190.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Podziemny+kr%C4%85g-1999-837"><img src="https://fwcdn.pl/fpo/08/37/837/7742670.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Nienawi%C5%9B%C4%87-1995-8106"><img src="https://fwcdn.pl/fpo/81/06/8106/7200447.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Id%C5%BA+i+patrz-1985-35185"><img src="https://fwcdn.pl/fpo/51/85/35185/7659053.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Dola+cz%C5%82owiecza+I+-+Nie+ma+wi%C4%99kszej+mi%C5%82o%C5%9Bci-1958-94613"><img src="https://fwcdn.pl/fpo/46/13/94613/7253946.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Blade+Runner+2049-2017-630798"><img src="https://fwcdn.pl/fpo/07/98/630798/7802664.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/%C5%81owca+jeleni-1978-1045"><img src="https://fwcdn.pl/fpo/10/45/1045/7693548.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/A%C5%BC+poleje+si%C4%99+krew-2007-239166"><img src="https://fwcdn.pl/fpo/91/66/239166/7709400.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Kr%C3%B3l+w+Nowym+Jorku-1957-121301"><img src="https://fwcdn.pl/fpo/13/01/121301/7613117.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/%C5%9Awiat%C5%82a+rampy-1952-91770"><img src="https://fwcdn.pl/fpo/17/70/91770/7565925.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Trzy+kolory%3A+Bia%C5%82y-1994-1160"><img src="https://fwcdn.pl/fpo/11/60/1160/7332587.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Bo%C5%BCe+Cia%C5%82o-2019-808863"><img src="https://fwcdn.pl/fpo/88/63/808863/7897041.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Prognoza+pogody-1982-8900"><img src="https://fwcdn.pl/fpo/89/00/8900/7825435.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Pluton-1986-1068"><img src="https://fwcdn.pl/fpo/10/68/1068/7500874.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Czas+Apokalipsy-1979-1092"><img src="https://fwcdn.pl/fpo/10/92/1092/7053688.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Parasite-2019-798143"><img src="https://fwcdn.pl/fpo/81/43/798143/7906577.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Mroczny+Rycerz-2008-236351"><img src="https://fwcdn.pl/fpo/63/51/236351/7492877.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Pianista-2002-32225"><img src="https://fwcdn.pl/fpo/22/25/32225/7519150.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Obywatel+Kane-1941-31279"><img src="https://fwcdn.pl/fpo/12/79/31279/7333988.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Mi%C4%99dzy+s%C5%82owami-2003-104454"><img src="https://fwcdn.pl/fpo/44/54/104454/6948319.3.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Zakochany+bez+pami%C4%99ci-2004-107855"><img src="https://fwcdn.pl/fpo/78/55/107855/7522344.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Lista+Schindlera-1993-1211"><img src="https://fwcdn.pl/fpo/12/11/1211/7876866.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Nieoszlifowane+diamenty-2019-792989"><img src="https://fwcdn.pl/fpo/29/89/792989/7899445.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Okja-2017-748224"><img src="https://fwcdn.pl/fpo/82/24/748224/7822131.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Matka-2009-490001"><img src="https://fwcdn.pl/fpo/00/01/490001/7710089.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Mad+Max+2+-+Wojownik+szos-1981-1496"><img src="https://fwcdn.pl/fpo/14/96/1496/7713878.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Equilibrium-2002-32375"><img src="https://fwcdn.pl/fpo/23/75/32375/7206354.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Matrix-1999-628"><img src="https://fwcdn.pl/fpo/06/28/628/7568005.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Helikopter+w+ogniu-2001-31419"><img src="https://fwcdn.pl/fpo/14/19/31419/7764732.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Roma-2018-805637"><img src="https://fwcdn.pl/fpo/56/37/805637/7856393.6.jpg" style=""></a></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -559,42 +597,42 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Szkar%C5%82atny+pilot-1992-34658"><img src="https://fwcdn.pl/fpo/46/58/34658/7458502_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Szopy+w+natarciu-1994-111708"><img src="https://fwcdn.pl/fpo/17/08/111708/7671782.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Rodzinka+Yamad%C3%B3w-1999-111709"><img src="https://fwcdn.pl/fpo/17/09/111709/7901356.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Redline-2009-512229"><img src="https://fwcdn.pl/fpo/22/29/512229/7332094.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Kaguya-2013-560009"><img src="https://fwcdn.pl/fpo/00/09/560009/7576568.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kono+Sekai+no+Katasumi+ni-2016-746761"><img src="https://fwcdn.pl/fpo/67/61/746761/7822264.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kimi+no+Na+wa.-2016-760082"><img src="https://fwcdn.pl/fpo/00/82/760082/7782990.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Metropolis-2001-34220"><img src="https://fwcdn.pl/fpo/42/20/34220/7310094.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Memories-1995-34359"><img src="https://fwcdn.pl/fpo/43/59/34359/7292498.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Fantazja-1940-36316"><img src="https://fwcdn.pl/fpo/63/16/36316/7840726.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Co+w+duszy+gra-2020-836650"><img src="https://fwcdn.pl/fpo/66/50/836650/7934792.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Belladonna+smutku-1973-128976"><img src="https://fwcdn.pl/fpo/89/76/128976/7759042.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ernest+i+Celestyna-2012-654784"><img src="https://fwcdn.pl/fpo/47/84/654784/7459116.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Labirynt+opowie%C5%9Bci-1987-201649"><img src="https://fwcdn.pl/fpo/16/49/201649/7925987.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ginga+tetsud%C3%B4+no+yoru-1985-169073"><img src="https://fwcdn.pl/fpo/90/73/169073/7096556.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Koe+no+Katachi-2016-769531"><img src="https://fwcdn.pl/fpo/95/31/769531/7791159.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Robotto+k%C3%A2nibaru-1987-337330"><img src="https://fwcdn.pl/fpo/73/30/337330/7850888.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Grobowiec+%C5%9Bwietlik%C3%B3w-1988-34655"><img src="https://fwcdn.pl/fpo/46/55/34655/7103357.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Laputa+%E2%80%93+podniebny+zamek-1986-34654"><img src="https://fwcdn.pl/fpo/46/54/34654/7464091.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Nausica%C3%A4+z+Doliny+Wiatru-1984-34636"><img src="https://fwcdn.pl/fpo/46/36/34636/7180815_1.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kite-1998-34361"><img src="https://fwcdn.pl/fpo/43/61/34361/7203631.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/The+Plague+Dogs-1982-10740"><img src="https://fwcdn.pl/fpo/07/40/10740/7181182.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Wzg%C3%B3rze+kr%C3%B3lik%C3%B3w-1978-11558"><img src="https://fwcdn.pl/fpo/15/58/11558/7721670.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866"><img src="https://fwcdn.pl/fpo/18/66/31866/7784890.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Walc+z+Baszirem-2008-479844"><img src="https://fwcdn.pl/fpo/98/44/479844/7240858.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Mononoke-1997-971"><img src="https://fwcdn.pl/fpo/09/71/971/7378726.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Tw%C3%B3j+Vincent-2017-698207"><img src="https://fwcdn.pl/fpo/82/07/698207/7799420.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Miasteczko+Halloween-1993-7705"><img src="https://fwcdn.pl/fpo/77/05/7705/7096987.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Jask%C3%B3%C5%82ki+z+Kabulu-2019-829461"><img src="https://fwcdn.pl/fpo/94/61/829461/7893335.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Persepolis-2007-338362"><img src="https://fwcdn.pl/fpo/83/62/338362/7544674.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/The+Prophet-2014-650295"><img src="https://fwcdn.pl/fpo/02/95/650295/7692261.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Funan-2018-813883"><img src="https://fwcdn.pl/fpo/38/83/813883/7863022.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Nazywam+si%C4%99+Cukinia-2016-664117"><img src="https://fwcdn.pl/fpo/41/17/664117/7790334.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Odrzucone-2000-148774"><img src="https://fwcdn.pl/fpo/87/74/148774/7077014.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kr%C3%B3lik+Bugs+i+Stru%C5%9B+P%C4%99dziwiatr%3A+Szalony+po%C5%9Bcig-1979-217051"><img src="https://fwcdn.pl/fpo/70/51/217051/7234599.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Taki+pi%C4%99kny+dzie%C5%84-2012-686628"><img src="https://fwcdn.pl/fpo/66/28/686628/7553379.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Szkar%C5%82atny+pilot-1992-34658"><img src="https://fwcdn.pl/fpo/46/58/34658/7458502_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Szopy+w+natarciu-1994-111708"><img src="https://fwcdn.pl/fpo/17/08/111708/7671782.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Rodzinka+Yamad%C3%B3w-1999-111709"><img src="https://fwcdn.pl/fpo/17/09/111709/7901356.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Redline-2009-512229"><img src="https://fwcdn.pl/fpo/22/29/512229/7332094.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Kaguya-2013-560009"><img src="https://fwcdn.pl/fpo/00/09/560009/7576568.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Kono+Sekai+no+Katasumi+ni-2016-746761"><img src="https://fwcdn.pl/fpo/67/61/746761/7822264.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Kimi+no+Na+wa.-2016-760082"><img src="https://fwcdn.pl/fpo/00/82/760082/7782990.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Metropolis-2001-34220"><img src="https://fwcdn.pl/fpo/42/20/34220/7310094.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Memories-1995-34359"><img src="https://fwcdn.pl/fpo/43/59/34359/7292498.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Fantazja-1940-36316"><img src="https://fwcdn.pl/fpo/63/16/36316/7840726.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Co+w+duszy+gra-2020-836650"><img src="https://fwcdn.pl/fpo/66/50/836650/7934792.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Belladonna+smutku-1973-128976"><img src="https://fwcdn.pl/fpo/89/76/128976/7759042.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ernest+i+Celestyna-2012-654784"><img src="https://fwcdn.pl/fpo/47/84/654784/7459116.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Labirynt+opowie%C5%9Bci-1987-201649"><img src="https://fwcdn.pl/fpo/16/49/201649/7925987.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ginga+tetsud%C3%B4+no+yoru-1985-169073"><img src="https://fwcdn.pl/fpo/90/73/169073/7096556.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Koe+no+Katachi-2016-769531"><img src="https://fwcdn.pl/fpo/95/31/769531/7791159.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Robotto+k%C3%A2nibaru-1987-337330"><img src="https://fwcdn.pl/fpo/73/30/337330/7850888.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Grobowiec+%C5%9Bwietlik%C3%B3w-1988-34655"><img src="https://fwcdn.pl/fpo/46/55/34655/7103357.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Laputa+%E2%80%93+podniebny+zamek-1986-34654"><img src="https://fwcdn.pl/fpo/46/54/34654/7464091.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Nausica%C3%A4+z+Doliny+Wiatru-1984-34636"><img src="https://fwcdn.pl/fpo/46/36/34636/7180815_1.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Kite-1998-34361"><img src="https://fwcdn.pl/fpo/43/61/34361/7203631.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/The+Plague+Dogs-1982-10740"><img src="https://fwcdn.pl/fpo/07/40/10740/7181182.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Wzg%C3%B3rze+kr%C3%B3lik%C3%B3w-1978-11558"><img src="https://fwcdn.pl/fpo/15/58/11558/7721670.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866"><img src="https://fwcdn.pl/fpo/18/66/31866/7784890.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Walc+z+Baszirem-2008-479844"><img src="https://fwcdn.pl/fpo/98/44/479844/7240858.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Mononoke-1997-971"><img src="https://fwcdn.pl/fpo/09/71/971/7378726.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Tw%C3%B3j+Vincent-2017-698207"><img src="https://fwcdn.pl/fpo/82/07/698207/7799420.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Miasteczko+Halloween-1993-7705"><img src="https://fwcdn.pl/fpo/77/05/7705/7096987.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Jask%C3%B3%C5%82ki+z+Kabulu-2019-829461"><img src="https://fwcdn.pl/fpo/94/61/829461/7893335.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Persepolis-2007-338362"><img src="https://fwcdn.pl/fpo/83/62/338362/7544674.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/The+Prophet-2014-650295"><img src="https://fwcdn.pl/fpo/02/95/650295/7692261.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Funan-2018-813883"><img src="https://fwcdn.pl/fpo/38/83/813883/7863022.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Nazywam+si%C4%99+Cukinia-2016-664117"><img src="https://fwcdn.pl/fpo/41/17/664117/7790334.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Odrzucone-2000-148774"><img src="https://fwcdn.pl/fpo/87/74/148774/7077014.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Kr%C3%B3lik+Bugs+i+Stru%C5%9B+P%C4%99dziwiatr%3A+Szalony+po%C5%9Bcig-1979-217051"><img src="https://fwcdn.pl/fpo/70/51/217051/7234599.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Taki+pi%C4%99kny+dzie%C5%84-2012-686628"><img src="https://fwcdn.pl/fpo/66/28/686628/7553379.6.jpg" style=""></a></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -607,44 +645,44 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Dla+Elizy+Bagatela+a-moll+WoO+59-1992-445206"><img src="https://fwcdn.pl/fpo/52/06/445206/7403338.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Nosoro%C5%BCec-1963-499090"><img src="https://by3302files.storage.live.com/y4mlnQKAkHU5amqrzwS_x-qfNmkk0Q1EuetxiIDydFabePhDUiIHkH5xOs09B68vpNr5ZRA7GWmcSNolA7iebQmJ7yOowwyirkv-Q1YUx7WbW79FgYDcnq6X06jjL7qOkDRUF9Vscopa_t0zvuZFMs3jEGS-wX-Yfc_ytswlUl7B5Kkm0fH4LLYj7RsDJ1NFYe0?width=630&height=1200&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Sztuka+spadania-2004-95825"><img src="https://fwcdn.pl/fpo/58/25/95825/6945915.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Tori+no+Uta-2007-393374"><img src="https://fwcdn.pl/fpo/33/74/393374/7153136.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Blok-1982-36753"><img src="https://fwcdn.pl/fpo/67/53/36753/7052288.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Zmierzch-2010-622695"><img src="https://fwcdn.pl/fpo/26/95/622695/7385181.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ma%C5%82y+Quentin-2010-625264"><img src="https://fwcdn.pl/fpo/52/64/625264/7682089.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Niebieski+parasol-2013-677132"><img src="https://fwcdn.pl/fpo/71/32/677132/7592606.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Noc+i+Dzie%C5%84-2010-563994"><img src="https://fwcdn.pl/fpo/39/94/563994/7593118.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Kiwi-2006-452169"><img src="https://fwcdn.pl/fpo/21/69/452169/7730296.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Premier+Automne-2013-685546"><img src="https://fwcdn.pl/fpo/55/46/685546/7607470.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.imdb.com/title/tt5798310/?ref_=nm_knf_i1"><img src="https://dub01pap001files.storage.live.com/y4mXWOl8oRma6-tk6OSBEcKw9HwiVONhGqyDn2z9-0nHV2KATxW2q6Zw9xYSn6DmCFXSvuY7gVs6gOCFUCnhqu3ZygqRHuak2ruOwJMcgUK_x-3XVx6UYcgrqdoQJQLY2KtsBWVHTxMGQSpodltJg1qNv1bgSC5NAIkzj8TgPFKJiKZ_VJ5FR5X2n8dNF4JxZPY?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Schody-1968-244845"><img src="https://by3302files.storage.live.com/y4mZ7Br--uXBxMTPS4rXp-OnwOHaJKxH8litvM9REY_wUrk54HT--QYw8qBt7McgCY7r-ttT85e8NYxXtbXVYYJypct3VB-BIItZUjShn5KC8IdXTmV3bXmT6p1MdgKxB6Cb2hxMiTaBQ4Amc8Zz9PeQDn80PcCDAqiN2NRKfgYoNL6VuNjIoh3igU4EzXWUSsL?width=289&height=400&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ska%C5%82y-2003-90382"><img src="https://fwcdn.pl/fpo/03/82/90382/7144189.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/In+the+Fall-2011-765398"><img src="https://by3302files.storage.live.com/y4mga5FFqspfN2XuM6D5QBp5RNuRSq7VJsLv-0HzxNk81WZBwifVED6NTXuCcdM7OT3sQJz8VUCLlhwgqdjmrzRlRLCVifcdRSAIYMH8BehHeAwvoO-oJfcJh2Mo0g04F_uTXVugM6jZyGa_gRw47ut8YtK-7oN4ZMIgArhPcub3yYDyE3R-Vhza4e2TaTB11mj?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Juste+de+l%27eau-2014-737998"><img src="https://by3302files.storage.live.com/y4mOxuTWOp-ZGqPjbq9LRbxRI-R4FHGMFKjRrD2vHSr_3XbXeW2l4kBnG_aL9L7x6NYBwsfxC_dfUb33W1W-dOzh_mu_DztzgY6igAeSSThdku5biEatq2Z7KKHdB-sjpV5zMTYB8-P5h6-mYt0UDH2Mpr-YlzZHhCsK-Q84cngSiAuWFvuuu7s_wILsfaKRB6W?width=204&height=280&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Next+Generation+-+Linia+%C5%BCycia-2009-543214"><img src="https://fwcdn.pl/fpo/32/14/543214/7339105.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Lykantropia-1981-34153"><img src="https://fwcdn.pl/fpo/41/53/34153/7374997.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Zemsta+kinooperatora-1912-201000"><img src="https://fwcdn.pl/fpo/10/00/201000/7518247.6.jpg" style="; border:none; box-shadow:none;"></a>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Dla+Elizy+Bagatela+a-moll+WoO+59-1992-445206"><img src="https://fwcdn.pl/fpo/52/06/445206/7403338.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Nosoro%C5%BCec-1963-499090"><img src="https://by3302files.storage.live.com/y4mlnQKAkHU5amqrzwS_x-qfNmkk0Q1EuetxiIDydFabePhDUiIHkH5xOs09B68vpNr5ZRA7GWmcSNolA7iebQmJ7yOowwyirkv-Q1YUx7WbW79FgYDcnq6X06jjL7qOkDRUF9Vscopa_t0zvuZFMs3jEGS-wX-Yfc_ytswlUl7B5Kkm0fH4LLYj7RsDJ1NFYe0?width=630&height=1200&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Sztuka+spadania-2004-95825"><img src="https://fwcdn.pl/fpo/58/25/95825/6945915.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Tori+no+Uta-2007-393374"><img src="https://fwcdn.pl/fpo/33/74/393374/7153136.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Blok-1982-36753"><img src="https://fwcdn.pl/fpo/67/53/36753/7052288.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Zmierzch-2010-622695"><img src="https://fwcdn.pl/fpo/26/95/622695/7385181.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ma%C5%82y+Quentin-2010-625264"><img src="https://fwcdn.pl/fpo/52/64/625264/7682089.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Niebieski+parasol-2013-677132"><img src="https://fwcdn.pl/fpo/71/32/677132/7592606.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Noc+i+Dzie%C5%84-2010-563994"><img src="https://fwcdn.pl/fpo/39/94/563994/7593118.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Kiwi-2006-452169"><img src="https://fwcdn.pl/fpo/21/69/452169/7730296.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Premier+Automne-2013-685546"><img src="https://fwcdn.pl/fpo/55/46/685546/7607470.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.imdb.com/title/tt5798310/?ref_=nm_knf_i1"><img src="https://dub01pap001files.storage.live.com/y4mXWOl8oRma6-tk6OSBEcKw9HwiVONhGqyDn2z9-0nHV2KATxW2q6Zw9xYSn6DmCFXSvuY7gVs6gOCFUCnhqu3ZygqRHuak2ruOwJMcgUK_x-3XVx6UYcgrqdoQJQLY2KtsBWVHTxMGQSpodltJg1qNv1bgSC5NAIkzj8TgPFKJiKZ_VJ5FR5X2n8dNF4JxZPY?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Schody-1968-244845"><img src="https://by3302files.storage.live.com/y4mZ7Br--uXBxMTPS4rXp-OnwOHaJKxH8litvM9REY_wUrk54HT--QYw8qBt7McgCY7r-ttT85e8NYxXtbXVYYJypct3VB-BIItZUjShn5KC8IdXTmV3bXmT6p1MdgKxB6Cb2hxMiTaBQ4Amc8Zz9PeQDn80PcCDAqiN2NRKfgYoNL6VuNjIoh3igU4EzXWUSsL?width=289&height=400&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ska%C5%82y-2003-90382"><img src="https://fwcdn.pl/fpo/03/82/90382/7144189.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/In+the+Fall-2011-765398"><img src="https://by3302files.storage.live.com/y4mga5FFqspfN2XuM6D5QBp5RNuRSq7VJsLv-0HzxNk81WZBwifVED6NTXuCcdM7OT3sQJz8VUCLlhwgqdjmrzRlRLCVifcdRSAIYMH8BehHeAwvoO-oJfcJh2Mo0g04F_uTXVugM6jZyGa_gRw47ut8YtK-7oN4ZMIgArhPcub3yYDyE3R-Vhza4e2TaTB11mj?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Juste+de+l%27eau-2014-737998"><img src="https://by3302files.storage.live.com/y4mOxuTWOp-ZGqPjbq9LRbxRI-R4FHGMFKjRrD2vHSr_3XbXeW2l4kBnG_aL9L7x6NYBwsfxC_dfUb33W1W-dOzh_mu_DztzgY6igAeSSThdku5biEatq2Z7KKHdB-sjpV5zMTYB8-P5h6-mYt0UDH2Mpr-YlzZHhCsK-Q84cngSiAuWFvuuu7s_wILsfaKRB6W?width=204&height=280&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Next+Generation+-+Linia+%C5%BCycia-2009-543214"><img src="https://fwcdn.pl/fpo/32/14/543214/7339105.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Lykantropia-1981-34153"><img src="https://fwcdn.pl/fpo/41/53/34153/7374997.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Zemsta+kinooperatora-1912-201000"><img src="https://fwcdn.pl/fpo/10/00/201000/7518247.6.jpg" style="; border:none; box-shadow:none;"></a>
               </div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Wiek+%C5%BCagli-2018-819026"><img src="https://fwcdn.pl/fpo/90/26/819026/7871522.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/One+Small+Step-2018-819030"><img src="https://fwcdn.pl/fpo/90/30/819030/7871524.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Czarne+lusterko-2018-802350"><img src="https://fwcdn.pl/fpo/23/50/802350/7846041.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.imdb.com/title/tt9283018/"><img src="https://by3302files.storage.live.com/y4mTHcZVAEWTxup3K0KLuknzVTd3ympgooQRSgnOC4CXmJ55NG_22TESkx0oGE5GSwY_sLbVdv1iVNEWbBpuSd7Ha5pz6QAKyOJ-0P_0WyZebdb3AuoEAtdAjx6OKRvlZITtRdYzrGzOLmBfKQNThrPWDK-u0-R5mwzfr8w1BkAGgLoXWvEE8JxgGF2IKS8udGJ?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Blade+Runner%3A+Black+Out+2022-2017-838216"><img src="https://by3302files.storage.live.com/y4mH7d9rcNW5A3iNaN-FDZwM9QEwV4DolAJlIhI4sttgWzlINs2HDn6twcOeMoyhvGmS6ZMFUJRz6siCWqn4Bo3aLLRZm06fdGtDaAmOLts6vDXty-mV1f2Iksdd6UoKIZAiYKo4ptV61C0nMlZ8KnaQckzj4qSM5QL9WVtnBegp9GNHAM9TXtO6iKokzo0sUFw?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Solo+na+ugorze-1981-117029"><img src="https://fwcdn.pl/fpo/70/29/117029/7343505.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mee-2012-682803"><img src="https://by3302files.storage.live.com/y4mNo06uoOLfwZMWMa_WjI8kzcZjiDphQH3xu7UFm-pF2e2D2mj2jp-UjHU18bQW2Ng0Eu4nOBYvyXeLb4sYhEVAADf3RZDn9txhiORbPmel3KcJNWRFxVkL3_bZHtSmWS2EWJnem71mm2E3QLie5z-yJ_pmM4D3R1adLHOg52A3X_PcwyJzCOgMFu_z1G3sYco?width=500&height=750&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Sie%C4%87-2010-625645"><img src="https://fwcdn.pl/fpo/56/45/625645/7411465.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Samog%C5%82oska-1981-429414"><img src="https://fwcdn.pl/fpo/94/14/429414/7377410.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ko%C5%84+by+si%C4%99+u%C5%9Bmia%C5%82-2013-692849"><img src="https://fwcdn.pl/fpo/28/49/692849/7568822.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/%C5%81amig%C5%82%C3%B3wka-2017-810462"><img src="https://fwcdn.pl/fpo/04/62/810462/7884281.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Bao-2018-810196"><img src="https://fwcdn.pl/fpo/01/96/810196/7852219.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Stra%C5%BCnik+tamy-2014-731163"><img src="https://fwcdn.pl/fpo/11/63/731163/7677304.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Danny+Boy-2010-568933"><img src="https://fwcdn.pl/fpo/89/33/568933/7326661.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/The+Rise+and+Fall+of+Globosome-2014-746595"><img src="https://by3302files.storage.live.com/y4mYoniMuAeosrCQ7qsv0hGLmXj2cSMox5QyQngSDEUYoDNqjAFiXyO__1nVn70_mOek52L4Y48aqKoZFlEVj96ImjxsLKzgeFkt-Qzzbo_kuegbZQ561DjJ687FpEmrOLh_UkdjEu07I9Q6MxJS31TeAopZ69G-0KPvoFyUxaR2H3JrmyW7E7AJrOCsB9aHBEg?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Paperman-2012-656831"><img src="https://fwcdn.pl/fpo/68/31/656831/7464646.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Oh+Sheep-2012-837394"><img src="https://by3302files.storage.live.com/y4mOI-08rvWF-Td7uL0NqI6aLWSYaYqnVySbJYf5kB69Xc__O3syOL6rOR3jKH7nqx1QpJ1akb79WeuacclX6DftPCLewBtBS9c7JvfuLKMYBi45LwmyyJf80Lkj8XHBhtt9KJKEpQjqH8Tql4eHoIZaCiSX52YCmjPPqqYkNHNcsV2Da5Y7HUquKgRp-89GtZE?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Niespodzianka-2014-754441"><img src="https://fwcdn.pl/fpo/44/41/754441/7728716.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Wiek+%C5%BCagli-2018-819026"><img src="https://fwcdn.pl/fpo/90/26/819026/7871522.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/One+Small+Step-2018-819030"><img src="https://fwcdn.pl/fpo/90/30/819030/7871524.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Czarne+lusterko-2018-802350"><img src="https://fwcdn.pl/fpo/23/50/802350/7846041.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.imdb.com/title/tt9283018/"><img src="https://by3302files.storage.live.com/y4mTHcZVAEWTxup3K0KLuknzVTd3ympgooQRSgnOC4CXmJ55NG_22TESkx0oGE5GSwY_sLbVdv1iVNEWbBpuSd7Ha5pz6QAKyOJ-0P_0WyZebdb3AuoEAtdAjx6OKRvlZITtRdYzrGzOLmBfKQNThrPWDK-u0-R5mwzfr8w1BkAGgLoXWvEE8JxgGF2IKS8udGJ?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Blade+Runner%3A+Black+Out+2022-2017-838216"><img src="https://by3302files.storage.live.com/y4mH7d9rcNW5A3iNaN-FDZwM9QEwV4DolAJlIhI4sttgWzlINs2HDn6twcOeMoyhvGmS6ZMFUJRz6siCWqn4Bo3aLLRZm06fdGtDaAmOLts6vDXty-mV1f2Iksdd6UoKIZAiYKo4ptV61C0nMlZ8KnaQckzj4qSM5QL9WVtnBegp9GNHAM9TXtO6iKokzo0sUFw?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Solo+na+ugorze-1981-117029"><img src="https://fwcdn.pl/fpo/70/29/117029/7343505.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Mee-2012-682803"><img src="https://by3302files.storage.live.com/y4mNo06uoOLfwZMWMa_WjI8kzcZjiDphQH3xu7UFm-pF2e2D2mj2jp-UjHU18bQW2Ng0Eu4nOBYvyXeLb4sYhEVAADf3RZDn9txhiORbPmel3KcJNWRFxVkL3_bZHtSmWS2EWJnem71mm2E3QLie5z-yJ_pmM4D3R1adLHOg52A3X_PcwyJzCOgMFu_z1G3sYco?width=500&height=750&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Sie%C4%87-2010-625645"><img src="https://fwcdn.pl/fpo/56/45/625645/7411465.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Samog%C5%82oska-1981-429414"><img src="https://fwcdn.pl/fpo/94/14/429414/7377410.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ko%C5%84+by+si%C4%99+u%C5%9Bmia%C5%82-2013-692849"><img src="https://fwcdn.pl/fpo/28/49/692849/7568822.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/%C5%81amig%C5%82%C3%B3wka-2017-810462"><img src="https://fwcdn.pl/fpo/04/62/810462/7884281.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Bao-2018-810196"><img src="https://fwcdn.pl/fpo/01/96/810196/7852219.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Stra%C5%BCnik+tamy-2014-731163"><img src="https://fwcdn.pl/fpo/11/63/731163/7677304.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Danny+Boy-2010-568933"><img src="https://fwcdn.pl/fpo/89/33/568933/7326661.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/The+Rise+and+Fall+of+Globosome-2014-746595"><img src="https://by3302files.storage.live.com/y4mYoniMuAeosrCQ7qsv0hGLmXj2cSMox5QyQngSDEUYoDNqjAFiXyO__1nVn70_mOek52L4Y48aqKoZFlEVj96ImjxsLKzgeFkt-Qzzbo_kuegbZQ561DjJ687FpEmrOLh_UkdjEu07I9Q6MxJS31TeAopZ69G-0KPvoFyUxaR2H3JrmyW7E7AJrOCsB9aHBEg?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Paperman-2012-656831"><img src="https://fwcdn.pl/fpo/68/31/656831/7464646.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Oh+Sheep-2012-837394"><img src="https://by3302files.storage.live.com/y4mOI-08rvWF-Td7uL0NqI6aLWSYaYqnVySbJYf5kB69Xc__O3syOL6rOR3jKH7nqx1QpJ1akb79WeuacclX6DftPCLewBtBS9c7JvfuLKMYBi45LwmyyJf80Lkj8XHBhtt9KJKEpQjqH8Tql4eHoIZaCiSX52YCmjPPqqYkNHNcsV2Da5Y7HUquKgRp-89GtZE?width=182&height=268&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Niespodzianka-2014-754441"><img src="https://fwcdn.pl/fpo/44/41/754441/7728716.6.jpg" style="; border:none; box-shadow:none;"></a></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -657,35 +695,35 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Full+Metal+Panic-2002-110775"><img src="https://fwcdn.pl/fpo/07/75/110775/6963830.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Wolf%27s+Rain-2003-127898"><img src="https://fwcdn.pl/fpo/78/98/127898/7318615.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Shingeki+no+Kyojin-2013-636227"><img src="https://fwcdn.pl/fpo/62/27/636227/7548140.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Gunnm-1993-95798"><img src="https://fwcdn.pl/fpo/57/98/95798/7039585.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Neon+Genesis+Evangelion-1995-100434"><img src="https://fwcdn.pl/fpo/04/34/100434/7250428.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Black+Lagoon-2006-304751"><img src="https://fwcdn.pl/fpo/47/51/304751/7108989.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Psycho-pass-2012-653085"><img src="https://fwcdn.pl/fpo/30/85/653085/7588814.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Paranoia+Agent-2004-162349"><img src="https://fwcdn.pl/fpo/23/49/162349/6986140.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Wirtualna+Lain-1998-98877"><img src="https://fwcdn.pl/fpo/88/77/98877/6901232.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827"><img src="https://fwcdn.pl/fpo/58/27/495827/7259603.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Ghost+in+the+Shell%3A+Stand+Alone+Complex-2002-93085"><img src="https://fwcdn.pl/fpo/30/85/93085/6991177_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Made+in+Abyss-2017-786999"><img src="https://fwcdn.pl/fpo/69/99/786999/7815616.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/One-Punch+Man-2015-740929"><img src="https://fwcdn.pl/fpo/09/29/740929/7725312.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Hellsing-2006-248532"><img src="https://fwcdn.pl/fpo/85/32/248532/7030884.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Samurai+champloo-2004-167103"><img src="https://fwcdn.pl/fpo/71/03/167103/7419249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Cowboy+Bebop-1998-98666"><img src="https://fwcdn.pl/fpo/86/66/98666/7921970.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Trigun-1998-98878"><img src="https://fwcdn.pl/fpo/88/78/98878/6975477.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Tengen+Toppa+Gurren-Lagann-2007-380233"><img src="https://fwcdn.pl/fpo/02/33/380233/7194540.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Zanky%C5%8D+no+Terror-2014-711692"><img src="https://fwcdn.pl/fpo/16/92/711692/7685785.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Steins+Gate-2011-597724"><img src="https://fwcdn.pl/fpo/77/24/597724/7378574.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Rick+i+Morty-2013-671074"><img src="https://fwcdn.pl/fpo/10/74/671074/7589249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Awatar%3A+Legenda+Aanga-2005-194037"><img src="https://fwcdn.pl/fpo/40/37/194037/7645655.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Yoj%C5%8D-Han+Shinwa+Taikei-2010-555640"><img src="https://fwcdn.pl/fpo/56/40/555640/7333242.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Hilda-2018-800921"><img src="https://fwcdn.pl/fpo/09/21/800921/7858161.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/The+Midnight+Gospel-2020-850265"><img src="https://fwcdn.pl/fpo/02/65/850265/7919272.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Legenda+Korry-2012-590629"><img src="https://fwcdn.pl/fpo/06/29/590629/7645753.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Code+Geass%3A+Lelouch+of+the+Rebellion+R2-2008-467384"><img src="https://fwcdn.pl/fpo/73/84/467384/7313490.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Re%3A+Zero+Kara+Hajimeru+Isekai+Seikatsu-2016-748829"><img src="https://fwcdn.pl/fpo/88/29/748829/7861186.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Elfen+Lied-2004-226952"><img src="https://fwcdn.pl/fpo/69/52/226952/7406830.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Full+Metal+Panic-2002-110775"><img src="https://fwcdn.pl/fpo/07/75/110775/6963830.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Wolf%27s+Rain-2003-127898"><img src="https://fwcdn.pl/fpo/78/98/127898/7318615.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Shingeki+no+Kyojin-2013-636227"><img src="https://fwcdn.pl/fpo/62/27/636227/7548140.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Gunnm-1993-95798"><img src="https://fwcdn.pl/fpo/57/98/95798/7039585.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Neon+Genesis+Evangelion-1995-100434"><img src="https://fwcdn.pl/fpo/04/34/100434/7250428.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Black+Lagoon-2006-304751"><img src="https://fwcdn.pl/fpo/47/51/304751/7108989.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Psycho-pass-2012-653085"><img src="https://fwcdn.pl/fpo/30/85/653085/7588814.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Paranoia+Agent-2004-162349"><img src="https://fwcdn.pl/fpo/23/49/162349/6986140.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Wirtualna+Lain-1998-98877"><img src="https://fwcdn.pl/fpo/88/77/98877/6901232.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827"><img src="https://fwcdn.pl/fpo/58/27/495827/7259603.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Ghost+in+the+Shell%3A+Stand+Alone+Complex-2002-93085"><img src="https://fwcdn.pl/fpo/30/85/93085/6991177_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Made+in+Abyss-2017-786999"><img src="https://fwcdn.pl/fpo/69/99/786999/7815616.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/One-Punch+Man-2015-740929"><img src="https://fwcdn.pl/fpo/09/29/740929/7725312.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Hellsing-2006-248532"><img src="https://fwcdn.pl/fpo/85/32/248532/7030884.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Samurai+champloo-2004-167103"><img src="https://fwcdn.pl/fpo/71/03/167103/7419249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Cowboy+Bebop-1998-98666"><img src="https://fwcdn.pl/fpo/86/66/98666/7921970.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Trigun-1998-98878"><img src="https://fwcdn.pl/fpo/88/78/98878/6975477.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Tengen+Toppa+Gurren-Lagann-2007-380233"><img src="https://fwcdn.pl/fpo/02/33/380233/7194540.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Zanky%C5%8D+no+Terror-2014-711692"><img src="https://fwcdn.pl/fpo/16/92/711692/7685785.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Steins+Gate-2011-597724"><img src="https://fwcdn.pl/fpo/77/24/597724/7378574.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Rick+i+Morty-2013-671074"><img src="https://fwcdn.pl/fpo/10/74/671074/7589249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Awatar%3A+Legenda+Aanga-2005-194037"><img src="https://fwcdn.pl/fpo/40/37/194037/7645655.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Yoj%C5%8D-Han+Shinwa+Taikei-2010-555640"><img src="https://fwcdn.pl/fpo/56/40/555640/7333242.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Hilda-2018-800921"><img src="https://fwcdn.pl/fpo/09/21/800921/7858161.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/The+Midnight+Gospel-2020-850265"><img src="https://fwcdn.pl/fpo/02/65/850265/7919272.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Legenda+Korry-2012-590629"><img src="https://fwcdn.pl/fpo/06/29/590629/7645753.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Code+Geass%3A+Lelouch+of+the+Rebellion+R2-2008-467384"><img src="https://fwcdn.pl/fpo/73/84/467384/7313490.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Re%3A+Zero+Kara+Hajimeru+Isekai+Seikatsu-2016-748829"><img src="https://fwcdn.pl/fpo/88/29/748829/7861186.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Elfen+Lied-2004-226952"><img src="https://fwcdn.pl/fpo/69/52/226952/7406830.6.jpg" style="; border:none; box-shadow:none;"></a></div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -696,32 +734,32 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Full+Metal+Panic-2002-110775"><img src="https://fwcdn.pl/fpo/07/75/110775/6963830.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Wolf%27s+Rain-2003-127898"><img src="https://fwcdn.pl/fpo/78/98/127898/7318615.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Shingeki+no+Kyojin-2013-636227"><img src="https://fwcdn.pl/fpo/62/27/636227/7548140.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Yoj%C5%8D-Han+Shinwa+Taikei-2010-555640"><img src="https://fwcdn.pl/fpo/56/40/555640/7333242.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Black+Lagoon-2006-304751"><img src="https://fwcdn.pl/fpo/47/51/304751/7108989.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Tengen+Toppa+Gurren-Lagann-2007-380233"><img src="https://fwcdn.pl/fpo/02/33/380233/7194540.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Legenda+Korry-2012-590629"><img src="https://fwcdn.pl/fpo/06/29/590629/7645753.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827"><img src="https://fwcdn.pl/fpo/58/27/495827/7259603.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Ghost+in+the+Shell%3A+Stand+Alone+Complex-2002-93085"><img src="https://fwcdn.pl/fpo/30/85/93085/6991177_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Made+in+Abyss-2017-786999"><img src="https://fwcdn.pl/fpo/69/99/786999/7815616.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/One-Punch+Man-2015-740929"><img src="https://fwcdn.pl/fpo/09/29/740929/7725312.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Hellsing-2006-248532"><img src="https://fwcdn.pl/fpo/85/32/248532/7030884.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Zanky%C5%8D+no+Terror-2014-711692"><img src="https://fwcdn.pl/fpo/16/92/711692/7685785.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Steins+Gate-2011-597724"><img src="https://fwcdn.pl/fpo/77/24/597724/7378574.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Samurai+champloo-2004-167103"><img src="https://fwcdn.pl/fpo/71/03/167103/7419249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Psycho-pass-2012-653085"><img src="https://fwcdn.pl/fpo/30/85/653085/7588814.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Trigun-1998-98878"><img src="https://fwcdn.pl/fpo/88/78/98878/6975477.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Neon+Genesis+Evangelion-1995-100434"><img src="https://fwcdn.pl/fpo/04/34/100434/7250428.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Wirtualna+Lain-1998-98877"><img src="https://fwcdn.pl/fpo/88/77/98877/6901232.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Gunnm-1993-95798"><img src="https://fwcdn.pl/fpo/57/98/95798/7039585.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Cowboy+Bebop-1998-98666"><img src="https://fwcdn.pl/fpo/86/66/98666/7921970.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Rick+i+Morty-2013-671074"><img src="https://fwcdn.pl/fpo/10/74/671074/7589249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Awatar%3A+Legenda+Aanga-2005-194037"><img src="https://fwcdn.pl/fpo/40/37/194037/7645655.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Code+Geass%3A+Lelouch+of+the+Rebellion+R2-2008-467384"><img src="https://fwcdn.pl/fpo/73/84/467384/7313490.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Re%3A+Zero+Kara+Hajimeru+Isekai+Seikatsu-2016-748829"><img src="https://fwcdn.pl/fpo/88/29/748829/7861186.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Elfen+Lied-2004-226952"><img src="https://fwcdn.pl/fpo/69/52/226952/7406830.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Full+Metal+Panic-2002-110775"><img src="https://fwcdn.pl/fpo/07/75/110775/6963830.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Wolf%27s+Rain-2003-127898"><img src="https://fwcdn.pl/fpo/78/98/127898/7318615.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Shingeki+no+Kyojin-2013-636227"><img src="https://fwcdn.pl/fpo/62/27/636227/7548140.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Yoj%C5%8D-Han+Shinwa+Taikei-2010-555640"><img src="https://fwcdn.pl/fpo/56/40/555640/7333242.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Black+Lagoon-2006-304751"><img src="https://fwcdn.pl/fpo/47/51/304751/7108989.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Tengen+Toppa+Gurren-Lagann-2007-380233"><img src="https://fwcdn.pl/fpo/02/33/380233/7194540.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Legenda+Korry-2012-590629"><img src="https://fwcdn.pl/fpo/06/29/590629/7645753.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827"><img src="https://fwcdn.pl/fpo/58/27/495827/7259603.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Ghost+in+the+Shell%3A+Stand+Alone+Complex-2002-93085"><img src="https://fwcdn.pl/fpo/30/85/93085/6991177_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Made+in+Abyss-2017-786999"><img src="https://fwcdn.pl/fpo/69/99/786999/7815616.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/One-Punch+Man-2015-740929"><img src="https://fwcdn.pl/fpo/09/29/740929/7725312.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Hellsing-2006-248532"><img src="https://fwcdn.pl/fpo/85/32/248532/7030884.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Zanky%C5%8D+no+Terror-2014-711692"><img src="https://fwcdn.pl/fpo/16/92/711692/7685785.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Steins+Gate-2011-597724"><img src="https://fwcdn.pl/fpo/77/24/597724/7378574.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Samurai+champloo-2004-167103"><img src="https://fwcdn.pl/fpo/71/03/167103/7419249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Psycho-pass-2012-653085"><img src="https://fwcdn.pl/fpo/30/85/653085/7588814.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Trigun-1998-98878"><img src="https://fwcdn.pl/fpo/88/78/98878/6975477.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Neon+Genesis+Evangelion-1995-100434"><img src="https://fwcdn.pl/fpo/04/34/100434/7250428.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Wirtualna+Lain-1998-98877"><img src="https://fwcdn.pl/fpo/88/77/98877/6901232.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Gunnm-1993-95798"><img src="https://fwcdn.pl/fpo/57/98/95798/7039585.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Cowboy+Bebop-1998-98666"><img src="https://fwcdn.pl/fpo/86/66/98666/7921970.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Rick+i+Morty-2013-671074"><img src="https://fwcdn.pl/fpo/10/74/671074/7589249.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Awatar%3A+Legenda+Aanga-2005-194037"><img src="https://fwcdn.pl/fpo/40/37/194037/7645655.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Code+Geass%3A+Lelouch+of+the+Rebellion+R2-2008-467384"><img src="https://fwcdn.pl/fpo/73/84/467384/7313490.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Re%3A+Zero+Kara+Hajimeru+Isekai+Seikatsu-2016-748829"><img src="https://fwcdn.pl/fpo/88/29/748829/7861186.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Elfen+Lied-2004-226952"><img src="https://fwcdn.pl/fpo/69/52/226952/7406830.6.jpg" style="; border:none; box-shadow:none;"></a></div>
             </div>
            
             <div class="swiper-pagination"></div>
@@ -734,32 +772,32 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Skazany+na+%C5%9Bmier%C4%87-2005-236096"><img src="https://fwcdn.pl/fpo/60/96/236096/7652383.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Detektyw-2014-654010"><img src="https://fwcdn.pl/fpo/40/10/654010/7922849.3.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/BoJack+Horseman-2014-718443"><img src="https://fwcdn.pl/fpo/84/43/718443/7699446.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Kumple-2007-378865"><img src="https://fwcdn.pl/fpo/88/65/378865/7333610.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Nagi+re%C5%BCyser-2019-832968"><img src="https://fwcdn.pl/fpo/29/68/832968/7895279.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/W+domu+zombie-2008-491355"><img src="https://fwcdn.pl/fpo/13/55/491355/7216186.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Prawo+ulicy-2002-87721"><img src="https://fwcdn.pl/fpo/77/21/87721/7275925.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/The+Expanse-2015-721026"><img src="https://fwcdn.pl/fpo/10/26/721026/7710494.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Rodzina+Soprano-1999-35405"><img src="https://fwcdn.pl/fpo/54/05/35405/7175718_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Czarne+lustro-2011-640699"><img src="https://fwcdn.pl/fpo/06/99/640699/7430812.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Mi%C5%82o%C5%9B%C4%87%2C+%C5%9Bmier%C4%87+i+roboty-2019-824633"><img src="https://fwcdn.pl/fpo/46/33/824633/7876273.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Westworld-2016-232988"><img src="https://fwcdn.pl/fpo/29/88/232988/7843582.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Breaking+Bad-2008-430668"><img src="https://fwcdn.pl/fpo/06/68/430668/7730445.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Planeta+Ziemia+II-2016-777975"><img src="https://fwcdn.pl/fpo/79/75/777975/7801488.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Miasteczko+Twin+Peaks-1990-37003"><img src="https://fwcdn.pl/fpo/70/03/37003/7869504.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Sze%C5%9B%C4%87+st%C3%B3p+pod+ziemi%C4%85-2001-89546"><img src="https://fwcdn.pl/fpo/95/46/89546/7131755.3.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/%C5%9Awiat+gliniarzy-2002-114052"><img src="https://fwcdn.pl/fpo/40/52/114052/7766969.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/PitBull-2005-282083"><img src="https://fwcdn.pl/fpo/20/83/282083/7192868.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Gomorra-2014-615608"><img src="https://fwcdn.pl/fpo/56/08/615608/7639737.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Czarnobyl-2019-799827"><img src="https://fwcdn.pl/fpo/98/27/799827/7900027_1.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Zagubieni-2004-133834"><img src="https://fwcdn.pl/fpo/38/34/133834/7183288.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/%C5%9Alepn%C4%85c+od+%C5%9Bwiate%C5%82-2018-786525"><img src="https://fwcdn.pl/fpo/65/25/786525/7858245.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Atlanta-2016-767468"><img src="https://fwcdn.pl/fpo/74/68/767468/7845025.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Utopia-2013-663388"><img src="https://fwcdn.pl/fpo/33/88/663388/7517686.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Zadzwo%C5%84+do+Saula-2015-697645"><img src="https://fwcdn.pl/fpo/76/45/697645/7733748.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Uliczne+jedzenie-2019-829072"><img src="https://fwcdn.pl/fpo/90/72/829072/7883815.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Skazany+na+%C5%9Bmier%C4%87-2005-236096"><img src="https://fwcdn.pl/fpo/60/96/236096/7652383.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Detektyw-2014-654010"><img src="https://fwcdn.pl/fpo/40/10/654010/7922849.3.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/BoJack+Horseman-2014-718443"><img src="https://fwcdn.pl/fpo/84/43/718443/7699446.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Kumple-2007-378865"><img src="https://fwcdn.pl/fpo/88/65/378865/7333610.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Nagi+re%C5%BCyser-2019-832968"><img src="https://fwcdn.pl/fpo/29/68/832968/7895279.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/W+domu+zombie-2008-491355"><img src="https://fwcdn.pl/fpo/13/55/491355/7216186.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Prawo+ulicy-2002-87721"><img src="https://fwcdn.pl/fpo/77/21/87721/7275925.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/The+Expanse-2015-721026"><img src="https://fwcdn.pl/fpo/10/26/721026/7710494.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Rodzina+Soprano-1999-35405"><img src="https://fwcdn.pl/fpo/54/05/35405/7175718_1.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Czarne+lustro-2011-640699"><img src="https://fwcdn.pl/fpo/06/99/640699/7430812.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Mi%C5%82o%C5%9B%C4%87%2C+%C5%9Bmier%C4%87+i+roboty-2019-824633"><img src="https://fwcdn.pl/fpo/46/33/824633/7876273.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Westworld-2016-232988"><img src="https://fwcdn.pl/fpo/29/88/232988/7843582.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Breaking+Bad-2008-430668"><img src="https://fwcdn.pl/fpo/06/68/430668/7730445.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Planeta+Ziemia+II-2016-777975"><img src="https://fwcdn.pl/fpo/79/75/777975/7801488.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Miasteczko+Twin+Peaks-1990-37003"><img src="https://fwcdn.pl/fpo/70/03/37003/7869504.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Sze%C5%9B%C4%87+st%C3%B3p+pod+ziemi%C4%85-2001-89546"><img src="https://fwcdn.pl/fpo/95/46/89546/7131755.3.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/%C5%9Awiat+gliniarzy-2002-114052"><img src="https://fwcdn.pl/fpo/40/52/114052/7766969.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/PitBull-2005-282083"><img src="https://fwcdn.pl/fpo/20/83/282083/7192868.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Gomorra-2014-615608"><img src="https://fwcdn.pl/fpo/56/08/615608/7639737.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Czarnobyl-2019-799827"><img src="https://fwcdn.pl/fpo/98/27/799827/7900027_1.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Zagubieni-2004-133834"><img src="https://fwcdn.pl/fpo/38/34/133834/7183288.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/%C5%9Alepn%C4%85c+od+%C5%9Bwiate%C5%82-2018-786525"><img src="https://fwcdn.pl/fpo/65/25/786525/7858245.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Atlanta-2016-767468"><img src="https://fwcdn.pl/fpo/74/68/767468/7845025.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Utopia-2013-663388"><img src="https://fwcdn.pl/fpo/33/88/663388/7517686.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Zadzwo%C5%84+do+Saula-2015-697645"><img src="https://fwcdn.pl/fpo/76/45/697645/7733748.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Uliczne+jedzenie-2019-829072"><img src="https://fwcdn.pl/fpo/90/72/829072/7883815.6.jpg" style=""></a></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -773,39 +811,39 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Crysis-2007-608586"><img src="https://fwcdn.pl/fpo/85/86/608586/7398750.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Bulletstorm-2011-611271"><img src="https://fwcdn.pl/fpo/12/71/611271/7360739.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Heavy+Rain-2010-607549"><img src="https://fwcdn.pl/fpo/75/49/607549/7524351.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/BioShock-2007-608595"><img src="https://fwcdn.pl/fpo/85/95/608595/7369529.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Max+Payne+2%3A+The+Fall+of+Max+Payne-2003-607024"><img src="https://fwcdn.pl/fpo/70/24/607024/7880575.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Max+Payne-2001-607023"><img src="https://fwcdn.pl/fpo/70/23/607023/7737670.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/The+Last+of+Us-2013-642590"><img src="https://fwcdn.pl/fpo/25/90/642590/7709604.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Life+is+Strange-2015-720567"><img src="https://fwcdn.pl/fpo/05/67/720567/7714438.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Undertale-2015-715189"><img src="https://fwcdn.pl/fpo/51/89/715189/7880385.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/The+Walking+Dead%3A+Season+One-2012-631588"><img src="https://fwcdn.pl/fpo/15/88/631588/7585281.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645"><img src="https://fwcdn.pl/fpo/56/45/615645/7470862.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Antichamber-2013-680088"><img src="https://fwcdn.pl/fpo/00/88/680088/7802801.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/World+in+Conflict-2007-608112"><img src="https://fwcdn.pl/fpo/81/12/608112/7350739.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/What+Remains+of+Edith+Finch-2017-729227"><img src="https://fwcdn.pl/fpo/92/27/729227/7824144.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Manifold+Garden-2019-793925"><img src="https://fwcdn.pl/fpo/39/25/793925/7880775.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Subnautica-2018-738588"><img src="https://fwcdn.pl/fpo/85/88/738588/7867995.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Call+of+Duty+4%3A+Modern+Warfare-2007-608432"><img src="https://fwcdn.pl/fpo/84/32/608432/7363049.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Mirror%27s+Edge-2008-607605"><img src="https://fwcdn.pl/fpo/76/05/607605/7349975.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Half-Life-1998-608438"><img src="https://fwcdn.pl/fpo/84/38/608438/7350939.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Mass+Effect+2-2010-606064"><img src="https://fwcdn.pl/fpo/60/64/606064/7352755.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Wied%C5%BAmin-2007-608108"><img src="https://fwcdn.pl/fpo/81/08/608108/7350734.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Need+for+Speed+Most+Wanted-2005-608445"><img src="https://fwcdn.pl/fpo/84/45/608445/7350946.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Fallout%3A+New+Vegas-2010-608737"><img src="https://fwcdn.pl/fpo/87/37/608737/7552598.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Alan+Wake-2010-606063"><img src="https://fwcdn.pl/fpo/60/63/606063/7496143.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Braid-2008-611204"><img src="https://fwcdn.pl/fpo/12/04/611204/7359214.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Portal-2007-608591"><img src="https://fwcdn.pl/fpo/85/91/608591/7350962.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Ico-2001-618893"><img src="https://fwcdn.pl/fpo/88/93/618893/7378613.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/The+Wolf+Among+Us-2013-688673"><img src="https://fwcdn.pl/fpo/86/73/688673/7655257.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Horizon+Zero+Dawn%3A+The+Frozen+Wilds-2017-790297"><img src="https://fwcdn.pl/fpo/02/97/790297/7800102.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/The+Witness-2016-637885"><img src="https://fwcdn.pl/fpo/78/85/637885/7612518.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Wied%C5%BAmin+3%3A+Dziki+Gon+-+Serca+z+kamienia-2015-7390495"><img src="https://fwcdn.pl/fpo/90/49/739049/7714677.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Call+of+Duty%3A+Modern+Warfare+2-2009-608594"><img src="https://fwcdn.pl/fpo/85/94/608594/7364008.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Firewatch-2016-724536"><img src="https://fwcdn.pl/fpo/45/36/724536/7718089.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Crysis-2007-608586"><img src="https://fwcdn.pl/fpo/85/86/608586/7398750.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Bulletstorm-2011-611271"><img src="https://fwcdn.pl/fpo/12/71/611271/7360739.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Heavy+Rain-2010-607549"><img src="https://fwcdn.pl/fpo/75/49/607549/7524351.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/BioShock-2007-608595"><img src="https://fwcdn.pl/fpo/85/95/608595/7369529.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Max+Payne+2%3A+The+Fall+of+Max+Payne-2003-607024"><img src="https://fwcdn.pl/fpo/70/24/607024/7880575.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Max+Payne-2001-607023"><img src="https://fwcdn.pl/fpo/70/23/607023/7737670.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/The+Last+of+Us-2013-642590"><img src="https://fwcdn.pl/fpo/25/90/642590/7709604.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Life+is+Strange-2015-720567"><img src="https://fwcdn.pl/fpo/05/67/720567/7714438.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Undertale-2015-715189"><img src="https://fwcdn.pl/fpo/51/89/715189/7880385.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/The+Walking+Dead%3A+Season+One-2012-631588"><img src="https://fwcdn.pl/fpo/15/88/631588/7585281.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645"><img src="https://fwcdn.pl/fpo/56/45/615645/7470862.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Antichamber-2013-680088"><img src="https://fwcdn.pl/fpo/00/88/680088/7802801.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/World+in+Conflict-2007-608112"><img src="https://fwcdn.pl/fpo/81/12/608112/7350739.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/What+Remains+of+Edith+Finch-2017-729227"><img src="https://fwcdn.pl/fpo/92/27/729227/7824144.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Manifold+Garden-2019-793925"><img src="https://fwcdn.pl/fpo/39/25/793925/7880775.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Subnautica-2018-738588"><img src="https://fwcdn.pl/fpo/85/88/738588/7867995.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Call+of+Duty+4%3A+Modern+Warfare-2007-608432"><img src="https://fwcdn.pl/fpo/84/32/608432/7363049.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Mirror%27s+Edge-2008-607605"><img src="https://fwcdn.pl/fpo/76/05/607605/7349975.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Half-Life-1998-608438"><img src="https://fwcdn.pl/fpo/84/38/608438/7350939.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Mass+Effect+2-2010-606064"><img src="https://fwcdn.pl/fpo/60/64/606064/7352755.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Wied%C5%BAmin-2007-608108"><img src="https://fwcdn.pl/fpo/81/08/608108/7350734.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Need+for+Speed+Most+Wanted-2005-608445"><img src="https://fwcdn.pl/fpo/84/45/608445/7350946.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Fallout%3A+New+Vegas-2010-608737"><img src="https://fwcdn.pl/fpo/87/37/608737/7552598.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Alan+Wake-2010-606063"><img src="https://fwcdn.pl/fpo/60/63/606063/7496143.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Braid-2008-611204"><img src="https://fwcdn.pl/fpo/12/04/611204/7359214.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Portal-2007-608591"><img src="https://fwcdn.pl/fpo/85/91/608591/7350962.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Ico-2001-618893"><img src="https://fwcdn.pl/fpo/88/93/618893/7378613.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/The+Wolf+Among+Us-2013-688673"><img src="https://fwcdn.pl/fpo/86/73/688673/7655257.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Horizon+Zero+Dawn%3A+The+Frozen+Wilds-2017-790297"><img src="https://fwcdn.pl/fpo/02/97/790297/7800102.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/The+Witness-2016-637885"><img src="https://fwcdn.pl/fpo/78/85/637885/7612518.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Wied%C5%BAmin+3%3A+Dziki+Gon+-+Serca+z+kamienia-2015-7390495"><img src="https://fwcdn.pl/fpo/90/49/739049/7714677.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Call+of+Duty%3A+Modern+Warfare+2-2009-608594"><img src="https://fwcdn.pl/fpo/85/94/608594/7364008.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Firewatch-2016-724536"><img src="https://fwcdn.pl/fpo/45/36/724536/7718089.6.jpg" style=""></a></div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -817,15 +855,15 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/4900.Heart_of_Darkness"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1392799983l/4900.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/12505.The_Idiot"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327865902l/12505.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/17470674-fahrenheit-451"><img src="https://images.gr-assets.com/books/1469704347l/17470674.jpg"></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/6606279-1984"><img src="https://images.gr-assets.com/books/1327877570l/6606279.jpg"></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/6971441-1001-arabian-nights"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348313406l/6971441.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/6043781-blood-of-elves"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589998653l/6043781._SX318_.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/24830.The_Illustrated_Man"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374049820l/24830.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/2099342.Paradyzja"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1296859834l/2099342.jpg"></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/2108205.Limes_inferior"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1232225625l/2108205.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/4900.Heart_of_Darkness"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1392799983l/4900.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/12505.The_Idiot"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327865902l/12505.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/17470674-fahrenheit-451"><img src="https://images.gr-assets.com/books/1469704347l/17470674.jpg"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/6606279-1984"><img src="https://images.gr-assets.com/books/1327877570l/6606279.jpg"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/6971441-1001-arabian-nights"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348313406l/6971441.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/6043781-blood-of-elves"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589998653l/6043781._SX318_.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/24830.The_Illustrated_Man"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374049820l/24830.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/2099342.Paradyzja"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1296859834l/2099342.jpg"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/2108205.Limes_inferior"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1232225625l/2108205.jpg" style=""></a></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -838,25 +876,25 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Lament-2016-767889"><img src="https://fwcdn.pl/fpo/78/89/767889/7766005.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Mi%C5%9B-1980-896"><img src="https://fwcdn.pl/fpo/08/96/896/7931000.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Metropolis-1927-31352"><img src="https://fwcdn.pl/fpo/13/52/31352/7188924.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Poezja-2010-563394"><img src="https://fwcdn.pl/fpo/33/94/563394/7366544.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Harakiri-1962-31756"><img src="https://fwcdn.pl/fpo/17/56/31756/7443473.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Bunt-1967-31719"><img src="https://fwcdn.pl/fpo/17/19/31719/7752121.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Siedmiu+samuraj%C3%B3w-1954-31369"><img src="https://fwcdn.pl/fpo/13/69/31369/7731649.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.imdb.com/title/tt0092337/"><img src="https://by3302files.storage.live.com/y4mLUtD7nkdWd4HYDhduFvXrt_iSzVwBJrJq_tjT2wPpzvyXg1weN3O3hxgMRewGgLvYu_bDReZx0lIBklr_AQS05hJHFkJvulL4u26hj_5JQwIj6BfOaJpQE7gww1MyThdX3yVhfZAvBOg-oU9xyqgz5iQ2FjchPXTTzV0nc1axmp5nfLQDGD7t6-q62VvV51f?width=700&height=1024&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Mononoke-2007-426889"><img src="https://fwcdn.pl/fpo/68/89/426889/7461649.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Darker+than+Black%3A+Ry%C5%ABsei+no+Gemini-2009-531034"><img src="https://fwcdn.pl/fpo/10/34/531034/7294078.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.imdb.com/title/tt13248076/"><img src="https://dub01pap001files.storage.live.com/y4mjta2AqEGT5D0TjmBdfBKPRgGHfb9ikkqPcCv0Gjp0RHwsH-6nAp9oUBbIFTGl4vasmnmSRHUxbCkHkXcrVX37ptKwpX_xhx3QFPQU8qiIYSO3bXDfLWcU7HsgCHv4G5OTXOgaoh02MBY3OFpyAnXSPFX5GemJu8wIYowVm8BxjK6QeLSlaMGqcEywqdyU_Fa?width=1100&height=1555&cropmode=none" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Steins+Gate+0-2018-741023"><img src="https://fwcdn.pl/fpo/10/23/741023/7844646.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/The+Unfinished+Swan-2012-668233"><img src="https://fwcdn.pl/fpo/82/33/668233/7521388.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/NieR%3A+Automata-2017-744637"><img src="https://fwcdn.pl/fpo/46/37/744637/7774448.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Red+Dead+Redemption+2-2018-774078"><img src="https://fwcdn.pl/fpo/40/78/774078/7855272.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Okami-2006-616017"><img src="https://fwcdn.pl/fpo/60/17/616017/7370991.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Mafia%3A+The+City+of+Lost+Heaven-2002-608597"><img src="https://fwcdn.pl/fpo/85/97/608597/7622487.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/videogame/Return+of+the+Obra+Dinn-2018-715193"><img src="https://fwcdn.pl/fpo/51/93/715193/7868167.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/18796.In_Search_of_Lost_Time"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1371343768l/190576.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Lament-2016-767889"><img src="https://fwcdn.pl/fpo/78/89/767889/7766005.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Mi%C5%9B-1980-896"><img src="https://fwcdn.pl/fpo/08/96/896/7931000.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Metropolis-1927-31352"><img src="https://fwcdn.pl/fpo/13/52/31352/7188924.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Poezja-2010-563394"><img src="https://fwcdn.pl/fpo/33/94/563394/7366544.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Harakiri-1962-31756"><img src="https://fwcdn.pl/fpo/17/56/31756/7443473.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Bunt-1967-31719"><img src="https://fwcdn.pl/fpo/17/19/31719/7752121.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Siedmiu+samuraj%C3%B3w-1954-31369"><img src="https://fwcdn.pl/fpo/13/69/31369/7731649.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.imdb.com/title/tt0092337/"><img src="https://by3302files.storage.live.com/y4mLUtD7nkdWd4HYDhduFvXrt_iSzVwBJrJq_tjT2wPpzvyXg1weN3O3hxgMRewGgLvYu_bDReZx0lIBklr_AQS05hJHFkJvulL4u26hj_5JQwIj6BfOaJpQE7gww1MyThdX3yVhfZAvBOg-oU9xyqgz5iQ2FjchPXTTzV0nc1axmp5nfLQDGD7t6-q62VvV51f?width=700&height=1024&cropmode=none" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Mononoke-2007-426889"><img src="https://fwcdn.pl/fpo/68/89/426889/7461649.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Darker+than+Black%3A+Ry%C5%ABsei+no+Gemini-2009-531034"><img src="https://fwcdn.pl/fpo/10/34/531034/7294078.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.imdb.com/title/tt13248076/"><img src="https://dub01pap001files.storage.live.com/y4mjta2AqEGT5D0TjmBdfBKPRgGHfb9ikkqPcCv0Gjp0RHwsH-6nAp9oUBbIFTGl4vasmnmSRHUxbCkHkXcrVX37ptKwpX_xhx3QFPQU8qiIYSO3bXDfLWcU7HsgCHv4G5OTXOgaoh02MBY3OFpyAnXSPFX5GemJu8wIYowVm8BxjK6QeLSlaMGqcEywqdyU_Fa?width=1100&height=1555&cropmode=none" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Steins+Gate+0-2018-741023"><img src="https://fwcdn.pl/fpo/10/23/741023/7844646.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/The+Unfinished+Swan-2012-668233"><img src="https://fwcdn.pl/fpo/82/33/668233/7521388.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/NieR%3A+Automata-2017-744637"><img src="https://fwcdn.pl/fpo/46/37/744637/7774448.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Red+Dead+Redemption+2-2018-774078"><img src="https://fwcdn.pl/fpo/40/78/774078/7855272.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Okami-2006-616017"><img src="https://fwcdn.pl/fpo/60/17/616017/7370991.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Mafia%3A+The+City+of+Lost+Heaven-2002-608597"><img src="https://fwcdn.pl/fpo/85/97/608597/7622487.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Return+of+the+Obra+Dinn-2018-715193"><img src="https://fwcdn.pl/fpo/51/93/715193/7868167.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/18796.In_Search_of_Lost_Time"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1371343768l/190576.jpg" style=""></a></div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -867,49 +905,51 @@ h1{
         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3" style="margin-bottom:3em">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/GTO%2C+czyli+Great+Teacher+Onizuka-1999-146248"><img src="https://fwcdn.pl/fpo/62/48/146248/7805359.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Higurashi+no+Naku+Koroni-2006-324560"><img src="https://fwcdn.pl/fpo/45/60/324560/7132580.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Gintama-2006-363435"><img src="https://fwcdn.pl/fpo/34/35/363435/7225726.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Mushishi-2005-304475"><img src="https://fwcdn.pl/fpo/44/75/304475/7181148.6.jpg" style="; border:none; box-shadow:none;"></a></div>
-              <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378"><img src="https://fwcdn.pl/fpo/53/78/565378/7447191.6.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/170448.Animal_Farm"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1325861570l/170448.jpg" style=""></a></div>
-              <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/12749.Swann_s_Way"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1452956236l/12749._SY475_.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/GTO%2C+czyli+Great+Teacher+Onizuka-1999-146248"><img src="https://fwcdn.pl/fpo/62/48/146248/7805359.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Higurashi+no+Naku+Koroni-2006-324560"><img src="https://fwcdn.pl/fpo/45/60/324560/7132580.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Gintama-2006-363435"><img src="https://fwcdn.pl/fpo/34/35/363435/7225726.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Mushishi-2005-304475"><img src="https://fwcdn.pl/fpo/44/75/304475/7181148.6.jpg" style="; border:none; box-shadow:none;"></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Pora+na+przygod%C4%99-2010-565378"><img src="https://fwcdn.pl/fpo/53/78/565378/7447191.6.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/170448.Animal_Farm"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1325861570l/170448.jpg" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/12749.Swann_s_Way"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1452956236l/12749._SY475_.jpg" style=""></a></div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
 
+        <a href="https://www.filmweb.pl/user/FuadSoudah"><h1><center>My Filmweb Account</center></h1></a>
+
 <!--         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3">
             <div class="swiper-wrapper" style="display:flex !important">
-              <div class="swiper-slide"><a href="https://www.last.fm/pl/music/M.I.A."><img src="https://lastfm-img2.akamaized.net/i/u/770x0/dddbb65f52d45a8e5a3ffe26a419ba15.jpg#dddbb65f52d45a8e5a3ffe26a419ba15" style=""></a>
-                <p><a href="https://www.last.fm/pl/user/Fuadex/library/tracks?rangetype=1day&from=2014-01-27">Four years ago, on your 18th Birthday</a>, you have listened to <a href="https://www.youtube.com/watch?v=ewRjZoRtu0Y"><b>Paper Planes</b> by <b>M.I.A.</b></a></p>
+              <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/pl/music/M.I.A."><img src="https://lastfm-img2.akamaized.net/i/u/770x0/dddbb65f52d45a8e5a3ffe26a419ba15.jpg#dddbb65f52d45a8e5a3ffe26a419ba15" style=""></a>
+                <p><a target="_blank" href="https://www.last.fm/pl/user/Fuadex/library/tracks?rangetype=1day&from=2014-01-27">Four years ago, on your 18th Birthday</a>, you have listened to <a target="_blank" href="https://www.youtube.com/watch?v=ewRjZoRtu0Y"><b>Paper Planes</b> by <b>M.I.A.</b></a></p>
                 <p>You were still attending High School in Poland, how much do you think has changed since then?</a></p>
-                <p style="margin-top:0;">Most of her albums are available on your <a href="https://open.spotify.com/artist/0QJIPDAEDILuo8AIq3pMuU"><b>Spotify</b> subscription</a></p></div>
-                <div class="swiper-slide"><a href="https://www.last.fm/pl/music/PRO8L3M"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/3349f6ee7d374e3c9e1b823d06ca7743.jpg#3349f6ee7d374e3c9e1b823d06ca7743" style=""></a>
+                <p style="margin-top:0;">Most of her albums are available on your <a target="_blank" href="https://open.spotify.com/artist/0QJIPDAEDILuo8AIq3pMuU"><b>Spotify</b> subscription</a></p></div>
+                <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/pl/music/PRO8L3M"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/3349f6ee7d374e3c9e1b823d06ca7743.jpg#3349f6ee7d374e3c9e1b823d06ca7743" style=""></a>
                   <p>Two years ago, you have started listening to <b>Polish Rap</b> and <b>Pro8l3m</b> got you into it</p>
-                  <p>Your most listened to tracks are <a href="https://www.last.fm/pl/user/Fuadex/library/music/PRO8L3M"><b>Molly</b>, <b>2#17</b> and <b>Hazard</b></a></p>
-                  <p style="margin-top:0;">Most of their albums are available on your <a href="https://open.spotify.com/artist/7v49oVVUhvIQG5EK0jkcF7"><b>Spotify</b> subscription</p></a></div>
-                  <div class="swiper-slide"><a href="https://www.last.fm/pl/music/Tool"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/b7c317ab6fa2431a8e678ba564c2befa.jpg#b7c317ab6fa2431a8e678ba564c2befa" style=""></a>
-                    <p>You've used to listen to <a href="https://www.last.fm/pl/music/Tool"><b>Tool</b></a> heavily and they are coming back with a <b>Tour in 2019</b></p>
+                  <p>Your most listened to tracks are <a target="_blank" href="https://www.last.fm/pl/user/Fuadex/library/music/PRO8L3M"><b>Molly</b>, <b>2#17</b> and <b>Hazard</b></a></p>
+                  <p style="margin-top:0;">Most of their albums are available on your <a target="_blank" href="https://open.spotify.com/artist/7v49oVVUhvIQG5EK0jkcF7"><b>Spotify</b> subscription</p></a></div>
+                  <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/pl/music/Tool"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/b7c317ab6fa2431a8e678ba564c2befa.jpg#b7c317ab6fa2431a8e678ba564c2befa" style=""></a>
+                    <p>You've used to listen to <a target="_blank" href="https://www.last.fm/pl/music/Tool"><b>Tool</b></a> heavily and they are coming back with a <b>Tour in 2019</b></p>
                     <p>We'll let you know once they announce a concert in Australia</p>
-                    <p style="margin-top:0;">In the meantime, <a href="https://www.youtube.com/watch?v=iOKV9Stri_M">check out their material on <b>Youtube</b></a></p></div>
-                    <div class="swiper-slide"><a href="https://www.last.fm/music/Ling+Tosite+Sigure"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/aaf443f764dc3201b6aac3ce002ba14d.jpg#aaf443f764dc3201b6aac3ce002ba14d" style="; border:none; box-shadow:none;"></a>
-                      <p>It seems you have watched <a href="https://www.netflix.com/search?q=Psycho%20Pass"><b>Psycho Pass</b></a> recently, <a href="https://www.youtube.com/watch?v=WWBDuVCuiUQ">often replayed their opening on <b>Youtube</b></a> and <b><a href="https://www.last.fm/pl/tag/post-hardcore">you listen to post-hardcore</a></b></p>
-                      <p>You're recommended <a href="https://open.spotify.com/artist/00DuPiLri3mNomvvM3nZvU"><b>Ling Tosite Sigure</b></a> as they're the authors of the opening <a href="https://www.last.fm/pl/user/Fuadex">and their style aligns with your last.fm profile</a></p>
-                      <p style="margin-top:0;"><a href="https://open.spotify.com/artist/00DuPiLri3mNomvvM3nZvU">Most of their albums are available on your <b>Spotify</b> subscription</a></p></div>
-                      <div class="swiper-slide"><a href="https://www.last.fm/music/BABYMETAL"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/83ed0d373f30e1cb7cd3b59c2ff36ece.jpg#83ed0d373f30e1cb7cd3b59c2ff36ece" style="; border:none; box-shadow:none;"></a>
+                    <p style="margin-top:0;">In the meantime, <a target="_blank" href="https://www.youtube.com/watch?v=iOKV9Stri_M">check out their material on <b>Youtube</b></a></p></div>
+                    <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/music/Ling+Tosite+Sigure"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/aaf443f764dc3201b6aac3ce002ba14d.jpg#aaf443f764dc3201b6aac3ce002ba14d" style="; border:none; box-shadow:none;"></a>
+                      <p>It seems you have watched <a target="_blank" href="https://www.netflix.com/search?q=Psycho%20Pass"><b>Psycho Pass</b></a> recently, <a target="_blank" href="https://www.youtube.com/watch?v=WWBDuVCuiUQ">often replayed their opening on <b>Youtube</b></a> and <b><a target="_blank" href="https://www.last.fm/pl/tag/post-hardcore">you listen to post-hardcore</a></b></p>
+                      <p>You're recommended <a target="_blank" href="https://open.spotify.com/artist/00DuPiLri3mNomvvM3nZvU"><b>Ling Tosite Sigure</b></a> as they're the authors of the opening <a target="_blank" href="https://www.last.fm/pl/user/Fuadex">and their style aligns with your last.fm profile</a></p>
+                      <p style="margin-top:0;"><a target="_blank" href="https://open.spotify.com/artist/00DuPiLri3mNomvvM3nZvU">Most of their albums are available on your <b>Spotify</b> subscription</a></p></div>
+                      <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/music/BABYMETAL"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/83ed0d373f30e1cb7cd3b59c2ff36ece.jpg#83ed0d373f30e1cb7cd3b59c2ff36ece" style="; border:none; box-shadow:none;"></a>
                         <p>It seems you primarily listen to <b>Metal</b> are getting into <b>Anime OST</b> and <b>explore new genres</b></p>
-                        <p>You're recommended <a href="https://open.spotify.com/artist/630wzNP2OL7fl4Xl0GnMWq"><b>Babymetal</b></a> due to <a href="https://en.wikipedia.org/wiki/Babymetal#Awards_and_nominations"><b>universal acclaim</b></a> and a <b>unique Metal/JPop fusion</b></p>
-                        <p style="margin-top:0;">Their albums are covered by your <a href="https://open.spotify.com/artist/630wzNP2OL7fl4Xl0GnMWq"><b>Spotify</b> subscription</a></p></div>
-                        <div class="swiper-slide"><a href="https://www.last.fm/pl/music/Thank+You+Scientist"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/19998ab665b43ae00e706e6798454a88.jpg#19998ab665b43ae00e706e6798454a88" style=""></a>
+                        <p>You're recommended <a target="_blank" href="https://open.spotify.com/artist/630wzNP2OL7fl4Xl0GnMWq"><b>Babymetal</b></a> due to <a target="_blank" href="https://en.wikipedia.org/wiki/Babymetal#Awards_and_nominations"><b>universal acclaim</b></a> and a <b>unique Metal/JPop fusion</b></p>
+                        <p style="margin-top:0;">Their albums are covered by your <a target="_blank" href="https://open.spotify.com/artist/630wzNP2OL7fl4Xl0GnMWq"><b>Spotify</b> subscription</a></p></div>
+                        <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/pl/music/Thank+You+Scientist"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/19998ab665b43ae00e706e6798454a88.jpg#19998ab665b43ae00e706e6798454a88" style=""></a>
                           <p>It seems you tried getting into <b>Jazz</b> and listen to <b>progressive rock and metal</b></p>
-                          <p>You're recommended <a href="https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"><b>Thank You Scientist</b></a> as it's a <b>jazz fusion</b> which entails <b>your favorite genres</b></p>
-                          <p style="margin-top:0;">Their albums are covered by your <a href="https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"><b>Spotify</b> subscription</a></p></div>
-                          <div class="swiper-slide"><a href="https://www.last.fm/pl/music/Alien+Weaponry"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/ae0389f483a4aeafc68113f21dfd87db.jpg#ae0389f483a4aeafc68113f21dfd87db" style=""></a>
-                            <p>Since you've been listening to your old <b>Metal</b> bands, you may be interested in <a href="https://open.spotify.com/artist/2vov4zolAP7zbIhB5CsIPm"><b>Alien Weaponry</b></a></p>
+                          <p>You're recommended <a target="_blank" href="https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"><b>Thank You Scientist</b></a> as it's a <b>jazz fusion</b> which entails <b>your favorite genres</b></p>
+                          <p style="margin-top:0;">Their albums are covered by your <a target="_blank" href="https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"><b>Spotify</b> subscription</a></p></div>
+                          <div class="swiper-slide"><a target="_blank" href="https://www.last.fm/pl/music/Alien+Weaponry"><img src="https://lastfm-img2.akamaized.net/i/u/770x0/ae0389f483a4aeafc68113f21dfd87db.jpg#ae0389f483a4aeafc68113f21dfd87db" style=""></a>
+                            <p>Since you've been listening to your old <b>Metal</b> bands, you may be interested in <a target="_blank" href="https://open.spotify.com/artist/2vov4zolAP7zbIhB5CsIPm"><b>Alien Weaponry</b></a></p>
                             <p>It's <b>Thrash Metal</b> like the old days but from <b>New Zealand</b> and they <b>sing in Maori</b></p>
-                            <p style="margin-top:0;">Their albums are covered by your <a href="https://open.spotify.com/artist/2vov4zolAP7zbIhB5CsIPm"><b>Spotify</b> subscription</a></p></div>
+                            <p style="margin-top:0;">Their albums are covered by your <a target="_blank" href="https://open.spotify.com/artist/2vov4zolAP7zbIhB5CsIPm"><b>Spotify</b> subscription</a></p></div>
                           </div>
 
                           <div class="swiper-pagination"></div>
@@ -922,34 +962,34 @@ h1{
                                     <div class="row" style="padding-top:3vw !important">
                                       <div class="swiper-container5 res3">
                                         <div class="swiper-wrapper" style="display:flex !important">
-                                          <div class="swiper-slide"><a href="https://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866"><img src="https://ssl-gfx.filmweb.pl/po/18/66/31866/7137229.3.jpg" style=""></a>
+                                          <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866"><img src="https://ssl-gfx.filmweb.pl/po/18/66/31866/7137229.3.jpg" style=""></a>
                                             <p>As you're interested in <b>philosophical themes</b> and <b>Futurism</b></p>
-                                            <p><a href="https://www.netflix.com/search?q=Ghost%20in%20The%20Shell">You're recommended <b>Ghost in the Shell</b> original movie</a></p>
-                                            <p style="margin-top:0;">According to Unogs, it's covered by your <a href="https://unogs.com/video/?v=540533"><b>Netflix</b> subscription in Argentina, Brasil, Japan, Mexico... ( ͡° ͜ʖ ͡°) )</a></p></div>
-                                            <div class="swiper-slide"><a href="https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827"><img src="https://ssl-gfx.filmweb.pl/po/58/27/495827/7259602.3.jpg" style=""></a>
+                                            <p><a target="_blank" href="https://www.netflix.com/search?q=Ghost%20in%20The%20Shell">You're recommended <b>Ghost in the Shell</b> original movie</a></p>
+                                            <p style="margin-top:0;">According to Unogs, it's covered by your <a target="_blank" href="https://unogs.com/video/?v=540533"><b>Netflix</b> subscription in Argentina, Brasil, Japan, Mexico... ( ͡° ͜ʖ ͡°) )</a></p></div>
+                                            <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827"><img src="https://ssl-gfx.filmweb.pl/po/58/27/495827/7259602.3.jpg" style=""></a>
                                               <p>As you're interested in <b>Multidimensional narratives</b>, <b>Dystopian</b> and <b>Fantasy</b> elements</p>
-                                              <p><a href="https://www.netflix.com/search?q=Full%20Metal%20Alchemist%20Brotherhood">You're recommended <b>Full Metal Alchemist: Brotherhood</b></a>, <a href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood"><b>top 1 anime</b> charting on My Anime List</a></p>
-                                              <p style="margin-top:0;">According to Unogs, it's covered by your <a href="https://unogs.com/video/?v=70204981"><b>Netflix</b> subscription in... outside Australia... ( ͡° ͜ʖ ͡°) )</a></p></div>
-                                              <div class="swiper-slide"><a href="https://www.filmweb.pl/Equilibrium"><img src="https://ssl-gfx.filmweb.pl/po/23/75/32375/7107621.3.jpg" style=""></a>
+                                              <p><a target="_blank" href="https://www.netflix.com/search?q=Full%20Metal%20Alchemist%20Brotherhood">You're recommended <b>Full Metal Alchemist: Brotherhood</b></a>, <a target="_blank" href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood"><b>top 1 anime</b> charting on My Anime List</a></p>
+                                              <p style="margin-top:0;">According to Unogs, it's covered by your <a target="_blank" href="https://unogs.com/video/?v=70204981"><b>Netflix</b> subscription in... outside Australia... ( ͡° ͜ʖ ͡°) )</a></p></div>
+                                              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/Equilibrium"><img src="https://ssl-gfx.filmweb.pl/po/23/75/32375/7107621.3.jpg" style=""></a>
                                                 <p>A <b>loose adaptation</b> of the <b>dystopian classics</b> was created, starring <b>Christian Bale</b></p>
-                                                <p><a href="https://www.netflix.com/search?q=Equilibrium">You're recommended <b>Equilibrium</b></a></p>
-                                                <p style="margin-top:0;">According to Unogs, it's covered by your <a href="https://unogs.com/video/?v=60024935"><b>Netflix</b> subscription in Canada, Germany and Switzerland... ( ͡° ͜ʖ ͡°) )</a></p></div>
-                                                <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/6606279-1984"><img src="https://images.gr-assets.com/books/1327877570l/6606279.jpg" style="; border:none; box-shadow:none;"></a>
-                                                  <p><a href="https://www.filmweb.pl/film/1984-1984-3476">You seem to have not quite enjoyed <b>1984 The Movie</b></a></p>
-                                                  <p><a href="https://www.goodreads.com/book/show/40961427-1984">Have to fear, check out <b>the original Book</b> - <b>1984</b> by <b>George Orwell</b></a> </p>
-                                                  <p style="margin-top:0;"><a href="https://www.amazon.com.au/Nineteen-Eighty-Four/dp/B016E6FTR2/">You can try an Audiobook on <b>Audible</b></a></p></div>
-                                                  <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/17470674-fahrenheit-451"><img src="https://images.gr-assets.com/books/1469704347l/17470674.jpg" style="; border:none; box-shadow:none;"></a>
+                                                <p><a target="_blank" href="https://www.netflix.com/search?q=Equilibrium">You're recommended <b>Equilibrium</b></a></p>
+                                                <p style="margin-top:0;">According to Unogs, it's covered by your <a target="_blank" href="https://unogs.com/video/?v=60024935"><b>Netflix</b> subscription in Canada, Germany and Switzerland... ( ͡° ͜ʖ ͡°) )</a></p></div>
+                                                <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/6606279-1984"><img src="https://images.gr-assets.com/books/1327877570l/6606279.jpg" style="; border:none; box-shadow:none;"></a>
+                                                  <p><a target="_blank" href="https://www.filmweb.pl/film/1984-1984-3476">You seem to have not quite enjoyed <b>1984 The Movie</b></a></p>
+                                                  <p><a target="_blank" href="https://www.goodreads.com/book/show/40961427-1984">Have to fear, check out <b>the original Book</b> - <b>1984</b> by <b>George Orwell</b></a> </p>
+                                                  <p style="margin-top:0;"><a target="_blank" href="https://www.amazon.com.au/Nineteen-Eighty-Four/dp/B016E6FTR2/">You can try an Audiobook on <b>Audible</b></a></p></div>
+                                                  <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/17470674-fahrenheit-451"><img src="https://images.gr-assets.com/books/1469704347l/17470674.jpg" style="; border:none; box-shadow:none;"></a>
                                                     <p>If you're still not convinced, you may try one of the other <b>Dystopian Four originals</b></p>
-                                                    <p><a href="https://www.goodreads.com/book/show/4381.Fahrenheit_451">For instance <b>Ray Bradbury's</b> <b>Fahrenheit 451</b></a></p>
-                                                    <p style="margin-top:0;"><a href="https://www.amazon.com.au/Fahrenheit-451-Flamingo-Modern-Classics-ebook/dp/B00BAJ6GL2/">You can try an Audiobook on <b>Audible</b></a></p></div>
-                                                    <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/76171.We"><img src="https://images.gr-assets.com/books/1421883730l/76171.jpg" style=""></a>
+                                                    <p><a target="_blank" href="https://www.goodreads.com/book/show/4381.Fahrenheit_451">For instance <b>Ray Bradbury's</b> <b>Fahrenheit 451</b></a></p>
+                                                    <p style="margin-top:0;"><a target="_blank" href="https://www.amazon.com.au/Fahrenheit-451-Flamingo-Modern-Classics-ebook/dp/B00BAJ6GL2/">You can try an Audiobook on <b>Audible</b></a></p></div>
+                                                    <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/76171.We"><img src="https://images.gr-assets.com/books/1421883730l/76171.jpg" style=""></a>
                                                       <p>If you're still not convinced, you may try one of the other <b>Dystopian Four originals</b></p>
-                                                      <p><a href="https://www.goodreads.com/book/show/76171.We">Try <b>Yevgeny Zamyatin's</b> <b>We</b></a></p>
-                                                      <p style="margin-top:0;"><a href="https://www.amazon.com/We-Momentum-Classic-Science-Fiction-ebook/dp/B00ABQ0LJS/">The Book can be acquired on <b>Amazon</b></a></p></div>
-                                                      <div class="swiper-slide"><a href="https://www.goodreads.com/book/show/5129.Brave_New_World"><img src="https://images.gr-assets.com/books/1519312675l/3180338.jpg" style=""></a>
+                                                      <p><a target="_blank" href="https://www.goodreads.com/book/show/76171.We">Try <b>Yevgeny Zamyatin's</b> <b>We</b></a></p>
+                                                      <p style="margin-top:0;"><a target="_blank" href="https://www.amazon.com/We-Momentum-Classic-Science-Fiction-ebook/dp/B00ABQ0LJS/">The Book can be acquired on <b>Amazon</b></a></p></div>
+                                                      <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/5129.Brave_New_World"><img src="https://images.gr-assets.com/books/1519312675l/3180338.jpg" style=""></a>
                                                         <p>If you're still not convinced, you may try one of the other <b>Dystopian Four originals</b></p>
-                                                        <p><a href="https://www.goodreads.com/book/show/5129.Brave_New_World">For instance <b>Aldous Huxley's</b> <b>Brave New World</b></a></p>
-                                                        <p style="margin-top:0;"><a href="https://www.amazon.com.au/Brave-New-World-Aldous-Huxley-ebook/dp/B0031R5K6S">You can try an Audiobook on <b>Audible</b></a></p></div>
+                                                        <p><a target="_blank" href="https://www.goodreads.com/book/show/5129.Brave_New_World">For instance <b>Aldous Huxley's</b> <b>Brave New World</b></a></p>
+                                                        <p style="margin-top:0;"><a target="_blank" href="https://www.amazon.com.au/Brave-New-World-Aldous-Huxley-ebook/dp/B0031R5K6S">You can try an Audiobook on <b>Audible</b></a></p></div>
                                                       </div>
                                                       <div class="swiper-pagination"></div>
                                                     </div>
@@ -996,7 +1036,18 @@ h1{
                                                                                   </script> -->
 
                                                                                   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script> -->
+<script src="jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
+<script src="tilt.jquery.min - Copy.js"></script>
+
+<!-- <script>
+$('img').tilt({
+    glare: true,
+    maxGlare: .1,
+    transition: true,
+    scale: 1.25
+})
+</script> -->
 
 <script>
 
@@ -1027,9 +1078,11 @@ h1{
       centeredSlides: true,
       slidesPerView: 'auto',
       coverflowEffect: {
-        rotate: 12,
-        stretch: 600,
-        depth: 500,
+        rotate: 4,
+        // stretch: -450,
+        // depth: 600,
+        stretch: -250,
+        depth: 450,
         modifier: 1,
         slideShadows : false,
       },
