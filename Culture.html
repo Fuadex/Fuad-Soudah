@@ -361,6 +361,10 @@ html, body { overscroll-behavior: none; }
 
   @media (max-width:728px){
 
+    h1{
+      font-size:1em !important;
+    }
+
     .row{
             transform:scale(0.25) !important;
     }
@@ -1196,6 +1200,11 @@ sr.reveal('.row', {opacity: 0,duration:700, mobile: true});
 </script> -->
 
 <script src="footer.js"></script>
+
+<script>
+sr.reveal('.row', {mobile:false});
+</script>
+
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
