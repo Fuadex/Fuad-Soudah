@@ -670,12 +670,12 @@ circle {
 				color:rgba(100,0,255) !important;
 }
 
-.ve5{
+.ve7{
 	stroke: rgba(255,200,0) !important;
 		fill:rgba(255,200,0) !important;
 }
 
-.ve5:hover a{
+.ve7:hover a{
 				color:rgba(255,200,0) !important;
 }
 
@@ -688,12 +688,12 @@ circle {
 				color:rgba(50,150,255) !important;
 }
 
-.ve7{
+.ve5{
 	stroke: rgba(200,100,150) !important;
 		fill:rgba(200,100,150) !important;
 }
 
-.ve7:hover a{
+.ve5:hover a{
 				color:rgba(200,100,150) !important;
 }
 
@@ -740,7 +740,7 @@ background:rgba(100,0,255);
 transition: 1s ease;
 }
 
-.ver5{
+.ver7{
 background:rgba(255,200,0);
 transition: 1s ease;
 }
@@ -750,7 +750,7 @@ background:rgba(50,150,255);
 transition: 1s ease;
 }
 
-.ver7{
+.ver5{
 background:rgba(200,100,150);
 transition: 1s ease;
 }
