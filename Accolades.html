@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+ /* background:url(DSC_1559-4.jpg);*/
+ background:black;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+/*  background-color:rgba(255,255,255,0.7);*/
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:2vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.n{
+  padding-left:1vw;
+  margin-left:1vw;
+/*  background-color:rgba(255,255,255,0.7) !important;*/
+  padding-bottom:1vw;
+/*margin-top:1vw;*/
+}
+
+.n:hover {
+  background-color:rgba(255,255,255,0.9) !important;
+  border-radius:20px !important;
+/*margin-top:1vw;*/
+}
+
+@media (max-width: 767px) {
+  .n{
+    padding-bottom:3vw;
+  }
+  }
+
+  @media (min-width: 767px) and (max-width: 992px) {
+  .n{
+        margin-left:0px !important;
+    background-color:rgba(255,255,255,0.9) !important;
+  }
+  }
+
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+
+<div class="container-fluid">
+<div class="row">
+  <center><h1>Accolades</h1></center>
+</div><br>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="ALA.html" class="darken"><div class="text"><center>Shotgun Uploads</center></div><img src="https://by3302files.storage.live.com/y4mf66iKEM5lYGK5pPuhGo6ZMWGqxZ_y7bzxxfrZSmLsL0gNt8yspdVU3OKZ0UchwvZ6nKZEwqSYDvmSJBi5f4XFbOw0N8jZZjG6fRlJSrXMExP1HOyOVhbPfO0fLo5QbpI3YzXg02D63I28Z9DvK9aMG3BRj9cS1D6XBpx1cbVRZ2oSa5Q7n_Homb0bunSorJ1?width=1280&height=720&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="ALA.html"><center><h4>Spirit<br>Animal Logic Academy<br>(December 2020)</h4></center></a>
+    <p>
+      For a semester, I was doing FX and shading RnD on an animated short "Spirit". The work was done in between Houdini, Renderman, Katana and ALA Renderfarm.
+    </p>
+    <p>
+      Part of the work that ended at RnD phase was animated paintings, the idea was to take an aboriginal painting and make it animated and potentially converge it with assets in-motion. Very painstaking work, that took lots of me asking other people for help constantly.
+    </p>
+    <p>
+      The other part was shading a Thylacine model, which I perfected to the point it could work in between different applications yet the same rendering environment. Unfortunately, I had to leave the school in trimester 2 and my work had to be continued by other students.
+    </p>
+    <!-- Houdini CharFX and shading RnD for an animated short “Spirit” -->
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mgr15zAQmyH8x0WCincLtGjKK32qgQfaPvXanuWjCLWXr11Ixs6fdIjnfiOLLqcK-Incwxi3BddICh4Z7uFmA9nhmVet-WNwb-IvVI7w5xaXydYIwaaLZ48azeUx0ZXDdZGu0OycTIdVX0Fn6ScoNYJGNjBnXjaPtzJhrKPTIoShRXz2ZoTJTn2lnIJ1cvlU-?width=1024&height=710&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Crit and Speaker at Ateneo de Davao University<br>(September and October 2020)</h4></center>
+    <p>
+      At a point in time every one and each of us becomes subjected to a bolt from the blue. In this case it was my Unity teacher from Parsons who asked me whether I wouldn't be willing to teach his class VFX Graph. I was in a point in time that was, well, heh, just heh. So I gladfully took the offer and kept in touch to make sure it is to expectations and that I end up having the cohort taught something new.
+    </p>
+
+    <p>
+      And so there was the bare basics of VFX Graph, the assets, how to set up the project and some comparisons with the standard particle engine. Oh and I also induced some super basics of C# to make things just better.
+    </p>
+    <p>
+      And the next time I was asked to be a crit for the final projects for the Storytelling class. And gotta say, was quite impressed with what the students whipped up in the end and provided a balanced feedback on what I thought was great, what I was unsure of.
+    </p>
+<!--     Crit for Immersive Storytelling class students at Ateneo de Davao University<br>
+    Delivered a remote lecture on Unity Visual Effect Graph for students of<br>
+    Immersive Storytelling class at Ateneo de Davao University<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mJ18PpNv3f2UFW4f6Oh2mcD2CsgTxQnCYdLAvaTLfHAzg12lrCyxel0VeVfuK4jWJh4ryOYxIM5DlCoyKZYk5LGir3kI14Tc7lbpHVnWyzul_X6iszZ6q1m-UTFcM5G8NqJc5jEYiTVIK4DncIh3worGtVO-uSB06bJuw2vPXHMt49yI7NGYIUhoLHxD1-4Js?width=1024&height=561&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Origin<br>(July 2020)</h4></center>
+    <p>
+      I participated as seen to the left in a very cool project. Severely burnt out after semester 1. Depressed seeing the world covid events and some other stuff. I wish I contributed more at the time, yet in the end the focus was on establishing a pipeline, scripts and merging assets with the addition of some lights and FX. I had to leave eventually the project, which got installed a new life with Paul's Unreal and Substance skills.
+    </p>
+    <p>
+      But looking back I guess I did a fair bit of work in the conceptualisation phases and contributed on-paar with other members and really tried making strides to do good.
+    </p>
+<!--     Best Creative Award for a real-time rendered project “Origin” at<br>
+ Animal Logic Academy, for which I performed Unity HDRP RnD<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mOhiwiy8vkGb4shKAiZI3j5poMJDwgOhRfJVG78zmI4Mdcd3RsfCzCVPsLtGya5Qr-G4h6ZB7hL48Ve7NfoVBVKj_dIEQKBlMGmANE2ukNo2jS_TNeCZvWexYmDwCiSFvLLjUZv4Fy4lKNPDCdcuvv30f31hBinbQVLMXx-VSCtYej5KmmEnqMweNE4HzK5rK?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Global Citizenship Award<br>(July 2020)</h4></center>
+    <p>
+      Well, primarily due to my accomplishments in form of exchanging bloody all over the world, I received a so-called Global Citizenship Award. In the end, to get it, you gotta be an active student, so participate in student-activation forms in all sorts of formats, volunteering, working overseas etc.
+    </p>
+    <p>
+      I was a bit surprised as I was not eligible straightaway, you know, I mean, who else if not me, a shining star of travelling everywhere and being all over the planet? A had to complete a few online courses and dig out some materials to get through all the hoops. But hey, now I'm a Global Citizen. Amazeballs. Gesundheit. 감사합니다. Zajebiście. Merci sth sth.
+    </p>
+    <!-- Attained Global Citizenship Award at University of Sydney<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="Unity.html" class="darken"><div class="text"><center>Reflection Materials</center></div><img src="https://dub01pap001files.storage.live.com/y4mdxYTSW5RwxUheuYEwtg56tmwbsyXayNBjesSP3slim4mPzzOhwVX4VgklPcpPW_7lWx5B4kW3JaM0Yefgpr1oEz1cGZAHp4BoCPBKBEsHxNhLbmUuez9Og9vA7HD9m__4lL5PeACWNh8PloM1EVgmszaYwCvX0W4NTxXfNEGHSW0Yk5bpahy7n976vg1cFlY?width=1024&height=768&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Exhibited at University of Sydney<br>(December 2019)</h4></center>
+    <p>
+      Graduation Show round 2. This time I had a fair bit to present in fact. Although I was a bit creative about it. Today it might not look as much but bear with me.
+    </p>
+    <p>
+      Presented my flagship Reflection project, in which I combined real-time VFX with motion capture and sound. Honestly, even with VFX Graph being know more widely, not everyone can do this even today. Then a different version of the same project but actually showcasing the real-time power of it, because as you speak or clap or do whatever, well, you will see the particles emerging. Proof-of-concept, yet visualised so that people know I'm not bamboozling them.
+    </p>
+    <p>
+      And AT from Inventing The Future, stripped to a single computer and a volumetric camera. The stripped premise, was, to speak to it and say: "I want butterflies", which would turn you into butterflies. You could request particles, or yourself, I prepared a handful of commands which worked surprisingly well considering the noisy environment.
+    </p>
+    <p>
+      No bamboozle, whoever folk seen this, were fairly astonished in the end. I think?
+    </p>
+<!--     Exhibited at University of Sydney’s Faculty of Architecture, Design and<br>
+Planning Graduation Show: Reflection and AT - three different<br>
+ VFX, motion, voice and sound-activated experiences<br> -->
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mdxYTSW5RwxUheuYEwtg56tmwbsyXayNBjesSP3slim4mPzzOhwVX4VgklPcpPW_7lWx5B4kW3JaM0Yefgpr1oEz1cGZAHp4BoCPBKBEsHxNhLbmUuez9Og9vA7HD9m__4lL5PeACWNh8PloM1EVgmszaYwCvX0W4NTxXfNEGHSW0Yk5bpahy7n976vg1cFlY?width=1024&height=768&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Exhibited at University of Sydney (November 2019)</h4></center>
+    Exhibited at University of Sydney’s Faculty of Architecture, Design and<br>
+Planning Graduation Show: Reflection and AT - three different<br>
+ VFX, motion, voice and sound-activated experiences<br>
+  </div><br>
+</div> -->
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="AT.html" class="darken"><div class="text"><center>AT Materials</center></div><img src="https://dub01pap001files.storage.live.com/y4mZNgGA2-8DoMGXhyMFnzTp0Zh7cCUORlfkrAoRppKrcSzvAnBJxBRCMefwndZ9De6tfJC1bk0Tbfc8H3vSGsT3aAvAzj-FwibZHY_K6rxwRtXDYUUrIRdL-0qP5qZhaUBe8vAq6Y2PaPrP_LC66-yXYU738FLoWunEwY2ro1F10IxpaktHoEZCrimIiWpMhF6?width=656&height=368&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="AT.html"><center><h4>Speaker<br>University of Sydney's Disability Scholars Connect Event<br>(November 2019)</h4></center></a>
+    <p>
+      For a unit of study I did not claim credit for, I worked on something to bridge particular disabilities with technology and health professionals. As part of the entire project I was involved with a Disability Scholars Research Group, consisting primarily of PhD students but also some professors.
+    </p>
+    <p>
+      At the end of semester, they hosted an event during which they talked about their work and, I figured, why not, I'll whip up something as it may be something interesting to the audience. Knowing fully that it's not either fully functional nor in the end likely the best approach but a proof-of-concept and seeing the UX methodology? Might be of interest.
+    </p>
+    <p>
+      At the end I was told this looked like a PhD project worth 4 years of time. Nice to hear.
+    </p>
+<!--    Speaker at University of Sydney’s Disability Scholars Connect Event on<br>
+ “Decoding Mental Health through Assistive Technologies”<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.facebook.com/media/set/?vanity=archdesignplanning&set=a.3165956923437854" class="darken"><div class="text"><center>Facebook Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4mZUXD7mV-modPWHe13CZGPFJFUMAcPas1z2nZhU21T7ILxtsU-vfvhuOey8_PGp-5bfF7qLKcFoW_S1O9QBnC2HEXbrZBVV-0zhE2olv3_XyibJ4amiplXTTNkm5pMtwdwg2S8e4Iu9ib7IQhYh9ejlQjImH1ONtOKvkvL6zqbApm8KHzBfu3BT4WdXYHiAQJ?width=1024&height=683&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Volunteer<br>Master of Interaction Design and Electronic Arts<br>10 Years Anniversary Showcase<br>University of Sydney<br>(November 2019)</h4></center>
+   <p>
+     Long story story, I helped out with setting up the environment for students to showcase their work on. I also helped out some students with their research on how they worked, as you can see to the left. One needs to take the job of being a volunteer seriously. Seriously.
+   </p>
+   <p>
+     Other than physical work of spacing out the area, setting up chairs and tables etc. I also provided some technical feedback to some students, I mean, considering my experience from MIDEA I guess I could've been of some help. And in free time, mingled with other ex-MIDEA students.
+   </p>
+   <p>
+     Good Times.
+   </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.facebook.com/media/set/?vanity=archdesignplanning&set=a.2827203190646564" class="darken"><div class="text"><center>Facebook Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4mPoNkFSfl4BrBBl0kD7iGEVKlmE8xRXE7yZsMAsLJxwfOpXggwdiUopZR3qjbjNP2mMSVsNlvq2SdKeJ1xji3JEQM-BQQDXsf-wQJWgpdUQ46WcdMRMefmzvkgUfmo6lBeJiF03-_1zY4chYUFli6Mmrn8sQSRWoKk7Do2ujqEZJy-IC0otJzl2BkbV2TxHpx?width=900&height=600&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Exhibited at Tin Shed's Gallery<br>(October 2019)</h4></center>
+    <p>
+      This one felt like cheating. My local gallery basically was looking for entries from exchange experiences and students from my faculty frequent these, apparently later on in large numbers. But I completed 3 exchanges, so I was eligible to pump my entries from 10 to 30 images. Two were chosen in the end. But damn how high quality of entries I got to experience in this gallery was beyond my wildest dreams.
+    </p>
+    <p>
+      I liked the ones they picked, although I did carefully select my entries. The chosen ones were from Seoul and New York. One classic and one creative, as Parsons is.
+    </p>
+    <p>
+      I heard some of the images hosted at the gallery weren't exactly taken on exchange as there were no exchange agreements with, say, New Zealand or Turkey :). But I guess that's ok as long as the overall exhibition was great and damn, I was enthralled by all the other entries. Such a pleasure to have my work exhibited amongst them :)
+    </p>
+<!--    Exhibited two Photography pieces at University of Sydney’s Tin Sheds
+ Gallery as part of “Departures” Exhibition -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mtKtUcMYXTI8TE1Okj3i5_gm1NRnZLteegI-XVhRm63toUCYMj6OVZtEp55egpxd4e-CWBC6H3-DKwXBm9SVFqtX2QekhZct3RzPAuFn77wLZykHVmg9ZKhz7mxnhT3nTAXKmgnZVU6wwoLXufM6gXE1CxavDYGcDin6DjbU4nkcw-6o1vpdyQma05aYKu2b2?width=1024&height=390&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Executive and Designer<br>Photography Society<br>University of Sydney<br>(August 2019 - October 2020)</h4></center>
+    <p>
+      Well, after the exhibition there was a call-out for new members, figured I'd rock up and check out what's up. And what was up was a cool bunch passionate about photography and hanging out and being a bit sad about the lack of new members rocking up.
+    </p>
+    <p>
+      Have no fear, I joined and apparently there was a designer vacancy, so I hopped right in. I didn't end up doing too much of design work other than a few leaflets and you all know how covid messed stuff up eventually. But I contributed with ideas in zoom calls and hanged out a few times for the executive meetings, apparently I was an executive as well.
+    </p>
+<!--    Designer and Executive<br>
+ Sydney Uni PhotoSoc (University of Sydney’s Photographic Society)<br>
+ • Designed promotional materials for the society’s events<br>
+• Actively Participated in the organisation’s decision-making process<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.facebook.com/media/set/?vanity=sydneyuniphotosoc&set=a.2939918852703028" class="darken"><div class="text"><center>Facebook Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4mSj1Iq5LVPgNnX-oq1Dr-MnFI3LApXc_lH9GGj-mE2pkvq1JTy6DgKbMp8poWTjKk8wqD0622I4k4qnAbzcJLxFIKor33_ZmMRmBvNssA5GSzYzSDKFO42m50rzLCtis_xfVsTzM-qY0Bw36unQVCqaeI-bdjPSQPR_ywSJsPxEzD6xuXRfEmSx_tFyfNKq1V?width=1893&height=1262&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.facebook.com/media/set/?vanity=sydneyuniphotosoc&set=a.2939918852703028"><center><h4>Exhibited at Goodspace Gallery<br>(August 2019)</h4></center></a>
+    <p>
+      Full of spunk after leaving Parsons, happy with what I've accomplished, I felt it could be a good idea to submit some of my past stuff for exhibitions that were taking submissions. I submitted before to Photosoc but never got in. This time, however, I did.
+    </p>
+    <p>
+      I couldn't be more surprised when I was which entry was chosen, two guys walking up Olympiaberg in Munich under the theme Forward? I guess it fit perfectly.
+    </p>
+    <p>
+      Became only a finalist but you know, I guess it's hype when it's exhibited at a publicly open space in a private gallery. Free beers were nice as well :)
+    </p>
+    <p>
+      And the hype that I got exhibited as well, although I mostly kept this to myself.
+    </p>
+<!--    Finalist in University of Sydney’s Photography Society competition under the<br>
+ theme “Forward”<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="Tech.html" class="darken"><div class="text"><center>Project Materials</center></div><img src="w/p/t1.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="Tech.html"><center><h4>Presentation at Cornell Tech<br>(May 2019)</h4></center></a>
+   <p>
+   I was wondering whether I should be posting this but personally, I think this is really big.
+ </p>
+ <p>
+   One practical thing was a hackathon done in Brooklyn Navy Yard. The other was the final presentation, yet beforehands a handful of presentations hosted on top prestigious schools: Parsons School of Design, Columbia University, New York University, Craig Newmark Graduate School of Journalism at CUNY and at last: Cornell Tech.
+ </p>
+ <p>
+   This one was very scary, as at last notice I was notified a final prototype was expected to be presented. And this was essentially the only project I'd be assessed on. The team from hackaton I worked with, I was not in touch unfortunately. So I had a go alone.
+ </p>
+ <p>
+   And damn, have you ever tried putting together a fullyfledged prototype in a matter of a few days? I was already drained from everything else I was committed to..
+ </p>
+ <p>
+   But in the end, I grew a few tons in my balls that even if prevented my movements, I rocked up to a very tightly timed presentation schedule. And thank F***, cause I had an automated presentation uploaded on youtube and despite the incredible stress and pace of the presentation I smashed it. As in, it was an extremely unexpected success, got an A.
+ </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="Ed.html" class="darken"><div class="text"><center>Project Materials</center></div><img src="https://dub01pap001files.storage.live.com/y4mDUfX_L7a0DmJxXOqZXF5O37kO5rbjjxlN1ACQQEjgvbUXDExS3jJSRJ08aBhdzGM7i7vhXwou0tQ4XiOxImpwZ3FDIxpIzGacnQDx995eSNYbG0EAQDUMu1hCGvOBcvKsBicJ-LPEuf0vChbSYhnC5TxbePC_8_IFQU2qPqRogvebex8-4iG_ERhkH85YfFY?width=1024&height=683&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="Ed.html"><center><h4>Exhibition<br>Earth Day Jersey City<br>(May 2019)</h4></center></a>
+   <p>
+    "Educational Technology and Design Thinking is an interdisciplinary educational partnership between Parsons/The New School and Learning Community Charter School. Together with the Baykeeper of New York and New Jersey, we used different media forms to proclaim that “Everything is Connected.”"
+   </p>
+   <p>
+     So... is there anything else I should add? Oh, perhaps just the crazy hours logged into working towards this project towards the key deadline :)
+   </p>
+
+   <p>
+     Very intriguing project, a 360 Projection Mapping hosted in a dome that gets to be viewed accordingly to 3D Glasses' colours: red - you see pollution, blue - you see the nature, both - you see what it is in the Hudson River. Crazy scope, intensely stylised. And a success. Exhibited in Jersey City.
+   </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.instagram.com/p/Butu9siFjWz/" class="darken"><div class="text"><center>Instagram Post</center></div><img src="https://dub01pap001files.storage.live.com/y4m1_dHpqwF0z6WtcaAoYHgpMNkZZozwwkAbQReFgr9QvJHzl9KSIt9CcM2U8Zl4d3iBUWapZ4g5V7VCutKeBwcAv_vnQD9WtTi_v2ZVhN8n1-1yeMgTCEYY_j17bcBafSPJyAuRT39GDjaqaNPrlC2DCApElD4Fw3mHmOokaC8i0aCYpaDo3GJE2C7KsCKQ6ug?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.instagram.com/p/Butu9siFjWz/"><center><h4>Parsons Fabrication Labs Induction<br>(March 2018)</h4></center></a>
+    <p>
+      I think that's a fairly big one to mention. During my exchange at, at the time, 3rd best Art and Design school in the world, I had a unique opportunity to receive induction for a wide array of state of the art fabrication labs. I was like: "I gotta do this", despite how little time I had for virtually just everything.
+    </p>
+    <p>
+      Would I eventually end up using any of this? Mm, not really actually. I did end up abusing my Motive Optitrack Motion Capture Studio access on a weekly basis, though.
+    </p>
+<p>
+  From other stuff, I did: Vinyl, Risograph, Casting, Ceramics, Lasercutting, 3D Printing, Silkscreening, Woodworking (tier 2), Metalshop, CNC, Dyeing and weaving, Vacuum Forming. Bit sad I didn't get an embroidery induction. Can you guess which sticker is what?
+</p>
+   <!-- x + Vinyl + Risograph<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.eventbrite.com/e/unity-developer-day-new-york-city-2019-sold-out-registration-54677002386" class="darken"><div class="text"><center>Eventbrite Information</center></div><img src="https://dub01pap001files.storage.live.com/y4mJzuCh0pGdlDVjg5yjbs6TQ2wIhVLQfvjrmYaDXjVUzxgtfr_U-sOm2JeVSKRB4nYdhT5di8Ij831O9-ZOQRVbrFJuMHWhxtCfV6lyCa_x3ZlXEBgCkst9mSnWvVKERDAJ5mQ9s2IzDZ3A7KYtGWr28aFaUbqfDlO_ugx39sgqO4nCo0TXKHhOC_Qk9LTXW_8?width=1024&height=768&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.eventbrite.com/e/unity-developer-day-new-york-city-2019-sold-out-registration-54677002386"><center><h4>Volunteer at Unity Developer Day<br>Microsoft New York<br>(February 2019)</h4></center></a>
+  <p>
+  Well, I was invited to help setting up a stall for one of the exhibitors for a VR Game Project. This was an extremely busy semester but just about at the start of it, so, why not.
+  </p>
+  <p>
+    I got to man the stall for a bit at times. And in free time I'd go out to see the lectures and mingle with other industry professionals. First time I learned of Unity's VFX Graph which blew my mind and spearheaded the rest of my semester towards VFX.
+  </p>
+  <p>
+    On other hand, free food and drinks were a big yes, since I was just beginning my exchange student journey on a very tight student budget in a very expensive city which New York is.
+  </p>
+  <p>
+    But I guess you're not here to read about food, other than I got in without breakfast since I had to rock up at about 7 am I believe and the commute was about 1.5h, provided I got in time for my ferry (every 30 mins) and the metro functioned semi-functionally, which, anybody who experienced NY, knows it semi-does. But hey, everything turned out fine and I even got some souvenirs like a Unity winter hat. Cool beans.
+  </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mEvgUSh2sCWDNqfb9-gRPL-aIAtvUZT9VwuDhn6HmxsQG1vLi5QlmvCVQ2YDBKAOeHWhCMk0CMbwQzyii8ohF8uI2H3EsEQsS84jlSOY9cpEZZOwVq4ByPOB__b7S6puvgBy9rt8K3KvG9NEufvvVk6SxPqlBrl2p5Gb-ucJv1b6GACiswPOfjHUgZVQv8-Y0?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Casual Professional Staff<br>University of Sydney<br>(March 2018)</h4></center>
+    <p>
+      A very small gig, I basically packaged Design Kits with the University of Sydney's, Architecture, Design and Planning's UX Design Toolset book.
+    </p>
+    <p>
+      I so would have wished to have one back in the day, although one sort of existed and I quickly forgot about.
+    </p>
+    <p>
+      Well, is there anything else I should add? Perhaps not. I guess just feeling rewarded for having the opportunity to contribute to the world of Design, in a way, well compensated too.
+    </p>
+<!--    Casual Professional Staff<br>
+ University of Sydney<br>
+ • Assisted in packaging assembly of Design Kits<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.facebook.com/media/set/?vanity=USUAccess&set=a.1955371154497325" class="darken"><div class="text"><center>Facebook Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4mnQlZEB1yK3ubJpTzb6YRF9_PN6wue518u07BYO0LT9RxJWdoHBL2_MVmkz2Ay4-sS1UxJ-IOK6P_EaPtdR1irSgeZZcg4hSr7f99NS5h-MarP5WPnv0gaFgd8-P4CX9ER-mKmdLq-zrWdp8PuZ4mi321_zgFAylhPfZVeNMsDpSuIA3u-5lOHfLYrW6mXKtN?width=1024&height=684&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.facebook.com/media/set/?vanity=USUAccess&set=a.1955371154497325"><center><h4>Photographer and Assistant<br>University of Sydney Union<br>(February 2018 - April 2018)</h4></center></a>
+<p>
+  Kind of landed two gigs bit too my surprise, one to man the Point of Sale for University of Sydney Union memberships and helping out with any issues and another as a photographer for an event. Totally honest, first paid Photography gig this one.
+</p>
+<p>
+  And in the end, today I understand how important it is to have a color-calibrated monitor, as at the time I just made things too dark. But I had a solid DSLR for the job, took lots of time to post-process, though. And I mean, how do you even photograph a bubble soccer event?
+</p>
+
+<p>
+  I've mostly done landscapes and architecture by this day. But hey, great experience, got paid and have some cool shots of a bit weird yet fun day.
+</p>
+<!--    Assistant<br>
+ University of Sydney Union (USU)<br>
+ • Membership Assistant during Orientation Week<br>
+ • Event Photographer for USYD Olympics<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://onedrive.live.com/?authkey=%21AF6Zb6IbOtLcrqI&id=FCD0FC5C0BEE35A2%21105314&cid=FCD0FC5C0BEE35A2" class="darken"><div class="text"><center>In-progress Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4mkApYJoh2KwG8qMRJawI195uUxP030hIcVFfRfRev4qPGPyS16Q-moJP9mv3lWDTa2Gzu6si9sY9SUtMQe4EYu0W9-bPM_tO4wDYkxWBKvn9PvbSmDNBz09CwR_XUQHbzK6f79tP_6FujeIUsOi2-fosaudK4fu2kyHjDxOuqjp0ru86RXUUcknjmdmGr4O-G?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://onedrive.live.com/?authkey=%21AF6Zb6IbOtLcrqI&id=FCD0FC5C0BEE35A2%21105314&cid=FCD0FC5C0BEE35A2"><center><h4>Exhibited at University of Sydney<br>(November 2017)</h4></center></a>
+<p>
+  Uhh, I was kinda busy with everything else that I kind of dropped the idea of pushing any of my stuff through. In the end, only three things were kinda in the exhibition: a VR project, which had lots of problems at development stage and then at the exhibition, the projection mapping on the Quadrangle, which was slightly not as luminous due to all the illumation hosted at the exhibition and a browser-based project, that eventually I think someone just did not include in the exhibition. I was still in the catalogue, though.
+</p>
+<p>
+  And hey, I got to brag about the Quadrangle model I got to work on how I came up with a digital walkthrough of the gallery exhibition itself! Not to mention the drinks that day...
+</p>
+   <!-- Exhibited a Vivid Projection Mapping “I am Waterfall” and a VR Experience<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.facebook.com/media/set/?vanity=archdesignplanning&set=a.1775526599147567" class="darken"><div class="text"><center>Gradshow Materials</center></div><img src="i/5.png" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.facebook.com/media/set/?vanity=archdesignplanning&set=a.1775526599147567"><center><h4>Co-organised and co-curated Graduation Show<br>(November 2017)</h4></center></a>
+    <p>
+      Ah, yes, the show. Lots of work. What I focused on was curation, although primarily in the form of arranging everything in a digital form via Unity, very novel at the time and received in mixed ways by other students participating in the course. Perhaps they didn't know how to do this? I pumped well over hundred of hours into the prototype, though. Loved it, since you could show other students how it would all look like by the use of their phone or even in VR (with google cardboard, though).
+    </p>
+    <p>
+      The other part was fabrication of the Quadrangle Building to showcase our past Vivid Projects. I primarily worked on fabrication assembly of an about 2x4 meters model cut-out. Certainly largest fabrication work I was ever involved in, until this day at least.
+    </p>
+<!--    Co-organised and co-curated University of Sydney Faculty of Architecture,<br>
+ Design and Planning’s Graduation Show<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.instagram.com/kult.olydorf/" class="darken"><div class="text"><center>Instagram Account</center></div><img src="https://dub01pap001files.storage.live.com/y4mYZCMLeHwENrDRI4gLS86dAVxeI5aCQB6zgu2O1n0VSMyScVe7mlsg-SC7Exy0Tn2P0kJTypugj6kY3FaZ0f3RMuK31QpYOjrPfrO8WJNsnFj7MiG9Jmq1mzhB-I9d8-I0cMFX2RhfWYkCyZXiMp1vK6Aj8kauKp865WT5Rofl4nhbDKDu0BbGxJoWL0Wti1W?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.instagram.com/kult.olydorf/"><center><h4>Social Media Assistant<br>Dorfbladt Magazine (Munich)<br>(April 2017)</h4></center></a>
+    <p>
+      Very brief encounter as I figured I'd explore what else was around. In the end, some folks figured it could be idea if I was posting some stuff on Instagram in English and they sort of enjoyed what I was doing in Grasausschuss.
+    </p>
+    <p>
+      So I uploaded some pictures of nearby grocery stores, food outlets, the village itself and cool spots to hang around by. So, I guess at this stage..
+    </p>
+    <p>
+      You must be thinking, this is pretty pointless, right? But you wouldn't know students then, lots of them busy, lots of them don't even know they have a greengrocer 100 meters away from where they live. I had limited time so I eventually stopped posting (exams and GRAS) but opening eyes isn't as trivial as one may see it and as it would seem.
+    </p>
+<!--    Apr 2017 Social Media Assistant<br>
+ Dorfbladt Olympic Village Magazine, Munich, Germany<br>
+ • Assisted with the magazine’s Instagram account (MMO alias)<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.youtube.com/watch?v=ZY3Akm6alfE" class="darken"><div class="text"><center>Video Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4m-mZhyoDQozEGIdYIC6-G8zGQpjkeOKpZffagyCUR0ztpbvOQ3xNkPCNlwxdqOZJ_JsQARpe13sFJT2BCyodX3l8w8OpYMnBaiSRpCreD-GVAOVEsCHYmdixSC8YXN-3_7uJntj65PJ8clUJqHOMzcOiLvqd8voVkKRH6L2KQ-9PESvzY_PcL7MdJ-Qvo4K30?width=1024&height=768&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.youtube.com/watch?v=ZY3Akm6alfE"><center><h4>Assistant<br>Fasching Olympialust Carnival<br>(February 2017)</h4></center></a>
+    <p>
+      I guess I just can't run out of big things to talk about, hey?
+    </p>
+    <p>
+      Not very motivated to contribute and participate at first due to my upcoming exams, eventually I figured a change of pace would do good to me. I was basically behind the bar for one night and manning a door as security for another. I would also help here and there with different stuff like at the wardrobe and other logistics.
+    </p>
+    <p>
+      In the end it was a vast carnival complex comprised of, practically, 4 venues: a bar, a disco, a lounge and a big-library-transformed-into-a-concert-hall + the halls interconnecting the entire complex.
+    </p>
+    <p>
+      I also did my usual thing: photo and video documentation. I think a year later it was of quite help to the organisers of future events, despite handheld-quality, these still did a quite good job of conveying how the event was like.
+    </p>
+<!--    Assistant<br>
+ Fasching Olympialust Olympic Village Carnival, Munich, Germany<br>
+ • Assisted with bartending and general logistics<br>
+ • Assisted with security<br>
+ • Photography and video documentation for promotional materials<br>
+• Assistance at different venues split across a vast carnival complex<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="Grasausschuss.html" class="darken"><div class="text"><center>Documentation</center></div><img src="https://dub01pap001files.storage.live.com/y4mhXfHURRRJOaETS_Menr69Z2R6Q2fHuOTc2rX7Jc2bnZF82PL3i3T1zU53Y-ONXvBumvhnyli0Q1ngfgZS5Ut7Fs0harYr5FQNXl7OXioDlZmeAQNJ1R4f6356UPLKyXRqOmYixQQItoPVaQ3wtpfgQRK8SyST23Rmei6TvNnbmwh7p1oEKZXPDquCtk5ZCoW?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="Grasausschuss.html"><center><h4>Social Media Manager<br>Grasausschuss (Munich, Germany)<br>(November 2016 - August 2017)</h4></center></a>
+<p>
+  Personally, a big one again. A student organisation that essentially, primarily rents out paint for students to paint their bungalow accommodation. But is that all, well all wondered?
+</p>
+<p>
+  I got lots of freedom to do whatever I wanted. And so I did: I managed social media accounts aliased as MMO on facebook and instagram, I designed promotional materials such as leaflets and posters, co-organised community activation events by setting up chairs, tables, food, drinks, utensils etc. Shared and promoted events such as BBQs, mulled wine and some events that were co-organised with other organisations from the Olympic Village. And the entire thing, I'd document by taking photographs, videos made traditionally and in 360 format as an experimental method I purused. I would also document the art crafted by students painting their bungalows and add a description of my own to entice other students to paint more bungalows and keep the Olympic Village Vibrant.
+</p>
+<p>
+  Yeaaah, now that's a handful now, isn't it?
+</p>
+<!--    Social Media Manager<br>
+ Grasausschuss Olympic Village, Munich, Germany<br>
+ • Managed social media accounts (usually aliased MMO)<br>
+ • Designed promotional materials<br>
+ • Co-organised community activation events<br>
+• Photography and Video Documentation of Events and community<br>
+ -created artworks in traditional and 360 degrees formats<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://dub01pap001files.storage.live.com/y4mVRykOJCSWd5HadGlxquYWWZl6CWabuU9l8QMwfTeKAHX5cvaY8x7McZnmBDAzzsuylOKt31aEZBXCwFwGfyIbD-KUqHisYr4sFOgmKuhPWcKOcOdd4jqxKMOYSI-JXwEu2mN88lhI8FwhTAYIcZiD7w_J2ml5CS23zb-rBo3G6hbVJfrzdT3f3iRUbfKAV4G?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Volunteer<br>Media Architecture Biennale<br>(June 2016)</h4></center>
+    <p>
+      I'm a simple guy, someone needs help especially at the university and provides even a reimbursement, I'm in, especially I wasn't a wealthy student.
+    </p>
+    <p>
+      Again, this event was something I "just" volunteered for, not knowing of its caliber. I manned a small gallery for a few nights and got on a boat ride through the Sydney Harbour and got to see some presentations within Media Architecture context and assist attendeed on the event's final day and when off-the-clock, I mingled with some other volunteers and hanged out after hours when the right people announced what-and-what.
+    </p>
+    <p>
+      I guess I shouldn't have been so humble ever since I had a piece exhibited during vivid...<br>But there was a plethora of great stuff I saw also in the gallery I manned as well.
+    </p>
+<!--    Student Volunteer<br>
+ Media Architecture Biennale, Sydney, Australia<br>
+ • Oversaw MAB’s Gallery at Chatswood’s The Concourse<br>
+• Assisted Attendees on the event’s final day<br> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="Vivid.html" class="darken"><div class="text"><center>Project Materials</center></div><img src="https://fuad.design/i/6.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="Vivid.html"><center><h4>Exhibited Projection Mapping<br>Vivid Sydney<br>(May 2015)</h4></center></a>
+    <p>
+      Mm, very big one this one. It's a funny one as well, as I had no idea really what caliber of event I was working towards, especially that at first nobody told us that it would certainly end up in Vivid. It was a student-project for a unit of study in the very first semester I attended at University of Sydney. There were some minor and some massive issues arising during the production of this but in the end, looking back, I think it still speaks for itself.
+    </p>
+    <p>
+      I co-created and co-exhibited a projection mapping piece "I Am Waterfall" which was showcased on University of Sydney's iconic Quadrangle Building for about 2 weeks.
+    </p>
+    <p>
+      I'm talking an entire building, likely over 50 meters long and few large stories high for people to enjoy on evenings. Still boggles my mind to this day.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="RadioX.html" class="darken"><div class="text"><center>Radio Shows</center></div><img src="https://dub01pap001files.storage.live.com/y4m_yLNNzSHjwt3h7UWrr3wW1866yaE5aR8xrAPH4hb-qNNpSf21oKDnTPzTVChmyW5CZfcAMiaNJ2PFofFCAQ_Ot3nIKmsfAXjLQqSpPvbo3FbGL1w0-PhxhD1wEDwDyDo20tU2_ZBLp-MkVx8ip7Bj1t0IWaClgNXoIX7C1ueh79X0Kk6LY_CY-dO07oGkxHa?width=1024&height=576&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="RadioX.html"><center><h4>Radio Broadcaster<br>SURG FM<br>(February 2016 - June 2018)</h4></center></a>
+
+    <p>
+      You know, I felt there wouldn't be a second opportunity in life to your own radio show broadcasting. Sure, it was a student-run show hosted online but on two of the semesters I got to work in a, I think professional-grade studio and a student-arranged one.
+    </p>
+
+    <p>
+      A friend got me into it and I should take him out for a case of beers for this. As, despite I was remarkably terrible at doing a show of my own (he was great, though), I still managed to whip up two seperate shows on (with titles)
+    </p>
+ • Broadcasted an untitled TV Show themed Radio Show (played OSTs)<br>
+• Broadcasted a music-oriented Radio Show “Awry Perception” (music I grew up on)<br>
+<br>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.facebook.com/usydmetalheads/posts/2002913819921991" class="darken"><div class="text"><center>Facebook Announcement</center></div><img src="https://dub01pap001files.storage.live.com/y4mJoS8YOb4BjcLUeIMvVrzPkmzZBbHx7oN70wmYiESrXZbhtKZ0MV_2k4K5PyCPicVUEiJTvbr44X4mX5rrnFyCDNDI41pJ6fO-t7rueQ_MfD-gP21qMNBN4EPlBYK1VCKQ7m7TU-o-Je0xS8a4kSYUmLStqc4b7ADsZVh9YNYmZGF8X3adDacp10d3ZUkXcas?width=811&height=327&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.facebook.com/usydmetalheads/posts/2002913819921991"><center><h4>Member<br>University of Sydney Metal Society<br>(February 2016 - November 2019)</h4></center></a>
+   <p>
+   Perhaps I should've kept this one secret :) But how can one not smile upon seeing events such as "Cafe Bloody Cafe", "Death Metal Doritos", "Heavy Metal BBQ/Rock Climbing"?
+ </p>
+ <p>
+   I rocked up fairly early after it got established, popped in n' out for meetings, the bunch had lots of great ideas like starting a radio show and they subsidised concert tickets.
+ </p>
+ <p>
+   I wish I got involved more, although I did write an article for “THE PIT” magazine on the music scene spanning across Poland, Australia and Germany while I was on exchange in Germany, so I guess something quite productive stemmed out from this :)
+</p>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://by3302files.storage.live.com/y4mf66iKEM5lYGK5pPuhGo6ZMWGqxZ_y7bzxxfrZSmLsL0gNt8yspdVU3OKZ0UchwvZ6nKZEwqSYDvmSJBi5f4XFbOw0N8jZZjG6fRlJSrXMExP1HOyOVhbPfO0fLo5QbpI3YzXg02D63I28Z9DvK9aMG3BRj9cS1D6XBpx1cbVRZ2oSa5Q7n_Homb0bunSorJ1?width=1280&height=720&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>Stocktaker at Zhik (May 2015)</h4></center>
+   Stocktaker<br>
+ Zhik, Sydney, Australia<br>
+ • Assisted with stocktaking the company’s merchandise<br>
+<br>
+  </div><br>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="https://by3302files.storage.live.com/y4mf66iKEM5lYGK5pPuhGo6ZMWGqxZ_y7bzxxfrZSmLsL0gNt8yspdVU3OKZ0UchwvZ6nKZEwqSYDvmSJBi5f4XFbOw0N8jZZjG6fRlJSrXMExP1HOyOVhbPfO0fLo5QbpI3YzXg02D63I28Z9DvK9aMG3BRj9cS1D6XBpx1cbVRZ2oSa5Q7n_Homb0bunSorJ1?width=1280&height=720&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <center><h4>General Assistant at Gospodarstwo Ogrodnicze J. i Edwarda Kurzyk (October 2011 - September 2014)</h4></center>
+   General Assistant<br>
+ Gospodarstwo ogrodnicze J. i Edwarda Kurzyk, Lesznowola, Poland<br>
+ • Assisted in management, logistics and sales of roses<br>
+<br>
+  </div><br>
+</div> -->
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="https://www.youtube.com/watch?v=vDPBvgBi3Ow" class="darken"><div class="text"><center>Youtube Clip</center></div><img src="https://dub01pap001files.storage.live.com/y4mtKKpVZIYTn25zYA6150RvRNPJIv0m-BJHyj8YB78Hvz8bsLQntQjuA1dKvLvvniQJ4bGuaVczL619hJRFCrjaE4ziQH0KfuOytLFJ4jmeHggwRcCoYMSBXH0uQVfhdVQaMplQ0EqxQe9K0MsKknmaaXZpiVXvKHNvsoAdygatG5Nqyti2Zab0zlVPG2_ppXC?width=960&height=540&cropmode=none" width="100%"></a><br>
+  </div>
+  <div class="col-lg-4 col-lg-offset-0 panel n">
+    <a href="https://www.youtube.com/watch?v=vDPBvgBi3Ow"><center><h4>Art Workshops at Warsaw National Museum<br>(February 2014)</h4></center></a>
+   <p>
+   One of quite ancient things, yet, it pops up in my facebook memories every once and a while. At the time it was a cool event that I attended and thought I'd forget about yet looking back and fast-forward to present, I guess there are stuff that I took out from there.
+ </p>
+ <p>
+   Such as, learning how a museum actually operates, looking behind the scenes in depth and even having a go at, well, "dripping" technique of "painting" on canvas. It was certainly an event targetted towards the younger folks, like myself and a good opportunity to meet some other folks interested in art.
+</p>
+<p>
+  We also had a project during which we "curated" a tour in which we'd talk about specific artworks that were already exhibited at the museum. Years later, I'd be working on curation of a graduate exhibition. Go figure.
+</p>
+  </div>
+</div>
+<!-- 
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+  <center><h4>Retrospection</h4></center>
+    I was born at St. Leonards in Sydney, Australia. I attended preschool and then the first year of my primary school in Ingleburn, New South Wales. At the age of 6, my parents decided to leave for a rural area of Stara Iwiczna, located near, south of Warsaw in Poland. Thereon, I finished 6 years in Primary School and the following 3 years in secondary school, both of which hosted in Nowa Iwiczna. Afterwards, I did 3 years of high school in neighouring town of Piaseczno, with specializations established in mathematics, physics and geography. After completing which, shortly after my final exams, I left for Sydney, Australia - where I made an attempt at constructing reasonably stable foundations for my future. Half a year later, I enrolled in Bachelor of Design Computing program at the Faculty of Architecture, Design and Planning at University of Sydney. After having completed 3 semesters, I was granted 2 semesters of exchange at University of Munich, where I pursued degree-related units of study, upon completing which I came back and finalized my degree in Sydney.<br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+    <a href="#" class="darken"><img src="linkedinb.jpg" width="100%"></a><br>
+  </div>
+    <div class="col-lg-4">
+      <a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/26215775918/in/dateposted-public/" title="DSC_2205"><img src="https://farm5.staticflickr.com/4749/26215775918_9524cf182f_b.jpg" width="100%" alt="DSC_2205"></a><br>
+  </div><br>
+</div>
+
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+
+    <center><h4>Introspection</h4></center>
+
+    I have been commited to quite a few radical changes throughout the entire span of my life, most of which took place beyond my control. If there were three qualities by which my works are driven, I would enumerate: Ambition, Innovation and Dilligence. Ambitious of the projects' scope, Innovative of the solutions incorporated and dilligent by the passion put forward towards refinement and conclusion. I enjoy working on my projects from a variety of perspectives and taking them upon by novel attempts. Lately, I have been increasingly relating to industry-grade techniques, yet I remained with my belief that reaching compelling solutions requires at times an elaborate and refined approach.<br><br>
+
+    As a result, I managed to acquire a range of skills presented on this very website, enriched with embeds of Documents and Presentations. The quality of works is of utmost importance and while the process follows or even matches, it is the circumstances in which the projects were raised that breathes and showcases its life. The inspirations, longings, design choices, thinking methods, all the processes, motivations. I did my best to foreclose all of the aforementioned and even more at the utmost of all the angles.<br><br>
+
+</div>
+</div><br>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/35031550755/in/dateposted-public/" title="360_1112b"><img src="https://farm5.staticflickr.com/4202/35031550755_59e3ca978f_h.jpg" width="100%" alt="360_1112b"></a><br>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 panel">
+
+    <center><h4>Futurospection</h4></center>
+
+        The Future is usually quite uncertain, nevertheless envisioning is ultimately a part of a design process. So why not dream a bit?<br><br>
+
+        An attempt to master and incorporate a vast range of programming languages is on my agenda. Enriching my skills in the visual sphere and delving more into working with Game Engines are some things I would eventually enjoy getting beyond proficient. Further developing my current language skills and broadening my horizons towards new ones may further enhance my horizons.<br><br>
+
+        Oh, yeah and revamping the hardware that I will work on for and in any future ventures entailing myself is consistently on my mind. Along with continuing my education and professional career. Putting at foremost, increasing my autonomy and potential for further development.<br><br>
+      </div>
+    </div>
+
+
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+<a data-flickr-embed="true" class="darken"  href="https://www.flickr.com/photos/70140987@N03/34643726810/in/dateposted-public/" title="DSC_6097b"><img src="https://farm5.staticflickr.com/4275/34643726810_97648f8bb4_b.jpg" width="100%" alt="DSC_6097b"></a><br>
+  </div>
+    <div class="col-lg-4">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/34899289091/in/dateposted-public/" title="DSC_6862"><img src="https://farm5.staticflickr.com/4250/34899289091_23eaa12fb8_b.jpg" width="100%" alt="DSC_6862"></a><br>
+  </div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+
+    <center><h4>Reinspection</h4></center>
+
+    My father is an Engineer and my mother is skilled in Fine Arts.<br>
+    I assume that I established myself a middle ground by binding technical and creative - becoming a designer.<br>
+    Thereof I managed to acquire a broad selection of knowledges which on top was complemented with writing skills and a digital touch left upon.<br><br>
+
+    What do I leave it with, though? Well, let's take a look at my key hardware:<br><br>
+    Headphones: Audiotechnica R70x, <s>Audiotechnica M40x</s>, <s>Sony MDR-V6</s><br>
+    IEMs: Etymotic ER4XR, Custom Art FIBAE 1, <s>Philips Fidelio S2, Etymotics ETY Kids 3, Soundmagic E30, (...)</s><br>
+    Camera: Nikon D750 + 24-120mm f4, <s>D5200 + 18-105mm f3.5-5.6 + 35mm f1.8</s><br>
+    Smartphone: Galaxy Note 10+, <s>Galaxy S7</s>,<s> Note 3, S2</s><br>
+    Computer: Houdini-ready PC config, Surface Book 2 (15"),<s> Surface Pro 3</s><br><br>
+
+    As a rule, I always prefered versatility and close-to-reality quality, as if just pure and neutral. Nevertheless, lately I am looking increasingly more into enriching experiences via experimentation and well established techniques.<br><br>
+
+    Also, take a look through the places I've visited in life. I had a series of great opportunities and I did my best to make the best out of them all!<br><br>
+  </div>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+        <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/34643903330/in/dateposted-public/" title="DSC_4648ver2"><img src="https://farm5.staticflickr.com/4271/34643903330_2c286bcacd_b.jpg" width="100%" alt="DSC_4648ver2"></a><br>
+  </div>
+    <div class="col-lg-4">
+    <a data-flickr-embed="true" class="darken" href="https://www.flickr.com/photos/70140987@N03/34221090423/in/dateposted-public/" title="DSC_3990ver1"><img src="https://farm5.staticflickr.com/4220/34221090423_f6fbffa1b6_b.jpg" width="100%" alt="DSC_3990ver1"></a><br>
+  </div>
+</div>
+<br> -->
+
+<!-- <div class="row">
+  <div class="col-lg-4 col-lg-offset-2">
+        <a data-flickr-embed="true" class="darken" href="https://fuad.design/w/w/met.jpg" title="DSC_4648ver2"><img src="https://fuad.design/w/w/met.jpg" width="100%" alt="DSC_4648ver2"></a><br>
+  </div>
+    <div class="col-lg-4">
+    <a data-flickr-embed="true" class="darken" href="https://fuad.design/w/w/world.jpg" title="DSC_3990ver1"><img src="https://fuad.design/w/w/world.jpg" width="100%" alt="DSC_3990ver1"></a><br>
+  </div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+
+  <center><h4>Circumspection</h4></center>
+
+    My suggestion is to take a peek at the <a href="Education.html">Education page</a> first. Upon investigation, you will find according subpages with the relevant projects that I have been working on, related to the units that I have been doing in the past. Most of the materials will feature presentations, documentations, photo, video & audio content, linked to external services such as: youtube, onedrive, flickr etc. I did my best to reference everyone that was involved in the group projects. If by any chance I happened to miss anyone, please <a href="mailto: fuadex@gmail.com">notify me.</a><br><br>
+
+    I eventually managed to scrape off most of the materials that I have ever built, raised, created and cultivated. In the process, I recalled and finally ablebodied to put together the crucial parts and a compelling, close to its true nature - a backstory. Every one and each, I believe, has or, at the very least, deserves a matching story. Extra materials will be provided, that may shed some light onto the more creative ways that were applied throughout the process of a variety of projects. Consider it, a tiny bit of makeup. Which evokes the tasty details. Sprinkled with a handful of insights.<br><br>
+
+    Are you interested in my website's evolution? Please find attached the changes subpage at the bottom right corner. In case you were trying to reach me, please use the Contact subpage in the top right corner. What about the cultural background I was raised in? You may find just as much in the top right corner. Embraced by myself and the magic that comes with. Alternatively, you may take a look at my vertical timeline, at the bottom right corner. By this time, most of the content ought to be in place.<br><br>
+
+    I do hope that your stay on my website will be a pleasant one.<br><br>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a data-flickr-embed="true"  href="https://www.flickr.com/photos/70140987@N03/34187708664/in/dateposted-public/" title="DSC_6000"><img src="https://farm5.staticflickr.com/4196/34187708664_417124cc91_h.jpg" width="100%" alt="DSC_6000"></a><br>
+  </div><br>
+</div>
+<br>
+</div> -->
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

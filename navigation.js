@@ -36,6 +36,15 @@ document.write('\
           <li><a href="RadioX.html">Radio</a></li>\
                     <li><a href="Grasausschuss.html">Gras</a></li>\
       </ul>\
+      \
+              </li>\
+      <li class="dropdown">\
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VFX\
+        <ul class="dropdown-menu">\
+          <li><a href="VFX.html">VFX/CG</a></li>\
+          <li><a href="ALA.html">ALA</a></li>\
+          <li><a href="Unity.html">Reflection</a></li>\
+      </ul>\
             \
         </li>\
       <li class="dropdown">\
@@ -53,8 +62,6 @@ document.write('\
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">XR\
         <ul class="dropdown-menu">\
           <li><a href="AT.html">AT</a></li>\
-          <li><a href="VFX.html">VFX/CG</a></li>\
-          <li><a href="Unity.html">Reflection</a></li>\
           <li><a href="Tech.html">Placeholder</a></li>\
           <li><a href="Ed.html">Blussion</a></li>\
           <li><a href="NewMediaAudiences.html">NMA (Essays)</a></li>\
@@ -118,6 +125,7 @@ document.write('\
 \
         <ul class="nav navbar-nav navbar-right list-inline">\
       <li><a href="Culture.html"><span class="glyphicon glyphicon-heart"></span> Culture</a></li>\
+      <li><a href="Accolades.html"><span class="glyphicon glyphicon-check"></span> Accolades</a></li>\
       <li><a href="Education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>\
       <li><a href="index - Copy.html"><span class="glyphicon glyphicon-qrcode"></span> About Me</a></li>\
     </ul>\
