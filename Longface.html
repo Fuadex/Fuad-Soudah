@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="fuad css.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+
+body{
+/*  background:url(https://farm1.staticflickr.com/855/28925466837_276c72fe36_o.jpg);*/
+background:url();
+background-color: white !important;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con1{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(255, 255, 255,1)), url(https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con2{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm8.staticflickr.com/7806/46537796012_8ded87eb2c_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con3{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm5.staticflickr.com/4856/31673698717_767c7cfa85_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.con4{
+  background-image:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0, 0,1)), url(https://farm5.staticflickr.com/4870/45896758854_5c1e0fb4c8_k.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+
+h2{
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.65);
+  color: black; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+border:1px solid black;
+}
+
+h4{
+  padding-top:13.5px;
+  padding-bottom:15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("DSC_3698b.jpg");
+
+    /* Full height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    opacity:0;
+      font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    font-size:1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+background-color:rgba(255,255,255,0.65);
+    color: white; text-shadow: white 0em 0em 0.5em;
+  font-family:'Roboto', sans-serif;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  border-radius: 10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+      -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+
+a.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 1 !important;           
+}
+
+a.darken:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.9) !important;
+  color: black; text-shadow: white 0em 0em 2.5em !important;
+  font-family:'Roboto', sans-serif;
+      -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+
+
+@media (min-width:767px){
+.panel:hover{
+     background-color:rgba(255,255,255,0.99) !important;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+}
+</style>
+
+
+  <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = 'DSC_3698bb.jpg';
+    ImageArray[1] = 'DSC_3698cc.jpg';
+  
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 2);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+}
+
+</script>
+
+</head>
+<body onload="getRandomImage()">
+<script src="navigation.js"></script>
+
+<!-- BODY BODY BODY-->
+
+
+<div class="con1">
+<div class="container-fluid">
+<div class="row">
+<center><h1>Longface</h1></center>
+</div><br>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-4 panel">
+  <center><h4>?</h4></center>
+    
+  <p>
+    Hi, I decided to store some of my longer rumblings I'd usually post on facebook.
+  </p>
+  <p>
+    <center>Enjoy :)</center>
+  </p>
+
+</div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/32200843248/in/dateposted-public/" class="darken"><div class="text">Dusseldorf, Centre</div><img src="https://farm5.staticflickr.com/4837/32200843248_e721d7dec0_b.jpg" width="100%"></a><br>
+  </div>
+  <div class="col-md-4 col-md-offset-0 panel">
+    <center><h4>Wilkommen</h4></center>
+    
+    <p>
+      This marks my, weeeelll... I wouldn't say how many days, cities and trips I have done in this country. Although there is this something really strange about Germany that, surprisingly, I have not really experienced with any other country. Usually I can associate one with a general weird course of events that I may summarize in one or two sentences, for Germany it would be - uncertain, unexpected, welcome and sad.
+    </p>
+
+    <p>
+      That's not really a sentence, is it now? Especially that the unexpected usually did turn out in colours, as in very positive outcome in an unexpected form, as for let's take it: Dusseldorf, which I had visited in the past, I didn't really like it at that time but at this particular time of the year? Oh how beautiful it was?
+    </p>
+
+  </div><br>
+</div> -->
+
+<div class="row">
+<div class="col-md-4 col-md-offset-2 panel">
+  <center><h4>Project xCloud</h4></center>
+    
+  <p>
+    Today I woke up to an email, shortly after I was scouring vast landscapes in Forza Horizon with my Playstation 4 controller and a smartphone while tucked in bed.
+  </p>
+<p>  
+None of this makes sense in a way, playing an xbox video game on a smartphone with a playstation gamepad?
+</p>
+<p>
+And I don't even own a Playstation 4 nor have I played any video games for the past half a year. And then I also played Devil May Cry 5 and plan on checking out a few more high profile titles from around 36 given access to me legally like Halo, Shadow of the Tomb Raider, TEKKEN 7 and so the plot thickens...
+</p>
+<p>
+Yesterday, I found my way to finding something Microsoft seems to have been hard at work at, Xbox Game Pass Unlimited. I did see that months earlier but couldn't be bothered even with its 1$ for 3 months offer, my steam library is already full from ancient Humble Bundles, new freebies keep rolling into my Epic Games Store but I honestly barely was interested in the current video game industry and what it constantly spews out.
+</p>
+<p>
+This, not necessarily true, there are titles I was looking at but most harbored at the PlayStation harbour, so out of reach and some new ones could use a GPU not dating back to 2014 but with the current tech market being fuckwad bonkers with everything sold out or being sold for over triple the retail release price, 'I guess I'll just stick to movies' - sighed annoyed Fuad, having counted on an ever-arriving new GPU to at least assist with CG/VFX renders and perhaps have some fun with Red Dead Redemption 2 at last when I feel like.
+</p>
+<p>
+But then something started changing lately. Microsoft acquired Bethesda, much earlier Obsydian Entertainment, even EA got pulled in. Suddenly, a platform that I felt direly lacked in exquisite video games exclusives matching what Sony with its PlayStation was doing for years, just became fairly tempting. And I'd be in, if only I haven't finished many of the real gold that just got made available or will shortly become, to subscribers.
+</p>
+<p>
+Then yesterday I came across an interesting thing, Project xcloud, like a sideline from the Game Pass Unlimited, currently in preview and invitation based. Figured I'd sign up, the worst can happen I'll get an invite in a couple of months.
+</p>
+<p>
+Got it the following morning.
+</p>
+<p>
+Went through the sign up hoops. Downloaded the android app. Paired through painful tries my old Dualshock 4. Switched to 5 GHz wifi as prompted. And launched Forza to kick it off with on an app, which in preview state looks quite state of the art already. With a selection of games to be tried out... free of charge? What.
+</p>
+<p>
+The experience isn't fluid ideal but it's very close at least on a FTTP 50/20 fibre. There is some occassional jitter that gets more noticeable with slight audio drop in-n-outs. Both video and audio seem a bit compressed, lacking the obvious depth I'd get from straight out of my PC. But I have a background in UX, so I'm supposed to be nitpicking fierce, so imagine how actually good the experience is for me to be really impressed by it and to be writing this short on this.
+</p>
+
+</div>
+<div class="col-md-4 panel">
+  <center><h4>18 March 2021</h4></center>
+   <p>
+I always thought that video game streaming is bound to happen eventually. There were some tries before. Onlive years ago, Sony even has its Playstation Now but is so terrible at rolling it out for years now... I heard some bad things about Google Stadia. But I guess it had to be a video game giant that would eventually put together an infrastructure for it to really look like something a customer could invest in and that could really provide something of value. And I'm tad surprised to see Microsoft of all companies to actually be making right strides lately.
+</p> 
+<p>
+Sort of combining Xbox and PC infrastructures. Creating a video game netflix but better, with world-renowned studios backing it and a strong video game library that is there to stay and hopefully expand in coming years.
+</p>
+<p>
+It's actually quite crazy when I think about this. Video Games is probably already the largest entertainment industry, years ago even quite frowned upon, now reached infallible levels of visual fidelity, yet there are so many titles which make up with original storytelling, visual and gameplay formats that for whoever that does check it out, regardless of device, for an equivalent of 10 or 15$ a month is certain to receive value like of no other, whether you're interested in Undertale, Fifa, Tekken, Doom, Fallout, Crysis, Final Fantasy, Goat Simulator, The Walking Dead or whatever. It's 1000+ hours that you could easily sink in and really not cry on time wasted.
+</p>
+<p>
+I'm just impressed with the sheer curation. If video games were not to be considered mainstream yet, they're about to.
+</p>
+<p>
+...and here I'm fanboying, just happy to see quality options opening up in an industry I gradually kept losing hope in. But I guess the final mark is the streaming component that got me so warmed up with.
+I only tried a tidbit to be fair. A couple of games. I even plugged my smartphone into my 1440p monitor and the experience was surprisingly good. I saw that one can play without a controller Senua, which I'll check out in coming days along with just how the experience is while on mobile. But even if it doesn't keep up, this all should change with the gradual 5G rollout.
+</p>
+<p>
+I also think some games will not work well from gameplay perspective, the ones story-focused at least. I recall playing The Walking Dead: The Game years ago on my smartphone and there is no way it could be so emotionally impactful compared to an intimate monitor/TV experience.
+</p>
+<p>
+Whereas the more arcade'y experiences like racers (forza), strategic (civilisation) and sports (fifa) tabletops, sidescrollers (many indie) and maybe lighter RPGs more focused on exploration like The Elder Scrolls or action adventure like Subnautica could work quite very well.
+</p>
+<p>
+And if I can play all this without the need to invest bazyllions but a mere up to 15$ a month for the privilage? Not pay a cent to test the preview version of this?
+</p>
+<p>
+Microsoft's doing something right.
+</p>
+<p>
+Some others not so much, as I cancelled my Netflix subscription but happy to see Sony exclusives being gradually released on PC!
+  </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" class="darken"><div class="text"></div><img src="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-2 panel">
+  <center><h4>9 December 2020</h4></center>
+    
+  <p>
+Sometime halfway through this year I decided to go on a movie rampage, as I felt I was lagging quite behind in terms of what worldwide culture has to offer.
+</p>
+<p>
+And as I doubled my lifetime amount of movies I've watched this year alone and realising how the amount is becoming just merely a number alone, I figured I'd come up with some sort of a digital library to showcase a number of selected cultural representatives.
+</p>
+<p>
+A selection that I've felt carried some form of substantial value, whether within the contents of its story or purely just aesthetics, either it holds a tremendous historical baggage or just got me with something I have not yet or rather particularly rarely experience.
+</p>
+<p>
+The titles that I'd rather not forget over the years, as the more I see, the more details I so much value fade away, from my memories.
+</p>
+<p>
+So I guess it's something for myself to remember and cherish but while I'm at it, I'm happy to share it with others.
+</p>
+<p>
+There's a big dent in terms of books, while I got through about 17 this year, I plan to make a big switch in 2021 and get rid of netflix while I'm at it. I'm still yet to discover books, the ones which will engrave even deeper into my skull, as there is some competition in other media, which keep upholding the crown in certain lengths.
+</p>
+<p>From other things,</p>
+<p>
+Despite I haven't been doing much valuable stuff in my now passing half a year, I guess I did manage to dust off this monstrous monolith of sorts I'd call my legacy website I've been raising and sort of keeping maintained for the last 5 years or so.
+</p>
+<p>
+It's become so humongous that even I can barely keep track of everything that I've put together and introducing any new changes seems like putting just a teeny-weeny fresher makeup on what's long been a frankenstein. And I still feel like adding more content, the ideas I've been putting off for way way too too looong. And some stuff I'm far in progress of completing by now.
+</p>
+<p>
+But I think I might need to come up with something new.
+</p>
+
+</div>
+<div class="col-md-4 panel">
+  <center><h4>6 November 2020</h4></center>
+   <p>
+a 1000 movies!
+</p>
+<p>
+This year, lots of free time fell into my hands.
+</p>
+<p>
+What can one do with lots of free time? Learn a language? Travel? Become a masterchef? Lose weight? Do nothing? Do anything?
+</p>
+<p>
+It's a shit year to make a semi-gap year of but that's the cards I've been dealt and with the fraction of anything to choose from at hand I figured it's not such a bad idea to catch up on some cultural figures in and with which I felt I was falling way behind.
+</p>
+<p>
+and hey, it seems like it's not so bad after all.
+</p>
+<p>
+even if it feels like I cheated, as I binged on animated shorts.
+</p>
+<p>
+lots of animated shorts. and animated features. and all sorts of animation. animation is love, animation is life.
+</p>
+<p>
+The good news is, there is an entire world ahead of me!
+</p>
+<p>
+So many movies I identified as a must. Discerned by... aggregate sites, directors... but even long gone programming blocks and composers. It feels so increasingly hard to filter out all the noise that stems from services like netflix or amazon prime, which seems like they are providing a choice but in the end became just yet another TV channels with even more noise.
+</p>
+<p>
+Using a VPN helps as I've excavated some real hidden gems, some of which so rare I would've never managed to otherwise. But in the end I'm in dire need of good curation. And the streaming bubbles are incredibly terrible at this.
+</p>
+<p>
+Once I get through with most of what's on my roadmap, I guess next year will be a good time to start unsubscribing to noise.
+</p>
+<p>
+The other issue is that time is sifting through my hands.
+</p>
+<p>
+And while I've enjoyed countless many titles, I'm starting to really just not remember even the good ones anymore and what I valued them for in detail.
+</p>
+<p>
+I guess that's what happens when additional 0000 scramble through your head and in front of your eyes. Whether it's movies, calories, time or virtually anything, suddenly you stop remembering certain things and start seeing another.
+</p>
+<p>
+Except, unlike movies' runtime, there doesn't seem to be an end to all this, movies, or things or virtually anything.
+  </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" class="darken"><div class="text"></div><img src="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-2 panel">
+  <center><h4>90 days on keto and counting</h4></center>
+    
+  <p>
+90 days on keto and counting.
+</p>
+<p>
+Life on Erythritol, Aspartam and Acefultam K, Steviols and Monk Fruit Extract.
+</p>
+<p>
+But also surprisingly on brownies, pancakes, waffles, ramen, spaghetti, all sort of cakes and even cookies, nut bars, tim tams, lamingtons, chocolate bars and blocks, breads, buns, burgers and kebabs. I plan on trying out also pizza and lasagna.
+</p>
+<p>
+You're probably thinking - what is this lunatic raving about, these are all sugary/carb bombs starching up entire populations.
+</p>
+<p>
+But just as much as I was surprised 5 years ago, finding out and experiencing that losing weight is more effective if you throw away carbs rather than fat from your system - fastforward today, it turns out the low-carb/keto became popular enough for folks to start setting up freakin' bakeries, diners/cafes introducing keto-options and even supermarkets releasing products that are genuinely keto-friendly.
+</p>
+<p>
+Kind of the same as it happened with vegan food, suddenly you can find vegan ice cream, fried chicken and fish and chips joints around Sydney. Got to the point that even major fast-food joints made attempts to cater to this.
+</p>
+<p>
+Yesterday's food science-fiction became today's reality.
+</p>
+<p>
+In case of keto, it still feels quite early in the game. But it made me happy not needing to restrict myself solely to eating omelettes and steak with asparagus on a daily basis. Not to mention folks living with diabetes, who now have a bit wider selection of meals to eat, safer and more care-free than usual.
+</p>
+<p>
+I...
+</p>
+<p>
+kind of planned to have a small write up to mark my 12 weeks, after which I discovered I still had stuff in my fridge and then some to drill through... and a few other things that will keep the tab on me remaining low-carb for the foreseeable future.
+</p>
+<p>
+From experience, my problem usually was to stick to the low-carb regime, 4-weeks would usually turn out to be a limit, by the end of which I'd be dying of cravings.
+</p>
+<p>
+But at this stage, after so many weeks of being quite strict, I'm finding it weirdly difficult to jump out of the keto wagon. "Perhaps I could do another week, or two weeks maybe, perhaps another month" would periodically come up in my thoughts within my passing life's quarter of the year.
+</p>
+<p>
+And I'm not so certain whether continuing to live on calorie deficits has a point now as no matter what, I can't seem to break through the magical barrier of 73kg, the lowest I'd reach is 73.4 and then it'd stabilise above 74. But that's still great progress considering the 82 I had 3 months ago. And 97kg which I had 5 years ago. It's a convenient position to judge from after all.
+</p>
+<p>
+I burnt through most of the kilos within the first month, though. On another 7-week keto run earlier this year same thing happened. Then I'd go on a carb-eating binge for a month and bounce back to where I came from. Then again, that's 5 months of eating low-carb this year but not being able to drill down to the arbitrary number of 72 I've set for myself feels a bit dissapointing.
+</p>
+<p>
+I wouldn't have come so far if it wasn't for the options that I discovered this year, which I guess in some ways impacted my progress.
+</p>
+<p>
+So after doing a bit of research...
+</p>
+
+</div>
+<div class="col-md-4 panel">
+  <center><h4>26 September 2020</h4></center>
+   <p>
+I have found this bakery place, which does lots: from breads, buns to low-carb lasagnas and cakes. They also do sort of a fair when they sell whatever the hell they felt like baking. But anything that they do, turn out as calorie armageddons. 100g of whatever on a small plate converts to ~500 kcal and a plate can fit 4 pieces of this whatever baked sorcery. My daily calorie intake can barely manage to finish two pieces. But in the end, no matter how much I'd eat any of this, it would not kick me out of ketosis. The key ingredient that they use, to keep everything keto-friendly (~2-3g carb per 100g) is... almond meal.
+</p>
+<p>
+I found a health-food cafe, which serves waffles on coconut flour. And I think they do the same for pancakes.
+</p>
+<p>
+I found a ramen place which provides an option to substitute regular noodles for shirataki/konjak noodles ~3g carb/100g. They also serve cauliflower rice, which you can substitute with for some rice-based dishes or have on its own.
+</p>
+<p>
+I found an italian place that serves zucchini noodles, so any pasta dishes you can substitute with those.
+</p>
+<p>
+There are a few more places that I didn't reach yet but apart from those quirky ones, there are tons of places offering salads + meat, even kebab places will accommodate you with switching fries for salad. And koreans joints, which as a cuisine is often just meat + pickled veggies.
+</p>
+<p>
+Apart from these, my local supermarkets aldi and woolworths sell low-carb bread and buns (~4g carbs for 2 slices). This combined with tahini paste, almond butter or particular peanut butter brands are protein-rich and very filling. Not to mention any veggies + meats/fish combos, like avocado + salmon.
+</p>
+<p>
+Low-carb ice cream is a bit hard to come by but there are a few options that I'll use while exiting the diet. And if I was to start getting into it, to alleviate the flu-period, there seem to be good electrolyte-full sugar-free powerades available, as I'd go bankrupt on decent mineral water.
+</p>
+<p>
+I discovered tofu as an incredibly cheap and protein-rich food (450g for 3$ at aldi!) and frying up some halloumi slices alongside, remains a lifely pleasure. But some stuff is notch pricey, like Kimchi or other pickled veggies if I wanted some.
+</p>
+<p>
+And that's been a lot of quirky stuff, apart from mentioning any standard meat-based combos with veggies, which seems to me like an arguably healthy diet anyway. You may be thinking at this point, that all this must be expensive, though.
+</p>
+<p>
+But as I'd tend to eat just once a day, imposing a 50% calorie deficit, with the carb cravings failing to kick in, cause there ain't many, I'd find all those weeks being on a diet, a quite economic trip in total - spending usually half or less the usual..
+</p>
+<p>
+In addition, considering the pandemic, I'd still lose weight despite not moving much from home at all even but I'm gradually throwing movement back into the mix.
+</p>
+<p>
+...so, was it all worth it?
+</p>
+<p>
+I don't know yet.
+</p>
+<p>
+I learned lots again about the nutritional value of different types of foods, discovered crazy keto-oriented businesses. Weight definitely nosedived. Wellbeing didn't necessary skyrocket as some claim on keto. I still need a cuppa coffee/yerba mate to kick off my day with an extra electrolyte punch if necessary.
+</p>
+<p>
+I guess considering the covid-circumstances, this was the only time I could pull something as long-term dietary-wise plans off. And it does bring me a bit of satisfaction that I managed to carry through with this in these uncertain times.
+</p>
+<p>
+I guess in the end, it's still an arguable personal win.
+</p>
+<p>
+As long as I roughly maintain the progress I made.
+  </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" class="darken"><div class="text"></div><img src="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-2 panel">
+  <center><h4>DAUM SON, THAT'S A LOT OF MUSIC</h4></center>
+    
+  <p>
+I've written a bit for my 10th anniversary and even dug out some cool infographics generators so why should I write anything at this point I wonder, after all, these are all just numbers, right?
+</p>
+<p>
+I'm even strugglin' to play anything else movin' forward, even though these are all just numbers after all.
+</p>
+<p>
+But, you know, up until recently it was hard to keep track of all these numbers. Before the 2000s, folks would likely stack all these records building libraries, towers and skyscrapers. Visiting records shops, raiding markets, torrenting, warezing and burning CDs, pirating and stealing those albums.
+</p>
+<p>
+Using Windows Media Player, Winamp, AIMP, Foobar2000 or whatever would eat CDs or digital files stored on shitty HDDs plugged via tape. Buying singles on old sony ericsson k610 phones, creative mp3s and mp4s and the pentagram ones you could even smash with a sledgehammer and claim warranty.
+</p>
+<p>
+I'd wager FLAC being better than mp3, despite using shitty headphones and iems. Watch on youtube unofficial music videos on repeat. Build up a massive virtual library of music collected from different people with different tastes. And miss out on this entire myspace bonanza.
+</p>
+<p>
+I know some folks going vinyl and buying cassette tapes, I myself experimented with different CDs, DVDs and Nero Essentials. And then eventually Deezer, Spotify and the cohort started to break the bank, which just had to break it eventually.
+</p>
+<p>
+I guess lots of this can be somewhat compared to other media: movies, tv shows, games, magazines, comics, books, I think some folks even collected porn movies. But all this becomes sort of a fleeting thing that you just sort of tend to forget with time. And tracking all this is more difficult than it should be.
+</p>
+<p>
+Does netflix or amazon prime allow you to see all the stuff you'd seen by far and the bubble you're in? By far, most tracking needs to be done manually if you want to. Some services that allowed to do this automatically closed down (fuckin' xfire). But last.fm evolved quite nicely over all these years, which would interestingly seem to be now under CBS's supervision.
+</p>
+
+</div>
+<div class="col-md-4 panel">
+  <center><h4>26 September 2020</h4></center>
+   <p>
+I can jump back to any period of time within the last decade and find out what was my taste like. Despite it consistently rather stayed the same and just branched out rather more or less decisively into some uncharted directions.
+</p>
+<p>
+It's a really cool tool. It's like a library, except with the benefit of all the beautiful contemporary data wrangling.
+</p>
+<p>
+And in case of music itself?
+</p>
+<p>
+Well, I'm with spotify except it's a bit of a love/hate relationship. It doesn't tell you shit about you, it's UX and UI is shit, it takes tons of space for some arbitrary reason, I question its music playback quality every now and then and the damn thing surprises you negatively in worst possible moments.
+</p>
+<p>
+But it's remarkably cheap for students and its Discover Weekly and Release Radar are just simply amazing. Despite that it's starting to insist on playing the same stuff as of late on my discover weekly, so I'm kind of back at discovering shit.
+</p>
+<p>
+I have one more susbscription: Google Play Music and that was an absolute love: amazing UX and UI, I'd argue consistently better music playback quality which I could only describe as being Foobar2000 vs AIMP-like Spotify, consistently amazing radios created based on artists/albums/songs. Much superior app performance and stability, just being able to literally do whatever you wanted by the use of simple design paradigms.
+Well, until Google decided to pull the plug and the service started to lose responsiveness, albums, music quality began matching of Youtube Music, which still isn't near close to what GPM was and in general it just felt abandoned until it will ultimately just disappear in coming month or two.
+</p>
+<p>
+At this stage, I'm not sure whether it wouldn't be such a bad idea of going back to Foobar2000 and my private music repo. And the same extends to all the Netflixes and Amazon Primes as all these digital services seem to be consistently expanding their selection but overall dropping ball on quality.
+</p>
+<p>
+And despite offering such wide selections to choose from, it kind of feels as if there's not that much choice to begin with and you're not offered anything more beyond that.
+And that kind of extends to everything media-related today.
+</p>
+<p>
+But look at me all rumblin', I must be having too much of free time lately. Happy anniversary, milestone, keep on scrobbling and streaming and whateverin'.
+</p>
+<p>
+It's not so bad after all.
+</p>
+<p>
+VPNs still work, eh? 👽
+  </p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" class="darken"><div class="text"></div><img src="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-4 col-md-offset-2 panel">
+  <center><h4>20 July 2020</h4></center>
+    
+  <p>
+At this time of the year I'd normally be travelling. Yet since Australia in all its nanny state wisdom bars its citizens from leaving indefinitely (and barely lets even its own citizens in and if so, with hefty price tags attached: 3k for mandatory hotel, who knows how much for hopefully uncancelled flights in), with covid performing its comeback encore right around my neighbouring local districts and a sudden burst of free time that fell onto my lap, I guess the most travelling I'll be doing is down the memory lanes of my past couple of years.
+</p>
+<p>
+I guess I shouldn't complain, by far I'm in a good spot. And I've been long meaning to go through, what looks like 1.14 TB of photos, which I spent sorting through and patching up from scattered offline and online backups.
+</p>
+<p>
+That's over 46000 RAW files. And there's an additional 43000 (577 GB) of mixed smartphone photos/videos, 629 GB of 360 videos/photos on top of all this...
+</p>
+<p>
+I feel like I'll have quite a ride.
+</p>
+<p>
+As for any physical rides,
+</p>
+<p>
+I'm hoping not too close till the end of the year will start opening up some windows to squeeze through.
+</p>
+
+<center><h4>28 April 2020</h4></center>
+
+<p>
+Ah.. free time... or the lack of thereof. Eventually I wrapped my head around binging through more shows and movies. I'm taking it slow but is it any different around the world right now?
+</p>
+<p>
+With all the amazing opportunities to learn being offered for free in the digital world in recent weeks, winding off feels like a crucial component of compartmentalising the learned skills to... learn even more? 
+Westworld S2 - Astonishing writing. One of the very few shows which managed to pull off several parallel plotlines with different timeframes and keep itself coherent, engaging and powerful. Fantastic acting, marvellous dynamically adapting soundtrack, gorgeous scenography. Enormous depth of the depicted world with vast cultural references, buried under a heavy blanket of very harrowing scenes and a very average season wrap up.
+</p>
+<p>
+Overall, I was extremely pleasantly surprised with this one and I'm sad to see that S3 is a far cry from how good S1 and S2 were. I wonder what went wrong. Have the hosts gone rogue?
+</p>
+<p>
+Fantasia - It's not often that you come across an animated feature, in which it is not the animation that takes the lead but the soundtrack itself. Unbelievably refreshing, for a movie from the 1940 it holds up incredibly well. And looking back as a kid being brought to see ballets and operas and whatnot (where I'd often sleep through the 3-4h long spectacles), seeing this combination today just makes me happy. As the show is a portrayal of classics, with its backstories and everything under one.
+</p>
+<p>
+World of Tomorrow - It's not really a majestic piece but it's short, it's been nominated for an oscar and it has some nice visuals and concepts. Well, it's a bit of an animation binge I'm going through too, what's there more to tell?
+</p>
+<p>
+Persepolis - Surprisingly complete story, which competently juggles between being funny and sad. Thought-provoking and educational. A tale, to which everyone can relate, with an exceptional coverage of its surrounding socio-political events. Criticism and commentary mingles with satire and tragedy in this predominantly monochromatic world, parts of which extend to our own.
+</p>
+<p>
+Fantastic Planet - I think I just ran out of animated classics. I must have, if I watched this one. Weird, a very, very weird one. There is a fantastic theme right there and it's a French-Czechoslovakian classic from 1973, so I should give it some slack but I just didn't buy its style. An interesting take on a dystopia, though. Classic as hell.
+</p>
+<p>
+...now, what else was I supposed to do...
+</p>
+</div>
+<div class="col-md-4 panel">
+  <center><h4>25 May 2020</h4></center>
+   <p>
+Life after lifting my own metabolic lockdown seems a bit more fleeting, once carbs hit my system and the sense of time dwells away. And with it, I leisured through some cultural artefacts.
+</p>
+<p>
+Limes Inferior - I never really was a book person, which makes me feel like an ass every now and then. I mean, to get hooked on it, it feels like hard work at times and even audiobooks do not necessarily help as you kind of need to concentrate to persevere through normally over 200-pages long titles. That's a fuckload that translates into whoopin' looong hours of listening material!
+I've gone through the dystopian 4 of Orwell, Huxley, Bradbury and Zamyatin and.. now that I think about it, which ass did I pull this "dystopian 4" from? So I did a quick google search. And hey! Turns out I know more of it than I previously have thought! Even if in adapted formats. But in all of the quick search results, Limes Inferior was nowhere to be found. Well, I shouldn't be surprised.
+..but knowing the other books' backgrounds and the aforementioned equivalents, Limes Inferior as a dystopia feels the closest to the contemporary reality and the author serves it in a surprisingly accessible and deftly written fashion. It's really striking just how much alike this nearly 40-years old world feels. I was looking for something like this, it really does beat its competition and I would love to see an adaptation as its formula feels like a perfect match for a blockbuster tv show.
+</p>
+<p>
+Memorizu (1995) - From the guy, who worked on Akira but for some reason, I preferred his other works, this one included. It's not really particularly phenomenal but the stories that consist of the entire whole are well crafted, solidly developed, shine off with bits of brilliance, distinct enough and they keep your eyes peeled with interest. Lovin' this type.
+</p>
+<p>
+Metropolis (2001) - This one I've been postponing for weeks. I mean, speaking of dystopias, can I still dig out something worth-a-while? Oh, very yes. Weird character aesthetics, yet, increasingly gorgeous cinematography and honestly a delightful tale. It's got a fair bit of breadth and depth, satisfying story progression and conclusion, and it very positively surprises the audience further on.
+</p>
+<p>
+Avatar: The Last Airbender - When I was a kid (like a kid kid), I watched maniacally cartoons, whether Cartoon Network or Disney Channel. I mean, it was the golden age, right? One network I would always skip, was nickelodeon and that held up over the years, as I really felt it had nothing to offer (even from a kid's point of view) and that kind of translated into me not willing to give this Avatar ago, despite I picked it up here and there.
+And it was fantastic. Goofy but incredibly educational (not counting the obvious general disregard for physics) and what really surprised me was it didn't necessarily make an effort in holding back from topics that I'd consider heavy, although it would spin out frequently, especially in 3rd season. That's okay, wanna go heavier? Well, Full Metal Alchemist: Brotherhood feels like a not-so-distant cousin. And that's a big compliment, since it still tops at my "best anime" list and art-wise (and not just), these two have crazy a lot in common.
+</p>
+<p>
+Into The Night - Whatever Tomek Baginski lays his hands on, I'm in. What can pop out of, from, I heard, a few lines of text from a Polish sci-fi author? Apparently a Belgian TV show. Its fair depth and format can be compared to Lost but overall, it's just simply a great watch. Quite fascinating cultural fusion, as multiple languages are blended seamlessly into this. Finally a title, in which multiculturalism doesn't feel forced.
+  </p>
+
+<center><h4>22 March 2020</h4></center>
+
+<p>
+I'm slowly approaching a decade of music scrobbling. As in, I was doing something, I would hope any streaming service would allow you to do - access the data we all involuntarily share everyday and make use of it for personal discoveries.
+</p>
+<p>
+In this case, it's pretty much most of the music I've been listening to ever since I've started listening to music in my life.
+</p>
+<p>
+So what did I learn?
+</p>
+<p>
+Cool stuff actually.
+</p>
+<p>
+- Music is my life ¯\_ツ_/¯<br>
+- Overall, I spent over 20% of 2019 listening to music<br>
+- Overall, I'm fairly mainstream. Throughout last year, not really.<br>
+- There are more Australian, German and Japanese artists that I've listened to than Polish artists. US remains king, tho<br>
+- You can clearly see I've been moving around the world a bit<br>
+- I've primarily revolved around specific bands, gradually moved away from them but still hovering around related genres<br>
+- In last 2 years I've been listening increasingly more to metalcore and had a comeback of nu metal. Definitely moved away from Thrash Metal and Grunge.
+</p>
+<p>
+Stuff's little trivial but I find it cool, looking back on all those years. I hope I'll be able to continue one day integrating a variety of databases, since I've got some cool ones scattered around.
+</p>
+<p>
+I estimate about a thousand scrobbles are 'rogue', as in I tend to scrobble stuff from youtube since last year and it does accidentally scrobble stuff it's not supposed to. Some characters tend to break the systems I used, which seemed to also be a problem whenever I tried creating tools of my own.
+</p>
+<p>
+But that's what data often is, just noise.
+</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" class="darken"><div class="text"></div><img src="https://live.staticflickr.com/65535/50773359893_a7d45ff3de_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+
+<!-- 
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/31673698717/in/dateposted-public/" class="darken"><div class="text">Dusseldorf, Museum Area</div><img src="https://farm5.staticflickr.com/4856/31673698717_767c7cfa85_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+</div>
+<br>
+</div>
+</div>
+
+<div class="con3">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Cologne</h4></center>
+
+<p>
+  And now for a city that we headed, from a city where I withdrew money from a wonderful bank branch of regional savings bank that I still have an account in, a little bit unsettled as kind of convinced without a proper ticket is okay but me knowing that was not okay but yolo anyway, to a city about I knew only that my other friend did not quite like due to not feeling safe but as it all turned out to be quite far from, well, the blank I had in my head and a dire need to go to the toilet for quite sometime, which made sense after the food and beers and the really progressively getting colder weather. Oh, I also forgot to mention we headed into Rossmann, where I got another realization, that heck, this chain of pharmaceutical/chemist stores actually is incredibly cheap! 2.5 Euros for a shampoo? With not that much more expensive other products in-store? Is this heaven? A sort where you can get equipped with literally anything for a price lesser than food? I even got myself a few hairbands as I couldn't find this type for a long time. And later in Cologne, I actually was in dire need of going to the toilet eventually, also due to the exponential amount of beers that we chucked at a very local-feeling and from what I heard from tales type of a German pub, although the tales related to a much further down south-east slavic country of Czech Republic (Czechia?). How it worked, was that it was full... of locals. And we barely scrambled, actually a friend scrambled two seats by two other strangers. At first we received two beers in quite small, kind of tallish, apparently typical beers glasses from Cologne and a beer mat on which the number of beers were being noted. And with each next beer downed, another came faster than you'd realize. Apparently at times, they even hand around homemade food. The place had a really locallish vibe, it was a bit hard to talk with the volume produced by all the people inside but, I guess it's just something that pubs are known for. Instead of going in to actually really talk to people, it's rather a place in which it's perfect to get smashed but it was still better than many pubs I've been to. And the beer was fair.
+</p>
+
+<p>
+  Then there was a bit of walking, I believe Edeka discovering, getting to know a small part of Cologne after dark and then just crashing due to both of us being just plain tired (and me booking a flight the following morning, I think it was the following morning?). There were two things that I had to get done, well maybe three. Getting myself caffeinated, which I did at a venue recommended by a friend where I got myself as I believe a fine Brasilian aeropress and some tiny but delicious pastries. And I was served by I swear, a pair of Germans with an exceptional English accent. That kind of thing brought me to another realization. How am I still on and off with my own English command. It's not that I don't know it. But to be fair, I do get lost in my Polish too. And then don't get me started with my German, with which I still managed to understand an overwhelming lot, all of which I did not quite expect to quite happen. Then, I needed some extra caffeine from the nearby shop and mineral water and afterwards proceed with pushing through with my final deliverable: research journal, which I intended to submit right on time. For this assessment, I actually received 90%, so I was happy. I made sure it was looking good too. The process after all was quite hectic and bumpy. But anyway once I got that finished, I... what did I do afterwards? Did I move towards the city? I think I moved towards the city and also remained in awe of these absolutely stunning ginkgo trees, which at this time of the year, oh my my, how I was surprised to soon discover, that where I was crashing momentarily, turned out to be likely the most gorgeous location in Cologne, hands down, you don't come across such locations too often.
+</p>
+
+<p>
+  So, I figured, I'm having a bit of a constrained time here in Cologne as well, so gotta get going while I still have the time, to see what needs to be seen around. And so I decided to make the obvious approach of just walking towards the city and bumping about the main tourist attractions as listed on tripadvisor. That proved... somewhat okay. I think I also took a look at wikitravel and got my hands on some sorts of maps. And this way, I was albo to do the city, at least the western bank of the city where most of the attractions seemed to have been located. And I have discovered... well not too much of the really amazing. I've seen a huge church with really high trees around. A bakery, where I wanted to buy a pair of I believe Marzipan sweets but got some others in form of cupcakes instead (my German has its limits I guess...). And then, the point where my jaw dropped, Cologne's Cathedral. Oh my, oh my. The first words that came to my mind: What the Fuck. I guess that's not just me, I hope the guy who made this didn't go to hell for this. The church from the inside does not seem too impressive but the outside's structure is as gothic as it gets. And massive too. Painstakingly detailed. I'd say one of the more impressive cathedrals in Europe, in terms of its exterior outlook and certainly a centrepoint of Cologne, next to which there was the main train station on one end and a cultural complex with a museum and a weird opera hidden and forbidden to tread on at key times on the other. And a long shopping alley on the other side of it all. There is an industrial-era bridge too in the very vicinity. And so I kind of bounced around and... uh! Then I returned back as my battery was dying by taking a few tram stops on the cheapest tram ticket (as I could do it, just 4 stops away) and voila, not so long after, back at exploring Cologne!
+</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/45896758854/in/dateposted-public/" class="darken"><div class="text">Cologne, Bridge</div><img src="https://farm5.staticflickr.com/4870/45896758854_5c1e0fb4c8_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br>
+</div>
+
+<div class="con4">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 panel">
+    <center><h4>Tired Culture</h4></center>
+
+<p>
+  I don't exactly remember every single detail about what I was doing onwards. Just that I reached the place and soon after my friend reached it too, we were off to the city again. I received an interesting ticket from the friend as I could ride on it anywhere in the nordrhein-westfalen area. And then my google location seems weirdly quiet about my next whereabouts. I think, obviously my phone was out of juice. But as I'm recreating the events in my head, I believe we went by public transport closer to the center, took a stroll and head towards a Jazz Cafe. Yes, that's what happened and the joint was really cool too. The jazz being played was a form of smooth jazz, they would play a set every now and then and get a bit of tips by walking around. Germans were playing the jazz and the area had a very, very cool vibe. Unfortunately, I didn't get my hands on beer and partially due to that but also all of before, I was just tired and on the verge of falling asleep. Not really a good companion at this time, even my research journal killed me, plus I was falling sick and the caffeine I had pumped into my system along with minerals didn't seem to work anymore. And it was getting now really cold... and then what else, what else... ah, my wonderful feet screeching from being constantly flattened for the last few days. I think there might have been even more. And so we left, took a stroll around and I think our next stop was... apart from the river, also... a chocolate market. Oh my, I might have never tasted better chocolate in my life. One pure cacao praline, that was so crumbly and yet so distinct and powerful in its taste that it was mindblowing how good this kind of produce can taste. And you could go around, tasting the flavors coming from all directions, many of them from regional Italian villages from what I established. I also got my hands on... Feuerzangenbowle! A particular form of liquour, strong and in flames when they hand it over, full of spices, mulled wine, strong rum and a sugarcone dropping into the ambrosia. Afterwards, we strolled around a bit and moved on top of a chocolate museum. With a very cool view over the city. Then we started moving back and... dropped by a vintage-looking pub. With vintage philips tvs and vintage menu and vintage everything. This city, just kept on growing on me, as the locations I was being brought to, had an absolute wow-factor through the roof. I think I just got myself a cup of coffee with rum... forgot I had to tip at somepoint. Been really abuzz but still just way too tired to be able to formulate sentences in proper manner. And after trying to discuss about stuff, we went back.
+</p>
+
+<p>
+  Also, I still could not get ahold of how well I was being treated yet again. Taken everywhere, being tried to be subjected to hospitality of the form that I was expected not to pay for anything and kind of covertly and passively fighting back on that. Just how wonderful the area was and Cologne itself... I didn't mention that just yet but it's because I was focusing on the city, rather than its dwellers. I will throw in a few words in the next blog but just how welcoming and friendly all the people here were... It sounds so, generic. But really, just how people seemed friendly, full of life, complete strangers. A far cry from what my other friend had gathered from her stay in Cologne. I was very impressed by just how pleasant this city was, peaceful and full of life hidden away and around. It was also in a way worn down but it had its nice feel to it too. Dusseldorf upon my first encounter marked quite negative results, with me not feeling safe, seeing homeless taking drugs and just not seeing much here really. Then it all turned and during the Fall, it was a real pleasure to walk around to be frank. And in Cologne? As before, no expectations were attached, just curiosity of what I will discover. And I managed to see a great deal, I'd say a bit more than everything really in the scope of this and following days. The architecture had its German feel. The natural part with trees were at times astonishing. It felt like a hip city, a bit in its form Berliny, at least a bit further in the outskirts. But I'll be continuing with more in the following Blog.
+</p>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <a href="https://www.flickr.com/photos/70140987@N03/31133316707/in/dateposted-public/" class="darken"><div class="text">Cologne, Residential</div><img src="https://farm5.staticflickr.com/4824/31133316707_28b837dde3_k.jpg" width="100%" alt="DSC_6000"></a>
+  </div><br>
+</div>
+<br> -->
+
+<br>
+
+<script src="footer.js"></script>
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Games and Play";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Games and Play";
+        setTimeout(function() {
+       window.scrollTo(0,window.scrollY-300);
+        TopscrollTo();
+    }, 0);
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Human-Computer Interaction 2";
+    }
+}
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
