@@ -37,6 +37,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		background:white;
 	}
 
+		@media(min-width:2560px) and (max-width:3000px){
+    .swiper-button-next
+    {
+margin-right:22.5vw !important;
+    	}
+
+    	.swiper-button-prev
+    	{
+margin-left:22.5vw !important;
+    	}
+    }
+
 /*@media (min-width:768px){
 	.aj1{
  padding-left:7%; padding-right:3%;
@@ -82,17 +94,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
 					<div class="swiper-slide" data-swiper-autoplay="20000">
 						<div class="swiper-container swiper-container-v">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide tilt data-swiper-autoplay="16000">
+								<div class="swiper-slide data-swiper-autoplay="16000">
 									<div class="col-md-4">
 										<p class="arrr mober1"><a href="https://www.youtube.com/watch?v=XSiFtmgFcKc" class="popup-youtube">Video</a></p>
-										<a href="https://www.youtube.com/watch?v=XSiFtmgFcKc" class="darken popup-youtube ho"><div class="text"><p class="arrr">Video</p></div><img class="swiper-lazy zwei" src="../i/6.jpg" style="width:45vw"  id="n0"></a>
+										<a href="https://www.youtube.com/watch?v=XSiFtmgFcKc" class="darken popup-youtube ho"><div class="text"><p class="arrr">Video</p></div><img class="swiper-lazy tilt zwei" src="../i/6.jpg" style="width:45vw"  id="n0"></a>
 										<p class="arrr mober"><a href="https://www.youtube.com/watch?v=XSiFtmgFcKc" class="popup-youtube">We Are Waterfall (Vivid 2015)</a></p>
 									</div>
 								</div>
-								<div class="swiper-slide tilt">
+								<div class="swiper-slide">
 									<div class="col-md-4">
 										<p class="arrr mober1"><a href="https://www.youtube.com/watch?v=uT2bBmAsw5M" class="popup-youtube">Video</a></p>
-										<a href="https://www.youtube.com/watch?v=uT2bBmAsw5M" class="darken ho popup-youtube"><div class="text"><p class="arrr">Video</p></div><img class="swiper-lazy zwei" src="v/2.jpg" style="width:45vw"  id="n0"></a>
+										<a href="https://www.youtube.com/watch?v=uT2bBmAsw5M" class="darken ho popup-youtube"><div class="text"><p class="arrr">Video</p></div><img class="swiper-lazy tilt zwei" src="v/2.jpg" style="width:45vw"  id="n0"></a>
 										<p class="arrr mober"><a href="https://www.youtube.com/watch?v=uT2bBmAsw5M" class="popup-youtube">We Are Waterfall Documentary</a></p>
 									</div>
 								</div>
@@ -124,7 +136,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
+		<script src="../tilt.jquery.min.js"></script>
 
 		<script src="../jquery.magnific-popup.js"></script>
 

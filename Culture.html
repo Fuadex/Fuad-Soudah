@@ -590,6 +590,14 @@ background:rgba(0,100,255);
   background:rgba(67,111,132);
 }
 
+/*.swiper-slide-duplicate{
+          -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}*/
+
 /*.swiper-pagination-bullet:hover{
 transform:scale(20) !important;
 }*/
@@ -990,6 +998,7 @@ transform:scale(20) !important;
               <div class="swiper-slide"><a target="_blank" href="https://www.imdb.com/title/tt13248076/"><img src="https://dub01pap001files.storage.live.com/y4mjta2AqEGT5D0TjmBdfBKPRgGHfb9ikkqPcCv0Gjp0RHwsH-6nAp9oUBbIFTGl4vasmnmSRHUxbCkHkXcrVX37ptKwpX_xhx3QFPQU8qiIYSO3bXDfLWcU7HsgCHv4G5OTXOgaoh02MBY3OFpyAnXSPFX5GemJu8wIYowVm8BxjK6QeLSlaMGqcEywqdyU_Fa?width=1100&height=1555&cropmode=none" style=""></a></div>
               <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/The+Unfinished+Swan-2012-668233"><img src="https://dub01pap001files.storage.live.com/y4mjCPOWvwAvXogbJ7VE7eRTE3mmQhJRohXpFp9sMEbFk4VhvG_oRGw_XRxlBhzH_jV8NCapXiiFwDd8jGTCbtPD2FPOJwYfJOxr9P47IBFQg7LFNa4TPBZ6tjh8hPOOLOxIaQmAxOuxjC6QA_uw0WfymGacyoUu6dzRyhdKpsMcH-HpPj3SPqSTexNid8sMD4l?width=200&height=285&cropmode=none" style=""></a></div>
               <div class="swiper-slide"><a target="_blank" href="https://www.goodreads.com/book/show/144974.The_Velveteen_Rabbit"><img src="https://dub01pap001files.storage.live.com/y4mdNNeIfxkbcOkiNMScAEKPER03Z875eDmU3KNTDCWtWv-kHRyvPa6QNsmX8zKjNifYSjR8xDxybprOLSvo4W5o61T80S_8-jIS00z4gOXTZSrDFoc94I0Pa5McbSGG8imLXvQWf08XvK53KOLeWQhCEuRIInA0zVG9w94zyIByXzRY-o6RMiH88l8SvZmSN7t?width=752&height=1024&cropmode=none" style=""></a></div>
+              <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Final+Fantasy+VII-1997-607099"><img src="https://fwcdn.pl/fpo/70/99/607099/7348674.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Okami-2006-616017"><img src="https://dub01pap001files.storage.live.com/y4mnH5s4xNkoPFHyeV_eqqFMbTl56ohaUrSzdqE_aOXdrr14Ev8zORWEkOEdDhCwYM5sYu2xs8pJBKB7670skWMj1EAbjulj-TppZ2QgUlmD_blxprS9Ay0iRST_pR7KhNZGcJEK-0vkFj94Aqpi-PtUP69Qq51Li08XL0hmvUCbd8SmajKReAS035XNP8-l1CD?width=200&height=285&cropmode=none" style=""></a></div>
               <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/Spiritfarer-2020-846846"><img src="https://fwcdn.pl/fpo/68/46/846846/7929586.6.jpg" style=""></a></div>
               <div class="swiper-slide"><a target="_blank" href="https://www.filmweb.pl/videogame/NieR%3A+Automata-2017-744637"><img src="https://dub01pap001files.storage.live.com/y4mF5RpIICKKpKPNK1YSsL5k28XtAnPArs62KMJcCpTZx-9kkTCto2QfTZD27THPTQBc0CKc5APAifxMhgaI6IVlRoussRcUaDGsTPXgs_stQFp16kXxQy9fBUR6ZVEpuxNtL8dN_Y_AkRa276Sq7OPd-kfWvbphBNigALquewK_RZOjDaxcQpPn2cOafp0LtE2?width=200&height=285&cropmode=none" style=""></a></div>
@@ -1108,6 +1117,9 @@ transform:scale(20) !important;
 
 
         <a href="https://www.filmweb.pl/user/FuadSoudah"><h1><center>My Filmweb Account</center></h1></a>
+
+        <a href="https://www.goodreads.com/user/show/88387351-fuad-soudah"><h1><center>My Goodreads Account</center></h1></a>
+        
 
 <!--         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3">
@@ -1265,7 +1277,7 @@ $('img').tilt({
   var swiper = new Swiper('.swiper-container5', {
     // init: false,
     effect: 'coverflow',
-    // initialSlide: 10,
+    initialSlide: 0,
       // spaceBetween: 25,
       grabCursor: true,
       preloadImages: true,
@@ -1300,6 +1312,11 @@ $('img').tilt({
       dynamicMainBullets: 20,
       clickable: true,
     },
+      on: {
+    imagesReady: function () {
+      // initialSlide: 0;
+    },
+  },
   //     on: {
   //   imagesReady: function () {
   //     swiper.slideTo(8);
