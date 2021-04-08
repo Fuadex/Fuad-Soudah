@@ -378,7 +378,8 @@ html, body { overscroll-behavior: none; }
 
     .swiper-slide{
       height:10em;
-      width:auto;
+      /*width:auto;*/
+                  width:600px;
     }
 
     .swiper-slide img{
@@ -387,7 +388,8 @@ html, body { overscroll-behavior: none; }
     }
 
     img{
-      width:100%;
+      object-fit:cover;
+/*      width:auto;*/
     }
 
 
@@ -1133,7 +1135,9 @@ transform:scale(20) !important;
         <a href="https://www.filmweb.pl/user/FuadSoudah"><h1><center>My Filmweb Account</center></h1></a>
 
         <a href="https://www.goodreads.com/user/show/88387351-fuad-soudah"><h1><center>My Goodreads Account</center></h1></a>
-        
+        </div>
+      </div>
+    </div>
 
 <!--         <div class="row" style="padding-top:3vw !important">
           <div class="swiper-container5 res3">
@@ -1253,6 +1257,9 @@ transform:scale(20) !important;
 
                                                                                   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script> -->
 
+<script src="footer.js"></script>
+</body>
+
 <script src="jquery-3.2.1.min.js"></script>
 <script src="swiper455.js"></script>
 <!-- <script src="swiperfix.js"></script> -->
@@ -1357,8 +1364,6 @@ $('img').tilt({
 window.sr = ScrollReveal({ mobile: false, reset: false });
 sr.reveal('.row', {opacity: 0,duration:700, mobile: true});
 </script> -->
-
-<script src="footer.js"></script>
 
 <script>
 sr.reveal('.row', {mobile:false});
