@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="../newfuad.css">
 
 	<script>
-		window.addEventListener('DOMContentLoaded', (event) => {
+		window.addEventListener('load', (event) => {
 			document.getElementById("loader").style.opacity = "0";
 			document.getElementById("loader").style.height = "0";
 		});
@@ -470,6 +470,7 @@ else {
 				<!-- Initialize Swiper -->
 				<script>
 
+window.addEventListener('load', (event) => {
 
 					var swiperH = new Swiper('.swiper-container-h', {
 						navigation: {
@@ -536,7 +537,7 @@ else {
       },
   });
 
-
+	});
 			// swiperH.on('transitionEnd', function() {
 
 //   if (swiperH.realIndex == 0 || swiperH.realIndex == 2){
