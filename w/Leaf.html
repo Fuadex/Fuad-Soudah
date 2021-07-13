@@ -212,11 +212,16 @@ margin-left:22.5vw !important;
 
 
 		<script>
+if ($(window).width() < 480) {
+tilt.tilt.destroy.call(tilt);
+}
+else {
 			$('.tilt').tilt({
 				glare: true,
 				maxGlare: .1,
 				transition: true
 			})
+		}
 		</script>
 
 		<!-- Initialize Swiper -->

@@ -65,7 +65,7 @@ margin-left:22.5vw !important;
 
     		@media(max-width:480px){
     .mobcor{
-    	margin-top:27.25vh;
+    	margin-top:25vh;
     		-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -150,9 +150,9 @@ margin-left:22.5vw !important;
 								</div>
 								<div class="swiper-slide">
 									<div class="col-md-4 mobcor">
-										<p class="arrr mober2"><a href="../ALA.html" class="iframe-link">Animal Logic Academy RnD</a></p>
+										<p class="arrr mober2"><a href="../ALA.html" class="iframe-link">Animal Logic Academy</a></p>
 										<a href="../ALA.html" class="darken iframe-link ho"><div class="text"><p class="arrr">Animal Logic Academy</p></div><img class="swiper-lazy tilt zwei" src="https://by3302files.storage.live.com/y4mGRL48E1oBCOeHwaGAdHTKWPVYPTX5F-wK_6UB4UMM9BgZKFaEufT7Ic6vukZCX0O1HYCKAYQTZy94WGgcNu99P_NTfT32PDaWYSszCXvvH2yxasW5soP-V3FJi_7CuWp2x1vTcDRB3zb9w0lH8Jf0WqYBkFbHgWgSQLqaM5kJhigVPWRKnNBCihbKF1Sahcz?width=1280&height=720&cropmode=none" style="width:45vw"  id="n2"></a>
-										<p class="arrr mober"><a href="../ALA.html" class="iframe-link">Animal Logic Academy RnD</a></p>
+										<p class="arrr mober"><a href="../ALA.html" class="iframe-link">Animal Logic Academy</a></p>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -164,9 +164,9 @@ margin-left:22.5vw !important;
 								</div>
 								<div class="swiper-slide">
 									<div class="col-md-4 mobcor">
-										<p class="arrr mober2"><a target="_blank" href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2130896&authkey=AMQdknYk84WdV3w">Spin-Off Reflection 2019</a></p>
+										<p class="arrr mober2"><a target="_blank" href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2130896&authkey=AMQdknYk84WdV3w">Spin-Off Reflection</a></p>
 										<a target="_blank" href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2130896&authkey=AMQdknYk84WdV3w" class="darken ho"><div class="text"><p class="arrr">Significant Other</p></div><img class="swiper-lazy tilt zwei" src="https://ivmk3q.by.files.1drv.com/y4mq-WH48as-wsULY22UuGNudNODbRpoPmKcWFeMd1KxfrFKqr7Y5mLOX6jMenweIfSZ5_b4QMXnLfzoceWenLBcoLUq0vrANpqLtrLiRUV0hCRkSKF8EsODLQVCXB3B85kWvCRrbMiX7Wfcik93AmURztNiID_CNcxqGylyjIZcMo7rJFMd9gPJqE_t2pG2Uasd1o0pINcNqOLlL26LALsQA?width=1024&height=626&cropmode=none" style="width:45vw"  id="n3"></a>
-										<p class="arrr mober"><a target="_blank" href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2130896&authkey=AMQdknYk84WdV3w">Spin-Off Reflection 2019</a></p>
+										<p class="arrr mober"><a target="_blank" href="https://onedrive.live.com/embed?cid=6BC1CDACAA3D83C3&resid=6BC1CDACAA3D83C3%2130896&authkey=AMQdknYk84WdV3w">Spin-Off Reflection</a></p>
 									</div>
 								</div>
 							</div>
@@ -204,11 +204,16 @@ margin-left:22.5vw !important;
 
 
 		<script>
+if ($(window).width() < 480) {
+tilt.tilt.destroy.call(tilt);
+}
+else {
 			$('.tilt').tilt({
 				glare: true,
 				maxGlare: .1,
 				transition: true
 			})
+		}
 		</script>
 
 		<!-- Initialize Swiper -->
