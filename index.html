@@ -404,6 +404,8 @@ else {
 		<!-- Initialize Swiper -->
 		<script>
 
+window.addEventListener('load', (event) => {
+
 
 			var swiperH = new Swiper('.swiper-container-h', {
 				navigation: {
@@ -415,7 +417,6 @@ else {
 					delay: 8000,
 					disableOnInteraction: true,
 				},
-				initialSlide: 0,
 				spaceBetween: 25,
 				effect: 'coverflow',
 				grabCursor: true,
@@ -436,6 +437,8 @@ else {
 					clickable: true,
 				},
 			});
+
+
 			var swiperV = new Swiper('.swiper-container-v', {
 				direction: 'vertical',
 				speed: 2000,
@@ -469,6 +472,9 @@ else {
       	clickable: true,
       },
   });
+
+
+	});
 
 
 			// swiperH.on('transitionEnd', function() {
