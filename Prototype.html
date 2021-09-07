@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Fuad Soudah</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
+	<!--   <link rel="stylesheet" href="fuad css.css" type="text/css"> -->
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnific-popup.css">
+	<link rel="stylesheet" href="newfuad.css">
+
+		<script>
+    ImageArray = new Array();
+    ImageArray[0] = 'w/p/0.jpg';
+    ImageArray[1] = 'img/ARVR.jpg';
+    ImageArray[2] = 'img/Dome.jpg';
+    ImageArray[3] = 'img/VFX2.jpg';
+    ImageArray[4] = 'img/UX2.jpg';
+    ImageArray[5] = 'img/Tech.jpg';
+    ImageArray[6] = 'img/UX.jpg';
+    ImageArray[7] = 'img/AR.jpg';
+
+window.addEventListener('load', (event) => {
+	  	document.getElementById("loader").style.opacity = "0";
+	  	document.getElementById("loader").style.height = "0";
+	});
+
+
+  function dada() {
+    document.getElementById("loaded").style.opacity = "1";
+
+
+    var num = Math.floor( Math.random() * 7);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+
+};
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142611964-1"></script> -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142611964-1');
+</script> -->
+
+<style type="text/css">
+	
+	@media(min-width:600px){
+		.wr4, .wr4:hover{
+			transform:scale(0.6) translate(0,50vh) !important;
+		}
+	}
+
+		@media(max-width:600px){
+		.wr4, .wr4:hover{
+			transform:scale(0.6) translate(0,-55vh);
+		}
+	}
+
+	a.nop img {
+    display: block;
+    margin:0.5vw;
+    object-fit:cover;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+a.nop:hover img {
+    opacity: 0.7;           
+}
+
+a.nop:hover .text{color:black;
+   opacity:1;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+	.landscape {
+        float:left;
+        width:8vw;     
+        height:8vw;    
+        overflow:hidden;    
+    }
+
+.landscape  img{
+        width:auto;
+        height: 8vw;   
+    }
+
+.portrait {
+        float:left;
+        width:8vw;
+        height:8vw;
+        overflow:hidden;    
+    }
+
+.portrait img {
+        width:8vw;    <-- notice these
+        height: auto;   <-- have switched
+    }
+
+    .square {
+        float:left;
+        width:8vw;
+        height:8vw;
+        overflow:hidden;    
+    }
+
+.square img {
+        width:8vw;    <-- notice these
+        height: 8vw;   <-- have switched
+    }
+
+	@media(min-width:2560px) and (max-width:3000px){
+    .swiper-button-next
+    {
+margin-right:22.5vw !important;
+    	}
+
+    	.swiper-button-prev
+    	{
+margin-left:22.5vw !important;
+    	}
+    }
+
+		@media(max-width:480px){
+    .mobcor{
+    	margin-top:27.25vh;
+    		-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+    }
+}
+
+.swiper-container{
+	background:url(https://live.staticflickr.com/7874/46051277894_a494b13602_k.jpg);
+	background-size: cover;
+
+}
+
+/*@media (max-width: 1024px) {
+
+.landscape {
+        float:left;
+        width:35.5vw;
+        height:35.5vw;    
+        overflow:hidden;    
+    }
+
+.landscape  img{
+        width:auto;
+        height: 35.5vw;   
+    }
+
+.portrait {
+        float:left;
+        width:35.5vw;
+        height:35.5vw;
+        overflow:hidden;    
+    }
+
+.portrait img {
+        width:35.5vw;    <-- notice these
+        height: auto;   <-- have switched
+    }
+
+    .square {
+        float:left;
+        width:35.5vw;
+        height:35.5vw;
+        overflow:hidden;    
+    }
+
+.square img {
+        width:35.5vw;    <-- notice these
+        height: 35.5vw;   <-- have switched
+    }
+}*/
+
+</style>
+
+</head>
+<body onload="dada()">
+
+	<div style="opacity:1; transition: 1s ease;" id="loader" class="animate-bottom">
+<div class="circle">
+  <svg class="circle__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle class="circle__svg-circle" cx="50" cy="50" r="45"/>
+  </svg>
+</div>
+</div>
+
+	<!-- Swiper -->
+	<div class="container-fluid" id="loaded" style="opacity: 0; transition: 1s ease">
+		<div class="swiper-container swiper-container-h">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide ">
+									<div class="col-md-4 mobcor">
+										<p class="arrr mober1"><a href="home.html">SuperNFT</a></p>
+										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">SuperNFT</p></div><img class="swiper-lazy tilt zwei" src="https://farm5.staticflickr.com/4196/34187708664_417124cc91_h.jpg" style="width:45vw"  id="n5"></a>
+										<p class="arrr mober"><a href="home.html">SuperNFT</a></p>
+									</div>
+					</div>
+								<div class="swiper-slide">
+									<div class="col-md-4 mobcor">
+										<p class="arrr mober1"><a href="home.html">MegaNFT</a></p>
+										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">MegaNFT</p></div><img class="swiper-lazy tilt zwei" src="https://live.staticflickr.com/65535/50774159396_96b8b5dcf1_k.jpg" style="width:45vw"  id="n5"></a>
+										<p class="arrr mober"><a href="home.html">MegaNFT</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination swiper-pagination-v"></div>
+						</div>
+					</div>
+<!-- 										<div class="swiper-slide">
+						<div class="col-md-4 wr4" style="width:100%;">
+							<a class="twitter-timeline" data-height="200vh" href="https://twitter.com/FuadSoudah?ref_src=twsrc%5Etfw">Tweets by FuadSoudah</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+				</div> -->
+<!-- 														<div class="swiper-slide">
+  <div id="instafeed"></div>
+  <script src="instafeed.min.js"></script>
+  <script>
+    var feed = new Instafeed({
+      get: 'user',
+      userId: 237976118, // Ex: 1374300081
+      // accessToken: '237976118.6df541c.20f5b8ffda1e4104b619ebe950ab3a88',
+      // accessToken: 'b327eb59858f4de9b242ced078b6ed6c',
+      // accessToken: '03f4549acdf04c87a823e7bc74ae51b5',
+      accessToken: '237976118.6df541c.ef707c2f478649e1b283a6cfa5cd2275',
+      resolution: 'standard_resolution',
+      template: '<a href="{{link}}" class="nop"><img src="{{image}}" class="{{orientation}}" alt="{{caption}}"/></a>',
+      limit: '18'
+    });
+    feed.run();
+  </script>
+</center>
+				</div> -->
+			</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination-h"></div>
+				<div class="swiper-button-next arrr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z"></svg></div>
+				<div class="swiper-button-prev arrr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z"></svg></div>
+			</div>
+		</div>
+
+
+
+		<script src="jquery-3.2.1.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
+
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
+		<script src="tilt.jquery.min.js"></script>
+
+		<script src="jquery.magnific-popup.js"></script>
+
+
+
+		<script>
+
+if ($(window).width() < 480) {
+tilt.tilt.destroy.call(tilt);
+}
+else {
+			$('.tilt').tilt({
+				glare: true,
+				maxGlare: .1,
+				transition: true,
+				speed: 3000
+			})
+		}
+		</script>
+
+		<!-- Initialize Swiper -->
+		<script>
+
+window.addEventListener('load', (event) => {
+
+
+			var swiperH = new Swiper('.swiper-container-h', {
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				speed: 1000,
+				autoplay: {
+					delay: 8000,
+					disableOnInteraction: true,
+				},
+				spaceBetween: 125,
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				keyboard: {
+					enabled: true,
+				},
+				coverflowEffect: {
+					rotate: 75,
+					stretch: 0,
+					depth: -500,
+					modifier: 1,
+					slideShadows : true,
+				},
+				pagination: {
+					el: '.swiper-pagination-h',
+					clickable: true,
+				},
+			});
+
+
+			var swiperV = new Swiper('.swiper-container-v', {
+				direction: 'vertical',
+				speed: 2000,
+				spaceBetween: 50,
+				effect: 'coverflow',
+				grabCursor: true,
+				freeMode: true,
+				freeModeSticky: true,
+				mousewheel: true,
+				keyboard: {
+					enabled: true,
+				},
+				centeredSlides: true,
+      // slidesPerView: 'auto',
+      preloadImages: false,
+      lazy: true,
+      loadPrevNextAmount:5,
+      autoplay: {
+      	delay: 10000,
+      	disableOnInteraction: true,
+      },
+      coverflowEffect: {
+      	rotate: 90,
+      	stretch: 0,
+      	depth: 100,
+      	modifier: 1,
+      	slideShadows : true,
+      },
+      pagination: {
+      	el: '.swiper-pagination-v',
+      	clickable: true,
+      },
+  });
+
+
+
+
+if (window.innerWidth > 900) {
+				swiperH.on('transitionStart', function(){
+
+					  if (swiperH.realIndex == 1){
+new Swiper('.swiper-pagination-bullet', {
+  on: {
+    reachEnd: function () {
+    	this.style.backgroundImage="url('https://farm5.staticflickr.com/4196/34187708664_417124cc91_h.jpg')";
+    	this.$el.removeClass('ver1');
+    	this.$el.removeClass('ver2');
+    	this.$el.removeClass('ver3');
+    	this.$el.removeClass('ver4');
+    	this.$el.removeClass('ver5');
+    	this.$el.removeClass('ver6');
+    	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
+      this.$el.addClass('ver0');
+    }
+  }
+})
+
+new Swiper('.arrr', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ve0');
+    	this.$el.removeClass('ve1');
+    	this.$el.removeClass('ve2');
+    	this.$el.removeClass('ve3');
+    	this.$el.removeClass('ve4');
+    	this.$el.removeClass('ve5');
+    	this.$el.removeClass('ve6');
+    	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
+      this.$el.addClass('ve0');
+    }
+  }
+})
+}
+
+// })
+			});
+}
+	});
+</script>
+
+
+<script>
+	$(document).ready(function() {
+		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+	});
+
+	$('.iframe-link').magnificPopup({
+		type: 'iframe',
+		iframe: {
+			markup: '<div class="mfp-iframe-scaler iframo">'+
+			'<div class="mfp-close"></div>'+
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen>            </iframe>'+
+			'</div>'
+		},
+		mainClass: 'mfp-fade'
+
+	});
+</script>
+</body>
+</html>
+
