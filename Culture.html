@@ -1373,7 +1373,8 @@ $('img').tilt({
       loopAdditionalSlides:100,
       loopFillGroupWithBlank:false,
       loopedSlides:100,
-            speed: 1000,
+            //speed: 1000,
+            speed:750,
       coverflowEffect: {
         rotate: 4,
         // stretch: -450,
@@ -1383,8 +1384,10 @@ $('img').tilt({
         modifier: 1,
         slideShadows : false,
       },
-      freeMode: true,
-      freeModeSticky: true,
+            freeMode: {
+      enabled: true,
+      sticky: true,
+    },
       mousewheel: false,
       keyboard: {
        enabled: true,
