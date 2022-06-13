@@ -625,6 +625,16 @@ circle {
 	background:rgba(0,0,0,0);
 }
 
+
+.ve01{
+stroke:rgba(255,150,0) !important;
+fill:rgba(255,150,0) !important;;
+}
+
+.ve01:hover a{
+	color:rgba(255,150,0) !important;
+}
+
 .ve0{
 	stroke: rgba(0,100,255) !important;
 		fill:rgba(0,100,255) !important;
@@ -713,6 +723,11 @@ circle {
 
 .ve9:hover a{
 				color:rgba(200,100,150) !important;
+}
+
+.ver01{
+background:rgba(255,150,0);
+transition: 1s ease;
 }
 
 .ver0{

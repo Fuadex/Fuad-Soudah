@@ -152,6 +152,9 @@ margin-left:22.5vw !important;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
     }
+    .res480{
+    	width: 20vw !important;
+    }
 }
 
 /*@media (max-width: 1024px) {
@@ -216,9 +219,9 @@ margin-left:22.5vw !important;
 					</div>
 					<div class="col-md-4 grid-item" style="width:75%">
 						<p class="arrr">People call me <a href="w/Me.html" class="iframe-link">Fuad</a></p>
-						<p class="arrr">I'm a <a href="home.html">Digital Artist (Junior FX)</a></p>
-						<p class="arrr">Check out my 
-							<a href="Portfolio.pdf">Portfolio</a><!--  or <a href="https://www.youtube.com/watch?v=9Y4ghG5w1pY" class="darken popup-youtube">Reel</a> --></p>
+						<p class="arrr">I'm an <a href="home.html">FX Artist</a></p>
+						<!-- <p class="arrr">Check out my <a href="Portfolio.pdf">Portfolio</a></p> -->
+						<p class="arrr">See my <a href="https://www.youtube.com/watch?v=IE2QNxTOnKo" class="darken popup-youtube">Reel</a></p>
 						<!-- <p class="arrr">Check out my 
 							<a href="Portfolio.pdf">Portfolio</a></p> -->
 						</div>
@@ -227,6 +230,11 @@ margin-left:22.5vw !important;
 						<div class="swiper-container swiper-container-v"> <!--overflow:initial !important <- to get the middle slides to pop out if ya keen Fuad! -->
 							<div class="swiper-wrapper">
 								<div class="swiper-slide data-swiper-autoplay="16000">
+									<div class="col-md-4 mobcor">
+										<p class="arrr mober1"><a href="w/VFX.html" class="iframe-link">Houdini VFX</a></p>
+										<a href="w/VFX.html" class="darken iframe-link ho"><div class="text"><p class="arrr">Houdini VFX</p></div><img class="swiper-lazy tilt zwei" src="w/gif/AnimatedPaintings.gif" style="width:45vw;"  id="n0"></a>
+										<p class="arrr mober"><a href="w/VFX.html" class="iframe-link">VFX</a></p>
+									</div>
 <!-- 									<div class="col-md-4">
 										<p class="arrr mober1"><a href="https://www.youtube.com/watch?v=FvnOUr7jmNM" class="popup-youtube">Savant</a></p>
 										<a href="https://www.youtube.com/watch?v=FvnOUr7jmNM" class="darken popup-youtube ho"><div class="text"><p class="arrr">Savant</p></div><img class="swiper-lazy zwei" src="i/2.jpg" style="width:45vw"  id="n0"></a>
@@ -237,10 +245,14 @@ margin-left:22.5vw !important;
 										<a href="VFX.html" class="darken iframe-link ho"><div class="text"><p class="arrr">Houdini VFX</p></div><img class="swiper-lazy tilt zwei" src="https://by3302files.storage.live.com/y4mJf7SF_iMm4qvc7VjHbe444iTqKjPC9GRWolKK1Wzq7Lo3e4oMlItXPSXsuAozqFRLLHJasZk3J7hy1QFiQJApYdPNQu8V-gllBpJrZPAAaIcH9MTtRbYNAizRqw_q6K0COjPwaNuA3Po5vc9vvhjb_LozeLxIwbslfoUvRoH6PyluaJCUe2CqOJvrOVaqKbj?width=1024&height=576&cropmode=none" style="width:45vw"  id="n0"></a>
 										<p class="arrr mober"><a href="VFX.html" class="iframe-link">VFX + CG</a></p>
 									</div> -->
+
+								</div>
+								<div class="swiper-slide">
 									<div class="col-md-4 mobcor">
-										<p class="arrr mober1"><a href="w/VFX.html" class="iframe-link">Houdini VFX</a></p>
-										<a href="w/VFX.html" class="darken iframe-link ho"><div class="text"><p class="arrr">Houdini VFX</p></div><img class="swiper-lazy tilt zwei" src="w/gif/AnimatedPaintings.gif" style="width:45vw;"  id="n0"></a>
-										<p class="arrr mober"><a href="w/VFX.html" class="iframe-link">VFX + CG</a></p>
+										<p class="arrr mober1"><a href="w/FX.html" class="iframe-link">Commercial Projects</a></p>
+										<a href="https://www.imdb.com/title/tt9198364/"><img class="swiper-lazy tilt res480" src="TTYOL.jpg" style="width:10vw;"  id="n0"></a>
+										<a href="https://www.imdb.com/title/tt14174940/"><img class="swiper-lazy tilt res480" src="Interceptor.jpg" style="width:10vw"  id="n0"></a>
+										<p class="arrr"><a href="w/FX.html" class="iframe-link">Houdini FX at Fin</a></p>
 									</div>
 								</div>
 																								<div class="swiper-slide">
@@ -337,6 +349,7 @@ margin-left:22.5vw !important;
 							<p class="arrr">Peek at my <a href="home.html">Home</a></p>
 							<p class="arrr"><a href="https://www.linkedin.com/in/fuad-soudah">LinkedIn</a> me</p>
 							<p class="arrr"><a href="mailto:contact@fuad.design">Email</a> me</p>
+							<p class="arrr"><a href="Resume.pdf">Resume</a></p>
 							<p class="arrr"><a href="CV.pdf">CV</a></p>
 						</div>
 						<div class="col-md-4" id="wooaaar" style="width:25%">
@@ -800,6 +813,45 @@ window.addEventListener('load', (event) => {
 if (window.innerWidth > 900) {
 				swiperV.on('transitionStart', function(){
 
+										  if (swiperH.realIndex == 1 && swiperV.realIndex == 1){
+new Swiper('.swiper-pagination-bullet', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ver0');
+    	this.$el.removeClass('ver1');
+    	this.$el.removeClass('ver2');
+    	this.$el.removeClass('ver3');
+    	this.$el.removeClass('ver4');
+    	this.$el.removeClass('ver5');
+    	this.$el.removeClass('ver6');
+    	this.$el.removeClass('ver7');
+    	    	this.$el.removeClass('ver8');
+    	this.$el.removeClass('ver9');
+      this.$el.addClass('ver01');
+    }
+  }
+})
+
+new Swiper('.arrr', {
+  on: {
+    reachEnd: function () {
+    	this.$el.removeClass('ve0');
+    	this.$el.removeClass('ve1');
+    	this.$el.removeClass('ve2');
+    	this.$el.removeClass('ve3');
+    	this.$el.removeClass('ve4');
+    	this.$el.removeClass('ve5');
+    	this.$el.removeClass('ve6');
+    	this.$el.removeClass('ve7');
+    	    	this.$el.removeClass('ve8');
+    	this.$el.removeClass('ve9');
+      this.$el.addClass('ve01');
+    }
+  }
+})
+
+}
+
 					  if (swiperH.realIndex == 1 && swiperV.realIndex == 0){
 new Swiper('.swiper-pagination-bullet', {
   on: {
@@ -838,7 +890,7 @@ new Swiper('.arrr', {
 
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 1){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 2){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -876,7 +928,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 2){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 3){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -914,7 +966,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 3){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 4){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -952,7 +1004,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 4){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 5){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -990,7 +1042,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 5){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 6){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -1028,7 +1080,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 6){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 7){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -1066,7 +1118,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 7){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 8){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -1104,7 +1156,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 8){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 9){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
@@ -1142,7 +1194,7 @@ new Swiper('.arrr', {
 })
 }
 
-  else if (swiperH.realIndex == 1 && swiperV.realIndex == 8){
+  else if (swiperH.realIndex == 1 && swiperV.realIndex == 10){
 new Swiper('.swiper-pagination-bullet', {
   on: {
     reachEnd: function () {
