@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "~3",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "font-awesome": "~4.7",
     "install": "^0.13.0",
     "npm": "^6.14.8",
