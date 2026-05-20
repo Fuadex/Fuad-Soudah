@@ -1310,7 +1310,6 @@ margin-top:1em;
 @media (hover: hover) and (pointer: fine) {
     a.darken:hover img { opacity: 0.5 !important; }
     a.darken:hover .text { opacity: 1; }
-    .col-md-1:hover, .col-md-2:hover, /* etc */ { ... }
 }
 
 @media (hover: none) {

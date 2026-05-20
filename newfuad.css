@@ -103,6 +103,7 @@ align-items: center;
 
 .swiper-container-v {
 	height:100%;
+	touch-action: pan-y;
 	/*      background: #eee;*/
 }
 
@@ -146,13 +147,16 @@ align-items: center;
 		-o-transition: all 0.5s linear;
 		transition: all 0.5s linear;
 	}
+}
 
+@media (min-width:480px) and (hover: hover) and (pointer: fine) {
 	a.darken:hover img {
-		/*    opacity: 0.9; */          
+		opacity: 0.5;
 	}
 
-	a.darken:hover .text{color:black;
-		opacity:1;
+	a.darken:hover .text {
+		color: black;
+		opacity: 1;
 		-webkit-transition: all 0.3s linear;
 		-moz-transition: all 0.3s linear;
 		-ms-transition: all 0.3s linear;
@@ -782,8 +786,12 @@ transition: 1s ease;
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev,
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-container-rtl .swiper-button-next{
     background-image: none;
         fill:rgba(0,121,255);
+}
+
+@media (hover: none) {
+	.text { opacity: 1 !important; font-size: 3.5vw; }
 }
