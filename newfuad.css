@@ -793,5 +793,5 @@ transition: 1s ease;
 }
 
 @media (hover: none) {
-	.text { opacity: 1 !important; font-size: 3.5vw; }
+	.ho .text { opacity: 1 !important; font-size: 3.5vw; }
 }
