@@ -514,6 +514,20 @@ window.addEventListener('load', (event) => {
       },
   });
 
+  // Fix: outer horizontal Swiper intercepts all touch events inside it, including
+  // touches on the inner vertical Swiper's slides. Disable the outer Swiper's touch
+  // tracking for the duration of any touch that starts inside the vertical Swiper.
+  var swiperVEl = document.querySelector('.swiper-container-v');
+  swiperVEl.addEventListener('touchstart', function() {
+      swiperH.allowTouchMove = false;
+  }, { passive: true });
+  swiperVEl.addEventListener('touchend', function() {
+      swiperH.allowTouchMove = true;
+  }, { passive: true });
+  swiperVEl.addEventListener('touchcancel', function() {
+      swiperH.allowTouchMove = true;
+  }, { passive: true });
+
 
 			// swiperH.on('transitionEnd', function() {
 
