@@ -1012,9 +1012,9 @@ body{
 }
 */
 
-div:hover {
+/*div:hover {
   z-index:999999;
-}
+}*/
 
 .nayol{
   border:none;
@@ -1302,6 +1302,17 @@ margin-top:1em;
 
 }
 
-/*.swiper-container-v{
-overflow:initial !important;
-}*/
+.swiper-container-v{
+  touch-action: pan-y;
+/*overflow:initial !important;*/
+}
+
+@media (hover: hover) and (pointer: fine) {
+    a.darken:hover img { opacity: 0.5 !important; }
+    a.darken:hover .text { opacity: 1; }
+    .col-md-1:hover, .col-md-2:hover, /* etc */ { ... }
+}
+
+@media (hover: none) {
+    .text { opacity: 1 !important; font-size: 3.5vw; }
+}

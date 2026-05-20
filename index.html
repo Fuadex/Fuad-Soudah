@@ -116,8 +116,8 @@ a.nop:hover .text{color:black;
     }
 
 .portrait img {
-        width:8vw;    <-- notice these
-        height: auto;   <-- have switched
+        width:8vw;
+        height: auto;
     }
 
     .square {
@@ -128,8 +128,8 @@ a.nop:hover .text{color:black;
     }
 
 .square img {
-        width:8vw;    <-- notice these
-        height: 8vw;   <-- have switched
+        width:8vw;
+        height: 8vw;
     }
 
 	@media(min-width:2560px) and (max-width:3000px){
@@ -230,7 +230,7 @@ margin-left:22.5vw !important;
 					<div class="swiper-slide" data-swiper-autoplay="90000">
 						<div class="swiper-container swiper-container-v"> <!--overflow:initial !important <- to get the middle slides to pop out if ya keen Fuad! -->
 							<div class="swiper-wrapper">
-								<div class="swiper-slide data-swiper-autoplay="16000">
+								<div class="swiper-slide" data-swiper-autoplay="16000">
 									<div class="col-md-4 mobcor">
 										<p class="arrr mober1"><a href="w/VFX.html" class="iframe-link">Houdini FX</a></p>
 										<a href="w/VFX.html" class="darken iframe-link ho"><div class="text"><p class="arrr">Houdini FX</p></div><img class="swiper-lazy tilt zwei" src="w/gif/AnimatedPaintings.gif" style="width:45vw;"  id="n0"></a> 
@@ -421,17 +421,24 @@ margin-left:22.5vw !important;
 
 		<script>
 
-if ($(window).width() < 480) {
-tilt.tilt.destroy.call(tilt);
+// if ($(window).width() < 480) {
+// tilt.tilt.destroy.call(tilt);
+// }
+// else {
+// 			$('.tilt').tilt({
+// 				glare: true,
+// 				maxGlare: .1,
+// 				transition: true,
+// 				speed: 3000
+// 			})
+// 		}
+
+			if ($(window).width() < 480) {
+    // Tilt just doesn't get initialised — remove the destroy call entirely
 }
 else {
-			$('.tilt').tilt({
-				glare: true,
-				maxGlare: .1,
-				transition: true,
-				speed: 3000
-			})
-		}
+    $('.tilt').tilt({ glare: true, maxGlare: .1, speed: 3000 });
+}
 		</script>
 
 		<!-- Initialize Swiper -->
@@ -473,6 +480,7 @@ window.addEventListener('load', (event) => {
 
 
 			var swiperV = new Swiper('.swiper-container-v', {
+				nested: true,
 				direction: 'vertical',
 				speed: 2000,
 				spaceBetween: 50,
