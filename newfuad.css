@@ -151,7 +151,7 @@ align-items: center;
 
 @media (min-width:480px) and (hover: hover) and (pointer: fine) {
 	a.darken:hover img {
-		opacity: 0.5;
+		opacity: 1;
 	}
 
 	a.darken:hover .text {
@@ -560,7 +560,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 	cursor: pointer;
 }
 .swiper-container-h {
-	overflow: visible;
+	overflow: hidden;
 }
 .swiper-wrapper {
 	pointer-events: none;
