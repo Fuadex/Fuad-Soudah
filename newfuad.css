@@ -447,7 +447,7 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 
 	.zwei{
 		display:block;
-		position: fixed;
+		position: absolute;
 		top: 50%;
 		/*  left: 50%;*/
 		/* bring your own prefixes */
@@ -553,6 +553,20 @@ I fixed it by displaying none and displaying once I hovered over the element*/
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	pointer-events: none;
+}
+.swiper-button-next svg, .swiper-button-prev svg {
+	pointer-events: auto;
+	cursor: pointer;
+}
+.swiper-container-h {
+	overflow: visible;
+}
+.swiper-wrapper {
+	pointer-events: none;
+}
+.swiper-slide {
+	pointer-events: auto;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover{
