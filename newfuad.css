@@ -30,8 +30,16 @@ p a:hover {
 	font-size: 30px !important;
 }
 
-#wooaaar:hover {
+.wooaaar {
+	width: 25%;
+}
+
+.wooaaar:hover {
 	width: 100% !important;
+}
+
+.grid-item, .drei {
+	width: 75%;
 }
 
 /* ── Layout ─────────────────────────────────────────────────────────── */
@@ -126,6 +134,10 @@ p a:hover {
 }
 
 /* ── Image cards ─────────────────────────────────────────────────────── */
+.zwei {
+	width: 45vw;
+}
+
 .text {
 	opacity: 0;
 	font-weight: 300;
@@ -411,6 +423,15 @@ circle {
 		font-size: 12px !important;
 	}
 
+	.mobcor {
+		margin-top: 27.25vh;
+		transition: all 0.5s ease;
+	}
+
+	.res480 {
+		width: 20vw !important;
+	}
+
 	.mober2 {
 		padding-bottom: 20px;
 	}
@@ -460,4 +481,48 @@ circle {
 /* ── Touch devices ───────────────────────────────────────────────────── */
 @media (hover: none) {
 	.ho .text { opacity: 1 !important; font-size: 3.5vw; }
+}
+
+/* ── Twitter embed positioning ───────────────────────────────────────── */
+@media (min-width: 600px) {
+	.wr4, .wr4:hover { transform: scale(0.6) translate(0, 50vh) !important; }
+}
+
+@media (max-width: 600px) {
+	.wr4, .wr4:hover { transform: scale(0.6) translate(0, -55vh); }
+}
+
+/* ── Instagram feed grid (a.nop template) ────────────────────────────── */
+a.nop img {
+	display: block;
+	margin: 0.5vw;
+	object-fit: cover;
+	transition: all 0.5s ease;
+}
+
+a.nop:hover img {
+	opacity: 0.7;
+}
+
+a.nop:hover .text {
+	color: black;
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+.landscape, .portrait, .square {
+	float: left;
+	width: 8vw;
+	height: 8vw;
+	overflow: hidden;
+}
+
+.landscape img { width: auto; height: 8vw; }
+.portrait img  { width: 8vw;  height: auto; }
+.square img    { width: 8vw;  height: 8vw; }
+
+/* ── Wide-screen override (≥ 2560px) ────────────────────────────────── */
+@media (min-width: 2560px) and (max-width: 3000px) {
+	.swiper-button-next { margin-right: 22.5vw !important; }
+	.swiper-button-prev { margin-left: 22.5vw !important; }
 }
