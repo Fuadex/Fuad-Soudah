@@ -1,0 +1,308 @@
+// ────────────────────────────────────────────────────────────────
+// Culture library — Fuad's personal canon.
+//
+// SHAPE: { id, title, year, medium, link, poster, note?, length?, region?, rating? }
+//   note   — your personal sentence/paragraph; appears in popup + Reader
+//   length — how "thick" the spine renders (1 = slim, 2 = medium, 3 = thick).
+//            Defaults work fine; only set if you want a specific item to feel
+//            heavier or slighter than its medium would suggest.
+//   region — country/region of origin (web-verified per title); colors the
+//            spine in Spines / Mix mode. Recognized: 'pl','jp','kr','us','uk',
+//            'fr','it','de','su','ru','au','ca','ie','il','se','fi','ch','eu',
+//            'other'. Omit to use a decade-based color.
+//   rating — your personal Filmweb score (0-10) from the CSV exports; shown at
+//            the foot of each spine. Blank when there is no Filmweb rating.
+//
+// PICK ONE FOR ME pool: edit PICKABLE_IDS below to control which titles can
+// be surfaced by the "Pick one for me" button. Each picked title gets a red
+// pip that persists for the rest of the session.
+// ────────────────────────────────────────────────────────────────
+
+const POSTER = (n) => `https://fuad.design/Culture/${n}`;
+
+const ITEMS = [
+  // ─────────── MOVIES ───────────
+  // Reordered so the centered shelf reflects Fuad's stated ranking:
+  //   centre → Age of Success, then Walkabout & Fight Club to either side,
+  //   then Ikiru & La Haine, then everything else.
+  { id: 'age-of-success',     title: 'The Age of Success',       year: 1988, medium: 'Movies', region: 'kr', link: 'https://www.filmweb.pl/film/Songgong+sidae-1988-169765',          poster: POSTER('theageofsuccess.jpg'), note: 'Fight Club na sterydach i w wersji koreańskiej, niesamowity przekrój pogoni za sukcesem, konsumpcjonizmem, bezwzględności korporacji, hierarchi kapitalistycznej' },
+  { id: 'walkabout',          title: 'Walkabout',                year: 1971, medium: 'Movies', region: 'uk', rating: '10', link: 'https://www.filmweb.pl/film/Walkabout-1971-11531',                    poster: POSTER('walkabout.jpg'), note: 'Arcydzieło, mezalians, który nie sposób było przewidzieć - surrealistyczna kwintesencja Australii i kompletnie przenikliwie piękna proza życia na drugim krańcu.' },
+  { id: 'fight-club',         title: 'Fight Club',               year: 1999, medium: 'Movies', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/Podziemny+kr%C4%85g-1999-837',         poster: POSTER('fightclub.jpg'), note: 'A film I keep returning to a decade later — still a Rorschach test for who I was the last time I watched it.' },
+  { id: 'ikiru',              title: 'Ikiru',                    year: 1952, medium: 'Movies', region: 'jp', rating: '10', link: 'https://www.filmweb.pl/film/Pi%C4%99tno+%C5%9Bmierci-1952-31684',     poster: POSTER('ikiru.jpg'), note: 'Film, kalibru 12 gniewnych ludzi, łączący najlepsze z najlepszych elementów kinematografii wyróżniający się najwyższej klasy walorami merytorycznymi i sztuki.' },
+  { id: 'possession',         title: 'Possession',               year: 1981, medium: 'Movies', region: 'fr', link: 'https://www.filmweb.pl/film/Op%C4%99tanie-1981-8801',                 poster: POSTER('possession.jpg'), note: 'Jak gdyby połączenie lśnienia z egzorcystą na najwyższych obrotach, niesamowite. Kosmiczne role, realizacja, charakteryzacja i gra aktorska. Wow.' },
+  { id: 'burning',            title: 'Burning',                  year: 2018, medium: 'Movies', region: 'kr', rating: '9', link: 'https://www.filmweb.pl/film/P%C5%82omienie-2018-784582',              poster: POSTER('burning.webp'), note: 'Jak wiele można przekazać przez tak subtelną i nieskazitelną pracę całej kadry, choć druga połowa mnie nie satysfakcjonowała, jest to mocno hipnotyzujące kino' },
+  { id: 'la-haine',           title: 'La Haine',                 year: 1995, medium: 'Movies', region: 'fr', rating: '10', link: 'https://www.filmweb.pl/film/Nienawi%C5%9B%C4%87-1995-8106',         poster: POSTER('LaHaine.jpg'), note: 'Bardzo zgrabna narracja i reżyseria, świetnie ujęty przekrój społeczny, trochę w środku zwalniał ale ostatecznie opuściłem kino porażony, naturalizm w pełni.' },
+  { id: 'red-desert',         title: 'Red Desert',               year: 1964, medium: 'Movies', region: 'it', rating: '9', link: 'https://www.filmweb.pl/film/Czerwona+pustynia-1964-33487',            poster: POSTER('reddesert.jpg'), note: 'Turboklimatyczna i arcypiękna reżyseria, lecąca krok w krok za kunsztem aktorskim i podstawą filmu, rozbudowującą się z czasem, a z jaką wyjątkową subtelnością.' },
+  { id: '12-angry-men',       title: '12 Angry Men',             year: 1957, medium: 'Movies', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/Dwunastu+gniewnych+ludzi-1957-30701', poster: POSTER('12angrymen_b.jpg'), note: 'Dosłownie, egzekucja tego formatu to kino absolutne.' },
+  { id: 'clockwork-orange',   title: 'A Clockwork Orange',       year: 1971, medium: 'Movies', region: 'uk', rating: '10', link: 'https://www.filmweb.pl/film/Mechaniczna+pomara%C5%84cza-1971-1275', poster: POSTER('aclockworkorange.webp'), note: 'Style is groundbreaking here' },
+  { id: 'come-and-see',       title: 'Come and See',             year: 1985, medium: 'Movies', region: 'su', rating: '10', link: 'https://www.filmweb.pl/film/Id%C5%BA+i+patrz-1985-35185',          poster: POSTER('comeandsee_b.jpg'), note: 'Watched it once. Can\'t imagine watching it twice. Can\'t imagine having not.' },
+  { id: 'the-housemaid',      title: 'The Housemaid',            year: 1960, medium: 'Movies', region: 'kr', link: 'https://www.filmweb.pl/film/Pokoj%C3%B3wka-1960-232044',             poster: POSTER('pokojowka.jpg'), note: 'Ten film jest wybitną pozycją, poraża jakością wykonania, treścią i egzekucją całego formatu, który praktycznie nie gaśnie przez cały runtime' },
+  { id: 'human-condition',    title: 'The Human Condition I',    year: 1959, medium: 'Movies', region: 'jp', rating: '10', link: 'https://www.filmweb.pl/film/Dola+cz%C5%82owiecza+I+-+Nie+ma+wi%C4%99kszej+mi%C5%82o%C5%9Bci-1958-94613', poster: POSTER('human_condition.webp'), note: 'Bezbłędna kinematografia, pomimo 3.5h dłużyzny się nie czuje, gra aktorska stoi bardzo wysoko, a sam motyw przewodni ujmuje mocno w przedstawionych realiach' },
+  { id: 'oldboy',             title: 'Oldboy',                   year: 2003, medium: 'Movies', region: 'kr', rating: '9', link: 'https://www.filmweb.pl/film/Oldboy-2003-115059',                    poster: POSTER('oldboy.jpg'), note: 'Dużo tutaj wyszło wyjątkowo, reżyseria przede wszystkim i balansowanie między komedią a dramatem, ale końcówka rozwaliła mnie jak nic od dawien dawna' },
+  { id: 'network',            title: 'Network',                  year: 1976, medium: 'Movies', region: 'us', link: 'https://www.filmweb.pl/film/Sie%C4%87-1976-35352',                  poster: POSTER('network.jpg'), note: 'Kapitalna dekompozycja mediów, z wieloma momentami, które kompletnie powalają na kolana. Niesamowicie napisane monologi i porażająca gra aktorska.' },
+  { id: '2001-space',         title: '2001: A Space Odyssey',    year: 1968, medium: 'Movies', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/2001%3A+Odyseja+kosmiczna-1968-1458',     poster: POSTER('spaceoddysey.jpg'), note: 'Biorąc pod uwage, że to film z 1968... niech będzie 10/10, ale ten finał... na wyrost te 10/10 :<' },
+  { id: 'woman-under',        title: 'A Woman Under the Influence', year: 1974, medium: 'Movies', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/Kobieta+pod+presj%C4%85-1974-105724', poster: POSTER('awomanundertheinfluence.jpg'), note: 'Jeden z tych filmów, które są bardzo dobre, ale obiera kierunek tematyczny, który praktycznie wyczerpuje w pełni - porażające role, wykonanie i dynamika postaci' },
+  { id: 'the-shining',        title: 'The Shining',              year: 1980, medium: 'Movies', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/L%C5%9Bnienie-1980-1020',                poster: POSTER('theshining.webp'), note: 'Performances of the leading actors are some of the best Ive seen' },
+  { id: 'face-of-another',    title: 'The Face of Another',      year: 1966, medium: 'Movies', region: 'jp', link: 'https://www.filmweb.pl/film/Twarz+innego-1966-40633',               poster: POSTER('thefaceofanother.jpg'), note: 'Ciężki, ze wspaniałą reżyserią i pociskiem merytorycznym, który ciąży mocno.' },
+  { id: 'escape-cinema',      title: 'Escape from the Liberty Cinema', year: 1990, medium: 'Movies', region: 'pl', rating: '9', link: 'https://www.filmweb.pl/film/Ucieczka+z+kina+%22Wolno%C5%9B%C4%87%22-1990-1181', poster: POSTER('ucieczkazkinawolnosc.webp'), note: 'Uuu jakie mezaliansy narracyjne, materia się ożywiła :)' },
+  { id: 'short-film-killing', title: 'A Short Film About Killing', year: 1988, medium: 'Movies', region: 'pl', rating: '10', link: 'https://www.filmweb.pl/film/Kr%C3%B3tki+film+o+zabijaniu-1987-1157', poster: POSTER('ashortfilmaboutkilling.jpg'), note: 'Reżyseria i kinematografia to coś szczególnego, ale wyczerpanie tematu i jego naprawdę ostra i dogłębna wiwisekcja - wszystko robią piorunujące wrażenie' },
+  { id: 'no-country',         title: 'No Country for Old Men',   year: 2007, medium: 'Movies', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/To+nie+jest+kraj+dla+starych+ludzi-2007-259289', poster: POSTER('nocountryforoldmen.webp'), note: 'The flow of the movie and characters are riveting' },
+  { id: 'apocalypse-now',     title: 'Apocalypse Now',           year: 1979, medium: 'Movies', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/Czas+Apokalipsy-1979-1092',             poster: POSTER('czasapokalipsy.jpg'), note: 'Progresja, głębia, groteska, ciężka atmosfera, produkcja równa tematyce samego filmu, artyzm, wielowymiarowy wydźwięk, psychologiczne nuty i świetna adaptacja' },
+  { id: 'shame',              title: 'Shame',                    year: 2011, medium: 'Movies', region: 'uk', link: 'https://www.filmweb.pl/film/Wstyd-2011-601499',                      poster: POSTER('shame_2.jpg'), note: 'Piorunujące role główne, bardzo mocny scenariusz i scenografia, i realizacja wgniatają w fotel w tandemie z wręcz pedantycznie uchwyconymi detalami.' },
+  { id: 'platoon',            title: 'Platoon',                  year: 1986, medium: 'Movies', region: 'us', rating: '7', link: 'https://www.filmweb.pl/film/Pluton-1986-1068',                       poster: POSTER('pluton.jpg'), note: 'Amazing poster :)' },
+  { id: 'three-colors-white', title: 'Three Colors: White',      year: 1994, medium: 'Movies', region: 'pl', link: 'https://www.filmweb.pl/film/Trzy+kolory%3A+Bia%C5%82y-1994-1160',   poster: POSTER('trzykolorybialy.webp') },
+  { id: 'deer-hunter',        title: 'The Deer Hunter',          year: 1978, medium: 'Movies', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/%C5%81owca+jeleni-1978-1045',           poster: POSTER('thedeerhunter.webp'), note: 'Felt very complete and captures the scale and changes at an incredible level' },
+  { id: 'pygmalion',          title: 'Pygmalion',                year: 1938, medium: 'Movies', region: 'uk', rating: '9', link: 'https://www.filmweb.pl/film/Pigmalion-1938-126074',                  poster: POSTER('pygmalion.webp'), note: 'Zaskakująco świetny warsztat reżyserski i aktorski, z opowieścią, którą można nazwać sztandarowym klasykiem - pięknym i z wielotorowością podbijającą stawkę.' },
+  { id: 'corpus-christi',     title: 'Corpus Christi',           year: 2019, medium: 'Movies', region: 'pl', link: 'https://www.filmweb.pl/film/Bo%C5%BCe+Cia%C5%82o-2019-808863',       poster: POSTER('bozecialo.jpg'), note: 'Świetny warsztat, kinematografia, światło. Bardzo naturalnie zagrany i silnie odwzorowany portret społeczny, film zostawia widza z wieloma przemyśleniami' },
+  { id: 'weather-forecast',   title: 'Weather Forecast',         year: 1982, medium: 'Movies', region: 'pl', rating: '9', link: 'https://www.filmweb.pl/film/Prognoza+pogody-1982-8900',              poster: POSTER('prognozapogody.webp'), note: 'Polski lot nad kukułczym gniazdem' },
+  { id: 'limelight',          title: 'Limelight',                year: 1952, medium: 'Movies', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/%C5%9Awiat%C5%82a+rampy-1952-91770',     poster: POSTER('Limelight.jpg'), note: 'Fantastic character Arc' },
+  { id: 'tar',                title: 'Tár',                      year: 2022, medium: 'Movies', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/T%C3%A1r-2022-10016709',                 poster: POSTER('tar.jpg'), note: 'Kapitalny mariaż subtelności wszelakich, w punkt i meandruje wszerz najróżniejszych zawiłości, ale trochę trafił donikąd i brakuje punktu nad i.' },
+  { id: 'there-will-be-blood',title: 'There Will Be Blood',      year: 2007, medium: 'Movies', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/A%C5%BC+poleje+si%C4%99+krew-2007-239166', poster: POSTER('lettherebeblood.webp'), note: 'Klimat i atmosferę można wręcz gryźć tak gęste. Rozpiętość fabularna robi wrażenie, również kompletność tejże. Świetna gra aktorska i pewnego rodzaju naturalizm' },
+  { id: 'cinema-paradiso',    title: 'Cinema Paradiso',          year: 1988, medium: 'Movies', region: 'it', rating: '9', link: 'https://www.filmweb.pl/film/Cinema+Paradiso-1988-8228',              poster: POSTER('CinemaParadiso_2.jpg'), note: 'The reason "Nuovo Cinema Paradiso" plays in my head every time a film ends.' },
+  { id: 'blade-runner-2049',  title: 'Blade Runner 2049',        year: 2017, medium: 'Movies', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/Blade+Runner+2049-2017-630798',          poster: POSTER('bladerunner2049.jpg'), note: 'Dawno czegoś takiego nie widziałem. Podbudowane ambrozją iluzji, o dużej dozie świeżości. Paradoksalnie brakowało atmosfery i to zwieńczenie.. Poproszę więcej!' },
+
+  // ─────────── TV ───────────
+  { id: 'dekalog',            title: 'Dekalog',                  year: 1989, medium: 'TV',     region: 'pl', link: 'https://www.imdb.com/title/tt0092337/',                              poster: POSTER('dekalog.jpg'), length: 3 },
+  { id: 'westworld',          title: 'Westworld',                year: 2016, medium: 'TV',     region: 'us', rating: '10', link: 'https://www.filmweb.pl/serial/Westworld-2016-232988',                poster: POSTER('westworld.jpg'), length: 2 },
+  { id: 'breaking-bad',       title: 'Breaking Bad',             year: 2008, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Breaking+Bad-2008-430668',             poster: POSTER('breakingbad.jpg'), length: 3 },
+  { id: 'six-feet-under',     title: 'Six Feet Under',           year: 2001, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Sze%C5%9B%C4%87+st%C3%B3p+pod+ziemi%C4%85-2001-89546', poster: POSTER('sixfeetunder.jpg'), length: 3 },
+  { id: 'fallout',            title: 'Fallout',                  year: 2024, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Fallout-2024-867454',                  poster: POSTER('Fallout.jpg'), length: 1 },
+  { id: 'twin-peaks',         title: 'Twin Peaks',               year: 1990, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Miasteczko+Twin+Peaks-1990-37003',     poster: POSTER('TwinPeaks.jpg'), length: 3 },
+  { id: 'band-of-brothers',   title: 'Band of Brothers',         year: 2001, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Kompania+braci-2001-35584',            poster: POSTER('bandofbrothers.jpg'), length: 2 },
+  { id: 'the-shield',         title: 'The Shield',               year: 2002, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/%C5%9Awiat+gliniarzy-2002-114052',     poster: POSTER('theshield.jpg'), length: 3 },
+  { id: 'pitbull',            title: 'PitBull',                  year: 2005, medium: 'TV',     region: 'pl', rating: '8', link: 'https://www.filmweb.pl/serial/PitBull-2005-282083',                  poster: POSTER('Pitbull.jpg'), length: 2 },
+  { id: 'fargo',              title: 'Fargo',                    year: 2014, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Fargo-2014-688850',                    poster: POSTER('fargo.jpg'), length: 2 },
+  { id: 'chernobyl',          title: 'Chernobyl',                year: 2019, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Czarnobyl-2019-799827',                poster: POSTER('czarnobyl.jpg'), length: 1 },
+  { id: 'severance',          title: 'Severance',                year: 2022, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Rozdzielenie-2022-878161',             poster: POSTER('Severance.jpg'), length: 2 },
+  { id: 'lost',               title: 'Lost',                     year: 2004, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Zagubieni-2004-133834',                poster: POSTER('Lost.jpg'), length: 3 },
+  { id: 'blinded-by-lights',  title: 'Blinded by the Lights',    year: 2018, medium: 'TV',     region: 'pl', rating: '8', link: 'https://www.filmweb.pl/serial/%C5%9Alepn%C4%85c+od+%C5%9Bwiate%C5%82-2018-786525', poster: POSTER('SlepnacodSwiatel.jpg'), length: 1 },
+  { id: 'atlanta',            title: 'Atlanta',                  year: 2016, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Atlanta-2016-767468',                  poster: POSTER('Atlanta.jpg'), length: 2 },
+  { id: 'watchmen',           title: 'Watchmen',                 year: 2019, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Watchmen-2019-809681',                 poster: POSTER('watchmen.jpg'), length: 1 },
+  { id: 'utopia',             title: 'Utopia',                   year: 2013, medium: 'TV',     region: 'uk', rating: '8', link: 'https://www.filmweb.pl/serial/Utopia-2013-663388',                   poster: POSTER('Utopia.jpg'), length: 1 },
+  { id: 'better-call-saul',   title: 'Better Call Saul',         year: 2015, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Zadzwo%C5%84+do+Saula-2015-697645',    poster: POSTER('bettercallsaul.jpg'), length: 3 },
+  { id: 'fleabag',            title: 'Fleabag',                  year: 2016, medium: 'TV',     region: 'uk', rating: '9', link: 'https://www.filmweb.pl/serial/Fleabag-2016-769619',                  poster: POSTER('fleabag.jpg'), length: 1 },
+  { id: 'bojack',             title: 'BoJack Horseman',          year: 2014, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/BoJack+Horseman-2014-718443',          poster: POSTER('Bojack.jpg'), length: 2 },
+  { id: 'true-detective',     title: 'True Detective',           year: 2014, medium: 'TV',     region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Detektyw-2014-654010',                 poster: POSTER('truedetective.webp'), length: 1 },
+  { id: 'mad-men',            title: 'Mad Men',                  year: 2007, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Mad+Men-2007-436999',                  poster: POSTER('madmen.jpg'), length: 3 },
+  { id: 'cosmos',             title: 'Cosmos: A Spacetime Odyssey', year: 2014, medium: 'TV', region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Kosmos-2014-696381',                    poster: POSTER('cosmos.webp'), length: 1 },
+  { id: 'squid-game',         title: 'Squid Game',               year: 2021, medium: 'TV',     region: 'kr', rating: '8', link: 'https://www.filmweb.pl/serial/Squid+Game-2021-841842',               poster: POSTER('squidgame.jpg'), length: 1 },
+  { id: 'vietnam-war',        title: 'The Vietnam War',          year: 2017, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Wojna+wietnamska%3A+film+Kena+Burnsa+i+Lynn+Novick-2017-641457', poster: POSTER('vietnamwar.jpg'), length: 2 },
+  { id: 'skins',              title: 'Skins',                    year: 2007, medium: 'TV',     region: 'uk', rating: '8', link: 'https://www.filmweb.pl/serial/Kumple-2007-378865',                   poster: POSTER('Skins.webp'), length: 2 },
+  { id: 'dark',               title: 'Dark',                     year: 2017, medium: 'TV',     region: 'de', rating: '8', link: 'https://www.filmweb.pl/serial/Dark-2017-771383',                     poster: POSTER('Dark.jpg'), length: 2 },
+  { id: 'dead-set',           title: 'Dead Set',                 year: 2008, medium: 'TV',     region: 'uk', rating: '9', link: 'https://www.filmweb.pl/serial/W+domu+zombie-2008-491355',            poster: POSTER('deadset.jpg'), length: 1 },
+  { id: 'in-treatment',       title: 'In Treatment',             year: 2011, medium: 'TV',     region: 'pl', rating: '9', link: 'https://www.filmweb.pl/serial/Bez+tajemnic-2011-607039',             poster: POSTER('beztajemnic.jpg'), length: 1 },
+  { id: 'mr-robot',           title: 'Mr. Robot',                year: 2015, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Mr.+Robot-2015-733795',                poster: POSTER('MrRobot.webp'), length: 2 },
+  { id: 'the-wire',           title: 'The Wire',                 year: 2002, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Prawo+ulicy-2002-87721',               poster: POSTER('thewire_2.jpg'), length: 3 },
+  { id: 'the-expanse',        title: 'The Expanse',              year: 2015, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/The+Expanse-2015-721026',              poster: POSTER('TheExpanse.jpg'), length: 3 },
+  { id: 'sopranos',           title: 'The Sopranos',             year: 1999, medium: 'TV',     region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Rodzina+Soprano-1999-35405',           poster: POSTER('TheSopranos.jpg'), length: 3 },
+  { id: 'planet-earth-ii',    title: 'Planet Earth II',          year: 2016, medium: 'TV',     region: 'uk', rating: '9', link: 'https://www.filmweb.pl/serial/Planeta+Ziemia+II-2016-777975',        poster: POSTER('planetearthII.jpg'), length: 1 },
+  { id: 'green-planet',       title: 'The Green Planet',         year: 2022, medium: 'TV',     region: 'uk', rating: '10', link: 'https://www.filmweb.pl/serial/Zielona+planeta-2021-867712',          poster: POSTER('greenplanet.jpg'), length: 1 },
+  { id: 'black-mirror',       title: 'Black Mirror',             year: 2011, medium: 'TV',     region: 'uk', rating: '10', link: 'https://www.filmweb.pl/serial/Czarne+lustro-2011-640699',            poster: POSTER('blackmirror_2.jpg'), length: 2 },
+
+  // ─────────── GAMES ───────────
+  { id: 'spec-ops',           title: 'Spec Ops: The Line',       year: 2012, medium: 'Games',  region: 'de', rating: '8', link: 'https://www.filmweb.pl/videogame/Spec+Ops%3A+The+Line-2012-615645', poster: POSTER('specopstheline.jpg'), note: 'The first game that made me feel complicit in what I had just done — and that the credits did not absolve me.' },
+  { id: 'twd-game',           title: 'The Walking Dead: S1',     year: 2012, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/The+Walking+Dead%3A+Season+One-2012-631588', poster: POSTER('thewalkingdeadthegame.jpg') },
+  { id: 'antichamber',        title: 'Antichamber',              year: 2013, medium: 'Games',  region: 'au', rating: '10', link: 'https://www.filmweb.pl/videogame/Antichamber-2013-680088',          poster: POSTER('Antichamber.jpg') },
+  { id: 'wic',                title: 'World in Conflict',        year: 2007, medium: 'Games',  region: 'se', rating: '9', link: 'https://www.filmweb.pl/videogame/World+in+Conflict-2007-608112',     poster: POSTER('worldinconflict.jpg') },
+  { id: 'edith-finch',        title: 'What Remains of Edith Finch', year: 2017, medium: 'Games', region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/What+Remains+of+Edith+Finch-2017-729227', poster: POSTER('whatremainsofedithfinch.jpg') },
+  { id: 'manifold-garden',    title: 'Manifold Garden',          year: 2019, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/Manifold+Garden-2019-793925',       poster: POSTER('ManifoldGarden.jpg') },
+  { id: 'cod4',               title: 'Call of Duty 4: Modern Warfare', year: 2007, medium: 'Games', region: 'us', rating: '10', link: 'https://www.filmweb.pl/videogame/Call+of+Duty+4%3A+Modern+Warfare-2007-608432', poster: POSTER('cod4.jpg') },
+  { id: 'mass-effect',        title: 'Mass Effect',              year: 2007, medium: 'Games',  region: 'ca', rating: '9', link: 'https://www.filmweb.pl/videogame/Mass+Effect-2007-606340',           poster: POSTER('masseffect.jpg') },
+  { id: 'mirrors-edge',       title: "Mirror's Edge",            year: 2008, medium: 'Games',  region: 'se', link: 'https://www.filmweb.pl/videogame/Mirror%27s+Edge-2008-607605',       poster: POSTER('MirrorsEdge.jpg') },
+  { id: 'subnautica',         title: 'Subnautica',               year: 2018, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/Subnautica-2018-738588',            poster: POSTER('Subnautica.jpg') },
+  { id: 'the-witcher',        title: 'The Witcher',              year: 2007, medium: 'Games',  region: 'pl', rating: '9', link: 'https://www.filmweb.pl/videogame/Wied%C5%BAmin-2007-608108',         poster: POSTER('TheWitcher.jpg') },
+  { id: 'codmw2',             title: 'Call of Duty: MW2',        year: 2009, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/Call+of+Duty%3A+Modern+Warfare+2-2009-608594', poster: POSTER('codmw2.jpg') },
+  { id: 'ico',                title: 'Ico',                      year: 2001, medium: 'Games',  region: 'jp', rating: '9', link: 'https://www.filmweb.pl/videogame/Ico-2001-618893',                   poster: POSTER('ICO.jpg') },
+  { id: 'wolf-among-us',      title: 'The Wolf Among Us',        year: 2013, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/The+Wolf+Among+Us-2013-688673',     poster: POSTER('WolfAmongUs.jpg') },
+  { id: 'firewatch',          title: 'Firewatch',                year: 2016, medium: 'Games',  region: 'us', rating: '7', link: 'https://www.filmweb.pl/videogame/Firewatch-2016-724536',             poster: POSTER('Firewatch.webp') },
+  { id: 'heavy-rain',         title: 'Heavy Rain',               year: 2010, medium: 'Games',  region: 'fr', rating: '9', link: 'https://www.filmweb.pl/videogame/Heavy+Rain-2010-607549',            poster: POSTER('heavyrain.jpg') },
+  { id: 'crysis',             title: 'Crysis',                   year: 2007, medium: 'Games',  region: 'de', rating: '9', link: 'https://www.filmweb.pl/videogame/Crysis-2007-608586',                poster: POSTER('Crysis.webp') },
+  { id: 'bulletstorm',        title: 'Bulletstorm',              year: 2011, medium: 'Games',  region: 'pl', rating: '9', link: 'https://www.filmweb.pl/videogame/Bulletstorm-2011-611271',           poster: POSTER('Bulletstorm.webp') },
+  { id: 'bioshock',           title: 'BioShock',                 year: 2007, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/BioShock-2007-608595',              poster: POSTER('Bioshock.jpg') },
+  { id: 'gta-iv',             title: 'Grand Theft Auto IV',      year: 2008, medium: 'Games',  region: 'uk', rating: '9', link: 'https://www.filmweb.pl/videogame/Grand+Theft+Auto+IV-2008-608436',   poster: POSTER('grandtheftautoIV.jpg') },
+  { id: 'life-is-strange',    title: 'Life is Strange',          year: 2015, medium: 'Games',  region: 'fr', rating: '8', link: 'https://www.filmweb.pl/videogame/Life+is+Strange-2015-720567',       poster: POSTER('lifeisstrange.webp') },
+  { id: 'max-payne-2',        title: 'Max Payne 2',              year: 2003, medium: 'Games',  region: 'fi', rating: '9', link: 'https://www.filmweb.pl/videogame/Max+Payne+2%3A+The+Fall+of+Max+Payne-2003-607024', poster: POSTER('maxpayne2.jpg') },
+  { id: 'tlou',               title: 'The Last of Us',           year: 2013, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/The+Last+of+Us-2013-642590',        poster: POSTER('TheLastofUs.jpg') },
+  { id: 'max-payne',          title: 'Max Payne',                year: 2001, medium: 'Games',  region: 'fi', rating: '10', link: 'https://www.filmweb.pl/videogame/Max+Payne-2001-607023',             poster: POSTER('MaxPayne.jpg') },
+  { id: 'undertale',          title: 'Undertale',                year: 2015, medium: 'Games',  region: 'us', rating: '9', link: 'https://www.filmweb.pl/videogame/Undertale-2015-715189',             poster: POSTER('undertale.png') },
+  { id: 'tlou2',              title: 'The Last of Us Part II',   year: 2020, medium: 'Games',  region: 'us', rating: '10', link: 'https://www.filmweb.pl/videogame/The+Last+of+Us+Part+II-2020-775468', poster: POSTER('thelastofuspart2.jpg') },
+
+  // ─────────── ANIMATED SERIES ───────────
+  { id: 'ldr',                title: 'Love, Death & Robots',     year: 2019, medium: 'Animated Series', region: 'us', rating: '10', link: 'https://www.filmweb.pl/serial/Mi%C5%82o%C5%9B%C4%87%2C+%C5%9Bmier%C4%87+i+roboty-2019-824633', poster: POSTER('LDR.jpg'), length: 1 },
+  { id: 'gits-sac',           title: 'Ghost in the Shell: SAC',  year: 2002, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Ghost+in+the+Shell%3A+Stand+Alone+Complex-2002-93085', poster: POSTER('GhostInTheShell.jpg'), length: 2 },
+  { id: 'fma-brotherhood',    title: 'Fullmetal Alchemist: Brotherhood', year: 2009, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Fullmetal+Alchemist%3A+Brotherhood-2009-495827', poster: POSTER('FullMetalAlchemist.jpg'), length: 3 },
+  { id: 'hellsing',           title: 'Hellsing Ultimate',        year: 2006, medium: 'Animated Series', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/serial/Hellsing-2006-248532', poster: POSTER('hellsing.jpg'), length: 1 },
+  { id: 'gurren-lagann',      title: 'Gurren Lagann',            year: 2007, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Tengen+Toppa+Gurren-Lagann-2007-380233', poster: POSTER('gurrenlagann.jpg'), length: 2 },
+  { id: 'cowboy-bebop',       title: 'Cowboy Bebop',             year: 1998, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Cowboy+Bebop-1998-98666', poster: POSTER('cowboybebop.jpg'), length: 2 },
+  { id: 'samurai-champloo',   title: 'Samurai Champloo',         year: 2004, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Samurai+champloo-2004-167103', poster: POSTER('samuraichamploo.jpg'), length: 2 },
+  { id: 'berserk',            title: 'Berserk (1997)',           year: 1997, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Kenp%C5%AB+Denki+Berserk-1997-98661', poster: POSTER('berserk.jpg'), length: 1 },
+  { id: 'trigun',             title: 'Trigun',                   year: 1998, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Trigun-1998-98878', poster: POSTER('trigun.jpg'), length: 2 },
+  { id: 'sonny-boy',          title: 'Sonny Boy',                year: 2021, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Sonny+Boy-2021-10017027', poster: POSTER('SonnyBoy.jpg'), length: 1 },
+  { id: 'macross-plus',       title: 'Macross Plus',             year: 1994, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Macross+Plus-1994-99320', poster: 'https://m.media-amazon.com/images/M/MV5BNWI0OGIwNTEtZDUyYS00YjBjLWEzM2ItYmFiNmQwZmI0MmRlXkEyXkFqcGdeQXVyOTUzMjk0NDE@._V1_UY268_CR3,0,182,268_AL_.jpg', length: 1 },
+  { id: 'terror-resonance',   title: 'Terror in Resonance',      year: 2014, medium: 'Animated Series', region: 'jp', rating: '7', link: 'https://www.filmweb.pl/serial/Zanky%C5%8D+no+Terror-2014-711692', poster: POSTER('terrorinrezonance.jpg'), length: 1 },
+  { id: 'steins-gate',        title: 'Steins;Gate',              year: 2011, medium: 'Animated Series', region: 'jp', rating: '7', link: 'https://www.filmweb.pl/serial/Steins+Gate-2011-597724', poster: POSTER('steinsgate.webp'), length: 2 },
+  { id: 'eizouken',           title: 'Keep Your Hands Off Eizouken!', year: 2020, medium: 'Animated Series', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/serial/Eiz%C5%8Dken+ni+wa+Te+o+Dasu+na-2020-846151', poster: POSTER('letsdoanimation.jpg'), length: 1 },
+  { id: 'mononoke',           title: 'Mononoke',                 year: 2007, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Mononoke-2007-426889', poster: POSTER('Mononoke.jpg'), length: 1 },
+  { id: 'flcl',               title: 'FLCL',                     year: 2000, medium: 'Animated Series', region: 'jp', rating: '7', link: 'https://www.filmweb.pl/serial/FLCL-2000-106022', poster: POSTER('flcl.jpg'), length: 1 },
+  { id: 'cyberpunk-edge',     title: 'Cyberpunk: Edgerunners',   year: 2022, medium: 'Animated Series', region: 'jp', rating: '7', link: 'https://www.filmweb.pl/serial/Cyberpunk%3A+Edgerunners-2022-856325', poster: POSTER('cyberpunkedge.jpg'), length: 1 },
+  { id: 'wonder-egg',         title: 'Wonder Egg Priority',      year: 2021, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Wonder+Egg+Priority-2021-871412', poster: POSTER('WonderEggPriority.jpg'), length: 1 },
+  { id: 'rick-and-morty',     title: 'Rick and Morty',           year: 2013, medium: 'Animated Series', region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Rick+i+Morty-2013-671074', poster: POSTER('RickandMorty.jpg'), length: 2 },
+  { id: 'short-circuit',      title: 'Short Circuit',            year: 2020, medium: 'Animated Series', region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Short+Circuit-2020-868051', poster: POSTER('shortcircuit.jpg'), length: 1 },
+  { id: 'avatar-tla',         title: 'Avatar: The Last Airbender', year: 2005, medium: 'Animated Series', region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Awatar%3A+Legenda+Aanga-2005-194037', poster: POSTER('Avatar.jpg'), length: 2 },
+  { id: 'tatami-galaxy',      title: 'The Tatami Galaxy',        year: 2010, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Yoj%C5%8D-Han+Shinwa+Taikei-2010-555640', poster: POSTER('tatamigalaxy.webp'), length: 1 },
+  { id: 'hilda',              title: 'Hilda',                    year: 2018, medium: 'Animated Series', region: 'uk', rating: '9', link: 'https://www.filmweb.pl/serial/Hilda-2018-800921', poster: POSTER('Hilda.jpg'), length: 1 },
+  { id: 'midnight-gospel',    title: 'The Midnight Gospel',      year: 2020, medium: 'Animated Series', region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/The+Midnight+Gospel-2020-850265', poster: POSTER('MidnightGospel.jpg'), length: 1 },
+  { id: 'korra',              title: 'The Legend of Korra',      year: 2012, medium: 'Animated Series', region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Legenda+Korry-2012-590629', poster: POSTER('LegendofKorra.jpg'), length: 2 },
+  { id: 'invincible',         title: 'Invincible',               year: 2021, medium: 'Animated Series', region: 'us', rating: '8', link: 'https://www.filmweb.pl/serial/Niezwyci%C4%99%C5%BCony-2021-862677', poster: POSTER('invincible.jpg'), length: 1 },
+  { id: 'elfen-lied',         title: 'Elfen Lied',               year: 2004, medium: 'Animated Series', region: 'jp', rating: '6', link: 'https://www.filmweb.pl/serial/Elfen+Lied-2004-226952', poster: POSTER('ElfenLied.jpg'), length: 1 },
+  { id: 'wolfs-rain',         title: "Wolf's Rain",              year: 2003, medium: 'Animated Series', region: 'jp', link: 'https://www.filmweb.pl/serial/Wolf%27s+Rain-2003-127898', poster: POSTER('wolfsrain.jpg'), length: 1 },
+  { id: 'aot',                title: 'Attack on Titan',          year: 2013, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Shingeki+no+Kyojin-2013-636227', poster: POSTER('AttackonTitan.jpg'), length: 3 },
+  { id: 'black-lagoon',       title: 'Black Lagoon',             year: 2006, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Black+Lagoon-2006-304751', poster: POSTER('BlackLagoon.jpg'), length: 1 },
+  { id: 'gunnm',              title: 'Battle Angel Alita (OVA)', year: 1993, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Gunnm-1993-95798', poster: POSTER('gunnm.webp'), length: 1 },
+  { id: 'eva',                title: 'Neon Genesis Evangelion',  year: 1995, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Neon+Genesis+Evangelion-1995-100434', poster: POSTER('neongenesis.webp'), length: 1 },
+  { id: 'ghost-hound',        title: 'Ghost Hound',              year: 2007, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Shinreigari%3A+Ghost+Hound-2007-426887', poster: POSTER('ghosthound.jpg'), length: 1 },
+  { id: 'scott-pilgrim',      title: 'Scott Pilgrim Takes Off',  year: 2023, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Scott+Pilgrim+zaskakuje-2023-10033460', poster: POSTER('scottpilgrim.jpg'), length: 1 },
+  { id: 'lain',               title: 'Serial Experiments Lain',  year: 1998, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Wirtualna+Lain-1998-98877', poster: POSTER('serialexperimentslain.jpg'), length: 1 },
+  { id: 'psycho-pass',        title: 'Psycho-Pass',              year: 2012, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Psycho-pass-2012-653085', poster: POSTER('PsychoPass.jpg'), length: 2 },
+  { id: 'haibane',            title: 'Haibane Renmei',           year: 2002, medium: 'Animated Series', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/serial/Stowarzyszenie+Szaropi%C3%B3rych-2002-129544', poster: POSTER('angels.jpg'), length: 1 },
+  { id: 'kino-journey',       title: "Kino's Journey",           year: 2017, medium: 'Animated Series', region: 'jp', link: 'https://www.filmweb.pl/serial/Kino+no+Tabi%3A+The+Beautiful+World-2017-794586', poster: POSTER('kinojourney.jpg'), length: 1 },
+  { id: 'scavengers-reign',   title: 'Scavengers Reign',         year: 2023, medium: 'Animated Series', region: 'us', rating: '9', link: 'https://www.filmweb.pl/serial/Scavengers+Reign-2023-10029337', poster: POSTER('ScavengersReign.webp'), length: 1 },
+  { id: 'paranoia-agent',     title: 'Paranoia Agent',           year: 2004, medium: 'Animated Series', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/serial/Paranoia+Agent-2004-162349', poster: POSTER('ParanoiaAgent.jpg'), length: 1 },
+  { id: 'made-in-abyss',      title: 'Made in Abyss',            year: 2017, medium: 'Animated Series', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/serial/Made+in+Abyss-2017-786999', poster: POSTER('MadeInAbyss.jpg'), length: 1 },
+  { id: 'opm',                title: 'One-Punch Man',            year: 2015, medium: 'Animated Series', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/serial/One-Punch+Man-2015-740929', poster: POSTER('onepunch.jpg'), length: 1 },
+  { id: 'kaiba',              title: 'Kaiba',                    year: 2008, medium: 'Animated Series', region: 'jp', rating: '10', link: 'https://www.filmweb.pl/serial/Kaiba-2008-470038', poster: POSTER('kaiba.jpg'), length: 1 },
+
+  // ─────────── FEATURE ANIMATION ───────────
+  { id: 'soul',               title: 'Soul',                     year: 2020, medium: 'Feature Animation', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/Co+w+duszy+gra-2020-836650', poster: POSTER('soul.jpg') },
+  { id: 'belladonna',         title: 'Belladonna of Sadness',    year: 1973, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Belladonna+smutku-1973-128976', poster: POSTER('belladonaofsadness.jpg') },
+  { id: 'ernest-celestine',   title: 'Ernest & Celestine',       year: 2012, medium: 'Feature Animation', region: 'fr', rating: '10', link: 'https://www.filmweb.pl/film/Ernest+i+Celestyna-2012-654784', poster: POSTER('ErnestandCelestine.jpg') },
+  { id: 'neo-tokyo',          title: 'Neo Tokyo',                year: 1987, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Labirynt+opowie%C5%9Bci-1987-201649', poster: POSTER('neotokyo.jpg') },
+  { id: 'tokyo-godfathers',   title: 'Tokyo Godfathers',         year: 2003, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Rodzice+chrzestni+z+Tokio-2003-107897', poster: POSTER('christmas.jpg') },
+  { id: 'jin-roh',            title: 'Jin-Roh: The Wolf Brigade', year: 1999, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Jin-R%C5%8D-1999-36919', poster: POSTER('jinroh.jpg') },
+  { id: 'peasants',           title: 'The Peasants',             year: 2023, medium: 'Feature Animation', region: 'pl', link: 'https://www.filmweb.pl/film/Ch%C5%82opi-2023-857962', poster: POSTER('chlopi.jpg') },
+  { id: 'redline',            title: 'Redline',                  year: 2009, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Redline-2009-512229', poster: POSTER('redline.jpg') },
+  { id: 'grave-fireflies',    title: 'Grave of the Fireflies',   year: 1988, medium: 'Feature Animation', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Grobowiec+%C5%9Bwietlik%C3%B3w-1988-34655', poster: POSTER('graveofthefireflies.webp') },
+  { id: 'laputa',             title: 'Castle in the Sky',        year: 1986, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Laputa+%E2%80%93+podniebny+zamek-1986-34654', poster: POSTER('Laputa.jpg') },
+  { id: 'wolfwalkers',        title: 'Wolfwalkers',              year: 2020, medium: 'Feature Animation', region: 'ie', rating: '8', link: 'https://www.filmweb.pl/film/Sekret+wilczej+gromady-2020-800312', poster: POSTER('wolfwalkers.webp') },
+  { id: 'watership-down',     title: 'Watership Down',           year: 1978, medium: 'Feature Animation', region: 'uk', rating: '8', link: 'https://www.filmweb.pl/film/Wzg%C3%B3rze+kr%C3%B3lik%C3%B3w-1978-11558', poster: POSTER('watershipdown.webp') },
+  { id: 'plague-dogs',        title: 'The Plague Dogs',          year: 1982, medium: 'Feature Animation', region: 'uk', rating: '8', link: 'https://www.filmweb.pl/film/The+Plague+Dogs-1982-10740', poster: POSTER('plaguedogs.webp') },
+  { id: 'angels-egg',         title: "Angel's Egg",              year: 1985, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Tenshi+no+tamago-1985-34450', poster: POSTER('angelsegg.webp') },
+  { id: 'waltz-bashir',       title: 'Waltz with Bashir',        year: 2008, medium: 'Feature Animation', region: 'il', rating: '8', link: 'https://www.filmweb.pl/film/Walc+z+Baszirem-2008-479844', poster: POSTER('walzwithbashir.jpg') },
+  { id: 'loving-vincent',     title: 'Loving Vincent',           year: 2017, medium: 'Feature Animation', region: 'pl', rating: '9', link: 'https://www.filmweb.pl/film/Tw%C3%B3j+Vincent-2017-698207', poster: POSTER('vincent.webp') },
+  { id: 'kite',               title: 'Kite',                     year: 1998, medium: 'Feature Animation', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Kite-1998-34361', poster: POSTER('Kite.jpg') },
+  { id: 'nightmare-christmas',title: 'The Nightmare Before Christmas', year: 1993, medium: 'Feature Animation', region: 'us', rating: '9', link: 'https://www.filmweb.pl/film/Miasteczko+Halloween-1993-7705', poster: POSTER('nightmarebeforechristmas.webp') },
+  { id: 'swallows-kabul',     title: 'The Swallows of Kabul',    year: 2019, medium: 'Feature Animation', region: 'fr', rating: '9', link: 'https://www.filmweb.pl/film/Jask%C3%B3%C5%82ki+z+Kabulu-2019-829461', poster: POSTER('kabul.webp') },
+  { id: 'tekkonkinkreet',     title: 'Tekkonkinkreet',           year: 2006, medium: 'Feature Animation', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Tekkonkinkreet-2006-350090', poster: POSTER('tekkon.jpg') },
+  { id: 'colorful',           title: 'Colorful',                 year: 2010, medium: 'Feature Animation', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Colorful-2010-563824', poster: POSTER('colorful.jpg') },
+  { id: 'konosuba',           title: 'KonoSuba: Legend of Crimson', year: 2019, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Kono+Subarashii+Sekai+ni+Shukufuku+o+Kurenai+Densetsu-2019-831928', poster: POSTER('konosuba.jpg') },
+  { id: 'mary-and-max',       title: 'Mary and Max',             year: 2009, medium: 'Feature Animation', region: 'au', rating: '9', link: 'https://www.filmweb.pl/film/Mary+i+Max-2009-479892', poster: POSTER('maryandmax.jpg') },
+  { id: 'zucchini',           title: 'My Life as a Zucchini',    year: 2016, medium: 'Feature Animation', region: 'ch', rating: '8', link: 'https://www.filmweb.pl/film/Nazywam+si%C4%99+Cukinia-2016-664117', poster: POSTER('Zuchini.jpg') },
+  { id: 'porco-rosso',        title: 'Porco Rosso',              year: 1992, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Szkar%C5%82atny+pilot-1992-34658', poster: POSTER('porcorosso.jpg') },
+  { id: 'pom-poko',           title: 'Pom Poko',                 year: 1994, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Szopy+w+natarciu-1994-111708', poster: POSTER('pompoko.jpg') },
+  { id: 'yamadas',            title: 'My Neighbors the Yamadas', year: 1999, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Rodzinka+Yamad%C3%B3w-1999-111709', poster: POSTER('Yamada.jpg') },
+  { id: 'mononoke-hime',      title: 'Princess Mononoke',        year: 1997, medium: 'Feature Animation', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Mononoke-1997-971', poster: POSTER('mononokehime.webp') },
+  { id: 'promare',            title: 'Promare',                  year: 2019, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Promare-2019-839338', poster: POSTER('promare.jpg') },
+  { id: 'gits-movie',         title: 'Ghost in the Shell',       year: 1995, medium: 'Feature Animation', region: 'jp', rating: '6', link: 'https://www.filmweb.pl/film/Ghost+in+the+Shell-1995-31866', poster: POSTER('GhostInTheShellMovie.jpg') },
+  { id: 'kaguya',             title: 'The Tale of Princess Kaguya', year: 2013, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Ksi%C4%99%C5%BCniczka+Kaguya-2013-560009', poster: POSTER('PrincessKaguya.jpg') },
+  { id: 'in-this-corner',     title: 'In This Corner of the World', year: 2016, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Kono+Sekai+no+Katasumi+ni-2016-746761', poster: POSTER('inthiscornerofthisworld.webp') },
+  { id: 'silent-voice',       title: 'A Silent Voice',           year: 2016, medium: 'Feature Animation', region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Koe+no+Katachi-2016-769531', poster: POSTER('asilentvoice.jpg') },
+  { id: 'your-name',          title: 'Your Name',                year: 2016, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Kimi+no+Na+wa.-2016-760082', poster: POSTER('yourname.webp') },
+  { id: 'nausicaa',           title: 'Nausicaä of the Valley of the Wind', year: 1984, medium: 'Feature Animation', region: 'jp', link: 'https://www.filmweb.pl/film/Nausica%C3%A4+z+Doliny+Wiatru-1984-34636', poster: POSTER('Nausicaa.jpg') },
+  { id: 'galactic-railroad',  title: 'Night on the Galactic Railroad', year: 1985, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Ginga+tetsud%C3%B4+no+yoru-1985-169073', poster: POSTER('galactic.webp') },
+  { id: 'metropolis',         title: 'Metropolis',               year: 2001, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Metropolis-2001-34220', poster: POSTER('metropolis.jpg') },
+  { id: 'memories',           title: 'Memories',                 year: 1995, medium: 'Feature Animation', region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Memories-1995-34359', poster: POSTER('memories.jpg') },
+  { id: 'spider-verse',       title: 'Across the Spider-Verse',  year: 2023, medium: 'Feature Animation', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/Spider+Man%3A+Poprzez+multiwersum-2023-842826', poster: POSTER('spiderverse.jpg') },
+  { id: 'fantasia',           title: 'Fantasia',                 year: 1940, medium: 'Feature Animation', region: 'us', rating: '10', link: 'https://www.filmweb.pl/film/Fantazja-1940-36316', poster: POSTER('fantasia.jpg') },
+
+  // ─────────── BOOKS ───────────
+  { id: 'limes-inferior',     title: 'Limes Inferior',           year: 1982, medium: 'Books',  region: 'pl', link: 'https://www.goodreads.com/book/show/2108205.Limes_inferior', poster: POSTER('Limesinferior.jpg'), length: 1 },
+  { id: 'punpun',             title: 'Goodnight Punpun',         year: 2007, medium: 'Books',  region: 'jp', link: 'https://www.goodreads.com/book/show/32918991-goodnight-punpun-omnibus-vol-7', poster: POSTER('punpun.jpg'), length: 3, note: 'Finished the last volume and sat in the dark for an hour. A graphic novel does not get to do this to you.' },
+  { id: 'illustrated-man',    title: 'The Illustrated Man',      year: 1951, medium: 'Books',  region: 'us', link: 'https://www.goodreads.com/book/show/24830.The_Illustrated_Man', poster: POSTER('theillustratedman.jpg'), length: 1 },
+  { id: 'velveteen-rabbit',   title: 'The Velveteen Rabbit',     year: 1922, medium: 'Books',  region: 'uk', link: 'https://www.goodreads.com/book/show/144974.The_Velveteen_Rabbit', poster: POSTER('velveteenrabbit.jpg'), length: 1 },
+  { id: '1001-nights',        title: 'One Thousand and One Nights', year: 800, medium: 'Books', region: 'other', link: 'https://www.goodreads.com/book/show/6971441-1001-arabian-nights', poster: 'https://dub01pap001files.storage.live.com/y4mNEJYgF7qALfomvY5_hFGZHrMvyXY4fz6-iSq5E2aLT2S0sfBSiHthXDgECkJbMXlXsuywT0tg6Q71So8rDJuVFyUNCU1Ll48O7DSVcr5s2bYk32dezBa7xS2tBDYfb57ZSMNmc-1PKDZ6oYEx7487Qpy2d3lKpXM56iFF5-_YZKP-sSfuclWFtLb16C9jV4B?width=259&height=400&cropmode=none', length: 3 },
+  { id: 'the-idiot',          title: 'The Idiot',                year: 1869, medium: 'Books',  region: 'ru', link: 'https://www.goodreads.com/book/show/12505.The_Idiot', poster: 'https://dub01pap001files.storage.live.com/y4mfSevJhOBNoepWfVzU3Bj4AAggITvDwq1SRPI2HyiPEH2EtWW9jKDiR4l1o9Hp4WQ5pLJ408bbJfREOL-fHua3gNNF_tc8obe8XZKUxobxj46jhr2BvfokvMgRz7cxQOFqkPJLHFfTbXXCERmY8UPjUoWaLMkrWSQn6WuqJRBwuU7EgpdWJ-ireca8pew0PQL?width=307&height=475&cropmode=none', length: 3 },
+  { id: 'heart-of-darkness',  title: 'Heart of Darkness',        year: 1899, medium: 'Books',  region: 'uk', link: 'https://www.goodreads.com/book/show/4900.Heart_of_Darkness', poster: 'https://dub01pap001files.storage.live.com/y4mIGrIhnoS5DPi35Q9Pq08sED3hjBcWBEKNhvxzSOuInded3Hbeus9uVfePeSzpEfPPftVwo6NeoXzsvTPVpjZriviuD-43oxZlSthXolJVSLUvZrkR-NGYAK7XvG9KJJzEoprzC6y4DGlziqYc4gu4P7T1H1YI-1K_iOc6xHwyC_Nurl5YRE6IbtCv9_OV6Tq?width=673&height=1024&cropmode=none', length: 1 },
+  { id: 'robot',              title: 'Robot (Lem)',              year: 1964, medium: 'Books',  region: 'pl', link: 'https://www.goodreads.com/book/show/16131728-robot', poster: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352148289l/16131728.jpg', length: 1 },
+  { id: 'fahrenheit',         title: 'Fahrenheit 451',           year: 1953, medium: 'Books',  region: 'us', link: 'https://www.goodreads.com/book/show/17470674-fahrenheit-451', poster: POSTER('fahrenheit451.jpg'), length: 1 },
+  { id: '1984',               title: '1984',                     year: 1949, medium: 'Books',  region: 'uk', link: 'https://www.goodreads.com/book/show/6606279-1984', poster: 'https://dub01pap001files.storage.live.com/y4mOxwO8N1rj3skmqvaYXLdit77yQ_duPCR3MR90DH6f_T0S790jSptrlTe7znihOE2GjA2DDe9eSjiUBHCj5RZLCOn22JkA6CGmBKnowPkeaBmr_VK0I-zc9XUqd9VsPApU6aE-s53IF5O3OD_I1FJh8KcynRCxvQZsZIQee-GLnNUtuYQa9QkZJb9tl9ngEwr?width=781&height=1024&cropmode=none', length: 2 },
+  { id: 'animal-farm',        title: 'Animal Farm',              year: 1945, medium: 'Books',  region: 'uk', link: 'https://www.goodreads.com/book/show/170448.Animal_Farm', poster: POSTER('animalfarm.jpg'), length: 1 },
+  { id: 'blood-of-elves',     title: 'Blood of Elves',           year: 1994, medium: 'Books',  region: 'pl', link: 'https://www.goodreads.com/book/show/6043781-blood-of-elves', poster: POSTER('wiedzminkrewelfow.jpg'), length: 2 },
+  { id: 'paradyzja',          title: 'Paradyzja',                year: 1984, medium: 'Books',  region: 'pl', link: 'https://www.goodreads.com/book/show/2099342.Paradyzja', poster: POSTER('paradyzja.jpg'), length: 1 },
+];
+
+// Default ordering: featured first, then by medium grouping, then by year desc.
+const MEDIA = ['Movies', 'TV', 'Games', 'Animated Series', 'Feature Animation', 'Books'];
+const MEDIA_SHORT = { 'Movies': 'FILM', 'TV': 'TV', 'Games': 'GAME', 'Animated Series': 'ANIM SER', 'Feature Animation': 'ANIM FILM', 'Books': 'BOOK' };
+const MEDIA_GLYPH = { 'Movies': 'F', 'TV': 'T', 'Games': 'G', 'Animated Series': 'A', 'Feature Animation': 'A', 'Books': 'B' };
+
+// ─────────────────────────────────────────────────────────────────────────
+// PICK ONE FOR ME
+//
+// The "Pick one for me" button picks at random from this list. Add or remove
+// item ids freely. By default, anything that has a `note` is included; the
+// extras below let you surface picks that don't have a note yet.
+// ─────────────────────────────────────────────────────────────────────────
+const PICKABLE_IDS = [
+  // Movies
+  'age-of-success', 'walkabout', 'fight-club', 'ikiru', 'la-haine',
+  'come-and-see', '2001-space', 'cinema-paradiso', 'tar', 'oldboy',
+  'burning', 'three-colors-white', 'apocalypse-now',
+  // TV
+  'dekalog', 'twin-peaks', 'the-wire', 'sopranos', 'mad-men',
+  'breaking-bad', 'six-feet-under', 'better-call-saul', 'severance',
+  // Games
+  'spec-ops', 'edith-finch', 'tlou', 'bioshock', 'ico',
+  // Animated Series
+  'cowboy-bebop', 'lain', 'eva', 'gits-sac', 'avatar-tla',
+  'scavengers-reign',
+  // Feature Animation
+  'grave-fireflies', 'angels-egg', 'mononoke-hime', 'gits-movie',
+  // Books
+  'punpun', '1984',
+];
+
+// ─────────────────────────────────────────────────────────────────────────
+// Spine coloring
+//
+// In Spines / Mix mode each spine gets a color. If an item has a `region`,
+// the regional palette is used; otherwise the spine is colored by the
+// item's decade. Edit either map to retune the library's overall feeling.
+// ─────────────────────────────────────────────────────────────────────────
+const REGION_COLORS = {
+  pl:    '#7a3526',  // Polish — warm brick red
+  jp:    '#2b3a52',  // Japanese — deep indigo
+  kr:    '#3a5942',  // Korean — pine green
+  us:    '#604832',  // American — saddle brown
+  uk:    '#4a3a5b',  // British — aubergine
+  fr:    '#5b3a4a',  // French — burgundy
+  it:    '#7a4a2a',  // Italian — terracotta
+  de:    '#3b3b3b',  // German — graphite
+  su:    '#5e2424',  // Soviet — oxblood
+  ru:    '#5a4e2e',  // Russian — antique gold
+  au:    '#8a5a26',  // Australian — red-earth ochre
+  ca:    '#9c3b3b',  // Canadian — maple red
+  ie:    '#24503a',  // Irish — emerald
+  il:    '#34597e',  // Israeli — azure
+  se:    '#2f6068',  // Swedish — teal
+  fi:    '#4a6e86',  // Finnish — steel blue
+  ch:    '#8f4038',  // Swiss — red clay
+  eu:    '#4b5b40',  // Other European — olive
+  other: '#3d3d3d',  // Other / unknown
+};
+
+const DECADE_COLORS = {
+  1800: '#3a3328', 1900: '#3a3328',
+  1920: '#42332a', 1930: '#4a3a2c',
+  1940: '#5b3f30', 1950: '#6b4a3a',
+  1960: '#5b4a3a', 1970: '#4a4a5b',
+  1980: '#3a4a5b', 1990: '#3a5b4a',
+  2000: '#4a5b3a', 2010: '#5b4a3a',
+  2020: '#5b3a3a',
+};
+
+window.CULTURE = {
+  ITEMS,
+  MEDIA, MEDIA_SHORT, MEDIA_GLYPH,
+  PICKABLE_IDS,
+  REGION_COLORS, DECADE_COLORS,
+};

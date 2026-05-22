@@ -15,19 +15,22 @@
         '       e=texture2D(tS,v+vec2(px,0.)).rg,',
         '       w=texture2D(tS,v-vec2(px,0.)).rg;',
         '  vec2 st=c*.5+(n+s+e+w)*.125;',
-        '  st*=.975;',
+        '  st*=.995;',
         '  vec2 d=uM-uP,diff=v-uM;diff.x*=uA;',
-        '  st+=d*exp(-dot(diff,diff)*55.)*12.;',
+        '  st+=d*exp(-dot(diff,diff)*55.)*5.;',
         '  gl_FragColor=vec4(st,0.,1.);',
         '}'
     ].join('');
 
+    // Canvas is transparent where distortion is near zero — image + tilt show through underneath
     var DRAW_FRAG = [
         'precision highp float;',
         'uniform sampler2D tI,tS;varying vec2 v;',
         'void main(){',
         '  vec2 d=texture2D(tS,v).rg*.08;',
-        '  gl_FragColor=texture2D(tI,clamp(v+d,0.,1.));',
+        '  float a=clamp(length(d)*8.,0.,1.);',
+        '  vec4 c=texture2D(tI,clamp(v+d,0.,1.));',
+        '  gl_FragColor=vec4(c.rgb*a,a);',
         '}'
     ].join('');
 
@@ -65,7 +68,6 @@
         var link = imgEl.closest('a.darken');
         if (!link) return;
 
-        // All state lives here; WebGL is created lazily on first hover
         var canvas = null, gl = null;
         var fbos, simProg, drawProg, quad, iTex, ping = 0;
         var imgReady = false;
@@ -77,19 +79,20 @@
             initialized = true;
 
             canvas = document.createElement('canvas');
-            // Fixed in <body> — bypasses the collapsed inline <a> containing-block problem
-            // and stays clear of Swiper's transformed .swiper-wrapper ancestor
-            canvas.style.cssText = 'position:fixed;pointer-events:none;opacity:0;transition:opacity .4s;z-index:9000;';
+            // z-index 1041: below Magnific backdrop (1042) so popups render above
+            // opacity 1 always — WebGL per-pixel alpha controls what's visible
+            canvas.style.cssText = 'position:fixed;pointer-events:none;opacity:1;z-index:1041;';
             document.body.appendChild(canvas);
 
-            gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+            gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: true }) ||
+                 canvas.getContext('experimental-webgl', { alpha: true, premultipliedAlpha: true });
             if (!gl) { canvas.remove(); canvas = null; failed = true; return; }
 
             var floatExt = gl.getExtension('OES_texture_float');
             if (!floatExt) { canvas.remove(); canvas = null; failed = true; return; }
             gl.getExtension('OES_texture_float_linear');
 
-            simProg = mkProg(gl, VERT, SIM_FRAG);
+            simProg  = mkProg(gl, VERT, SIM_FRAG);
             drawProg = mkProg(gl, VERT, DRAW_FRAG);
 
             quad = gl.createBuffer();
@@ -114,17 +117,20 @@
             }
 
             function tryLoad() {
-                // Try the existing img element directly — works for same-origin with no extra request
-                try {
-                    upload(imgEl);
-                } catch (e) {
-                    // CORS-tainted: reload with crossOrigin so WebGL can read it
-                    var p = new Image();
-                    p.crossOrigin = 'anonymous';
-                    p.onload = function () { upload(p); };
-                    p.onerror = function () { canvas.remove(); canvas = null; failed = true; };
-                    p.src = imgEl.src;
+                if (location.protocol === 'file:') { failed = true; return; }
+
+                var crossOrigin = false;
+                try { crossOrigin = new URL(imgEl.src).origin !== location.origin; } catch (e) {}
+
+                if (!crossOrigin) {
+                    try { upload(imgEl); return; } catch (e) { /* fall through to CORS path */ }
                 }
+
+                var p = new Image();
+                p.crossOrigin = 'anonymous';
+                p.onload  = function () { upload(p); };
+                p.onerror = function () { failed = true; };
+                p.src = imgEl.src;
             }
 
             if (imgEl.complete && imgEl.naturalWidth > 0) {
@@ -134,14 +140,25 @@
             }
         }
 
-        // Sync canvas position + internal resolution to where the img actually is on screen
         function syncCanvas() {
+            // Read tilt.js inline transform (perspective/rotateX/Y) — excludes CSS scale(0.75)
+            var tiltT = imgEl.style.transform;
+
+            // Temporarily apply identity so getBoundingClientRect gives the pre-rotation natural
+            // rect — this is the correct center for tilt.js to rotate around (50% 50% of natural size)
+            imgEl.style.transform = 'scale3d(1,1,1)';
             var r = imgEl.getBoundingClientRect();
+            imgEl.style.transform = tiltT; // restore tilt (or empty → CSS scale(0.75) takes over)
+
             if (!r.width || !r.height) return;
-            canvas.style.left   = r.left + 'px';
-            canvas.style.top    = r.top  + 'px';
+            canvas.style.left   = r.left   + 'px';
+            canvas.style.top    = r.top    + 'px';
             canvas.style.width  = r.width  + 'px';
             canvas.style.height = r.height + 'px';
+            // Tilt active → use inline tilt transform; idle → mirror CSS scale(0.75) so sizes match
+            var t = tiltT || window.getComputedStyle(imgEl).transform;
+            canvas.style.transform       = (t && t !== 'none') ? t : '';
+            canvas.style.transformOrigin = '50% 50%';
             var dpr = window.devicePixelRatio || 1;
             var w = Math.max(1, r.width  * dpr | 0);
             var h = Math.max(1, r.height * dpr | 0);
@@ -161,17 +178,8 @@
             if (!canvas) return;
             if (!imgReady) { raf = requestAnimationFrame(frame); return; }
 
-            // First ready frame — swap visibility
-            if (active && canvas.style.opacity === '0') {
-                syncCanvas();
-                canvas.style.opacity = '1';
-                imgEl.style.opacity  = '0';
-            }
-
-            // Linger: keep running until effect decays, then clean up
-            if (!active && Date.now() - lastActive > 3500) {
-                canvas.style.opacity = '0';
-                imgEl.style.opacity  = '';
+            // Keep running until distortion has fully decayed
+            if (!active && Date.now() - lastActive > 10000) {
                 raf = null;
                 return;
             }
@@ -194,9 +202,11 @@
             gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
             ping = 1 - ping;
 
-            // Display pass
+            // Display pass — clear to transparent, then render distortion with alpha
             gl.bindFramebuffer(gl.FRAMEBUFFER, null);
             gl.viewport(0, 0, canvas.width, canvas.height);
+            gl.clearColor(0, 0, 0, 0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
             gl.useProgram(drawProg);
             gl.bindBuffer(gl.ARRAY_BUFFER, quad);
             setAttr(drawProg);
@@ -216,13 +226,9 @@
             if (failed) return;
             if (!initialized) initGL();
             if (!canvas) return;
+            syncCanvas(); // position once on enter; not per-frame so tilt doesn't cause 2D drift
             active = true;
             lastActive = Date.now();
-            if (imgReady) {
-                syncCanvas();
-                canvas.style.opacity = '1';
-                imgEl.style.opacity  = '0';
-            }
             if (!raf) frame();
         });
 
