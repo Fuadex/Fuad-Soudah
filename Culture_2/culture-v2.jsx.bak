@@ -139,28 +139,6 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .mode-toggle button .reroll { transition: transform .4s cubic-bezier(.2,.7,.3,1); }
 .mode-toggle button.spinning .reroll { transform: rotate(360deg); }
 
-/* sort dropdown */
-.sort-select {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  background-color: rgba(255,255,255,.02);
-  color: var(--ink-soft);
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  padding: 8px 30px 8px 14px;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Cpath d='M2 4l3 3 3-3' stroke='%23a89e87' fill='none' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  transition: color .15s, border-color .15s;
-}
-.sort-select:hover { color: var(--ink); border-color: var(--ink-faint); }
-.sort-select option { background: var(--bg-2); color: var(--ink); }
-
 /* ───── INTRO ───── */
 .intro {
   padding: 28px 56px 6px;
@@ -212,14 +190,6 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .shelf-scroll::-webkit-scrollbar { display: none; }
 .shelf-scroll.dragging { cursor: grabbing; user-select: none; }
 .shelf-scroll.dragging * { pointer-events: none; }
-
-/* sort/filter change — quick, GPU-cheap fade (animates the scroller, not the
-   hundreds of items inside it) so large shelves re-order without popping. */
-@keyframes sort-fade {
-  0%   { opacity: .12; transform: translateY(6px); }
-  100% { opacity: 1;   transform: translateY(0); }
-}
-.shelf.sorting .shelf-scroll { animation: sort-fade .4s cubic-bezier(.2,.7,.3,1); }
 
 .shelf-rail::after,
 .shelf-rail::before {
@@ -538,7 +508,7 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   background: rgba(8, 6, 4, 0.72);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  z-index: 5000;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -564,23 +534,6 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .reader-backdrop.on .reader { transform: translateY(0) scale(1); opacity: 1; }
 .reader-poster { position: relative; background: #222; }
 .reader-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.poster-fallback {
-  position: absolute; inset: 0;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 12px; padding: 28px; text-align: center;
-  background:
-    radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.10), transparent 60%),
-    linear-gradient(160deg, color-mix(in oklab, var(--pf-bg, #2a2520) 82%, #ffffff 8%), var(--pf-bg, #2a2520));
-}
-.poster-fallback .pf-title {
-  font-family: var(--serif); font-style: italic; font-weight: 500;
-  font-size: 28px; line-height: 1.12; color: rgba(255,255,255,.94);
-  text-shadow: 0 1px 3px rgba(0,0,0,.45); overflow-wrap: break-word;
-}
-.poster-fallback .pf-meta {
-  font-family: var(--mono); font-size: 10px; letter-spacing: .2em;
-  text-transform: uppercase; color: rgba(255,255,255,.62);
-}
 .reader-body {
   padding: 36px 38px 32px;
   display: flex;
@@ -612,9 +565,7 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   text-transform: uppercase;
   color: #6a6052;
   display: flex;
-  flex-wrap: wrap;
   gap: 12px;
-  row-gap: 6px;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -704,11 +655,6 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 .reader-adjacent .row a:hover { transform: translateY(-3px); }
 .reader-adjacent .row a img { width:100%; height:100%; object-fit:cover; display:block; }
-.reader-adjacent .row a .thumb-fallback {
-  width:100%; height:100%; display:flex; align-items:center; justify-content:center;
-  font-family: var(--mono); font-size: 12px; font-weight: 600;
-  color: rgba(255,255,255,.82); background: var(--pf-bg, #2a2520);
-}
 
 /* ───── FOOTER ───── */
 .site-foot {
@@ -765,21 +711,11 @@ function spineBandColor() {
 }
 
 function spineWidth(item) {
-  // Series thickness scales with the number of seasons released.
-  if (item.medium === 'TV' || item.medium === 'Animated Series') {
-    if (item.seasons) {
-      const s = Math.max(1, item.seasons);
-      return Math.max(18, Math.min(46, 18 + (s - 1) * 3));
-    }
-    if (item.length === 3) return 32;
-    if (item.length === 2) return 26;
-    if (item.length === 1) return 20;
-    return 24;
-  }
   if (item.length === 3) return 32;
   if (item.length === 2) return 26;
   if (item.length === 1) return 20;
   if (item.medium === 'Books') return 24;
+  if (item.medium === 'TV' || item.medium === 'Animated Series') return 26;
   return 22;
 }
 
@@ -802,29 +738,8 @@ function externalServiceName(link) {
   return 'Filmweb';
 }
 
-// Region code → display name (popup + sort).
-const REGION_NAMES = {
-  pl:'Poland', jp:'Japan', kr:'South Korea', us:'United States', uk:'United Kingdom',
-  fr:'France', it:'Italy', de:'Germany', su:'Soviet Union', ru:'Russia', au:'Australia',
-  ca:'Canada', ie:'Ireland', il:'Israel', se:'Sweden', fi:'Finland', ch:'Switzerland',
-  eu:'Europe', other:'Other',
-  es:'Spain', nl:'Netherlands', dk:'Denmark', cz:'Czechia', hu:'Hungary', bg:'Bulgaria', hr:'Croatia',
-};
-function regionName(code) { return REGION_NAMES[code] || null; }
-
-// Sort a list by the chosen key. Stable-ish with title tiebreak.
-function sortItems(arr, sort) {
-  const byTitle = (a, b) => a.title.localeCompare(b.title);
-  const list = [...arr];
-  if (sort === 'az')           list.sort(byTitle);
-  else if (sort === 'year')    list.sort((a, b) => (b.year || 0) - (a.year || 0) || byTitle(a, b));
-  else if (sort === 'rating')  list.sort((a, b) => (parseFloat(b.rating) || -1) - (parseFloat(a.rating) || -1) || byTitle(a, b));
-  else if (sort === 'country') list.sort((a, b) => (regionName(a.region) || '~').localeCompare(regionName(b.region) || '~') || byTitle(a, b));
-  return list;
-}
-
 // ─────────── Shelf row ───────────
-function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPickedId, pickedSet }) {
+function ShelfRow({ medium, items, idx, mode, mixSeed, onOpenItem, justPickedId, pickedSet }) {
   const { MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [hoverIdx, setHoverIdx] = React.useState(-1);
   const [popupPos, setPopupPos] = React.useState(null);
@@ -839,21 +754,14 @@ function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPic
   // the rank-0 (most-important) data row sits visually in the middle of
   // the shelf with the rest fanning symmetrically outward.
   const ordered = React.useMemo(() => {
-    // Covers shows only favorites; spines / mix show the whole library.
-    const base = mode === 'covers' ? items.filter(i => i.favorite) : items;
-    const arr = base.map((it, i) => ({ ...it, _rank: i }));
-    if (sort && sort !== 'curated') {
-      // Explicit sort → linear, left-aligned, no centre piece.
-      return sortItems(arr, sort).map(it => ({ ...it, _rank: -1 }));
-    }
+    const arr = items.map((it, i) => ({ ...it, _rank: i }));
     return mode === 'spines' ? arr : centerOrder(arr);
-  }, [items, mode, sort]);
+  }, [items, mode]);
 
   // For mix mode, decide cover vs spine deterministically per (id, seed).
   // The rank-0 item is always shown as a cover so the centre piece reads.
   const isSpineFor = React.useCallback((item) => {
     if (mode === 'spines') return true;
-    if (!item.favorite) return true;        // imports never expand into covers
     if (mode === 'covers') return false;
     if (item._rank === 0) return false;
     return (hash(item.id, mixSeed) % 3) !== 0;
@@ -970,20 +878,6 @@ function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPic
     el.scrollTo({ left: el.scrollLeft + offset, behavior: 'smooth' });
   }, [justPickedId, items]);
 
-  // Subtle fade when the active sort changes; cheap because it animates the
-  // scroller container, not each of the (potentially hundreds of) spines.
-  const [sorting, setSorting] = React.useState(false);
-  const prevSort = React.useRef(sort);
-  React.useEffect(() => {
-    if (prevSort.current === sort) return;
-    prevSort.current = sort;
-    setSorting(true);
-    const el = scrollerRef.current;
-    if (el) { if (sort === 'curated') centerOnRankZero(false); else el.scrollTo({ left: 0 }); }
-    const t = setTimeout(() => setSorting(false), 420);
-    return () => clearTimeout(t);
-  }, [sort, centerOnRankZero]);
-
   const handleEnter = (i, el) => {
     if (dragRef.current.down) return;
     setHoverIdx(i);
@@ -1026,7 +920,7 @@ function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPic
   const isPicking = !!justPickedId && hoverIdx < 0 && items.some(i => i.id === justPickedId);
 
   return (
-    <section className={`shelf${hoverIdx >= 0 ? ' is-focused' : ''}${isPicking ? ' is-picking' : ''}${sorting ? ' sorting' : ''}`}>
+    <section className={`shelf${hoverIdx >= 0 ? ' is-focused' : ''}${isPicking ? ' is-picking' : ''}`}>
       <div className="shelf-head">
         <span className="num">{String(idx + 1).padStart(2, '0')}</span>
         <span className="name">{medium}</span>
@@ -1142,10 +1036,6 @@ function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
         <span>{item.year}</span>
         {item.rating ? <span>·</span> : null}
         {item.rating ? <span>★ {item.rating}/10</span> : null}
-        {regionName(item.region) ? <span>·</span> : null}
-        {regionName(item.region) ? <span>{regionName(item.region)}</span> : null}
-        {item.seasons ? <span>·</span> : null}
-        {item.seasons ? <span>{item.seasons} {item.seasons > 1 ? 'seasons' : 'season'}</span> : null}
       </div>
       <div className="t">{item.title}</div>
       {item.note
@@ -1158,7 +1048,7 @@ function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
 
 // ─────────── Reader Modal ───────────
 function Reader({ item, onClose, onJump }) {
-  const { ITEMS, MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
+  const { ITEMS, MEDIA_SHORT } = window.CULTURE;
   const [on, setOn] = React.useState(false);
   React.useEffect(() => {
     requestAnimationFrame(() => setOn(true));
@@ -1187,21 +1077,13 @@ function Reader({ item, onClose, onJump }) {
           </svg>
         </button>
         <div className="reader-poster">
-          {item.poster
-            ? <img src={item.poster} alt={item.title}/>
-            : <div className="poster-fallback" style={{ '--pf-bg': spineBodyColor(item) }}>
-                <span className="pf-title">{item.title}</span>
-                <span className="pf-meta">{MEDIA_SHORT[item.medium]} · {item.year}</span>
-              </div>}
+          <img src={item.poster} alt={item.title}/>
         </div>
         <div className="reader-body">
           <div className="reader-meta">
             <span>{MEDIA_SHORT[item.medium]}</span>
             <span className="sep"/>
             <span>{item.year}</span>
-            {regionName(item.region) ? <React.Fragment><span className="sep"/><span>{regionName(item.region)}</span></React.Fragment> : null}
-            {item.seasons ? <React.Fragment><span className="sep"/><span>{item.seasons} {item.seasons > 1 ? 'seasons' : 'season'}</span></React.Fragment> : null}
-            {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
             <span className="sep"/>
             <span>№ {String(posInMedium).padStart(3,'0')} of {String(inMedium.length).padStart(3,'0')}</span>
           </div>
@@ -1209,15 +1091,13 @@ function Reader({ item, onClose, onJump }) {
           <div className="reader-where">Fuad's library &nbsp;/&nbsp; {item.medium}</div>
           {item.note
             ? <blockquote className="reader-quote">{item.note}</blockquote>
-            : <blockquote className="reader-quote empty">{item.favorite ? 'A note for this one is on the to-write list.' : 'From the wider library — no personal note yet.'}</blockquote>}
+            : <blockquote className="reader-quote empty">A note for this one is on the to-write list.</blockquote>}
           <div className="reader-adjacent">
             <div className="lbl">Nearby on the same shelf</div>
             <div className="row">
               {adjacent.map(a => (
                 <a key={a.id} onClick={() => onJump(a)} title={`${a.title} (${a.year})`}>
-                  {a.poster
-                    ? <img src={a.poster} alt=""/>
-                    : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
+                  <img src={a.poster} alt=""/>
                 </a>
               ))}
             </div>
@@ -1239,19 +1119,11 @@ function Reader({ item, onClose, onJump }) {
 
 // ─────────── App ───────────
 function App() {
-  const { MEDIA, PICKABLE_IDS } = window.CULTURE;
-  const ITEMS = React.useMemo(() => {
-    const seasons = window.CULTURE_SEASONS || {};
-    const favs = window.CULTURE.ITEMS.map(i =>
-      (seasons[i.id] && !i.seasons) ? { ...i, seasons: seasons[i.id] } : i
-    );
-    return favs.concat(window.CULTURE_IMPORTS || []);
-  }, []);
+  const { ITEMS, MEDIA, PICKABLE_IDS } = window.CULTURE;
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
   const [pickedSet, setPickedSet] = React.useState(() => new Set());
   const [mode, setMode] = React.useState('covers');
-  const [sort, setSort] = React.useState('curated');
   const [mixSeed, setMixSeed] = React.useState(1);
   const [spinning, setSpinning] = React.useState(false);
 
@@ -1351,13 +1223,6 @@ function App() {
                 </svg>
               </button>
             </div>
-            <select className="sort-select" value={sort} onChange={(e) => setSort(e.target.value)} title="Sort titles">
-              <option value="curated">Curated</option>
-              <option value="az">A–Z</option>
-              <option value="year">Release date</option>
-              <option value="country">Country</option>
-              <option value="rating">Rating</option>
-            </select>
             <button className="btn-pick" onClick={pickOne}>
               <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
                 <rect x="1" y="1" width="9" height="9" rx="1.5" stroke="currentColor"/>
@@ -1386,7 +1251,6 @@ function App() {
           items={s.items}
           idx={i}
           mode={mode}
-          sort={sort}
           mixSeed={mixSeed}
           onOpenItem={setOpenItem}
           justPickedId={justPickedId}
