@@ -809,6 +809,7 @@ const REGION_NAMES = {
   ca:'Canada', ie:'Ireland', il:'Israel', se:'Sweden', fi:'Finland', ch:'Switzerland',
   eu:'Europe', other:'Other',
   es:'Spain', nl:'Netherlands', dk:'Denmark', cz:'Czechia', hu:'Hungary', bg:'Bulgaria', hr:'Croatia',
+  gr:'Greece', br:'Brazil',
 };
 function regionName(code) { return REGION_NAMES[code] || null; }
 
