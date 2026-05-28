@@ -228,6 +228,19 @@ const ITEMS = [
   { id: 'animal-farm',        title: 'Animal Farm',              year: 1945, medium: 'Books',  favorite: true, region: 'uk', link: 'https://www.goodreads.com/book/show/170448.Animal_Farm', poster: POSTER('animalfarm.jpg'), length: 1 },
   { id: 'blood-of-elves',     title: 'Blood of Elves',           year: 1994, medium: 'Books',  favorite: true, region: 'pl', link: 'https://www.goodreads.com/book/show/6043781-blood-of-elves', poster: POSTER('wiedzminkrewelfow.jpg'), length: 2 },
   { id: 'paradyzja',          title: 'Paradyzja',                year: 1984, medium: 'Books',  favorite: true, region: 'pl', link: 'https://www.goodreads.com/book/show/2099342.Paradyzja', poster: POSTER('paradyzja.jpg'), length: 1 },
+
+  // ─────────── SHORTS ───────────
+  { id: 'pierwsza-milosc', title: 'Pierwsza miłość',         year: 1974, medium: 'Shorts', favorite: true, region: 'pl', rating: '9' },
+  { id: 'urzad',           title: 'Urząd',                   year: 1966, medium: 'Shorts', favorite: true, region: 'pl', rating: '9' },
+  { id: 'siec',            title: 'Sieć',                    year: 1979, medium: 'Shorts', favorite: true, region: 'pl' },
+  { id: 'linia-zycia',     title: 'Linia życia',             year: 1985, medium: 'Shorts', favorite: true, region: 'pl' },
+  { id: 'odrzucone',       title: 'Odrzucone',               year: 2000, medium: 'Shorts', favorite: true, region: 'us', rating: '8' },
+  { id: 'tori-no-uta',     title: 'Tori no Uta',             year: 2007, medium: 'Shorts', favorite: true, region: 'jp', rating: '8' },
+  { id: 'hinterland',      title: 'Hinterland',              year: 2010, medium: 'Shorts', favorite: true, rating: '8' },
+  { id: 'solo-na-ugorze',  title: 'Solo na ugorze',          year: 1981, medium: 'Shorts', favorite: true, region: 'pl', rating: '8' },
+  { id: 'skaly',           title: 'Skały',                   year: 2003, medium: 'Shorts', favorite: true, region: 'de' },
+  { id: 'in-the-fall',     title: 'In the Fall',             year: 2011, medium: 'Shorts', favorite: true, rating: '8' },
+  { id: 'premier-automne', title: 'Premier Automne',         year: 2013, medium: 'Shorts', favorite: true, region: 'fr', rating: '10' },
 ];
 
 // Default ordering: featured first, then by medium grouping, then by year desc.
@@ -802,6 +815,266 @@ const CREATORS = {
   'imp-g-606824':   {                                     studio: '2K Czech' },
   'imp-g-608247':   {                                     studio: 'Crytek' },
   'imp-g-611682':   {                                     studio: 'Looking Glass Studios' },
+
+  // ─── SHORTS ───
+  'pierwsza-milosc': { director: 'Krzysztof Kieślowski' },
+  'urzad':           { director: 'Krzysztof Kieślowski' },
+  'odrzucone':       { director: 'Don Hertzfeldt' },
+  'premier-automne': { director: 'Carlos de Carvalho' },
+  'skaly':           { director: 'Chris Stenner' },
+
+  // ─── IMPORTS · FILMS · PIXAR ───
+  'imp-f-toy-story':                            { director: 'John Lasseter',                  studio: 'Pixar' },
+  'imp-f-toy-story-2':                          { director: 'John Lasseter',                  studio: 'Pixar' },
+  'imp-f-toy-story-3':                          { director: 'Lee Unkrich',                    studio: 'Pixar' },
+  'imp-f-toy-story-4':                          { director: 'Josh Cooley',                    studio: 'Pixar' },
+  'imp-f-up':                                   { director: 'Pete Docter',                    studio: 'Pixar' },
+  'imp-f-inside-out':                           { director: 'Pete Docter',                    studio: 'Pixar' },
+  'imp-f-coco':                                 { director: 'Lee Unkrich',                    studio: 'Pixar' },
+  'imp-f-ratatouille':                          { director: 'Brad Bird',                      studio: 'Pixar' },
+  'imp-f-the-incredibles':                      { director: 'Brad Bird',                      studio: 'Pixar' },
+  'imp-f-incredibles-2':                        { director: 'Brad Bird',                      studio: 'Pixar' },
+  'imp-f-finding-nemo':                         { director: 'Andrew Stanton',                 studio: 'Pixar' },
+  'imp-f-finding-dory':                         { director: 'Andrew Stanton',                 studio: 'Pixar' },
+  'imp-f-brave':                                { director: 'Mark Andrews',                   studio: 'Pixar' },
+  'imp-f-onward':                               { director: 'Dan Scanlon',                    studio: 'Pixar' },
+  'imp-f-luca':                                 { director: 'Enrico Casarosa',                studio: 'Pixar' },
+  'imp-f-turning-red':                          { director: 'Domee Shi',                      studio: 'Pixar' },
+  'imp-f-lightyear':                            { director: 'Angus MacLane',                  studio: 'Pixar' },
+  'imp-f-cars':                                 { director: 'John Lasseter',                  studio: 'Pixar' },
+  'imp-f-cars-2':                               { director: 'John Lasseter',                  studio: 'Pixar' },
+  'imp-f-cars-3':                               { director: 'Brian Fee',                      studio: 'Pixar' },
+  'imp-f-monsters-inc':                         { director: 'Pete Docter',                    studio: 'Pixar' },
+  'imp-f-monsters-university':                  { director: 'Dan Scanlon',                    studio: 'Pixar' },
+  'imp-f-a-bug-s-life':                         { director: 'John Lasseter',                  studio: 'Pixar' },
+
+  // ─── IMPORTS · FILMS · WALT DISNEY ANIMATION ───
+  'imp-f-frozen':                               { director: 'Chris Buck',                     studio: 'Walt Disney Animation' },
+  'imp-f-frozen-ii':                            { director: 'Chris Buck',                     studio: 'Walt Disney Animation' },
+  'imp-f-zootopia':                             { director: 'Byron Howard',                   studio: 'Walt Disney Animation' },
+  'imp-f-moana':                                { director: 'Ron Clements',                   studio: 'Walt Disney Animation' },
+  'imp-f-encanto':                              { director: 'Byron Howard',                   studio: 'Walt Disney Animation' },
+  'imp-f-big-hero-6':                           { director: 'Don Hall',                       studio: 'Walt Disney Animation' },
+  'imp-f-wreck-it-ralph':                       { director: 'Rich Moore',                     studio: 'Walt Disney Animation' },
+  'imp-f-ralph-breaks-the-internet':            { director: 'Rich Moore',                     studio: 'Walt Disney Animation' },
+  'imp-f-tangled':                              { director: 'Nathan Greno',                   studio: 'Walt Disney Animation' },
+  'imp-f-bolt':                                 { director: 'Byron Howard',                   studio: 'Walt Disney Animation' },
+  'imp-f-the-princess-and-the-frog':            { director: 'Ron Clements',                   studio: 'Walt Disney Animation' },
+  'imp-f-the-lion-king':                        { director: 'Roger Allers',                   studio: 'Walt Disney Animation' },
+  'imp-f-the-lion-king-1994':                   { director: 'Roger Allers',                   studio: 'Walt Disney Animation' },
+  'imp-f-aladdin':                              { director: 'Ron Clements',                   studio: 'Walt Disney Animation' },
+  'imp-f-beauty-and-the-beast':                 { director: 'Gary Trousdale',                 studio: 'Walt Disney Animation' },
+  'imp-f-the-little-mermaid':                   { director: 'Ron Clements',                   studio: 'Walt Disney Animation' },
+  'imp-f-hercules':                             { director: 'Ron Clements',                   studio: 'Walt Disney Animation' },
+  'imp-f-mulan':                                { director: 'Tony Bancroft',                  studio: 'Walt Disney Animation' },
+  'imp-f-tarzan':                               { director: 'Chris Buck',                     studio: 'Walt Disney Animation' },
+  'imp-f-atlantis-the-lost-empire':             { director: 'Gary Trousdale',                 studio: 'Walt Disney Animation' },
+  'imp-f-lilo-stitch':                          { director: 'Dean DeBlois',                   studio: 'Walt Disney Animation' },
+  'imp-f-treasure-planet':                      { director: 'Ron Clements',                   studio: 'Walt Disney Animation' },
+  'imp-f-snow-white-and-the-seven-dwarfs':      { director: 'David Hand',                     studio: 'Walt Disney Productions' },
+  'imp-f-cinderella':                           { director: 'Clyde Geronimi',                 studio: 'Walt Disney Productions' },
+  'imp-f-sleeping-beauty':                      { director: 'Clyde Geronimi',                 studio: 'Walt Disney Productions' },
+  'imp-f-bambi':                                { director: 'David Hand',                     studio: 'Walt Disney Productions' },
+  'imp-f-pinocchio':                            { director: 'Ben Sharpsteen',                 studio: 'Walt Disney Productions' },
+  'imp-f-dumbo':                                { director: 'Ben Sharpsteen',                 studio: 'Walt Disney Productions' },
+  'imp-f-fantasia-2000':                        { director: 'James Algar',                    studio: 'Walt Disney Animation' },
+  'imp-f-the-jungle-book':                      { director: 'Wolfgang Reitherman',            studio: 'Walt Disney Productions' },
+
+  // ─── IMPORTS · FILMS · DREAMWORKS ───
+  'imp-f-shrek':                                { director: 'Andrew Adamson',                 studio: 'DreamWorks Animation' },
+  'imp-f-shrek-2':                              { director: 'Andrew Adamson',                 studio: 'DreamWorks Animation' },
+  'imp-f-shrek-the-third':                      { director: 'Chris Miller',                   studio: 'DreamWorks Animation' },
+  'imp-f-puss-in-boots':                        { director: 'Chris Miller',                   studio: 'DreamWorks Animation' },
+  'imp-f-puss-in-boots-the-last-wish':          { director: 'Joel Crawford',                  studio: 'DreamWorks Animation' },
+  'imp-f-the-road-to-el-dorado':                { director: 'Bibo Bergeron',                  studio: 'DreamWorks Animation' },
+  'imp-f-spirit-stallion-of-the-cimarron':      { director: 'Kelly Asbury',                   studio: 'DreamWorks Animation' },
+  'imp-f-kung-fu-panda':                        { director: 'Mark Osborne',                   studio: 'DreamWorks Animation' },
+  'imp-f-kung-fu-panda-2':                      { director: 'Jennifer Yuh Nelson',            studio: 'DreamWorks Animation' },
+  'imp-f-how-to-train-your-dragon':             { director: 'Dean DeBlois',                   studio: 'DreamWorks Animation' },
+  'imp-f-how-to-train-your-dragon-2':           { director: 'Dean DeBlois',                   studio: 'DreamWorks Animation' },
+  'imp-f-madagascar':                           { director: 'Eric Darnell',                   studio: 'DreamWorks Animation' },
+  'imp-f-madagascar-3-europe-s-most-wanted':    { director: 'Eric Darnell',                   studio: 'DreamWorks Animation' },
+  'imp-f-over-the-hedge':                       { director: 'Tim Johnson',                    studio: 'DreamWorks Animation' },
+  'imp-f-the-prince-of-egypt':                  { director: 'Brenda Chapman',                 studio: 'DreamWorks Animation' },
+
+  // ─── IMPORTS · FILMS · SONY / SPIDER-VERSE ───
+  'imp-f-spider-man-into-the-spider-verse':     { director: 'Peter Ramsey',                   studio: 'Sony Pictures Animation' },
+  'imp-f-spider-man-across-the-spider-verse':   { director: 'Joaquim Dos Santos',             studio: 'Sony Pictures Animation' },
+  'imp-f-the-mitchells-vs-the-machines':        { director: 'Mike Rianda',                    studio: 'Sony Pictures Animation' },
+
+  // ─── IMPORTS · FILMS · LEGO / WARNER ───
+  'imp-f-the-lego-movie':                       { director: 'Phil Lord',                      studio: 'Warner Animation Group' },
+  'imp-f-the-lego-batman-movie':                { director: 'Chris McKay',                    studio: 'Warner Animation Group' },
+  'imp-f-the-lego-movie-2-the-second-part':     { director: 'Mike Mitchell',                  studio: 'Warner Animation Group' },
+
+  // ─── IMPORTS · FILMS · LAIKA ───
+  'imp-f-coraline':                             { director: 'Henry Selick',                   studio: 'Laika' },
+  'imp-f-kubo-and-the-two-strings':             { director: 'Travis Knight',                  studio: 'Laika' },
+
+  // ─── IMPORTS · FILMS · WES ANDERSON ───
+  'imp-f-fantastic-mr-fox':                     { director: 'Wes Anderson' },
+  'imp-f-isle-of-dogs':                         { director: 'Wes Anderson' },
+
+  // ─── IMPORTS · FILMS · STUDIO GHIBLI ───
+  'imp-f-mononoke-hime':                        { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-sen-to-chihiro-no-kamikakushi':        { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-tonari-no-totoro':                     { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-tenk-no-shiro-laputa':                 { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-kaze-no-tani-no-nausica':              { director: 'Hayao Miyazaki',                 studio: 'Topcraft' },
+  'imp-f-hauru-no-ugoku-shiro':                 { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-kurenai-no-buta':                      { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-kaze-tachinu':                         { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-majo-no-takky-bin':                    { director: 'Hayao Miyazaki',                 studio: 'Studio Ghibli' },
+  'imp-f-hotaru-no-haka':                       { director: 'Isao Takahata',                  studio: 'Studio Ghibli' },
+  'imp-f-omohide-poro-poro':                    { director: 'Isao Takahata',                  studio: 'Studio Ghibli' },
+  'imp-f-heisei-tanuki-gassen-pompoko':         { director: 'Isao Takahata',                  studio: 'Studio Ghibli' },
+  'imp-f-kaguyahime-no-monogatari':             { director: 'Isao Takahata',                  studio: 'Studio Ghibli' },
+  'imp-f-karigurashi-no-arrietty':              { director: 'Hiromasa Yonebayashi',           studio: 'Studio Ghibli' },
+  'imp-f-omoide-no-marnie':                     { director: 'Hiromasa Yonebayashi',           studio: 'Studio Ghibli' },
+  'imp-f-neko-no-ongaeshi':                     { director: 'Hiroyuki Morita',                studio: 'Studio Ghibli' },
+  'imp-f-umi-ga-kikoeru':                       { director: 'Tomomi Mochizuki',               studio: 'Studio Ghibli' },
+  'imp-f-mary-to-majo-no-hana':                 { director: 'Hiromasa Yonebayashi',           studio: 'Studio Ponoc' },
+  'imp-f-la-tortue-rouge':                      { director: 'Michael Dudok de Wit',           studio: 'Studio Ghibli' },
+
+  // ─── IMPORTS · FILMS · MAKOTO SHINKAI ───
+  'imp-f-kimi-no-na-wa':                        { director: 'Makoto Shinkai',                 studio: 'CoMix Wave Films' },
+  'imp-f-tenki-no-ko':                          { director: 'Makoto Shinkai',                 studio: 'CoMix Wave Films' },
+
+  // ─── IMPORTS · FILMS · SATOSHI KON ───
+  'imp-f-perfect-blue':                         { director: 'Satoshi Kon',                    studio: 'Madhouse' },
+  'imp-f-paprika':                              { director: 'Satoshi Kon',                    studio: 'Madhouse' },
+
+  // ─── IMPORTS · FILMS · MAMORU HOSODA ───
+  'imp-f-summer-wars':                          { director: 'Mamoru Hosoda',                  studio: 'Madhouse' },
+  'imp-f-mirai-no-mirai':                       { director: 'Mamoru Hosoda',                  studio: 'Studio Chizu' },
+
+  // ─── IMPORTS · FILMS · A SILENT VOICE ───
+  'imp-f-koe-no-katachi':                       { director: 'Naoko Yamada',                   studio: 'KyoAni' },
+
+  // ─── IMPORTS · FILMS · EVANGELION ───
+  'imp-f-evangelion-shin-gekij-ban-jo':         { director: 'Hideaki Anno',                   studio: 'Khara' },
+  'imp-f-evangelion-shin-gekij-ban-ha':         { director: 'Hideaki Anno',                   studio: 'Khara' },
+  'imp-f-evangelion-shin-gekij-ban-q-quickening': { director: 'Hideaki Anno',                 studio: 'Khara' },
+  'imp-f-shin-evangelion-gekij-ban':            { director: 'Hideaki Anno',                   studio: 'Khara' },
+  'imp-f-shinseiki-evangelion-gekij-ban-shi-to-shinsei': { director: 'Hideaki Anno',          studio: 'Gainax' },
+  'imp-f-shin-seiki-evangelion-gekij-ban-the-end-of-evangelion-air-ma': { director: 'Hideaki Anno', studio: 'Gainax' },
+
+  // ─── IMPORTS · FILMS · OTHER ANIME ───
+  'imp-f-akira':                                { director: 'Katsuhiro Otomo',                studio: 'TMS Entertainment' },
+  'imp-f-manie-manie-meiky-monogatari':         { director: 'Katsuhiro Otomo',                studio: 'Madhouse' },
+  'imp-f-kanashimi-no-beradona':                { director: 'Eiichi Yamamoto',                studio: 'Mushi Production' },
+  'imp-f-hotarubi-no-mori-e':                   { director: 'Takahiro Omori',                 studio: "Brain's Base" },
+  'imp-f-sarusuberi-miss-hokusai':              { director: 'Keiichi Hara',                   studio: 'Production I.G' },
+
+  // ─── IMPORTS · FILMS · EUROPEAN ANIMATION ───
+  'imp-f-les-triplettes-de-belleville':         { director: 'Sylvain Chomet' },
+  'imp-f-ernest-et-c-lestine':                  { director: 'Benjamin Renner',                studio: 'Les Armateurs' },
+  'imp-f-persepolis':                           { director: 'Marjane Satrapi' },
+  'imp-f-song-of-the-sea':                      { director: 'Tomm Moore',                     studio: 'Cartoon Saloon' },
+  'imp-f-the-secret-of-kells':                  { director: 'Tomm Moore',                     studio: 'Cartoon Saloon' },
+  'imp-f-klaus':                                { director: 'Sergio Pablos',                  studio: 'SPA Studios' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — NOLAN ───
+  'imp-f-the-matrix':                           { director: 'Lana Wachowski' },
+  'imp-f-the-matrix-reloaded':                  { director: 'Lana Wachowski' },
+  'imp-f-the-matrix-revolutions':               { director: 'Lana Wachowski' },
+  'imp-f-the-matrix-resurrections':             { director: 'Lana Wachowski' },
+  'imp-f-interstellar':                         { director: 'Christopher Nolan' },
+  'imp-f-inception':                            { director: 'Christopher Nolan' },
+  'imp-f-the-dark-knight':                      { director: 'Christopher Nolan' },
+  'imp-f-the-dark-knight-rises':                { director: 'Christopher Nolan' },
+  'imp-f-memento':                              { director: 'Christopher Nolan' },
+  'imp-f-the-prestige':                         { director: 'Christopher Nolan' },
+  'imp-f-dunkirk':                              { director: 'Christopher Nolan' },
+  'imp-f-tenet':                                { director: 'Christopher Nolan' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — SPIELBERG / COPPOLA ───
+  'imp-f-schindler-s-list':                     { director: 'Steven Spielberg' },
+  'imp-f-saving-private-ryan':                  { director: 'Steven Spielberg' },
+  'imp-f-the-godfather':                        { director: 'Francis Ford Coppola' },
+  'imp-f-the-godfather-part-ii':                { director: 'Francis Ford Coppola' },
+  'imp-f-the-godfather-part-iii':               { director: 'Francis Ford Coppola' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — SCORSESE ───
+  'imp-f-goodfellas':                           { director: 'Martin Scorsese' },
+  'imp-f-taxi-driver':                          { director: 'Martin Scorsese' },
+  'imp-f-shutter-island':                       { director: 'Martin Scorsese' },
+  'imp-f-the-departed':                         { director: 'Martin Scorsese' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — TARANTINO ───
+  'imp-f-pulp-fiction':                         { director: 'Quentin Tarantino' },
+  'imp-f-reservoir-dogs':                       { director: 'Quentin Tarantino' },
+  'imp-f-kill-bill-vol-1':                      { director: 'Quentin Tarantino' },
+  'imp-f-kill-bill-vol-2':                      { director: 'Quentin Tarantino' },
+  'imp-f-inglourious-basterds':                 { director: 'Quentin Tarantino' },
+  'imp-f-once-upon-a-time-in-hollywood':        { director: 'Quentin Tarantino' },
+  'imp-f-the-hateful-eight':                    { director: 'Quentin Tarantino' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — FINCHER ───
+  'imp-f-the-social-network':                   { director: 'David Fincher' },
+  'imp-f-gone-girl':                            { director: 'David Fincher' },
+  'imp-f-zodiac':                               { director: 'David Fincher' },
+  'imp-f-se7en':                                { director: 'David Fincher' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — VILLENEUVE ───
+  'imp-f-arrival':                              { director: 'Denis Villeneuve' },
+  'imp-f-sicario':                              { director: 'Denis Villeneuve' },
+  'imp-f-prisoners':                            { director: 'Denis Villeneuve' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — WES ANDERSON ───
+  'imp-f-the-grand-budapest-hotel':             { director: 'Wes Anderson' },
+  'imp-f-moonrise-kingdom':                     { director: 'Wes Anderson' },
+  'imp-f-the-royal-tenenbaums':                 { director: 'Wes Anderson' },
+  'imp-f-rushmore':                             { director: 'Wes Anderson' },
+  'imp-f-bottle-rocket':                        { director: 'Wes Anderson' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — ARONOFSKY ───
+  'imp-f-requiem-for-a-dream':                  { director: 'Darren Aronofsky' },
+  'imp-f-black-swan':                           { director: 'Darren Aronofsky' },
+  'imp-f-pi':                                   { director: 'Darren Aronofsky' },
+
+  // ─── IMPORTS · FILMS · LIVE ACTION — OTHERS ───
+  'imp-f-forrest-gump':                         { director: 'Robert Zemeckis' },
+  'imp-f-cast-away':                            { director: 'Robert Zemeckis' },
+  'imp-f-the-truman-show':                      { director: 'Peter Weir' },
+  'imp-f-eternal-sunshine-of-the-spotless-mind': { director: 'Michel Gondry' },
+  'imp-f-being-john-malkovich':                 { director: 'Spike Jonze' },
+  'imp-f-her':                                  { director: 'Spike Jonze' },
+  'imp-f-mulholland-dr':                        { director: 'David Lynch' },
+  'imp-f-eraserhead':                           { director: 'David Lynch' },
+  'imp-f-whiplash':                             { director: 'Damien Chazelle' },
+  'imp-f-la-la-land':                           { director: 'Damien Chazelle' },
+  'imp-f-american-beauty':                      { director: 'Sam Mendes' },
+  'imp-f-magnolia':                             { director: 'Paul Thomas Anderson' },
+  'imp-f-mad-max-fury-road':                    { director: 'George Miller' },
+  'imp-f-joker':                                { director: 'Todd Phillips' },
+  'imp-f-birdman':                              { director: 'Alejandro G. Iñárritu' },
+  'imp-f-the-revenant':                         { director: 'Alejandro G. Iñárritu' },
+  'imp-f-manchester-by-the-sea':                { director: 'Kenneth Lonergan' },
+  'imp-f-the-shawshank-redemption':             { director: 'Frank Darabont' },
+  'imp-f-a-beautiful-mind':                     { director: 'Ron Howard' },
+  'imp-f-eyes-wide-shut':                       { director: 'Stanley Kubrick' },
+  'imp-f-full-metal-jacket':                    { director: 'Stanley Kubrick' },
+  'imp-f-dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-th': { director: 'Stanley Kubrick' },
+  'imp-f-psycho':                               { director: 'Alfred Hitchcock' },
+  'imp-f-vertigo':                              { director: 'Alfred Hitchcock' },
+  'imp-f-rear-window':                          { director: 'Alfred Hitchcock' },
+  'imp-f-north-by-northwest':                   { director: 'Alfred Hitchcock' },
+  'imp-f-citizen-kane':                         { director: 'Orson Welles' },
+  'imp-f-the-silence-of-the-lambs':             { director: 'Jonathan Demme' },
+  'imp-f-red-dragon':                           { director: 'Brett Ratner' },
+  'imp-f-hannibal':                             { director: 'Ridley Scott' },
+  'imp-f-alien':                                { director: 'Ridley Scott' },
+  'imp-f-aliens':                               { director: 'James Cameron' },
+  'imp-f-prometheus':                           { director: 'Ridley Scott' },
+  'imp-f-blade-runner':                         { director: 'Ridley Scott' },
+  'imp-f-gladiator':                            { director: 'Ridley Scott' },
+  'imp-f-lawrence-of-arabia':                   { director: 'David Lean' },
+  'imp-f-fear-and-loathing-in-las-vegas':       { director: 'Terry Gilliam' },
+  'imp-f-okja':                                 { director: 'Bong Joon-ho' },
+  'imp-f-portrait-de-la-jeune-fille-en-feu':    { director: 'Céline Sciamma' },
+  'imp-f-one-flew-over-the-cuckoo-s-nest':      { director: 'Miloš Forman' },
+  'imp-f-the-road':                             { director: 'John Hillcoat' },
 };
 
 window.CULTURE = {

@@ -922,7 +922,10 @@ function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPic
   // the shelf with the rest fanning symmetrically outward.
   const ordered = React.useMemo(() => {
     // Covers shows only favorites; spines / mix show the whole library.
-    const base = mode === 'covers' ? items.filter(i => i.favorite) : items;
+    // If a shelf has no favorites at all, fall back to all items (rendered as spines).
+    const base = mode === 'covers'
+      ? (items.some(i => i.favorite) ? items.filter(i => i.favorite) : items)
+      : items;
     const arr = base.map((it, i) => ({ ...it, _rank: i }));
     if (sort && sort !== 'curated') {
       // Explicit sort → linear, left-aligned, no centre piece.
