@@ -161,6 +161,73 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .sort-select:hover { color: var(--ink); border-color: var(--ink-faint); }
 .sort-select option { background: var(--bg-2); color: var(--ink); }
 
+/* search bar */
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  position: absolute;
+  left: 13px;
+  color: var(--ink-faint);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+.search-input {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  background: rgba(255,255,255,.02);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 8px 30px 8px 32px;
+  outline: none;
+  width: 264px;
+  transition: border-color .15s, color .15s;
+}
+.search-input::placeholder { color: var(--ink-faint); }
+.search-input:focus { border-color: var(--ink-faint); }
+.search-clear {
+  position: absolute;
+  right: 11px;
+  background: none;
+  border: none;
+  color: var(--ink-faint);
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  padding: 0 2px;
+  transition: color .12s;
+}
+.search-clear:hover { color: var(--ink); }
+.search-results-msg {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+  padding: 0 56px;
+  margin-top: 18px;
+}
+.search-results-msg b { color: var(--ink); }
+.search-results-msg button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+}
+.search-results-msg button:hover { color: var(--ink); }
+@media (max-width: 768px) {
+  .search-input { width: 200px; }
+  .search-results-msg { padding: 0 24px; }
+}
+
 /* ───── INTRO ───── */
 .intro {
   padding: 28px 56px 6px;
@@ -802,6 +869,18 @@ function externalServiceName(link) {
   return 'Filmweb';
 }
 
+// Medium-aware labels for the "director" field.
+function directorLabel(medium) {
+  if (medium === 'Books') return 'Author';
+  if (medium === 'TV')    return 'Creator';
+  return 'Director';
+}
+function studioLabel(medium) {
+  if (medium === 'TV')    return 'Network';
+  if (medium === 'Games') return 'Studio';
+  return 'Studio';
+}
+
 // Region code → display name (popup + sort).
 const REGION_NAMES = {
   pl:'Poland', jp:'Japan', kr:'South Korea', us:'United States', uk:'United Kingdom',
@@ -820,7 +899,9 @@ function sortItems(arr, sort) {
   if (sort === 'az')           list.sort(byTitle);
   else if (sort === 'year')    list.sort((a, b) => (b.year || 0) - (a.year || 0) || byTitle(a, b));
   else if (sort === 'rating')  list.sort((a, b) => (parseFloat(b.rating) || -1) - (parseFloat(a.rating) || -1) || byTitle(a, b));
-  else if (sort === 'country') list.sort((a, b) => (regionName(a.region) || '~').localeCompare(regionName(b.region) || '~') || byTitle(a, b));
+  else if (sort === 'country')  list.sort((a, b) => (regionName(a.region) || '~').localeCompare(regionName(b.region) || '~') || byTitle(a, b));
+  else if (sort === 'director') list.sort((a, b) => (a.director || '￿').localeCompare(b.director || '￿') || byTitle(a, b));
+  else if (sort === 'studio')   list.sort((a, b) => (a.studio   || '￿').localeCompare(b.studio   || '￿') || byTitle(a, b));
   return list;
 }
 
@@ -1148,6 +1229,13 @@ function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
         {item.seasons ? <span>·</span> : null}
         {item.seasons ? <span>{item.seasons} {item.seasons > 1 ? 'seasons' : 'season'}</span> : null}
       </div>
+      {(item.director || item.studio) && (
+        <div className="meta" style={{ marginTop: 3 }}>
+          {item.director && <span>{directorLabel(item.medium)}: {item.director}</span>}
+          {item.director && item.studio && <span>·</span>}
+          {item.studio && <span>{item.studio}</span>}
+        </div>
+      )}
       <div className="t">{item.title}</div>
       {item.note
         ? <div className="blurb">{item.note}</div>
@@ -1203,6 +1291,8 @@ function Reader({ item, onClose, onJump }) {
             {regionName(item.region) ? <React.Fragment><span className="sep"/><span>{regionName(item.region)}</span></React.Fragment> : null}
             {item.seasons ? <React.Fragment><span className="sep"/><span>{item.seasons} {item.seasons > 1 ? 'seasons' : 'season'}</span></React.Fragment> : null}
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
+            {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: {item.director}</span></React.Fragment> : null}
+            {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: {item.studio}</span></React.Fragment> : null}
             <span className="sep"/>
             <span>№ {String(posInMedium).padStart(3,'0')} of {String(inMedium.length).padStart(3,'0')}</span>
           </div>
@@ -1242,10 +1332,14 @@ function Reader({ item, onClose, onJump }) {
 function App() {
   const { MEDIA, PICKABLE_IDS } = window.CULTURE;
   const ITEMS = React.useMemo(() => {
-    const seasons = window.CULTURE_SEASONS || {};
-    const favs = window.CULTURE.ITEMS.map(i =>
-      (seasons[i.id] && !i.seasons) ? { ...i, seasons: seasons[i.id] } : i
-    );
+    const seasons  = window.CULTURE_SEASONS || {};
+    const creators = window.CULTURE.CREATORS || {};
+    const favs = window.CULTURE.ITEMS.map(i => {
+      let m = i;
+      if (seasons[i.id] && !i.seasons)  m = { ...m, seasons: seasons[i.id] };
+      if (creators[i.id])               m = { ...m, ...creators[i.id] };
+      return m;
+    });
     return favs.concat(window.CULTURE_IMPORTS || []);
   }, []);
   const [openItem, setOpenItem] = React.useState(null);
@@ -1255,6 +1349,7 @@ function App() {
   const [sort, setSort] = React.useState('curated');
   const [mixSeed, setMixSeed] = React.useState(1);
   const [spinning, setSpinning] = React.useState(false);
+  const [search, setSearch] = React.useState('');
 
   // Scroll lock for the Reader modal. (Popup lock is owned by Popup itself.)
   React.useEffect(() => {
@@ -1273,6 +1368,26 @@ function App() {
   }, [justPickedId]);
 
   const shelves = MEDIA.map(m => ({ medium: m, items: ITEMS.filter(i => i.medium === m) }));
+
+  const filteredShelves = React.useMemo(() => {
+    if (!search.trim()) return shelves;
+    const q = search.trim().toLowerCase();
+    return shelves
+      .map(s => ({
+        ...s,
+        items: s.items.filter(it =>
+          it.title.toLowerCase().includes(q) ||
+          (it.director && it.director.toLowerCase().includes(q)) ||
+          (it.studio   && it.studio.toLowerCase().includes(q))
+        ),
+      }))
+      .filter(s => s.items.length > 0);
+  }, [shelves, search]);
+
+  const totalSearchResults = React.useMemo(
+    () => filteredShelves.reduce((n, s) => n + s.items.length, 0),
+    [filteredShelves]
+  );
 
   // Pool for Pick One — anything in PICKABLE_IDS that exists, or items with notes as fallback.
   const pickPool = React.useMemo(() => {
@@ -1356,6 +1471,8 @@ function App() {
               <option value="curated">Curated</option>
               <option value="az">A–Z</option>
               <option value="year">Release date</option>
+              <option value="director">Director / Creator</option>
+              <option value="studio">Studio / Network</option>
               <option value="country">Country</option>
               <option value="rating">Rating</option>
             </select>
@@ -1370,6 +1487,22 @@ function App() {
               Pick one for me
             </button>
           </div>
+          <div className="search-wrap">
+            <svg className="search-icon" width="12" height="12" viewBox="0 0 16 16" fill="none">
+              <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" strokeWidth="1.4"/>
+              <path d="M10 10l3.5 3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+            </svg>
+            <input
+              className="search-input"
+              type="text"
+              placeholder="Search title, director, studio…"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+            />
+            {search && (
+              <button className="search-clear" onClick={() => setSearch('')} title="Clear search">×</button>
+            )}
+          </div>
         </div>
       </header>
 
@@ -1380,7 +1513,14 @@ function App() {
         a hand-picked pool; flipped items keep a small red mark.
       </div>
 
-      {shelves.map((s, i) => (
+      {search.trim() && (
+        <div className="search-results-msg">
+          <b>{totalSearchResults}</b> result{totalSearchResults !== 1 ? 's' : ''} for &ldquo;{search.trim()}&rdquo;
+          <button onClick={() => setSearch('')}>clear</button>
+        </div>
+      )}
+
+      {filteredShelves.map((s, i) => (
         <ShelfRow
           key={s.medium}
           medium={s.medium}
@@ -1394,6 +1534,13 @@ function App() {
           pickedSet={pickedSet}
         />
       ))}
+
+      {search.trim() && filteredShelves.length === 0 && (
+        <div className="search-results-msg" style={{ marginTop: 48 }}>
+          No results for &ldquo;{search.trim()}&rdquo;.
+          <button onClick={() => setSearch('')}>clear</button>
+        </div>
+      )}
 
       <footer className="site-foot">
         <div>fuad.design &nbsp;/&nbsp; Culture &nbsp;/&nbsp; 2026</div>
