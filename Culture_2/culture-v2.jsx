@@ -1343,7 +1343,10 @@ function App() {
     const imports = (window.CULTURE_IMPORTS || []).map(i =>
       creators[i.id] ? { ...i, ...creators[i.id] } : i
     );
-    return favs.concat(imports);
+    const filmImports = (window.CULTURE_FILM_IMPORTS || []).map(i =>
+      creators[i.id] ? { ...i, ...creators[i.id] } : i
+    );
+    return favs.concat(imports).concat(filmImports);
   }, []);
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);

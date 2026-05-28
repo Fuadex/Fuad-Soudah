@@ -231,9 +231,9 @@ const ITEMS = [
 ];
 
 // Default ordering: featured first, then by medium grouping, then by year desc.
-const MEDIA = ['Movies', 'TV', 'Games', 'Animated Series', 'Feature Animation', 'Books'];
-const MEDIA_SHORT = { 'Movies': 'FILM', 'TV': 'TV', 'Games': 'GAME', 'Animated Series': 'ANIM SER', 'Feature Animation': 'ANIM FILM', 'Books': 'BOOK' };
-const MEDIA_GLYPH = { 'Movies': 'F', 'TV': 'T', 'Games': 'G', 'Animated Series': 'A', 'Feature Animation': 'A', 'Books': 'B' };
+const MEDIA = ['Movies', 'TV', 'Games', 'Animated Series', 'Feature Animation', 'Books', 'Shorts'];
+const MEDIA_SHORT = { 'Movies': 'FILM', 'TV': 'TV', 'Games': 'GAME', 'Animated Series': 'ANIM SER', 'Feature Animation': 'ANIM FILM', 'Books': 'BOOK', 'Shorts': 'SHORT' };
+const MEDIA_GLYPH = { 'Movies': 'F', 'TV': 'T', 'Games': 'G', 'Animated Series': 'A', 'Feature Animation': 'A', 'Books': 'B', 'Shorts': 'S' };
 
 // ─────────────────────────────────────────────────────────────────────────
 // PICK ONE FOR ME
