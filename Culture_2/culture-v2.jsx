@@ -1340,7 +1340,10 @@ function App() {
       if (creators[i.id])               m = { ...m, ...creators[i.id] };
       return m;
     });
-    return favs.concat(window.CULTURE_IMPORTS || []);
+    const imports = (window.CULTURE_IMPORTS || []).map(i =>
+      creators[i.id] ? { ...i, ...creators[i.id] } : i
+    );
+    return favs.concat(imports);
   }, []);
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
