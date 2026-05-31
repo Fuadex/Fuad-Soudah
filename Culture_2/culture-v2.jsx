@@ -809,7 +809,69 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   .reader { grid-template-columns: 1fr; max-height: calc(100vh - 24px); }
   .reader-poster { aspect-ratio: 2/3; max-height: 320px; }
   .reader-title { font-size: 40px; }
+  .yr-chips-section { padding: 24px 24px 0; }
 }
+
+/* sort direction button */
+.sort-dir-btn {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: rgba(255,255,255,.02);
+  color: var(--ink-soft);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 7px 12px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color .15s, border-color .15s;
+  display: inline-flex;
+  align-items: center;
+}
+.sort-dir-btn:hover:not(:disabled) { color: var(--ink); border-color: var(--ink-faint); }
+.sort-dir-btn:disabled { opacity: .3; cursor: default; }
+
+/* year chips strip */
+.yr-chips-section {
+  padding: 28px 56px 0;
+  border-top: 1px solid var(--rule);
+  margin-top: 16px;
+}
+.yr-chips-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 10px;
+}
+.yr-chips-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 4px;
+}
+.yr-chips-scroll::-webkit-scrollbar { display: none; }
+.yr-chip {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: color .15s, background .15s, border-color .15s;
+}
+.yr-chip:hover:not(.unavailable) { color: var(--ink); border-color: var(--ink-faint); }
+.yr-chip.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
+.yr-chip.selected:hover { filter: brightness(1.08); }
+.yr-chip.unavailable { opacity: .2; cursor: default; pointer-events: none; }
 `;
 
 // ─────────── helpers ───────────
@@ -892,8 +954,25 @@ const REGION_NAMES = {
 };
 function regionName(code) { return REGION_NAMES[code] || null; }
 
+// Parse search query: extract @YEAR / y:YEAR (release) and in:YEAR (rated) tokens.
+function parseQuery(raw) {
+  const parts = (raw || '').trim().split(/\s+/);
+  const text = [], releaseYear = [], ratedYear = [];
+  for (const tok of parts) {
+    if (!tok) continue;
+    const atY  = tok.match(/^@(\d{4})$/);
+    const yY   = tok.match(/^y:(\d{4})$/i);
+    const inY  = tok.match(/^in:(\d{4})$/i);
+    if      (atY)  releaseYear.push(atY[1]);
+    else if (yY)   releaseYear.push(yY[1]);
+    else if (inY)  ratedYear.push(inY[1]);
+    else           text.push(tok);
+  }
+  return { text: text.join(' '), releaseYear, ratedYear };
+}
+
 // Sort a list by the chosen key. Stable-ish with title tiebreak.
-function sortItems(arr, sort) {
+function sortItems(arr, sort, dir) {
   const byTitle = (a, b) => a.title.localeCompare(b.title);
   const list = [...arr];
   if (sort === 'az')           list.sort(byTitle);
@@ -902,11 +981,13 @@ function sortItems(arr, sort) {
   else if (sort === 'country')  list.sort((a, b) => (regionName(a.region) || '~').localeCompare(regionName(b.region) || '~') || byTitle(a, b));
   else if (sort === 'director') list.sort((a, b) => (a.director || '￿').localeCompare(b.director || '￿') || byTitle(a, b));
   else if (sort === 'studio')   list.sort((a, b) => (a.studio   || '￿').localeCompare(b.studio   || '￿') || byTitle(a, b));
+  else if (sort === 'rated')    list.sort((a, b) => (b.watchedDate || '').localeCompare(a.watchedDate || '') || byTitle(a, b));
+  if (dir === 'asc') list.reverse();
   return list;
 }
 
 // ─────────── Shelf row ───────────
-function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPickedId, pickedSet }) {
+function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem, justPickedId, pickedSet }) {
   const { MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [hoverIdx, setHoverIdx] = React.useState(-1);
   const [popupPos, setPopupPos] = React.useState(null);
@@ -929,10 +1010,10 @@ function ShelfRow({ medium, items, idx, mode, sort, mixSeed, onOpenItem, justPic
     const arr = base.map((it, i) => ({ ...it, _rank: i }));
     if (sort && sort !== 'curated') {
       // Explicit sort → linear, left-aligned, no centre piece.
-      return sortItems(arr, sort).map(it => ({ ...it, _rank: -1 }));
+      return sortItems(arr, sort, sortDir).map(it => ({ ...it, _rank: -1 }));
     }
     return mode === 'spines' ? arr : centerOrder(arr);
-  }, [items, mode, sort]);
+  }, [items, mode, sort, sortDir]);
 
   // For mix mode, decide cover vs spine deterministically per (id, seed).
   // The rank-0 item is always shown as a cover so the centre piece reads.
@@ -1296,6 +1377,7 @@ function Reader({ item, onClose, onJump }) {
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
             {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: {item.director}</span></React.Fragment> : null}
             {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: {item.studio}</span></React.Fragment> : null}
+            {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
             <span className="sep"/>
             <span>№ {String(posInMedium).padStart(3,'0')} of {String(inMedium.length).padStart(3,'0')}</span>
           </div>
@@ -1347,9 +1429,11 @@ function App() {
   const [pickedSet, setPickedSet] = React.useState(() => new Set());
   const [mode, setMode] = React.useState('covers');
   const [sort, setSort] = React.useState('curated');
+  const [sortDir, setSortDir] = React.useState('desc');
   const [mixSeed, setMixSeed] = React.useState(1);
   const [spinning, setSpinning] = React.useState(false);
   const [search, setSearch] = React.useState('');
+  const [selectedRatedYears, setSelectedRatedYears] = React.useState(() => new Set());
 
   // Scroll lock for the Reader modal. (Popup lock is owned by Popup itself.)
   React.useEffect(() => {
@@ -1369,25 +1453,62 @@ function App() {
 
   const shelves = MEDIA.map(m => ({ medium: m, items: ITEMS.filter(i => i.medium === m) }));
 
-  const filteredShelves = React.useMemo(() => {
-    if (!search.trim()) return shelves;
-    const q = search.trim().toLowerCase();
-    return shelves
-      .map(s => ({
-        ...s,
-        items: s.items.filter(it =>
+  // Shelves after text / @year / y:year / in:year filters — but NOT yet chip filter.
+  const preChipShelves = React.useMemo(() => {
+    const { text, releaseYear, ratedYear } = parseQuery(search);
+    const q = text.toLowerCase();
+    return shelves.map(s => ({
+      ...s,
+      items: s.items.filter(it => {
+        if (releaseYear.length && !releaseYear.includes(String(it.year))) return false;
+        if (ratedYear.length  && (!it.watchedDate || !ratedYear.includes(it.watchedDate.slice(0, 4)))) return false;
+        if (!q) return true;
+        return (
           it.title.toLowerCase().includes(q) ||
           (it.director && it.director.toLowerCase().includes(q)) ||
           (it.studio   && it.studio.toLowerCase().includes(q))
-        ),
-      }))
-      .filter(s => s.items.length > 0);
+        );
+      }),
+    }));
   }, [shelves, search]);
+
+  // Apply chip filter on top.
+  const filteredShelves = React.useMemo(() => {
+    const base = selectedRatedYears.size === 0
+      ? preChipShelves
+      : preChipShelves.map(s => ({
+          ...s,
+          items: s.items.filter(it => it.watchedDate && selectedRatedYears.has(it.watchedDate.slice(0, 4))),
+        }));
+    return base.filter(s => s.items.length > 0);
+  }, [preChipShelves, selectedRatedYears]);
 
   const totalSearchResults = React.useMemo(
     () => filteredShelves.reduce((n, s) => n + s.items.length, 0),
     [filteredShelves]
   );
+
+  // All years that appear as watchedDate across the full library, newest first.
+  const allRatedYears = React.useMemo(() => {
+    const yrs = new Set();
+    ITEMS.forEach(it => { if (it.watchedDate) yrs.add(it.watchedDate.slice(0, 4)); });
+    return [...yrs].sort((a, b) => b.localeCompare(a));
+  }, [ITEMS]);
+
+  // Which of those years have matching items given the current preChip filters.
+  const availableRatedYears = React.useMemo(() => {
+    const yrs = new Set();
+    preChipShelves.forEach(s => s.items.forEach(it => {
+      if (it.watchedDate) yrs.add(it.watchedDate.slice(0, 4));
+    }));
+    return yrs;
+  }, [preChipShelves]);
+
+  const toggleRatedYear = (yr) => setSelectedRatedYears(prev => {
+    const next = new Set(prev);
+    if (next.has(yr)) next.delete(yr); else next.add(yr);
+    return next;
+  });
 
   // Pool for Pick One — anything in PICKABLE_IDS that exists, or items with notes as fallback.
   const pickPool = React.useMemo(() => {
@@ -1471,11 +1592,20 @@ function App() {
               <option value="curated">Curated</option>
               <option value="az">A–Z</option>
               <option value="year">Release date</option>
+              <option value="rated">Date rated</option>
               <option value="director">Director / Creator</option>
               <option value="studio">Studio / Network</option>
               <option value="country">Country</option>
               <option value="rating">Rating</option>
             </select>
+            <button
+              className="sort-dir-btn"
+              disabled={sort === 'curated'}
+              onClick={() => setSortDir(d => d === 'desc' ? 'asc' : 'desc')}
+              title={sortDir === 'desc' ? 'Newest first — click to reverse' : 'Oldest first — click to reverse'}
+            >
+              {sortDir === 'desc' ? '←' : '→'}
+            </button>
             <button className="btn-pick" onClick={pickOne}>
               <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
                 <rect x="1" y="1" width="9" height="9" rx="1.5" stroke="currentColor"/>
@@ -1528,6 +1658,7 @@ function App() {
           idx={i}
           mode={mode}
           sort={sort}
+          sortDir={sortDir}
           mixSeed={mixSeed}
           onOpenItem={setOpenItem}
           justPickedId={justPickedId}
@@ -1541,6 +1672,25 @@ function App() {
           <button onClick={() => setSearch('')}>clear</button>
         </div>
       )}
+
+      <div className="yr-chips-section">
+        <div className="yr-chips-label">Rated in</div>
+        <div className="yr-chips-scroll">
+          {allRatedYears.map(yr => {
+            const sel  = selectedRatedYears.has(yr);
+            const avail = availableRatedYears.has(yr);
+            return (
+              <button
+                key={yr}
+                className={`yr-chip${sel ? ' selected' : !avail ? ' unavailable' : ''}`}
+                onClick={() => toggleRatedYear(yr)}
+              >
+                {yr}
+              </button>
+            );
+          })}
+        </div>
+      </div>
 
       <footer className="site-foot">
         <div>fuad.design &nbsp;/&nbsp; Culture &nbsp;/&nbsp; 2026</div>
