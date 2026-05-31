@@ -1335,21 +1335,12 @@ function Reader({ item, onClose, onJump }) {
 function App() {
   const { MEDIA, PICKABLE_IDS } = window.CULTURE;
   const ITEMS = React.useMemo(() => {
-    const seasons  = window.CULTURE_SEASONS || {};
-    const creators = window.CULTURE.CREATORS || {};
+    const seasons = window.CULTURE_SEASONS || {};
     const favs = window.CULTURE.ITEMS.map(i => {
-      let m = i;
-      if (seasons[i.id] && !i.seasons)  m = { ...m, seasons: seasons[i.id] };
-      if (creators[i.id])               m = { ...m, ...creators[i.id] };
-      return m;
+      if (seasons[i.id] && !i.seasons) return { ...i, seasons: seasons[i.id] };
+      return i;
     });
-    const imports = (window.CULTURE_IMPORTS || []).map(i =>
-      creators[i.id] ? { ...i, ...creators[i.id] } : i
-    );
-    const filmImports = (window.CULTURE_FILM_IMPORTS || []).map(i =>
-      creators[i.id] ? { ...i, ...creators[i.id] } : i
-    );
-    return favs.concat(imports).concat(filmImports);
+    return favs.concat(window.CULTURE_IMPORTS || []);
   }, []);
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
