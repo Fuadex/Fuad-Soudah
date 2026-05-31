@@ -202,6 +202,54 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   transition: color .12s;
 }
 .search-clear:hover { color: var(--ink); }
+.search-row { position: relative; display: flex; align-items: center; gap: 8px; }
+.search-hint-btn {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: rgba(255,255,255,.02);
+  color: var(--ink-faint);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  width: 29px; height: 29px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: color .15s, border-color .15s;
+}
+.search-hint-btn:hover,
+.search-hint-btn[data-active="true"] { color: var(--ink); border-color: var(--ink-faint); }
+.search-hint-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--bg-2);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 16px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+.search-hint-row {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.search-hint-row code {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent);
+  background: rgba(233,104,70,.13);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
 .search-results-msg {
   font-family: var(--mono);
   font-size: 10px;
@@ -872,6 +920,132 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .yr-chip.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
 .yr-chip.selected:hover { filter: brightness(1.08); }
 .yr-chip.unavailable { opacity: .2; cursor: default; pointer-events: none; }
+
+/* ───── ACTIVE FILTER PILLS ───── */
+.active-filters { display: flex; flex-wrap: wrap; gap: 6px; padding: 14px 56px 0; }
+.filter-pill {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--accent); border-radius: 999px;
+  color: var(--accent); padding: 4px 10px; white-space: nowrap;
+}
+.filter-pill button {
+  background: none; border: none; color: var(--accent); cursor: pointer;
+  font-size: 13px; line-height: 1; padding: 0; opacity: .7;
+}
+.filter-pill button:hover { opacity: 1; }
+.filter-pill-clear {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  background: none; border: 1px solid var(--rule); border-radius: 999px;
+  color: var(--ink-faint); padding: 4px 10px; cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.filter-pill-clear:hover { color: var(--ink); border-color: var(--ink-faint); }
+@media (max-width: 768px) { .active-filters { padding: 10px 24px 0; } }
+
+/* ───── STATS MODAL ───── */
+.stats-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.75);
+  z-index: 300; overflow-y: auto; padding: 32px 24px 64px;
+}
+.stats-modal {
+  max-width: 1080px; margin: 0 auto;
+  background: var(--bg-2); border: 1px solid var(--rule);
+  border-radius: 16px; padding: 40px 40px 48px; position: relative;
+}
+.stats-close {
+  position: absolute; top: 14px; right: 14px;
+  background: none; border: 1px solid var(--rule); border-radius: 999px;
+  color: var(--ink-soft); cursor: pointer; width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center; transition: color .15s;
+}
+.stats-close:hover { color: var(--ink); }
+.stats-head { margin-bottom: 28px; }
+.stats-head h2 {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 36px; margin: 0 0 4px; letter-spacing: -0.02em;
+}
+.stats-head h2 .dot { font-style: normal; color: var(--accent); }
+.stats-subtitle { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); }
+.stats-medium-tabs { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 36px; padding-bottom: 28px; border-bottom: 1px solid var(--rule); }
+.stats-medium-tab {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  background: transparent; border: 1px solid var(--rule); border-radius: 999px;
+  color: var(--ink-soft); padding: 6px 14px; cursor: pointer; transition: all .15s;
+}
+.stats-medium-tab:hover { color: var(--ink); border-color: var(--ink-faint); }
+.stats-medium-tab.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.stats-section { margin-bottom: 44px; }
+.stats-section-title {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px;
+}
+.stats-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+@media (max-width: 768px) { .stats-two-col { grid-template-columns: 1fr; } .stats-modal { padding: 24px; } }
+
+/* rating histogram */
+.rating-hist { display: flex; align-items: flex-end; gap: 5px; height: 120px; }
+.rating-col { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; cursor: pointer; }
+.rating-col:hover .rating-bar { opacity: .75; }
+.rating-bar {
+  width: 100%; border-radius: 3px 3px 0 0; transition: background .15s, opacity .15s;
+  background: var(--rule); min-height: 3px;
+}
+.rating-col.active .rating-bar { background: var(--accent); }
+.rating-lbl { font-family: var(--mono); font-size: 9px; color: var(--ink-faint); }
+.rating-cnt { font-family: var(--mono); font-size: 9px; color: var(--ink-soft); }
+
+/* horizontal bar histograms (directors / studios) */
+.hbar-list { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; max-height: 320px; }
+.hbar-row { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.hbar-row:hover .hbar-fill { opacity: .75; }
+.hbar-row.active .hbar-fill { background: var(--accent); }
+.hbar-name { font-family: var(--mono); font-size: 9px; color: var(--ink-soft); width: 140px; min-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hbar-track { flex: 1; height: 10px; background: rgba(255,255,255,.04); border-radius: 2px; overflow: hidden; }
+.hbar-fill { height: 100%; background: var(--rule); border-radius: 2px; transition: background .15s, opacity .15s; }
+.hbar-cnt { font-family: var(--mono); font-size: 9px; color: var(--ink-faint); width: 24px; text-align: right; flex-shrink: 0; }
+
+/* activity heatmap */
+.heatmap-wrap { overflow-x: auto; }
+.heatmap-inner { display: inline-block; min-width: 100%; }
+.heatmap-months { display: grid; gap: 2px; margin-bottom: 4px; }
+.heatmap-month-lbl { font-family: var(--mono); font-size: 8px; color: var(--ink-faint); }
+.heatmap-rows { display: flex; flex-direction: column; gap: 2px; }
+.heatmap-row { display: flex; align-items: center; gap: 2px; }
+.heatmap-year-lbl { font-family: var(--mono); font-size: 9px; color: var(--ink-faint); width: 34px; flex-shrink: 0; }
+.heatmap-cell {
+  width: 11px; height: 11px; border-radius: 2px; flex-shrink: 0; cursor: pointer;
+  transition: opacity .1s; background: rgba(255,255,255,.05);
+}
+.heatmap-cell:hover { opacity: .7; }
+.heatmap-cell.selected { outline: 1.5px solid var(--ink); outline-offset: 1px; }
+.heatmap-tooltip {
+  position: fixed; background: var(--bg-2); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 6px 10px; font-family: var(--mono); font-size: 10px;
+  color: var(--ink); pointer-events: none; z-index: 500; white-space: nowrap;
+}
+
+/* choropleth map */
+.world-map-wrap { position: relative; background: rgba(255,255,255,.02); border-radius: 8px; overflow: hidden; }
+.world-map-svg { display: block; width: 100%; height: auto; }
+.map-path { transition: opacity .15s; }
+.map-path.clickable { cursor: pointer; }
+.map-path.clickable:hover { opacity: .7; }
+.map-path.selected { stroke: var(--ink); stroke-width: 0.5px; }
+.map-tooltip {
+  position: fixed; background: var(--bg-2); border: 1px solid var(--rule);
+  border-radius: 6px; padding: 6px 10px; font-family: var(--mono); font-size: 10px;
+  color: var(--ink); pointer-events: none; z-index: 500; white-space: nowrap;
+}
+/* stats button in header */
+.btn-stats {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  background: rgba(255,255,255,.03); color: var(--ink-soft);
+  border: 1px solid var(--rule); padding: 10px 16px; border-radius: 999px;
+  cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  transition: color .15s, border-color .15s;
+}
+.btn-stats:hover { color: var(--ink); border-color: var(--ink-faint); }
 `;
 
 // ─────────── helpers ───────────
@@ -954,21 +1128,311 @@ const REGION_NAMES = {
 };
 function regionName(code) { return REGION_NAMES[code] || null; }
 
-// Parse search query: extract @YEAR / y:YEAR (release) and in:YEAR (rated) tokens.
+// Parse search query: extract @YEAR / y:YEAR (release), in:YEAR (rated), r:N/r:N+/r:N-M (rating).
 function parseQuery(raw) {
   const parts = (raw || '').trim().split(/\s+/);
-  const text = [], releaseYear = [], ratedYear = [];
+  const text = [], releaseYear = [], ratedYear = [], ratingFilter = [];
   for (const tok of parts) {
     if (!tok) continue;
     const atY  = tok.match(/^@(\d{4})$/);
     const yY   = tok.match(/^y:(\d{4})$/i);
     const inY  = tok.match(/^in:(\d{4})$/i);
+    const rEx  = tok.match(/^r:(\d+)(?:([+])|[-](\d+))?$/i);
     if      (atY)  releaseYear.push(atY[1]);
     else if (yY)   releaseYear.push(yY[1]);
     else if (inY)  ratedYear.push(inY[1]);
-    else           text.push(tok);
+    else if (rEx) {
+      const lo = parseInt(rEx[1], 10);
+      if (rEx[2]) { for (let i = lo; i <= 10; i++) ratingFilter.push(String(i)); }
+      else if (rEx[3]) { const hi = parseInt(rEx[3], 10); for (let i = lo; i <= hi; i++) ratingFilter.push(String(i)); }
+      else ratingFilter.push(String(lo));
+    } else text.push(tok);
   }
-  return { text: text.join(' '), releaseYear, ratedYear };
+  return { text: text.join(' '), releaseYear, ratedYear, ratingFilter };
+}
+
+// ── Stats helpers ──
+function getWeekStart(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr + 'T00:00:00');
+  const day = d.getDay();
+  const monday = new Date(d);
+  monday.setDate(d.getDate() - (day === 0 ? 6 : day - 1));
+  return monday.toISOString().slice(0, 10);
+}
+
+function getWeekOfYear(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr + 'T00:00:00');
+  const jan1 = new Date(d.getFullYear(), 0, 1);
+  return Math.ceil(((d - jan1) / 86400000 + jan1.getDay() + 1) / 7);
+}
+
+function countBy(items, keyFn) {
+  const map = {};
+  items.forEach(it => {
+    const k = keyFn(it);
+    if (k != null && k !== '') map[k] = (map[k] || 0) + 1;
+  });
+  return map;
+}
+
+// ISO numeric → region code for world map
+const ISO_TO_REGION = {
+  840:'us', 826:'uk', 250:'fr', 276:'de', 392:'jp', 616:'pl', 380:'it',
+  643:'ru',  // Russia – also displays su items
+  410:'kr', 36:'au', 124:'ca', 372:'ie', 376:'il', 752:'se', 246:'fi',
+  756:'ch', 724:'es', 528:'nl', 208:'dk', 203:'cz', 348:'hu', 100:'bg',
+  191:'hr', 300:'gr', 76:'br',
+};
+
+// Per-medium color hue for the choropleth
+const MEDIUM_MAP_HUE = {
+  'All':'#e96846', 'Film':'#e96846', 'Animated Film':'#c084fc',
+  'Animated Series':'#60a5fa', 'Shorts':'#34d399',
+  'TV':'#fbbf24', 'Games':'#f472b6', 'Books':'#86efac',
+};
+
+let _topoCache = null;
+
+// ─────────── RatingHistogram ───────────
+function RatingHistogram({ items, selectedRatings, onToggle }) {
+  const counts = React.useMemo(() => countBy(items, it => it.rating), [items]);
+  const max = Math.max(1, ...Object.values(counts));
+  return (
+    <div className="rating-hist">
+      {[1,2,3,4,5,6,7,8,9,10].map(n => {
+        const s = String(n);
+        const c = counts[s] || 0;
+        const active = selectedRatings.has(s);
+        return (
+          <div key={n} className={`rating-col${active ? ' active' : ''}`} onClick={() => onToggle(s)} title={`${c} items`}>
+            <div className="rating-cnt">{c || ''}</div>
+            <div className="rating-bar" style={{ height: `${Math.max(3, (c/max)*80)}px` }}/>
+            <div className="rating-lbl">{n}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─────────── HBarHistogram (directors / studios) ───────────
+function HBarHistogram({ items, keyFn, selected, onToggle, limit = 25 }) {
+  const counts = React.useMemo(() => {
+    const raw = countBy(items, keyFn);
+    return Object.entries(raw)
+      .filter(([k]) => k && k !== 'unknown')
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit);
+  }, [items, keyFn, limit]);
+  const max = counts.length ? counts[0][1] : 1;
+  return (
+    <div className="hbar-list">
+      {counts.map(([name, count]) => {
+        const active = selected.has(name);
+        return (
+          <div key={name} className={`hbar-row${active ? ' active' : ''}`} onClick={() => onToggle(name)} title={name}>
+            <div className="hbar-name">{name}</div>
+            <div className="hbar-track">
+              <div className="hbar-fill" style={{ width: `${(count/max)*100}%` }}/>
+            </div>
+            <div className="hbar-cnt">{count}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─────────── ActivityHeatmap ───────────
+function ActivityHeatmap({ items, selectedWeeks, onToggleWeek }) {
+  const [tip, setTip] = React.useState(null);
+
+  const { grid, years, maxCount } = React.useMemo(() => {
+    const g = {};
+    items.forEach(it => {
+      if (!it.watchedDate) return;
+      const y = it.watchedDate.slice(0, 4);
+      const w = getWeekOfYear(it.watchedDate);
+      if (!g[y]) g[y] = {};
+      g[y][w] = (g[y][w] || 0) + 1;
+    });
+    const yrs = Object.keys(g).sort((a, b) => b - a);
+    const mx = Math.max(1, ...yrs.flatMap(y => Object.values(g[y])));
+    return { grid: g, years: yrs, maxCount: mx };
+  }, [items]);
+
+  const WEEKS = Array.from({ length: 53 }, (_, i) => i + 1);
+  const MONTH_LABELS = ['Jan','','Feb','','Mar','','Apr','','May','','Jun','','Jul','','Aug','','Sep','','Oct','','Nov','','Dec',''];
+
+  return (
+    <div className="heatmap-wrap">
+      <div className="heatmap-inner">
+        <div style={{ display:'flex', gap:'2px', marginBottom:'4px', paddingLeft:'36px' }}>
+          {MONTH_LABELS.map((m, i) => (
+            <div key={i} style={{ width:'11px', flexShrink:0, fontFamily:'var(--mono)', fontSize:'8px', color:'var(--ink-faint)', textAlign:'center' }}>{m}</div>
+          ))}
+        </div>
+        <div className="heatmap-rows">
+          {years.map(yr => (
+            <div key={yr} className="heatmap-row">
+              <div className="heatmap-year-lbl">{yr}</div>
+              {WEEKS.map(w => {
+                const count = grid[yr]?.[w] || 0;
+                const weekKey = `${yr}-W${String(w).padStart(2,'0')}`;
+                const sel = selectedWeeks.has(weekKey);
+                const alpha = count === 0 ? 0 : 0.12 + (count / maxCount) * 0.88;
+                return (
+                  <div
+                    key={w}
+                    className={`heatmap-cell${sel ? ' selected' : ''}`}
+                    style={{ background: count ? `rgba(233,104,70,${alpha})` : undefined }}
+                    title={`${yr} week ${w}: ${count} items`}
+                    onMouseEnter={e => setTip({ x: e.clientX, y: e.clientY, text: `${yr} wk ${w} · ${count} item${count!==1?'s':''}` })}
+                    onMouseLeave={() => setTip(null)}
+                    onClick={() => onToggleWeek(weekKey)}
+                  />
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      </div>
+      {tip && <div className="heatmap-tooltip" style={{ left: tip.x + 12, top: tip.y + 12 }}>{tip.text}</div>}
+    </div>
+  );
+}
+
+// ─────────── WorldMap ───────────
+function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' }) {
+  const [topo, setTopo] = React.useState(_topoCache);
+  const [tip, setTip] = React.useState(null);
+
+  React.useEffect(() => {
+    if (_topoCache) return;
+    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+      .then(r => r.json()).then(t => { _topoCache = t; setTopo(t); });
+  }, []);
+
+  const { regionCounts, maxCount } = React.useMemo(() => {
+    const rc = countBy(items, it => it.region);
+    // Russia slot also covers su
+    if (rc['su'] || rc['ru']) rc['_ru_combined'] = (rc['su'] || 0) + (rc['ru'] || 0);
+    const mx = Math.max(1, ...Object.values(rc));
+    return { regionCounts: rc, maxCount: mx };
+  }, [items]);
+
+  const hue = MEDIUM_MAP_HUE[medium] || MEDIUM_MAP_HUE['All'];
+
+  if (!topo) return <div style={{ height:300, display:'flex', alignItems:'center', justifyContent:'center', color:'var(--ink-faint)', fontFamily:'var(--mono)', fontSize:11 }}>Loading map…</div>;
+
+  const d3 = window.d3, tj = window.topojson;
+  const W = 960, H = 500;
+  const projection = d3.geoNaturalEarth1().scale(153).translate([W/2, H/2]);
+  const pathGen = d3.geoPath().projection(projection);
+  const countries = tj.feature(topo, topo.objects.countries);
+
+  return (
+    <div className="world-map-wrap">
+      <svg className="world-map-svg" viewBox={`0 0 ${W} ${H}`}>
+        {countries.features.map(f => {
+          const isoNum = Number(f.id);
+          const region = ISO_TO_REGION[isoNum];
+          const count = region === 'ru' || region === 'su'
+            ? (regionCounts['_ru_combined'] || 0)
+            : (region ? (regionCounts[region] || 0) : 0);
+          const alpha = count === 0 ? 0 : 0.1 + (count / maxCount) * 0.9;
+          const fill = count > 0
+            ? `color-mix(in srgb, ${hue} ${Math.round(alpha*100)}%, #2a2520)`
+            : '#221f1b';
+          const sel = region && selectedCountries.has(region);
+          const d = pathGen(f);
+          if (!d) return null;
+          return (
+            <path
+              key={f.id}
+              d={d}
+              className={`map-path${region ? ' clickable' : ''}${sel ? ' selected' : ''}`}
+              fill={fill}
+              stroke="#1a1714"
+              strokeWidth="0.3"
+              onMouseEnter={e => {
+                if (!region) return;
+                const name = REGION_NAMES[region] || region;
+                setTip({ x: e.clientX, y: e.clientY, text: `${name} · ${count} item${count!==1?'s':''}` });
+              }}
+              onMouseLeave={() => setTip(null)}
+              onClick={() => region && onToggleCountry(region)}
+            />
+          );
+        })}
+      </svg>
+      {tip && <div className="map-tooltip" style={{ left: tip.x + 14, top: tip.y + 14 }}>{tip.text}</div>}
+    </div>
+  );
+}
+
+// ─────────── StatsModal ───────────
+function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry }) {
+  const { MEDIA } = window.CULTURE;
+  const [medium, setMedium] = React.useState('All');
+  const [on, setOn] = React.useState(false);
+  React.useEffect(() => { requestAnimationFrame(() => setOn(true)); }, []);
+
+  const statItems = React.useMemo(
+    () => medium === 'All' ? allItems : allItems.filter(i => i.medium === medium),
+    [allItems, medium]
+  );
+
+  const totalWithDate = statItems.filter(i => i.watchedDate).length;
+
+  return (
+    <div className={`stats-backdrop${on ? '' : ''}`} onClick={onClose}>
+      <div className="stats-modal" onClick={e => e.stopPropagation()}>
+        <button className="stats-close" onClick={onClose}>
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+            <path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" strokeLinecap="round"/>
+          </svg>
+        </button>
+        <div className="stats-head">
+          <h2>Stats<span className="dot">.</span></h2>
+          <div className="stats-subtitle">{allItems.length} entries &nbsp;·&nbsp; {totalWithDate} with date</div>
+        </div>
+        <div className="stats-medium-tabs">
+          {['All', ...MEDIA].map(m => (
+            <button key={m} className={`stats-medium-tab${medium === m ? ' active' : ''}`} onClick={() => setMedium(m)}>{m}</button>
+          ))}
+        </div>
+
+        <div className="stats-section">
+          <div className="stats-section-title">Rating distribution — click bars to filter library</div>
+          <RatingHistogram items={statItems} selectedRatings={selectedRatings} onToggle={onToggleRating} />
+        </div>
+
+        <div className="stats-section stats-two-col">
+          <div>
+            <div className="stats-section-title">Top 25 directors · creators · authors</div>
+            <HBarHistogram items={statItems} keyFn={it => it.director} selected={selectedDirectors} onToggle={onToggleDirector} />
+          </div>
+          <div>
+            <div className="stats-section-title">Top 25 studios · networks · publishers</div>
+            <HBarHistogram items={statItems} keyFn={it => it.studio} selected={selectedStudios} onToggle={onToggleStudio} />
+          </div>
+        </div>
+
+        <div className="stats-section">
+          <div className="stats-section-title">Activity heatmap — click weeks to filter library</div>
+          <ActivityHeatmap items={statItems} selectedWeeks={selectedWeeks} onToggleWeek={onToggleWeek} />
+        </div>
+
+        <div className="stats-section" style={{ marginBottom: 0 }}>
+          <div className="stats-section-title">Country breakdown — click to filter library</div>
+          <WorldMap items={statItems} selectedCountries={selectedCountries} onToggleCountry={onToggleCountry} medium={medium} />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 // Sort a list by the chosen key. Stable-ish with title tiebreak.
@@ -1434,6 +1898,13 @@ function App() {
   const [spinning, setSpinning] = React.useState(false);
   const [search, setSearch] = React.useState('');
   const [selectedRatedYears, setSelectedRatedYears] = React.useState(() => new Set());
+  const [showSearchHint, setShowSearchHint] = React.useState(false);
+  const [statsOpen, setStatsOpen] = React.useState(false);
+  const [selectedRatings, setSelectedRatings] = React.useState(() => new Set());
+  const [selectedDirectors, setSelectedDirectors] = React.useState(() => new Set());
+  const [selectedStudios, setSelectedStudios] = React.useState(() => new Set());
+  const [selectedWeeks, setSelectedWeeks] = React.useState(() => new Set());
+  const [selectedCountries, setSelectedCountries] = React.useState(() => new Set());
 
   // Scroll lock for the Reader modal. (Popup lock is owned by Popup itself.)
   React.useEffect(() => {
@@ -1453,15 +1924,16 @@ function App() {
 
   const shelves = MEDIA.map(m => ({ medium: m, items: ITEMS.filter(i => i.medium === m) }));
 
-  // Shelves after text / @year / y:year / in:year filters — but NOT yet chip filter.
+  // Shelves after text / @year / y:year / in:year / r: filters — but NOT yet chip or stats filters.
   const preChipShelves = React.useMemo(() => {
-    const { text, releaseYear, ratedYear } = parseQuery(search);
+    const { text, releaseYear, ratedYear, ratingFilter } = parseQuery(search);
     const q = text.toLowerCase();
     return shelves.map(s => ({
       ...s,
       items: s.items.filter(it => {
         if (releaseYear.length && !releaseYear.includes(String(it.year))) return false;
-        if (ratedYear.length  && (!it.watchedDate || !ratedYear.includes(it.watchedDate.slice(0, 4)))) return false;
+        if (ratedYear.length   && (!it.watchedDate || !ratedYear.includes(it.watchedDate.slice(0, 4)))) return false;
+        if (ratingFilter.length && !ratingFilter.includes(it.rating)) return false;
         if (!q) return true;
         return (
           it.title.toLowerCase().includes(q) ||
@@ -1472,7 +1944,7 @@ function App() {
     }));
   }, [shelves, search]);
 
-  // Apply chip filter on top.
+  // Apply chip + stats filters on top.
   const filteredShelves = React.useMemo(() => {
     const base = selectedRatedYears.size === 0
       ? preChipShelves
@@ -1480,8 +1952,28 @@ function App() {
           ...s,
           items: s.items.filter(it => it.watchedDate && selectedRatedYears.has(it.watchedDate.slice(0, 4))),
         }));
-    return base.filter(s => s.items.length > 0);
-  }, [preChipShelves, selectedRatedYears]);
+    const hasStats = selectedRatings.size || selectedDirectors.size || selectedStudios.size || selectedWeeks.size || selectedCountries.size;
+    if (!hasStats) return base.filter(s => s.items.length > 0);
+    return base.map(s => ({
+      ...s,
+      items: s.items.filter(it => {
+        if (selectedRatings.size   && !selectedRatings.has(it.rating))    return false;
+        if (selectedDirectors.size && !selectedDirectors.has(it.director)) return false;
+        if (selectedStudios.size   && !selectedStudios.has(it.studio))     return false;
+        if (selectedCountries.size) {
+          const eff = it.region === 'su' ? 'ru' : it.region;
+          if (!selectedCountries.has(eff)) return false;
+        }
+        if (selectedWeeks.size) {
+          if (!it.watchedDate) return false;
+          const w = getWeekOfYear(it.watchedDate);
+          const wk = `${it.watchedDate.slice(0,4)}-W${String(w).padStart(2,'0')}`;
+          if (!selectedWeeks.has(wk)) return false;
+        }
+        return true;
+      }),
+    })).filter(s => s.items.length > 0);
+  }, [preChipShelves, selectedRatedYears, selectedRatings, selectedDirectors, selectedStudios, selectedWeeks, selectedCountries]);
 
   const totalSearchResults = React.useMemo(
     () => filteredShelves.reduce((n, s) => n + s.items.length, 0),
@@ -1505,10 +1997,17 @@ function App() {
   }, [preChipShelves]);
 
   const toggleRatedYear = (yr) => setSelectedRatedYears(prev => {
-    const next = new Set(prev);
-    if (next.has(yr)) next.delete(yr); else next.add(yr);
-    return next;
+    const next = new Set(prev); next.has(yr) ? next.delete(yr) : next.add(yr); return next;
   });
+  const toggleRating    = r => setSelectedRatings(prev   => { const n = new Set(prev); n.has(r) ? n.delete(r) : n.add(r); return n; });
+  const toggleDirector  = d => setSelectedDirectors(prev => { const n = new Set(prev); n.has(d) ? n.delete(d) : n.add(d); return n; });
+  const toggleStudio    = s => setSelectedStudios(prev   => { const n = new Set(prev); n.has(s) ? n.delete(s) : n.add(s); return n; });
+  const toggleWeek      = w => setSelectedWeeks(prev     => { const n = new Set(prev); n.has(w) ? n.delete(w) : n.add(w); return n; });
+  const toggleCountry   = c => setSelectedCountries(prev => { const n = new Set(prev); n.has(c) ? n.delete(c) : n.add(c); return n; });
+  const clearStatsFilters = () => {
+    setSelectedRatings(new Set()); setSelectedDirectors(new Set()); setSelectedStudios(new Set());
+    setSelectedWeeks(new Set()); setSelectedCountries(new Set());
+  };
 
   // Pool for Pick One — anything in PICKABLE_IDS that exists, or items with notes as fallback.
   const pickPool = React.useMemo(() => {
@@ -1606,6 +2105,14 @@ function App() {
             >
               {sortDir === 'desc' ? '←' : '→'}
             </button>
+            <button className="btn-stats" onClick={() => setStatsOpen(true)}>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                <rect x="1" y="8" width="3" height="8" rx="0.5" fill="currentColor"/>
+                <rect x="6.5" y="5" width="3" height="11" rx="0.5" fill="currentColor"/>
+                <rect x="12" y="2" width="3" height="14" rx="0.5" fill="currentColor"/>
+              </svg>
+              Stats
+            </button>
             <button className="btn-pick" onClick={pickOne}>
               <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
                 <rect x="1" y="1" width="9" height="9" rx="1.5" stroke="currentColor"/>
@@ -1617,20 +2124,37 @@ function App() {
               Pick one for me
             </button>
           </div>
-          <div className="search-wrap">
-            <svg className="search-icon" width="12" height="12" viewBox="0 0 16 16" fill="none">
-              <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" strokeWidth="1.4"/>
-              <path d="M10 10l3.5 3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-            </svg>
-            <input
-              className="search-input"
-              type="text"
-              placeholder="Search title, director, studio…"
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-            />
-            {search && (
-              <button className="search-clear" onClick={() => setSearch('')} title="Clear search">×</button>
+          <div className="search-row">
+            <div className="search-wrap">
+              <svg className="search-icon" width="12" height="12" viewBox="0 0 16 16" fill="none">
+                <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M10 10l3.5 3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+              <input
+                className="search-input"
+                type="text"
+                placeholder="Search title, director, studio…"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+              />
+              {search && (
+                <button className="search-clear" onClick={() => setSearch('')} title="Clear search">×</button>
+              )}
+            </div>
+            <button
+              className="search-hint-btn"
+              data-active={showSearchHint}
+              onClick={() => setShowSearchHint(h => !h)}
+              title="Search syntax"
+            >?</button>
+            {showSearchHint && (
+              <div className="search-hint-popover">
+                <div className="search-hint-row"><code>@2023</code> or <code>y:2023</code><span>— filter by release year</span></div>
+                <div className="search-hint-row"><code>in:2023</code><span>— filter by year rated</span></div>
+                <div className="search-hint-row"><code>r:10</code> <code>r:8+</code> <code>r:7-9</code><span>— filter by rating</span></div>
+                <div className="search-hint-row"><span>plain text — title, director, studio wildcard</span></div>
+                <div className="search-hint-row"><span style={{color:'var(--ink-faint)'}}>tokens stack: <code>@2023 nolan r:9+</code></span></div>
+              </div>
             )}
           </div>
         </div>
@@ -1647,6 +2171,27 @@ function App() {
         <div className="search-results-msg">
           <b>{totalSearchResults}</b> result{totalSearchResults !== 1 ? 's' : ''} for &ldquo;{search.trim()}&rdquo;
           <button onClick={() => setSearch('')}>clear</button>
+        </div>
+      )}
+
+      {(selectedRatings.size > 0 || selectedDirectors.size > 0 || selectedStudios.size > 0 || selectedWeeks.size > 0 || selectedCountries.size > 0) && (
+        <div className="active-filters">
+          {[...selectedRatings].sort().map(r => (
+            <span key={r} className="filter-pill">★{r}<button onClick={() => toggleRating(r)}>×</button></span>
+          ))}
+          {[...selectedDirectors].map(d => (
+            <span key={d} className="filter-pill">{d}<button onClick={() => toggleDirector(d)}>×</button></span>
+          ))}
+          {[...selectedStudios].map(s => (
+            <span key={s} className="filter-pill">{s}<button onClick={() => toggleStudio(s)}>×</button></span>
+          ))}
+          {[...selectedCountries].map(c => (
+            <span key={c} className="filter-pill">{REGION_NAMES[c] || c}<button onClick={() => toggleCountry(c)}>×</button></span>
+          ))}
+          {[...selectedWeeks].sort().map(w => (
+            <span key={w} className="filter-pill">{w}<button onClick={() => toggleWeek(w)}>×</button></span>
+          ))}
+          <button className="filter-pill-clear" onClick={clearStatsFilters}>clear all</button>
         </div>
       )}
 
@@ -1703,6 +2248,18 @@ function App() {
 
       {openItem && (
         <Reader item={openItem} onClose={() => setOpenItem(null)} onJump={(it) => setOpenItem(it)} />
+      )}
+
+      {statsOpen && (
+        <StatsModal
+          allItems={ITEMS}
+          onClose={() => setStatsOpen(false)}
+          selectedRatings={selectedRatings}    onToggleRating={toggleRating}
+          selectedDirectors={selectedDirectors} onToggleDirector={toggleDirector}
+          selectedStudios={selectedStudios}     onToggleStudio={toggleStudio}
+          selectedWeeks={selectedWeeks}         onToggleWeek={toggleWeek}
+          selectedCountries={selectedCountries} onToggleCountry={toggleCountry}
+        />
       )}
     </div>
   );
