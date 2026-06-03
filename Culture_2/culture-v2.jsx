@@ -764,6 +764,10 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   margin: 0 0 22px;
 }
 .reader-quote.empty { color: #98908a; font-size: 14px; }
+.reader-summary {
+  font-size: 13px; line-height: 1.55; color: var(--ink-faint);
+  margin: -10px 0 22px; font-family: var(--mono);
+}
 .reader-crew {
   display: flex; flex-wrap: wrap; gap: 6px 20px;
   margin: 4px 0 10px; font-size: 12px; color: var(--paper-ink-faint, #98908a);
@@ -830,7 +834,10 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   color: #8a8175;
   margin-bottom: 10px;
 }
-.reader-adjacent .row { display: flex; gap: 6px; }
+.reader-adjacent .row { display: flex; gap: 6px; overflow-x: auto; cursor: grab; scrollbar-width: none; }
+.reader-adjacent .row::-webkit-scrollbar { display: none; }
+.reader-adjacent .row.dragging { cursor: grabbing; user-select: none; }
+.reader-adjacent .row.dragging * { pointer-events: none; }
 .reader-adjacent .row a {
   width: 56px;
   aspect-ratio: 2/3;
@@ -879,8 +886,9 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   .shelf-rail::before, .shelf-rail::after { width: 24px; }
   .shelf-thumb { left: 24px; right: 24px; }
   .site-foot { padding: 24px 24px 0; }
-  .reader { grid-template-columns: 1fr; max-height: calc(100vh - 24px); overflow-y: auto; display: flex; flex-direction: column; }
-  .reader-poster { aspect-ratio: initial; height: 260px; flex-shrink: 0; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; }
+  .reader-backdrop { padding: 12px; }
+  .reader { grid-template-columns: 1fr; max-height: calc(100vh - 24px); overflow-y: scroll; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; display: flex; flex-direction: column; }
+  .reader-poster { position: static; aspect-ratio: initial; height: 260px; flex-shrink: 0; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; }
   .reader-poster img { width: auto; height: 100%; object-fit: cover; object-position: top center; }
   .reader-body { overflow-y: visible; }
   .reader-title { font-size: 40px; }
@@ -1009,14 +1017,11 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 .stats-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 44px; }
 .stats-two-col .stats-section { margin-bottom: 0; }
-.stats-people-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
-.stats-people-head .stats-section-title { margin-bottom: 0; }
-.stats-people-select {
-  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-  background: transparent; border: 1px solid var(--rule); color: var(--ink);
-  padding: 4px 8px; cursor: pointer; border-radius: 2px;
-}
-.stats-people-select:hover { border-color: var(--ink-faint); }
+.stats-view-head { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+.stats-view-head .stats-section-title { margin-bottom: 0; }
+.stats-view-chevron { position: relative; cursor: pointer; font-family: var(--mono); font-size: 10px; color: var(--ink-faint); line-height: 1; user-select: none; }
+.stats-view-chevron:hover { color: var(--ink); }
+.stats-view-select-overlay { position: absolute; inset: -4px; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
 @media (max-width: 768px) { .stats-modal { padding: 24px; } }
 
 /* rating histogram */
@@ -1283,6 +1288,7 @@ const ISO_TO_REGION = {
   410:'kr', 36:'au', 124:'ca', 372:'ie', 376:'il', 752:'se', 246:'fi',
   756:'ch', 724:'es', 528:'nl', 208:'dk', 203:'cz', 348:'hu', 100:'bg',
   191:'hr', 300:'gr', 76:'br',
+  344:'hk', 156:'cn',
 };
 
 // Per-medium color hue for the choropleth
@@ -1365,13 +1371,19 @@ function ActivityHeatmap({ items, selectedWeeks, onToggleWeek }) {
   }, [items]);
 
   const WEEKS = Array.from({ length: 53 }, (_, i) => i + 1);
-  const MONTH_LABELS = ['Jan','','Feb','','Mar','','Apr','','May','','Jun','','Jul','','Aug','','Sep','','Oct','','Nov','','Dec',''];
+  const WEEK_LABELS = (() => {
+    const labels = Array(53).fill('');
+    [1,5,9,13,18,22,26,31,35,40,44,48].forEach((w, i) => {
+      labels[w - 1] = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][i];
+    });
+    return labels;
+  })();
 
   return (
     <div className="heatmap-wrap">
       <div className="heatmap-inner">
         <div style={{ display:'flex', gap:'2px', marginBottom:'4px', paddingLeft:'36px' }}>
-          {MONTH_LABELS.map((m, i) => (
+          {WEEK_LABELS.map((m, i) => (
             <div key={i} style={{ width:'11px', flexShrink:0, fontFamily:'var(--mono)', fontSize:'8px', color:'var(--ink-faint)', textAlign:'center' }}>{m}</div>
           ))}
         </div>
@@ -1448,6 +1460,7 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
             ? `color-mix(in srgb, ${hue} ${Math.round(alpha*100)}%, #2a2520)`
             : '#221f1b';
           const sel = region && selectedCountries.has(region);
+          if (isoNum === 10) return null;
           const d = pathGen(f);
           if (!d) return null;
           return (
@@ -1477,6 +1490,8 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
 // ─────────── StatsModal ───────────
 function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer }) {
   const { MEDIA } = window.CULTURE;
+  const LEFT_VIEW_LABELS  = { directors: 'Directors', actors: 'Actors', writers: 'Writers', cinematographers: 'Cinematographers', animationDirectors: 'Animation Directors' };
+  const RIGHT_VIEW_LABELS = { studios: 'Studios', companies: 'Production Companies', composers: 'Composers' };
   const [medium, setMedium] = React.useState('All');
   const [leftView, setLeftView] = React.useState('directors');
   const [rightView, setRightView] = React.useState('studios');
@@ -1515,15 +1530,15 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
 
         <div className="stats-two-col">
           <div className="stats-section">
-            <div className="stats-people-head">
-              <div className="stats-section-title">Top 25</div>
-              <select className="stats-people-select" value={leftView} onChange={e => setLeftView(e.target.value)}>
+            <div className="stats-view-head">
+              <div className="stats-section-title">{LEFT_VIEW_LABELS[leftView]}</div>
+              <label className="stats-view-chevron">▾<select value={leftView} onChange={e => setLeftView(e.target.value)} className="stats-view-select-overlay">
                 <option value="directors">Directors · Creators · Authors</option>
                 <option value="actors">Actors</option>
                 <option value="writers">Writers · Screenwriters</option>
                 <option value="cinematographers">Cinematographers</option>
                 <option value="animationDirectors">Animation Directors</option>
-              </select>
+              </select></label>
             </div>
             {leftView === 'directors'  && <HBarHistogram items={statItems} keyFn={it => it.director} selected={selectedDirectors} onToggle={onToggleDirector} />}
             {leftView === 'actors'     && <HBarHistogram items={statItems}
@@ -1535,13 +1550,13 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
           </div>
 
           <div className="stats-section">
-            <div className="stats-people-head">
-              <div className="stats-section-title">Top 25</div>
-              <select className="stats-people-select" value={rightView} onChange={e => setRightView(e.target.value)}>
+            <div className="stats-view-head">
+              <div className="stats-section-title">{RIGHT_VIEW_LABELS[rightView]}</div>
+              <label className="stats-view-chevron">▾<select value={rightView} onChange={e => setRightView(e.target.value)} className="stats-view-select-overlay">
                 <option value="studios">Studios · Networks · Publishers</option>
                 <option value="companies">Production Companies</option>
                 <option value="composers">Composers</option>
-              </select>
+              </select></label>
             </div>
             {rightView === 'studios'   && <HBarHistogram items={statItems} keyFn={it => it.studio} selected={selectedStudios} onToggle={onToggleStudio} />}
             {rightView === 'companies' && <HBarHistogram items={statItems}
@@ -1817,14 +1832,6 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
           onMouseDown={onMouseDown}
           onMouseMove={onMouseMove}
           onMouseLeave={() => { onMouseUpOrLeave(); handleLeave(); }}
-          onWheel={(e) => {
-            const el = scrollerRef.current;
-            if (!el) return;
-            if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && e.deltaY !== 0) {
-              el.scrollLeft += e.deltaY;
-              e.preventDefault();
-            }
-          }}
         >
           {ordered.map((item, i) => {
             const isSpine = isSpineFor(item);
@@ -1862,7 +1869,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
                 onAuxClick={(e) => handleAuxClick(e, item)}
                 title={item.title}
               >
-                <img className="layer-img" src={item.poster} alt={item.title} loading="lazy"/>
+                <img className="layer-img" src={item.poster || item.tmdbPoster || item.igdbCover} alt={item.title} loading="lazy"/>
                 <div className="layer-spine">
                   <span className="spine-band top"/>
                   <span className="spine-label">{item.title}</span>
@@ -1934,6 +1941,42 @@ function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
   );
 }
 
+// ─────────── DragScroll ───────────
+function DragScroll({ className, children }) {
+  const ref = React.useRef(null);
+  const drag = React.useRef({ down: false, x: 0, sl: 0, moved: false });
+  const THRESH = 5;
+  const onMouseDown = e => {
+    if (e.button !== 0) return;
+    drag.current = { down: true, x: e.clientX, sl: ref.current.scrollLeft, moved: false };
+  };
+  const onMouseMove = e => {
+    if (!drag.current.down) return;
+    const dx = e.clientX - drag.current.x;
+    if (!drag.current.moved && Math.abs(dx) > THRESH) {
+      drag.current.moved = true;
+      ref.current.classList.add('dragging');
+    }
+    if (drag.current.moved) ref.current.scrollLeft = drag.current.sl - dx;
+  };
+  const onUp = () => {
+    if (!drag.current.down) return;
+    ref.current?.classList.remove('dragging');
+    drag.current.down = false;
+    drag.current.moved = false;
+  };
+  React.useEffect(() => {
+    window.addEventListener('mouseup', onUp);
+    return () => window.removeEventListener('mouseup', onUp);
+  }, []);
+  return (
+    <div ref={ref} className={className}
+      onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseLeave={onUp}>
+      {children}
+    </div>
+  );
+}
+
 // ─────────── Reader Modal ───────────
 function Reader({ item, onClose, onJump, allItems, onFilter }) {
   const { ITEMS, MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
@@ -1979,8 +2022,8 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
           </svg>
         </button>
         <div className="reader-poster">
-          {(item.poster || item.tmdbPoster)
-            ? <img src={item.poster || item.tmdbPoster} alt={item.title}/>
+          {(item.poster || item.tmdbPoster || item.igdbCover)
+            ? <img src={item.poster || item.tmdbPoster || item.igdbCover} alt={item.title}/>
             : <div className="poster-fallback" style={{ '--pf-bg': spineBodyColor(item) }}>
                 <span className="pf-title">{item.title}</span>
                 <span className="pf-meta">{MEDIA_SHORT[item.medium]} · {item.year}</span>
@@ -2004,6 +2047,7 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
             {item.genres && item.genres.length > 0 ? <React.Fragment><span className="sep"/><span>{item.genres.slice(0, 4).map((g, i) => <React.Fragment key={g}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`genre:${g}`)}>{g}</span></React.Fragment>)}</span></React.Fragment> : null}
             {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: <span className="meta-link" onClick={() => onFilter && onFilter(`director:${item.director}`)}>{item.director}</span></span></React.Fragment> : null}
             {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: <span className="meta-link" onClick={() => onFilter && onFilter(`studio:${item.studio}`)}>{item.studio}</span></span></React.Fragment> : null}
+            {item.igdbFranchise ? <React.Fragment><span className="sep"/><span>Series: {item.igdbFranchise}</span></React.Fragment> : null}
             {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
             <span className="sep"/>
             <span>№ {String(posInMedium).padStart(3,'0')} of {String(inMedium.length).padStart(3,'0')}</span>
@@ -2021,6 +2065,9 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
           {item.note
             ? <blockquote className="reader-quote">{item.note}</blockquote>
             : <blockquote className="reader-quote empty">{item.favorite ? 'A note for this one is on the to-write list.' : 'From the wider library — no personal note yet.'}</blockquote>}
+          {item.igdbSummary && (
+            <p className="reader-summary">{item.igdbSummary}</p>
+          )}
           {item.cast && item.cast.length > 0 && (
             <div className="reader-cast">
               <span className="reader-cast-label">Cast</span>
@@ -2034,15 +2081,15 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
           )}
           <div className="reader-adjacent">
             <div className="lbl">More like this</div>
-            <div className="row">
+            <DragScroll className="row">
               {adjacent.map(a => (
                 <a key={a.id} onClick={() => onJump(a)} title={`${a.title} (${a.year})`}>
-                  {(a.poster || a.tmdbPoster)
-                    ? <img src={a.poster || a.tmdbPoster} alt=""/>
+                  {(a.poster || a.tmdbPoster || a.igdbCover)
+                    ? <img src={a.poster || a.tmdbPoster || a.igdbCover} alt=""/>
                     : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
                 </a>
               ))}
-            </div>
+            </DragScroll>
           </div>
           <div className="reader-actions">
             <a className="reader-btn primary" href={item.link} target="_blank" rel="noopener noreferrer">
