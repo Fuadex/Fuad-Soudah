@@ -379,7 +379,7 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
               margin .55s cubic-bezier(.2,.7,.3,1),
               transform .35s cubic-bezier(.2,.7,.3,1),
               box-shadow .25s,
-              filter .25s;
+              opacity .25s;
   --fan: 30px;
 }
 .item.as-cover { width: 96px; margin-right: -38px; }
@@ -529,14 +529,13 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   50%  { box-shadow: 0 0 0 3px var(--accent), 0 0 12px 5px rgba(233,104,70,.3),  0 28px 56px -8px rgba(0,0,0,.75); }
   100% { box-shadow: 0 0 0 3px var(--accent), 0 0 0   0   rgba(233,104,70,.0),  0 28px 56px -8px rgba(0,0,0,.75); }
 }
-.shelf.is-focused .item:not([data-pos="hovered"]) {
-  filter: brightness(.5) saturate(.85);
+.shelf.is-focused .item.as-spine:not([data-pos="hovered"]):not([data-pos="just-picked"]) {
+  opacity: 0.38;
 }
 /* While a "Pick one for me" result is highlighted, dim the rest of its row
    so the chosen item is the only thing lit. Clears with justPickedId. */
 .shelf.is-picking .item:not([data-pos="just-picked"]) {
-  filter: brightness(.4) saturate(.8);
-  transition: filter .3s ease;
+  opacity: 0.28;
 }
 
 /* Mix-mode re-roll animation */
@@ -765,6 +764,32 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   margin: 0 0 22px;
 }
 .reader-quote.empty { color: #98908a; font-size: 14px; }
+.reader-crew {
+  display: flex; flex-wrap: wrap; gap: 6px 20px;
+  margin: 4px 0 10px; font-size: 12px; color: var(--paper-ink-faint, #98908a);
+}
+.reader-crew .crew-role {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-right: 4px;
+}
+.reader-cast {
+  font-size: 12px; color: var(--paper-ink-faint, #98908a);
+  margin: 8px 0 10px; line-height: 1.6;
+}
+.reader-cast-label {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-right: 8px;
+}
+.reader-tags {
+  display: flex; flex-wrap: wrap; gap: 5px; margin: 4px 0 16px;
+}
+.reader-tag {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; text-transform: lowercase;
+  background: var(--rule, rgba(0,0,0,.08)); color: var(--paper-ink-faint, #98908a);
+  padding: 3px 7px; border-radius: 2px;
+}
+.meta-link { cursor: pointer; transition: opacity .15s; }
+.meta-link:hover { opacity: 0.55; }
 .reader-actions {
   margin-top: auto;
   padding-top: 16px;
@@ -854,8 +879,10 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   .shelf-rail::before, .shelf-rail::after { width: 24px; }
   .shelf-thumb { left: 24px; right: 24px; }
   .site-foot { padding: 24px 24px 0; }
-  .reader { grid-template-columns: 1fr; max-height: calc(100vh - 24px); }
-  .reader-poster { aspect-ratio: 2/3; max-height: 320px; }
+  .reader { grid-template-columns: 1fr; max-height: calc(100vh - 24px); overflow-y: auto; display: flex; flex-direction: column; }
+  .reader-poster { aspect-ratio: initial; height: 260px; flex-shrink: 0; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; }
+  .reader-poster img { width: auto; height: 100%; object-fit: cover; object-position: top center; }
+  .reader-body { overflow-y: visible; }
   .reader-title { font-size: 40px; }
   .yr-chips-section { padding: 24px 24px 0; }
 }
@@ -980,8 +1007,17 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
   text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px;
 }
-.stats-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-@media (max-width: 768px) { .stats-two-col { grid-template-columns: 1fr; } .stats-modal { padding: 24px; } }
+.stats-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 44px; }
+.stats-two-col .stats-section { margin-bottom: 0; }
+.stats-people-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.stats-people-head .stats-section-title { margin-bottom: 0; }
+.stats-people-select {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  background: transparent; border: 1px solid var(--rule); color: var(--ink);
+  padding: 4px 8px; cursor: pointer; border-radius: 2px;
+}
+.stats-people-select:hover { border-color: var(--ink-faint); }
+@media (max-width: 768px) { .stats-modal { padding: 24px; } }
 
 /* rating histogram */
 .rating-hist { display: flex; align-items: flex-end; gap: 5px; height: 120px; }
@@ -1068,22 +1104,45 @@ function spineBandColor() {
 }
 
 function spineWidth(item) {
-  // Series thickness scales with the number of seasons released.
   if (item.medium === 'TV' || item.medium === 'Animated Series') {
-    if (item.seasons) {
-      const s = Math.max(1, item.seasons);
-      return Math.max(18, Math.min(46, 18 + (s - 1) * 3));
-    }
+    if (item.totalMinutes) return Math.max(18, Math.min(60, Math.round((Math.log(item.totalMinutes) * 18.7 - 64) / 1.5)));
+    if (item.seasons) return Math.max(18, Math.min(60, Math.round((22 + (Math.max(1, item.seasons) - 1) * 4) / 1.5)));
     if (item.length === 3) return 32;
     if (item.length === 2) return 26;
     if (item.length === 1) return 20;
     return 24;
   }
+  if (item.medium === 'Games') {
+    if (item.playtime) return Math.max(16, Math.min(46, Math.round(16 + item.playtime * 1.4)));
+    if (item.length === 3) return 32;
+    if (item.length === 2) return 26;
+    if (item.length === 1) return 20;
+    return 22;
+  }
+  if (item.medium === 'Books') {
+    if (item.pages) return Math.max(18, Math.min(50, Math.round(18 + item.pages / 20)));
+    if (item.length === 3) return 32;
+    if (item.length === 2) return 26;
+    if (item.length === 1) return 20;
+    return 24;
+  }
+  // Movies, Feature Animation, Shorts — runtime in minutes
+  // Calibrated so 120min = 26px (same as length=2) and 180min = 32px (same as length=3)
+  if (item.runtime) return Math.max(16, Math.min(40, Math.round(14 + item.runtime / 10)));
   if (item.length === 3) return 32;
   if (item.length === 2) return 26;
   if (item.length === 1) return 20;
-  if (item.medium === 'Books') return 24;
+  if (item.medium === 'Shorts') return 16;
   return 22;
+}
+
+function formatRuntime(minutes) {
+  if (!minutes) return null;
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  if (h === 0) return `${m}m`;
+  if (m === 0) return `${h}h`;
+  return `${h}h ${m}m`;
 }
 
 // Centered visual order: [..., 5, 3, 1, 0, 2, 4, 6, ...] given data 0..N.
@@ -1130,25 +1189,65 @@ function regionName(code) { return REGION_NAMES[code] || null; }
 
 // Parse search query: extract @YEAR / y:YEAR (release), in:YEAR (rated), r:N/r:N+/r:N-M (rating).
 function parseQuery(raw) {
-  const parts = (raw || '').trim().split(/\s+/);
-  const text = [], releaseYear = [], ratedYear = [], ratingFilter = [];
+  const FIELD_MAP = {
+    genre: 'genres', g: 'genres',
+    actor: 'actors', cast: 'actors',
+    director: 'directors', dir: 'directors',
+    tag: 'tags',
+    studio: 'studios',
+    writer: 'writers', author: 'writers',
+    dp: 'dps', cin: 'dps',
+    region: 'regions', country: 'regions',
+  };
+  const result = {
+    text: '', releaseYear: [], ratedYear: [], ratingFilter: [],
+    genres: [], actors: [], directors: [], tags: [], studios: [],
+    writers: [], dps: [], regions: [],
+  };
+  const s = (raw || '').trim();
+  if (!s) return result;
+
+  // Find all field:value token starts (multi-word values are supported)
+  const fieldRe = new RegExp(`\\b(${Object.keys(FIELD_MAP).join('|')}):`, 'gi');
+  const tokens = [];
+  let m;
+  fieldRe.lastIndex = 0;
+  while ((m = fieldRe.exec(s)) !== null) tokens.push({ start: m.index, prefixEnd: m.index + m[0].length, key: m[1].toLowerCase() });
+
+  // Each token's value runs to the next token boundary
+  for (let i = 0; i < tokens.length; i++) {
+    const { prefixEnd, key } = tokens[i];
+    const nextStart = i + 1 < tokens.length ? tokens[i + 1].start : s.length;
+    const val = s.slice(prefixEnd, nextStart).trim();
+    if (val) result[FIELD_MAP[key]].push(val.toLowerCase());
+  }
+
+  // Strip field:value spans from the string, then parse remaining for legacy tokens + plain text
+  let rest = s;
+  for (let i = tokens.length - 1; i >= 0; i--) {
+    const nextStart = i + 1 < tokens.length ? tokens[i + 1].start : s.length;
+    rest = rest.slice(0, tokens[i].start) + ' ' + rest.slice(nextStart);
+  }
+  const parts = rest.trim().split(/\s+/);
+  const text = [];
   for (const tok of parts) {
     if (!tok) continue;
-    const atY  = tok.match(/^@(\d{4})$/);
-    const yY   = tok.match(/^y:(\d{4})$/i);
-    const inY  = tok.match(/^in:(\d{4})$/i);
-    const rEx  = tok.match(/^r:(\d+)(?:([+])|[-](\d+))?$/i);
-    if      (atY)  releaseYear.push(atY[1]);
-    else if (yY)   releaseYear.push(yY[1]);
-    else if (inY)  ratedYear.push(inY[1]);
+    const atY = tok.match(/^@(\d{4})$/);
+    const yY  = tok.match(/^y:(\d{4})$/i);
+    const inY = tok.match(/^in:(\d{4})$/i);
+    const rEx = tok.match(/^r:(\d+)(?:([+])|[-](\d+))?$/i);
+    if      (atY) result.releaseYear.push(atY[1]);
+    else if (yY)  result.releaseYear.push(yY[1]);
+    else if (inY) result.ratedYear.push(inY[1]);
     else if (rEx) {
       const lo = parseInt(rEx[1], 10);
-      if (rEx[2]) { for (let i = lo; i <= 10; i++) ratingFilter.push(String(i)); }
-      else if (rEx[3]) { const hi = parseInt(rEx[3], 10); for (let i = lo; i <= hi; i++) ratingFilter.push(String(i)); }
-      else ratingFilter.push(String(lo));
+      if (rEx[2]) { for (let i = lo; i <= 10; i++) result.ratingFilter.push(String(i)); }
+      else if (rEx[3]) { const hi = parseInt(rEx[3], 10); for (let i = lo; i <= hi; i++) result.ratingFilter.push(String(i)); }
+      else result.ratingFilter.push(String(lo));
     } else text.push(tok);
   }
-  return { text: text.join(' '), releaseYear, ratedYear, ratingFilter };
+  result.text = text.join(' ');
+  return result;
 }
 
 // ── Stats helpers ──
@@ -1217,15 +1316,17 @@ function RatingHistogram({ items, selectedRatings, onToggle }) {
   );
 }
 
-// ─────────── HBarHistogram (directors / studios) ───────────
-function HBarHistogram({ items, keyFn, selected, onToggle, limit = 25 }) {
+// ─────────── HBarHistogram (directors / studios / actors / etc.) ───────────
+// countFn: optional alternative to keyFn for multi-value fields (e.g. cast arrays).
+//   countFn(items) => { [name]: count }
+function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 25 }) {
   const counts = React.useMemo(() => {
-    const raw = countBy(items, keyFn);
+    const raw = countFn ? countFn(items) : countBy(items, keyFn);
     return Object.entries(raw)
       .filter(([k]) => k && k !== 'unknown')
       .sort((a, b) => b[1] - a[1])
       .slice(0, limit);
-  }, [items, keyFn, limit]);
+  }, [items, keyFn, countFn, limit]);
   const max = counts.length ? counts[0][1] : 1;
   return (
     <div className="hbar-list">
@@ -1374,9 +1475,11 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
 }
 
 // ─────────── StatsModal ───────────
-function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry }) {
+function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer }) {
   const { MEDIA } = window.CULTURE;
   const [medium, setMedium] = React.useState('All');
+  const [leftView, setLeftView] = React.useState('directors');
+  const [rightView, setRightView] = React.useState('studios');
   const [on, setOn] = React.useState(false);
   React.useEffect(() => { requestAnimationFrame(() => setOn(true)); }, []);
 
@@ -1410,14 +1513,41 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
           <RatingHistogram items={statItems} selectedRatings={selectedRatings} onToggle={onToggleRating} />
         </div>
 
-        <div className="stats-section stats-two-col">
-          <div>
-            <div className="stats-section-title">Top 25 directors · creators · authors</div>
-            <HBarHistogram items={statItems} keyFn={it => it.director} selected={selectedDirectors} onToggle={onToggleDirector} />
+        <div className="stats-two-col">
+          <div className="stats-section">
+            <div className="stats-people-head">
+              <div className="stats-section-title">Top 25</div>
+              <select className="stats-people-select" value={leftView} onChange={e => setLeftView(e.target.value)}>
+                <option value="directors">Directors · Creators · Authors</option>
+                <option value="actors">Actors</option>
+                <option value="writers">Writers · Screenwriters</option>
+                <option value="cinematographers">Cinematographers</option>
+                <option value="animationDirectors">Animation Directors</option>
+              </select>
+            </div>
+            {leftView === 'directors'  && <HBarHistogram items={statItems} keyFn={it => it.director} selected={selectedDirectors} onToggle={onToggleDirector} />}
+            {leftView === 'actors'     && <HBarHistogram items={statItems}
+                countFn={its => { const m = {}; its.forEach(it => (it.cast||[]).forEach(a => { m[a] = (m[a]||0)+1; })); return m; }}
+                selected={selectedActors} onToggle={onToggleActor} />}
+            {leftView === 'writers'    && <HBarHistogram items={statItems} keyFn={it => it.writer || null} selected={selectedWriters} onToggle={onToggleWriter} />}
+            {leftView === 'cinematographers' && <HBarHistogram items={statItems} keyFn={it => it.cinematographer || null} selected={selectedCinematographers} onToggle={onToggleCinematographer} />}
+            {leftView === 'animationDirectors' && <HBarHistogram items={statItems} keyFn={it => it.animationDirector || null} selected={new Set()} onToggle={() => {}} />}
           </div>
-          <div>
-            <div className="stats-section-title">Top 25 studios · networks · publishers</div>
-            <HBarHistogram items={statItems} keyFn={it => it.studio} selected={selectedStudios} onToggle={onToggleStudio} />
+
+          <div className="stats-section">
+            <div className="stats-people-head">
+              <div className="stats-section-title">Top 25</div>
+              <select className="stats-people-select" value={rightView} onChange={e => setRightView(e.target.value)}>
+                <option value="studios">Studios · Networks · Publishers</option>
+                <option value="companies">Production Companies</option>
+                <option value="composers">Composers</option>
+              </select>
+            </div>
+            {rightView === 'studios'   && <HBarHistogram items={statItems} keyFn={it => it.studio} selected={selectedStudios} onToggle={onToggleStudio} />}
+            {rightView === 'companies' && <HBarHistogram items={statItems}
+                countFn={its => { const m = {}; its.forEach(it => (it.productionCompanies||[]).forEach(c => { m[c] = (m[c]||0)+1; })); return m; }}
+                selected={new Set()} onToggle={() => {}} />}
+            {rightView === 'composers' && <HBarHistogram items={statItems} keyFn={it => it.composer || null} selected={new Set()} onToggle={() => {}} />}
           </div>
         </div>
 
@@ -1435,6 +1565,18 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
   );
 }
 
+// Normalises content length to minutes for cross-media duration sort.
+function itemDurationMinutes(item) {
+  if (item.medium === 'TV' || item.medium === 'Animated Series') {
+    if (item.totalMinutes) return item.totalMinutes;
+    if (item.seasons) return item.seasons * 10 * 45;
+    return 0;
+  }
+  if (item.medium === 'Games') return (item.playtime || 0) * 60;
+  if (item.medium === 'Books') return (item.pages || 0) / 4;
+  return item.runtime || 0; // Movies, Feature Animation, Shorts
+}
+
 // Sort a list by the chosen key. Stable-ish with title tiebreak.
 function sortItems(arr, sort, dir) {
   const byTitle = (a, b) => a.title.localeCompare(b.title);
@@ -1446,6 +1588,13 @@ function sortItems(arr, sort, dir) {
   else if (sort === 'director') list.sort((a, b) => (a.director || '￿').localeCompare(b.director || '￿') || byTitle(a, b));
   else if (sort === 'studio')   list.sort((a, b) => (a.studio   || '￿').localeCompare(b.studio   || '￿') || byTitle(a, b));
   else if (sort === 'rated')    list.sort((a, b) => (b.watchedDate || '').localeCompare(a.watchedDate || '') || byTitle(a, b));
+  else if (sort === 'duration') list.sort((a, b) => {
+    const da = itemDurationMinutes(a), db = itemDurationMinutes(b);
+    if (!da && !db) return byTitle(a, b);
+    if (!da) return 1;
+    if (!db) return -1;
+    return db - da || byTitle(a, b);
+  });
   if (dir === 'asc') list.reverse();
   return list;
 }
@@ -1649,8 +1798,6 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
     }
   };
 
-  const hovered = hoverIdx >= 0 ? ordered[hoverIdx] : null;
-
   // True while a freshly-picked item in THIS row is highlighted (and nothing
   // is hovered). Drives the row-dim so only the pick stays lit for a beat.
   const isPicking = !!justPickedId && hoverIdx < 0 && items.some(i => i.id === justPickedId);
@@ -1682,21 +1829,15 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
           {ordered.map((item, i) => {
             const isSpine = isSpineFor(item);
             let pos = 'idle';
-            if (i === hoverIdx) pos = 'hovered';
-            else if (hoverIdx >= 0 && i < hoverIdx) pos = 'left';
-            else if (hoverIdx >= 0 && i > hoverIdx) pos = 'right';
+            if (i === hoverIdx)                            pos = 'hovered';
+            else if (hoverIdx >= 0 && i < hoverIdx)       pos = 'left';
+            else if (hoverIdx >= 0 && i > hoverIdx)       pos = 'right';
             if (item.id === justPickedId && hoverIdx < 0) pos = 'just-picked';
-
-            // Z-index: hovered on top of everything, then siblings fade by
-            // distance, so a fanned-right cover never paints behind its
-            // right neighbour. Default = ordered index so later-in-DOM
-            // covers overlap earlier ones as usual.
             let zIndex;
-            if (pos === 'hovered')     zIndex = 200;
+            if (pos === 'hovered')          zIndex = 200;
             else if (pos === 'just-picked') zIndex = 150;
-            else if (hoverIdx >= 0)    zIndex = Math.max(1, 60 - Math.abs(i - hoverIdx));
-            else                       zIndex = i + 1;
-
+            else if (hoverIdx >= 0)         zIndex = Math.max(1, 60 - Math.abs(i - hoverIdx));
+            else                            zIndex = i + 1;
             const bodyColor = spineBodyColor(item);
             const isPicked = pickedSet.has(item.id);
 
@@ -1706,8 +1847,8 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
                 data-item-id={item.id}
                 data-rank={item._rank}
                 data-mode={mode}
-                className={`item ${isSpine ? 'as-spine' : 'as-cover'}${isPicked ? ' picked' : ''}${reshuffling ? ' reshuffling' : ''}`}
                 data-pos={pos}
+                className={`item ${isSpine ? 'as-spine' : 'as-cover'}${isPicked ? ' picked' : ''}${reshuffling ? ' reshuffling' : ''}`}
                 style={{
                   '--spine-color': bodyColor,
                   '--spine-w': spineWidth(item) + 'px',
@@ -1739,9 +1880,9 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
           <div className="bar" style={{ left: scrollSpan.left + '%', width: scrollSpan.thumb + '%' }}/>
         </div>
       </div>
-      {hovered && popupPos && (
+      {hoverIdx >= 0 && ordered[hoverIdx] && popupPos && (
         <Popup
-          item={hovered}
+          item={ordered[hoverIdx]}
           x={popupPos.x}
           y={popupPos.y}
           onMouseEnter={cancelClose}
@@ -1794,7 +1935,7 @@ function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
 }
 
 // ─────────── Reader Modal ───────────
-function Reader({ item, onClose, onJump }) {
+function Reader({ item, onClose, onJump, allItems, onFilter }) {
   const { ITEMS, MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [on, setOn] = React.useState(false);
   React.useEffect(() => {
@@ -1805,11 +1946,25 @@ function Reader({ item, onClose, onJump }) {
   }, [onClose]);
 
   const adjacent = React.useMemo(() => {
-    return ITEMS
+    const genreSet = new Set(item.genres || []);
+    const tagSet   = new Set(item.tags   || []);
+    const castSet  = new Set(item.cast   || []);
+    return (allItems || ITEMS)
       .filter(i => i.medium === item.medium && i.id !== item.id)
-      .sort((a, b) => Math.abs((a.year || 0) - (item.year || 0)) - Math.abs((b.year || 0) - (item.year || 0)))
-      .slice(0, 10);
-  }, [item]);
+      .map(i => {
+        let score = 0;
+        (i.genres || []).forEach(g => { if (genreSet.has(g)) score += 2; });
+        (i.tags   || []).forEach(t => { if (tagSet.has(t))   score += 1.5; });
+        if (item.director && i.director === item.director) score += 3;
+        (i.cast   || []).forEach(c => { if (castSet.has(c))  score += 1; });
+        const yr = Math.abs((i.year || 0) - (item.year || 0));
+        score += yr <= 5 ? 1 : yr <= 10 ? 0.5 : 0;
+        return { i, score, yr };
+      })
+      .sort((a, b) => b.score - a.score || a.yr - b.yr)
+      .slice(0, 12)
+      .map(x => x.i);
+  }, [item, allItems]);
 
   const inMedium = ITEMS.filter(i => i.medium === item.medium);
   const posInMedium = inMedium.findIndex(i => i.id === item.id) + 1;
@@ -1824,8 +1979,8 @@ function Reader({ item, onClose, onJump }) {
           </svg>
         </button>
         <div className="reader-poster">
-          {item.poster
-            ? <img src={item.poster} alt={item.title}/>
+          {(item.poster || item.tmdbPoster)
+            ? <img src={item.poster || item.tmdbPoster} alt={item.title}/>
             : <div className="poster-fallback" style={{ '--pf-bg': spineBodyColor(item) }}>
                 <span className="pf-title">{item.title}</span>
                 <span className="pf-meta">{MEDIA_SHORT[item.medium]} · {item.year}</span>
@@ -1836,28 +1991,54 @@ function Reader({ item, onClose, onJump }) {
             <span>{MEDIA_SHORT[item.medium]}</span>
             <span className="sep"/>
             <span>{item.year}</span>
-            {regionName(item.region) ? <React.Fragment><span className="sep"/><span>{regionName(item.region)}</span></React.Fragment> : null}
+            {regionName(item.region) ? <React.Fragment><span className="sep"/><span className="meta-link" onClick={() => onFilter && onFilter(`region:${item.region === 'su' ? 'ru' : item.region}`)}>{regionName(item.region)}</span></React.Fragment> : null}
+            {item.runtime ? <React.Fragment><span className="sep"/><span>{formatRuntime(item.runtime)}</span></React.Fragment> : null}
+            {item.pages ? <React.Fragment><span className="sep"/><span>{item.pages} pages · ~{formatRuntime(Math.round(item.pages * 1.5))} read</span></React.Fragment> : null}
+            {item.igdbRating ? <React.Fragment><span className="sep"/><span>IGDB {item.igdbRating}/100</span></React.Fragment> : null}
+            {item.igdbGenres ? <React.Fragment><span className="sep"/><span>{item.igdbGenres.split(', ').map((g, i) => <React.Fragment key={g}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`genre:${g}`)}>{g}</span></React.Fragment>)}</span></React.Fragment> : null}
             {item.seasons ? <React.Fragment><span className="sep"/><span>{item.seasons} {item.seasons > 1 ? 'seasons' : 'season'}</span></React.Fragment> : null}
+            {item.episodes ? <React.Fragment><span className="sep"/><span>{item.episodes} eps</span></React.Fragment> : null}
+            {item.totalMinutes ? <React.Fragment><span className="sep"/><span>{formatRuntime(item.totalMinutes)} total</span></React.Fragment> : null}
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
             {item.fwAvg ? <React.Fragment><span className="sep"/><span title="Filmweb community average">Filmweb avg ⌀ {item.fwAvg}</span></React.Fragment> : null}
-            {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: {item.director}</span></React.Fragment> : null}
-            {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: {item.studio}</span></React.Fragment> : null}
+            {item.genres && item.genres.length > 0 ? <React.Fragment><span className="sep"/><span>{item.genres.slice(0, 4).map((g, i) => <React.Fragment key={g}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`genre:${g}`)}>{g}</span></React.Fragment>)}</span></React.Fragment> : null}
+            {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: <span className="meta-link" onClick={() => onFilter && onFilter(`director:${item.director}`)}>{item.director}</span></span></React.Fragment> : null}
+            {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: <span className="meta-link" onClick={() => onFilter && onFilter(`studio:${item.studio}`)}>{item.studio}</span></span></React.Fragment> : null}
             {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
             <span className="sep"/>
             <span>№ {String(posInMedium).padStart(3,'0')} of {String(inMedium.length).padStart(3,'0')}</span>
           </div>
+          {(item.writer || item.cinematographer || item.composer || item.animationDirector) && (
+            <div className="reader-crew">
+              {item.writer          && <span><span className="crew-role">Script</span> <span className="meta-link" onClick={() => onFilter && onFilter(`writer:${item.writer}`)}>{item.writer}</span></span>}
+              {item.cinematographer && <span><span className="crew-role">DP</span> <span className="meta-link" onClick={() => onFilter && onFilter(`dp:${item.cinematographer}`)}>{item.cinematographer}</span></span>}
+              {item.composer        && <span><span className="crew-role">Score</span> {item.composer}</span>}
+              {item.animationDirector && <span><span className="crew-role">Anim.</span> {item.animationDirector}</span>}
+            </div>
+          )}
           <h2 className="reader-title">{item.title}<span className="dot">.</span></h2>
           <div className="reader-where">Fuad's library &nbsp;/&nbsp; {item.medium}</div>
           {item.note
             ? <blockquote className="reader-quote">{item.note}</blockquote>
             : <blockquote className="reader-quote empty">{item.favorite ? 'A note for this one is on the to-write list.' : 'From the wider library — no personal note yet.'}</blockquote>}
+          {item.cast && item.cast.length > 0 && (
+            <div className="reader-cast">
+              <span className="reader-cast-label">Cast</span>
+              <span>{item.cast.map((a, i) => <React.Fragment key={a}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`actor:${a}`)}>{a}</span></React.Fragment>)}</span>
+            </div>
+          )}
+          {item.tags && item.tags.length > 0 && (
+            <div className="reader-tags">
+              {item.tags.map(t => <span key={t} className="reader-tag meta-link" onClick={() => onFilter && onFilter(`tag:${t}`)}>{t}</span>)}
+            </div>
+          )}
           <div className="reader-adjacent">
-            <div className="lbl">Nearby on the same shelf</div>
+            <div className="lbl">More like this</div>
             <div className="row">
               {adjacent.map(a => (
                 <a key={a.id} onClick={() => onJump(a)} title={`${a.title} (${a.year})`}>
-                  {a.poster
-                    ? <img src={a.poster} alt=""/>
+                  {(a.poster || a.tmdbPoster)
+                    ? <img src={a.poster || a.tmdbPoster} alt=""/>
                     : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
                 </a>
               ))}
@@ -1882,12 +2063,15 @@ function Reader({ item, onClose, onJump }) {
 function App() {
   const { MEDIA, PICKABLE_IDS } = window.CULTURE;
   const ITEMS = React.useMemo(() => {
-    const seasons = window.CULTURE_SEASONS || {};
+    const seasons  = window.CULTURE_SEASONS || {};
+    const castData = window.CULTURE_CAST    || {};
     const favs = window.CULTURE.ITEMS.map(i => {
       if (seasons[i.id] && !i.seasons) return { ...i, seasons: seasons[i.id] };
       return i;
     });
-    return favs.concat(window.CULTURE_IMPORTS || [], window.CULTURE_FILM_IMPORTS || []);
+    const all = favs.concat(window.CULTURE_IMPORTS || [], window.CULTURE_FILM_IMPORTS || []);
+    const hasCast = Object.keys(castData).length > 0;
+    return hasCast ? all.map(item => castData[item.id] ? { ...item, ...castData[item.id] } : item) : all;
   }, []);
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
@@ -1906,6 +2090,10 @@ function App() {
   const [selectedStudios, setSelectedStudios] = React.useState(() => new Set());
   const [selectedWeeks, setSelectedWeeks] = React.useState(() => new Set());
   const [selectedCountries, setSelectedCountries] = React.useState(() => new Set());
+  const [selectedGenres, setSelectedGenres] = React.useState(() => new Set());
+  const [selectedActors, setSelectedActors] = React.useState(() => new Set());
+  const [selectedWriters, setSelectedWriters] = React.useState(() => new Set());
+  const [selectedCinematographers, setSelectedCinematographers] = React.useState(() => new Set());
 
   // Scroll lock for the Reader modal. (Popup lock is owned by Popup itself.)
   React.useEffect(() => {
@@ -1927,7 +2115,7 @@ function App() {
 
   // Shelves after text / @year / y:year / in:year / r: filters — but NOT yet chip or stats filters.
   const preChipShelves = React.useMemo(() => {
-    const { text, releaseYear, ratedYear, ratingFilter } = parseQuery(search);
+    const { text, releaseYear, ratedYear, ratingFilter, genres, actors, directors, tags, studios, writers, dps, regions } = parseQuery(search);
     const q = text.toLowerCase();
     return shelves.map(s => ({
       ...s,
@@ -1935,11 +2123,28 @@ function App() {
         if (releaseYear.length && !releaseYear.includes(String(it.year))) return false;
         if (ratedYear.length   && (!it.watchedDate || !ratedYear.includes(it.watchedDate.slice(0, 4)))) return false;
         if (ratingFilter.length && !ratingFilter.includes(it.rating)) return false;
+        if (genres.length    && !(it.genres    && genres.every(q    => it.genres.some(g => g.toLowerCase().includes(q))))) return false;
+        if (actors.length    && !(it.cast      && actors.every(q    => it.cast.some(a => a.toLowerCase().includes(q))))) return false;
+        if (directors.length && !(it.director  && directors.every(q => it.director.toLowerCase().includes(q)))) return false;
+        if (tags.length      && !(it.tags      && tags.every(q      => it.tags.some(t => t.toLowerCase().includes(q))))) return false;
+        if (studios.length   && !(it.studio    && studios.every(q   => it.studio.toLowerCase().includes(q)))) return false;
+        if (writers.length   && !(it.writer    && writers.every(q   => it.writer.toLowerCase().includes(q)))) return false;
+        if (dps.length       && !(it.cinematographer && dps.every(q => it.cinematographer.toLowerCase().includes(q)))) return false;
+        if (regions.length   && !(regionName(it.region) && regions.every(q => regionName(it.region).toLowerCase().includes(q)))) return false;
         if (!q) return true;
         return (
           it.title.toLowerCase().includes(q) ||
-          (it.director && it.director.toLowerCase().includes(q)) ||
-          (it.studio   && it.studio.toLowerCase().includes(q))
+          (it.director        && it.director.toLowerCase().includes(q))        ||
+          (it.studio          && it.studio.toLowerCase().includes(q))          ||
+          (it.writer          && it.writer.toLowerCase().includes(q))          ||
+          (it.cinematographer && it.cinematographer.toLowerCase().includes(q)) ||
+          (it.composer        && it.composer.toLowerCase().includes(q))        ||
+          (it.cast && it.cast.some(a => a.toLowerCase().includes(q)))          ||
+          (it.tags && it.tags.some(t => t.toLowerCase().includes(q)))          ||
+          (it.productionCompanies && it.productionCompanies.some(c => c.toLowerCase().includes(q))) ||
+          (it.genres && it.genres.some(g => g.toLowerCase().includes(q)))      ||
+          (it.igdbGenres && it.igdbGenres.toLowerCase().includes(q))           ||
+          (regionName(it.region) && regionName(it.region).toLowerCase().includes(q))
         );
       }),
     }));
@@ -1953,7 +2158,8 @@ function App() {
           ...s,
           items: s.items.filter(it => it.watchedDate && selectedRatedYears.has(it.watchedDate.slice(0, 4))),
         }));
-    const hasStats = selectedRatings.size || selectedDirectors.size || selectedStudios.size || selectedWeeks.size || selectedCountries.size;
+    const hasStats = selectedRatings.size || selectedDirectors.size || selectedStudios.size || selectedWeeks.size || selectedCountries.size
+                   || selectedGenres.size || selectedActors.size || selectedWriters.size || selectedCinematographers.size;
     if (!hasStats) return base.filter(s => s.items.length > 0);
     return base.map(s => ({
       ...s,
@@ -1971,10 +2177,18 @@ function App() {
           const wk = `${it.watchedDate.slice(0,4)}-W${String(w).padStart(2,'0')}`;
           if (!selectedWeeks.has(wk)) return false;
         }
+        if (selectedGenres.size) {
+          const ig = it.igdbGenres ? it.igdbGenres.split(', ') : [];
+          if (![...(it.genres || []), ...ig].some(g => selectedGenres.has(g))) return false;
+        }
+        if (selectedActors.size         && !(it.cast           && it.cast.some(a => selectedActors.has(a)))) return false;
+        if (selectedWriters.size        && !(it.writer         && selectedWriters.has(it.writer))) return false;
+        if (selectedCinematographers.size && !(it.cinematographer && selectedCinematographers.has(it.cinematographer))) return false;
         return true;
       }),
     })).filter(s => s.items.length > 0);
-  }, [preChipShelves, selectedRatedYears, selectedRatings, selectedDirectors, selectedStudios, selectedWeeks, selectedCountries]);
+  }, [preChipShelves, selectedRatedYears, selectedRatings, selectedDirectors, selectedStudios, selectedWeeks, selectedCountries,
+      selectedGenres, selectedActors, selectedWriters, selectedCinematographers]);
 
   const totalSearchResults = React.useMemo(
     () => filteredShelves.reduce((n, s) => n + s.items.length, 0),
@@ -2005,9 +2219,14 @@ function App() {
   const toggleStudio    = s => setSelectedStudios(prev   => { const n = new Set(prev); n.has(s) ? n.delete(s) : n.add(s); return n; });
   const toggleWeek      = w => setSelectedWeeks(prev     => { const n = new Set(prev); n.has(w) ? n.delete(w) : n.add(w); return n; });
   const toggleCountry   = c => setSelectedCountries(prev => { const n = new Set(prev); n.has(c) ? n.delete(c) : n.add(c); return n; });
+  const toggleGenre     = g => setSelectedGenres(prev => { const n = new Set(prev); n.has(g) ? n.delete(g) : n.add(g); return n; });
+  const toggleActor     = a => setSelectedActors(prev => { const n = new Set(prev); n.has(a) ? n.delete(a) : n.add(a); return n; });
+  const toggleWriter    = w => setSelectedWriters(prev => { const n = new Set(prev); n.has(w) ? n.delete(w) : n.add(w); return n; });
+  const toggleCinematographer = c => setSelectedCinematographers(prev => { const n = new Set(prev); n.has(c) ? n.delete(c) : n.add(c); return n; });
   const clearStatsFilters = () => {
     setSelectedRatings(new Set()); setSelectedDirectors(new Set()); setSelectedStudios(new Set());
     setSelectedWeeks(new Set()); setSelectedCountries(new Set());
+    setSelectedGenres(new Set()); setSelectedActors(new Set()); setSelectedWriters(new Set()); setSelectedCinematographers(new Set());
   };
 
   // Pool for Pick One — anything in PICKABLE_IDS that exists, or items with notes as fallback.
@@ -2097,6 +2316,7 @@ function App() {
               <option value="studio">Studio / Network</option>
               <option value="country">Country</option>
               <option value="rating">Rating</option>
+              <option value="duration">Duration</option>
             </select>
             <button
               className="sort-dir-btn"
@@ -2150,11 +2370,15 @@ function App() {
             >?</button>
             {showSearchHint && (
               <div className="search-hint-popover">
+                <div className="search-hint-row"><code>genre:Thriller</code><span>— match by genre</span></div>
+                <div className="search-hint-row"><code>actor:Name</code><span>— match by cast</span></div>
+                <div className="search-hint-row"><code>director:Name</code> <code>writer:Name</code> <code>dp:Name</code><span>— crew</span></div>
+                <div className="search-hint-row"><code>tag:Name</code> <code>studio:Name</code> <code>region:Poland</code><span>— other fields</span></div>
                 <div className="search-hint-row"><code>@2023</code> or <code>y:2023</code><span>— filter by release year</span></div>
                 <div className="search-hint-row"><code>in:2023</code><span>— filter by year rated</span></div>
                 <div className="search-hint-row"><code>r:10</code> <code>r:8+</code> <code>r:7-9</code><span>— filter by rating</span></div>
-                <div className="search-hint-row"><span>plain text — title, director, studio wildcard</span></div>
-                <div className="search-hint-row"><span style={{color:'var(--ink-faint)'}}>tokens stack: <code>@2023 nolan r:9+</code></span></div>
+                <div className="search-hint-row"><span>plain text — title, director, studio, genre wildcard</span></div>
+                <div className="search-hint-row"><span style={{color:'var(--ink-faint)'}}>tokens stack: <code>genre:Horror dp:Deakins r:8+</code></span></div>
               </div>
             )}
           </div>
@@ -2175,7 +2399,8 @@ function App() {
         </div>
       )}
 
-      {(selectedRatings.size > 0 || selectedDirectors.size > 0 || selectedStudios.size > 0 || selectedWeeks.size > 0 || selectedCountries.size > 0) && (
+      {(selectedRatings.size > 0 || selectedDirectors.size > 0 || selectedStudios.size > 0 || selectedWeeks.size > 0 || selectedCountries.size > 0
+        || selectedGenres.size > 0 || selectedActors.size > 0 || selectedWriters.size > 0 || selectedCinematographers.size > 0) && (
         <div className="active-filters">
           {[...selectedRatings].sort().map(r => (
             <span key={r} className="filter-pill">★{r}<button onClick={() => toggleRating(r)}>×</button></span>
@@ -2183,8 +2408,20 @@ function App() {
           {[...selectedDirectors].map(d => (
             <span key={d} className="filter-pill">{d}<button onClick={() => toggleDirector(d)}>×</button></span>
           ))}
+          {[...selectedActors].map(a => (
+            <span key={a} className="filter-pill">{a}<button onClick={() => toggleActor(a)}>×</button></span>
+          ))}
+          {[...selectedWriters].map(w => (
+            <span key={w} className="filter-pill">{w}<button onClick={() => toggleWriter(w)}>×</button></span>
+          ))}
+          {[...selectedCinematographers].map(c => (
+            <span key={c} className="filter-pill">{c}<button onClick={() => toggleCinematographer(c)}>×</button></span>
+          ))}
           {[...selectedStudios].map(s => (
             <span key={s} className="filter-pill">{s}<button onClick={() => toggleStudio(s)}>×</button></span>
+          ))}
+          {[...selectedGenres].map(g => (
+            <span key={g} className="filter-pill">{g}<button onClick={() => toggleGenre(g)}>×</button></span>
           ))}
           {[...selectedCountries].map(c => (
             <span key={c} className="filter-pill">{REGION_NAMES[c] || c}<button onClick={() => toggleCountry(c)}>×</button></span>
@@ -2248,18 +2485,36 @@ function App() {
       </footer>
 
       {openItem && (
-        <Reader item={openItem} onClose={() => setOpenItem(null)} onJump={(it) => setOpenItem(it)} />
+        <Reader item={openItem} onClose={() => setOpenItem(null)} onJump={(it) => setOpenItem(it)}
+          allItems={ITEMS}
+          onFilter={(val) => {
+            const m = val.match(/^(\w+):(.+)$/i);
+            if (m) {
+              const type = m[1].toLowerCase(), value = m[2];
+              if (type === 'genre')                                { toggleGenre(value); setOpenItem(null); return; }
+              if (type === 'actor' || type === 'cast')             { toggleActor(value); setOpenItem(null); return; }
+              if (type === 'director' || type === 'dir')           { toggleDirector(value); setOpenItem(null); return; }
+              if (type === 'studio')                               { toggleStudio(value); setOpenItem(null); return; }
+              if (type === 'writer' || type === 'author')          { toggleWriter(value); setOpenItem(null); return; }
+              if (type === 'dp' || type === 'cin')                 { toggleCinematographer(value); setOpenItem(null); return; }
+              if (type === 'region' || type === 'country')         { toggleCountry(value); setOpenItem(null); return; }
+            }
+            setSearch(val); setOpenItem(null);
+          }} />
       )}
 
       {statsOpen && (
         <StatsModal
           allItems={ITEMS}
           onClose={() => setStatsOpen(false)}
-          selectedRatings={selectedRatings}    onToggleRating={toggleRating}
-          selectedDirectors={selectedDirectors} onToggleDirector={toggleDirector}
-          selectedStudios={selectedStudios}     onToggleStudio={toggleStudio}
-          selectedWeeks={selectedWeeks}         onToggleWeek={toggleWeek}
-          selectedCountries={selectedCountries} onToggleCountry={toggleCountry}
+          selectedRatings={selectedRatings}             onToggleRating={toggleRating}
+          selectedDirectors={selectedDirectors}         onToggleDirector={toggleDirector}
+          selectedStudios={selectedStudios}             onToggleStudio={toggleStudio}
+          selectedWeeks={selectedWeeks}                 onToggleWeek={toggleWeek}
+          selectedCountries={selectedCountries}         onToggleCountry={toggleCountry}
+          selectedActors={selectedActors}               onToggleActor={toggleActor}
+          selectedWriters={selectedWriters}             onToggleWriter={toggleWriter}
+          selectedCinematographers={selectedCinematographers} onToggleCinematographer={toggleCinematographer}
         />
       )}
     </div>
