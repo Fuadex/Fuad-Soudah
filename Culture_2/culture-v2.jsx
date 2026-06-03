@@ -1189,6 +1189,7 @@ const REGION_NAMES = {
   eu:'Europe', other:'Other',
   es:'Spain', nl:'Netherlands', dk:'Denmark', cz:'Czechia', hu:'Hungary', bg:'Bulgaria', hr:'Croatia',
   gr:'Greece', br:'Brazil',
+  hk:'Hong Kong', cn:'China', mx:'Mexico',
 };
 function regionName(code) { return REGION_NAMES[code] || null; }
 

@@ -312,6 +312,7 @@ const REGION_COLORS = {
   br:    '#2a5a2a',  // Brazilian — deep forest green
   hk:    '#6a3a2a',  // Hong Kong — deep vermilion (bauhinia red, muted)
   cn:    '#6a2828',  // Chinese — dark cinnabar (PRC red, muted)
+  mx:    '#3a6a3a',  // Mexican — deep jade green
 };
 
 const DECADE_COLORS = {

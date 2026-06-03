@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python _tmp_fix_titles.py)",
+      "Bash(del _tmp_fix_titles.py _tmp_missing_region.py _tmp_missing2.py)",
+      "PowerShell(node --check \"c:\\\\Users\\\\Fuade\\\\Documents\\\\GitHub\\\\Fuad-Soudah\\\\Culture_2\\\\imports.js\" 2>&1)",
+      "Bash(python _tmp_check_syntax.py)"
+    ]
+  }
+}
