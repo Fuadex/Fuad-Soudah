@@ -1839,6 +1839,7 @@ function Reader({ item, onClose, onJump }) {
             {regionName(item.region) ? <React.Fragment><span className="sep"/><span>{regionName(item.region)}</span></React.Fragment> : null}
             {item.seasons ? <React.Fragment><span className="sep"/><span>{item.seasons} {item.seasons > 1 ? 'seasons' : 'season'}</span></React.Fragment> : null}
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
+            {item.fwAvg ? <React.Fragment><span className="sep"/><span title="Filmweb community average">Filmweb avg ⌀ {item.fwAvg}</span></React.Fragment> : null}
             {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: {item.director}</span></React.Fragment> : null}
             {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: {item.studio}</span></React.Fragment> : null}
             {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
@@ -1886,7 +1887,7 @@ function App() {
       if (seasons[i.id] && !i.seasons) return { ...i, seasons: seasons[i.id] };
       return i;
     });
-    return favs.concat(window.CULTURE_IMPORTS || []);
+    return favs.concat(window.CULTURE_IMPORTS || [], window.CULTURE_FILM_IMPORTS || []);
   }, []);
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
