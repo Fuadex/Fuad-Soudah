@@ -428,8 +428,8 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
 // ─────────── StatsModal ───────────
 function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer }) {
   const { MEDIA } = window.CULTURE;
-  const LEFT_VIEW_LABELS  = { directors: 'Directors', actors: 'Actors', writers: 'Writers', cinematographers: 'Cinematographers', animationDirectors: 'Animation Directors' };
-  const RIGHT_VIEW_LABELS = { studios: 'Studios', companies: 'Production Companies', composers: 'Composers' };
+  const LEFT_VIEW_LABELS  = { directors: 'Directors · Creators · Authors', actors: 'Actors', writers: 'Writers · Screenwriters', cinematographers: 'Cinematographers', animationDirectors: 'Animation Directors' };
+  const RIGHT_VIEW_LABELS = { studios: 'Studios · Networks · Publishers', companies: 'Production Companies', composers: 'Composers' };
   const [medium, setMedium] = React.useState('All');
   const [leftView, setLeftView] = React.useState('directors');
   const [rightView, setRightView] = React.useState('studios');
@@ -469,14 +469,15 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
         <div className="stats-two-col">
           <div className="stats-section">
             <div className="stats-view-head">
-              <div className="stats-section-title">{LEFT_VIEW_LABELS[leftView]}</div>
-              <label className="stats-view-chevron">▾<select value={leftView} onChange={e => setLeftView(e.target.value)} className="stats-view-select-overlay">
+              <span className="stats-section-title">{LEFT_VIEW_LABELS[leftView]}</span>
+              <span className="stats-view-chevron">▾</span>
+              <select value={leftView} onChange={e => setLeftView(e.target.value)} className="stats-view-select-overlay" aria-label="Choose people view">
                 <option value="directors">Directors · Creators · Authors</option>
                 <option value="actors">Actors</option>
                 <option value="writers">Writers · Screenwriters</option>
                 <option value="cinematographers">Cinematographers</option>
                 <option value="animationDirectors">Animation Directors</option>
-              </select></label>
+              </select>
             </div>
             {leftView === 'directors'  && <HBarHistogram items={statItems} keyFn={it => it.director} selected={selectedDirectors} onToggle={onToggleDirector} />}
             {leftView === 'actors'     && <HBarHistogram items={statItems}
@@ -489,12 +490,13 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
 
           <div className="stats-section">
             <div className="stats-view-head">
-              <div className="stats-section-title">{RIGHT_VIEW_LABELS[rightView]}</div>
-              <label className="stats-view-chevron">▾<select value={rightView} onChange={e => setRightView(e.target.value)} className="stats-view-select-overlay">
+              <span className="stats-section-title">{RIGHT_VIEW_LABELS[rightView]}</span>
+              <span className="stats-view-chevron">▾</span>
+              <select value={rightView} onChange={e => setRightView(e.target.value)} className="stats-view-select-overlay" aria-label="Choose studio view">
                 <option value="studios">Studios · Networks · Publishers</option>
                 <option value="companies">Production Companies</option>
                 <option value="composers">Composers</option>
-              </select></label>
+              </select>
             </div>
             {rightView === 'studios'   && <HBarHistogram items={statItems} keyFn={it => it.studio} selected={selectedStudios} onToggle={onToggleStudio} />}
             {rightView === 'companies' && <HBarHistogram items={statItems}
@@ -1381,7 +1383,7 @@ function App() {
         </div>
         <div className="right">
           <div className="tagline">
-            Things I watched, read, played, and could not stop thinking about afterward.
+            {/*Things I watched, read and played.*/}
           </div>
           <div className="btn-row">
             <div className="mode-toggle">
@@ -1479,12 +1481,12 @@ function App() {
         </div>
       </header>
 
-      <div className="intro">
+{/*      <div className="intro">
         Hover any item to fan a cover open and read its note. Click to open the full entry,
         drag the row sideways to browse the rest. Each shelf is curated <b>best-in-the-middle</b>
         — most-loved at the centre, descending outwards. The <b>Pick one for me</b> button taps
         a hand-picked pool; flipped items keep a small red mark.
-      </div>
+      </div>*/}
 
       {search.trim() && (
         <div className="search-results-msg">
