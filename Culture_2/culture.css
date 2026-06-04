@@ -289,7 +289,11 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   font-variant-numeric: tabular-nums;
 }
 
-.shelf-rail { position: relative; overflow: visible; }
+/* isolate: items use z-index up to ~600 (one per spine) to stack their overlap;
+   without a local stacking context those would compete with — and bleed over —
+   the Stats/Reader modals. Isolating the rail keeps all item z-indexes contained
+   below the modals. */
+.shelf-rail { position: relative; overflow: visible; isolation: isolate; }
 .shelf-scroll {
   display: flex;
   align-items: center;
@@ -340,9 +344,37 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   top: 0; bottom: 0;
   background: var(--ink-soft);
   opacity: 0;
-  transition: opacity .2s, left .15s, width .15s;
+  transition: opacity .2s;   /* left/width updated imperatively each frame — no transition so the thumb tracks the drag exactly */
 }
 .shelf:hover .shelf-thumb .bar { opacity: 1; }
+
+/* Hover arrows — click to glide ~one screenful via native smooth scroll.
+   A smooth alternative to click-dragging on big rows. Hidden on touch. */
+.shelf-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 650;            /* above the row's items (which stack up to ~i) */
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: var(--ink-soft);
+  font-family: var(--sans); font-size: 22px; line-height: 1; padding-bottom: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s, color .15s, border-color .15s, background .15s;
+}
+.shelf-arrow.left  { left: 10px; }
+.shelf-arrow.right { right: 10px; }
+.shelf-rail:hover .shelf-arrow { opacity: 1; pointer-events: auto; }
+.shelf-arrow:hover { color: var(--ink); border-color: var(--ink-faint); background: var(--bg-2); }
+.shelf-arrow:active { transform: translateY(-50%) scale(.92); }
+@media (max-width: 768px) { .shelf-arrow { display: none; } }
 
 /* ───── ITEM (cover or spine) ───── */
 .item {
@@ -360,11 +392,6 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
               box-shadow .25s,
               opacity .25s;
   --fan: 30px;
-  /* Skip layout/paint for items scrolled off-screen — big win on rows with
-     hundreds of spines. Width/height are explicit, so boxes keep their size;
-     the fallback covers the block axis. */
-  content-visibility: auto;
-  contain-intrinsic-size: auto 144px;
 }
 .item.as-cover { width: 96px; margin-right: -38px; }
 .item.as-spine { width: var(--spine-w, 24px); margin-right: 0; --fan: 12px; }
@@ -491,9 +518,11 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   opacity: .9;
 }
 
-/* Hover & highlight states — pure CSS so hovering never re-renders the row
-   (large spine rows have hundreds of items; a React re-render per hover was the
-   source of the lag). The hovered item lifts in every mode. */
+/* Hover state — pure CSS so hovering never re-renders the row (large spine rows
+   have hundreds of items; a React re-render per hover was the source of the lag).
+   No `:has()` neighbor fan-out: `:has()` re-evaluates on every hover change and
+   added measurable mouse-hover cost for no real benefit. The hovered item lifts
+   in every mode; neighbors stay put. */
 .item:hover {
   transform: translateY(-18px) scale(1.18) !important;
   z-index: 200;
@@ -501,10 +530,6 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
               0 4px 12px rgba(0,0,0,.5),
               0 0 0 1px rgba(255,255,255,.06) !important;
 }
-/* Neighbor fan-out — COVERS / MIX only. Spines stay perfectly still on hover
-   (no fan-out, no dim) so big stacks rows have nothing to repaint. */
-.as-cover:hover ~ .as-cover      { transform: translateX(var(--fan)) !important; }
-.as-cover:has(~ .as-cover:hover) { transform: translateX(calc(-1 * var(--fan))) !important; }
 
 /* Just-picked lift — applies for a clear, lasting highlight. */
 .item[data-pos="just-picked"] {

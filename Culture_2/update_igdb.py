@@ -26,6 +26,7 @@ from urllib.error import HTTPError, URLError
 
 SCRIPT_DIR     = os.path.dirname(os.path.abspath(__file__))
 IMPORTS_JS     = os.path.join(SCRIPT_DIR, 'imports.js')
+DATA_JS        = os.path.join(SCRIPT_DIR, 'data.js')
 CAST_JS        = os.path.join(SCRIPT_DIR, 'cast_data.js')
 CACHE_FILE     = os.path.join(SCRIPT_DIR, 'igdb_cache.json')
 OVERRIDES_FILE = os.path.join(SCRIPT_DIR, 'igdb_overrides.json')
@@ -286,7 +287,38 @@ def parse_game_entries(path):
         })
     return entries, lines
 
-def patch_game_line(line, genres=None, rating=None):
+def parse_data_game_entries(path):
+    """Parse Game favorites from data.js (single-quote JS literals, slug ids).
+    Skips commented-out lines. Returns (entries, lines) like parse_game_entries."""
+    entries = []
+    with open(path, encoding='utf-8') as f:
+        lines = f.readlines()
+    for i, line in enumerate(lines):
+        if line.lstrip().startswith('//'):
+            continue
+        mm = re.search(r"medium\s*:\s*'([^']+)'", line)
+        if not mm or mm.group(1) != 'Games':
+            continue
+        m = re.search(r"id\s*:\s*'([^']+)'", line) or re.search(r'id\s*:\s*"([^"]+)"', line)
+        tm = (re.search(r"title\s*:\s*'((?:[^'\\]|\\.)*)'", line) or
+              re.search(r'title\s*:\s*"((?:[^"\\]|\\.)*)"', line))
+        ym = re.search(r'year\s*:\s*(\d{4})', line)
+        if not m or not tm or not ym:
+            continue
+        entries.append({
+            'line_idx':   i,
+            'id':         m.group(1),
+            'title':      re.sub(r'\\(.)', r'\1', tm.group(1)),
+            'year':       int(ym.group(1)),
+            'has_genres': 'igdbGenres' in line,
+            'has_rating': 'igdbRating' in line,
+            'source':     'data',
+        })
+    return entries, lines
+
+def patch_game_line(line, genres=None, rating=None, q='"'):
+    """Append igdbGenres / igdbRating to a one-line entry. `q` is the quote
+    character for keys/strings ('"' for imports.js JSON, "'" for data.js literals)."""
     stripped = line.rstrip()
     if stripped.endswith('},'):
         tail, base = '},', stripped[:-2]
@@ -296,10 +328,10 @@ def patch_game_line(line, genres=None, rating=None):
         return line
     additions = []
     if genres and 'igdbGenres' not in line:
-        escaped = genres.replace('"', '\\"')
-        additions.append(f' "igdbGenres": "{escaped}"')
+        escaped = genres.replace(q, '\\' + q)
+        additions.append(f' {q}igdbGenres{q}: {q}{escaped}{q}')
     if rating is not None and 'igdbRating' not in line:
-        additions.append(f' "igdbRating": {rating}')
+        additions.append(f' {q}igdbRating{q}: {rating}')
     if not additions:
         return line
     return base + ',' + ','.join(additions) + tail + '\n'
@@ -334,10 +366,15 @@ def main():
     print(f'  OK — token {token[:8]}...\n')
 
     game_entries, lines = parse_game_entries(IMPORTS_JS)
+    for e in game_entries:
+        e['source'] = 'imports'
+    data_game_entries, data_lines = parse_data_game_entries(DATA_JS)
+    all_entries = game_entries + data_game_entries
     cast_data = load_cast_data()
     cache     = load_cache()
 
     print(f'Games in imports.js:   {len(game_entries)}')
+    print(f'Games in data.js:      {len(data_game_entries)}')
     print(f'Existing cast entries: {len(cast_data)}')
     print()
 
@@ -345,7 +382,7 @@ def main():
              'genres_patched': 0, 'ratings_patched': 0, 'no_match': 0, 'skipped': 0}
     no_match_list = []
 
-    for entry in game_entries:
+    for entry in all_entries:
         item_id = entry['id']
         title   = entry['title']
         year    = entry['year']
@@ -424,17 +461,20 @@ def main():
         if updated_cd != existing_cd:
             cast_data[item_id] = updated_cd
 
-        # — imports.js inline patches —
+        # — inline genre/rating patches (write to whichever file the entry came from) —
         genres = enrichment.get('_genres', '')
         rating = enrichment.get('_rating')
+        src    = entry.get('source', 'imports')
+        target = lines if src == 'imports' else data_lines
+        qchar  = '"' if src == 'imports' else "'"
 
         if genres and needs_genres:
-            lines[entry['line_idx']] = patch_game_line(lines[entry['line_idx']], genres=genres)
+            target[entry['line_idx']] = patch_game_line(target[entry['line_idx']], genres=genres, q=qchar)
             stats['genres_patched'] += 1
             notes.append(f'genres({genres[:25]})')
 
         if rating is not None and needs_rating:
-            lines[entry['line_idx']] = patch_game_line(lines[entry['line_idx']], rating=rating)
+            target[entry['line_idx']] = patch_game_line(target[entry['line_idx']], rating=rating, q=qchar)
             stats['ratings_patched'] += 1
             notes.append(f'rating({rating})')
 
@@ -445,6 +485,10 @@ def main():
         with open(IMPORTS_JS, 'w', encoding='utf-8') as f:
             f.writelines(lines)
         print(f'\nimports.js written ({len(lines)} lines)')
+
+        with open(DATA_JS, 'w', encoding='utf-8') as f:
+            f.writelines(data_lines)
+        print(f'data.js written ({len(data_lines)} lines)')
 
         save_cast_data(cast_data)
         print(f'cast_data.js written ({len(cast_data)} entries)')

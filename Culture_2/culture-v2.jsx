@@ -549,10 +549,10 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
   const { MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [hoverIdx, setHoverIdx] = React.useState(-1);
   const [popupPos, setPopupPos] = React.useState(null);
-  const [scrollPct, setScrollPct] = React.useState(0);
-  const [scrollSpan, setScrollSpan] = React.useState({ thumb: 30, left: 0 });
   const [reshuffling, setReshuffling] = React.useState(false);
   const scrollerRef = React.useRef(null);
+  const posRef = React.useRef(null);    // header "NN%" label — updated imperatively
+  const thumbRef = React.useRef(null);  // scrollbar thumb — updated imperatively
   const popupTimer = React.useRef(null);
   const initializedRef = React.useRef(false);
 
@@ -583,64 +583,122 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
     return (hash(item.id, mixSeed) % 3) !== 0;
   }, [mode, mixSeed]);
 
-  // ── Drag-scroll w/ click suppression ──
-  const dragRef = React.useRef({ down: false, x: 0, sl: 0, moved: false });
+  // ── Drag-scroll: window-tracked, with click suppression + inertial flick ──
+  // Move/up live on `window` so a drag keeps going even when the cursor leaves
+  // the row, and a fast release coasts to a stop instead of stopping dead.
+  const dragRef = React.useRef({ down: false, startX: 0, startSL: 0, moved: false, lastX: 0, lastT: 0, vx: 0 });
+  const momentumRaf = React.useRef(0);
   const DRAG_THRESHOLD = 5;
-  const onMouseDown = (e) => {
-    if (e.button !== 0) return;
-    dragRef.current = {
-      down: true,
-      x: e.clientX,
-      sl: scrollerRef.current.scrollLeft,
-      moved: false,
-    };
-  };
-  const onMouseMove = (e) => {
-    if (!dragRef.current.down) return;
-    const dx = e.clientX - dragRef.current.x;
-    if (!dragRef.current.moved && Math.abs(dx) > DRAG_THRESHOLD) {
-      dragRef.current.moved = true;
-      scrollerRef.current.classList.add('dragging');
-      setHoverIdx(-1); setPopupPos(null);
-    }
-    if (dragRef.current.moved) {
-      scrollerRef.current.scrollLeft = dragRef.current.sl - dx;
-    }
-  };
-  const onMouseUpOrLeave = () => {
-    if (dragRef.current.down) {
-      scrollerRef.current?.classList.remove('dragging');
-      const wasMoved = dragRef.current.moved;
-      dragRef.current.down = false;
-      if (wasMoved) setTimeout(() => { dragRef.current.moved = false; }, 0);
-      else          dragRef.current.moved = false;
-    }
-  };
-  React.useEffect(() => {
-    window.addEventListener('mouseup', onMouseUpOrLeave);
-    return () => window.removeEventListener('mouseup', onMouseUpOrLeave);
+
+  const stopMomentum = React.useCallback(() => {
+    if (momentumRaf.current) { cancelAnimationFrame(momentumRaf.current); momentumRaf.current = 0; }
   }, []);
 
-  // ── Scroll bookkeeping ──
+  const onMouseDown = (e) => {
+    if (e.button !== 0) return;
+    stopMomentum();
+    const el = scrollerRef.current;
+    if (!el) return;
+    dragRef.current = { down: true, startX: e.clientX, startSL: el.scrollLeft, moved: false,
+                        lastX: e.clientX, lastT: performance.now(), vx: 0 };
+  };
+
+  React.useEffect(() => {
+    const onMove = (e) => {
+      const d = dragRef.current;
+      if (!d.down) return;
+      const el = scrollerRef.current;
+      if (!el) return;
+      const dx = e.clientX - d.startX;
+      if (!d.moved && Math.abs(dx) > DRAG_THRESHOLD) {
+        d.moved = true;
+        el.classList.add('dragging');
+        setHoverIdx(-1); setPopupPos(null);
+      }
+      if (d.moved) {
+        el.scrollLeft = d.startSL - dx;
+        const now = performance.now();
+        const dt = now - d.lastT;
+        if (dt > 0) {
+          // scrollLeft velocity (px/ms); scroll moves opposite to the cursor
+          const inst = -(e.clientX - d.lastX) / dt;
+          d.vx = 0.8 * inst + 0.2 * d.vx;   // smoothed so a jittery last frame doesn't dominate
+          d.lastX = e.clientX;
+          d.lastT = now;
+        }
+      }
+    };
+    const onUp = () => {
+      const d = dragRef.current;
+      if (!d.down) return;
+      const el = scrollerRef.current;
+      const wasMoved = d.moved;
+      el?.classList.remove('dragging');
+      d.down = false;
+      if (!wasMoved) { d.moved = false; return; }
+      // suppress the click that would otherwise fire after a drag
+      setTimeout(() => { dragRef.current.moved = false; }, 0);
+      // inertial coast in the flick's direction, decaying by friction each frame
+      let v = d.vx;
+      if (el && Math.abs(v) > 0.03) {
+        const FRICTION = 0.94;
+        const step = () => {
+          v *= FRICTION;
+          el.scrollLeft += v * 16;            // ~16ms per frame
+          if (Math.abs(v) > 0.01) momentumRaf.current = requestAnimationFrame(step);
+          else momentumRaf.current = 0;
+        };
+        momentumRaf.current = requestAnimationFrame(step);
+      }
+    };
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+    return () => {
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+      stopMomentum();
+    };
+  }, [stopMomentum]);
+
+  // ── Scroll bookkeeping — writes the %-label and thumb straight to the DOM
+  // (no setState) so dragging/momentum trigger ZERO React renders per frame.
+  // This is the main reason mouse-drag now approaches native-touch smoothness. ──
   const recomputeScroll = React.useCallback(() => {
     const el = scrollerRef.current;
     if (!el) return;
     const max = el.scrollWidth - el.clientWidth;
     const pct = max <= 0 ? 0 : el.scrollLeft / max;
-    setScrollPct(pct);
     const visible = el.clientWidth / el.scrollWidth;
     const thumb = Math.max(8, visible * 100);
-    setScrollSpan({ thumb, left: pct * (100 - thumb) });
+    if (posRef.current) posRef.current.textContent = String(Math.round(pct * 100)).padStart(2, '0') + '%';
+    if (thumbRef.current) {
+      thumbRef.current.style.left = (pct * (100 - thumb)) + '%';
+      thumbRef.current.style.width = thumb + '%';
+    }
   }, []);
+
+  // Hover-arrow nudge: scroll ~one screenful via native smooth scroll (which is
+  // compositor-driven and stays smooth even on big rows).
+  const nudge = React.useCallback((dir) => {
+    stopMomentum();
+    const el = scrollerRef.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: 'smooth' });
+  }, [stopMomentum]);
+  const scrollRaf = React.useRef(0);
   React.useEffect(() => {
     recomputeScroll();
     const el = scrollerRef.current;
     if (!el) return;
-    el.addEventListener('scroll', recomputeScroll);
-    window.addEventListener('resize', recomputeScroll);
+    const onScroll = () => {
+      if (scrollRaf.current) return;
+      scrollRaf.current = requestAnimationFrame(() => { scrollRaf.current = 0; recomputeScroll(); });
+    };
+    el.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
     return () => {
-      el.removeEventListener('scroll', recomputeScroll);
-      window.removeEventListener('resize', recomputeScroll);
+      el.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (scrollRaf.current) cancelAnimationFrame(scrollRaf.current);
     };
   }, [recomputeScroll]);
 
@@ -802,20 +860,21 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
         <span className="num">{String(idx + 1).padStart(2, '0')}</span>
         <span className="name">{medium}</span>
         <span className="ct">— {items.length} entries</span>
-        <span className="pos">{Math.round(scrollPct * 100).toString().padStart(2,'0')}%</span>
+        <span className="pos" ref={posRef}>00%</span>
       </div>
       <div className="shelf-rail">
+        <button className="shelf-arrow left" tabIndex={-1} aria-label="Scroll left" onClick={() => nudge(-1)}>‹</button>
         <div
           className="shelf-scroll"
           ref={scrollerRef}
           onMouseDown={onMouseDown}
-          onMouseMove={onMouseMove}
-          onMouseLeave={() => { onMouseUpOrLeave(); handleLeave(); }}
+          onMouseLeave={handleLeave}
         >
           {renderedItems}
         </div>
+        <button className="shelf-arrow right" tabIndex={-1} aria-label="Scroll right" onClick={() => nudge(1)}>›</button>
         <div className="shelf-thumb">
-          <div className="bar" style={{ left: scrollSpan.left + '%', width: scrollSpan.thumb + '%' }}/>
+          <div className="bar" ref={thumbRef} style={{ left: '0%', width: '30%' }}/>
         </div>
       </div>
       {hoverIdx >= 0 && ordered[hoverIdx] && popupPos && (

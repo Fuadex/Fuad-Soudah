@@ -115165,5 +115165,712 @@ window.CULTURE_CAST = {
   },
   "imp-g-626520": {
     "igdbSummary": "PC Engine version of Minesweeper."
+  },
+  "spec-ops": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2acb.jpg",
+    "tags": [
+      "Action",
+      "Stealth",
+      "Warfare",
+      "modern warfare",
+      "helicopter",
+      "basketball",
+      "bloody",
+      "murder",
+      "shark",
+      "military",
+      "goat",
+      "steam",
+      "bird",
+      "achievements",
+      "multiple endings",
+      "special forces",
+      "online",
+      "hostages",
+      "building",
+      "artificial intelligence",
+      "torture",
+      "tank",
+      "camera",
+      "racism",
+      "over the shoulder"
+    ],
+    "productionCompanies": [
+      "Yager Development"
+    ],
+    "igdbPublisher": "2K Games, Missing Link Games",
+    "igdbSummary": "A third-person shooter in which three American soldiers led by Capt. Walker are sent to Dubai in order to recover whoever remains of an infantry unit, the 33rd Battalion, until they decide to take action against the militants situated in the city. As they progress, however, the logistical and ethical complexity of their objective deepens, and their perception of themselves, and their enemy, is put into question.",
+    "igdbFranchise": "Spec Ops"
+  },
+  "antichamber": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coado3.jpg",
+    "tags": [
+      "Science fiction",
+      "exploration",
+      "surrealism",
+      "psychological exploration",
+      "maze",
+      "steam",
+      "backtracking",
+      "blocks",
+      "steam trading cards",
+      "abstract",
+      "atmospheric",
+      "teleportation",
+      "silent protagonist",
+      "darkness",
+      "digital distribution",
+      "countdown timer",
+      "platform exclusive",
+      "developed by one person",
+      "mind control",
+      "polygonal 3d",
+      "breaking the fourth wall",
+      "pop culture reference",
+      "game reference",
+      "wasd movement",
+      "disorientation zone"
+    ],
+    "productionCompanies": [
+      "Alexander Bruce"
+    ],
+    "igdbPublisher": "Demruth",
+    "igdbSummary": "Antichamber is a single-player first-person puzzle-platform video game. Many of the puzzles are based on phenomena that occur within the Impossible Objects created by the game engine, such as passages that lead the player to different locations depending on which way they face, and structures that seem otherwise impossible within normal three-dimensional space. The game includes elements of psychological exploration through brief messages of advice to help the player figure out solutions to the puzzles as well as adages for real life."
+  },
+  "wic": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2cpm.jpg",
+    "tags": [
+      "Warfare",
+      "modern warfare",
+      "cold war",
+      "alternative history"
+    ],
+    "productionCompanies": [
+      "Massive Entertainment"
+    ],
+    "igdbPublisher": "Sierra Entertainment",
+    "igdbSummary": "World War III rages and a Soviet-led army has launched a surprise attack on the U.S.A. Command your troops into fast-paced battles fought on a fully destructible battle-field. Strategy meets intense action in this epic clash of Super Powers!",
+    "igdbFranchise": "World in Conflict"
+  },
+  "edith-finch": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbj.jpg",
+    "tags": [
+      "Horror",
+      "Drama",
+      "Mystery",
+      "bloody",
+      "murder",
+      "photography",
+      "shark",
+      "death",
+      "rabbit",
+      "deer",
+      "steam",
+      "multiple protagonists",
+      "camera",
+      "singing",
+      "swimming",
+      "darkness",
+      "owl",
+      "comic book",
+      "fixed camera",
+      "steam achievements",
+      "pax west 2017",
+      "voice acting",
+      "cat",
+      "controller recommendation",
+      "mouse"
+    ],
+    "productionCompanies": [
+      "Giant Sparrow"
+    ],
+    "igdbPublisher": "Annapurna Interactive",
+    "igdbSummary": "What Remains of Edith Finch is a collection of short stories about a cursed family in Washington State.\n\nEach story offers a chance to experience the life of a different family member with stories ranging from the early 1900s to the present day. The gameplay and tone of the stories are as varied as the family members themselves. The only constants are that each is played from a first-person perspective and that each story ends with that family member's death. It's a game about what it feels like to be humbled and astonished by the vast and unknowable world around us.\n\nYou'll follow Edith Finch as she explores the history of her family and tries to figure out why she's the last Finch left alive."
+  },
+  "manifold-garden": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ws9.jpg",
+    "tags": [
+      "exploration",
+      "gravity",
+      "surrealism",
+      "digital distribution",
+      "playstation experience 2015",
+      "pax east 2014",
+      "apple arcade",
+      "previously on - apple arcade"
+    ],
+    "productionCompanies": [
+      "William Chyr Studio"
+    ],
+    "igdbPublisher": "William Chyr Studio",
+    "igdbSummary": "Manifold Garden is a game that reimagines physics and space.\n\nExplore a world of beautiful Escher-esque architecture where the laws of physics are different. Geometry repeats infinitely in every direction and falling down leads you back to where you started. Manipulate gravity to change your perspective and see the world in new ways. Master the rules of the universe and restore a barren world with vegetation and life.\n\nKey Features\n- An expansive and visually striking world filled with mind-bending puzzles.\n- Manipulate gravity to gain new perspectives and walk on any visible surface.\n- Experience space in new ways as you explore infinitely repeating Escher-esque architecture."
+  },
+  "cod4": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2adb.jpg",
+    "tags": [
+      "Action",
+      "Warfare"
+    ],
+    "productionCompanies": [
+      "n-Space"
+    ],
+    "igdbPublisher": "Activision",
+    "igdbSummary": "Call of Duty 4: Modern Warfare is a game in the Call of Duty series franchise, developed specifically for the Nintendo DS. It was released on November 5, 2007. Like Call of Duty 4: Modern Warfare for traditional consoles, the Nintendo DS version takes place in modern day and offers players modern weapons. The game features many elements of gameplay typical to the series.\n\nThe Nintendo DS version of the game allows the player to assume the roles of several anonymous soldiers, who are either affiliated with the British S.A.S. or American armed forces. Unlike the console and PC version of Call of Duty 4: Modern Warfare, players do not directly impact the outcome of the war.",
+    "igdbFranchise": "Call of Duty"
+  },
+  "mass-effect": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7c1f.jpg",
+    "tags": [
+      "Action",
+      "Science fiction"
+    ],
+    "productionCompanies": [
+      "BioWare"
+    ],
+    "igdbPublisher": "Electronic Arts",
+    "igdbSummary": "The heavily anticipated continuation of the Mass Effect series.",
+    "igdbFranchise": "Mass Effect"
+  },
+  "mirrors-edge": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2sf5.jpg",
+    "tags": [
+      "Action",
+      "cyberpunk",
+      "parkour",
+      "dystopian",
+      "2.5d",
+      "female protagonist",
+      "achievements",
+      "polygonal 3d",
+      "wilhelm scream",
+      "vent crawling",
+      "asian protagonist"
+    ],
+    "productionCompanies": [
+      "IronMonkey Studios"
+    ],
+    "igdbPublisher": "Electronic Arts",
+    "igdbSummary": "Mirror's Edge is a side-scrolling platform game developed by IronMonkey Studios and published by Electronic Arts. It was released for the iPod on September 2, 2009, for iPad and iPhone on April 1, 2010, and later for Windows Phone on July 13, 2012. The game is a prequel to the original Mirror's Edge, setting the scene about Runners and the city's shady corporations.",
+    "igdbFranchise": "Mirror's Edge"
+  },
+  "subnautica": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa938.jpg",
+    "tags": [
+      "Science fiction",
+      "Survival",
+      "Open world",
+      "exploration",
+      "underwater",
+      "swimming",
+      "aquatic",
+      "underwater gameplay",
+      "pax east 2014",
+      "submarine"
+    ],
+    "productionCompanies": [
+      "Unknown Worlds"
+    ],
+    "igdbPublisher": "Gearbox Publishing, Unknown Worlds",
+    "igdbSummary": "Descend into the depths of an alien underwater world filled with wonder and peril. Craft equipment, pilot submarines and out-smart wildlife to explore lush coral reefs, volcanoes, cave systems, and more, all while trying to survive.",
+    "igdbFranchise": "Subnautica"
+  },
+  "the-witcher": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xrx.jpg",
+    "tags": [
+      "Action",
+      "Fantasy",
+      "bloody",
+      "wizards",
+      "vampire",
+      "drugs",
+      "magic",
+      "minigames",
+      "crafting",
+      "dark fantasy",
+      "elves",
+      "gambling",
+      "action-adventure",
+      "steam",
+      "witches",
+      "backtracking",
+      "multiple endings",
+      "undead",
+      "mutants",
+      "dialogue trees",
+      "based on - book",
+      "amnesia",
+      "racism",
+      "easter egg",
+      "nudity"
+    ],
+    "productionCompanies": [
+      "CD Projekt RED"
+    ],
+    "igdbPublisher": "CD Projekt RED, Atari, Inc.",
+    "igdbSummary": "Based on the novel series by Andrzej Sapkowski, The Witcher follows Geralt of Rivia, an amnesiac witcher (problem solver and slayer of monsters) whose home, the Kaer Morhen citadel, is besieged by an organization called the Salamandra, who steal their valuable potions and get away. Throughout the game, Geralt must resolve people's moral dilemmas, connect the dots of his past and track down the Salamandra.",
+    "igdbFranchise": "The Witcher"
+  },
+  "codmw2": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3cwt.jpg",
+    "tags": [
+      "Action",
+      "Stealth",
+      "Warfare",
+      "modern warfare",
+      "vehicular combat",
+      "bloody",
+      "fast paced",
+      "soldier",
+      "military",
+      "run and gun",
+      "building",
+      "modern military",
+      "60 fps on consoles",
+      "famous quotes",
+      "downloadable content",
+      "auto-saving",
+      "real-time combat",
+      "mercenary",
+      "terrorists",
+      "communism",
+      "linear gameplay",
+      "heterochromia",
+      "united states army",
+      "skippable gameplay",
+      "male protagonist"
+    ],
+    "productionCompanies": [
+      "Infinity Ward"
+    ],
+    "igdbPublisher": "Activision",
+    "igdbSummary": "Call of Duty: Modern Warfare 2 is a first-person shooter video game developed by Infinity Ward and published by Activision for the Xbox 360 and PlayStation 3 video game consoles and the Microsoft Windows operating system. Officially announced on February 11, 2009, the game was released worldwide on November 10, 2009. It is the sixth installment of the Call of Duty series and the direct sequel to Call of Duty 4: Modern Warfare, continuing the same storyline, with Call of Duty: Modern Warfare 3 set to end the storyline.",
+    "igdbFranchise": "Call of Duty"
+  },
+  "ico": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3r78.jpg",
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Drama",
+      "ghosts",
+      "maze",
+      "compilation",
+      "female protagonist",
+      "action-adventure",
+      "sacrifice",
+      "high score",
+      "possession",
+      "damsel in distress",
+      "playstation plus",
+      "escort mission",
+      "real-time combat",
+      "environmental puzzles",
+      "wraparound world",
+      "no hud",
+      "temporary invincibility",
+      "no dialogue",
+      "invented language"
+    ],
+    "productionCompanies": [
+      "Team Ico"
+    ],
+    "igdbPublisher": "Sony Computer Entertainment",
+    "igdbSummary": "An action-adventure game in which a boy is abandoned and taken to a massive castle by his people. After exploring it for a while, he meets a girl who speaks a different language than him, then decides to get both of them out of the castle grounds by leading her along, in order to escape the shadow-like creatures that frequently try to kidnap the girl.",
+    "igdbFranchise": "Ico"
+  },
+  "wolf-among-us": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rcy.jpg",
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Thriller",
+      "Drama",
+      "Mystery",
+      "bloody",
+      "serial killer",
+      "detective",
+      "murder",
+      "magic",
+      "prequel",
+      "guitar playing",
+      "quick-time events",
+      "death",
+      "frog",
+      "doctor",
+      "episodic",
+      "mythology",
+      "noir",
+      "steam",
+      "witches",
+      "achievements",
+      "time limit",
+      "princess",
+      "dialogue trees"
+    ],
+    "productionCompanies": [
+      "Telltale Games"
+    ],
+    "igdbPublisher": "Telltale Games",
+    "igdbSummary": "The Wolf Among Us is a five-episode series from the creators of the 2012 Game of the Year: The Walking Dead. Based on Fables (DC Comics/Vertigo), an award-winning comic book series, it is an often violent, mature and hard-boiled thriller where the characters and creatures of myth, lore and legend are real and exist in our world. As Bigby Wolf - The Big Bad Wolf in human form - you will discover that the brutal, bloody murder of a Fable is just a taste of things to come, in a game series where your every decision can have enormous consequences.",
+    "igdbFranchise": "Fables"
+  },
+  "firewatch": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1ts.jpg",
+    "tags": [
+      "Drama",
+      "Open world",
+      "Mystery",
+      "helicopter",
+      "exploration",
+      "1980s",
+      "photography",
+      "guitar playing",
+      "pets",
+      "bird",
+      "multiple endings",
+      "walking simulator",
+      "dialogue trees",
+      "united states",
+      "atmospheric",
+      "camera",
+      "easter egg",
+      "dice",
+      "climbing",
+      "day/night cycle",
+      "turtle",
+      "comic book",
+      "digital distribution",
+      "single-player only",
+      "pax west 2017"
+    ],
+    "productionCompanies": [
+      "Campo Santo"
+    ],
+    "igdbPublisher": "Panic",
+    "igdbSummary": "Firewatch is a single-player first-person video game where you, as a man named Henry, explore the Wyoming wilderness after taking a summer job as a fire lookout. What is supposed to be a peaceful respite from your complicated life takes a turn when you start to question some of the things that are happening to you.\n\nYour only human connection is over a handheld radio, which you’ll use to speak with your supervisor Delilah about the things both of you are experiencing."
+  },
+  "heavy-rain": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaajv.jpg",
+    "tags": [
+      "Action",
+      "Thriller",
+      "Drama",
+      "Mystery",
+      "modern warfare",
+      "rail shooter",
+      "helicopter",
+      "exploration",
+      "bloody",
+      "psychological thriller",
+      "serial killer",
+      "detective",
+      "interactive fiction",
+      "murder",
+      "drugs",
+      "quick-time events",
+      "death",
+      "military",
+      "permadeath",
+      "cinematic",
+      "female protagonist",
+      "action-adventure",
+      "noir",
+      "multiple protagonists",
+      "multiple endings"
+    ],
+    "productionCompanies": [
+      "Quantic Dream"
+    ],
+    "igdbPublisher": "Quantic Dream, Sony Computer Entertainment",
+    "igdbSummary": "Heavy Rain is a cinematic psychological thriller from game developer Quantic Dream exclusively for the PlayStation 3. Dealing with a range of adult themes, the game revolves around a sophisticated plot and strong narrative threads that explore a complex moral proposition. You assume the role of multiple characters with very different backgrounds, motivations, and skills in a world where each player decision affects what will follow."
+  },
+  "crysis": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2on1.jpg",
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Stealth",
+      "Open world",
+      "modern warfare",
+      "aliens",
+      "helicopter",
+      "vehicular combat",
+      "bloody",
+      "gravity",
+      "shark",
+      "death",
+      "voxel",
+      "run and gun",
+      "frog",
+      "skydiving",
+      "chicken",
+      "hand-to-hand combat",
+      "flight",
+      "war",
+      "steam",
+      "bird",
+      "backtracking",
+      "achievements",
+      "online"
+    ],
+    "productionCompanies": [
+      "Crytek Frankfurt"
+    ],
+    "igdbPublisher": "Electronic Arts",
+    "igdbSummary": "From the makers of Far Cry, Crysis offers FPS fans the best-looking, most highly-evolving gameplay, requiring the player to use adaptive tactics and total customization of weapons and armor to survive in dynamic, hostile environments including Zero-G.",
+    "igdbFranchise": "Crysis"
+  },
+  "bulletstorm": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7abq.jpg",
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Comedy",
+      "vehicular combat",
+      "dinosaurs",
+      "cybernetics",
+      "bloody",
+      "brutal",
+      "robots",
+      "futuristic",
+      "kaiju",
+      "cyborg",
+      "steam",
+      "achievements",
+      "online",
+      "controversial",
+      "slow-motion",
+      "high score",
+      "playstation network",
+      "no jumping",
+      "vehicle combat",
+      "explosion",
+      "countdown timer",
+      "playstation trophies",
+      "voice acting"
+    ],
+    "productionCompanies": [
+      "People Can Fly",
+      "Epic Games"
+    ],
+    "igdbPublisher": "Electronic Arts",
+    "igdbSummary": "Bulletstorm brings new furor to first-person shooter action thanks to its signature 'kill with skill' gameplay. The game tells the story of a futuristic confederation protected by an elite band of mercenaries: Dead Echo. When Dead Echo members Grayson Hunt and Ishi Sato learn they've been working for the wrong side, they're betrayed by their commander and exiled to the far reaches of the galaxy. In Bulletstorm, Grayson and Ishi find themselves surrounded by hordes of mutants and flesh eating gangs in an abandoned paradise. They have two objectives: get off the planet alive, and exact revenge on the man who sent them there.\n\nPlayers step into the role of Grayson Hunt complete with an arsenal of over-the-top combat moves and outrageously large guns. Bulletstorm's array of distinct 'skillshots' produces unprecedented levels of frantic gameplay and yell-inducing satisfaction. The skillshot system rewards players for inciting mayhem in the most creative way possible. The more insane the skillshot, the more points players collects to upgrade their character and unlock weapons, which then allows them to execute even more creative moves and exaggerated skillshots."
+  },
+  "bioshock": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co54xg.jpg",
+    "tags": [
+      "Action",
+      "Science fiction",
+      "Horror",
+      "bees"
+    ],
+    "productionCompanies": [
+      "2K Australia",
+      "2K Boston"
+    ],
+    "igdbPublisher": "2K Games",
+    "igdbSummary": "The PlayStation 3 port of BioShock was released with exclusive content, including the possibility to purchase a downloadable add-on called \"Challenge Rooms\" and a harder difficulty level.",
+    "igdbFranchise": "Bioshock"
+  },
+  "gta-iv": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbv.jpg",
+    "tags": [
+      "Action",
+      "Open world",
+      "helicopter",
+      "pool",
+      "motorcycle",
+      "exploration",
+      "violence",
+      "bloody",
+      "cars",
+      "murder",
+      "drugs",
+      "organized crime",
+      "bowling",
+      "street fighting",
+      "street racing",
+      "gangs",
+      "hand-to-hand combat",
+      "multiple endings",
+      "building",
+      "crime",
+      "over the shoulder",
+      "economy",
+      "sequel",
+      "day/night cycle",
+      "sexual content"
+    ],
+    "productionCompanies": [
+      "Rockstar North"
+    ],
+    "igdbPublisher": "Take-Two Interactive, Rockstar Games",
+    "igdbSummary": "Grand Theft Auto IV is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It is the eleventh title in the Grand Theft Auto series, and the first main entry since 2004's Grand Theft Auto: San Andreas.\n\nThe game is played from a third-person perspective and its world is navigated on-foot or by vehicle. Throughout the single-player mode, players play as Niko Bellic. An online multiplayer mode is included with the game, allowing up to 32 players to engage in both co-operative and competitive gameplay in a recreation of the single-player setting.\n\nTwo expansion packs were later released for the game, The Lost and Damned and The Ballad of Gay Tony, which both feature new plots that are interconnected with the main Grand Theft Auto IV storyline, and follow new protagonists.",
+    "igdbFranchise": "Grand Theft Auto"
+  },
+  "life-is-strange": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8e.jpg",
+    "tags": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Drama",
+      "Mystery",
+      "soccer",
+      "football",
+      "exploration",
+      "time travel",
+      "photography",
+      "death",
+      "time manipulation",
+      "cinematic",
+      "episodic",
+      "female protagonist",
+      "action-adventure",
+      "graphic adventure",
+      "bird",
+      "achievements",
+      "camera",
+      "squirrel",
+      "drone",
+      "digital distribution",
+      "time rewind",
+      "students"
+    ],
+    "productionCompanies": [
+      "DON'T NOD"
+    ],
+    "igdbPublisher": "Feral Interactive, Square Enix",
+    "igdbSummary": "Life Is Strange is a five part episodic game that sets out to revolutionize story based choice and consequence games by allowing the player to rewind time and affect the past, present and future.",
+    "igdbFranchise": "Life is Strange"
+  },
+  "max-payne-2": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9r09.jpg",
+    "tags": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
+    "productionCompanies": [
+      "Remedy Entertainment"
+    ],
+    "igdbPublisher": "Rockstar Games",
+    "igdbFranchise": "Max Payne"
+  },
+  "tlou": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Stealth",
+      "hunting",
+      "post-apocalyptic",
+      "disease",
+      "infection",
+      "murder",
+      "drugs",
+      "story driven",
+      "chess",
+      "dystopian",
+      "crafting",
+      "death",
+      "horse",
+      "doctor",
+      "female protagonist",
+      "hand-to-hand combat",
+      "action-adventure",
+      "apocalypse",
+      "undead",
+      "mutants",
+      "online",
+      "hostages"
+    ],
+    "productionCompanies": [
+      "Naughty Dog"
+    ],
+    "igdbPublisher": "Sony Computer Entertainment",
+    "igdbSummary": "The Last of Us is a third-person action-adventure game featuring a mix of exploration, stealth and combat. Players face both infected creatures and hostile human enemies while progressing through varied environments. The game includes a narrative-driven single-player campaign and a competitive online multiplayer mode called Factions. Trophy support is included, and additional downloadable content was made available separately.",
+    "igdbFranchise": "The Last of Us"
+  },
+  "max-payne": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co926i.jpg",
+    "tags": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
+    "productionCompanies": [
+      "Remedy Entertainment"
+    ],
+    "igdbPublisher": "Rockstar Games",
+    "igdbFranchise": "Max Payne"
+  },
+  "undertale": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1t2.jpg",
+    "tags": [
+      "Fantasy",
+      "Horror",
+      "Comedy",
+      "Drama",
+      "retro",
+      "psychological horror",
+      "dark",
+      "2d",
+      "parody",
+      "turn-based",
+      "shmup",
+      "bullet hell",
+      "village",
+      "backtracking",
+      "child protagonist",
+      "multiple endings",
+      "cute",
+      "funny",
+      "satire",
+      "pixel art",
+      "pixel graphics",
+      "unique battle system",
+      "crowdfunding - kickstarter",
+      "story rich",
+      "manic shooter"
+    ],
+    "productionCompanies": [
+      "tobyfox"
+    ],
+    "igdbPublisher": "8-4, tobyfox",
+    "igdbSummary": "A small child falls into the Underground, where monsters have long been banished by humans and are hunting every human that they find. The player controls the child as they try to make it back to the Surface through hostile environments, all the while engaging with a turn-based combat system with puzzle-solving and bullet hell elements, as well as other unconventional game mechanics.",
+    "igdbFranchise": "Undertale"
+  },
+  "tlou2": {
+    "igdbCover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ziw.jpg",
+    "tags": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Stealth",
+      "zombies",
+      "post-apocalyptic",
+      "playstation experience 2016",
+      "the game awards - best score or music - nominee",
+      "the game awards 2017",
+      "the game awards - nominee",
+      "you can pet the dog",
+      "the game awards - best action-adventure game - winner",
+      "the game awards - best art direction - nominee",
+      "the game awards - best audio design - winner",
+      "the game awards - most anticipated game - nominee",
+      "the game awards - best game direction - winner",
+      "the game awards - best narrative - winner",
+      "the game awards - best performance - nominee",
+      "the game awards - best performance - winner",
+      "the game awards - game of the year - winner"
+    ],
+    "productionCompanies": [
+      "Naughty Dog"
+    ],
+    "igdbPublisher": "Sony Interactive Entertainment",
+    "igdbSummary": "The Last of Us Part II is an action-adventure game set five years after the events of The Last of Us. The player traverses post-apocalyptic environments such as buildings and forests to advance the story. They can use firearms, improvised weapons, and stealth to defend against hostile humans and cannibalistic creatures infected by a mutated strain of the Cordyceps fungus. The game intermittently switches control between Ellie and Abby, and also briefly Joel in the opening sequence. The nimble nature of the player character introduces platforming elements, allowing the player to jump and climb to traverse environments and gain advantages during combat.",
+    "igdbFranchise": "The Last of Us"
   }
 };
