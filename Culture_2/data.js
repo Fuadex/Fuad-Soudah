@@ -313,6 +313,18 @@ const REGION_COLORS = {
   hk:    '#6a3a2a',  // Hong Kong — deep vermilion (bauhinia red, muted)
   cn:    '#6a2828',  // Chinese — dark cinnabar (PRC red, muted)
   mx:    '#3a6a3a',  // Mexican — deep jade green
+  tw:    '#2f5a52',  // Taiwanese — teal-green
+  ar:    '#3a6a9a',  // Argentine — sky blue
+  in:    '#9a5a24',  // Indian — saffron / deep orange
+  lb:    '#3a6a3a',  // Lebanese — cedar green
+  eg:    '#8a7a32',  // Egyptian — desert gold
+  is:    '#3a5a7a',  // Icelandic — cold glacial blue
+  th:    '#7a2a4a',  // Thai — deep magenta
+  nz:    '#2a5240',  // New Zealand — deep forest
+  sg:    '#7a3a3a',  // Singaporean — muted crimson
+  ee:    '#2a4a6a',  // Estonian — deep blue
+  uy:    '#5a82a8',  // Uruguayan — steel sky blue
+  aq:    '#5a7a8a',  // Antarctica — icy slate (catch-all for unknown origin)
 };
 
 const DECADE_COLORS = {

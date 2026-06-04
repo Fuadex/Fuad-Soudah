@@ -354,7 +354,7 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 650;            /* above the row's items (which stack up to ~i) */
+  z-index: 99999;          /* above every item: covers can stack up to ~item-count (1000+) in mix mode */
   width: 34px; height: 34px;
   display: flex; align-items: center; justify-content: center;
   border: 1px solid var(--rule);
@@ -371,7 +371,9 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 .shelf-arrow.left  { left: 10px; }
 .shelf-arrow.right { right: 10px; }
-.shelf-rail:hover .shelf-arrow { opacity: 1; pointer-events: auto; }
+/* Tie visibility to the whole section, not the rail: a hovered item lifts above
+   the rail box, so rail:hover would flicker off as the cursor follows it up. */
+.shelf:hover .shelf-arrow { opacity: 1; pointer-events: auto; }
 .shelf-arrow:hover { color: var(--ink); border-color: var(--ink-faint); background: var(--bg-2); }
 .shelf-arrow:active { transform: translateY(-50%) scale(.92); }
 @media (max-width: 768px) { .shelf-arrow { display: none; } }

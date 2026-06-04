@@ -119,6 +119,8 @@ const REGION_NAMES = {
   es:'Spain', nl:'Netherlands', dk:'Denmark', cz:'Czechia', hu:'Hungary', bg:'Bulgaria', hr:'Croatia',
   gr:'Greece', br:'Brazil',
   hk:'Hong Kong', cn:'China', mx:'Mexico',
+  tw:'Taiwan', ar:'Argentina', in:'India', lb:'Lebanon', eg:'Egypt', is:'Iceland', th:'Thailand', nz:'New Zealand',
+  sg:'Singapore', ee:'Estonia', uy:'Uruguay', aq:'Antarctica',
 };
 function regionName(code) { return REGION_NAMES[code] || null; }
 
@@ -218,14 +220,20 @@ const ISO_TO_REGION = {
   410:'kr', 36:'au', 124:'ca', 372:'ie', 376:'il', 752:'se', 246:'fi',
   756:'ch', 724:'es', 528:'nl', 208:'dk', 203:'cz', 348:'hu', 100:'bg',
   191:'hr', 300:'gr', 76:'br',
-  344:'hk', 156:'cn',
+  344:'hk', 156:'cn', 484:'mx',
+  158:'tw', 32:'ar', 356:'in', 422:'lb', 818:'eg', 352:'is', 764:'th', 554:'nz',
+  702:'sg', 233:'ee', 858:'uy',
+  10:'aq',  // Antarctica — catch-all home for items of unknown origin
 };
 
-// Per-medium color hue for the choropleth
+// Per-medium color hue for the choropleth + heatmap. Keys MUST match the actual
+// medium strings (window.CULTURE.MEDIA) — 'Movies'/'Feature Animation', not
+// 'Film'/'Animated Film' — or they silently fall back to the default orange.
 const MEDIUM_MAP_HUE = {
-  'All':'#e96846', 'Film':'#e96846', 'Animated Film':'#c084fc',
-  'Animated Series':'#60a5fa', 'Shorts':'#34d399',
-  'TV':'#fbbf24', 'Games':'#f472b6', 'Books':'#86efac',
+  'All':'#e96846', 'Movies':'#e96846',
+  'TV':'#fbbf24', 'Games':'#f472b6',
+  'Animated Series':'#60a5fa', 'Feature Animation':'#c084fc',
+  'Books':'#a3e635', 'Shorts':'#2dd4bf',
 };
 
 let _topoCache = null;
@@ -283,8 +291,9 @@ function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 25 }
 }
 
 // ─────────── ActivityHeatmap ───────────
-function ActivityHeatmap({ items, selectedWeeks, onToggleWeek }) {
+function ActivityHeatmap({ items, selectedWeeks, onToggleWeek, medium = 'All' }) {
   const [tip, setTip] = React.useState(null);
+  const hue = MEDIUM_MAP_HUE[medium] || MEDIUM_MAP_HUE['All'];
 
   const { grid, years, maxCount } = React.useMemo(() => {
     const g = {};
@@ -330,7 +339,7 @@ function ActivityHeatmap({ items, selectedWeeks, onToggleWeek }) {
                   <div
                     key={w}
                     className={`heatmap-cell${sel ? ' selected' : ''}`}
-                    style={{ background: count ? `rgba(233,104,70,${alpha})` : undefined }}
+                    style={{ background: count ? `color-mix(in srgb, ${hue} ${Math.round(alpha*100)}%, transparent)` : undefined }}
                     title={`${yr} week ${w}: ${count} items`}
                     onMouseEnter={e => setTip({ x: e.clientX, y: e.clientY, text: `${yr} wk ${w} · ${count} item${count!==1?'s':''}` })}
                     onMouseLeave={() => setTip(null)}
@@ -390,7 +399,6 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
             ? `color-mix(in srgb, ${hue} ${Math.round(alpha*100)}%, #2a2520)`
             : '#221f1b';
           const sel = region && selectedCountries.has(region);
-          if (isoNum === 10) return null;
           const d = pathGen(f);
           if (!d) return null;
           return (
@@ -498,7 +506,7 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
 
         <div className="stats-section">
           <div className="stats-section-title">Activity heatmap — click weeks to filter library</div>
-          <ActivityHeatmap items={statItems} selectedWeeks={selectedWeeks} onToggleWeek={onToggleWeek} />
+          <ActivityHeatmap items={statItems} selectedWeeks={selectedWeeks} onToggleWeek={onToggleWeek} medium={medium} />
         </div>
 
         <div className="stats-section" style={{ marginBottom: 0 }}>
@@ -544,6 +552,19 @@ function sortItems(arr, sort, dir) {
   return list;
 }
 
+// Sort-aware labels for the direction toggle [desc, asc]. The old tooltip was
+// hardcoded to "Newest/Oldest first", which was wrong for most sort keys.
+const SORT_DIR_LABEL = {
+  year:     ['Newest first', 'Oldest first'],
+  rated:    ['Most recent first', 'Earliest first'],
+  rating:   ['Highest first', 'Lowest first'],
+  duration: ['Longest first', 'Shortest first'],
+  az:       ['A → Z', 'Z → A'],
+  director: ['A → Z', 'Z → A'],
+  studio:   ['A → Z', 'Z → A'],
+  country:  ['A → Z', 'Z → A'],
+};
+
 // ─────────── Shelf row ───────────
 function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem, justPickedId, pickedSet }) {
   const { MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
@@ -583,10 +604,12 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
     return (hash(item.id, mixSeed) % 3) !== 0;
   }, [mode, mixSeed]);
 
-  // ── Drag-scroll: window-tracked, with click suppression + inertial flick ──
+  // ── Drag-scroll: window-tracked, with click suppression ──
   // Move/up live on `window` so a drag keeps going even when the cursor leaves
-  // the row, and a fast release coasts to a stop instead of stopping dead.
-  const dragRef = React.useRef({ down: false, startX: 0, startSL: 0, moved: false, lastX: 0, lastT: 0, vx: 0 });
+  // the row. No JS inertia on mouse-release: setting scrollLeft per rAF frame was
+  // choppy on big rows. Touch is untouched (it uses the browser's native scroll +
+  // native momentum, not this handler).
+  const dragRef = React.useRef({ down: false, startX: 0, startSL: 0, moved: false });
   const momentumRaf = React.useRef(0);
   const DRAG_THRESHOLD = 5;
 
@@ -599,8 +622,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
     stopMomentum();
     const el = scrollerRef.current;
     if (!el) return;
-    dragRef.current = { down: true, startX: e.clientX, startSL: el.scrollLeft, moved: false,
-                        lastX: e.clientX, lastT: performance.now(), vx: 0 };
+    dragRef.current = { down: true, startX: e.clientX, startSL: el.scrollLeft, moved: false };
   };
 
   React.useEffect(() => {
@@ -615,18 +637,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
         el.classList.add('dragging');
         setHoverIdx(-1); setPopupPos(null);
       }
-      if (d.moved) {
-        el.scrollLeft = d.startSL - dx;
-        const now = performance.now();
-        const dt = now - d.lastT;
-        if (dt > 0) {
-          // scrollLeft velocity (px/ms); scroll moves opposite to the cursor
-          const inst = -(e.clientX - d.lastX) / dt;
-          d.vx = 0.8 * inst + 0.2 * d.vx;   // smoothed so a jittery last frame doesn't dominate
-          d.lastX = e.clientX;
-          d.lastT = now;
-        }
-      }
+      if (d.moved) el.scrollLeft = d.startSL - dx;
     };
     const onUp = () => {
       const d = dragRef.current;
@@ -635,21 +646,9 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
       const wasMoved = d.moved;
       el?.classList.remove('dragging');
       d.down = false;
-      if (!wasMoved) { d.moved = false; return; }
       // suppress the click that would otherwise fire after a drag
-      setTimeout(() => { dragRef.current.moved = false; }, 0);
-      // inertial coast in the flick's direction, decaying by friction each frame
-      let v = d.vx;
-      if (el && Math.abs(v) > 0.03) {
-        const FRICTION = 0.94;
-        const step = () => {
-          v *= FRICTION;
-          el.scrollLeft += v * 16;            // ~16ms per frame
-          if (Math.abs(v) > 0.01) momentumRaf.current = requestAnimationFrame(step);
-          else momentumRaf.current = 0;
-        };
-        momentumRaf.current = requestAnimationFrame(step);
-      }
+      if (wasMoved) setTimeout(() => { dragRef.current.moved = false; }, 0);
+      else d.moved = false;
     };
     window.addEventListener('mousemove', onMove);
     window.addEventListener('mouseup', onUp);
@@ -684,14 +683,49 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
     const el = scrollerRef.current;
     if (el) el.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: 'smooth' });
   }, [stopMomentum]);
+
+  // ── Virtualization (SPINES mode only) ──
+  // Spine rows can hold 600+ items; rendering them all makes a JS drag repaint
+  // the whole strip each frame. We render only the visible window (+ a buffer)
+  // between two spacer divs that preserve the true scroll width. Covers/Mix keep
+  // a full render (covers are few; mix relies on cover-overlap layout math).
+  const SCROLL_PAD = 56;  // matches .shelf-scroll horizontal padding
+  const spineLayout = React.useMemo(() => {
+    if (mode !== 'spines') return null;
+    const offsets = new Array(ordered.length + 1);
+    let acc = 0;
+    for (let i = 0; i < ordered.length; i++) { offsets[i] = acc; acc += spineWidth(ordered[i]); }
+    offsets[ordered.length] = acc;
+    return { offsets, total: acc };
+  }, [ordered, mode]);
+
+  const [vrange, setVrange] = React.useState({ start: 0, end: 120 });
+  const updateVRange = React.useCallback(() => {
+    const el = scrollerRef.current;
+    if (!el || !spineLayout) return;
+    const { offsets } = spineLayout;
+    const n = offsets.length - 1;
+    const BUF = 500;
+    const viewL = el.scrollLeft - SCROLL_PAD - BUF;
+    const viewR = el.scrollLeft - SCROLL_PAD + el.clientWidth + BUF;
+    let lo = 0, hi = n;
+    while (lo < hi) { const m = (lo + hi + 1) >> 1; if (offsets[m] <= viewL) lo = m; else hi = m - 1; }
+    const start = Math.max(0, lo);
+    lo = 0; hi = n;
+    while (lo < hi) { const m = (lo + hi) >> 1; if (offsets[m] >= viewR) hi = m; else lo = m + 1; }
+    const end = Math.min(n, lo);
+    setVrange(prev => (prev.start === start && prev.end === end) ? prev : { start, end });
+  }, [spineLayout]);
+
   const scrollRaf = React.useRef(0);
   React.useEffect(() => {
     recomputeScroll();
+    updateVRange();
     const el = scrollerRef.current;
     if (!el) return;
     const onScroll = () => {
       if (scrollRaf.current) return;
-      scrollRaf.current = requestAnimationFrame(() => { scrollRaf.current = 0; recomputeScroll(); });
+      scrollRaf.current = requestAnimationFrame(() => { scrollRaf.current = 0; recomputeScroll(); updateVRange(); });
     };
     el.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
@@ -700,7 +734,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
       window.removeEventListener('resize', onScroll);
       if (scrollRaf.current) cancelAnimationFrame(scrollRaf.current);
     };
-  }, [recomputeScroll]);
+  }, [recomputeScroll, updateVRange]);
 
   // Scroll to rank-0 (covers/mix) — spine mode stays left-aligned.
   const centerOnRankZero = React.useCallback((smooth = true) => {
@@ -743,23 +777,30 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
     if (!justPickedId) return;
     const el = scrollerRef.current;
     if (!el) return;
-    if (!items.find(i => i.id === justPickedId)) return;
+    const idx = ordered.findIndex(i => i.id === justPickedId);
+    if (idx < 0) return;
+    // Spines may be virtualized (target not in the DOM) — scroll by computed offset.
+    if (spineLayout) {
+      const center = SCROLL_PAD + spineLayout.offsets[idx] + spineWidth(ordered[idx]) / 2;
+      el.scrollTo({ left: center - el.clientWidth / 2, behavior: 'smooth' });
+      return;
+    }
     const target = el.querySelector(`[data-item-id="${justPickedId}"]`);
     if (!target) return;
     const elRect = el.getBoundingClientRect();
     const tRect = target.getBoundingClientRect();
     const offset = (tRect.left + tRect.width / 2) - (elRect.left + elRect.width / 2);
     el.scrollTo({ left: el.scrollLeft + offset, behavior: 'smooth' });
-  }, [justPickedId, items]);
+  }, [justPickedId, items, ordered, spineLayout]);
 
-  // Subtle fade when the active sort changes; cheap because it animates the
-  // scroller container, not each of the (potentially hundreds of) spines.
+  // Subtle fade when the active sort changes — covers/mix only. In spines mode
+  // the whole-row reset looks jarring, so we skip the animation there.
   const [sorting, setSorting] = React.useState(false);
   const prevSort = React.useRef(sort);
   React.useEffect(() => {
     if (prevSort.current === sort) return;
     prevSort.current = sort;
-    setSorting(true);
+    if (mode !== 'spines') setSorting(true);
     const el = scrollerRef.current;
     if (el) { if (sort === 'curated') centerOnRankZero(false); else el.scrollTo({ left: 0 }); }
     const t = setTimeout(() => setSorting(false), 420);
@@ -815,7 +856,10 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
   const renderedItems = React.useMemo(() => ordered.map((item, i) => {
     const isSpine = isSpineFor(item);
     const isJustPicked = item.id === justPickedId;
-    const zIndex = isJustPicked ? 150 : i + 1;   // hovered item lifts via CSS z-index
+    // Spines don't overlap, so they need no stacking order — leaving them at the
+    // default z keeps long rows (where i+1 would climb past 1000) from covering
+    // the hover arrows. Only covers overlap their neighbours and need i+1.
+    const zIndex = isJustPicked ? 150 : (isSpine ? undefined : i + 1);
     const bodyColor = spineBodyColor(item);
     const isPicked = pickedSet.has(item.id);
 
@@ -870,7 +914,18 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
           onMouseDown={onMouseDown}
           onMouseLeave={handleLeave}
         >
-          {renderedItems}
+          {spineLayout ? (() => {
+            const n = spineLayout.offsets.length - 1;
+            const s = Math.min(vrange.start, n);
+            const e = Math.min(vrange.end, n);
+            return (
+              <React.Fragment>
+                <div key="vspacer-l" aria-hidden="true" style={{ flex: '0 0 auto', width: spineLayout.offsets[s] }} />
+                {renderedItems.slice(s, e)}
+                <div key="vspacer-r" aria-hidden="true" style={{ flex: '0 0 auto', width: spineLayout.total - spineLayout.offsets[e] }} />
+              </React.Fragment>
+            );
+          })() : renderedItems}
         </div>
         <button className="shelf-arrow right" tabIndex={-1} aria-label="Scroll right" onClick={() => nudge(1)}>›</button>
         <div className="shelf-thumb">
@@ -1357,7 +1412,8 @@ function App() {
               className="sort-dir-btn"
               disabled={sort === 'curated'}
               onClick={() => setSortDir(d => d === 'desc' ? 'asc' : 'desc')}
-              title={sortDir === 'desc' ? 'Newest first — click to reverse' : 'Oldest first — click to reverse'}
+              aria-label={(SORT_DIR_LABEL[sort] || ['Descending', 'Ascending'])[sortDir === 'desc' ? 0 : 1]}
+              title={`${(SORT_DIR_LABEL[sort] || ['Descending', 'Ascending'])[sortDir === 'desc' ? 0 : 1]} — click to reverse`}
             >
               {sortDir === 'desc' ? '←' : '→'}
             </button>
