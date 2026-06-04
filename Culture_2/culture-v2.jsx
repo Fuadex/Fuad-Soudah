@@ -581,10 +581,13 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
   // the rank-0 (most-important) data row sits visually in the middle of
   // the shelf with the rest fanning symmetrically outward.
   const ordered = React.useMemo(() => {
-    // Covers shows only favorites; spines / mix show the whole library.
-    // If a shelf has no favorites at all, fall back to all items (rendered as spines).
+    // Covers shows favorites + anything with a hand-picked poster; spines / mix
+    // show the whole library. An explicit `poster` promotes an item to a cover so
+    // curated art shows even when the item isn't marked favorite.
+    // If a shelf has no cover-worthy items at all, fall back to all items.
+    const coverWorthy = i => i.favorite || i.poster;
     const base = mode === 'covers'
-      ? (items.some(i => i.favorite) ? items.filter(i => i.favorite) : items)
+      ? (items.some(coverWorthy) ? items.filter(coverWorthy) : items)
       : items;
     const arr = base.map((it, i) => ({ ...it, _rank: i }));
     if (sort && sort !== 'curated') {
@@ -598,7 +601,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
   // The rank-0 item is always shown as a cover so the centre piece reads.
   const isSpineFor = React.useCallback((item) => {
     if (mode === 'spines') return true;
-    if (!item.favorite) return true;        // imports never expand into covers
+    if (!item.favorite && !item.poster) return true;  // no fav & no poster → spine
     if (mode === 'covers') return false;
     if (item._rank === 0) return false;
     return (hash(item.id, mixSeed) % 3) !== 0;
