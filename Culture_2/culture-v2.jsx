@@ -1348,7 +1348,7 @@ function App() {
       if (seasons[i.id] && !i.seasons) return { ...i, seasons: seasons[i.id] };
       return i;
     });
-    const all = favs.concat(window.CULTURE_IMPORTS || [], window.CULTURE_FILM_IMPORTS || []);
+    const all = favs.concat(window.CULTURE_IMPORTS || []);
     const hasCast = Object.keys(castData).length > 0;
     return hasCast ? all.map(item => castData[item.id] ? { ...item, ...castData[item.id] } : item) : all;
   }, []);

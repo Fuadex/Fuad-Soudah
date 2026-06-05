@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Machine-generated enrichment caches (regenerable; kept local, not committed)
+*_cache.json
+
+# Scratch / backups / one-off output
+_tmp_*.py
+_enrich_out.txt
+*.bak
+
+# Secrets — TMDB / Twitch keys
+.env
