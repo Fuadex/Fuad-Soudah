@@ -135,11 +135,13 @@ function parseQuery(raw) {
     writer: 'writers', author: 'writers',
     dp: 'dps', cin: 'dps',
     region: 'regions', country: 'regions',
+    highlight: 'highlights', badge: 'highlights',
+    on: 'providers', provider: 'providers', watch: 'providers',
   };
   const result = {
     text: '', releaseYear: [], ratedYear: [], ratingFilter: [],
     genres: [], actors: [], directors: [], tags: [], studios: [],
-    writers: [], dps: [], regions: [],
+    writers: [], dps: [], regions: [], highlights: [], providers: [],
   };
   const s = (raw || '').trim();
   if (!s) return result;
@@ -239,17 +241,29 @@ const MEDIUM_MAP_HUE = {
 let _topoCache = null;
 
 // ─────────── RatingHistogram ───────────
-function RatingHistogram({ items, selectedRatings, onToggle }) {
-  const counts = React.useMemo(() => countBy(items, it => it.rating), [items]);
+// Bins items into 1–10 by the chosen `source`:
+//   'rating' → personal score (it.rating), 'fwAvg' → Filmweb avg (rounded).
+// `onBar(n)` makes columns clickable (personal-rating mode); pass null for a
+// display-only chart (Filmweb mode). `activeSet` = highlighted band strings.
+function RatingHistogram({ items, source, activeSet, onBar }) {
+  const counts = React.useMemo(() => countBy(items, it =>
+    source === 'rating'
+      ? it.rating
+      : (it[source] != null ? String(Math.round(it[source])) : null)
+  ), [items, source]);
   const max = Math.max(1, ...Object.values(counts));
+  const SRC = source === 'fwAvg' ? 'Filmweb ≈ ' : '★';
+  const clickable = !!onBar;
   return (
-    <div className="rating-hist">
+    <div className={`rating-hist${clickable ? '' : ' static'}`}>
       {[1,2,3,4,5,6,7,8,9,10].map(n => {
         const s = String(n);
         const c = counts[s] || 0;
-        const active = selectedRatings.has(s);
+        const active = activeSet.has(s);
         return (
-          <div key={n} className={`rating-col${active ? ' active' : ''}`} onClick={() => onToggle(s)} title={`${c} items`}>
+          <div key={n} className={`rating-col${active ? ' active' : ''}`}
+               onClick={clickable ? () => onBar(n) : undefined}
+               title={`${c} ${c === 1 ? 'title' : 'titles'} · ${SRC}${n}`}>
             <div className="rating-cnt">{c || ''}</div>
             <div className="rating-bar" style={{ height: `${Math.max(3, (c/max)*80)}px` }}/>
             <div className="rating-lbl">{n}</div>
@@ -263,7 +277,7 @@ function RatingHistogram({ items, selectedRatings, onToggle }) {
 // ─────────── HBarHistogram (directors / studios / actors / etc.) ───────────
 // countFn: optional alternative to keyFn for multi-value fields (e.g. cast arrays).
 //   countFn(items) => { [name]: count }
-function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 25 }) {
+function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 25, labelFn }) {
   const counts = React.useMemo(() => {
     const raw = countFn ? countFn(items) : countBy(items, keyFn);
     return Object.entries(raw)
@@ -276,9 +290,10 @@ function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 25 }
     <div className="hbar-list">
       {counts.map(([name, count]) => {
         const active = selected.has(name);
+        const label = labelFn ? labelFn(name) : name;
         return (
-          <div key={name} className={`hbar-row${active ? ' active' : ''}`} onClick={() => onToggle(name)} title={name}>
-            <div className="hbar-name">{name}</div>
+          <div key={name} className={`hbar-row${active ? ' active' : ''}`} onClick={() => onToggle(name)} title={label}>
+            <div className="hbar-name">{label}</div>
             <div className="hbar-track">
               <div className="hbar-fill" style={{ width: `${(count/max)*100}%` }}/>
             </div>
@@ -426,13 +441,21 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
 }
 
 // ─────────── StatsModal ───────────
-function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer }) {
+function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer, selectedHighlights, onToggleHighlight }) {
   const { MEDIA } = window.CULTURE;
   const LEFT_VIEW_LABELS  = { directors: 'Directors · Creators · Authors', actors: 'Actors', writers: 'Writers · Screenwriters', cinematographers: 'Cinematographers', animationDirectors: 'Animation Directors' };
-  const RIGHT_VIEW_LABELS = { studios: 'Studios · Networks · Publishers', companies: 'Production Companies', composers: 'Composers' };
+  const RIGHT_VIEW_LABELS = { studios: 'Studios · Networks · Publishers', companies: 'Production Companies', composers: 'Composers', badges: 'Standout badges' };
   const [medium, setMedium] = React.useState('All');
   const [leftView, setLeftView] = React.useState('directors');
   const [rightView, setRightView] = React.useState('studios');
+  // Rating distribution bins by personal score or Filmweb avg — whichever the
+  // collection has. Wishlist has no personal score, so it opens on Filmweb.
+  const ratingSources = [
+    ['rating', 'My rating'], ['fwAvg', 'Filmweb'],
+  ].filter(([k]) => allItems.some(i => k === 'rating' ? i.rating : i[k] != null));
+  const [ratingSource, setRatingSource] = React.useState(
+    () => allItems.some(i => i.rating) ? 'rating' : 'fwAvg'
+  );
   const [on, setOn] = React.useState(false);
   React.useEffect(() => { requestAnimationFrame(() => setOn(true)); }, []);
 
@@ -462,8 +485,26 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
         </div>
 
         <div className="stats-section">
-          <div className="stats-section-title">Rating distribution — click bars to filter library</div>
-          <RatingHistogram items={statItems} selectedRatings={selectedRatings} onToggle={onToggleRating} />
+          <div className="stats-section-title-row">
+            <div className="stats-section-title">
+              {ratingSource === 'fwAvg'
+                ? 'Rating distribution — Filmweb community average'
+                : 'Rating distribution — your score · click to filter'}
+            </div>
+            {ratingSources.length > 1 && (
+              <div className="rating-source-toggle">
+                {ratingSources.map(([k, label]) => (
+                  <button key={k} data-active={ratingSource === k} onClick={() => setRatingSource(k)}>{label}</button>
+                ))}
+              </div>
+            )}
+          </div>
+          <RatingHistogram
+            items={statItems}
+            source={ratingSource}
+            activeSet={ratingSource === 'rating' ? selectedRatings : new Set()}
+            onBar={ratingSource === 'rating' ? (n => onToggleRating(String(n))) : null}
+          />
         </div>
 
         <div className="stats-two-col">
@@ -496,6 +537,7 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
                 <option value="studios">Studios · Networks · Publishers</option>
                 <option value="companies">Production Companies</option>
                 <option value="composers">Composers</option>
+                <option value="badges">Standout badges</option>
               </select>
             </div>
             {rightView === 'studios'   && <HBarHistogram items={statItems} keyFn={it => it.studio} selected={selectedStudios} onToggle={onToggleStudio} />}
@@ -503,6 +545,10 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
                 countFn={its => { const m = {}; its.forEach(it => (it.productionCompanies||[]).forEach(c => { m[c] = (m[c]||0)+1; })); return m; }}
                 selected={new Set()} onToggle={() => {}} />}
             {rightView === 'composers' && <HBarHistogram items={statItems} keyFn={it => it.composer || null} selected={new Set()} onToggle={() => {}} />}
+            {rightView === 'badges'    && <HBarHistogram items={statItems}
+                countFn={its => { const m = {}; its.forEach(it => (it.highlights||[]).forEach(h => { if (HIGHLIGHTS[h]) m[h] = (m[h]||0)+1; })); return m; }}
+                labelFn={h => HIGHLIGHTS[h] ? `${HIGHLIGHTS[h].emoji} ${HIGHLIGHTS[h].label}` : h}
+                selected={selectedHighlights} onToggle={onToggleHighlight} />}
           </div>
         </div>
 
@@ -520,6 +566,21 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
   );
 }
 
+// Release-year buckets for the Wishlist's bottom chips: 5-year blocks from 1980
+// onward, whole decades before that.
+function releaseBucketKey(y) {
+  if (!y) return null;
+  if (y >= 1980) { const s = y - (y % 5); return `${s}-${s + 4}`; }
+  const s = y - (y % 10); return `${s}s`;
+}
+function releaseBucketLabel(key) {
+  if (key.endsWith('s')) return key;                 // "1970s"
+  const [a, b] = key.split('-'); return `${a}–${b.slice(2)}`;  // "1985–89"
+}
+function releaseBucketStart(key) {
+  return parseInt(key, 10);
+}
+
 // Normalises content length to minutes for cross-media duration sort.
 function itemDurationMinutes(item) {
   if (item.medium === 'TV' || item.medium === 'Animated Series') {
@@ -533,10 +594,32 @@ function itemDurationMinutes(item) {
 }
 
 // Sort a list by the chosen key. Stable-ish with title tiebreak.
+// Maps a wishlist `priority` (number 1–5, or hi/med/lo string) to a sortable
+// rank. Unset → 0 so un-prioritised items fall to fwAvg tiebreak.
+function priorityRank(p) {
+  if (p == null) return 0;
+  if (typeof p === 'number') return p;
+  const s = String(p).toLowerCase();
+  if (s === 'high' || s === 'hi') return 3;
+  if (s === 'med'  || s === 'medium') return 2;
+  if (s === 'low'  || s === 'lo') return 1;
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : n;
+}
+
+// English display title, falling back to the stored (original) title.
+function displayTitle(it) { return it.enTitle || it.title; }
+
 function sortItems(arr, sort, dir) {
-  const byTitle = (a, b) => a.title.localeCompare(b.title);
+  const byTitle = (a, b) => displayTitle(a).localeCompare(displayTitle(b));
   const list = [...arr];
   if (sort === 'az')           list.sort(byTitle);
+  else if (sort === 'priority') list.sort((a, b) => {
+    const pa = priorityRank(a.priority), pb = priorityRank(b.priority);
+    if (pa !== pb) return pb - pa;                                   // higher priority first
+    if (!!a.shortlist !== !!b.shortlist) return a.shortlist ? -1 : 1; // pinned first
+    return (parseFloat(b.fwAvg) || 0) - (parseFloat(a.fwAvg) || 0) || byTitle(a, b); // then community avg
+  });
   else if (sort === 'year')    list.sort((a, b) => (b.year || 0) - (a.year || 0) || byTitle(a, b));
   else if (sort === 'rating')  list.sort((a, b) => (parseFloat(b.rating) || -1) - (parseFloat(a.rating) || -1) || byTitle(a, b));
   else if (sort === 'country')  list.sort((a, b) => (regionName(a.region) || '~').localeCompare(regionName(b.region) || '~') || byTitle(a, b));
@@ -557,6 +640,7 @@ function sortItems(arr, sort, dir) {
 // Sort-aware labels for the direction toggle [desc, asc]. The old tooltip was
 // hardcoded to "Newest/Oldest first", which was wrong for most sort keys.
 const SORT_DIR_LABEL = {
+  priority: ['Most wanted first', 'Least wanted first'],
   year:     ['Newest first', 'Oldest first'],
   rated:    ['Most recent first', 'Earliest first'],
   rating:   ['Highest first', 'Lowest first'],
@@ -567,8 +651,36 @@ const SORT_DIR_LABEL = {
   country:  ['A → Z', 'Z → A'],
 };
 
+// Standout "what makes it sublime" badges. Hand-assigned per item via a
+// `highlights: ['direction', ...]` field; strictly, quality-based. Rendered as
+// emoji at the spine top and as labelled chips in the Reader.
+const HIGHLIGHTS = {
+  direction:    { emoji: '🎬', label: 'Masterful direction' },
+  writing:      { emoji: '✍️', label: 'Exceptional writing' },
+  cinematography: { emoji: '📷', label: 'Masterful cinematography' },
+  visuals:      { emoji: '🎨', label: 'Gorgeous visuals' },
+  acting:       { emoji: '🎭', label: 'Powerhouse performances' },
+  score:        { emoji: '🎵', label: 'Unforgettable score' },
+  mindbending:  { emoji: '🌀', label: 'Mind-bending' },
+  gem:          { emoji: '💎', label: 'Hidden gem — floored me' },
+  devastating:  { emoji: '💔', label: 'Emotionally devastating' },
+  impact:       { emoji: '💥', label: 'Impactful' },
+  funny:        { emoji: '😂', label: 'Genuinely funny' },
+  cerebral:     { emoji: '🧠', label: 'Thought-provoking' },
+  style:        { emoji: '🕶️', label: 'Bold style' },
+  atmosphere:   { emoji: '🌌', label: 'Immersive atmosphere' },
+  slowburn:     { emoji: '⏳', label: 'Slow burn' },
+  intense:      { emoji: '🩸', label: 'Brutal' },
+  thrilling:    { emoji: '⚡', label: 'Pure adrenaline' },
+  ahead:        { emoji: '🕰️', label: 'Ahead of its time' },
+  singular:     { emoji: '🃏', label: 'One-of-a-kind' },
+};
+// One badge by default; only wide spines carry more (≥29px ≈ a movie ≥2.5h, or a
+// thick TV/game) so narrow titles don't get busy. The Reader shows all of them.
+function highlightCap(item) { return spineWidth(item) >= 29 ? 3 : 1; }
+
 // ─────────── Shelf row ───────────
-function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem, justPickedId, pickedSet }) {
+function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem, justPickedId, pickedSet, spineValue = 'rating' }) {
   const { MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [hoverIdx, setHoverIdx] = React.useState(-1);
   const [popupPos, setPopupPos] = React.useState(null);
@@ -892,16 +1004,27 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
         <img className="layer-img" src={item.poster || item.tmdbPoster || item.igdbCover} alt={item.title} loading="lazy"/>
         <div className="layer-spine">
           <span className="spine-band top"/>
-          <span className="spine-label">{item.title}</span>
+          {item.highlights && item.highlights.length > 0 && (
+            <span className="spine-highlights">
+              {item.highlights.filter(h => HIGHLIGHTS[h]).slice(0, highlightCap(item)).map(h => (
+                <span key={h} className="spine-highlight" title={HIGHLIGHTS[h].label}>{HIGHLIGHTS[h].emoji}</span>
+              ))}
+            </span>
+          )}
+          <span className="spine-label">{displayTitle(item)}</span>
           <span className="spine-band bottom"/>
-          {item.rating
-            ? <span className="spine-glyph spine-rating">{item.rating}</span>
-            : null}
+          {(() => {
+            const isAvg = spineValue !== 'rating';
+            const raw = isAvg ? item[spineValue] : item.rating;
+            if (raw == null) return null;
+            const shown = isAvg ? Math.round(raw) : raw;
+            return <span className={`spine-glyph spine-rating${isAvg ? ' is-avg' : ''}`}>{shown}</span>;
+          })()}
         </div>
         <span className="pick-dot"/>
       </div>
     );
-  }), [ordered, mode, justPickedId, pickedSet, reshuffling, isSpineFor, handleEnter, handleLeave, handleClick, handleAuxClick]);
+  }), [ordered, mode, justPickedId, pickedSet, reshuffling, isSpineFor, handleEnter, handleLeave, handleClick, handleAuxClick, spineValue]);
 
   return (
     <section className={`shelf${isPicking ? ' is-picking' : ''}${sorting ? ' sorting' : ''}`}>
@@ -982,7 +1105,7 @@ function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
           {item.studio && <span>{item.studio}</span>}
         </div>
       )}
-      <div className="t">{item.title}</div>
+      <div className="t">{displayTitle(item)}</div>
       {item.note
         ? <div className="blurb">{item.note}</div>
         : <div className="blurb empty">No note yet — add one in <code style={{ fontFamily:'var(--mono)', fontSize:11, background:'#eee5d3', padding:'1px 4px' }}>data.js</code>.</div>}
@@ -1028,7 +1151,7 @@ function DragScroll({ className, children }) {
 }
 
 // ─────────── Reader Modal ───────────
-function Reader({ item, onClose, onJump, allItems, onFilter }) {
+function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter }) {
   const { ITEMS, MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [on, setOn] = React.useState(false);
   React.useEffect(() => {
@@ -1038,11 +1161,14 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  const adjacent = React.useMemo(() => {
+  // Similarity by shared genre / tag / director / cast, with a small year-proximity
+  // nudge. Same medium only. Used both within-pool ("More like this") and across
+  // pools (the seen↔unseen crossover row).
+  const scoreAgainst = React.useCallback((pool, { limit = 12, minScore = 0 } = {}) => {
     const genreSet = new Set(item.genres || []);
     const tagSet   = new Set(item.tags   || []);
     const castSet  = new Set(item.cast   || []);
-    return (allItems || ITEMS)
+    return (pool || [])
       .filter(i => i.medium === item.medium && i.id !== item.id)
       .map(i => {
         let score = 0;
@@ -1054,12 +1180,27 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
         score += yr <= 5 ? 1 : yr <= 10 ? 0.5 : 0;
         return { i, score, yr };
       })
+      .filter(x => x.score >= minScore)
       .sort((a, b) => b.score - a.score || a.yr - b.yr)
-      .slice(0, 12)
+      .slice(0, limit)
       .map(x => x.i);
-  }, [item, allItems]);
+  }, [item]);
 
-  const inMedium = ITEMS.filter(i => i.medium === item.medium);
+  const adjacent = React.useMemo(() => scoreAgainst(allItems || ITEMS), [scoreAgainst, allItems]);
+
+  // Crossover: items from the OPPOSITE collection that resemble this one. Requires
+  // a real signal (≥1 shared genre / shared director / tags) so it stays empty and
+  // unobtrusive until items are enriched, rather than showing year-only noise.
+  const crossover = React.useMemo(
+    () => scoreAgainst(otherItems, { limit: 12, minScore: 2 }),
+    [scoreAgainst, otherItems]
+  );
+  // When viewing the seen Library, the crossover surfaces unseen wishlist picks;
+  // when viewing the Wishlist, it surfaces things already seen & liked.
+  const crossoverLabel = library === 'wishlist' ? "You've already seen — similar" : 'On your wishlist — similar';
+  const crossoverBadge = library === 'wishlist' ? '✓' : '◷';
+
+  const inMedium = (allItems || ITEMS).filter(i => i.medium === item.medium);
   const posInMedium = inMedium.findIndex(i => i.id === item.id) + 1;
   const close = () => { setOn(false); setTimeout(onClose, 240); };
 
@@ -1075,7 +1216,7 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
           {(item.poster || item.tmdbPoster || item.igdbCover)
             ? <img src={item.poster || item.tmdbPoster || item.igdbCover} alt={item.title}/>
             : <div className="poster-fallback" style={{ '--pf-bg': spineBodyColor(item) }}>
-                <span className="pf-title">{item.title}</span>
+                <span className="pf-title">{displayTitle(item)}</span>
                 <span className="pf-meta">{MEDIA_SHORT[item.medium]} · {item.year}</span>
               </div>}
         </div>
@@ -1095,28 +1236,44 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
             {item.fwAvg ? <React.Fragment><span className="sep"/><span title="Filmweb community average">Filmweb avg ⌀ {item.fwAvg}</span></React.Fragment> : null}
             {item.genres && item.genres.length > 0 ? <React.Fragment><span className="sep"/><span>{item.genres.slice(0, 4).map((g, i) => <React.Fragment key={g}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`genre:${g}`)}>{g}</span></React.Fragment>)}</span></React.Fragment> : null}
-            {item.director ? <React.Fragment><span className="sep"/><span>{directorLabel(item.medium)}: <span className="meta-link" onClick={() => onFilter && onFilter(`director:${item.director}`)}>{item.director}</span></span></React.Fragment> : null}
-            {item.studio   ? <React.Fragment><span className="sep"/><span>{studioLabel(item.medium)}: <span className="meta-link" onClick={() => onFilter && onFilter(`studio:${item.studio}`)}>{item.studio}</span></span></React.Fragment> : null}
             {item.igdbFranchise ? <React.Fragment><span className="sep"/><span>Series: {item.igdbFranchise}</span></React.Fragment> : null}
             {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
             <span className="sep"/>
             <span>№ {String(posInMedium).padStart(3,'0')} of {String(inMedium.length).padStart(3,'0')}</span>
           </div>
-          {(item.writer || item.cinematographer || item.composer || item.animationDirector) && (
+          {(item.director || item.writer || item.cinematographer || item.composer || item.animationDirector) && (
             <div className="reader-crew">
+              {item.director        && <span><span className="crew-role">{directorLabel(item.medium)}</span> <span className="meta-link" onClick={() => onFilter && onFilter(`director:${item.director}`)}>{item.director}</span></span>}
               {item.writer          && <span><span className="crew-role">Script</span> <span className="meta-link" onClick={() => onFilter && onFilter(`writer:${item.writer}`)}>{item.writer}</span></span>}
               {item.cinematographer && <span><span className="crew-role">DP</span> <span className="meta-link" onClick={() => onFilter && onFilter(`dp:${item.cinematographer}`)}>{item.cinematographer}</span></span>}
-              {item.composer        && <span><span className="crew-role">Score</span> {item.composer}</span>}
               {item.animationDirector && <span><span className="crew-role">Anim.</span> {item.animationDirector}</span>}
             </div>
           )}
-          <h2 className="reader-title">{item.title}<span className="dot">.</span></h2>
+          {item.providers && item.providers.length > 0 && (
+            <div className="reader-crew reader-providers">
+              <span><span className="crew-role">Watch</span> {item.providers.map((p, i) => <React.Fragment key={p}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`on:${p}`)}>{p}</span></React.Fragment>)}</span>
+            </div>
+          )}
+          <h2 className="reader-title">{displayTitle(item)}<span className="dot">.</span></h2>
+          {(() => {
+            const main = displayTitle(item);
+            const alts = [item.title, item.polishTitle].filter(a => a && a !== main);
+            const uniq = [...new Set(alts)];
+            return uniq.length ? <div className="reader-orig">{uniq.join(' · ')}</div> : null;
+          })()}
           <div className="reader-where">Fuad's library &nbsp;/&nbsp; {item.medium}</div>
           {item.note
             ? <blockquote className="reader-quote">{item.note}</blockquote>
             : <blockquote className="reader-quote empty">{item.favorite ? 'A note for this one is on the to-write list.' : 'From the wider library — no personal note yet.'}</blockquote>}
           {item.igdbSummary && (
             <p className="reader-summary">{item.igdbSummary}</p>
+          )}
+          {(item.composer || item.studio || (item.productionCompanies && item.productionCompanies.length > 0)) && (
+            <div className="reader-crew reader-production">
+              {item.studio   && <span><span className="crew-role">{studioLabel(item.medium)}</span> <span className="meta-link" onClick={() => onFilter && onFilter(`studio:${item.studio}`)}>{item.studio}</span></span>}
+              {item.productionCompanies && item.productionCompanies.length > 0 && <span><span className="crew-role">Production</span> {item.productionCompanies.join(' · ')}</span>}
+              {item.composer && <span><span className="crew-role">Score</span> {item.composer}</span>}
+            </div>
           )}
           {item.cast && item.cast.length > 0 && (
             <div className="reader-cast">
@@ -1129,11 +1286,20 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
               {item.tags.map(t => <span key={t} className="reader-tag meta-link" onClick={() => onFilter && onFilter(`tag:${t}`)}>{t}</span>)}
             </div>
           )}
+          {item.highlights && item.highlights.filter(h => HIGHLIGHTS[h]).length > 0 && (
+            <div className="reader-highlights">
+              {item.highlights.filter(h => HIGHLIGHTS[h]).map(h => (
+                <span key={h} className="reader-highlight meta-link" onClick={() => onFilter && onFilter(`highlight:${h}`)}>
+                  <span className="rh-emoji">{HIGHLIGHTS[h].emoji}</span>{HIGHLIGHTS[h].label}
+                </span>
+              ))}
+            </div>
+          )}
           <div className="reader-adjacent">
             <div className="lbl">More like this</div>
             <DragScroll className="row">
               {adjacent.map(a => (
-                <a key={a.id} onClick={() => onJump(a)} title={`${a.title} (${a.year})`}>
+                <a key={a.id} onClick={() => onJump(a)} title={`${displayTitle(a)} (${a.year})`}>
                   {(a.poster || a.tmdbPoster || a.igdbCover)
                     ? <img src={a.poster || a.tmdbPoster || a.igdbCover} alt=""/>
                     : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
@@ -1141,6 +1307,21 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
               ))}
             </DragScroll>
           </div>
+          {crossover.length > 0 && (
+            <div className="reader-adjacent reader-crossover">
+              <div className="lbl">{crossoverLabel}</div>
+              <DragScroll className="row">
+                {crossover.map(a => (
+                  <a key={a.id} className="crossover-thumb" onClick={() => onJump(a)} title={`${displayTitle(a)} (${a.year})`}>
+                    {(a.poster || a.tmdbPoster || a.igdbCover)
+                      ? <img src={a.poster || a.tmdbPoster || a.igdbCover} alt=""/>
+                      : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
+                    <span className="crossover-badge" title={library === 'wishlist' ? 'Already seen' : 'On your wishlist'}>{crossoverBadge}</span>
+                  </a>
+                ))}
+              </DragScroll>
+            </div>
+          )}
           <div className="reader-actions">
             <a className="reader-btn primary" href={item.link} target="_blank" rel="noopener noreferrer">
               Open on {externalServiceName(item.link)}
@@ -1159,7 +1340,8 @@ function Reader({ item, onClose, onJump, allItems, onFilter }) {
 // ─────────── App ───────────
 function App() {
   const { MEDIA, PICKABLE_IDS } = window.CULTURE;
-  const ITEMS = React.useMemo(() => {
+  // The SEEN library: favourites (data.js) + imports, merged with cast/season data.
+  const seenItems = React.useMemo(() => {
     const seasons  = window.CULTURE_SEASONS || {};
     const castData = window.CULTURE_CAST    || {};
     const favs = window.CULTURE.ITEMS.map(i => {
@@ -1170,6 +1352,19 @@ function App() {
     const hasCast = Object.keys(castData).length > 0;
     return hasCast ? all.map(item => castData[item.id] ? { ...item, ...castData[item.id] } : item) : all;
   }, []);
+  // The WISHLIST (unseen) — wishlist.js merged with its own enrichment file.
+  const wishlistItems = React.useMemo(() => {
+    const list = window.CULTURE_WISHLIST      || [];
+    const cast = window.CULTURE_WISHLIST_CAST || {};
+    const hasCast = Object.keys(cast).length > 0;
+    return hasCast ? list.map(item => cast[item.id] ? { ...item, ...cast[item.id] } : item) : list;
+  }, []);
+  // Which collection is on screen. 'library' = seen, 'wishlist' = to-consume.
+  const [library, setLibrary] = React.useState('library');
+  const ITEMS = library === 'wishlist' ? wishlistItems : seenItems;
+  // Foot-of-spine number: personal score in the Library, rounded Filmweb avg in
+  // the Wishlist (which has no personal scores). Not user-toggleable on the main page.
+  const spineValue = library === 'wishlist' ? 'fwAvg' : 'rating';
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
   const [pickedSet, setPickedSet] = React.useState(() => new Set());
@@ -1191,6 +1386,10 @@ function App() {
   const [selectedActors, setSelectedActors] = React.useState(() => new Set());
   const [selectedWriters, setSelectedWriters] = React.useState(() => new Set());
   const [selectedCinematographers, setSelectedCinematographers] = React.useState(() => new Set());
+  // Wishlist bottom strip: filter by release-year bucket (5-yr blocks ≥1980, decades before).
+  const [selectedReleaseBuckets, setSelectedReleaseBuckets] = React.useState(() => new Set());
+  // Standout-badge filter (highlight keys).
+  const [selectedHighlights, setSelectedHighlights] = React.useState(() => new Set());
 
   // Scroll lock for the Reader modal. (Popup lock is owned by Popup itself.)
   React.useEffect(() => {
@@ -1212,7 +1411,7 @@ function App() {
 
   // Shelves after text / @year / y:year / in:year / r: filters — but NOT yet chip or stats filters.
   const preChipShelves = React.useMemo(() => {
-    const { text, releaseYear, ratedYear, ratingFilter, genres, actors, directors, tags, studios, writers, dps, regions } = parseQuery(search);
+    const { text, releaseYear, ratedYear, ratingFilter, genres, actors, directors, tags, studios, writers, dps, regions, highlights, providers } = parseQuery(search);
     const q = text.toLowerCase();
     return shelves.map(s => ({
       ...s,
@@ -1228,9 +1427,13 @@ function App() {
         if (writers.length   && !(it.writer    && writers.every(q   => it.writer.toLowerCase().includes(q)))) return false;
         if (dps.length       && !(it.cinematographer && dps.every(q => it.cinematographer.toLowerCase().includes(q)))) return false;
         if (regions.length   && !(regionName(it.region) && regions.every(q => regionName(it.region).toLowerCase().includes(q)))) return false;
+        if (highlights.length && !(it.highlights && highlights.every(q => it.highlights.some(h => h === q || (HIGHLIGHTS[h] && HIGHLIGHTS[h].label.toLowerCase().includes(q)))))) return false;
+        if (providers.length && !(it.providers && providers.every(q => it.providers.some(p => p.toLowerCase().includes(q))))) return false;
         if (!q) return true;
         return (
           it.title.toLowerCase().includes(q) ||
+          (it.enTitle         && it.enTitle.toLowerCase().includes(q))         ||
+          (it.polishTitle     && it.polishTitle.toLowerCase().includes(q))     ||
           (it.director        && it.director.toLowerCase().includes(q))        ||
           (it.studio          && it.studio.toLowerCase().includes(q))          ||
           (it.writer          && it.writer.toLowerCase().includes(q))          ||
@@ -1249,14 +1452,21 @@ function App() {
 
   // Apply chip + stats filters on top.
   const filteredShelves = React.useMemo(() => {
-    const base = selectedRatedYears.size === 0
+    let base = selectedRatedYears.size === 0
       ? preChipShelves
       : preChipShelves.map(s => ({
           ...s,
           items: s.items.filter(it => it.watchedDate && selectedRatedYears.has(it.watchedDate.slice(0, 4))),
         }));
+    if (selectedReleaseBuckets.size) {
+      base = base.map(s => ({
+        ...s,
+        items: s.items.filter(it => selectedReleaseBuckets.has(releaseBucketKey(it.year))),
+      }));
+    }
     const hasStats = selectedRatings.size || selectedDirectors.size || selectedStudios.size || selectedWeeks.size || selectedCountries.size
-                   || selectedGenres.size || selectedActors.size || selectedWriters.size || selectedCinematographers.size;
+                   || selectedGenres.size || selectedActors.size || selectedWriters.size || selectedCinematographers.size
+                   || selectedHighlights.size;
     if (!hasStats) return base.filter(s => s.items.length > 0);
     return base.map(s => ({
       ...s,
@@ -1281,11 +1491,12 @@ function App() {
         if (selectedActors.size         && !(it.cast           && it.cast.some(a => selectedActors.has(a)))) return false;
         if (selectedWriters.size        && !(it.writer         && selectedWriters.has(it.writer))) return false;
         if (selectedCinematographers.size && !(it.cinematographer && selectedCinematographers.has(it.cinematographer))) return false;
+        if (selectedHighlights.size && !(it.highlights && it.highlights.some(h => selectedHighlights.has(h)))) return false;
         return true;
       }),
     })).filter(s => s.items.length > 0);
-  }, [preChipShelves, selectedRatedYears, selectedRatings, selectedDirectors, selectedStudios, selectedWeeks, selectedCountries,
-      selectedGenres, selectedActors, selectedWriters, selectedCinematographers]);
+  }, [preChipShelves, selectedRatedYears, selectedReleaseBuckets, selectedRatings, selectedDirectors, selectedStudios, selectedWeeks, selectedCountries,
+      selectedGenres, selectedActors, selectedWriters, selectedCinematographers, selectedHighlights]);
 
   const totalSearchResults = React.useMemo(
     () => filteredShelves.reduce((n, s) => n + s.items.length, 0),
@@ -1311,6 +1522,21 @@ function App() {
   const toggleRatedYear = (yr) => setSelectedRatedYears(prev => {
     const next = new Set(prev); next.has(yr) ? next.delete(yr) : next.add(yr); return next;
   });
+
+  // Release-year buckets for the Wishlist bottom strip (newest-first).
+  const allReleaseBuckets = React.useMemo(() => {
+    const keys = new Set();
+    ITEMS.forEach(it => { const k = releaseBucketKey(it.year); if (k) keys.add(k); });
+    return [...keys].sort((a, b) => releaseBucketStart(b) - releaseBucketStart(a));
+  }, [ITEMS]);
+  const availableReleaseBuckets = React.useMemo(() => {
+    const keys = new Set();
+    preChipShelves.forEach(s => s.items.forEach(it => { const k = releaseBucketKey(it.year); if (k) keys.add(k); }));
+    return keys;
+  }, [preChipShelves]);
+  const toggleReleaseBucket = (k) => setSelectedReleaseBuckets(prev => {
+    const next = new Set(prev); next.has(k) ? next.delete(k) : next.add(k); return next;
+  });
   const toggleRating    = r => setSelectedRatings(prev   => { const n = new Set(prev); n.has(r) ? n.delete(r) : n.add(r); return n; });
   const toggleDirector  = d => setSelectedDirectors(prev => { const n = new Set(prev); n.has(d) ? n.delete(d) : n.add(d); return n; });
   const toggleStudio    = s => setSelectedStudios(prev   => { const n = new Set(prev); n.has(s) ? n.delete(s) : n.add(s); return n; });
@@ -1320,10 +1546,13 @@ function App() {
   const toggleActor     = a => setSelectedActors(prev => { const n = new Set(prev); n.has(a) ? n.delete(a) : n.add(a); return n; });
   const toggleWriter    = w => setSelectedWriters(prev => { const n = new Set(prev); n.has(w) ? n.delete(w) : n.add(w); return n; });
   const toggleCinematographer = c => setSelectedCinematographers(prev => { const n = new Set(prev); n.has(c) ? n.delete(c) : n.add(c); return n; });
+  const toggleHighlight = h => setSelectedHighlights(prev => { const n = new Set(prev); n.has(h) ? n.delete(h) : n.add(h); return n; });
   const clearStatsFilters = () => {
     setSelectedRatings(new Set()); setSelectedDirectors(new Set()); setSelectedStudios(new Set());
     setSelectedWeeks(new Set()); setSelectedCountries(new Set());
     setSelectedGenres(new Set()); setSelectedActors(new Set()); setSelectedWriters(new Set()); setSelectedCinematographers(new Set());
+    setSelectedReleaseBuckets(new Set());
+    setSelectedHighlights(new Set());
   };
 
   // Pool for Pick One — anything in PICKABLE_IDS that exists, or items with notes as fallback.
@@ -1366,19 +1595,31 @@ function App() {
     setMode(m);
   };
 
+  // Flick between the seen Library and the unseen Wishlist. The wishlist has no
+  // curated cover art and no "curated" rank, so default it to Spines + Priority;
+  // restore the Library's curated Covers view on the way back.
+  const switchLibrary = (lib) => {
+    if (lib === library) return;
+    setLibrary(lib);
+    clearStatsFilters();
+    setSelectedRatedYears(new Set());
+    if (lib === 'wishlist') { setMode('spines'); setSort('priority'); }
+    else                    { setMode('covers'); setSort('curated'); }
+  };
+
   return (
     <div className="page">
       <header className="site-head">
         <div>
           <h1>Culture<span className="dot">.</span></h1>
           <div className="meta">
-            A library of what shaped me
+            {library === 'wishlist' ? 'What I want to watch, play & read next' : 'A library of what shaped me'}
             <span className="sep"/>
             <b>{ITEMS.length}</b>&nbsp;entries
             <span className="sep"/>
-            <b>{MEDIA.length}</b>&nbsp;shelves
+            <b>{new Set(ITEMS.map(i => i.medium)).size}</b>&nbsp;shelves
             <span className="sep"/>
-            best in the middle, outward by rank
+            {library === 'wishlist' ? 'most-wanted in the middle, outward by priority' : 'best in the middle, outward by rank'}
           </div>
         </div>
         <div className="right">
@@ -1386,6 +1627,10 @@ function App() {
             {/*Things I watched, read and played.*/}
           </div>
           <div className="btn-row">
+            <div className="library-toggle">
+              <button data-active={library === 'library'}  onClick={() => switchLibrary('library')}>Library</button>
+              <button data-active={library === 'wishlist'} onClick={() => switchLibrary('wishlist')}>Wishlist</button>
+            </div>
             <div className="mode-toggle">
               <button data-active={mode === 'covers'} onClick={() => setModeAndAnimate('covers')}>Covers</button>
               <button data-active={mode === 'spines'} onClick={() => setModeAndAnimate('spines')}>Spines</button>
@@ -1403,6 +1648,7 @@ function App() {
               </button>
             </div>
             <select className="sort-select" value={sort} onChange={(e) => setSort(e.target.value)} title="Sort titles">
+              {library === 'wishlist' && <option value="priority">Priority</option>}
               <option value="curated">Curated</option>
               <option value="az">A–Z</option>
               <option value="year">Release date</option>
@@ -1470,6 +1716,8 @@ function App() {
                 <div className="search-hint-row"><code>actor:Name</code><span>— match by cast</span></div>
                 <div className="search-hint-row"><code>director:Name</code> <code>writer:Name</code> <code>dp:Name</code><span>— crew</span></div>
                 <div className="search-hint-row"><code>tag:Name</code> <code>studio:Name</code> <code>region:Poland</code><span>— other fields</span></div>
+                <div className="search-hint-row"><code>highlight:Brutal</code> or <code>badge:gem</code><span>— standout badges</span></div>
+                <div className="search-hint-row"><code>on:Netflix</code><span>— where to watch (wishlist)</span></div>
                 <div className="search-hint-row"><code>@2023</code> or <code>y:2023</code><span>— filter by release year</span></div>
                 <div className="search-hint-row"><code>in:2023</code><span>— filter by year rated</span></div>
                 <div className="search-hint-row"><code>r:10</code> <code>r:8+</code> <code>r:7-9</code><span>— filter by rating</span></div>
@@ -1496,10 +1744,14 @@ function App() {
       )}
 
       {(selectedRatings.size > 0 || selectedDirectors.size > 0 || selectedStudios.size > 0 || selectedWeeks.size > 0 || selectedCountries.size > 0
-        || selectedGenres.size > 0 || selectedActors.size > 0 || selectedWriters.size > 0 || selectedCinematographers.size > 0) && (
+        || selectedGenres.size > 0 || selectedActors.size > 0 || selectedWriters.size > 0 || selectedCinematographers.size > 0
+        || selectedHighlights.size > 0) && (
         <div className="active-filters">
           {[...selectedRatings].sort().map(r => (
             <span key={r} className="filter-pill">★{r}<button onClick={() => toggleRating(r)}>×</button></span>
+          ))}
+          {[...selectedHighlights].map(h => (
+            <span key={h} className="filter-pill">{HIGHLIGHTS[h] ? `${HIGHLIGHTS[h].emoji} ${HIGHLIGHTS[h].label}` : h}<button onClick={() => toggleHighlight(h)}>×</button></span>
           ))}
           {[...selectedDirectors].map(d => (
             <span key={d} className="filter-pill">{d}<button onClick={() => toggleDirector(d)}>×</button></span>
@@ -1542,6 +1794,7 @@ function App() {
           onOpenItem={setOpenItem}
           justPickedId={justPickedId}
           pickedSet={pickedSet}
+          spineValue={spineValue}
         />
       ))}
 
@@ -1552,24 +1805,45 @@ function App() {
         </div>
       )}
 
-      <div className="yr-chips-section">
-        <div className="yr-chips-label">Rated in</div>
-        <div className="yr-chips-scroll">
-          {allRatedYears.map(yr => {
-            const sel  = selectedRatedYears.has(yr);
-            const avail = availableRatedYears.has(yr);
-            return (
-              <button
-                key={yr}
-                className={`yr-chip${sel ? ' selected' : !avail ? ' unavailable' : ''}`}
-                onClick={() => toggleRatedYear(yr)}
-              >
-                {yr}
-              </button>
-            );
-          })}
+      {library === 'wishlist' ? (
+        <div className="yr-chips-section">
+          <div className="yr-chips-label">Released</div>
+          <div className="yr-chips-scroll">
+            {allReleaseBuckets.map(k => {
+              const sel  = selectedReleaseBuckets.has(k);
+              const avail = availableReleaseBuckets.has(k);
+              return (
+                <button
+                  key={k}
+                  className={`yr-chip${sel ? ' selected' : !avail ? ' unavailable' : ''}`}
+                  onClick={() => toggleReleaseBucket(k)}
+                >
+                  {releaseBucketLabel(k)}
+                </button>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="yr-chips-section">
+          <div className="yr-chips-label">Rated in</div>
+          <div className="yr-chips-scroll">
+            {allRatedYears.map(yr => {
+              const sel  = selectedRatedYears.has(yr);
+              const avail = availableRatedYears.has(yr);
+              return (
+                <button
+                  key={yr}
+                  className={`yr-chip${sel ? ' selected' : !avail ? ' unavailable' : ''}`}
+                  onClick={() => toggleRatedYear(yr)}
+                >
+                  {yr}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <footer className="site-foot">
         <div>fuad.design &nbsp;/&nbsp; Culture &nbsp;/&nbsp; 2026</div>
@@ -1583,6 +1857,8 @@ function App() {
       {openItem && (
         <Reader item={openItem} onClose={() => setOpenItem(null)} onJump={(it) => setOpenItem(it)}
           allItems={ITEMS}
+          otherItems={library === 'wishlist' ? seenItems : wishlistItems}
+          library={library}
           onFilter={(val) => {
             const m = val.match(/^(\w+):(.+)$/i);
             if (m) {
@@ -1594,6 +1870,7 @@ function App() {
               if (type === 'writer' || type === 'author')          { toggleWriter(value); setOpenItem(null); return; }
               if (type === 'dp' || type === 'cin')                 { toggleCinematographer(value); setOpenItem(null); return; }
               if (type === 'region' || type === 'country')         { toggleCountry(value); setOpenItem(null); return; }
+              if (type === 'highlight')                            { toggleHighlight(value); setOpenItem(null); return; }
             }
             setSearch(val); setOpenItem(null);
           }} />
@@ -1611,6 +1888,7 @@ function App() {
           selectedActors={selectedActors}               onToggleActor={toggleActor}
           selectedWriters={selectedWriters}             onToggleWriter={toggleWriter}
           selectedCinematographers={selectedCinematographers} onToggleCinematographer={toggleCinematographer}
+          selectedHighlights={selectedHighlights}       onToggleHighlight={toggleHighlight}
         />
       )}
     </div>

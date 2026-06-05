@@ -118,6 +118,32 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .mode-toggle button .reroll { transition: transform .4s cubic-bezier(.2,.7,.3,1); }
 .mode-toggle button.spinning .reroll { transform: rotate(360deg); }
 
+/* Library ⇄ Wishlist — the higher-level "which collection" switch. Same pill
+   shape as the mode toggle, but the active state is the warm accent so it reads
+   as a different tier of control. */
+.library-toggle {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 3px;
+  background: rgba(255,255,255,.02);
+}
+.library-toggle button {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  color: var(--ink-soft);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.library-toggle button:hover { color: var(--ink); }
+.library-toggle button[data-active="true"] { background: var(--accent); color: #fff; }
+
 /* sort dropdown */
 .sort-select {
   font-family: var(--mono);
@@ -457,6 +483,26 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   z-index: 2;
 }
 
+/* lighter foot number when it's a community average (vs a bold personal score) */
+.spine-glyph.is-avg { color: rgba(255,255,255,.6); font-weight: 500; }
+
+/* standout "what makes it sublime" marks — monochrome, laid out horizontally
+   across the spine top so they read as a quiet row of glyphs, not a colour clash. */
+.spine-highlights {
+  position: absolute;
+  top: 3px; left: 0; right: 0;
+  display: flex; flex-direction: row; flex-wrap: nowrap;
+  align-items: center; justify-content: center; gap: 2px;
+  pointer-events: none;
+  z-index: 3;
+}
+.spine-highlight {
+  font-size: 8.5px; line-height: 1;
+  /* desaturate to a single grey tone + lift onto the dark band */
+  filter: grayscale(1) brightness(1.35) contrast(.85) drop-shadow(0 1px 1px rgba(0,0,0,.6));
+  opacity: .92;
+}
+
 .spine-label {
   font-family: var(--serif);
   font-style: italic;
@@ -683,6 +729,9 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   border-radius: 6px;
   display: grid;
   grid-template-columns: 320px 1fr;
+  /* Bound the single row to the modal height (minmax(0,…) lets it shrink below
+     content) so .reader-body becomes its own scroller on tall content. */
+  grid-template-rows: minmax(0, 1fr);
   overflow: hidden;
   box-shadow: 0 30px 80px rgba(0,0,0,.6);
   transform: translateY(20px) scale(.97);
@@ -715,7 +764,22 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  /* In the 2-col grid the body is a grid item; default min-height:auto makes it
+     grow to its content and overflow the clipped .reader instead of scrolling.
+     min-height:0 lets the track bound it to the modal height so it scrolls. */
+  min-height: 0;
+  /* Scrollbar lives here but stays invisible until the cursor is over the reader
+     (thumb fades in — no layout shift since the gutter width is constant). */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color .2s;
 }
+.reader-body::-webkit-scrollbar { width: 8px; }
+.reader-body::-webkit-scrollbar-track { background: transparent; }
+.reader-body::-webkit-scrollbar-thumb { background: transparent; border-radius: 8px; transition: background .2s; }
+.reader:hover .reader-body { scrollbar-color: rgba(0,0,0,.26) transparent; }
+.reader:hover .reader-body::-webkit-scrollbar-thumb { background: rgba(0,0,0,.22); }
+.reader:hover .reader-body::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,.4); }
 .reader-close {
   position: absolute;
   top: 12px; right: 12px;
@@ -759,6 +823,11 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   text-wrap: pretty;
 }
 .reader-title .dot { font-style: normal; color: var(--accent); }
+/* original / localized title under the English headline */
+.reader-orig {
+  font-family: var(--serif); font-style: italic; font-size: 15px;
+  color: #8a8175; margin: 2px 0 12px;
+}
 .reader-where {
   font-family: var(--mono);
   font-size: 10px;
@@ -808,6 +877,17 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 .meta-link { cursor: pointer; transition: opacity .15s; }
 .meta-link:hover { opacity: 0.55; }
+
+/* standout highlight chips in the reader */
+.reader-highlights { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 16px; }
+.reader-highlight {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em;
+  color: var(--paper-ink); background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  padding: 4px 9px; border-radius: 999px;
+}
+.reader-highlight .rh-emoji { font-size: 12px; line-height: 1; }
 .reader-actions {
   margin-top: auto;
   padding-top: 16px;
@@ -869,6 +949,20 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   width:100%; height:100%; display:flex; align-items:center; justify-content:center;
   font-family: var(--mono); font-size: 12px; font-weight: 600;
   color: rgba(255,255,255,.82); background: var(--pf-bg, #2a2520);
+}
+
+/* Crossover row — the seen↔unseen "similar in the other collection" strip. */
+.reader-crossover .lbl { color: var(--accent); }
+.reader-crossover .row a .crossover-badge {
+  position: absolute;
+  top: 3px; right: 3px;
+  width: 14px; height: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; line-height: 1;
+  color: #fff;
+  background: rgba(20,17,13,.72);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 /* ───── FOOTER ───── */
@@ -1032,6 +1126,26 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
   text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px;
 }
+/* Section header row with a control parked at the right end (e.g. the rating
+   source toggle). The title keeps its own margin; the row aligns them. */
+.stats-section-title-row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+}
+.stats-section-title-row .stats-section-title { margin-bottom: 18px; }
+.rating-source-toggle {
+  display: inline-flex; flex-shrink: 0;
+  border: 1px solid var(--rule); border-radius: 999px; padding: 2px;
+}
+.rating-source-toggle button {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+  background: transparent; border: 0; color: var(--ink-soft);
+  padding: 5px 10px; border-radius: 999px; cursor: pointer; transition: background .15s, color .15s;
+}
+.rating-source-toggle button:hover { color: var(--ink); }
+.rating-source-toggle button[data-active="true"] { background: var(--ink); color: var(--bg); }
+/* Filmweb-avg view is display-only (library filter is on personal rating). */
+.rating-hist.static .rating-col { cursor: default; }
+.rating-hist.static .rating-col:hover .rating-bar { opacity: 1; }
 .stats-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 44px; }
 .stats-two-col .stats-section { margin-bottom: 0; }
 /* The whole header is the dropdown target: the <select> overlays it invisibly so a
