@@ -1036,7 +1036,7 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .stats-two-col .stats-section { margin-bottom: 0; }
 /* The whole header is the dropdown target: the <select> overlays it invisibly so a
    click anywhere on the title/chevron opens the native menu. */
-.stats-view-head { position: relative; display: flex; align-items: center; gap: 8px; margin-bottom: 18px; cursor: pointer; }
+.stats-view-head { position: relative; display: flex; align-items: center; gap: 8px; margin-bottom: 18px; cursor: pointer; width: fit-content; max-width: 100%; }
 .stats-view-head .stats-section-title { margin-bottom: 0; }
 .stats-view-chevron { font-family: var(--mono); font-size: 10px; color: var(--ink-faint); line-height: 1; user-select: none; }
 .stats-view-head:hover .stats-section-title,
