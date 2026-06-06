@@ -440,8 +440,136 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
   );
 }
 
+// ─────────── TasteProfile (Stats → "Taste" tab) ───────────
+// Interprets the collection rather than just charting it: where your taste
+// diverges from the crowd, how much time you've sunk in, your growth over time,
+// and a one-line portrait. Pure reuse of existing + OMDb fields.
+function communityScore(it, axis) {
+  if (axis === 'imdb') {
+    const v = it.omdb && it.omdb.imdbRating;
+    return v && v !== 'N/A' ? parseFloat(v) : null;
+  }
+  return it.fwAvg != null ? parseFloat(it.fwAvg) : null;  // Filmweb
+}
+
+function formatSpan(minutes) {
+  if (!minutes) return '0 h';
+  if (minutes >= 1440) return `${(minutes / 1440).toFixed(1)} days`;
+  return `${Math.round(minutes / 60)} h`;
+}
+
+function TasteProfile({ items, onOpenItem }) {
+  const [axis, setAxis] = React.useState('filmweb');   // community baseline
+
+  const contrarian = React.useMemo(() => {
+    const rows = [];
+    items.forEach(it => {
+      const me = parseFloat(it.rating);
+      const them = communityScore(it, axis);
+      if (!isNaN(me) && them != null && !isNaN(them))
+        rows.push({ it, me, them, delta: +(me - them).toFixed(1) });
+    });
+    const higher = [...rows].sort((a, b) => b.delta - a.delta).filter(r => r.delta > 0).slice(0, 8);
+    const lower  = [...rows].sort((a, b) => a.delta - b.delta).filter(r => r.delta < 0).slice(0, 8);
+    return { higher, lower, n: rows.length };
+  }, [items, axis]);
+
+  const time = React.useMemo(() => {
+    const by = {}; let total = 0;
+    items.forEach(it => { const m = itemDurationMinutes(it); if (m > 0) { by[it.medium] = (by[it.medium] || 0) + m; total += m; } });
+    return { by: Object.entries(by).sort((a, b) => b[1] - a[1]), total };
+  }, [items]);
+
+  const timeline = React.useMemo(() => {
+    const dates = items.filter(i => i.watchedDate).map(i => i.watchedDate).sort();
+    if (dates.length < 2) return null;
+    const pts = dates.map((d, i) => ({ x: i / (dates.length - 1), y: (i + 1) / dates.length }));
+    const poly = pts.map(p => `${(p.x * 100).toFixed(2)},${(30 - p.y * 28).toFixed(2)}`).join(' ');
+    return { poly, n: dates.length, first: dates[0], last: dates[dates.length - 1] };
+  }, [items]);
+
+  const fingerprint = React.useMemo(() => {
+    const top = (map) => { const e = Object.entries(map).sort((a, b) => b[1] - a[1]); return e.length ? e[0] : null; };
+    const decade = top(countBy(items, it => it.year ? `${Math.floor(it.year / 10) * 10}s` : null));
+    const country = top(countBy(items, it => regionName(it.region)));
+    const director = top(countBy(items, it => it.director));
+    const gmap = {}; items.forEach(it => (it.genres || []).forEach(g => { gmap[g] = (gmap[g] || 0) + 1; }));
+    const genre = top(gmap);
+    return { decade, country, director, genre };
+  }, [items]);
+
+  const Row = ({ r }) => (
+    <div className="taste-row" onClick={() => onOpenItem && onOpenItem(r.it)} title={`${displayTitle(r.it)} (${r.it.year})`}>
+      <span className="taste-row-title">{displayTitle(r.it)}</span>
+      <span className="taste-row-scores">
+        <span className="me">★{r.me}</span>
+        <span className="vs">vs {r.them}</span>
+        <span className={`delta ${r.delta > 0 ? 'pos' : 'neg'}`}>{r.delta > 0 ? '+' : ''}{r.delta}</span>
+      </span>
+    </div>
+  );
+
+  return (
+    <div className="taste">
+      <div className="stats-section">
+        <div className="stats-section-title-row">
+          <div className="stats-section-title">Where your taste diverges{contrarian.n ? '' : ' — needs rated titles with a community score'}</div>
+          <div className="rating-source-toggle">
+            <button data-active={axis === 'filmweb'} onClick={() => setAxis('filmweb')}>vs Filmweb</button>
+            <button data-active={axis === 'imdb'} onClick={() => setAxis('imdb')}>vs IMDb</button>
+          </div>
+        </div>
+        {contrarian.n > 0 && (
+          <div className="taste-two">
+            <div className="taste-col">
+              <div className="taste-col-head">You rated higher</div>
+              {contrarian.higher.length ? contrarian.higher.map(r => <Row key={r.it.id} r={r} />) : <div className="taste-empty">—</div>}
+            </div>
+            <div className="taste-col">
+              <div className="taste-col-head">Lower than the crowd</div>
+              {contrarian.lower.length ? contrarian.lower.map(r => <Row key={r.it.id} r={r} />) : <div className="taste-empty">—</div>}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="stats-two-col">
+        <div className="stats-section">
+          <div className="stats-section-title">Time spent</div>
+          <div className="taste-time-total">≈ {formatSpan(time.total)}</div>
+          <div className="taste-time-list">
+            {time.by.map(([m, mins]) => (
+              <div key={m} className="taste-time-row"><span>{m}</span><span>{formatSpan(mins)}</span></div>
+            ))}
+            {!time.by.length && <div className="taste-empty">No duration data yet.</div>}
+          </div>
+        </div>
+
+        <div className="stats-section">
+          <div className="stats-section-title">Taste fingerprint</div>
+          <div className="taste-fp">
+            {fingerprint.decade   && <div><span className="k">Era</span><span className="v">{fingerprint.decade[0]} · {fingerprint.decade[1]} titles</span></div>}
+            {fingerprint.country  && <div><span className="k">Home</span><span className="v">{fingerprint.country[0]} · {fingerprint.country[1]}</span></div>}
+            {fingerprint.genre    && <div><span className="k">Genre</span><span className="v">{fingerprint.genre[0]} · {fingerprint.genre[1]}</span></div>}
+            {fingerprint.director && <div><span className="k">Most-seen</span><span className="v">{fingerprint.director[0]} · {fingerprint.director[1]}</span></div>}
+          </div>
+        </div>
+      </div>
+
+      {timeline && (
+        <div className="stats-section" style={{ marginBottom: 0 }}>
+          <div className="stats-section-title">Growth — {timeline.n} dated entries, {timeline.first} → {timeline.last}</div>
+          <svg className="taste-timeline" viewBox="0 0 100 30" preserveAspectRatio="none">
+            <polyline points={timeline.poly} fill="none" stroke="var(--accent)" strokeWidth="0.6" vectorEffect="non-scaling-stroke" />
+          </svg>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─────────── StatsModal ───────────
-function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer, selectedHighlights, onToggleHighlight }) {
+function StatsModal({ allItems, onClose, onOpenItem, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer, selectedHighlights, onToggleHighlight }) {
   const { MEDIA } = window.CULTURE;
   const LEFT_VIEW_LABELS  = { directors: 'Directors · Creators · Authors', actors: 'Actors', writers: 'Writers · Screenwriters', cinematographers: 'Cinematographers', animationDirectors: 'Animation Directors' };
   const RIGHT_VIEW_LABELS = { studios: 'Studios · Networks · Publishers', companies: 'Production Companies', composers: 'Composers', badges: 'Standout badges' };
@@ -457,6 +585,7 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
     () => allItems.some(i => i.rating) ? 'rating' : 'fwAvg'
   );
   const [on, setOn] = React.useState(false);
+  const [tab, setTab] = React.useState('charts');   // 'charts' | 'taste'
   React.useEffect(() => { requestAnimationFrame(() => setOn(true)); }, []);
 
   const statItems = React.useMemo(
@@ -478,12 +607,20 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
           <h2>Stats<span className="dot">.</span></h2>
           <div className="stats-subtitle">{allItems.length} entries &nbsp;·&nbsp; {totalWithDate} with date</div>
         </div>
+        <div className="stats-tabs">
+          <button className={`stats-tab${tab === 'charts' ? ' active' : ''}`} onClick={() => setTab('charts')}>Charts</button>
+          <button className={`stats-tab${tab === 'taste' ? ' active' : ''}`} onClick={() => setTab('taste')}>Taste profile</button>
+        </div>
+
         <div className="stats-medium-tabs">
           {['All', ...MEDIA].map(m => (
             <button key={m} className={`stats-medium-tab${medium === m ? ' active' : ''}`} onClick={() => setMedium(m)}>{m}</button>
           ))}
         </div>
 
+        {tab === 'taste' && <TasteProfile items={statItems} onOpenItem={onOpenItem} />}
+
+        {tab === 'charts' && <React.Fragment>
         <div className="stats-section">
           <div className="stats-section-title-row">
             <div className="stats-section-title">
@@ -561,6 +698,7 @@ function StatsModal({ allItems, onClose, selectedRatings, onToggleRating, select
           <div className="stats-section-title">Country breakdown — click to filter library</div>
           <WorldMap items={statItems} selectedCountries={selectedCountries} onToggleCountry={onToggleCountry} medium={medium} />
         </div>
+        </React.Fragment>}
       </div>
     </div>
   );
@@ -609,6 +747,34 @@ function priorityRank(p) {
 
 // English display title, falling back to the stored (original) title.
 function displayTitle(it) { return it.enTitle || it.title; }
+
+// Attach the separate enrichment files (omdb_data.js / books_data.js) at runtime.
+// OMDb is nested under `item.omdb` (NEVER spread — so it can't overwrite existing
+// director/genres/etc.); the book overlay is spread (it's meant to fill gaps).
+function enrichExtras(item) {
+  const omdb = (window.CULTURE_OMDB || {})[item.id];
+  const book = (window.CULTURE_BOOKS || {})[item.id];
+  if (!omdb && !book) return item;
+  const out = book ? { ...item, ...book } : { ...item };
+  if (omdb) {
+    out.omdb = omdb;
+    if (omdb.imdbID) out.imdbUrl = `https://www.imdb.com/title/${omdb.imdbID}/`;
+  }
+  return out;
+}
+
+// Pull a specific critic score out of OMDb's Ratings[] (e.g. 'Rotten Tomatoes').
+function omdbRating(omdb, source) {
+  if (!omdb || !omdb.Ratings) return null;
+  const r = omdb.Ratings.find(x => x.Source === source);
+  return r && r.Value && r.Value !== 'N/A' ? r.Value : null;
+}
+
+// The external link to open, honouring the global Filmweb⇄IMDb preference.
+// Falls back to the stored (Filmweb/Goodreads/…) link when there's no IMDb url.
+function primaryLink(item, pref) {
+  return (pref === 'imdb' && item.imdbUrl) ? item.imdbUrl : item.link;
+}
 
 function sortItems(arr, sort, dir) {
   const byTitle = (a, b) => displayTitle(a).localeCompare(displayTitle(b));
@@ -680,7 +846,7 @@ const HIGHLIGHTS = {
 function highlightCap(item) { return spineWidth(item) >= 29 ? 3 : 1; }
 
 // ─────────── Shelf row ───────────
-function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem, justPickedId, pickedSet, spineValue = 'rating' }) {
+function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem, justPickedId, pickedSet, spineValue = 'rating', linkPref = 'filmweb' }) {
   const { MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
   const [hoverIdx, setHoverIdx] = React.useState(-1);
   const [popupPos, setPopupPos] = React.useState(null);
@@ -958,9 +1124,10 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
       e.preventDefault();
       setHoverIdx(-1);
       setPopupPos(null);
-      if (item.link) window.open(item.link, '_blank', 'noopener,noreferrer');
+      const url = primaryLink(item, linkPref);
+      if (url) window.open(url, '_blank', 'noopener,noreferrer');
     }
-  }, []);
+  }, [linkPref]);
 
   // True while a freshly-picked item in THIS row is highlighted (and nothing
   // is hovered). Drives the row-dim so only the pick stays lit for a beat.
@@ -1001,7 +1168,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
         onAuxClick={(e) => handleAuxClick(e, item)}
         title={item.title}
       >
-        <img className="layer-img" src={item.poster || item.tmdbPoster || item.igdbCover} alt={item.title} loading="lazy"/>
+        <img className="layer-img" src={item.poster || item.tmdbPoster || item.igdbCover || item.bookCover} alt={item.title} loading="lazy"/>
         <div className="layer-spine">
           <span className="spine-band top"/>
           {item.highlights && item.highlights.length > 0 && (
@@ -1065,6 +1232,7 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
           item={ordered[hoverIdx]}
           x={popupPos.x}
           y={popupPos.y}
+          linkPref={linkPref}
           onMouseEnter={cancelClose}
           onMouseLeave={handleLeave}
         />
@@ -1074,11 +1242,11 @@ function ShelfRow({ medium, items, idx, mode, sort, sortDir, mixSeed, onOpenItem
 }
 
 // ─────────── Popup (hover) ───────────
-function Popup({ item, x, y, onMouseEnter, onMouseLeave }) {
+function Popup({ item, x, y, linkPref = 'filmweb', onMouseEnter, onMouseLeave }) {
   const { MEDIA_SHORT } = window.CULTURE;
   const adjX = Math.min(Math.max(x, 160), window.innerWidth - 160);
   const flipBelow = y < 220;
-  const service = externalServiceName(item.link);
+  const service = externalServiceName(primaryLink(item, linkPref));
   return (
     <div
       className={`popup on${flipBelow ? ' below' : ''}`}
@@ -1150,6 +1318,50 @@ function DragScroll({ className, children }) {
   );
 }
 
+// The Reader's primary "Open on …" button. When the item has BOTH a stored
+// (Filmweb/etc.) link and an IMDb link, it becomes one morphing button: hover
+// the left half for Filmweb, the right half for IMDb — the label slides across
+// and the href follows. Items with only one link render a plain button.
+function ReaderSourceButton({ item }) {
+  const primary = item.link;
+  const imdb = item.imdbUrl;
+  const [side, setSide] = React.useState('primary');
+  const arrow = (
+    <svg className="ss-arrow" width="9" height="9" viewBox="0 0 12 12" fill="none">
+      <path d="M3 3h6v6M3 9l6-6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+  // Only one (or no) link → plain button, no morph.
+  if (!imdb || !primary) {
+    const url = primary || imdb;
+    if (!url) return null;
+    return (
+      <a className="reader-btn primary" href={url} target="_blank" rel="noopener noreferrer">
+        Open on {externalServiceName(url)}{arrow}
+      </a>
+    );
+  }
+  const leftName = externalServiceName(primary);
+  const href = side === 'imdb' ? imdb : primary;
+  const handleMove = (e) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    setSide((e.clientX - r.left) > r.width / 2 ? 'imdb' : 'primary');
+  };
+  return (
+    <a className="reader-btn primary source-switch" data-side={side}
+       href={href} target="_blank" rel="noopener noreferrer"
+       onMouseMove={handleMove} onMouseLeave={() => setSide('primary')}
+       title={`Hover left for ${leftName}, right for IMDb`}>
+      <span className="ss-fill" aria-hidden="true" />
+      <span className="ss-labels">
+        <span className="ss-label ss-a">Open on {leftName}</span>
+        <span className="ss-label ss-b">Open on IMDb</span>
+      </span>
+      {arrow}
+    </a>
+  );
+}
+
 // ─────────── Reader Modal ───────────
 function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter }) {
   const { ITEMS, MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
@@ -1213,8 +1425,8 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
           </svg>
         </button>
         <div className="reader-poster">
-          {(item.poster || item.tmdbPoster || item.igdbCover)
-            ? <img src={item.poster || item.tmdbPoster || item.igdbCover} alt={item.title}/>
+          {(item.poster || item.tmdbPoster || item.igdbCover || item.bookCover)
+            ? <img src={item.poster || item.tmdbPoster || item.igdbCover || item.bookCover} alt={item.title}/>
             : <div className="poster-fallback" style={{ '--pf-bg': spineBodyColor(item) }}>
                 <span className="pf-title">{displayTitle(item)}</span>
                 <span className="pf-meta">{MEDIA_SHORT[item.medium]} · {item.year}</span>
@@ -1235,6 +1447,9 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
             {item.totalMinutes ? <React.Fragment><span className="sep"/><span>{formatRuntime(item.totalMinutes)} total</span></React.Fragment> : null}
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
             {item.fwAvg ? <React.Fragment><span className="sep"/><span title="Filmweb community average">Filmweb avg ⌀ {item.fwAvg}</span></React.Fragment> : null}
+            {item.omdb && item.omdb.imdbRating && item.omdb.imdbRating !== 'N/A' ? <React.Fragment><span className="sep"/><span title={item.omdb.imdbVotes && item.omdb.imdbVotes !== 'N/A' ? `${item.omdb.imdbVotes} IMDb votes` : 'IMDb rating'}>IMDb {item.omdb.imdbRating}</span></React.Fragment> : null}
+            {omdbRating(item.omdb, 'Rotten Tomatoes') ? <React.Fragment><span className="sep"/><span title="Rotten Tomatoes">🍅 {omdbRating(item.omdb, 'Rotten Tomatoes')}</span></React.Fragment> : null}
+            {omdbRating(item.omdb, 'Metacritic') ? <React.Fragment><span className="sep"/><span title="Metacritic">Metacritic {omdbRating(item.omdb, 'Metacritic')}</span></React.Fragment> : null}
             {item.genres && item.genres.length > 0 ? <React.Fragment><span className="sep"/><span>{item.genres.slice(0, 4).map((g, i) => <React.Fragment key={g}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`genre:${g}`)}>{g}</span></React.Fragment>)}</span></React.Fragment> : null}
             {item.igdbFranchise ? <React.Fragment><span className="sep"/><span>Series: {item.igdbFranchise}</span></React.Fragment> : null}
             {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
@@ -1265,8 +1480,13 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
           {item.note
             ? <blockquote className="reader-quote">{item.note}</blockquote>
             : <blockquote className="reader-quote empty">{item.favorite ? 'A note for this one is on the to-write list.' : 'From the wider library — no personal note yet.'}</blockquote>}
-          {item.igdbSummary && (
-            <p className="reader-summary">{item.igdbSummary}</p>
+          {(() => {
+            const desc = (item.omdb && item.omdb.Plot && item.omdb.Plot !== 'N/A' && item.omdb.Plot)
+                       || item.summary || item.igdbSummary;
+            return desc ? <p className="reader-summary">{desc}</p> : null;
+          })()}
+          {item.omdb && item.omdb.Awards && item.omdb.Awards !== 'N/A' && (
+            <div className="reader-awards">🏆 {item.omdb.Awards}</div>
           )}
           {(item.composer || item.studio || (item.productionCompanies && item.productionCompanies.length > 0)) && (
             <div className="reader-crew reader-production">
@@ -1300,8 +1520,8 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
             <DragScroll className="row">
               {adjacent.map(a => (
                 <a key={a.id} onClick={() => onJump(a)} title={`${displayTitle(a)} (${a.year})`}>
-                  {(a.poster || a.tmdbPoster || a.igdbCover)
-                    ? <img src={a.poster || a.tmdbPoster || a.igdbCover} alt=""/>
+                  {(a.poster || a.tmdbPoster || a.igdbCover || a.bookCover)
+                    ? <img src={a.poster || a.tmdbPoster || a.igdbCover || a.bookCover} alt=""/>
                     : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
                 </a>
               ))}
@@ -1313,8 +1533,8 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
               <DragScroll className="row">
                 {crossover.map(a => (
                   <a key={a.id} className="crossover-thumb" onClick={() => onJump(a)} title={`${displayTitle(a)} (${a.year})`}>
-                    {(a.poster || a.tmdbPoster || a.igdbCover)
-                      ? <img src={a.poster || a.tmdbPoster || a.igdbCover} alt=""/>
+                    {(a.poster || a.tmdbPoster || a.igdbCover || a.bookCover)
+                      ? <img src={a.poster || a.tmdbPoster || a.igdbCover || a.bookCover} alt=""/>
                       : <span className="thumb-fallback" style={{ '--pf-bg': spineBodyColor(a) }}>{MEDIA_GLYPH[a.medium]}</span>}
                     <span className="crossover-badge" title={library === 'wishlist' ? 'Already seen' : 'On your wishlist'}>{crossoverBadge}</span>
                   </a>
@@ -1323,14 +1543,43 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
             </div>
           )}
           <div className="reader-actions">
-            <a className="reader-btn primary" href={item.link} target="_blank" rel="noopener noreferrer">
-              Open on {externalServiceName(item.link)}
-              <svg width="9" height="9" viewBox="0 0 12 12" fill="none">
-                <path d="M3 3h6v6M3 9l6-6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </a>
+            <ReaderSourceButton item={item} />
             <button className="reader-btn" onClick={close}>Close</button>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─────────── SearchPalette (summon with "/" or Cmd/Ctrl-K) ───────────
+// A centered search/filter overlay you can pop from anywhere. Writes the same
+// `search` state the header input uses, so the token grammar all works here too.
+function SearchPalette({ initial, onApply, onClose }) {
+  const [v, setV] = React.useState(initial || '');
+  const ref = React.useRef(null);
+  React.useEffect(() => { if (ref.current) ref.current.focus(); }, []);
+  React.useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  return (
+    <div className="palette-backdrop" onClick={onClose}>
+      <div className="palette" onClick={(e) => e.stopPropagation()}>
+        <form onSubmit={(e) => { e.preventDefault(); onApply(v); }}>
+          <input
+            ref={ref}
+            className="palette-input"
+            value={v}
+            onChange={(e) => setV(e.target.value)}
+            placeholder="Search or filter…  e.g. genre:Horror dp:Deakins r:8+"
+          />
+        </form>
+        <div className="palette-hints">
+          <code>genre:</code><code>director:</code><code>actor:</code><code>tag:</code>
+          <code>highlight:</code><code>on:</code><code>@year</code><code>r:8+</code>
+          <span className="palette-enter">↵ apply · esc close</span>
         </div>
       </div>
     </div>
@@ -1350,14 +1599,16 @@ function App() {
     });
     const all = favs.concat(window.CULTURE_IMPORTS || []);
     const hasCast = Object.keys(castData).length > 0;
-    return hasCast ? all.map(item => castData[item.id] ? { ...item, ...castData[item.id] } : item) : all;
+    const merged = hasCast ? all.map(item => castData[item.id] ? { ...item, ...castData[item.id] } : item) : all;
+    return merged.map(enrichExtras);
   }, []);
   // The WISHLIST (unseen) — wishlist.js merged with its own enrichment file.
   const wishlistItems = React.useMemo(() => {
     const list = window.CULTURE_WISHLIST      || [];
     const cast = window.CULTURE_WISHLIST_CAST || {};
     const hasCast = Object.keys(cast).length > 0;
-    return hasCast ? list.map(item => cast[item.id] ? { ...item, ...cast[item.id] } : item) : list;
+    const merged = hasCast ? list.map(item => cast[item.id] ? { ...item, ...cast[item.id] } : item) : list;
+    return merged.map(enrichExtras);
   }, []);
   // Which collection is on screen. 'library' = seen, 'wishlist' = to-consume.
   const [library, setLibrary] = React.useState('library');
@@ -1367,6 +1618,7 @@ function App() {
   const spineValue = library === 'wishlist' ? 'fwAvg' : 'rating';
   const [openItem, setOpenItem] = React.useState(null);
   const [justPickedId, setJustPickedId] = React.useState(null);
+  const [paletteOpen, setPaletteOpen] = React.useState(false);
   const [pickedSet, setPickedSet] = React.useState(() => new Set());
   const [mode, setMode] = React.useState('covers');
   const [sort, setSort] = React.useState('curated');
@@ -1398,6 +1650,50 @@ function App() {
     document.body.style.overflow = 'hidden';
     return () => { document.body.style.overflow = prev; };
   }, [openItem]);
+
+  // ── Shareable URL state ── encode collection / search / open-item in the hash,
+  // e.g.  #/wishlist?q=genre:Horror&open=imp-f-1234  — restore it on load.
+  const didInitUrl = React.useRef(false);
+  React.useEffect(() => {
+    didInitUrl.current = true;
+    const raw = window.location.hash.replace(/^#\/?/, '');
+    if (!raw) return;
+    const [path, query] = raw.split('?');
+    const params = new URLSearchParams(query || '');
+    const lib = path === 'wishlist' ? 'wishlist' : 'library';
+    if (lib === 'wishlist') { setLibrary('wishlist'); setMode('spines'); setSort('priority'); }
+    const q = params.get('q'); if (q) setSearch(q);
+    const openId = params.get('open');
+    if (openId) {
+      const pool = lib === 'wishlist' ? wishlistItems : seenItems;
+      const found = pool.find(i => i.id === openId);
+      if (found) setOpenItem(found);
+    }
+  }, []);   // mount only
+  const firstUrlWrite = React.useRef(true);
+  React.useEffect(() => {
+    if (firstUrlWrite.current) { firstUrlWrite.current = false; return; }  // don't clobber the restored hash
+    const params = new URLSearchParams();
+    if (search.trim()) params.set('q', search.trim());
+    if (openItem) params.set('open', openItem.id);
+    const qs = params.toString();
+    const hash = `#/${library}${qs ? '?' + qs : ''}`;
+    if (hash !== window.location.hash) history.replaceState(null, '', hash);
+  }, [library, search, openItem]);
+
+  // ── Summon search ── "/" or Cmd/Ctrl-K opens the palette from anywhere.
+  React.useEffect(() => {
+    const onKey = (e) => {
+      const el = e.target;
+      const typing = el && (/(input|textarea|select)/i.test(el.tagName || '') || el.isContentEditable);
+      if (((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') || (e.key === '/' && !typing)) {
+        e.preventDefault();
+        setPaletteOpen(true);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   // Clear the transient "just-picked" pose after a beat so the cover settles
   // back into the row. The persistent red dot is owned by `pickedSet`.
@@ -1880,6 +2176,7 @@ function App() {
         <StatsModal
           allItems={ITEMS}
           onClose={() => setStatsOpen(false)}
+          onOpenItem={(it) => { setStatsOpen(false); setOpenItem(it); }}
           selectedRatings={selectedRatings}             onToggleRating={toggleRating}
           selectedDirectors={selectedDirectors}         onToggleDirector={toggleDirector}
           selectedStudios={selectedStudios}             onToggleStudio={toggleStudio}
@@ -1889,6 +2186,14 @@ function App() {
           selectedWriters={selectedWriters}             onToggleWriter={toggleWriter}
           selectedCinematographers={selectedCinematographers} onToggleCinematographer={toggleCinematographer}
           selectedHighlights={selectedHighlights}       onToggleHighlight={toggleHighlight}
+        />
+      )}
+
+      {paletteOpen && (
+        <SearchPalette
+          initial={search}
+          onApply={(v) => { setSearch(v); setPaletteOpen(false); }}
+          onClose={() => setPaletteOpen(false)}
         />
       )}
     </div>

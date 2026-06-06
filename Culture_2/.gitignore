@@ -10,5 +10,9 @@ _tmp_*.py
 _enrich_out.txt
 *.bak
 
-# Secrets — TMDB / Twitch keys
+# Secrets — TMDB / Twitch / OMDb keys
 .env
+
+# Network captures (HAR exports may contain personal/session data)
+*.har
+www.filmweb.pl.txt

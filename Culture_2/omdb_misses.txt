@@ -1,0 +1,69 @@
+in-treatment	In Treatment (2011)	→ In Treatment (2008–2021)	score 1.00 year?
+short-circuit	Short Circuit (2020)	NO MATCH
+skaly	Skały (2003)	→ Skaly a ludia (1959)	score 0.00 year?
+kite	Kite (1998)	→ Kite (2014)	score 1.00 year?
+nausicaa	Nausicaä of the Valley of the Wind (1984)	NO MATCH
+odrzucone	Odrzucone (2000)	NO MATCH
+solo-na-ugorze	Solo na ugorze (1981)	NO MATCH
+tori-no-uta	Tori no Uta (2007)	→ Bird Song (2017)	score 1.00 year?
+linia-zycia	Linia życia (2009)	NO MATCH
+siec	Sieć (2010)	→ Wielkie rzeczy: Siec (2000)	score 0.80 year?
+imp-f-dekalog-v	Dekalog V (1988)	NO MATCH
+imp-f-dekalog-viii	Dekalog VIII (1988)	NO MATCH
+imp-f-ningen-no-joken-i	Ningen no joken I (1958)	→ The Human Condition III: A Soldier's Prayer (1961)	score 1.00 year?
+imp-f-zdj-cie	Zdjęcie (1968)	→ The Photograph (2020)	score 1.00 year?
+imp-f-att-d-da-ett-barn	Att döda ett barn (1953)	→ To Kill a Child (2011)	score 1.00 year?
+imp-s-870863	Attenborough's Life in Colour (2021)	NO MATCH
+imp-f-before-the-flood	Before the Flood (2016)	→ Before the Flood (2004)	score 1.00 year?
+imp-f-dekalog-iii	Dekalog III (1988)	NO MATCH
+imp-f-dekalog-iv	Dekalog IV (1988)	NO MATCH
+imp-f-dekalog-ix	Dekalog IX (1988)	NO MATCH
+imp-f-dekalog-vii	Dekalog VII (1988)	NO MATCH
+imp-f-dla-elizy-bagatela-a-moll-woo-59	Dla Elizy Bagatela a-moll WoO 59 (1992)	NO MATCH
+imp-f-harry-potter-and-the-sorcerer-s-stone	Harry Potter and the Sorcerer's Stone (2001)	→ Harry Potter and the Philosopher's Stone (2016)	score 1.00 year?
+imp-f-natural-attraction	Natural Attraction (2014)	NO MATCH
+imp-f-offret-sacrificatio	Offret Sacrificatio (1986)	NO MATCH
+imp-f-schody	Schody (1968)	→ The Stairs (2021)	score 1.00 year?
+imp-f-viskningar-och-rop	Viskningar och rop (1972)	→ On Solace: Video Essay for Cries and Whispers (2015)	score 0.80 year?
+imp-s-10005700	Bo Burnham: Inside (2021)	NO MATCH
+imp-s-467384	Code Geass: Hangyaku no Lelouch R2 (2008)	NO MATCH
+imp-s-802350	Czarne lusterko (2018)	NO MATCH
+imp-f-das-begr-bnis-des-harald-kramer	Das Begräbnis des Harald Kramer (2013)	NO MATCH
+imp-f-dekalog-i	Dekalog I (1988)	NO MATCH
+imp-f-dekalog-vi	Dekalog VI (1988)	NO MATCH
+imp-f-egao	Egao (2003)	NO MATCH
+imp-f-10056283	Elles (1966)	→ The Women (2008)	score 1.00 year?
+imp-s-10014569	Entergalactic (2022)	NO MATCH
+imp-f-ghost-busters	Ghost Busters (1984)	→ The Ghost Busters: Noir (2016)	score 0.80 year?
+imp-f-gi-saeng-chung	Gi-saeng-chung (2019)	NO MATCH
+imp-f-hotarubi-no-mori-e	Hotarubi no Mori e (2011)	NO MATCH
+imp-f-iblard-jikan	Iblard Jikan (2007)	NO MATCH
+imp-f-jaga	Jaga (2016)	NO MATCH
+imp-f-kater	Kater (2005)	→ Tomcat (2016)	score 1.00 year?
+imp-f-komornik	Komornik (2005)	→ The Collector (2009)	score 1.00 year?
+imp-s-10049575	Kono Subarashii Sekai ni Shukufuku o! 3 (2024)	→ Konosuba: God's Blessing on This Wonderful World! (2016–2025)	score 1.00 year?
+imp-f-kyousogiga	Kyousogiga (2011)	NO MATCH
+imp-s-665315	Kyousougiga (2012)	NO MATCH
+imp-f-la-marmite-diabolique	La marmite diabolique (1903)	NO MATCH
+imp-f-le-chevalier-mystere	Le Chevalier mystere (1899)	→ The Mysterious Knight (1908)	score 1.00 year?
+imp-f-le-portrait-myst-rieux	Le portrait mystérieux (1899)	NO MATCH
+imp-f-le-renard-et-l-oisille	Le Renard et l'Oisille (2019)	NO MATCH
+imp-f-les-aventures-de-guillaume-tell	Les Aventures de Guillaume Tell (1898)	NO MATCH
+imp-f-macross-plus-movie-edition	Macross Plus Movie Edition (1995)	NO MATCH
+imp-f-monstersymfonie	Monstersymfonie (2012)	NO MATCH
+imp-f-murarz	Murarz (1973)	→ The Bricklayer (2023)	score 1.00 year?
+imp-f-35459	Nie wiem (1976)	→ I Don't Know How She Does It (2011)	score 0.80 year?
+imp-f-ningen-no-joken-ii	Ningen no joken II (1959)	NO MATCH
+imp-f-94612	Ningen no jôken (1959)	NO MATCH
+imp-f-nowy-janko-muzykant	Nowy Janko Muzykant (1960)	NO MATCH
+imp-f-o-menino-e-o-mundo	O Menino e o Mundo (2013)	NO MATCH
+imp-f-284118	Onna bakari no yoru (1961)	→ Girls of the Night (1984)	score 1.00 year?
+imp-f-per-un-pugno-di-dollari	Per un pugno di dollari (1964)	→ A Fistful of Dollars (1967)	score 1.00 year?
+imp-f-peul-lan-da-seu-eui-gae	Peul-lan-da-seu-eui Gae (2000)	NO MATCH
+imp-f-pianoid	Pianoid (2015)	NO MATCH
+imp-f-8843	Pożegnania (1958)	→ Farewells (2018)	score 1.00 year?
+imp-f-rondo-alla-turca-z-sonaty-a-dur-kv-331	Rondo Alla Turca z Sonaty A-dur KV 331 (1993)	NO MATCH
+imp-f-samog-oska	Samogłoska (1981)	NO MATCH
+imp-f-shin-gekij-ban-initial-d-legend-1-kakusei	Shin Gekijō-ban Initial D Legend 1 - Kakusei (2014)	NO MATCH
+imp-f-strojenie-instrument-w	Strojenie instrumentów (2000)	NO MATCH
+imp-f-tango	Tango (1981)	NO MATCH
