@@ -1,69 +1,159 @@
-in-treatment	In Treatment (2011)	→ In Treatment (2008–2021)	score 1.00 year?
-short-circuit	Short Circuit (2020)	NO MATCH
-skaly	Skały (2003)	→ Skaly a ludia (1959)	score 0.00 year?
-kite	Kite (1998)	→ Kite (2014)	score 1.00 year?
-nausicaa	Nausicaä of the Valley of the Wind (1984)	NO MATCH
-odrzucone	Odrzucone (2000)	NO MATCH
-solo-na-ugorze	Solo na ugorze (1981)	NO MATCH
-tori-no-uta	Tori no Uta (2007)	→ Bird Song (2017)	score 1.00 year?
-linia-zycia	Linia życia (2009)	NO MATCH
-siec	Sieć (2010)	→ Wielkie rzeczy: Siec (2000)	score 0.80 year?
-imp-f-dekalog-v	Dekalog V (1988)	NO MATCH
-imp-f-dekalog-viii	Dekalog VIII (1988)	NO MATCH
-imp-f-ningen-no-joken-i	Ningen no joken I (1958)	→ The Human Condition III: A Soldier's Prayer (1961)	score 1.00 year?
-imp-f-zdj-cie	Zdjęcie (1968)	→ The Photograph (2020)	score 1.00 year?
-imp-f-att-d-da-ett-barn	Att döda ett barn (1953)	→ To Kill a Child (2011)	score 1.00 year?
-imp-s-870863	Attenborough's Life in Colour (2021)	NO MATCH
-imp-f-before-the-flood	Before the Flood (2016)	→ Before the Flood (2004)	score 1.00 year?
-imp-f-dekalog-iii	Dekalog III (1988)	NO MATCH
-imp-f-dekalog-iv	Dekalog IV (1988)	NO MATCH
-imp-f-dekalog-ix	Dekalog IX (1988)	NO MATCH
-imp-f-dekalog-vii	Dekalog VII (1988)	NO MATCH
-imp-f-dla-elizy-bagatela-a-moll-woo-59	Dla Elizy Bagatela a-moll WoO 59 (1992)	NO MATCH
-imp-f-harry-potter-and-the-sorcerer-s-stone	Harry Potter and the Sorcerer's Stone (2001)	→ Harry Potter and the Philosopher's Stone (2016)	score 1.00 year?
-imp-f-natural-attraction	Natural Attraction (2014)	NO MATCH
-imp-f-offret-sacrificatio	Offret Sacrificatio (1986)	NO MATCH
-imp-f-schody	Schody (1968)	→ The Stairs (2021)	score 1.00 year?
-imp-f-viskningar-och-rop	Viskningar och rop (1972)	→ On Solace: Video Essay for Cries and Whispers (2015)	score 0.80 year?
-imp-s-10005700	Bo Burnham: Inside (2021)	NO MATCH
-imp-s-467384	Code Geass: Hangyaku no Lelouch R2 (2008)	NO MATCH
-imp-s-802350	Czarne lusterko (2018)	NO MATCH
-imp-f-das-begr-bnis-des-harald-kramer	Das Begräbnis des Harald Kramer (2013)	NO MATCH
-imp-f-dekalog-i	Dekalog I (1988)	NO MATCH
-imp-f-dekalog-vi	Dekalog VI (1988)	NO MATCH
-imp-f-egao	Egao (2003)	NO MATCH
-imp-f-10056283	Elles (1966)	→ The Women (2008)	score 1.00 year?
-imp-s-10014569	Entergalactic (2022)	NO MATCH
-imp-f-ghost-busters	Ghost Busters (1984)	→ The Ghost Busters: Noir (2016)	score 0.80 year?
-imp-f-gi-saeng-chung	Gi-saeng-chung (2019)	NO MATCH
-imp-f-hotarubi-no-mori-e	Hotarubi no Mori e (2011)	NO MATCH
-imp-f-iblard-jikan	Iblard Jikan (2007)	NO MATCH
-imp-f-jaga	Jaga (2016)	NO MATCH
-imp-f-kater	Kater (2005)	→ Tomcat (2016)	score 1.00 year?
-imp-f-komornik	Komornik (2005)	→ The Collector (2009)	score 1.00 year?
-imp-s-10049575	Kono Subarashii Sekai ni Shukufuku o! 3 (2024)	→ Konosuba: God's Blessing on This Wonderful World! (2016–2025)	score 1.00 year?
-imp-f-kyousogiga	Kyousogiga (2011)	NO MATCH
-imp-s-665315	Kyousougiga (2012)	NO MATCH
-imp-f-la-marmite-diabolique	La marmite diabolique (1903)	NO MATCH
-imp-f-le-chevalier-mystere	Le Chevalier mystere (1899)	→ The Mysterious Knight (1908)	score 1.00 year?
-imp-f-le-portrait-myst-rieux	Le portrait mystérieux (1899)	NO MATCH
-imp-f-le-renard-et-l-oisille	Le Renard et l'Oisille (2019)	NO MATCH
-imp-f-les-aventures-de-guillaume-tell	Les Aventures de Guillaume Tell (1898)	NO MATCH
-imp-f-macross-plus-movie-edition	Macross Plus Movie Edition (1995)	NO MATCH
-imp-f-monstersymfonie	Monstersymfonie (2012)	NO MATCH
-imp-f-murarz	Murarz (1973)	→ The Bricklayer (2023)	score 1.00 year?
-imp-f-35459	Nie wiem (1976)	→ I Don't Know How She Does It (2011)	score 0.80 year?
-imp-f-ningen-no-joken-ii	Ningen no joken II (1959)	NO MATCH
-imp-f-94612	Ningen no jôken (1959)	NO MATCH
-imp-f-nowy-janko-muzykant	Nowy Janko Muzykant (1960)	NO MATCH
-imp-f-o-menino-e-o-mundo	O Menino e o Mundo (2013)	NO MATCH
-imp-f-284118	Onna bakari no yoru (1961)	→ Girls of the Night (1984)	score 1.00 year?
-imp-f-per-un-pugno-di-dollari	Per un pugno di dollari (1964)	→ A Fistful of Dollars (1967)	score 1.00 year?
-imp-f-peul-lan-da-seu-eui-gae	Peul-lan-da-seu-eui Gae (2000)	NO MATCH
-imp-f-pianoid	Pianoid (2015)	NO MATCH
-imp-f-8843	Pożegnania (1958)	→ Farewells (2018)	score 1.00 year?
-imp-f-rondo-alla-turca-z-sonaty-a-dur-kv-331	Rondo Alla Turca z Sonaty A-dur KV 331 (1993)	NO MATCH
-imp-f-samog-oska	Samogłoska (1981)	NO MATCH
-imp-f-shin-gekij-ban-initial-d-legend-1-kakusei	Shin Gekijō-ban Initial D Legend 1 - Kakusei (2014)	NO MATCH
-imp-f-strojenie-instrument-w	Strojenie instrumentów (2000)	NO MATCH
-imp-f-tango	Tango (1981)	NO MATCH
+imp-f-flipped	Flipped (2018)	→ Flipped (2010)	score 1.00 year?
+imp-f-199668	Frog Dreaming (1986)	→ Frog Dreaming (2002)	score 1.00 year?
+imp-f-goutte-d-or	Goutte d'Or (2013)	NO MATCH
+imp-f-hana-to-alice-satsujin-jiken	Hana to Alice Satsujin Jiken (2015)	NO MATCH
+imp-f-258360	I-eo-do (1977)	NO MATCH
+imp-f-jak-to-si-dzieje-pyta-agnisia-e-na-ekranie-widzimy-misia	Jak to się dzieje, pyta Agnisia, że na ekranie widzimy misia (1970)	NO MATCH
+imp-f-kr-tki-dzie-pracy	Krótki dzień pracy (1981)	→ Short Working Day (1995)	score 1.00 year?
+imp-f-labirynt	Labirynt (1962)	→ Labyrinth (1986)	score 1.00 year?
+imp-f-lawa-opowie-o-dziadach-adama-mickiewicza	Lawa. Opowieść o Dziadach Adama Mickiewicza (1989)	→ Lava (2014)	score 1.00 year?
+imp-f-lekcja-niesko-czono-ci	Lekcja nieskończoności (2008)	NO MATCH
+imp-f-mimoza	Mimoza (1973)	→ Mimosa (2014)	score 1.00 year?
+imp-f-mirai-no-mirai	Mirai no Mirai (2018)	NO MATCH
+imp-f-nerwowe-ycie-kosmosu	Nerwowe życie kosmosu (1986)	NO MATCH
+imp-f-night-spinning	Night Spinning (2017)	NO MATCH
+imp-s-10008098	Odd Taxi (2021)	→ RoOT - Route of OddTaxi - (2024)	score 0.80 year?
+imp-s-736614	Pakt (2015)	→ The Pact (2021–)	score 1.00 year?
+imp-f-piirongin-piiloissa	Piirongin piiloissa (2011)	→ A Chest of Drawers (2019)	score 0.80 year?
+imp-f-przes-uchanie	Przesłuchanie (1982)	→ Przesluchanie (2010)	score 0.00 year?
+imp-f-sal-in-sui-choo-eok	Sal-in-sui Choo-eok (2003)	NO MATCH
+imp-f-shi	Shi (2010)	NO MATCH
+imp-f-shin-gekij-ban-initial-d-legend-2-t-s	Shin Gekijō-ban Initial D Legend 2 - Tōsō (2015)	NO MATCH
+imp-f-soar	Soar (2014)	NO MATCH
+imp-f-tsumiki-no-ie	Tsumiki no ie (2008)	NO MATCH
+imp-f-t-i-sekai	Tōi Sekai (1997)	NO MATCH
+imp-f-warzywniak-360-st	Warzywniak, 360 St. (2006)	NO MATCH
+imp-f-egnaj-paro	Żegnaj paro! (1974)	NO MATCH
+imp-f-cowboy-bebop-pv-don-t-bother-none	Cowboy Bebop PV: Don't Bother None (2012)	NO MATCH
+imp-f-czarny-czwartek-janek-wi-niewski-pad	Czarny Czwartek. Janek Wiśniewski padł (2011)	→ Black Thursday (1974)	score 1.00 year?
+imp-f-fox-tale	Fox Tale (2011)	→ Brush: A Fox Tale (2018)	score 0.80 year?
+imp-f-10038861	Gojira Mainasu Wan (2023)	NO MATCH
+imp-s-324560	Higurashi no Naku Koroni (2006)	NO MATCH
+imp-f-jak-nauka-wysz-a-z-lasu	Jak nauka wyszła z lasu (1970)	NO MATCH
+imp-f-jao-nok-krajok	Jao Nok Krajok (2009)	NO MATCH
+imp-s-709827	Jessica Jones (2015)	NO MATCH
+imp-f-klaps	Klaps (1976)	→ Slate (2020)	score 1.00 year?
+imp-f-klatki	Klatki (1966)	→ Cages (2006)	score 1.00 year?
+imp-f-koncert-ycze	Koncert życzeń (1967)	NO MATCH
+imp-f-kono-subarash-sekai-ni-shukufuku-o-2-kono-subarash-geijutsu-	Kono Subarashī Sekai ni Shukufuku o! 2: Kono Subarashī Geijutsu ni Shukufuku o! (2017)	NO MATCH
+imp-f-kuszenie-w-antoniego	Kuszenie św. Antoniego (1987)	NO MATCH
+imp-s-678476	Kōkaku Kidōtai Arise (2013)	NO MATCH
+imp-s-122540	Kōkaku Kidōtai S.A.C. 2nd GIG (2004)	NO MATCH
+imp-s-10078583	Lazaro (2025)	→ Lázaro Cárdenas, El hombre y el mito (1998)	score 0.80 year?
+imp-f-le-gros-et-le-maigre	Le Gros et le maigre (1961)	→ The Fat and the Lean Wrestling Match (1901)	score 0.80 year?
+imp-f-mezame-no-hakobune	Mezame no Hakobune (2005)	→ Open Your Mind (2023)	score 1.00 year?
+imp-f-mi-dzy-wroc-awiem-a-zielon-g-r	Między Wrocławiem a Zieloną Górą (1972)	→ Between Wroclaw and Zielona Góra (2010)	score 0.67 year?
+imp-f-m-canique	Mécanique (2018)	NO MATCH
+imp-s-304524	NHK ni Yōkoso! (2006)	NO MATCH
+imp-s-118719	NieA under 7 (2000)	NO MATCH
+imp-f-omohide-poro-poro	Omohide Poro Poro (1991)	→ Omohide poro poro (2021)	score 1.00 year?
+imp-f-pan-do-ra	Pan-do-ra (2016)	NO MATCH
+imp-f-przej-cie-podziemne	Przejście podziemne (1973)	NO MATCH
+imp-f-qian-xi-man-po	Qian Xi Man Po (2001)	NO MATCH
+imp-f-rubato	Rubato (2012)	→ Rubato (2015)	score 1.00 year?
+imp-f-syn	Syn (1970)	→ The Son (2022)	score 1.00 year?
+imp-f-the-apple	The Apple (1959)	→ The Apple (1998)	score 1.00 year?
+imp-f-the-cowboy-and-the-frenchman	The Cowboy and the frenchman (1989)	NO MATCH
+imp-s-767516	The Punisher (2017)	NO MATCH
+imp-f-tysi-c-i-jeden-drobiazg-w	Tysiąc i jeden drobiazgów (1972)	NO MATCH
+imp-f-violet-evergarden-kitto-ai-o-shiru-hi-ga-kuru-no-dar	Violet Evergarden: Kitto Ai o Shiru Hi ga Kuru no Darō (2018)	NO MATCH
+imp-f-where-are-they-now	Where Are They Now? (2014)	NO MATCH
+imp-f-wielka-ucieczka	Wielka ucieczka! (2006)	NO MATCH
+imp-f-wiklinowy-kosz	Wiklinowy kosz (1966)	NO MATCH
+imp-f-bankiet	Bankiet (1976)	→ The Banquet (2006)	score 1.00 year?
+imp-s-531034	Darker Than Black: Ryūsei no Gemini (2009)	NO MATCH
+imp-f-grunwald-walka-600-lecia	Grunwald. Walka 600-lecia (2010)	NO MATCH
+imp-f-jak-dzia-a-jamniczek	Jak działa jamniczek (1971)	NO MATCH
+imp-f-kto-wypije-wi-cej	Kto wypije więcej (1986)	NO MATCH
+imp-s-698544	Kyōsōgiga (2013)	NO MATCH
+imp-s-735081	Kōkaku Kidōtai Arise: Alternative Architecture (2015)	NO MATCH
+imp-f-la-bo-te	La Boîte (2017)	NO MATCH
+imp-f-ma-deo	Ma-deo (2009)	→ Scarlet Innocence (2014)	score 1.00 year?
+imp-f-ostry-film-zaanga-owany-non-camera	Ostry film zaangażowany. Non Camera (1979)	NO MATCH
+imp-f-shin-evangelion-gekij-ban	Shin Evangelion Gekijō-ban :|| (2021)	NO MATCH
+imp-f-10058715	Teściowie 3 (2025)	NO MATCH
+imp-f-violet-evergarden-gaiden-eien-to-jid-shuki-ningy	Violet Evergarden Gaiden: Eien to Jidō Shuki Ningyō (2019)	NO MATCH
+imp-f-w-sumie-mogliby-my-nakr-ci-jaki-film	W sumie moglibyśmy nakręcić jakiś film (2014)	NO MATCH
+imp-f-wszystko-jest-liczb	Wszystko jest liczbą (1966)	NO MATCH
+imp-f-yang-guang-pu-zhao	Yang Guang Pu Zhao (2019)	NO MATCH
+imp-f-zmiana-warty	Zmiana warty (1958)	→ The Changing of the Guard (1962)	score 1.00 year?
+imp-f-adam-i-ewa	Adam i Ewa (1983)	NO MATCH
+imp-f-edward-psie-serce	Edward Psie Serce (2011)	NO MATCH
+imp-f-k-kaku-kid-tai-s-a-c-solid-state-society-3d	Kōkaku Kidōtai S.A.C. Solid State Society 3D (2011)	NO MATCH
+imp-f-lokomotywa	Lokomotywa (1976)	→ Locomotive (2013)	score 1.00 year?
+imp-f-323003	O-bal-tan (1961)	NO MATCH
+imp-f-wypadek	Wypadek (1971)	→ Accident (1967)	score 1.00 year?
+imp-f-goi-mool	Goi-mool (2006)	NO MATCH
+imp-f-pitbull-nowe-porz-dki	Pitbull. Nowe porządki (2016)	NO MATCH
+imp-f-pitbull-ostatni-pies	Pitbull. Ostatni pies (2018)	NO MATCH
+imp-f-racing-beats	Racing Beats (2006)	NO MATCH
+imp-f-ruben-brandt-a-gy-jt	Ruben Brandt, a gyűjtő (2018)	NO MATCH
+imp-f-sekcja-zw-ok	Sekcja zwłok (1973)	NO MATCH
+imp-f-shinseiki-evangelion-gekij-ban-shi-to-shinsei	Shinseiki Evangelion Gekijōban: Shi to Shinsei (1997)	NO MATCH
+imp-f-six-figures-getting-sick	Six Figures Getting Sick (1966)	NO MATCH
+imp-f-91468	Six Figures Getting Sick (1967)	NO MATCH
+imp-f-spirala	Spirala (1978)	NO MATCH
+imp-f-syn-gwiazd	Syn Gwiazd (2006)	NO MATCH
+imp-f-the-follow	The Follow (2001)	NO MATCH
+imp-f-ticker	Ticker (2002)	NO MATCH
+imp-f-venom	Venom (2018)	NO MATCH
+imp-f-white-chicks	White Chicks (2004)	NO MATCH
+imp-f-looney-tunes-rabbits-run	Looney Tunes: Rabbits Run (2015)	NO MATCH
+imp-f-10000919	Megalopolis (2024)	NO MATCH
+imp-f-rated-r-for-nudity	Rated R for Nudity (2011)	NO MATCH
+imp-f-the-chase	The Chase (2012)	NO MATCH
+imp-f-the-grandmother	The Grandmother (1970)	NO MATCH
+imp-f-tolerantia	Tolerantia (2008)	NO MATCH
+imp-f-absurd-encounter-with-fear	Absurd Encounter with Fear (1967)	NO MATCH
+imp-f-hideaway	Hideaway (1995)	NO MATCH
+imp-s-617624	Trudne sprawy (2011)	NO MATCH
+imp-s-95067	...A je to! (1976)	NO MATCH
+imp-f-101-dalmatians	101 Dalmatians (1996)	NO MATCH
+imp-f-102-dalmatians	102 Dalmatians (2000)	NO MATCH
+imp-s-38365	13 Posterunek (1997)	NO MATCH
+imp-s-38407	13 Posterunek 2 (2000)	NO MATCH
+imp-f-1920-bitwa-warszawska	1920 Bitwa Warszawska (2011)	NO MATCH
+imp-f-24-me-chasseurs-alpins-le-on-de-boxe	24ème chasseurs alpins: leçon de boxe (1897)	NO MATCH
+imp-f-48-hrs	48 Hrs. (1982)	NO MATCH
+imp-f-6-me-bataillon-de-chasseurs-alpins-ascension-du-sommet-du-di	6ème bataillon de chasseurs alpins: ascension du sommet du diable (1898)	NO MATCH
+imp-f-99-me-r-giment-d-infanterie-assaut-du-portique	99ème régiment d'infanterie: assaut du portique (1897)	NO MATCH
+imp-f-a-bord-du-formidable-escrime-au-sabre	A bord du 'Formidable': escrime au sabre (1896)	NO MATCH
+imp-f-a-bord-du-tonkin-le-saut-la-corde	A bord du 'Tonkin' - Le saut à la corde (1900)	NO MATCH
+imp-f-a-bug-s-life	A Bug's Life (1998)	NO MATCH
+imp-f-a-camp-smithy	A Camp Smithy (1899)	NO MATCH
+imp-f-a-chess-dispute	A Chess Dispute (1903)	NO MATCH
+imp-f-a-hand-shake	A Hand Shake (1892)	NO MATCH
+imp-f-a-railway-collision	A Railway Collision (1900)	NO MATCH
+imp-f-a-sea-cave-near-lisbon	A Sea Cave Near Lisbon (1896)	NO MATCH
+imp-f-a-switchback-railway	A Switchback Railway (1898)	NO MATCH
+imp-f-3673	A.I. Artificial Intelligence (2001)	NO MATCH
+imp-f-above-the-law	Above the Law (1988)	NO MATCH
+imp-f-ace-ventura-pet-detective	Ace Ventura: Pet Detective (1994)	NO MATCH
+imp-f-acteurs-japonais-bataille-au-sabre	Acteurs japonais: Bataille au sabre (1898)	NO MATCH
+imp-f-acteurs-japonais-exercice-de-la-perruque	Acteurs japonais: Exercice de la perruque (1898)	NO MATCH
+imp-f-air-force-one	Air Force One (1997)	NO MATCH
+imp-f-akademia-pana-kleksa	Akademia pana Kleksa (1983)	NO MATCH
+imp-f-aladdin	Aladdin (1992)	NO MATCH
+imp-f-alger-place-du-gouvernement	Alger: place du gouvernement (1896)	NO MATCH
+imp-f-alger-rue-bab-azoun	Alger: rue Bab-Azoun (1897)	NO MATCH
+imp-f-alice-in-wonderland-1951	Alice in Wonderland (1951)	NO MATCH
+imp-f-alita-battle-angel	Alita: Battle Angel (2019)	NO MATCH
+imp-f-an-exciting-pillow-fight	An Exciting Pillow Fight (1900)	NO MATCH
+imp-f-an-extraordinary-cab-accident	An Extraordinary Cab Accident (1903)	NO MATCH
+imp-f-an-over-incubated-baby	An Over-Incubated Baby (1901)	NO MATCH
+imp-f-analyze-that	Analyze That (2002)	NO MATCH
+imp-f-analyze-this	Analyze This (1999)	NO MATCH
+imp-f-andalusian-dance	Andalusian Dance (1896)	NO MATCH
+imp-f-angels-demons	Angels & Demons (2009)	NO MATCH
+imp-f-angry-video-game-nerd-the-movie	Angry Video Game Nerd: The Movie (2014)	NO MATCH
+imp-f-anima	Anima (2019)	NO MATCH
+imp-f-annabelle-butterfly-dance	Annabelle Butterfly Dance (1894)	NO MATCH
+imp-f-annabelle-sun-dance	Annabelle Sun Dance (1894)	NO MATCH
+imp-f-annie-oakley	Annie Oakley (1894)	NO MATCH
+imp-f-another-48-hrs	Another 48 Hrs. (1990)	NO MATCH
+imp-f-ant-man	Ant-Man (2015)	NO MATCH
+imp-f-antz	Antz (1998)	NO MATCH
+imp-f-apr-s-le-bal	Après le bal (1897)	NO MATCH
+imp-f-apr-s-le-lancement-sortie-des-invit-s-et-du-public	Après le lancement: sortie des invités et du public (1899)	NO MATCH
+imp-f-aquarium	Aquarium (1895)	NO MATCH
+imp-f-arles-la-sortie-de-st-throphime	Arles: La sortie de St-Throphime (1901)	NO MATCH

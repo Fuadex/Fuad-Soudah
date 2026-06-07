@@ -1324,7 +1324,8 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .rating-col { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; cursor: pointer; }
 .rating-col:hover .rating-bar { opacity: .75; }
 .rating-bar {
-  width: 100%; border-radius: 3px 3px 0 0; transition: background .15s, opacity .15s;
+  width: 100%; border-radius: 3px 3px 0 0;
+  transition: background .15s, opacity .15s, height .42s cubic-bezier(.4,0,.2,1);
   background: var(--rule); min-height: 3px;
 }
 .rating-col.active .rating-bar { background: var(--accent); }
@@ -1332,7 +1333,7 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .rating-cnt { font-family: var(--mono); font-size: 9px; color: var(--ink-soft); }
 
 /* horizontal bar histograms (directors / studios) */
-.hbar-list { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; max-height: 320px; }
+.hbar-list { display: flex; flex-direction: column; gap: 5px; overflow-y: auto; max-height: 460px; }
 .hbar-row { display: flex; align-items: center; gap: 8px; cursor: pointer; }
 .hbar-row:hover .hbar-fill { opacity: .75; }
 .hbar-row.active .hbar-fill { background: var(--accent); }
@@ -1355,6 +1356,15 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 .heatmap-cell:hover { opacity: .7; }
 .heatmap-cell.selected { outline: 1.5px solid var(--ink); outline-offset: 1px; }
+.heatmap-month-row { display: flex; gap: 2px; margin-bottom: 4px; padding-left: 36px; }
+.heatmap-month-cell { width: 11px; flex-shrink: 0; font-family: var(--mono); font-size: 8px; color: var(--ink-faint); text-align: center; }
+/* On wide screens the calendar stretches to fill the panel — cells become rectangles. */
+@media (min-width: 820px) {
+  .heatmap-wrap { overflow-x: visible; }
+  .heatmap-inner { display: block; min-width: 0; }
+  .heatmap-row, .heatmap-month-row { gap: 3px; }
+  .heatmap-cell, .heatmap-month-cell { flex: 1 1 0; width: auto; min-width: 0; }
+}
 .heatmap-tooltip {
   position: fixed; background: var(--bg-2); border: 1px solid var(--rule);
   border-radius: 6px; padding: 6px 10px; font-family: var(--mono); font-size: 10px;
@@ -1362,8 +1372,23 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 }
 
 /* choropleth map */
+.world-map-layout { display: flex; gap: 14px; align-items: flex-start; }
+.world-map-layout .world-map-wrap { flex: 1; min-width: 0; }
 .world-map-wrap { position: relative; background: rgba(255,255,255,.02); border-radius: 8px; overflow: hidden; }
 .world-map-svg { display: block; width: 100%; height: auto; }
+/* Clickable country ranking beside the map — reaches countries too small to click. */
+.country-list { width: 190px; flex-shrink: 0; max-height: 430px; overflow-y: auto; display: flex; flex-direction: column; gap: 2px; }
+.country-row { display: flex; justify-content: space-between; gap: 8px; cursor: pointer; font-family: var(--mono); font-size: 10px; color: var(--ink-soft); padding: 3px 7px; border-radius: 3px; }
+.country-row:hover { background: rgba(255,255,255,.05); color: var(--ink); }
+.country-row.active { background: var(--accent); color: #fff; }
+.country-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.country-cnt { color: var(--ink-faint); flex-shrink: 0; }
+.country-row.active .country-cnt { color: #fff; }
+@media (max-width: 700px) {
+  .world-map-layout { flex-direction: column; }
+  .country-list { width: 100%; max-height: 190px; flex-flow: row wrap; }
+  .country-row { flex: 0 0 auto; }
+}
 .map-path { transition: opacity .15s; }
 .map-path.clickable { cursor: pointer; }
 .map-path.clickable:hover { opacity: .7; }

@@ -248,14 +248,26 @@ let _topoCache = null;
 //   'rating' → personal score (it.rating), 'fwAvg' → Filmweb avg (rounded).
 // `onBar(n)` makes columns clickable (personal-rating mode); pass null for a
 // display-only chart (Filmweb mode). `activeSet` = highlighted band strings.
+// A 1–10 score for `it` from the chosen source (RT% → /10, Metacritic /100 → /10,
+// IMDb rounded). Returns null when that source has no value for the item.
+function scoreValue(it, source) {
+  let v = null;
+  if (source === 'rating')          v = it.rating != null ? parseFloat(it.rating) : null;
+  else if (source === 'fwAvg')      v = it.fwAvg != null ? it.fwAvg : null;
+  else if (source === 'imdb')       { const r = it.omdb && it.omdb.imdbRating; v = (r && r !== 'N/A') ? parseFloat(r) : null; }
+  else if (source === 'rt')         { const r = omdbRating(it.omdb, 'Rotten Tomatoes'); v = r ? parseFloat(r) / 10 : null; }
+  else if (source === 'metacritic') { const m = it.omdb && it.omdb.Metascore; v = (m && m !== 'N/A') ? parseFloat(m) / 10 : null; }
+  return (v == null || isNaN(v)) ? null : Math.max(1, Math.min(10, Math.round(v)));
+}
+
 function RatingHistogram({ items, source, activeSet, onBar }) {
-  const counts = React.useMemo(() => countBy(items, it =>
-    source === 'rating'
-      ? it.rating
-      : (it[source] != null ? String(Math.round(it[source])) : null)
-  ), [items, source]);
+  const counts = React.useMemo(() => {
+    const m = {};
+    items.forEach(it => { const v = scoreValue(it, source); if (v != null) m[String(v)] = (m[String(v)] || 0) + 1; });
+    return m;
+  }, [items, source]);
   const max = Math.max(1, ...Object.values(counts));
-  const SRC = source === 'fwAvg' ? 'Filmweb ≈ ' : '★';
+  const SRC = { rating: '★', fwAvg: 'Filmweb ≈ ', imdb: 'IMDb ', rt: '🍅 ≈ ', metacritic: 'Metacritic ≈ ' }[source] || '';
   const clickable = !!onBar;
   return (
     <div className={`rating-hist${clickable ? '' : ' static'}`}>
@@ -280,7 +292,7 @@ function RatingHistogram({ items, source, activeSet, onBar }) {
 // ─────────── HBarHistogram (directors / studios / actors / etc.) ───────────
 // countFn: optional alternative to keyFn for multi-value fields (e.g. cast arrays).
 //   countFn(items) => { [name]: count }
-function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 25, labelFn }) {
+function HBarHistogram({ items, keyFn, countFn, selected, onToggle, limit = 19, labelFn }) {
   const counts = React.useMemo(() => {
     const raw = countFn ? countFn(items) : countBy(items, keyFn);
     return Object.entries(raw)
@@ -339,9 +351,9 @@ function ActivityHeatmap({ items, selectedWeeks, onToggleWeek, medium = 'All' })
   return (
     <div className="heatmap-wrap">
       <div className="heatmap-inner">
-        <div style={{ display:'flex', gap:'2px', marginBottom:'4px', paddingLeft:'36px' }}>
+        <div className="heatmap-month-row">
           {WEEK_LABELS.map((m, i) => (
-            <div key={i} style={{ width:'11px', flexShrink:0, fontFamily:'var(--mono)', fontSize:'8px', color:'var(--ink-faint)', textAlign:'center' }}>{m}</div>
+            <div key={i} className="heatmap-month-cell">{m}</div>
           ))}
         </div>
         <div className="heatmap-rows">
@@ -393,6 +405,15 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
     return { regionCounts: rc, maxCount: mx };
   }, [items]);
 
+  // Flat, clickable country ranking beside the map — guarantees tiny countries
+  // (Hong Kong, Singapore…) are reachable even when their map blob is un-clickable.
+  const countryList = React.useMemo(() => {
+    const rc = { ...regionCounts };
+    delete rc['_ru_combined'];
+    if (rc['su']) { rc['ru'] = (rc['ru'] || 0) + rc['su']; delete rc['su']; }
+    return Object.entries(rc).filter(([k]) => k).sort((a, b) => b[1] - a[1]);
+  }, [regionCounts]);
+
   const hue = MEDIUM_MAP_HUE[medium] || MEDIUM_MAP_HUE['All'];
 
   if (!topo) return <div style={{ height:300, display:'flex', alignItems:'center', justifyContent:'center', color:'var(--ink-faint)', fontFamily:'var(--mono)', fontSize:11 }}>Loading map…</div>;
@@ -404,6 +425,7 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
   const countries = tj.feature(topo, topo.objects.countries);
 
   return (
+   <div className="world-map-layout">
     <div className="world-map-wrap">
       <svg className="world-map-svg" viewBox={`0 0 ${W} ${H}`}>
         {countries.features.map(f => {
@@ -440,6 +462,18 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
       </svg>
       {tip && <div className="map-tooltip" style={{ left: tip.x + 14, top: tip.y + 14 }}>{tip.text}</div>}
     </div>
+    <div className="country-list">
+      {countryList.map(([region, count]) => {
+        const sel = selectedCountries.has(region);
+        return (
+          <div key={region} className={`country-row${sel ? ' active' : ''}`} onClick={() => onToggleCountry(region)}>
+            <span className="country-name">{REGION_NAMES[region] || regionName(region) || region}</span>
+            <span className="country-cnt">{count}</span>
+          </div>
+        );
+      })}
+    </div>
+   </div>
   );
 }
 
@@ -582,8 +616,8 @@ function StatsModal({ allItems, onClose, onOpenItem, selectedRatings, onToggleRa
   // Rating distribution bins by personal score or Filmweb avg — whichever the
   // collection has. Wishlist has no personal score, so it opens on Filmweb.
   const ratingSources = [
-    ['rating', 'My rating'], ['fwAvg', 'Filmweb'],
-  ].filter(([k]) => allItems.some(i => k === 'rating' ? i.rating : i[k] != null));
+    ['rating', 'Mine'], ['fwAvg', 'Filmweb'], ['imdb', 'IMDb'], ['rt', 'RT'], ['metacritic', 'Metacritic'],
+  ].filter(([k]) => allItems.some(i => scoreValue(i, k) != null));
   const [ratingSource, setRatingSource] = React.useState(
     () => allItems.some(i => i.rating) ? 'rating' : 'fwAvg'
   );
@@ -627,9 +661,7 @@ function StatsModal({ allItems, onClose, onOpenItem, selectedRatings, onToggleRa
         <div className="stats-section">
           <div className="stats-section-title-row">
             <div className="stats-section-title">
-              {ratingSource === 'fwAvg'
-                ? 'Rating distribution — Filmweb community average'
-                : 'Rating distribution — your score · click to filter'}
+              {'Rating distribution — ' + ({ rating: 'your score · click to filter', fwAvg: 'Filmweb community average', imdb: 'IMDb rating (→10)', rt: 'Rotten Tomatoes (→10)', metacritic: 'Metacritic (→10)' }[ratingSource] || ratingSource)}
             </div>
             {ratingSources.length > 1 && (
               <div className="rating-source-toggle">
