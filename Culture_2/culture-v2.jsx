@@ -759,8 +759,60 @@ function TasteProfile({ items, onOpenItem }) {
   );
 }
 
+// ─────────── WishlistPicker (Stats, wishlist only) — "what to watch next" ───────────
+function wlScore(it) {
+  const f = it.fwAvg != null ? parseFloat(it.fwAvg) : null;
+  const i = it.omdb && it.omdb.imdbRating && it.omdb.imdbRating !== 'N/A' ? parseFloat(it.omdb.imdbRating) : null;
+  return f != null ? f : i;
+}
+function WishlistPicker({ items, seenItems, onOpenItem }) {
+  const [seed, setSeed] = React.useState(0);
+  const MG = (window.CULTURE && window.CULTURE.MEDIA_GLYPH) || {};
+
+  const acclaimed = React.useMemo(() => [...items]
+    .filter(it => wlScore(it) != null && (it.voteCount == null || it.voteCount >= 1000))
+    .sort((a, b) => wlScore(b) - wlScore(a)).slice(0, 18), [items]);
+
+  const tasteMatch = React.useMemo(() => {
+    const g = {}, d = {};
+    seenItems.forEach(it => { (it.genres || []).forEach(x => g[x] = (g[x] || 0) + 1); if (it.director) d[it.director] = (d[it.director] || 0) + 1; });
+    const topG = new Set(Object.entries(g).sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]));
+    const topD = new Set(Object.entries(d).sort((a, b) => b[1] - a[1]).slice(0, 40).map(e => e[0]));
+    return items.map(it => {
+      let s = 0; (it.genres || []).forEach(x => { if (topG.has(x)) s++; }); if (it.director && topD.has(it.director)) s += 2;
+      return { it, s };
+    }).filter(x => x.s > 0).sort((a, b) => b.s - a.s || (wlScore(b.it) || 0) - (wlScore(a.it) || 0)).slice(0, 18).map(x => x.it);
+  }, [items, seenItems]);
+
+  const surprise = React.useMemo(() => {
+    const a = [...items];
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a.slice(0, 12);
+  }, [items, seed]);
+
+  const Row = ({ title, list, sub }) => list.length > 0 && (
+    <div className="wl-pick-row">
+      <div className="wl-pick-head"><span className="stats-section-title">{title}</span>{sub}</div>
+      <div className="explorer-wall">
+        {list.map(it => { const img = it.poster || it.tmdbPoster || it.igdbCover || it.bookCover; return (
+          <a key={it.id} className="xcover" onClick={() => onOpenItem && onOpenItem(it)} title={`${displayTitle(it)} (${it.year || ''})${wlScore(it) ? ' · ⌀ ' + wlScore(it) : ''}`}>
+            {img ? <img src={img} alt="" loading="lazy" /> : <span className="xcover-fallback" style={{ '--pf-bg': spineBodyColor(it) }}>{MG[it.medium] || '•'}</span>}
+          </a>); })}
+      </div>
+    </div>
+  );
+  return (
+    <div className="stats-section">
+      <div className="stats-section-title" style={{ marginBottom: 10 }}>Pick your next watch — {items.length} on the list</div>
+      <Row title="Acclaimed & unseen" list={acclaimed} sub={<span className="wl-pick-sub">highest community score</span>} />
+      <Row title="More of what you love" list={tasteMatch} sub={<span className="wl-pick-sub">your top genres & directors</span>} />
+      <Row title="Surprise me" list={surprise} sub={<button className="xclear" onClick={() => setSeed(s => s + 1)}>re-roll</button>} />
+    </div>
+  );
+}
+
 // ─────────── StatsModal ───────────
-function StatsModal({ allItems, onClose, onOpenItem, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer, selectedHighlights, onToggleHighlight }) {
+function StatsModal({ allItems, library, seenItemsForTaste, onClose, onOpenItem, selectedRatings, onToggleRating, selectedDirectors, onToggleDirector, selectedStudios, onToggleStudio, selectedWeeks, onToggleWeek, selectedCountries, onToggleCountry, selectedActors, onToggleActor, selectedWriters, onToggleWriter, selectedCinematographers, onToggleCinematographer, selectedHighlights, onToggleHighlight }) {
   const { MEDIA } = window.CULTURE;
   const LEFT_VIEW_LABELS  = { directors: 'Directors · Creators · Authors', actors: 'Actors', writers: 'Writers · Screenwriters', cinematographers: 'Cinematographers', animationDirectors: 'Animation Directors' };
   const RIGHT_VIEW_LABELS = { studios: 'Studios · Networks · Publishers', companies: 'Production Companies', composers: 'Composers', badges: 'Standout badges' };
@@ -812,6 +864,7 @@ function StatsModal({ allItems, onClose, onOpenItem, selectedRatings, onToggleRa
         {tab === 'taste' && <TasteProfile items={statItems} onOpenItem={onOpenItem} />}
 
         {tab === 'charts' && <React.Fragment>
+        {library === 'wishlist' && <WishlistPicker items={statItems} seenItems={seenItemsForTaste || []} onOpenItem={onOpenItem} />}
         <div className="stats-section">
           <div className="stats-section-title-row">
             <div className="stats-section-title">
@@ -2211,16 +2264,16 @@ function App() {
     else                    { setMode('covers'); setSort('curated'); }
   };
 
-  // When a search/chip filter becomes active, flip to Mix so the layout can't hide
-  // matches (sort changes don't count). Fires only on the off→on edge, so a manual
-  // mode switch while a filter is active is left alone.
+  // When a search/chip filter becomes active, collapse to Spines so the layout can't
+  // hide matches (sort changes don't count). Fires only on the off→on edge, so a
+  // manual mode switch while a filter is active is left alone. (Mix stays available.)
   const anyFilter = !!(search.trim() || selectedRatings.size || selectedDirectors.size ||
     selectedStudios.size || selectedWeeks.size || selectedCountries.size || selectedGenres.size ||
     selectedActors.size || selectedWriters.size || selectedCinematographers.size ||
     selectedHighlights.size || selectedRatedYears.size || selectedReleaseBuckets.size);
   const prevFilterRef = React.useRef(false);
   React.useEffect(() => {
-    if (anyFilter && !prevFilterRef.current && mode !== 'mix') setModeAndAnimate('mix');
+    if (anyFilter && !prevFilterRef.current && mode === 'covers') setMode('spines');
     prevFilterRef.current = anyFilter;
   }, [anyFilter, mode]);
 
@@ -2497,6 +2550,8 @@ function App() {
       {statsOpen && (
         <StatsModal
           allItems={ITEMS}
+          library={library}
+          seenItemsForTaste={seenItems}
           onClose={() => setStatsOpen(false)}
           onOpenItem={(it) => { setStatsOpen(false); setOpenItem(it); }}
           selectedRatings={selectedRatings}             onToggleRating={toggleRating}

@@ -1249,6 +1249,10 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 .taste-fp .k { color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.12em; font-size: 9px; }
 .taste-fp .v { color: var(--ink); text-align: right; }
 .taste-timeline { width: 100%; height: auto; display: block; }
+.wl-pick-row { margin-bottom: 14px; }
+.wl-pick-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+.wl-pick-sub { font-family: var(--mono); font-size: 9px; color: var(--ink-faint); }
+.wl-pick-row .explorer-wall { max-height: none; }
 .taste-growth-layout { display: flex; gap: 12px; align-items: flex-start; }
 .taste-growth-chart { flex: 1; min-width: 0; }
 .taste-growth-legend { width: 130px; flex-shrink: 0; display: flex; flex-direction: column; gap: 3px; }
