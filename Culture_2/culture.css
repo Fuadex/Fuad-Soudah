@@ -847,13 +847,61 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   margin: 0 0 22px;
 }
 .reader-quote.empty { color: #98908a; font-size: 14px; }
+/* Click-to-translate (PL↔EN) with a matrix-style vertical letter cascade */
+.reader-quote.translatable { cursor: pointer; position: relative; transition: border-color .3s; }
+.reader-quote.translatable:hover { border-left-color: var(--paper-ink); }
+.reader-quote .qc {
+  display: inline-block; white-space: pre;
+  animation: matrixRoll .6s cubic-bezier(.16,.8,.3,1) backwards;
+}
+@keyframes matrixRoll {
+  0%   { opacity: 0; transform: translateY(-1.15em) scaleY(1.6); filter: blur(3px); }
+  45%  { opacity: 1; filter: blur(.3px); }
+  72%  { transform: translateY(.09em) scaleY(.96); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+.quote-flip {
+  display: inline-block; margin-left: 8px; font-style: normal;
+  font-family: var(--mono); font-size: 9px; letter-spacing: .12em;
+  color: var(--ink-soft); opacity: .45; vertical-align: middle;
+  transition: opacity .2s;
+}
+.reader-quote.translatable:hover .quote-flip { opacity: .8; }
 .reader-summary {
   font-size: 13px; line-height: 1.55; color: var(--ink-faint);
   margin: -10px 0 22px; font-family: var(--mono);
+  animation: summaryFade .32s ease;
 }
-.reader-awards {
-  font-size: 11.5px; line-height: 1.4; color: var(--paper-ink-faint, #98908a);
-  margin: -14px 0 20px; font-family: var(--mono); font-style: italic;
+@keyframes summaryFade { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+/* Subtle inline IMDb⇄TMDB source flip at the end of the description (same spirit
+   as the PL⇄EN quote flip). */
+.summary-flip {
+  margin-left: 8px; cursor: pointer; white-space: nowrap;
+  font-size: 9px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-soft); opacity: .5; transition: opacity .2s;
+}
+.summary-flip:hover { opacity: .9; }
+/* Critic scores collection */
+.reader-scores {
+  display: flex; flex-wrap: wrap; gap: 6px 8px;
+  margin: -8px 0 16px; font-family: var(--mono); font-size: 11px;
+}
+.reader-scores .score {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px; border: 1px solid var(--rule); border-radius: 999px;
+  color: var(--ink-soft); background: rgba(255,255,255,.02);
+}
+.reader-scores .score b { font-weight: 600; color: var(--ink-faint); letter-spacing: .04em; }
+/* Parsed award chips share the scores line; full OMDb sentence on hover. */
+.reader-scores .reader-awards {
+  display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  cursor: help; padding-left: 8px; margin-left: 2px;
+  border-left: 1px solid var(--rule);
+}
+.reader-awards .award-chip {
+  padding: 4px 9px; border-radius: 999px; font-size: 10.5px;
+  background: rgba(224,161,18,.10); color: var(--paper-ink-faint, #98908a);
+  border: 1px solid rgba(224,161,18,.22);
 }
 .reader-crew {
   display: flex; flex-wrap: wrap; gap: 6px 20px;

@@ -92,6 +92,16 @@ def omdb_fetch(key, item):
     return None, False
 
 
+def omdb_short(key, imdb_id):
+    """OMDb returns ONE plot per call; fetch the SHORT (crisp IMDb-style) synopsis
+    by imdbID so it can sit alongside the full Plot."""
+    data = uc.http_get(OMDB + '?' + urlencode({'apikey': key, 'i': imdb_id, 'plot': 'short'}))
+    if data and data.get('Response') == 'True':
+        p = data.get('Plot')
+        return p if (p and p != 'N/A') else None
+    return None
+
+
 def confidence(item, data):
     """Rough flag for review: title similarity + year proximity."""
     ts = uc.match_score(item['en'] or item['title'], data.get('Title', ''))
@@ -165,9 +175,23 @@ def main():
             print(f"    …{n}/{len(todo)} (found {found}, misses {misses})")
         time.sleep(0.12)
 
-    if DRY:
-        print(f'\n--dry-run: would fetch {len(todo)} (found {found}, misses {misses}). Nothing written.')
-        return
+    # Backfill the SHORT IMDb plot (one call each, by imdbID) for True entries that
+    # lack it — so the Reader can show the crisp IMDb-style synopsis, not just the
+    # long one. Shares the --limit budget so daily quota is respected over reruns.
+    budget = (LIMIT - len(todo)) if LIMIT else None
+    if budget is None or budget > 0:
+        sb = 0
+        for iid, v in cache.items():
+            if budget is not None and sb >= budget:
+                break
+            if isinstance(v, dict) and v.get('Response') == 'True' and v.get('imdbID') and 'PlotShort' not in v:
+                v['PlotShort'] = omdb_short(key, v['imdbID']) or ''  # '' marks attempted
+                sb += 1
+                if sb % 25 == 0:
+                    json.dump(cache, open(CACHE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+                time.sleep(0.12)
+        if sb:
+            print(f'  backfilled {sb} short plots')
 
     json.dump(cache, open(CACHE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

@@ -1,0 +1,395 @@
+# Badge proposal — grouped by badge
+
+Candidate titles for each badge. Already-applied / curated badges are excluded,
+so this is just the open questions. Tell me which to keep per badge.
+
+_🪞 cognitive & 💀 horrifying are hand-curated in `badges_source.json` — not listed here._
+
+## 🧠 cerebral (thought-provoking)  (44)
+- (500) Days of Summer (Movies)  ·  has: —
+- Abstract: The Art of Design (TV)  ·  has: —
+- Amator (Movies)  ·  has: —
+- Baraka (Movies)  ·  has: cinematography visuals
+- Before the Flood (Movies)  ·  has: —
+- Byłem żołnierzem (Movies)  ·  has: —
+- Chef (TV)  ·  has: —
+- Chronique d'un été (Movies)  ·  has: —
+- Clarkson (TV)  ·  has: —
+- Dancing with the Birds (Movies)  ·  has: —
+- Dark Money (Movies)  ·  has: —
+- David Attenborough: A Life On Our Planet (Movies)  ·  has: —
+- Dworzec (Shorts)  ·  has: —
+- Es wird Regen geben - eine Begegnung in Patagonien (Shorts)  ·  has: —
+- Ex Machina (Movies)  ·  has: —
+- Film balkonowy (Movies)  ·  has: —
+- Frozen Planet (TV)  ·  has: —
+- Frozen Planet II (TV)  ·  has: —
+- Happily Ever After (Shorts)  ·  has: —
+- Indie Game: The Movie (Movies)  ·  has: —
+- James May: Our Man In... (TV)  ·  has: —
+- Life in a Day 2020 (Movies)  ·  has: —
+- Lost in Translation (Movies)  ·  has: —
+- Madame Tutli-Putli (Shorts)  ·  has: —
+- Magical Land of Oz (TV)  ·  has: —
+- Making a Murderer (TV)  ·  has: —
+- Marcel the Shell with Shoes On (Movies)  ·  has: —
+- Nie wiem (Shorts)  ·  has: —
+- Perfect Planet (TV)  ·  has: —
+- Planet Earth (TV)  ·  has: —
+- Querelle enfantine (Shorts)  ·  has: —
+- REW-FFWD (Shorts)  ·  has: —
+- Refren (Shorts)  ·  has: —
+- Robotnicy 1971 - Nic o nas bez nas (Shorts)  ·  has: —
+- România neîmblânzită (Movies)  ·  has: —
+- Schindler's List (Movies)  ·  has: devastating
+- Siedem kobiet w różnym wieku (Movies)  ·  has: —
+- Spacked Out (Movies)  ·  has: —
+- Street Food: Asia (TV)  ·  has: —
+- Struggle: The Life and Lost Art of Szukalski (Movies)  ·  has: —
+- Szpital (Shorts)  ·  has: —
+- The Defiant Ones (TV)  ·  has: —
+- The Lion King (Feature Animation)  ·  has: —
+- Viskningar och rop (Movies)  ·  has: devastating visuals
+
+## 🎨 visuals  (170)
+- 366 Tage (Shorts)  ·  has: —
+- A Silent Voice (Feature Animation) ★  ·  has: devastating
+- Achoo (Shorts)  ·  has: —
+- Age of Sail (Shorts)  ·  has: —
+- Ani*Kuri15 (Animated Series)  ·  has: —
+- Animowana historia Polski (Shorts)  ·  has: —
+- Another Day of Life (Feature Animation)  ·  has: —
+- Attack on Titan (Animated Series) ★  ·  has: impact intense
+- Avatar: The Last Airbender (Animated Series) ★  ·  has: writing
+- Avatar: The Way of Water (Movies)  ·  has: —
+- BURN-E (Shorts)  ·  has: —
+- Back to the Moon (Shorts)  ·  has: —
+- Bakemono no Ko (Movies)  ·  has: —
+- Bao (Shorts)  ·  has: —
+- Battle Angel Alita (OVA) (Animated Series) ★  ·  has: —
+- Berserk (1997) (Animated Series) ★  ·  has: devastating intense
+- Black Lagoon (Animated Series) ★  ·  has: style thrilling
+- Black Lagoon: The Second Barrage (Animated Series)  ·  has: —
+- Blind Vaysha (Shorts)  ·  has: —
+- Blok (Shorts)  ·  has: —
+- Boundin' (Shorts)  ·  has: —
+- Carmen Sandiego (Animated Series)  ·  has: —
+- Carole & Tuesday (Animated Series)  ·  has: —
+- Cars 2 (Feature Animation)  ·  has: —
+- Cars 3 (Feature Animation)  ·  has: —
+- Castle in the Sky (Feature Animation) ★  ·  has: atmosphere
+- Coco (Feature Animation)  ·  has: devastating score
+- Colorful (Feature Animation) ★  ·  has: devastating
+- Cowboy Bebop (Animated Series) ★  ·  has: score style
+- Cowboy Bebop: Tengoku no Tobira (Feature Animation)  ·  has: —
+- Cyberpunk: Edgerunners (Animated Series) ★  ·  has: impact style
+- Danny Boy (Shorts)  ·  has: —
+- Day & Night (Shorts)  ·  has: —
+- Deep Dance (Shorts)  ·  has: —
+- Disenchantment (Animated Series)  ·  has: —
+- Duck Amuck (Shorts)  ·  has: funny
+- Duet (Shorts)  ·  has: —
+- Dug Days (Animated Series)  ·  has: —
+- Elemental (Movies)  ·  has: —
+- Elfen Lied (Animated Series) ★  ·  has: intense
+- Evangelion Shin Gekijō-ban Q Quickening (Movies)  ·  has: —
+- Evangelion Shin Gekijōban: Ha (Movies)  ·  has: —
+- Evangelion Shin Gekijōban: Jo (Movies)  ·  has: —
+- Everything Will Be Ok (Shorts)  ·  has: —
+- Fantastic Mr. Fox (Movies)  ·  has: —
+- Fate/Stay Night: Heaven's Feel I. Presage Flower (Feature Animation)  ·  has: —
+- Felidae (Feature Animation)  ·  has: —
+- Finding Dory (Feature Animation)  ·  has: —
+- For the Birds (Shorts)  ·  has: —
+- Frankenweenie (Feature Animation)  ·  has: —
+- Franz Kafka (Shorts)  ·  has: —
+- Fullmetal Alchemist: Brotherhood (Animated Series) ★  ·  has: cerebral writing
+- Funan (Feature Animation)  ·  has: —
+- Garden Party (Shorts)  ·  has: —
+- Get a Horse! (Shorts)  ·  has: —
+- Ghost Hound (Animated Series) ★  ·  has: atmosphere horrifying impact
+- Ghost in the Shell: SAC (Animated Series) ★  ·  has: cerebral cognitive writing
+- Gurren Lagann (Animated Series) ★  ·  has: impact thrilling
+- Haibane Renmei (Animated Series) ★  ·  has: atmosphere
+- Happiness (Shorts)  ·  has: —
+- Hellsing Ultimate (Animated Series) ★  ·  has: intense style
+- Hilda (Animated Series) ★  ·  has: atmosphere
+- Hinterland (Shorts) ★  ·  has: —
+- Hors de l'eau (Shorts)  ·  has: —
+- How to Hook Up Your Home Theater (Shorts)  ·  has: —
+- Hōhokekyo Tonari no Yamada-kun (Movies)  ·  has: —
+- I Am So Proud of You (Shorts)  ·  has: —
+- In This Corner of the World (Feature Animation) ★  ·  has: devastating
+- In the Fall (Shorts) ★  ·  has: impact
+- Incredibles 2 (Feature Animation)  ·  has: —
+- Inner Workings (Shorts)  ·  has: —
+- Invincible (Animated Series) ★  ·  has: gem intense
+- It's Such a Beautiful Day (Feature Animation)  ·  has: —
+- It's Such a Beautiful Day (Shorts)  ·  has: —
+- Jason and the Argonauts (Movies)  ·  has: —
+- Jin-Roh: The Wolf Brigade (Feature Animation) ★  ·  has: atmosphere devastating
+- Jin-Rō (Movies)  ·  has: devastating
+- Johnny Express (Shorts)  ·  has: —
+- Juste de l'eau (Shorts)  ·  has: —
+- Kanojo to Kanojo no Neko (Shorts)  ·  has: —
+- Karigurashi no Arrietty (Feature Animation)  ·  has: —
+- Kaze tachinu (Feature Animation)  ·  has: devastating
+- Kellerkind (Shorts)  ·  has: —
+- Kite (Feature Animation) ★  ·  has: intense
+- Kiwi! (Shorts) ★  ·  has: devastating singular
+- Klaus (Feature Animation)  ·  has: —
+- KonoSuba: Legend of Crimson (Feature Animation) ★  ·  has: funny
+- Kreski i kropki (Shorts)  ·  has: —
+- Lebensader (Shorts)  ·  has: —
+- Lifted (Shorts)  ·  has: —
+- Little Quentin (Shorts)  ·  has: —
+- Logorama (Shorts)  ·  has: —
+- Loom (Shorts)  ·  has: —
+- Lorenzo (Shorts)  ·  has: —
+- Lost & Found (Shorts)  ·  has: —
+- Lou (Shorts)  ·  has: —
+- Lucky Day Forever (Shorts)  ·  has: —
+- Lupin III: Cagliostro no Shiro (Feature Animation)  ·  has: —
+- Lykantropia (Shorts)  ·  has: —
+- Madagascar (Feature Animation)  ·  has: —
+- Madame Tutli-Putli (Shorts)  ·  has: —
+- Made in Abyss (Animated Series) ★  ·  has: atmosphere devastating horrifying
+- Made in Abyss: Fukaki Tamashii no Reimei (Feature Animation)  ·  has: —
+- Marcel the Shell with Shoes On (Movies)  ·  has: —
+- Mały western (Movies)  ·  has: —
+- Mercury Bird (Shorts)  ·  has: —
+- Mest kinematograficheskogo operatora (Shorts)  ·  has: —
+- Metamorfoza (Shorts)  ·  has: —
+- Missing Link (Feature Animation)  ·  has: —
+- Moana (Feature Animation)  ·  has: —
+- Mobile (Shorts)  ·  has: —
+- Mutafukaz (Feature Animation)  ·  has: —
+- My Life as a Zucchini (Feature Animation) ★  ·  has: devastating
+- Myth: A Frozen Tale (Shorts)  ·  has: —
+- Neko no ongaeshi (Feature Animation)  ·  has: —
+- Neon Genesis Evangelion (Animated Series) ★  ·  has: cerebral devastating
+- Night on the Galactic Railroad (Feature Animation) ★  ·  has: atmosphere impact
+- Oh Sheep! (Shorts)  ·  has: —
+- One Small Step (Shorts)  ·  has: devastating
+- Onward (Feature Animation)  ·  has: —
+- Out (Shorts)  ·  has: —
+- Over the Moon (Feature Animation)  ·  has: —
+- Paperman (Shorts)  ·  has: —
+- Paranoia Agent (Animated Series) ★  ·  has: horrifying impact mindbending singular style
+- Partly Cloudy (Shorts)  ·  has: —
+- Party Central (Shorts)  ·  has: —
+- Party Central (Shorts)  ·  has: —
+- Paths of Hate (Shorts)  ·  has: —
+- Pearl (Shorts)  ·  has: —
+- Persepolis (Feature Animation)  ·  has: —
+- Peter Rabbit 2: The Runaway (Movies)  ·  has: —
+- Piper (Shorts)  ·  has: —
+- Postrzyżyny (Shorts)  ·  has: —
+- Presto (Shorts)  ·  has: —
+- Psiconautas, los niños olvidados (Movies)  ·  has: —
+- Psycho-Pass (Animated Series) ★  ·  has: cerebral horrifying impact
+- Quest for Camelot (Feature Animation)  ·  has: —
+- Ralph Breaks the Internet (Feature Animation)  ·  has: —
+- Rango (Feature Animation)  ·  has: —
+- Ratatouille (Feature Animation)  ·  has: —
+- Rick and Morty (Animated Series) ★  ·  has: cerebral funny
+- Robot Carnival (Feature Animation)  ·  has: —
+- Royal Madness (Shorts)  ·  has: —
+- Samurai Champloo (Animated Series) ★  ·  has: score style
+- Samurai Jack (Animated Series)  ·  has: —
+- Sarusuberi: Miss Hokusai (Feature Animation)  ·  has: —
+- Scrambled (Shorts)  ·  has: —
+- Serial Experiments Lain (Animated Series) ★  ·  has: ahead cerebral mindbending
+- Shine (Shorts)  ·  has: —
+- Shrek (Feature Animation)  ·  has: —
+- Sleeping Beauty (Feature Animation)  ·  has: —
+- Some Thing (Shorts)  ·  has: —
+- Song of the Sea (Feature Animation)  ·  has: —
+- Sonny Boy (Animated Series) ★  ·  has: atmosphere gem
+- Spring (Shorts)  ·  has: —
+- Straume (Movies)  ·  has: —
+- Struggle: The Life and Lost Art of Szukalski (Movies)  ·  has: —
+- Sztuka spadania (Shorts)  ·  has: —
+- Tangled Ever After (Shorts)  ·  has: —
+- Terror in Resonance (Animated Series) ★  ·  has: atmosphere
+- The Bugs Bunny / Road-Runner Movie (Feature Animation)  ·  has: —
+- The Gloaming (Shorts)  ·  has: —
+- The Legend of Korra (Animated Series) ★  ·  has: devastating impact writing
+- The Lion King (Feature Animation)  ·  has: —
+- The Plague Dogs (Feature Animation) ★  ·  has: devastating
+- The Present (Shorts)  ·  has: devastating
+- The Princess and the Frog (Feature Animation)  ·  has: —
+- The Swallows of Kabul (Feature Animation) ★  ·  has: devastating
+- Trigun (Animated Series) ★  ·  has: funny thrilling
+- Watership Down (Feature Animation) ★  ·  has: impact
+
+## 😂 funny  (133)
+- 3 Idiots (Movies)  ·  has: —
+- A King in New York (Movies)  ·  has: —
+- Achoo (Shorts)  ·  has: —
+- Amator (Movies)  ·  has: —
+- Ani*Kuri15 (Animated Series)  ·  has: —
+- Anora (Movies)  ·  has: —
+- Ant-Man and the Wasp: Quantumania (Movies)  ·  has: —
+- Artistic Creation (Shorts)  ·  has: —
+- Baby Reindeer (TV)  ·  has: devastating intense
+- Babylon (Movies)  ·  has: —
+- Bad Boy Bubby (Movies)  ·  has: intense
+- Barbie (Movies)  ·  has: —
+- Barry (TV)  ·  has: —
+- Being John Malkovich (Movies)  ·  has: mindbending
+- Birdman (Movies)  ·  has: direction
+- Boundin' (Shorts)  ·  has: —
+- Breakfast at Tiffany's (Movies)  ·  has: —
+- Californication (TV)  ·  has: —
+- Cars 2 (Feature Animation)  ·  has: —
+- Cars 3 (Feature Animation)  ·  has: —
+- Challengers (Movies)  ·  has: —
+- Charlie and the Chocolate Factory (Movies)  ·  has: —
+- Chung hing sam lam (Movies)  ·  has: —
+- Clarkson (TV)  ·  has: —
+- Clerks. (Movies)  ·  has: —
+- Crackerjack (Movies)  ·  has: —
+- Day & Night (Shorts)  ·  has: —
+- Deadpool & Wolverine (Movies)  ·  has: —
+- Deadpool 2 (Movies)  ·  has: —
+- Dobrý voják Švejk (Movies)  ·  has: —
+- Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (Movies)  ·  has: —
+- Dzień świra (Movies)  ·  has: —
+- Elemental (Movies)  ·  has: —
+- Elles (Shorts)  ·  has: —
+- Everything Will Be Ok (Shorts)  ·  has: —
+- Fallen Angels (Movies)  ·  has: —
+- Fanatyk (Shorts)  ·  has: —
+- Fantastic Mr. Fox (Movies)  ·  has: —
+- Fear and Loathing in Las Vegas (Movies)  ·  has: singular style
+- Finding Dory (Feature Animation)  ·  has: —
+- For the Birds (Shorts)  ·  has: —
+- Frankenweenie (Feature Animation)  ·  has: —
+- Garden Party (Shorts)  ·  has: —
+- Get a Horse! (Shorts)  ·  has: —
+- Green Book (Movies)  ·  has: —
+- Guardians of the Galaxy Vol. 3 (Movies)  ·  has: —
+- Hair (Movies)  ·  has: —
+- Home Alone (Movies)  ·  has: —
+- How to Hook Up Your Home Theater (Shorts)  ·  has: —
+- Hōhokekyo Tonari no Yamada-kun (Movies)  ·  has: —
+- I Am So Proud of You (Shorts)  ·  has: —
+- I'm You, Dickhead (Shorts)  ·  has: —
+- In Bruges (Movies)  ·  has: —
+- In the Fall (Shorts) ★  ·  has: impact
+- Intouchables (Movies)  ·  has: —
+- It's Such a Beautiful Day (Feature Animation)  ·  has: —
+- James May: Our Man In... (TV)  ·  has: —
+- Joe Pera Talks with You (TV)  ·  has: —
+- Johnny Express (Shorts)  ·  has: —
+- Kamera o Tomeru na! (Movies)  ·  has: —
+- Klaus (Feature Animation)  ·  has: —
+- Kung Fury (Shorts)  ·  has: —
+- Kung fu (Movies)  ·  has: —
+- L'homme orchestre (Shorts)  ·  has: —
+- La Dolce Vita (Movies)  ·  has: style
+- La charcuterie mécanique (Shorts)  ·  has: —
+- La vita è bella (Movies)  ·  has: devastating
+- Lady Bird (Movies)  ·  has: writing
+- Le Repas fantastique (Shorts)  ·  has: —
+- Le voyage dans la lune (Shorts)  ·  has: —
+- Life of Brian (Movies)  ·  has: —
+- Lifted (Shorts)  ·  has: —
+- Little Quentin (Shorts)  ·  has: —
+- Lorenzo (Shorts)  ·  has: —
+- Lost in Translation (Movies)  ·  has: —
+- Lou (Shorts)  ·  has: —
+- Lupin III: Cagliostro no Shiro (Feature Animation)  ·  has: —
+- Madagascar (Feature Animation)  ·  has: —
+- Marcel the Shell with Shoes On (Movies)  ·  has: —
+- Mały western (Movies)  ·  has: —
+- Mest kinematograficheskogo operatora (Shorts)  ·  has: —
+- Mid90s (Movies)  ·  has: —
+- Missing Link (Feature Animation)  ·  has: —
+- Moana (Feature Animation)  ·  has: —
+- Mobile (Shorts)  ·  has: —
+- Monsieur Verdoux (Movies)  ·  has: writing
+- Moonrise Kingdom (Movies)  ·  has: style
+- Mr. Bean (TV)  ·  has: —
+- Muriel's Wedding (Movies)  ·  has: —
+- Mutafukaz (Feature Animation)  ·  has: —
+- My Best Friend's Birthday (Shorts)  ·  has: —
+- My Life as a Zucchini (Feature Animation) ★  ·  has: devastating
+- Mystery Train (Movies)  ·  has: —
+- Neko no ongaeshi (Feature Animation)  ·  has: —
+- Nie wiem (Shorts)  ·  has: —
+- Oh Sheep! (Shorts)  ·  has: —
+- Once Upon a Time ... in Hollywood (Movies)  ·  has: —
+- Onward (Feature Animation)  ·  has: —
+- Out (Shorts)  ·  has: —
+- Over the Moon (Feature Animation)  ·  has: —
+- Paddington in Peru (Movies)  ·  has: —
+- Paperman (Shorts)  ·  has: —
+- Partly Cloudy (Shorts)  ·  has: —
+- Peter Rabbit 2: The Runaway (Movies)  ·  has: —
+- Poor Things (Movies)  ·  has: —
+- Preacher (TV)  ·  has: —
+- Presto (Shorts)  ·  has: —
+- Quest for Camelot (Feature Animation)  ·  has: —
+- Ralph Breaks the Internet (Feature Animation)  ·  has: —
+- Ratatouille (Feature Animation)  ·  has: —
+- Rental Family (Movies)  ·  has: —
+- Robot Carnival (Feature Animation)  ·  has: —
+- Scary Movie (Movies)  ·  has: —
+- Scott Pilgrim vs. the World (Movies)  ·  has: —
+- Scrambled (Shorts)  ·  has: —
+- Sedmikrásky (Movies)  ·  has: —
+- Shrek (Feature Animation)  ·  has: —
+- Stranger Than Paradise (Movies)  ·  has: —
+- Succession (TV)  ·  has: acting writing
+- Super Deluxe (Movies)  ·  has: —
+- Sztuka spadania (Shorts)  ·  has: —
+- T2: Trainspotting (Movies)  ·  has: —
+- The Big Short (Movies)  ·  has: writing
+- The Bugs Bunny / Road-Runner Movie (Feature Animation)  ·  has: —
+- The King of Comedy (Movies)  ·  has: —
+- The King of Staten Island (Movies)  ·  has: —
+- The Present (Shorts)  ·  has: devastating
+- The Princess and the Frog (Feature Animation)  ·  has: —
+- Thor: Love and Thunder (Movies)  ·  has: —
+- Three Colors: White (Movies) ★  ·  has: direction
+- Victor Victoria (Movies)  ·  has: —
+- Vinci (Movies)  ·  has: —
+- West Beyrouth (Movies)  ·  has: —
+
+## 🌀 mindbending  (3)
+- Casino (Movies)  ·  has: direction
+- Deadpool & Wolverine (Movies)  ·  has: —
+- Edge of Tomorrow (Movies)  ·  has: —
+
+## 💔 devastating  (8)
+- A Quiet Place Part II (Movies)  ·  has: —
+- Constantine (Movies)  ·  has: —
+- Der Untergang (Movies)  ·  has: —
+- Edge of Tomorrow (Movies)  ·  has: —
+- Hotel Chevalier (Shorts)  ·  has: —
+- Jôi-uchi: Hairyô tsuma shimatsu (Movies)  ·  has: —
+- Seppuku (Movies)  ·  has: cinematography direction intense
+- Serial Experiments Lain (Animated Series) ★  ·  has: ahead cerebral mindbending
+
+## 🩸 intense / brutal  (8)
+- Casino (Movies)  ·  has: direction
+- Edge of Tomorrow (Movies)  ·  has: —
+- Inglourious Basterds (Movies)  ·  has: style writing
+- Narcos (TV)  ·  has: —
+- Ningen no joken I (Movies)  ·  has: devastating
+- Once Upon a Time in America (Movies)  ·  has: direction score
+- The Bridge on the River Kwai (Movies)  ·  has: direction
+- Thor: Love and Thunder (Movies)  ·  has: —
+
+## ⚡ thrilling  (8)
+- A Better Tomorrow (Movies)  ·  has: —
+- Cars 2 (Feature Animation)  ·  has: —
+- Inception (Movies)  ·  has: mindbending
+- Komornik (Movies)  ·  has: —
+- Making a Murderer (TV)  ·  has: —
+- Point Blank (Movies)  ·  has: —
+- Public Enemies (Movies)  ·  has: —
+- Vinci (Movies)  ·  has: —
+

@@ -23282,5 +23282,6388 @@ window.CULTURE_OMDB = {
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
+ },
+ "imp-f-10032160": {
+  "Title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+  "Year": "2023",
+  "Rated": "PG",
+  "Released": "02 Aug 2023",
+  "Runtime": "99 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Jeff Rowe, Kyler Spears",
+  "Writer": "Seth Rogen, Evan Goldberg, Jeff Rowe",
+  "Actors": "Micah Abbey, Shamon Brown Jr., Nicolas Cantu",
+  "Plot": "The Turtle brothers work to earn the love of New York City while facing down an army of mutants.",
+  "Language": "English",
+  "Country": "Canada, United States",
+  "Awards": "1 win & 75 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNjM5MDY3YWUtZTkzMS00NzU1LWI1MWUtYmVkMzI3YjM5MmUyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "95%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "74/100"
+   }
+  ],
+  "Metascore": "74",
+  "imdbRating": "7.2",
+  "imdbVotes": "77,301",
+  "imdbID": "tt8589698",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$118,700,272",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tenacious-d-in-the-pick-of-destiny": {
+  "Title": "Tenacious D in the Pick of Destiny",
+  "Year": "2006",
+  "Rated": "R",
+  "Released": "22 Nov 2006",
+  "Runtime": "94 min",
+  "Genre": "Adventure, Comedy, Music",
+  "Director": "Liam Lynch",
+  "Writer": "Jack Black, Kyle Gass, Liam Lynch",
+  "Actors": "Jack Black, Kyle Gass, JR Reed",
+  "Plot": "This is the story of a friendship that changes the course of rock history forever, of the fateful collision of minds between JB and KG that led to the creation of the precedent-shattering band Tenacious D, and of the two heroes' quest to find the fabled Guitar Pick Of Destiny...",
+  "Language": "English",
+  "Country": "United States, Germany",
+  "Awards": "2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOGI1M2MwYzEtZmMwOC00NGUzLWIzMzYtOTczZWM3NDYwZTkyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "53%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "55/100"
+   }
+  ],
+  "Metascore": "55",
+  "imdbRating": "6.8",
+  "imdbVotes": "119,105",
+  "imdbID": "tt0365830",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$8,334,575",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tenet": {
+  "Title": "Tenet",
+  "Year": "2020",
+  "Rated": "PG-13",
+  "Released": "03 Sep 2020",
+  "Runtime": "150 min",
+  "Genre": "Action, Sci-Fi, Thriller",
+  "Director": "Christopher Nolan",
+  "Writer": "Christopher Nolan",
+  "Actors": "John David Washington, Robert Pattinson, Elizabeth Debicki",
+  "Plot": "In a twilight world of international espionage, an unnamed CIA operative, known as The Protagonist, is recruited by a mysterious organization called Tenet to participate in a global assignment that unfolds beyond real time. The mission: prevent Andrei Sator, a renegade Russian oligarch with precognitive abilities, from starting World War III. The Protagonist will soon master the art of \"time inversion\" as a way of countering the threat that is to come.",
+  "Language": "English",
+  "Country": "United Kingdom, United States",
+  "Awards": "Won 1 Oscar. 49 wins & 135 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTIzNDIxMzktMzlkMi00MmUyLWFmMjQtZDgwMjBmOGJmNTI3XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "70%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "69/100"
+   }
+  ],
+  "Metascore": "69",
+  "imdbRating": "7.3",
+  "imdbVotes": "684,003",
+  "imdbID": "tt6723592",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$58,504,105",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tengoku-to-jigoku": {
+  "Title": "High and Low",
+  "Year": "1963",
+  "Rated": "Not Rated",
+  "Released": "26 Nov 1963",
+  "Runtime": "143 min",
+  "Genre": "Crime, Drama, Mystery",
+  "Director": "Akira Kurosawa",
+  "Writer": "Hideo Oguni, Ryûzô Kikushima, Eijirô Hisaita",
+  "Actors": "Toshirô Mifune, Yutaka Sada, Tatsuya Nakadai",
+  "Plot": "A wealthy businessman is told his son has been kidnapped and he will have to pay a very large sum for him to be returned safely. It is then discovered that his son is safe at home: the kidnapper took his chauffeur's son by accident. The kidnapper says this makes no difference: pay up or the child dies. This leaves him with a moral dilemma, as he really needs the money to conclude a very important business deal.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "3 wins & 3 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMGJiNzllYjktODAzNS00OGUzLTlmY2MtMjA2ZTZhYTY1OTc4XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "97%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "90/100"
+   }
+  ],
+  "Metascore": "90",
+  "imdbRating": "8.4",
+  "imdbVotes": "70,373",
+  "imdbID": "tt0057565",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$46,808",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tenk-no-shiro-laputa": {
+  "Title": "Castle in the Sky",
+  "Year": "1986",
+  "Rated": "PG",
+  "Released": "19 Jul 1991",
+  "Runtime": "124 min",
+  "Genre": "Animation, Adventure, Family",
+  "Director": "Hayao Miyazaki",
+  "Writer": "Hayao Miyazaki, Jonathan Swift",
+  "Actors": "Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui",
+  "Plot": "A young boy stumbles into a mysterious girl who floats down from the sky. The girl, Sheeta, was chased by pirates, army and government secret agents. In saving her life, they begin a high flying adventure that goes through all sorts of flying machines, eventually searching for Sheeta's identity in a floating castle of a lost civilization.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "1 win total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "78/100"
+   }
+  ],
+  "Metascore": "78",
+  "imdbRating": "8.0",
+  "imdbVotes": "196,825",
+  "imdbID": "tt0092067",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$523,664",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-animatrix": {
+  "Title": "The Animatrix: Kid's Story",
+  "Year": "2003",
+  "Rated": "N/A",
+  "Released": "03 Jun 2003",
+  "Runtime": "10 min",
+  "Genre": "Animation, Short, Action",
+  "Director": "Shin&apos;ichiro Watanabe",
+  "Writer": "Lana Wachowski, Lilly Wachowski, Shin&apos;ichiro Watanabe",
+  "Actors": "Clayton Watson, Keanu Reeves, Carrie-Anne Moss",
+  "Plot": "A teenager has dreams of falling that feel more real than his actual life. He turns to the internet for answers and receives some cryptic replies via his PC. In school his mobile phone rings despite being turned off, he answers to be told by Neo that \"they know you know and are coming for you\". The kid looks out the window to see men in dark suits coming for him and immediately flees on his skateboard.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTM1ZWVkYTQtY2Q3ZS00NmRhLWE0MmYtMWYyYTVkODYxYTNlXkEyXkFqcGc@._V1_QL75_UY562_CR348,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.0",
+  "imdbVotes": "54",
+  "imdbID": "tt39011030",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-artist": {
+  "Title": "The Artist",
+  "Year": "2011",
+  "Rated": "PG-13",
+  "Released": "20 Jan 2012",
+  "Runtime": "100 min",
+  "Genre": "Comedy, Drama, Romance",
+  "Director": "Michel Hazanavicius",
+  "Writer": "Michel Hazanavicius",
+  "Actors": "Jean Dujardin, Bérénice Bejo, John Goodman",
+  "Plot": "Outside a movie premiere, enthusiastic fan Peppy Miller literally bumps into the swashbuckling hero of the silent film, George Valentin. The star reacts graciously and Peppy plants a kiss on his cheek as they are surrounded by photographers. The headlines demand: \"Who's That Girl?\" and Peppy is inspired to audition for a dancing bit-part at the studio. However as Peppy slowly rises through the industry, the introduction of talking-pictures turns Valentin's world upside-down.",
+  "Language": "English, French",
+  "Country": "France, Belgium, United States",
+  "Awards": "Won 5 Oscars. 162 wins & 204 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYjEwOGZmM2QtNjY4Mi00NjI0LTkyZjItZDEzZGI1YTEzMDg1XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "95%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "89/100"
+   }
+  ],
+  "Metascore": "89",
+  "imdbRating": "7.8",
+  "imdbVotes": "254,736",
+  "imdbID": "tt1655442",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$44,671,682",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-39532": {
+  "Title": "The Awful Truth",
+  "Year": "1937",
+  "Rated": "Approved",
+  "Released": "21 Oct 1937",
+  "Runtime": "90 min",
+  "Genre": "Comedy, Romance",
+  "Director": "Leo McCarey",
+  "Writer": "Viña Delmar, Arthur Richman, Sidney Buchman",
+  "Actors": "Irene Dunne, Cary Grant, Ralph Bellamy",
+  "Plot": "Before their divorce becomes final, Jerry and Lucy Warriner both do their best to ruin each other's plans for remarriage, Jerry to haughty socialite Barbara Vance, she to oil-rich bumpkin Daniel Leeson. Among their strategies: Jerry's court-decreed visitation rights with Mr. Smith, their pet fox terrier, and Lucy doing her most flamboyant Dixie Belle Lee impersonation as Jerry's brassy \"sister\" before his prospective bride's scandalized family.",
+  "Language": "English, French, Italian",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 7 wins & 5 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzMwMTU0MTk2Nl5BMl5BanBnXkFtZTgwMTUyMjkzMjE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "91%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "87/100"
+   }
+  ],
+  "Metascore": "87",
+  "imdbRating": "7.6",
+  "imdbVotes": "22,866",
+  "imdbID": "tt0028597",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-bad-guys": {
+  "Title": "The Bad Guys",
+  "Year": "2022",
+  "Rated": "PG",
+  "Released": "22 Apr 2022",
+  "Runtime": "100 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Pierre Perifel",
+  "Writer": "Aaron Blabey, Etan Cohen",
+  "Actors": "Sam Rockwell, Marc Maron, Awkwafina",
+  "Plot": "After a lifetime of legendary heists, notorious criminals Mr. Wolf, Mr. Snake, Mr. Piranha, Mr. Shark, and Ms. Tarantula are finally caught. To avoid a prison sentence, the animal outlaws must pull off their most challenging con yet: becoming model citizens. Under the tutelage of their mentor, Professor Marmalade, the dubious gang sets out to fool the world that they're turning good. But could any of them be considering turning good for real?",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "2 wins & 30 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODNlYmQzY2MtZWZiZS00Y2I0LTkwNjItNjg3MjY5YTFkNWI3XkEyXkFqcGc@._V1_QL75_UX380_CR0,20,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "87%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "64/100"
+   }
+  ],
+  "Metascore": "64",
+  "imdbRating": "6.9",
+  "imdbVotes": "79,744",
+  "imdbID": "tt8115900",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$97,459,240",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-10066259": {
+  "Title": "The Bad Guys 2",
+  "Year": "2025",
+  "Rated": "PG",
+  "Released": "01 Aug 2025",
+  "Runtime": "104 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Pierre Perifel, JP Sans",
+  "Writer": "Yoni Brenner, Etan Cohen, Aaron Blabey",
+  "Actors": "Sam Rockwell, Marc Maron, Awkwafina",
+  "Plot": "The Bad Guys are struggling to find trust and acceptance in their newly minted lives as Good Guys, when they are pulled out of retirement and forced to do \"one last job\" by an all-female squad of criminals.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "3 wins & 22 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BY2YwODhmODctMjE2OS00Y2EyLWEyZTEtOGU3ODk5MGIzYmU1XkEyXkFqcGc@._V1_QL75_UX380_CR0,20,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "87%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "64/100"
+   }
+  ],
+  "Metascore": "64",
+  "imdbRating": "7.0",
+  "imdbVotes": "27,455",
+  "imdbID": "tt30017619",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$82,593,605",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-banshees-of-inisherin": {
+  "Title": "The Banshees of Inisherin",
+  "Year": "2022",
+  "Rated": "R",
+  "Released": "04 Nov 2022",
+  "Runtime": "114 min",
+  "Genre": "Comedy, Drama",
+  "Director": "Martin McDonagh",
+  "Writer": "Martin McDonagh",
+  "Actors": "Colin Farrell, Brendan Gleeson, Kerry Condon",
+  "Plot": "Set on a remote island off the west coast of Ireland, THE BANSHEES OF INISHERIN follows lifelong friends Pádraic (Colin Farrell) and Colm (Brendan Gleeson), who find themselves at an impasse when Colm unexpectedly puts an end to their friendship. A stunned Pádraic, aided by his sister Siobhan (Kerry Condon) and troubled young islander Dominic (Barry Keoghan), endeavours to repair the relationship, refusing to take no for an answer. But Pádraic's repeated efforts only strengthen his former friend's resolve and when Colm delivers a desperate ultimatum, events swiftly escalate, with shocking consequences.",
+  "Language": "English, Latin",
+  "Country": "Ireland, United Kingdom, United States",
+  "Awards": "Nominated for 9 Oscars. 150 wins & 375 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_QL75_UX380_CR0,8,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "87/100"
+   }
+  ],
+  "Metascore": "87",
+  "imdbRating": "7.6",
+  "imdbVotes": "296,473",
+  "imdbID": "tt11813216",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$10,582,266",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-10014243": {
+  "Title": "The Bear",
+  "Year": "2022–",
+  "Rated": "TV-MA",
+  "Released": "23 Jun 2022",
+  "Runtime": "N/A",
+  "Genre": "Comedy, Drama",
+  "Director": "N/A",
+  "Writer": "Christopher Storer",
+  "Actors": "Jeremy Allen White, Ebon Moss-Bachrach, Ayo Edebiri",
+  "Plot": "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "Won 21 Primetime Emmys. 115 wins & 209 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYWZhNDZiMzAtZmZlYS00MWFmLWE2MWEtNDAxZTZiN2U4Y2U2XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.5",
+  "imdbVotes": "304,651",
+  "imdbID": "tt14452776",
+  "Type": "series",
+  "totalSeasons": "5",
+  "Response": "True"
+ },
+ "imp-f-1320": {
+  "Title": "The Birds",
+  "Year": "1963",
+  "Rated": "PG-13",
+  "Released": "29 Mar 1963",
+  "Runtime": "119 min",
+  "Genre": "Drama, Horror, Mystery",
+  "Director": "Alfred Hitchcock",
+  "Writer": "Daphne Du Maurier, Evan Hunter",
+  "Actors": "Rod Taylor, Tippi Hedren, Jessica Tandy",
+  "Plot": "Melanie Daniels is the modern rich socialite, part of the jet-set who always gets what she wants. When lawyer Mitch Brenner sees her in a pet shop, he plays something of a practical joke on her, and she decides to return the favor. She drives about an hour north of San Francisco to Bodega Bay, where Mitch spends the weekends with his mother Lydia and younger sister Cathy. Soon after her arrival, however, the birds in the area begin to act strangely. A seagull attacks Melanie as she is crossing the bay in a small boat, and then, Lydia finds her neighbor dead, obviously the victim of a bird attack. Soon, birds in the hundreds and thousands are attacking anyone they find out of doors. There is no explanation as to why this might be happening, and as the birds continue their vicious attacks, survival becomes the priority.",
+  "Language": "English, Latin",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 5 wins & 7 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTAxNDA1ODc5MDleQTJeQWpwZ15BbWU4MDg2MDA4OTEx._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "95%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "90/100"
+   }
+  ],
+  "Metascore": "90",
+  "imdbRating": "7.6",
+  "imdbVotes": "218,791",
+  "imdbID": "tt0056869",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-butterfly-effect": {
+  "Title": "The Butterfly Effect",
+  "Year": "2004",
+  "Rated": "R",
+  "Released": "23 Jan 2004",
+  "Runtime": "113 min",
+  "Genre": "Drama, Sci-Fi, Thriller",
+  "Director": "Eric Bress, J. Mackye Gruber",
+  "Writer": "J. Mackye Gruber, Eric Bress",
+  "Actors": "Ashton Kutcher, Amy Smart, Melora Walters",
+  "Plot": "As a child, Evan Treborn was afflicted with blackouts where he would be in one place one minute and then another the next, remembering absolutely nothing in-between. Now all grown up and in college, he decides to read from an old journal he wrote to remember stuff that might have happened in the in-between, and suddenly finds himself back at a certain point in his life. He realizes that those blackouts he had were actually empty spaces of time he had to fill up later in life. Attempting to use this ability to undo unpleasant past events, Evan starts to find that every time he goes back and tries to fix things, he ends up making everything worse. How can he prevent more tragedies from happening and save the one girl he ever loved, Kayleigh (Amy Smart)?",
+  "Language": "English",
+  "Country": "United States, Canada",
+  "Awards": "1 win & 8 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZDk0ZDJiODEtNWM2ZC00OWYxLWExN2YtNTFlNjI4NTVmZmZmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "34%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "30/100"
+   }
+  ],
+  "Metascore": "30",
+  "imdbRating": "7.6",
+  "imdbVotes": "553,359",
+  "imdbID": "tt0289879",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$57,938,693",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe": {
+  "Title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+  "Year": "2005",
+  "Rated": "PG",
+  "Released": "09 Dec 2005",
+  "Runtime": "143 min",
+  "Genre": "Adventure, Family, Fantasy",
+  "Director": "Andrew Adamson",
+  "Writer": "Ann Peacock, Andrew Adamson, Christopher Markus",
+  "Actors": "Tilda Swinton, Georgie Henley, William Moseley",
+  "Plot": "Four children from the same family have to leave their town because of the bombings of WWII. A woman and a professor take the children to their house. While playing a game of hide-and-seek, the youngest member of the family, Lucy, finds a wardrobe to hide in. She travels back and back into the wardrobe and finds a place named Narnia. After going in twice, the four children go in together for the last time. They battle wolves, meet talking animals, encounter an evil white witch and meet a magnificent lion named Aslan. Will this be the end of their journey to Narnia or will they stay?",
+  "Language": "English, German, Brazilian Sign ",
+  "Country": "United Kingdom, United States",
+  "Awards": "Won 1 Oscar. 18 wins & 46 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTc0NTUwMTU5OV5BMl5BanBnXkFtZTcwNjAwNzQzMw@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "76%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "75/100"
+   }
+  ],
+  "Metascore": "75",
+  "imdbRating": "6.9",
+  "imdbVotes": "450,246",
+  "imdbID": "tt0363771",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$291,710,957",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-circus": {
+  "Title": "The Circus",
+  "Year": "1928",
+  "Rated": "G",
+  "Released": "29 Jan 1928",
+  "Runtime": "72 min",
+  "Genre": "Comedy, Family, Romance",
+  "Director": "Charles Chaplin",
+  "Writer": "Charles Chaplin",
+  "Actors": "Charles Chaplin, Merna Kennedy, Al Ernest Garcia",
+  "Plot": "The Tramp finds himself at a circus where he is promptly chased around by the police who think he is a pickpocket. Running into the Bigtop, he is an accidental sensation with his hilarious efforts to elude the police. The circus owner immediately hires him, but discovers that the Tramp cannot be funny on purpose, so he takes advantage of the situation by making the Tramp a janitor who just happens to always be in the Bigtop at showtime. Unaware of this exploitation, the Tramp falls for the owner's lovely acrobatic stepdaughter, who is abused by her father. His chances seem good, until a dashing rival comes in and Charlie feels he has to compete with him.",
+  "Language": "None, English",
+  "Country": "United States",
+  "Awards": "3 wins total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZjNhZWY4YjgtOTI2Zi00NWZlLWIyNDItNGY0MzhhNmUxNTkyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "97%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "90/100"
+   }
+  ],
+  "Metascore": "90",
+  "imdbRating": "8.1",
+  "imdbVotes": "38,179",
+  "imdbID": "tt0018773",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-conversation": {
+  "Title": "The Conversation",
+  "Year": "1974",
+  "Rated": "PG",
+  "Released": "12 Apr 1974",
+  "Runtime": "113 min",
+  "Genre": "Drama, Mystery, Thriller",
+  "Director": "Francis Ford Coppola",
+  "Writer": "Francis Ford Coppola",
+  "Actors": "Gene Hackman, John Cazale, Allen Garfield",
+  "Plot": "Harry Caul is a devout Catholic and a lover of jazz music who plays his saxophone while listening to his jazz records. He is a San Francisco-based electronic surveillance expert who owns and operates his own small surveillance business. He is renowned within the profession as being the best, one who designs and constructs his own surveillance equipment. He is an intensely private and solitary man in both his personal and professional life, which especially irks Stan, his business associate who often feels shut out of what is happening with their work. This privacy, which includes not letting anyone into his apartment and always telephoning his clients from pay phones is, in part, intended to control what happens around him. His and Stan's latest job (a difficult one) is to record the private discussion of a young couple meeting in crowded and noisy Union Square. The arrangement with his client, known only to him as \"the director\", is to provide the audio recording of the discussion and photographs of the couple directly to him alone in return for payment. Based on circumstances with the director's assistant, Martin Stett, and what Harry ultimately hears on the recording, Harry believes that the lives of the young couple are in jeopardy. Harry used to be detached from what he recorded, but is now concerned ever since the deaths of three people that were the direct result of a previous audio recording he made for another job. Harry not only has to decide if he will turn the recording over to the director, but also if he will try and save the couple's lives using information from the recording. As Harry goes on a quest to find out what exactly is happening on this case, he finds himself in the middle of his worst nightmare.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 3 Oscars. 14 wins & 17 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4OTVmMzgtNTBkYi00NjI1LWIzOWItNGIwNTM1ZTEzMzc5XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "88/100"
+   }
+  ],
+  "Metascore": "88",
+  "imdbRating": "7.7",
+  "imdbVotes": "133,330",
+  "imdbID": "tt0071360",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$4,852,199",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-10020414": {
+  "Title": "The Creator",
+  "Year": "2023",
+  "Rated": "PG-13",
+  "Released": "29 Sep 2023",
+  "Runtime": "133 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "Gareth Edwards",
+  "Writer": "Gareth Edwards, Chris Weitz",
+  "Actors": "John David Washington, Madeleine Yuna Voyles, Gemma Chan",
+  "Plot": "Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the robots' secret weapon to end the conflict, an AI in the form of a child.",
+  "Language": "English, Thai",
+  "Country": "United States, Japan, Cambodia",
+  "Awards": "Nominated for 2 Oscars. 13 wins & 49 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDkxMTUxOTQtYzM4Yi00YzA2LTgzOTYtNDg2NTliODE0ZTRjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "67%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "63/100"
+   }
+  ],
+  "Metascore": "63",
+  "imdbRating": "6.7",
+  "imdbVotes": "194,415",
+  "imdbID": "tt11858890",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$40,774,679",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-curious-case-of-benjamin-button": {
+  "Title": "The Curious Case of Benjamin Button",
+  "Year": "2008",
+  "Rated": "PG-13",
+  "Released": "25 Dec 2008",
+  "Runtime": "166 min",
+  "Genre": "Drama, Fantasy, Romance",
+  "Director": "David Fincher",
+  "Writer": "Eric Roth, Robin Swicord, F. Scott Fitzgerald",
+  "Actors": "Brad Pitt, Cate Blanchett, Tilda Swinton",
+  "Plot": "On the day that Hurricane Katrina hits New Orleans, elderly Daisy Williams (nee Fuller) is on her deathbed in a New Orleans hospital. At her side is her adult daughter, Caroline. Daisy asks Caroline to read to her aloud the diary of Daisy's lifelong friend, Benjamin Button. Benjamin's diary recounts his entire extraordinary life, the primary unusual aspect of which was his aging backwards, being diagnosed with several aging diseases at birth and thus given little chance of survival, but who does survive and gets younger with time. Abandoned by his biological father, Thomas Button, after Benjamin's biological mother died in childbirth, Benjamin was raised by Queenie, a black woman and caregiver at a seniors home. Daisy's grandmother was a resident at that home, which is where she first met Benjamin. Although separated through the years, Daisy and Benjamin remain in contact throughout their lives, reconnecting in their forties when in age they finally match up. Some of the revelations in Benjamin's diary are difficult for Caroline to read, especially as it relates to the time past this reconnection between Benjamin and Daisy, when Daisy gets older and Benjamin grows younger into his childhood years.",
+  "Language": "English, Russian, French",
+  "Country": "United States",
+  "Awards": "Won 3 Oscars. 85 wins & 160 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYjIyNDExOWItM2Y4ZC00NmY3LWFlN2ItYTJlZDQ1NTJlZTUwXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "71%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "70/100"
+   }
+  ],
+  "Metascore": "70",
+  "imdbRating": "7.8",
+  "imdbVotes": "740,633",
+  "imdbID": "tt0421715",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$127,509,326",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-dam-keeper": {
+  "Title": "The Dam Keeper",
+  "Year": "2014",
+  "Rated": "TV-G",
+  "Released": "11 Oct 2014",
+  "Runtime": "18 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Robert Kondo, Daisuke 'Dice' Tsutsumi",
+  "Writer": "John Henry Hinkel, Robert Kondo, Daisuke 'Dice' Tsutsumi",
+  "Actors": "Lars Mikkelsen, Courtney Lockwood",
+  "Plot": "A young pig with an important job, and a new friend who changes everything. In a desolate future, one small town has survived because of a large windmill dam that acts as a fan to keep out pollution. The dam's operator, Pig, works tirelessly to keep the sails spinning and protect the town, despite abuse from classmates and an indifferent public. When a new student joins Pig's class, nothing will be the same again.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 6 wins & 4 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTQzNzU0NjQ3N15BMl5BanBnXkFtZTgwNDk4OTY2MjE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.9/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.9",
+  "imdbVotes": "2,535",
+  "imdbID": "tt3326262",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-dot-and-the-line-a-romance-in-lower-mathematics": {
+  "Title": "The Dot and the Line: A Romance in Lower Mathematics",
+  "Year": "1965",
+  "Rated": "Approved",
+  "Released": "31 Dec 1965",
+  "Runtime": "10 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Chuck Jones, Maurice Noble",
+  "Writer": "Norton Juster",
+  "Actors": "Robert Morley",
+  "Plot": "A simple line attempts to woo his true love, a dot, away from the unkempt squiggle she prefers. But he'll have to learn to bend before she'll notice him.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 1 win & 1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYTZkNjIyZGQtNWZkNS00ZTczLTg5OTgtMTJjNTdiNzE2MTZmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.5",
+  "imdbVotes": "1,738",
+  "imdbID": "tt0059122",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-escape": {
+  "Title": "The Escape",
+  "Year": "2016",
+  "Rated": "Not Rated",
+  "Released": "23 Oct 2016",
+  "Runtime": "11 min",
+  "Genre": "Short, Action, Drama",
+  "Director": "Neill Blomkamp",
+  "Writer": "Neill Blomkamp, David Carter",
+  "Actors": "Clive Owen, Jon Bernthal, Dakota Fanning",
+  "Plot": "The Driver is back, this time in the employ of ruthless mercenaries charged with delivering a living human clone: a teenage girl that knows only about the world she sees for the first time from what she's read. Pursued by the FBI, this is a job The Driver will see through to his own decisive conclusion.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZGE2YWQzODEtZDI2MS00ZWZkLWI3YWUtOGU4ZTY3YTM0ZjRhXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "1,700",
+  "imdbID": "tt6078822",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-expendables-2": {
+  "Title": "The Expendables 2",
+  "Year": "2012",
+  "Rated": "R",
+  "Released": "17 Aug 2012",
+  "Runtime": "103 min",
+  "Genre": "Action, Adventure, Thriller",
+  "Director": "Simon West",
+  "Writer": "Richard Wenk, Sylvester Stallone, Ken Kaufman",
+  "Actors": "Sylvester Stallone, Liam Hemsworth, Randy Couture",
+  "Plot": "Barney Ross is approached by CIA man Church, who wants him and his guns for hire to go to the former Soviet Union to retrieve something that was on a plane that crashed. Church doesn't tell him what he is getting. And Church sends a woman, Maggie with him to make sure he gets it. They find the plane and get the thing but some men take one of Barney's people hostage and the leader tells him to give him what they got or he'll kill his hostage. They give it to him but he kills his hostage anyway. Barney asks Maggie what was so important about that thing. She says that it showed the location of a Russian plutonium storage mine. Barney decides to track the man down and deal with him. They track them down and discover that the man they seek is Vilain who leads a group known as The Sangs and that they have taken all the men from the surrounding villages to work the mine.",
+  "Language": "English",
+  "Country": "United States, Germany, China",
+  "Awards": "4 wins & 5 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDMyOWU1N2EtNWU5ZC00MTdmLTgxNDItYjFhMmFlMmQyNzc4XkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "68%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "51/100"
+   }
+  ],
+  "Metascore": "51",
+  "imdbRating": "6.6",
+  "imdbVotes": "334,324",
+  "imdbID": "tt1764651",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$85,028,192",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-30588": {
+  "Title": "The Fast and the Furious",
+  "Year": "2001",
+  "Rated": "PG-13",
+  "Released": "22 Jun 2001",
+  "Runtime": "106 min",
+  "Genre": "Action, Crime, Thriller",
+  "Director": "Rob Cohen",
+  "Writer": "Ken Li, Gary Scott Thompson, Erik Bergquist",
+  "Actors": "Vin Diesel, Paul Walker, Michelle Rodriguez",
+  "Plot": "Los Angeles street racer Dominic Toretto falls under the suspicion of the LAPD as a string of high-speed electronics truck robberies rocks the area. Brian O'Connor, an officer of the LAPD, joins the ranks of Toretto's highly skilled racing crew undercover to convict Toretto. However, O'Connor finds himself both enamored with this new world and in love with Toretto's sister, Mia. As a rival racing crew gains strength, O'Connor must decide where his loyalty really lies.",
+  "Language": "English, Spanish",
+  "Country": "United States, Germany",
+  "Awards": "11 wins & 18 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZS00YjE4LWI1ODQtNjRkZGZlOTg2MGE1XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "55%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "58/100"
+   }
+  ],
+  "Metascore": "58",
+  "imdbRating": "6.8",
+  "imdbVotes": "452,738",
+  "imdbID": "tt0232500",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$144,745,925",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-fifth-element": {
+  "Title": "The Fifth Element",
+  "Year": "1997",
+  "Rated": "PG-13",
+  "Released": "09 May 1997",
+  "Runtime": "126 min",
+  "Genre": "Action, Adventure, Sci-Fi",
+  "Director": "Luc Besson",
+  "Writer": "Luc Besson, Robert Mark Kamen",
+  "Actors": "Bruce Willis, Milla Jovovich, Gary Oldman",
+  "Plot": "In the twenty-third century, the universe is threatened by evil. The only hope for mankind is the Fifth Element, who comes to Earth every five thousand years to protect the humans with four stones of the four elements: fire, water, Earth and air. A Mondoshawan spacecraft is bringing The Fifth Element back to Earth but it is destroyed by the evil Mangalores. However, a team of scientists use the DNA of the remains of the Fifth Element to rebuild the perfect being called Leeloo. She escapes from the laboratory and stumbles upon the taxi driver and former elite commando Major Korben Dallas that helps her to escape from the police. Leeloo tells him that she must meet Father Vito Cornelius to accomplish her mission. Meanwhile, the Evil uses the greedy and cruel Jean-Baptiste Emanuel Zorg and a team of mercenary Mangalores to retrieve the stones and avoid the protection of Leeloo. But the skilled Korben Dallas has fallen in love with Leeloo and decides to help her to retrieve the stones.",
+  "Language": "English, Swedish, German, Arabic, Egyptian (Ancient)",
+  "Country": "France, United Kingdom",
+  "Awards": "Nominated for 1 Oscar. 10 wins & 39 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODU4ZTE5MWYtNmY2MC00NDkyLTk0NDgtNTk5YjgzMzc4NmQwXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "71%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "52/100"
+   }
+  ],
+  "Metascore": "52",
+  "imdbRating": "7.6",
+  "imdbVotes": "539,521",
+  "imdbID": "tt0119116",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$63,820,180",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-219794": {
+  "Title": "The Flash",
+  "Year": "2023",
+  "Rated": "PG-13",
+  "Released": "16 Jun 2023",
+  "Runtime": "144 min",
+  "Genre": "Action, Adventure, Fantasy",
+  "Director": "Andy Muschietti",
+  "Writer": "Christina Hodson, John Francis Daley, Jonathan Goldstein",
+  "Actors": "Ezra Miller, Michael Keaton, Sasha Calle",
+  "Plot": "Barry Allen is struck by a bolt of lightning and thus, an extraordinary power is born inside him: The Speed Force. When he uses this power to run back in time and save his mother, he creates a world without heroes and General Zod has returned. To defeat him, his only hope rests in the hands of a retired Batman, another Barry and an imprisoned kryptonian.",
+  "Language": "English",
+  "Country": "United States, Canada, Australia, New Zealand",
+  "Awards": "5 wins & 7 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYmE2NzBjNGUtNTJiMy00N2UxLWEyYzMtYzFjODFhMGZlOTgzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "62%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "55/100"
+   }
+  ],
+  "Metascore": "55",
+  "imdbRating": "6.6",
+  "imdbVotes": "246,759",
+  "imdbID": "tt0439572",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$108,133,313",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-787309": {
+  "Title": "The Florida Project",
+  "Year": "2017",
+  "Rated": "R",
+  "Released": "10 Nov 2017",
+  "Runtime": "111 min",
+  "Genre": "Drama",
+  "Director": "Sean Baker",
+  "Writer": "Sean Baker, Chris Bergoch",
+  "Actors": "Brooklynn Prince, Bria Vinaite, Willem Dafoe",
+  "Plot": "Halley lives with her six year old daughter Moonee in a budget motel along one of the commercial strips catering to the Walt Disney World tourist clientele outside Orlando, Florida. Halley, who survives largely on welfare, has little respect for people, especially those who cross her, it an attitude that she has passed down to Moonee, who curses and gives the finger like her mother. Although the motel's policy is not to allow long term rentals, Bobby, the motel manager, has made arrangements for people like Halley to live there while not undermining the policy as he realizes that many such tenants have no place to go otherwise. Halley, Moonee and Moonee's friends, who live in the motel or others like it along the strip and who she often drags into her disruptive pranks, are often the bane of Bobby's existence, but while dealing with whatever problem arises, Bobby has a soft spot especially for the children and thus, by association, their parents, as he knows that Moonee and others like her are just children acting like a children under whatever guidance they have, Moonee who has less guidance than most. Although there are some lines which he will not tolerate to be crossed, Bobby lets most of the disruptive things that they do go, largely as long as it does not affect the bread and butter of the motel, namely the tourist trade. The summer in this collective is presented, when Moonee and her friends, such as Scooty, are out of school and are left largely to their own devices while self-absorbed Halley does whatever she wants, often just staying in the room watching TV. Halley is supposed to look after Scooty, the son of Halley's friend Ashley, they who live in the unit immediately underneath Halley and Moonee's, while Ashley is at work at a local diner. In turn, Ashley pilfers cooked meals from the diner to feed Halley, Moonee and Scooty. Over the course of the summer, Halley systematically begins to alienate one by one the people who are her unofficial support by responding with that disrespect to anything she feels is against her. As such, Halley begins to take more and more extreme measures to maintain the life she leads with Moonee.",
+  "Language": "English, Spanish, Portuguese",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 68 wins & 134 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDBhM2MxYjAtMWFiYy00MWMwLThkMDYtN2M1ZWY3NjkxNGExXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "92/100"
+   }
+  ],
+  "Metascore": "92",
+  "imdbRating": "7.6",
+  "imdbVotes": "141,797",
+  "imdbID": "tt5649144",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$5,904,366",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-817420": {
+  "Title": "The Gentlemen",
+  "Year": "2019",
+  "Rated": "R",
+  "Released": "24 Jan 2020",
+  "Runtime": "113 min",
+  "Genre": "Action, Comedy, Crime",
+  "Director": "Guy Ritchie",
+  "Writer": "Guy Ritchie, Ivan Atkinson, Marn Davies",
+  "Actors": "Matthew McConaughey, Charlie Hunnam, Michelle Dockery",
+  "Plot": "A talented American graduate of Oxford, using his unique skills, and audacity, creates a marijuana empire using the estates of impoverished British aristocrats. However, when he tries to sell his empire to a fellow American billionaire, a chain of events unfolds, involving blackmail, deception, mayhem and murder between street thugs, Russian oligarchs, Triad gangsters and gutter journalists.",
+  "Language": "English, Russian, Spanish, Chinese",
+  "Country": "United States, United Kingdom",
+  "Awards": "1 win & 4 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjE2ZjQ4ZGMtZjFhMi00NmI5LTliNjEtODczMWMxNjliZjgxXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "76%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "51/100"
+   }
+  ],
+  "Metascore": "51",
+  "imdbRating": "7.8",
+  "imdbVotes": "452,815",
+  "imdbID": "tt8367814",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$36,471,795",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-godfather": {
+  "Title": "The Godfather",
+  "Year": "1972",
+  "Rated": "R",
+  "Released": "24 Mar 1972",
+  "Runtime": "175 min",
+  "Genre": "Crime, Drama",
+  "Director": "Francis Ford Coppola",
+  "Writer": "Mario Puzo, Francis Ford Coppola",
+  "Actors": "Marlon Brando, Al Pacino, James Caan",
+  "Plot": "The Godfather \"Don\" Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WWII Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.",
+  "Language": "English, Italian, Latin",
+  "Country": "United States",
+  "Awards": "Won 3 Oscars. 31 wins & 31 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_QL75_UY562_CR8,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "9.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "97%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "100/100"
+   }
+  ],
+  "Metascore": "100",
+  "imdbRating": "9.2",
+  "imdbVotes": "2,222,804",
+  "imdbID": "tt0068646",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$136,381,073",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-grand-budapest-hotel": {
+  "Title": "The Grand Budapest Hotel",
+  "Year": "2014",
+  "Rated": "R",
+  "Released": "28 Mar 2014",
+  "Runtime": "99 min",
+  "Genre": "Comedy, Drama",
+  "Director": "Wes Anderson",
+  "Writer": "Stefan Zweig, Wes Anderson, Hugo Guinness",
+  "Actors": "Ralph Fiennes, F. Murray Abraham, Mathieu Amalric",
+  "Plot": "This movie recounts the adventures of M. Gustave, a legendary concierge at a famous European hotel between the wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend. The story involves the theft and recovery of a priceless Renaissance painting and the battle for an enormous family fortune - all against the backdrop of a suddenly and dramatically changing continent.",
+  "Language": "English, French, German",
+  "Country": "United States, Germany",
+  "Awards": "Won 4 Oscars. 137 wins & 227 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "92%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "88/100"
+   }
+  ],
+  "Metascore": "88",
+  "imdbRating": "8.1",
+  "imdbVotes": "968,286",
+  "imdbID": "tt2278388",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$59,301,324",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-great-hack": {
+  "Title": "The Great Hack",
+  "Year": "2019",
+  "Rated": "TV-MA",
+  "Released": "24 Jul 2019",
+  "Runtime": "114 min",
+  "Genre": "Documentary, Biography, History",
+  "Director": "Karim Amer, Jehane Noujaim",
+  "Writer": "Pedro Kos, Erin Barnett, Karim Amer",
+  "Actors": "Brittany Kaiser, David Carroll, Paul-Olivier Dehaye",
+  "Plot": "The Cambridge Analytica scandal is examined through the roles of several affected persons.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Primetime Emmy. 1 win & 4 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZDhmODFlMTQtYzU0YS00YTg4LWEyMTctZmRkZWYxMzgxMDFhXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "85%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "67/100"
+   }
+  ],
+  "Metascore": "67",
+  "imdbRating": "7.0",
+  "imdbVotes": "25,824",
+  "imdbID": "tt4736550",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-hangover": {
+  "Title": "The Hangover",
+  "Year": "2009",
+  "Rated": "R",
+  "Released": "05 Jun 2009",
+  "Runtime": "100 min",
+  "Genre": "Comedy",
+  "Director": "Todd Phillips",
+  "Writer": "Jon Lucas, Scott Moore",
+  "Actors": "Zach Galifianakis, Bradley Cooper, Justin Bartha",
+  "Plot": "Angelenos Doug Billings and Tracy Garner are about to get married. Two days before the wedding, the four men in the wedding party - Doug, Doug's two best buddies Phil Wenneck and Stu Price, and Tracy's brother Alan Garner - hop into Tracy's father's beloved Mercedes convertible for a 24-hour stag party to Las Vegas. Phil, a married high school teacher, has the same maturity level as his students when he's with his pals. Stu, a dentist, is worried about everything, especially what his controlling girlfriend Melissa thinks. Because she disapproves of traditional male bonding rituals, Stu has to lie to her about the stag, he telling her that they are going on a wine tasting tour in the Napa Valley. Regardless, he intends on eventually marrying her, against the advice and wishes of his friends. And Alan seems to be unaware of what are considered the social graces of the western world. The morning after their arrival in Las Vegas, they awaken in their hotel suite each with the worst hangover. None remembers what happened in the past twelve or so hours. The suite is in shambles. And certain things are in the suite that shouldn't be, and certain things that should be in the suite are missing. Probably the most important in the latter category is Doug. As Phil, Stu and Alan try to find Doug using only what little pieces of information they have at hand, they go on a journey of discovery of how certain things got into the suite and what happened to the missing items. However they are on a race for time as if they can't find Doug in the next few hours, they are going to have to explain to Tracy why they are not yet back in Los Angeles. And even worse, they may not find Doug at all before the wedding.",
+  "Language": "English",
+  "Country": "Germany, United States",
+  "Awards": "Nominated for 1 BAFTA Award13 wins & 25 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "79%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "73/100"
+   }
+  ],
+  "Metascore": "73",
+  "imdbRating": "7.7",
+  "imdbVotes": "922,266",
+  "imdbID": "tt1119646",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$277,339,746",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-highway-rat": {
+  "Title": "The Highway Rat",
+  "Year": "2017",
+  "Rated": "N/A",
+  "Released": "25 Dec 2017",
+  "Runtime": "25 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Jeroen Jaspaert",
+  "Writer": "Julia Donaldson, Jeroen Jaspaert, Axel Scheffler",
+  "Actors": "David Tennant, Rob Brydon, Frances de la Tour",
+  "Plot": "A greedy rat travels the highway in search of other animals' food.",
+  "Language": "English",
+  "Country": "United Kingdom",
+  "Awards": "3 wins & 2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2M1YzQzNDYtMTFjMC00Yjg1LTg5Y2YtNjk1MTIwYjliNDg2XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.6",
+  "imdbVotes": "1,396",
+  "imdbID": "tt7546096",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-hobbit-an-unexpected-journey": {
+  "Title": "The Hobbit: An Unexpected Journey",
+  "Year": "2012",
+  "Rated": "PG-13",
+  "Released": "14 Dec 2012",
+  "Runtime": "169 min",
+  "Genre": "Adventure, Fantasy",
+  "Director": "Peter Jackson",
+  "Writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
+  "Actors": "Martin Freeman, Ian McKellen, Richard Armitage",
+  "Plot": "Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's \"precious\" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know.",
+  "Language": "English",
+  "Country": "New Zealand, United States",
+  "Awards": "Nominated for 3 Oscars. 11 wins & 76 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "64%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "58/100"
+   }
+  ],
+  "Metascore": "58",
+  "imdbRating": "7.8",
+  "imdbVotes": "926,871",
+  "imdbID": "tt0903624",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$303,030,651",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-hurt-locker": {
+  "Title": "The Hurt Locker",
+  "Year": "2009",
+  "Rated": "R",
+  "Released": "31 Jul 2009",
+  "Runtime": "131 min",
+  "Genre": "Drama, Thriller, War",
+  "Director": "Kathryn Bigelow",
+  "Writer": "Mark Boal",
+  "Actors": "Jeremy Renner, Anthony Mackie, Brian Geraghty",
+  "Plot": "An intense portrayal of elite soldiers who have one of the most dangerous jobs in the world: disarming bombs in the heat of combat. When a new sergeant, James, takes over a highly trained bomb disposal team amidst violent conflict, he surprises his two subordinates, Sanborn and Eldridge, by recklessly plunging them into a deadly game of urban combat, behaving as if he's indifferent to death. As the men struggle to control their wild new leader, the city explodes into chaos, and James' true character reveals itself in a way that will change each man forever.",
+  "Language": "English, Arabic",
+  "Country": "United States, Luxembourg, Canada",
+  "Awards": "Won 6 Oscars. 125 wins & 130 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzgyMGM2YTItYzY2Yi00NDQ0LWE0M2EtMGUzYjFlMDgyY2M3XkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "95/100"
+   }
+  ],
+  "Metascore": "95",
+  "imdbRating": "7.5",
+  "imdbVotes": "496,169",
+  "imdbID": "tt0887912",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$17,017,811",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-illusionist": {
+  "Title": "The Illusionist",
+  "Year": "2006",
+  "Rated": "PG-13",
+  "Released": "01 Sep 2006",
+  "Runtime": "110 min",
+  "Genre": "Drama, Fantasy, Mystery",
+  "Director": "Neil Burger",
+  "Writer": "Neil Burger, Steven Millhauser",
+  "Actors": "Edward Norton, Jessica Biel, Paul Giamatti",
+  "Plot": "In late nineteenth century Vienna, renowned illusionist Eisenheim is reunited with the Duchess von Teschen when she is volunteered from the audience to participate in an illusion during one of his performances. Despite having not seen each other in fifteen years when they were teenagers, they almost immediately recognize each other as Eduard Abramovich and Sophie von Teschen, they who had a doomed romance at that time due to their class differences. The Duchess is soon to be wed to the Crown Prince Leopold in what would be for him a marriage solely in pursuit of power: overthrowing his father, the Emperor Leopold, as well as overtaking the Hungarian side of the empire. The Crown Prince is known to use violence against women if it suits his needs or purposes. As such, the Duchess, who realizes that she still loves Eisenheim and he her, can never leave the Crown Prince without it jeopardizing her life. After Eisenheim humiliates the Crown Prince at a private show which results in an incident between the Crown Prince and the Duchess, the battle between Eisenheim and the Crown Prince moves into the public performance realm, which many believe demonstrates Eisenheim's supernatural powers. Much of the work for the Crown Prince in the battle with Eisenheim is conducted by Chief Inspector Uhl, who would become the Chief of Police under the Crown Prince's reign. As such, Uhl may have ulterior motives in turning a blind eye to any unlawful act of the Crown Prince against Eisenheim or the Duchess.",
+  "Language": "English",
+  "Country": "United States, Czech Republic",
+  "Awards": "Nominated for 1 Oscar. 11 wins & 12 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzNmYmI4YWMtMGFkOS00ODVkLTg3MTEtOTExNDg3ZjQ0MGM3XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "74%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "68/100"
+   }
+  ],
+  "Metascore": "68",
+  "imdbRating": "7.5",
+  "imdbVotes": "402,986",
+  "imdbID": "tt0443543",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$39,868,642",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-770408": {
+  "Title": "The Invisible Man",
+  "Year": "2020",
+  "Rated": "R",
+  "Released": "28 Feb 2020",
+  "Runtime": "124 min",
+  "Genre": "Drama, Horror, Mystery",
+  "Director": "Leigh Whannell",
+  "Writer": "Leigh Whannell, H.G. Wells",
+  "Actors": "Elisabeth Moss, Oliver Jackson-Cohen, Harriet Dyer",
+  "Plot": "The film follows Cecilia, who receives the news of her abusive ex-boyfriend's suicide. She begins to re-build her life for the better. However, her sense of reality is put into question when she begins to suspect her deceased lover is not actually dead.",
+  "Language": "English",
+  "Country": "Australia, United States",
+  "Awards": "40 wins & 82 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYTM3NDJhZWUtZWM1Yy00ODk4LThjNmMtNDg3OGYzMGM2OGYzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "72/100"
+   }
+  ],
+  "Metascore": "72",
+  "imdbRating": "7.1",
+  "imdbVotes": "281,275",
+  "imdbID": "tt1051906",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$70,410,000",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-jungle-book": {
+  "Title": "The Jungle Book",
+  "Year": "1967",
+  "Rated": "Approved",
+  "Released": "18 Oct 1967",
+  "Runtime": "78 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Wolfgang Reitherman",
+  "Writer": "Larry Clemmons, Ralph Wright, Ken Anderson",
+  "Actors": "Phil Harris, Sebastian Cabot, Louis Prima",
+  "Plot": "Abandoned after an accident, baby Mowgli is taken and raised by a family of wolves. As the boy grows older, the wise panther Bagheera realizes he must be returned to his own kind in the nearby man-village. Baloo the bear, however, thinks differently, taking the young Mowgli under his wing and teaching him that living in the jungle is the best life there is. Bagheera realizes that Mowgli is in danger, particularly from Shere Khan the tiger who hates all people. When Baloo finally comes around, Mowgli runs off into the jungle where he survives a second encounter with Kaa the snake and finally, with Shere Khan. It's the sight of a pretty girl, however, that draws Mowgli to the nearby man-village and stay there.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 6 wins & 4 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNGE4M2NiZDktY2E2MC00ZTY5LWIyMDktZWIxNzQ2OWU2NmQzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "88%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "65/100"
+   }
+  ],
+  "Metascore": "65",
+  "imdbRating": "7.6",
+  "imdbVotes": "211,042",
+  "imdbID": "tt0061852",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$141,843,612",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-849662": {
+  "Title": "The Last of Us",
+  "Year": "2023–",
+  "Rated": "TV-MA",
+  "Released": "15 Jan 2023",
+  "Runtime": "18S min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "N/A",
+  "Writer": "Neil Druckmann, Craig Mazin",
+  "Actors": "Bella Ramsey, Pedro Pascal, Gabriel Luna",
+  "Plot": "20 years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal heartbreaking journey as they both must traverse the U.S. and depend on each other for survival.",
+  "Language": "English, Indonesian",
+  "Country": "Canada, United States",
+  "Awards": "Won 9 Primetime Emmys. 107 wins & 206 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYWI3ODJlMzktY2U5NC00ZjdlLWE1MGItNWQxZDk3NWNjN2RhXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.5",
+  "imdbVotes": "734,061",
+  "imdbID": "tt3581920",
+  "Type": "series",
+  "totalSeasons": "2",
+  "Response": "True"
+ },
+ "imp-f-the-last-wave": {
+  "Title": "The Last Wave",
+  "Year": "1977",
+  "Rated": "PG",
+  "Released": "18 Jan 1979",
+  "Runtime": "106 min",
+  "Genre": "Drama, Fantasy, Mystery",
+  "Director": "Peter Weir",
+  "Writer": "Peter Weir, Tony Morphett, Petru Popescu",
+  "Actors": "Richard Chamberlain, Olivia Hamnett, David Gulpilil",
+  "Plot": "A Sydney lawyer has more to worry about than higher-than-average rainfall when he is called upon to defend five Aboriginals in court. Determined to break their silence and discover the truth behind the hidden society he suspects lives in his city, the Lawyer is drawn further, and more intimately, into a prophesy that threatens a new Armageddon, wherein all the continent shall drown.",
+  "Language": "English, Italian, Aboriginal",
+  "Country": "Australia",
+  "Awards": "4 wins & 8 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2U4MGJkYjctNDA1YS00ODUwLWI4NDUtOTJiYzAzODQzMDcxXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "78%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "85/100"
+   }
+  ],
+  "Metascore": "85",
+  "imdbRating": "6.9",
+  "imdbVotes": "12,007",
+  "imdbID": "tt0076299",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$957",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-lego-batman-movie": {
+  "Title": "The Lego Batman Movie",
+  "Year": "2017",
+  "Rated": "PG",
+  "Released": "10 Feb 2017",
+  "Runtime": "104 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Chris McKay",
+  "Writer": "Seth Grahame-Smith, Chris McKenna, Erik Sommers",
+  "Actors": "Will Arnett, Michael Cera, Rosario Dawson",
+  "Plot": "There are big changes brewing in Gotham City, and if he wants to save the city from The Joker's hostile takeover, Batman may have to drop the lone vigilante thing, try to work with others and maybe, just maybe, learn to lighten up.",
+  "Language": "English",
+  "Country": "United States, Denmark, Australia",
+  "Awards": "13 wins & 68 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "89%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "75/100"
+   }
+  ],
+  "Metascore": "75",
+  "imdbRating": "7.3",
+  "imdbVotes": "190,619",
+  "imdbID": "tt4116284",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$175,936,671",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-lego-movie": {
+  "Title": "The Lego Movie",
+  "Year": "2014",
+  "Rated": "PG",
+  "Released": "07 Feb 2014",
+  "Runtime": "100 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Phil Lord, Christopher Miller",
+  "Writer": "Phil Lord, Christopher Miller, Dan Hageman",
+  "Actors": "Chris Pratt, Will Ferrell, Elizabeth Banks",
+  "Plot": "The LEGO Movie is a 3D animated film which follows lead character, Emmet a completely ordinary LEGO mini-figure who is identified as the most \"extraordinary person\" and the key to saving the Lego universe. Emmet and his friends go on an epic journey to stop the evil tyrant, Lord Business.",
+  "Language": "English",
+  "Country": "United States, Denmark, Australia, Norway",
+  "Awards": "Nominated for 1 Oscar. 72 wins & 67 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "83/100"
+   }
+  ],
+  "Metascore": "83",
+  "imdbRating": "7.7",
+  "imdbVotes": "411,857",
+  "imdbID": "tt1490017",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$257,966,122",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-little-mermaid": {
+  "Title": "The Little Mermaid",
+  "Year": "1989",
+  "Rated": "G",
+  "Released": "17 Nov 1989",
+  "Runtime": "83 min",
+  "Genre": "Animation, Adventure, Family",
+  "Director": "Ron Clements, John Musker",
+  "Writer": "John Musker, Ron Clements, Hans Christian Andersen",
+  "Actors": "Jodi Benson, Samuel E. Wright, Rene Auberjonois",
+  "Plot": "In Disney's beguiling animated romp, rebellious 16-year-old mermaid Ariel is fascinated with life on land. On one of her visits to the surface, which are forbidden by her controlling father, King Triton, she falls for a human prince. Determined to be with her new love, Ariel makes a dangerous deal with the sea witch Ursula to become human for three days. But when plans go awry for the star-crossed lovers, the king must make the ultimate sacrifice for his daughter.",
+  "Language": "English, French",
+  "Country": "United States",
+  "Awards": "Won 2 Oscars. 16 wins & 9 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNmQ3ODcyZGMtMjNlOS00YzhlLTg0YzAtZGVjNmQ0OTYyNDg0XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "92%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "88/100"
+   }
+  ],
+  "Metascore": "88",
+  "imdbRating": "7.6",
+  "imdbVotes": "309,826",
+  "imdbID": "tt0097757",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$111,543,479",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-lord-of-the-rings-the-fellowship-of-the-ring": {
+  "Title": "The Lord of the Rings: The Fellowship of the Ring",
+  "Year": "2001",
+  "Rated": "PG-13",
+  "Released": "19 Dec 2001",
+  "Runtime": "178 min",
+  "Genre": "Adventure, Drama, Fantasy",
+  "Director": "Peter Jackson",
+  "Writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+  "Actors": "Elijah Wood, Ian McKellen, Orlando Bloom",
+  "Plot": "An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to Mount Doom in order to destroy it. However, he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir, and his three Hobbit friends Merry, Pippin, and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign.",
+  "Language": "English, Sindarin",
+  "Country": "New Zealand, United States",
+  "Awards": "Won 4 Oscars. 126 wins & 127 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "91%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "92/100"
+   }
+  ],
+  "Metascore": "92",
+  "imdbRating": "8.9",
+  "imdbVotes": "2,203,785",
+  "imdbID": "tt0120737",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$325,873,309",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-magic-sword": {
+  "Title": "The Magic Sword",
+  "Year": "1962",
+  "Rated": "Approved",
+  "Released": "25 Jan 1962",
+  "Runtime": "80 min",
+  "Genre": "Adventure, Drama, Fantasy",
+  "Director": "Bert I. Gordon",
+  "Writer": "Bert I. Gordon, Bernard C. Schoenfeld",
+  "Actors": "Basil Rathbone, Estelle Winwood, Gary Lockwood",
+  "Plot": "George, the son of the sorceress Sybil, has been watching the beautiful Princess Helene from afar and is very much in love with her. When she is kidnapped by the evil wizard Lodac, the king her father announces that she will be given in marriage to whoever rescues her. The first to volunteer is Sir Branton who expects to undertake the task alone. George, over his mother's objections, also decides to save her and is accompanied by six ancient knights. The journey is perilous with Lodac placing a series of challenges before them. Many in the group do not survive but George must eventually face Lodac's greatest challenge - his dragon.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjRkYzNkNDMtZTJiMS00ZDE4LThhYWYtNzE5ZDNmNDM2MDNmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "4.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "29%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "4.8",
+  "imdbVotes": "2,767",
+  "imdbID": "tt0056211",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-magician-s-elephant": {
+  "Title": "The Magician's Elephant",
+  "Year": "2023",
+  "Rated": "PG",
+  "Released": "17 Mar 2023",
+  "Runtime": "99 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Wendy Rogers",
+  "Writer": "Martin Hynes, Kate DiCamillo",
+  "Actors": "Noah Jupe, Mandy Patinkin, Brian Tyree Henry",
+  "Plot": "follows Peter, who is searching for his long-lost sister. When he crosses paths with a fortune teller in the market square, he want to know, is his sister still alive? To get the answer, he must find a mysterious elephant and the magician who will conjure it, setting Peter off on a journey to complete three seemingly impossible tasks that will change the face of his town.",
+  "Language": "English",
+  "Country": "United States, Australia",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzc5ZjMxZmQtNTg5Ny00NjBlLWI3YzctMDA0ODFjNDY1ODAzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "66%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "53/100"
+   }
+  ],
+  "Metascore": "53",
+  "imdbRating": "6.6",
+  "imdbVotes": "6,572",
+  "imdbID": "tt2560092",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-maker": {
+  "Title": "The Maker",
+  "Year": "2011",
+  "Rated": "Not Rated",
+  "Released": "28 Aug 2012",
+  "Runtime": "6 min",
+  "Genre": "Animation, Short, Family",
+  "Director": "Christopher Kezelos",
+  "Writer": "Christopher Kezelos, Ziad Jamal",
+  "Actors": "N/A",
+  "Plot": "In his well-equipped and wondrous workshop, an industrious and gifted artisan creature prepares for his magnum opus. Without delay, the indefatigable creator begins working on his project, choosing meticulously the right components, totally immersed in a sparkling artistic crescendo. Soon, against the sands of time, the motivated maker will finally finish his creation, proud of his life's work.",
+  "Language": "None",
+  "Country": "Australia",
+  "Awards": "6 wins & 4 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTQzODYyMWUtNjc0MS00ZTQyLWE3YjItNzU3Yzc0NGRkYmUxXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.7",
+  "imdbVotes": "3,233",
+  "imdbID": "tt1969151",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-724735": {
+  "Title": "The Man in the High Castle",
+  "Year": "2015–2019",
+  "Rated": "TV-MA",
+  "Released": "15 Jan 2015",
+  "Runtime": "60 min",
+  "Genre": "Drama, Sci-Fi, Thriller",
+  "Director": "N/A",
+  "Writer": "Frank Spotnitz",
+  "Actors": "Alexa Davalos, Luke Kleintank, Rufus Sewell",
+  "Plot": "What would it be like if the Allied Powers had lost WWII, and Japan and Germany ruled the United States?",
+  "Language": "English, German, Japanese, Hebrew",
+  "Country": "United States, United Kingdom, Canada",
+  "Awards": "Won 2 Primetime Emmys. 10 wins & 58 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOGQyOWQ3YmUtYmU1MC00ZGZlLThhYTEtMTNiNWNhZjQwMGU3XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.9/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.9",
+  "imdbVotes": "121,266",
+  "imdbID": "tt1740299",
+  "Type": "series",
+  "totalSeasons": "4",
+  "Response": "True"
+ },
+ "imp-f-583006": {
+  "Title": "The Master",
+  "Year": "2012",
+  "Rated": "R",
+  "Released": "21 Sep 2012",
+  "Runtime": "138 min",
+  "Genre": "Drama",
+  "Director": "Paul Thomas Anderson",
+  "Writer": "Paul Thomas Anderson",
+  "Actors": "Joaquin Phoenix, Philip Seymour Hoffman, Amy Adams",
+  "Plot": "Following his discharge from the US Navy after WWII, Freddie Quell is having difficulties adjusting to non-military life partly due to his war experiences in the tropics. He has a violent temper. He is obsessed with sex, which is partly why he can't and won't commit to his teenaged girlfriend, Doris Solstad. And he is an alcoholic, drinking primarily concoctions he creates himself with dangerous ingredients. It is these factors in combination that lead to him being fired from one job after another, from department store portrait photographer to cabbage picker. Wandering one night in 1950 while drunk, he stumbles upon a yacht being used by Lancaster and Peggy Dodd, the yacht aboard which their daughter Elizabeth will get married. Feeling a connection to the stranger, Lancaster invites Freddie to stay aboard to work. In addition to that work, Lancaster indoctrinates him into his cult, named the Cause, which purports to do things as varied as cure serious maladies and create world peace. Peggy, Elizabeth and Elizabeth's husband Clark all subscribe to and support Lancaster's teachings. The only one of the Dodd family that doesn't is Lancaster and Peggy's son, Val Dodd, who believes his father is just making things up as he goes along. Because of being lost psychologically, Freddie is easy prey, he who is looking for something or someone to guide him to a higher plane. But as Freddie travels with the Dodd family as they spout the gospel, he and the Dodds may become at odds with each other if Freddie cannot or does not find from them and the Cause what he needs in life to survive emotionally.",
+  "Language": "English, Filipino",
+  "Country": "United States",
+  "Awards": "Nominated for 3 Oscars. 75 wins & 187 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NjQ5MzMwMF5BMl5BanBnXkFtZTcwMjczNTAzOA@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "85%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "86/100"
+   }
+  ],
+  "Metascore": "86",
+  "imdbRating": "7.1",
+  "imdbVotes": "200,699",
+  "imdbID": "tt1560747",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$16,377,274",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-menu": {
+  "Title": "The Menu",
+  "Year": "2022",
+  "Rated": "R",
+  "Released": "18 Nov 2022",
+  "Runtime": "107 min",
+  "Genre": "Comedy, Horror, Thriller",
+  "Director": "Mark Mylod",
+  "Writer": "Seth Reiss, Will Tracy",
+  "Actors": "Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult",
+  "Plot": "Expecting nothing less than the best of everything haute cuisine has to offer, a group of ultra-wealthy gastronomes with a demanding palate arrive at the Hawthorn: an exclusive culinary temple run by highly regarded gourmet chef Julian Slowik. And prepared for an exquisite multiple-course meal and the experience of a lifetime, obsessive epicurean Tyler and his unimpressed plus-one Margot enter the private minimalist restaurant. At last, the long wait is over. However, no one knows that the cryptic genius in the kitchen has big plans for tonight. After all, the imperious culinary artist has been stretching the boundaries of taste and fine dining for decades. Now, the host can finally unveil his magnum opus. But is the blasé clientele ready for Julian's creative madness?",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "2 wins & 68 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2Q0YWE1MjktODJlMi00NTRiLWI2ZTctZTAxNjkyODVjM2EyXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "88%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "71/100"
+   }
+  ],
+  "Metascore": "71",
+  "imdbRating": "7.2",
+  "imdbVotes": "496,461",
+  "imdbID": "tt9764362",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$38,501,125",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-metamorphosis-of-mr-samsa": {
+  "Title": "The Metamorphosis of Mr. Samsa",
+  "Year": "1977",
+  "Rated": "G",
+  "Released": "01 Jun 1977",
+  "Runtime": "10 min",
+  "Genre": "Animation, Short, Fantasy",
+  "Director": "Caroline Leaf",
+  "Writer": "Caroline Leaf, Franz Kafka",
+  "Actors": "N/A",
+  "Plot": "A traveling salesman, Gregor Samsa, wakes up to find himself transformed (metamorphosed) into a large, monstrous insect-like creature.",
+  "Language": "English",
+  "Country": "Canada, United States",
+  "Awards": "3 wins total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDQ0YjNlNGQtNjY2NS00MGZjLWJiOGEtNTkzMmJhMjA3NWQyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.7/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.7",
+  "imdbVotes": "397",
+  "imdbID": "tt0076389",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-mist": {
+  "Title": "The Mist",
+  "Year": "2007",
+  "Rated": "R",
+  "Released": "21 Nov 2007",
+  "Runtime": "126 min",
+  "Genre": "Horror, Sci-Fi, Thriller",
+  "Director": "Frank Darabont",
+  "Writer": "Frank Darabont, Stephen King",
+  "Actors": "Thomas Jane, Marcia Gay Harden, Laurie Holden",
+  "Plot": "The Draytons - David, Steff and their son Billy - live in a small Maine town. One night a ferocious storm hits the area, damaging their house. The storm is accompanied by a strange mist the following morning. David and Billy and their neighbour Brent Norton go into town and find themselves trapped in a grocery store with several other people. There they discover that the mist contains something frightening and intent on killing humans.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "6 wins & 13 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjQyNDY1Ml5BMl5BanBnXkFtZTcwMTk1MDU1MQ@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "74%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "58/100"
+   }
+  ],
+  "Metascore": "58",
+  "imdbRating": "7.1",
+  "imdbVotes": "371,131",
+  "imdbID": "tt0884328",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$25,594,957",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-mitchells-vs-the-machines": {
+  "Title": "The Mitchells vs. the Machines",
+  "Year": "2021",
+  "Rated": "PG",
+  "Released": "30 Apr 2021",
+  "Runtime": "114 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Michael Rianda, Jeff Rowe",
+  "Writer": "Michael Rianda, Jeff Rowe, Peter Szilagyi",
+  "Actors": "Abbi Jacobson, Danny McBride, Maya Rudolph",
+  "Plot": "An animated action-comedy about an ordinary family who find themselves in the middle of their biggest family challenge yet...saving the world from the robot apocalypse. No big deal, right? It all starts when creative outsider Katie Mitchell is accepted into the film school of her dreams and is eager to leave home and find \"her people,\" when her nature-loving dad insists on having the whole family drive her to school and bond during one last totally-not-awkward-or-forced road trip. But just when the trip can't get any worse, the family suddenly finds itself in the middle of the robot uprising. Everything from smart phones, to roombas, to evil Furbys are employed to capture every human on the planet. Now it's up to the Mitchells, including upbeat mom Linda, quirky little brother Aaron, their squishy pug, Monchi, and two friendly, but simple-minded robots to save humanity.",
+  "Language": "English",
+  "Country": "Hong Kong, Canada, United States",
+  "Awards": "Nominated for 1 Oscar. 46 wins & 65 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzAyOWNiMjAtNWUzMi00ZDk1LWE5NzYtNDUzMWE1Y2M0NDM2XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "97%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "81/100"
+   }
+  ],
+  "Metascore": "81",
+  "imdbRating": "7.6",
+  "imdbVotes": "140,595",
+  "imdbID": "tt7979580",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-834936": {
+  "Title": "The Nevers",
+  "Year": "2021–2023",
+  "Rated": "TV-MA",
+  "Released": "11 Apr 2021",
+  "Runtime": "58 min",
+  "Genre": "Action, Drama, Fantasy",
+  "Director": "N/A",
+  "Writer": "Joss Whedon",
+  "Actors": "Laura Donnelly, Ann Skelly, Olivia Williams",
+  "Plot": "A gang of Victorian women find themselves with unusual abilities, relentless enemies, and a mission that might change the world.",
+  "Language": "English",
+  "Country": "United Kingdom, United States",
+  "Awards": "Nominated for 2 Primetime Emmys. 2 wins & 16 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNGJmNDY4YjItZjlmMC00ODE0LTk2NjgtNWFiODA0NDhlYWVmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.4",
+  "imdbVotes": "29,472",
+  "imdbID": "tt8697870",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-f-the-northman": {
+  "Title": "The Northman",
+  "Year": "2022",
+  "Rated": "R",
+  "Released": "22 Apr 2022",
+  "Runtime": "137 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "Robert Eggers",
+  "Writer": "Sjón, Robert Eggers",
+  "Actors": "Alexander Skarsgård, Nicole Kidman, Claes Bang",
+  "Plot": "The Viking Age. With a mind aflame with hate and revenge, Prince Amleth, the wronged son of King Aurvandill War-Raven, heads to cold, windswept Iceland to retrieve what was stolen from him: a father, a mother, and a kingdom. And like a war dog picking up the enemy's scent, brutal Amleth embarks on a murderous quest to find the hateful adversary, whose life is forever woven together with his by the threads of fate. Now, in the name of Valhalla, no one can stop the Northman, not even God.",
+  "Language": "English, Norse, Old, Ukrainian",
+  "Country": "United Kingdom, China, United States",
+  "Awards": "5 wins & 55 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYzgwM2JiY2MtNWQ5OC00NDc1LWExMjYtYmY2YjViZmViYWM5XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "90%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "82/100"
+   }
+  ],
+  "Metascore": "82",
+  "imdbRating": "7.0",
+  "imdbVotes": "298,461",
+  "imdbID": "tt11138512",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$34,233,110",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-119673": {
+  "Title": "The Pacific",
+  "Year": "2010",
+  "Rated": "TV-MA",
+  "Released": "14 Mar 2010",
+  "Runtime": "530 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "N/A",
+  "Writer": "N/A",
+  "Actors": "James Badge Dale, Joseph Mazzello, Jon Seda",
+  "Plot": "The Pacific follows the lives of a U.S Marine Corps squad during the campaign within the Pacific against the Japanese Empire during WW2. Made by the creators of Band of Brothers, it follows a similar line of thought to outline the hardships of the common man during war. The Pacific is in parts a fast paced war series that can be enjoyed by action lovers whilst containing a more sensitive side when projecting the relationships (brotherhood) of Marines on the battlefield. Where The Pacific takes a new direction from its \"older brother\" is in its depiction of the lives of soldiers who were picked to return home to increase the sales of war bonds. In doing this it also depicts the life cycle of returned soldiers from initial joy to the eventual feeling of regret and to a certain extent shame felt by soldiers wanting to return to the war in service of either their comrades or nation.",
+  "Language": "English, Japanese",
+  "Country": "United States, Australia",
+  "Awards": "Won 8 Primetime Emmys. 36 wins & 44 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNGFjYTZmYjEtZDI3MS00MGVhLWI5NDQtY2QwZTcwNjUwMTA2XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.3/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.3",
+  "imdbVotes": "141,409",
+  "imdbID": "tt0374463",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-s-10050978": {
+  "Title": "The Pitt",
+  "Year": "2025–",
+  "Rated": "TV-MA",
+  "Released": "09 Jan 2025",
+  "Runtime": "N/A",
+  "Genre": "Drama",
+  "Director": "N/A",
+  "Writer": "R. Scott Gemmill",
+  "Actors": "Noah Wyle, Patrick Ball, Katherine LaNasa",
+  "Plot": "The daily lives of healthcare professionals in a Pittsburgh hospital as they juggle personal crises, workplace politics, and the emotional toll of treating critically ill patients, revealing the resilience required in their noble calling.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 5 Primetime Emmys. 40 wins & 50 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMThjMjYxM2YtM2IzZC00NDdmLThiNDYtNzEyNzA0YTRmYTk3XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.9/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.9",
+  "imdbVotes": "138,259",
+  "imdbID": "tt31938062",
+  "Type": "series",
+  "totalSeasons": "3",
+  "Response": "True"
+ },
+ "imp-f-the-pixar-shorts-a-short-history": {
+  "Title": "The Pixar Shorts: A Short History",
+  "Year": "2007",
+  "Rated": "N/A",
+  "Released": "06 Nov 2007",
+  "Runtime": "23 min",
+  "Genre": "Documentary, Short",
+  "Director": "Tony Kaplan, Erica Milsom",
+  "Writer": "N/A",
+  "Actors": "Jim Blinn, Eben Ostby, Craig Good, Loren Carpenter",
+  "Plot": "The story of Pixar's early short films illuminates not only the evolution of the company but also the early days of computer animation, when a small group of artists and scientists shared a single computer in a hallway, and struggled to create emotionally compelling short films.",
+  "Language": "English",
+  "Country": "USA",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNGUxMzViNmUtMTE5NC00MDU3LTg0MzgtZjI3YTVjYWNjZWJiXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.5",
+  "imdbVotes": "802",
+  "imdbID": "tt1164983",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-prestige": {
+  "Title": "The Prestige",
+  "Year": "2006",
+  "Rated": "PG-13",
+  "Released": "20 Oct 2006",
+  "Runtime": "130 min",
+  "Genre": "Drama, Mystery, Sci-Fi",
+  "Director": "Christopher Nolan",
+  "Writer": "Jonathan Nolan, Christopher Nolan, Christopher Priest",
+  "Actors": "Christian Bale, Hugh Jackman, Scarlett Johansson",
+  "Plot": "Set in London in the 1800s, two rival magicians read each others diary containing the secrets of their magic tricks and personal life. As we go back in time when the diaries were written, both magicians become obsessed with their rival's best trick. The tricks, as shown to the audience, look the same, but neither magician can figure out how his opponent does it.",
+  "Language": "English",
+  "Country": "United Kingdom, United States",
+  "Awards": "Nominated for 2 Oscars. 6 wins & 44 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTM3MzQ5MjQ5OF5BMl5BanBnXkFtZTcwMTQ3NzMzMw@@._V1_QL75_UY562_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "77%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "66/100"
+   }
+  ],
+  "Metascore": "66",
+  "imdbRating": "8.5",
+  "imdbVotes": "1,583,310",
+  "imdbID": "tt0482571",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$53,089,891",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-prophet": {
+  "Title": "Kahlil Gibran's The Prophet",
+  "Year": "2014",
+  "Rated": "PG",
+  "Released": "07 Aug 2015",
+  "Runtime": "85 min",
+  "Genre": "Animation, Drama",
+  "Director": "Roger Allers, Gaëtan Brizzi, Paul Brizzi",
+  "Writer": "Roger Allers, Kahlil Gibran, Hanna Weg",
+  "Actors": "Liam Neeson, Salma Hayek, Quvenzhané Wallis",
+  "Plot": "Exiled artist and poet Mustafa embarks on a journey home with his housekeeper and her daughter; together the trio must evade the authorities who fear that the truth in Mustafa's words will incite rebellion.",
+  "Language": "English",
+  "Country": "Qatar, France, Lebanon, Canada, United States",
+  "Awards": "1 win & 10 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTY5NzI4MjE2OV5BMl5BanBnXkFtZTgwMDg3OTU5NTE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "64%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "61/100"
+   }
+  ],
+  "Metascore": "61",
+  "imdbRating": "7.1",
+  "imdbVotes": "5,223",
+  "imdbID": "tt1640718",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$725,489",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-rise-and-fall-of-globosome": {
+  "Title": "The Rise and Fall of Globosome",
+  "Year": "2013",
+  "Rated": "N/A",
+  "Released": "23 Apr 2013",
+  "Runtime": "6 min",
+  "Genre": "Animation, Short, Adventure",
+  "Director": "Sascha Geddert",
+  "Writer": "Sascha Geddert",
+  "Actors": "Gottfried Mentor",
+  "Plot": "In the vastness of space, there's a a small speck of rock inhabited by the most peculiar lifeforms: Dark little dots that start to replicate fast and begin to show signs of intelligence. \"Globosome\" tells the story of the rise and fall of these little creatures. This film is inspired by the special times we're living through on our own planet. We're at the crossroads. The question is what makes humans actually different from bacteria in a petri dish. Surely we have culture, science and art but what does remain of these achievements if you look at our world from a global perspective.",
+  "Language": "None",
+  "Country": "Germany",
+  "Awards": "2 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOGE3OTFkNDQtMGE1Zi00ZmMzLTk4YzktYzQ2MjY3NDM3ZTUwXkEyXkFqcGdeQXVyMjIxNTE5Mjg@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.5",
+  "imdbVotes": "68",
+  "imdbID": "tt2158362",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-119073": {
+  "Title": "The Secret of NIMH",
+  "Year": "1982",
+  "Rated": "G",
+  "Released": "16 Jul 1982",
+  "Runtime": "82 min",
+  "Genre": "Animation, Adventure, Drama",
+  "Director": "Don Bluth",
+  "Writer": "Robert C. O'Brien, Don Bluth, John Pomeroy",
+  "Actors": "Elizabeth Hartman, Derek Jacobi, Dom DeLuise",
+  "Plot": "To save her ill son, a field mouse must seek the aid of a colony of rats, with whom she has a deeper link than she suspected.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "2 wins & 2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODAxNzMwYTktZjAyMi00NmNhLWJjMzAtMjkzZjRkYjY2Nzk2XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "93%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "76/100"
+   }
+  ],
+  "Metascore": "76",
+  "imdbRating": "7.5",
+  "imdbVotes": "48,409",
+  "imdbID": "tt0084649",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$14,665,733",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-skulls": {
+  "Title": "The Skulls",
+  "Year": "2000",
+  "Rated": "PG-13",
+  "Released": "31 Mar 2000",
+  "Runtime": "106 min",
+  "Genre": "Action, Crime, Drama",
+  "Director": "Rob Cohen",
+  "Writer": "John Pogue",
+  "Actors": "Joshua Jackson, Paul Walker, Hill Harper",
+  "Plot": "Luke McNamara, a college senior from a working class background joins a secret elitist college fraternity organization called \"The Skulls\", in hope of gaining acceptance into Harvard Law School. At first seduced by the club's trapping of power and wealth, a series of disturbing incidents, such as his best friends suicide, leads Luke to investigate the true nature of the organization and the truth behind his friends supposed suicide. He starts realizing that his future and possibly his life is in danger.",
+  "Language": "English",
+  "Country": "Canada, United States",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNWM4NGUzNjItZmU5ZC00ZDM3LWExYjMtMWNiNzFhN2IwNmRhXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "5.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "9%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "24/100"
+   }
+  ],
+  "Metascore": "24",
+  "imdbRating": "5.6",
+  "imdbVotes": "34,685",
+  "imdbID": "tt0192614",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$35,046,120",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-10066117": {
+  "Title": "The Studio",
+  "Year": "2025–",
+  "Rated": "TV-MA",
+  "Released": "26 Mar 2025",
+  "Runtime": "N/A",
+  "Genre": "Comedy, Drama",
+  "Director": "N/A",
+  "Writer": "Evan Goldberg, Alex Gregory, Peter Huyck",
+  "Actors": "Seth Rogen, Ike Barinholtz, Chase Sui Wonders",
+  "Plot": "As movies struggle to stay alive and relevant, Matt and his core team of infighting executives battle their own insecurities as they wrangle narcissistic artists and craven corporate overlords in the ever-elusive pursuit of making great films. With their power suits masking their neverending sense of panic, every party, set visit, casting decision, marketing meeting, and award show presents them with an opportunity for glittering success or career-ending catastrophe. As someone who eats, sleeps, and breathes movies, it's the job Matt's been pursuing his whole life, and it may very well destroy him.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 13 Primetime Emmys. 59 wins & 77 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZDA4MWUyNDYtODNjYi00NjE4LTk0ZTMtZmMzZTU5MzkzMTBlXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.1",
+  "imdbVotes": "63,762",
+  "imdbID": "tt23649128",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-f-the-terminal": {
+  "Title": "The Terminal",
+  "Year": "2004",
+  "Rated": "PG-13",
+  "Released": "18 Jun 2004",
+  "Runtime": "128 min",
+  "Genre": "Comedy, Drama, Romance",
+  "Director": "Steven Spielberg",
+  "Writer": "Andrew Niccol, Sacha Gervasi, Jeff Nathanson",
+  "Actors": "Tom Hanks, Catherine Zeta-Jones, Chi McBride",
+  "Plot": "Victor Navorski reaches JFK airport from a politically unstable country. Due to collapse of his government, his papers are no longer valid in the airport, and hence he is forced to stay in the airport until the war cools down. He makes the airport his home and develops a friendship with the people who work there until he can leave.",
+  "Language": "English, Bulgarian, Spanish, Russian, Mandarin, German, French",
+  "Country": "United States",
+  "Awards": "7 wins & 8 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTM1MTIwNTMxOF5BMl5BanBnXkFtZTcwNjIxMjQyMw@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "61%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "55/100"
+   }
+  ],
+  "Metascore": "55",
+  "imdbRating": "7.4",
+  "imdbVotes": "531,834",
+  "imdbID": "tt0362227",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$77,872,883",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-truman-show": {
+  "Title": "The Truman Show",
+  "Year": "1998",
+  "Rated": "PG",
+  "Released": "05 Jun 1998",
+  "Runtime": "103 min",
+  "Genre": "Comedy, Drama",
+  "Director": "Peter Weir",
+  "Writer": "Andrew Niccol",
+  "Actors": "Jim Carrey, Ed Harris, Laura Linney",
+  "Plot": "Since birth, a big fat lie defines the well-organised but humdrum life of the kind-hearted insurance salesman and ambitious explorer, Truman Burbank. Utterly unaware of the thousands of cleverly hidden cameras watching his every move, for nearly three decades, Truman's entire existence pivots around the will and the wild imagination of the ruthlessly manipulative television producer, Christof--the all-powerful TV-God of an extreme 24/7 reality show: The Truman Show. As a result, Truman's picturesque neighbourhood with the manicured lawns and the uncannily perfect residents is nothing but an elaborate state-of-the-art set, and the only truth he knows is what the worldwide television network and its deep financial interests dictate. Do lab rats know they are forever imprisoned?",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 3 Oscars. 42 wins & 69 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "90/100"
+   }
+  ],
+  "Metascore": "90",
+  "imdbRating": "8.2",
+  "imdbVotes": "1,356,843",
+  "imdbID": "tt0120382",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$125,618,201",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-turning-point": {
+  "Title": "The Turning Point",
+  "Year": "2020",
+  "Rated": "N/A",
+  "Released": "01 Jan 2020",
+  "Runtime": "3 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Steve Cutts",
+  "Writer": "Steve Cutts",
+  "Actors": "N/A",
+  "Plot": "Animals and humans switched places. Now, animals are ruling the earth and humans are at the verge of extinction.",
+  "Language": "English",
+  "Country": "United Kingdom",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNWI3Njg1YzUtYmY1ZS00NzQ5LWI1ZDQtMDQxZmUxYTc2YjBlXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.5",
+  "imdbVotes": "586",
+  "imdbID": "tt8866842",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-usual-suspects": {
+  "Title": "The Usual Suspects",
+  "Year": "1995",
+  "Rated": "R",
+  "Released": "16 Aug 1995",
+  "Runtime": "106 min",
+  "Genre": "Crime, Drama, Mystery",
+  "Director": "Bryan Singer",
+  "Writer": "Christopher McQuarrie",
+  "Actors": "Kevin Spacey, Gabriel Byrne, Chazz Palminteri",
+  "Plot": "Following a truck hijack in New York, five criminals are arrested and brought together for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes clear that each one of them has wronged Söze at some point and must pay back now. The payback job leaves 27 men dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?",
+  "Language": "English, Hungarian, Spanish, French",
+  "Country": "United States, Germany",
+  "Awards": "Won 2 Oscars. 37 wins & 17 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTE5MDUxZDUtZWZmZC00NDVmLWFhOGQtNWI2YTc4NzY3MGQ0XkEyXkFqcGc@._V1_QL75_UX380_CR0,2,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "87%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "76/100"
+   }
+  ],
+  "Metascore": "76",
+  "imdbRating": "8.5",
+  "imdbVotes": "1,236,455",
+  "imdbID": "tt0114814",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$23,341,568",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-whale": {
+  "Title": "The Whale",
+  "Year": "2022",
+  "Rated": "R",
+  "Released": "21 Dec 2022",
+  "Runtime": "117 min",
+  "Genre": "Drama",
+  "Director": "Darren Aronofsky",
+  "Writer": "Samuel D. Hunter",
+  "Actors": "Brendan Fraser, Sadie Sink, Ty Simpkins",
+  "Plot": "Idaho, 2016. Scarred by the profound wounds of grief and guilt, couch-bound Charlie, an online writing instructor living with chronic obesity, now has a crystal-clear view of his secret intentions. And confined to his claustrophobic and musty apartment, the self-destructive shut-in has all the time in the world to contemplate the damaging faults of the past, fatherhood, and reconciliation. Because, more than anything, flawed Charlie longs for communication and reconnection. After all, he hasn't spoken to his estranged, angry teenage daughter, Ellie, in years. But everyone knows whales don't live in the shallows. Can love and forgiveness wipe away the tears and the painful mistakes of a lifetime?",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 2 Oscars. 51 wins & 124 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYmNhOWMyNTYtNTljNC00NTU3LWFiYmQtMDBhOGU5NWFhNGU5XkEyXkFqcGc@._V1_QL75_UY562_CR8,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "64%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "60/100"
+   }
+  ],
+  "Metascore": "60",
+  "imdbRating": "7.6",
+  "imdbVotes": "281,700",
+  "imdbID": "tt13833688",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$17,463,630",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-wolf-of-wall-street": {
+  "Title": "The Wolf of Wall Street",
+  "Year": "2013",
+  "Rated": "R",
+  "Released": "25 Dec 2013",
+  "Runtime": "180 min",
+  "Genre": "Biography, Comedy, Crime",
+  "Director": "Martin Scorsese",
+  "Writer": "Terence Winter, Jordan Belfort",
+  "Actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
+  "Plot": "Jordan Belfort (DiCaprio) is Long Island penny stockbroker who serves almost two years in prison for refusing to co-operate in a huge 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.",
+  "Language": "English, French",
+  "Country": "United States",
+  "Awards": "Nominated for 5 Oscars. 38 wins & 180 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "79%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "75/100"
+   }
+  ],
+  "Metascore": "75",
+  "imdbRating": "8.2",
+  "imdbVotes": "1,784,314",
+  "imdbID": "tt0993846",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$116,900,694",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-the-wrong-rock": {
+  "Title": "The Wrong Rock",
+  "Year": "2019",
+  "Rated": "G",
+  "Released": "24 Nov 2019",
+  "Runtime": "14 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Michael Cawood",
+  "Writer": "Michael Cawood",
+  "Actors": "N/A",
+  "Plot": "A mushroom embarks on an epic adventure to find its purpose in life.",
+  "Language": "English",
+  "Country": "Australia, Austria, Canada, India, Iran, Italy, Japan, Mexico, New Zealand, Spain, United States, Ukraine, United Kingdom",
+  "Awards": "1 win & 15 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzYyZDhiZmYtMmM5ZS00ZDYwLTlhYjEtNDVkMWYxYWIzYjc0XkEyXkFqcGdeQXVyNTQ0MjA1NjY@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.1",
+  "imdbVotes": "142",
+  "imdbID": "tt9188026",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tian-bian-yi-duo-yun": {
+  "Title": "The Wayward Cloud",
+  "Year": "2005",
+  "Rated": "Not Rated",
+  "Released": "18 Mar 2005",
+  "Runtime": "112 min",
+  "Genre": "Comedy, Drama, Musical",
+  "Director": "Tsai Ming-liang",
+  "Writer": "Tsai Ming-liang",
+  "Actors": "Kang-sheng Lee, Shiang-chyi Chen, Yi-ching Lu",
+  "Plot": "Metaphor, allegory. There's a drought in Taiwan. Watermelon are abundant and become juice, food, something to share with a guest, and an aphrodisiac. In a large building of flats, Hsiao-Kang and Shiang-chyi's paths cross; she knew him when he sold watches, now he acts in pornographic films. She scavenges for plastic water bottles. He bathes in the building's cistern. Fantasy song and dance numbers punctuate the characters' nearly aimless pursuits: she has lost her keys and he helps her find them; he naps in a park, she watches; he smokes on the floor beneath her kitchen table while she sits. His film-making continues. Can they connect?",
+  "Language": "Mandarin",
+  "Country": "France, Taiwan",
+  "Awards": "9 wins & 9 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOGRjOTMxNmEtNWIyNS00ZGM4LWIwNmUtNDRhMTcwMGU5MzM0XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "77%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "45/100"
+   }
+  ],
+  "Metascore": "45",
+  "imdbRating": "6.5",
+  "imdbVotes": "5,906",
+  "imdbID": "tt0445760",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tick-tock-tale": {
+  "Title": "Tick Tock Tale",
+  "Year": "2015",
+  "Rated": "G",
+  "Released": "18 Aug 2015",
+  "Runtime": "6 min",
+  "Genre": "Animation, Short, Adventure",
+  "Director": "Dean Wellins",
+  "Writer": "Dean Wellins",
+  "Actors": "Dean Wellins",
+  "Plot": "Amidst an old London clock shop, a small, quirky mantle clock comes to the aide of the store's more expensive clocks when a thief breaks in and threatens to steal them away.",
+  "Language": "English",
+  "Country": "United States, Japan",
+  "Awards": "1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5MDA1MDA0MF5BMl5BanBnXkFtZTgwNDYzODA2NjE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.3/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.3",
+  "imdbVotes": "2,055",
+  "imdbID": "tt1736313",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tom-whisky-ou-l-illusioniste-toqu": {
+  "Title": "Addition and Subtraction",
+  "Year": "1900",
+  "Rated": "Not Rated",
+  "Released": "N/A",
+  "Runtime": "1 min",
+  "Genre": "Short",
+  "Director": "Georges Méliès",
+  "Writer": "N/A",
+  "Actors": "Georges Méliès, Jeanne Mareyla",
+  "Plot": "A man attempts to sit on a stool, only to find a woman has magically appear to steal his place. This happens again and again. Soon, more amazing transformations occur.",
+  "Language": "None",
+  "Country": "France",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYTNmNzMxMGItOGYwNS00ZWFiLWIxY2UtMDBhZDE0NTRlMDEzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "5.7/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "5.7",
+  "imdbVotes": "451",
+  "imdbID": "tt0227667",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-top-gun": {
+  "Title": "Top Gun",
+  "Year": "1986",
+  "Rated": "PG",
+  "Released": "16 May 1986",
+  "Runtime": "110 min",
+  "Genre": "Action, Drama",
+  "Director": "Tony Scott",
+  "Writer": "Jim Cash, Jack Epps Jr., Ehud Yonay",
+  "Actors": "Tom Cruise, Tim Robbins, Kelly McGillis",
+  "Plot": "US Navy Lieutenant Pete Mitchell, call sign Maverick--an impetuous, daredevil pilot ace--is accepted into Top Gun, Miramar's elite Fighter School. But there, the impulsive young pilot will have to compete with the best of the best, including Iceman, a brilliant and highly competitive fellow student. Now, Mitchell must give his all; however, his father's mysterious and untimely demise still haunts him. Can Maverick prove his worth to Charlie, the flying school's no-nonsense astrophysics instructor? Will he be able to suppress his wild nature to win the prestigious Top Gun Trophy?",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 11 wins & 10 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZmVjNzQ3MjYtYTZiNC00Y2YzLWExZTEtMTM2ZDllNDI0MzgyXkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "57%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "50/100"
+   }
+  ],
+  "Metascore": "50",
+  "imdbRating": "7.0",
+  "imdbVotes": "550,107",
+  "imdbID": "tt0092099",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$180,258,178",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-top-gun-maverick": {
+  "Title": "Top Gun: Maverick",
+  "Year": "2022",
+  "Rated": "PG-13",
+  "Released": "27 May 2022",
+  "Runtime": "130 min",
+  "Genre": "Action, Drama",
+  "Director": "Joseph Kosinski",
+  "Writer": "Ehren Kruger, Eric Warren Singer, Christopher McQuarrie",
+  "Actors": "Tom Cruise, Jennifer Connelly, Miles Teller",
+  "Plot": "Set 30 years after its predecessor, it follows Maverick's return to the United States Navy Strike Fighter Tactics Instructor program (also known as U.S. Navy-Fighter Weapons School - \"TOPGUN\"), where he must confront his past as he trains a group of younger pilots, among them the son of Maverick's deceased best friend Lieutenant Nick \"Goose\" Bradshaw, USN.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 114 wins & 237 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "78/100"
+   }
+  ],
+  "Metascore": "78",
+  "imdbRating": "8.2",
+  "imdbVotes": "855,273",
+  "imdbID": "tt1745960",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$718,732,821",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tora-no-o-wo-fumu-otokotachi": {
+  "Title": "The Men Who Tread on the Tiger's Tail",
+  "Year": "1945",
+  "Rated": "Not Rated",
+  "Released": "28 Feb 1960",
+  "Runtime": "59 min",
+  "Genre": "Adventure, Drama, Thriller",
+  "Director": "Akira Kurosawa",
+  "Writer": "Nobumitsu Kanze, Akira Kurosawa, Gohei Namiki",
+  "Actors": "Denjirô Ôkôchi, Susumu Fujita, Ken'ichi Enomoto",
+  "Plot": "In 1185, the Heike family fights against the Minamoto family. After a bloody naval battle in the Pacific Ocean, Yoshitsune Minamoto defeats the enemy and the survivals commit suicide. When the triumphant Yoshitsune arrives in Kyoto, his brother, the Shogun Yoritomo, is lured and orders his men to arrest Yoshitsune. However, Yoshitsune escapes with six loyal samurais led by Benkei and they head to the country of his only friend Idehira Fukiwara. Nearby the border, after crossing the forest disguised as monks, their smiley conveyor Suruga discloses that they are Yoshitsune and the six samurais and advises that the fearful Kagiwara and his soldiers are waiting for them in the border to arrest them. Yoshitsune disguises as a carrier and Benkei has to convince Kagiwara that they are six monks traveling to collect donation to build a large temple in Kyoto.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDZhZjRhYmYtODlmNC00OGExLWJmNDItNDEzMmM0OTJhMmU4XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "86%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.7",
+  "imdbVotes": "4,721",
+  "imdbID": "tt0038182",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-484288": {
+  "Title": "Total Drama Island: Reboot",
+  "Year": "2023–2024",
+  "Rated": "TV-PG",
+  "Released": "20 Oct 2023",
+  "Runtime": "N/A",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "N/A",
+  "Writer": "Tom McGillis, Jennifer Pertsch",
+  "Actors": "Terry McGurrin, Deven Christian Mack, Eman Ayaz",
+  "Plot": "The most funny and dangerous reality cartoon show Total Drama is back with even more dangerous challenges.",
+  "Language": "English",
+  "Country": "Canada",
+  "Awards": "3 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYzBlZWRlMDUtOTU2OS00NTNhLTk1ZjUtODNhMDM1Nzg5MGRiXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.4",
+  "imdbVotes": "675",
+  "imdbID": "tt29116817",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-f-toy-story-small-fry": {
+  "Title": "Toy Story Toons: Small Fry",
+  "Year": "2011",
+  "Rated": "G",
+  "Released": "23 Nov 2011",
+  "Runtime": "7 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Angus MacLane",
+  "Writer": "Angus MacLane, John Lasseter, Josh Cooley",
+  "Actors": "Tom Hanks, Tim Allen, John Ratzenberger",
+  "Plot": "A fast food restaurant mini variant of Buzz forcibly switches places with the real Buzz and his friends have to deal with the obnoxious impostor.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjI4ODczMzE3OV5BMl5BanBnXkFtZTgwNDQxNjA2MDE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.0",
+  "imdbVotes": "9,219",
+  "imdbID": "tt2033372",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-trainspotting": {
+  "Title": "Trainspotting",
+  "Year": "1996",
+  "Rated": "R",
+  "Released": "09 Aug 1996",
+  "Runtime": "93 min",
+  "Genre": "Crime, Drama",
+  "Director": "Danny Boyle",
+  "Writer": "Irvine Welsh, John Hodge",
+  "Actors": "Ewan McGregor, Ewen Bremner, Jonny Lee Miller",
+  "Plot": "A wild, freeform, Rabelaisian trip through the darkest recesses of Edinburgh low-life, focusing on Mark Renton and his attempt to give up his heroin habit, and how the latter affects his relationship with family and friends: Sean Connery wannabe Sick Boy, dimbulb Spud, psycho Begbie, 14-year-old girlfriend Diane, and clean-cut athlete Tommy, who's never touched drugs but can't help being curious about them...",
+  "Language": "English",
+  "Country": "United Kingdom",
+  "Awards": "Nominated for 1 Oscar. 23 wins & 35 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYmVkNGJkMzQtYWQwOS00OTZmLThjODQtZjNjNzllYzRiNTE0XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "90%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "83/100"
+   }
+  ],
+  "Metascore": "83",
+  "imdbRating": "8.1",
+  "imdbVotes": "765,284",
+  "imdbID": "tt0117951",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$16,491,080",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-transformers-revenge-of-the-fallen": {
+  "Title": "Transformers: Revenge of the Fallen",
+  "Year": "2009",
+  "Rated": "PG-13",
+  "Released": "24 Jun 2009",
+  "Runtime": "149 min",
+  "Genre": "Action, Adventure, Sci-Fi",
+  "Director": "Michael Bay",
+  "Writer": "Ehren Kruger, Roberto Orci, Alex Kurtzman",
+  "Actors": "Shia LaBeouf, Megan Fox, Josh Duhamel",
+  "Plot": "A youth chooses manhood. The week Sam Witwicky starts college, the Decepticons make trouble in Shanghai. A presidential envoy believes it's because the Autobots are around; he wants them gone. He's wrong: the Decepticons need access to Sam's mind to see some glyphs imprinted there that will lead them to a fragile object that, when inserted in an alien machine hidden in Egypt for centuries, will give them the power to blow out the sun. Sam, his girlfriend Mikaela Banes, and Sam's parents are in danger. Optimus Prime and Bumblebee are Sam's principal protectors. If one of them goes down, what becomes of Sam?",
+  "Language": "English, Spanish",
+  "Country": "United States, Jordan, United Kingdom, Egypt",
+  "Awards": "Nominated for 1 Oscar. 15 wins & 30 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNjk4OTczOTk0NF5BMl5BanBnXkFtZTcwNjQ0NzMzMw@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "19%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "35/100"
+   }
+  ],
+  "Metascore": "35",
+  "imdbRating": "6.0",
+  "imdbVotes": "451,650",
+  "imdbID": "tt1055369",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$402,111,870",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-treasure-planet": {
+  "Title": "Treasure Planet",
+  "Year": "2002",
+  "Rated": "PG",
+  "Released": "29 Nov 2002",
+  "Runtime": "95 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Ron Clements, John Musker",
+  "Writer": "Ron Clements, John Musker, Rob Edwards",
+  "Actors": "Joseph Gordon-Levitt, Emma Thompson, Martin Short",
+  "Plot": "In this science fiction rendering of the classic novel \"Treasure Island\", Jim Hawkins (Joseph Gordon-Levitt) is a rebellious teen seen by the world as an aimless slacker. After he receives a map from a dying pirate, he embarks on an odyssey across the universe to find the legendary Treasure Planet.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 1 win & 14 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2VjNjk5MTAtNDE3Ni00NjczLWFhN2EtNGQ1ZmZmOWRjZjIyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "68%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "60/100"
+   }
+  ],
+  "Metascore": "60",
+  "imdbRating": "7.2",
+  "imdbVotes": "146,751",
+  "imdbID": "tt0133240",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$38,176,783",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-trois-couleurs-rouge": {
+  "Title": "Three Colors: Red",
+  "Year": "1994",
+  "Rated": "R",
+  "Released": "23 Nov 1994",
+  "Runtime": "99 min",
+  "Genre": "Drama, Mystery, Romance",
+  "Director": "Krzysztof Kieslowski",
+  "Writer": "Krzysztof Piesiewicz, Krzysztof Kieslowski, Agnieszka Holland",
+  "Actors": "Irène Jacob, Jean-Louis Trintignant, Frédérique Feder",
+  "Plot": "Valentine is a young model living in Geneva. Because of a dog she ran over, she meets a retired judge who spies his neighbours' phone calls, not for money but to feed his cynicism. The film is the story of relationships between some human beings, Valentine and the judge, but also other people who may not be aware of the relationship they have with Valentine or/and the old judge. Redemption, forgiveness and compassion...",
+  "Language": "French",
+  "Country": "France, Switzerland, Poland",
+  "Awards": "Nominated for 3 Oscars. 19 wins & 27 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ0YTQyYzItNGEzMi00NmI4LWJkOTMtOWMyMjAwMWEzYTZhXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "100%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "100/100"
+   }
+  ],
+  "Metascore": "100",
+  "imdbRating": "8.1",
+  "imdbVotes": "116,330",
+  "imdbID": "tt0111495",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$3,581,969",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-troy": {
+  "Title": "Troy",
+  "Year": "2004",
+  "Rated": "R",
+  "Released": "14 May 2004",
+  "Runtime": "163 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "Wolfgang Petersen",
+  "Writer": "Homer, David Benioff",
+  "Actors": "Brad Pitt, Eric Bana, Orlando Bloom",
+  "Plot": "It is the year 1250 B.C. during the late Bronze age. Two emerging nations begin to clash after Paris, the Trojan prince, convinces Helen, Queen of Sparta, to leave her husband, Menelaus, and sail with him back to Troy. After Menelaus finds out that his wife was taken by the Trojans, he asks his brother Agamemnon to help him get her back. Agamemnon sees this as an opportunity for power. So they set off with 1,000 ships holding 50,000 Greeks to Troy. With the help of Achilles, the Greeks are able to fight the never before defeated Trojans. But they come to a stop by Hector, Prince of Troy. The whole movie shows their battle struggles and the foreshadowing of fate in this adaptation of Homer's classic \"The Iliad.\"",
+  "Language": "English",
+  "Country": "United Kingdom, Malta, Bulgaria, United States",
+  "Awards": "Nominated for 1 Oscar. 5 wins & 23 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTk5MzU1MDMwMF5BMl5BanBnXkFtZTcwNjczODMzMw@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "53%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "56/100"
+   }
+  ],
+  "Metascore": "56",
+  "imdbRating": "7.3",
+  "imdbVotes": "609,875",
+  "imdbID": "tt0332452",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$133,378,256",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-tt3d-closer-to-the-edge": {
+  "Title": "TT3D: Closer to the Edge",
+  "Year": "2011",
+  "Rated": "Not Rated",
+  "Released": "22 Apr 2011",
+  "Runtime": "104 min",
+  "Genre": "Documentary, Sport",
+  "Director": "Richard De Aragues",
+  "Writer": "N/A",
+  "Actors": "Guy Martin, Ian Hutchinson, John McGuinness",
+  "Plot": "By vividly recounting the TT's legendary rivalries and the Isle of Man's unique road racing history, this 3D feature documentary will discover why modern TT riders still risk their lives to win the world's most dangerous race. The Isle of Man Tourist Trophy is the greatest motorcycle road race in the world, the ultimate challenge for rider and machine. It has always called for a commitment far beyond any other racing event, and many have made the ultimate sacrifice in their quest for victory. A story about freedom of choice, the strength of human spirit and the will to win. It's also an examination of what motivates those rare few, this elite band of brothers who risk everything to win. The vision of top commercials director Richard de Aragues, this promises to be one of the most thrilling films of 2011.",
+  "Language": "English",
+  "Country": "United Kingdom, Isle of Man",
+  "Awards": "2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjI4NDcyMTc3NV5BMl5BanBnXkFtZTcwMzgyMjg3NA@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "100%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "76/100"
+   }
+  ],
+  "Metascore": "76",
+  "imdbRating": "7.9",
+  "imdbVotes": "6,698",
+  "imdbID": "tt1698010",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-twardowsky": {
+  "Title": "Legendy Polskie Twardowsky",
+  "Year": "2015",
+  "Rated": "N/A",
+  "Released": "15 Dec 2015",
+  "Runtime": "9 min",
+  "Genre": "Short, Action, Comedy",
+  "Director": "Tomasz Baginski",
+  "Writer": "Blazej Dzikowski, Fish Ladder",
+  "Actors": "Robert Wieckiewicz, Aleksandra Kasprzyk, Piotr M.A. Cywinski",
+  "Plot": "Twardowsky is alone on the moon station, where he's hiding from the Devil and Lucy - a Hellfiend send to collect his soul. When Lucy finally arrive, Twardowsky already has a plan to trick the devil. In the end - he doesn't like the eternity in hell.",
+  "Language": "Polish",
+  "Country": "Poland",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZDc3YjYwM2UtNTZhOS00NzRlLWI3OTktZTAyMTcwZGVmYzAzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.4",
+  "imdbVotes": "918",
+  "imdbID": "tt6073384",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-twardowsky-2-0": {
+  "Title": "Legendy Polskie Twardowsky 2.0",
+  "Year": "2016",
+  "Rated": "N/A",
+  "Released": "16 Sep 2016",
+  "Runtime": "20 min",
+  "Genre": "Short, Action, Comedy",
+  "Director": "Tomasz Baginski",
+  "Writer": "Blazej Dzikowski, Fish Ladder",
+  "Actors": "Robert Wieckiewicz, Aleksandra Kasprzyk, Tomasz Drabek",
+  "Plot": "Twardowsky is heading to the border of the Solar System. After defeating Lucy (she-devil send to collect his soul) on the moon, he's running out of gas somewhere around Saturn. Devil send Lucy after Twardowsky again, to end what started on the moon. Will cunning Polish astronaut find a way from this mess and keep his precious soul?",
+  "Language": "Polish",
+  "Country": "Poland",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BY2NlYWE2ZTAtN2NmNy00NjEwLThmNDAtYWJhYjY4ZmM3MjVlXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.5",
+  "imdbVotes": "982",
+  "imdbID": "tt6073206",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-uncharted": {
+  "Title": "Uncharted",
+  "Year": "2022",
+  "Rated": "PG-13",
+  "Released": "18 Feb 2022",
+  "Runtime": "116 min",
+  "Genre": "Action, Adventure",
+  "Director": "Ruben Fleischer",
+  "Writer": "Rafe Judkins, Art Marcum, Matt Holloway",
+  "Actors": "Tom Holland, Mark Wahlberg, Antonio Banderas",
+  "Plot": "Street-smart Nathan Drake (Tom Holland) is recruited by seasoned treasure hunter Victor \"Sully\" Sullivan (Mark Wahlberg) to recover a fortune amassed by Ferdinand Magellan and lost 500 years ago by the House of Moncada. What starts as a heist job for the duo becomes a globe-trotting, white-knuckle race to reach the prize before the ruthless Santiago Moncada (Antonio Banderas), who believes he and his family are the rightful heirs. If Nate and Sully can decipher the clues and solve one of the world's oldest mysteries, they stand to find $5 billion in treasure and perhaps even Nate's long-lost brother...but only if they can learn to work together.",
+  "Language": "English, Spanish, Latin",
+  "Country": "Spain, United States",
+  "Awards": "4 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYjQxYWNiNzgtOTc2Yi00OGEwLTk5MjAtODdiZTk0ZDJlZGY4XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.3/10"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "45/100"
+   }
+  ],
+  "Metascore": "45",
+  "imdbRating": "6.3",
+  "imdbVotes": "298,712",
+  "imdbID": "tt1464335",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$148,648,820",
+  "Production": "Columbia Pictures",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-836641": {
+  "Title": "Undone",
+  "Year": "2019–2022",
+  "Rated": "TV-MA",
+  "Released": "13 Sep 2019",
+  "Runtime": "23 min",
+  "Genre": "Animation, Drama, Fantasy",
+  "Director": "N/A",
+  "Writer": "Raphael Bob-Waksberg, Kate Purdy",
+  "Actors": "Rosa Salazar, Angelique Cabral, Constance Marie",
+  "Plot": "A woman discovers she has a new relationship with time after surviving a car accident that almost killed her.",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "2 wins & 8 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMGU0OGE0Y2EtODA2Ny00MmEyLThiY2QtNWQzNTZhODg1NmIxXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.2",
+  "imdbVotes": "25,397",
+  "imdbID": "tt8101850",
+  "Type": "series",
+  "totalSeasons": "2",
+  "Response": "True"
+ },
+ "imp-f-upside-down-or-the-human-flies": {
+  "Title": "Upside Down; or, the Human Flies",
+  "Year": "1899",
+  "Rated": "N/A",
+  "Released": "01 Sep 1899",
+  "Runtime": "1 min",
+  "Genre": "Short, Fantasy",
+  "Director": "Walter R. Booth",
+  "Writer": "N/A",
+  "Actors": "Walter R. Booth",
+  "Plot": "A Spiritualist causes a group of table-turners to walk upside down on the ceiling.",
+  "Language": "None, English",
+  "Country": "United States, United Kingdom",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTAwNDkyZTYtZThkMi00MjZhLTk3M2MtNjg0OTQ4NmY5ZTQzXkEyXkFqcGdeQXVyMTIyODQyNDU0._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.1",
+  "imdbVotes": "192",
+  "imdbID": "tt0212580",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-vertigo": {
+  "Title": "Vertigo",
+  "Year": "1958",
+  "Rated": "PG",
+  "Released": "28 May 1958",
+  "Runtime": "128 min",
+  "Genre": "Mystery, Romance, Thriller",
+  "Director": "Alfred Hitchcock",
+  "Writer": "Alec Coppel, Samuel A. Taylor, Pierre Boileau",
+  "Actors": "James Stewart, Kim Novak, Barbara Bel Geddes",
+  "Plot": "Following his early retirement as a detective from the San Francisco Police Department, John Ferguson - Scottie to his friends - becomes obsessed with two women in succession, those obsessions which trouble his long time friend and former fiancée, Midge Wood, a designer of women's undergarments. The first is wealthy and elegant platinum blonde Madeleine Elster, the wife of his college acquaintance Gavin Elster, who hires John to follow her in Gavin's belief that she may be a danger to herself in thinking that she has recently been possessed by the spirit of Carlotta Valdes, Madeleine's great-grandmother who she knows nothing about, but who Gavin knows committed suicide in being mentally unbalanced when she was twenty-six, Madeleine's current age. The second is Judy Barton, who John spots on the street one day. Judy is a working class girl, but what makes John obsessed with her is that, despite her working class style and her brunette hair, she is the spitting image of Madeleine, into who he tries to transform Judy. The initial question that John has is if there is some connection between Madeleine and Judy. What happens between John and individually with Madeleine and Judy is affected by the reason John took that early retirement: a recent workplace incident that showed that he is acrophobic which leads to a severe case of vertigo whenever he looks down from tall heights.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 2 Oscars. 9 wins & 8 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzEyZTUxMWItMGVhYy00Y2NlLTljYTMtYzBmMzI1YmUyMDBkXkEyXkFqcGc@._V1_QL75_UX380_CR0,13,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "93%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "100/100"
+   }
+  ],
+  "Metascore": "100",
+  "imdbRating": "8.2",
+  "imdbVotes": "458,761",
+  "imdbID": "tt0052357",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$7,863,310",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-659055": {
+  "Title": "Vikings",
+  "Year": "2013–2020",
+  "Rated": "TV-MA",
+  "Released": "03 Mar 2013",
+  "Runtime": "44 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "N/A",
+  "Writer": "Michael Hirst",
+  "Actors": "Katheryn Winnick, Gustaf Skarsgård, Alexander Ludwig",
+  "Plot": "The adventures of a Ragnar Lothbrok: the greatest hero of his age. The series tells the saga of Ragnar's band of Viking brothers and his family as he rises to become King of the Viking tribes. As well as being a fearless warrior, Ragnar embodies the Norse traditions of devotion to the gods: legend has it that he was a direct descendant of Odin, the god of war and warriors.",
+  "Language": "English, Old English, Norse, Old, Latin, French, Arabic, Greek, Ancient (to 1453), Russian",
+  "Country": "Ireland, Canada",
+  "Awards": "Won 1 Primetime Emmy. 46 wins & 133 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTFmZmExYTEtYmE0Mi00MzRmLWE4ZDYtOThiNzNlOTIyODljXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.5",
+  "imdbVotes": "636,827",
+  "imdbID": "tt2306299",
+  "Type": "series",
+  "totalSeasons": "6",
+  "Response": "True"
+ },
+ "imp-f-vincent": {
+  "Title": "Vincent",
+  "Year": "1982",
+  "Rated": "G",
+  "Released": "01 Oct 1982",
+  "Runtime": "6 min",
+  "Genre": "Animation, Short, Family",
+  "Director": "Tim Burton",
+  "Writer": "Tim Burton",
+  "Actors": "Vincent Price",
+  "Plot": "Vincent Malloy, a polite 7-year-old boy and a fervent Vincent Price aficionado, has only one dream: to become like his idol. With this in mind and with the help of his unrestrained imagination, young Vincent relives his favourite actor's movies and stories, performing strange experiments in the likes of Edgar Allan Poe's tales. However, much to the boy's irritation, somehow, his mother always manages to get in the way. Poor Vincent, no one understands you.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "1 win",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTZkOGM0YWEtMzIxNi00NzdjLTljMDItOTgwMDU2OTU2NmVmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.3/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.3",
+  "imdbVotes": "24,647",
+  "imdbID": "tt0084868",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-10002984": {
+  "Title": "Voir",
+  "Year": "2021",
+  "Rated": "TV-MA",
+  "Released": "06 Dec 2021",
+  "Runtime": "N/A",
+  "Genre": "Documentary",
+  "Director": "N/A",
+  "Writer": "N/A",
+  "Actors": "Taylor Ramos, Tony Zhou, Drew McWeeny",
+  "Plot": "Film lovers examine the cinematic moments that thrilled, perplexed, challenged and forever changed them in this collection of visual essays.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMGJkZmM0YmMtODg3My00OWFmLWFmMWYtZDhkOTlkMzlhZTk4XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "1,792",
+  "imdbID": "tt15677070",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-f-voskhozhdeniye": {
+  "Title": "The Ascent",
+  "Year": "1977",
+  "Rated": "N/A",
+  "Released": "02 Apr 1977",
+  "Runtime": "111 min",
+  "Genre": "Drama, War",
+  "Director": "Larisa Shepitko",
+  "Writer": "Vasiliy Bykov, Yuri Klepikov, Larisa Shepitko",
+  "Actors": "Boris Plotnikov, Vladimir Gostyukhin, Sergey Yakovlev",
+  "Plot": "Two Soviet partisans on a mission to gather food contend with the winter cold, the occupying Germans, and their own psyches.",
+  "Language": "Russian, German",
+  "Country": "Soviet Union",
+  "Awards": "4 wins total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjIxODFhZDgtMDRhYS00NWViLWFiMTgtOTViYTA5YWE1MTM0XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "100%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.2",
+  "imdbVotes": "11,540",
+  "imdbID": "tt0075404",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-wake-in-fright": {
+  "Title": "Wake in Fright",
+  "Year": "1971",
+  "Rated": "R",
+  "Released": "09 Oct 1971",
+  "Runtime": "109 min",
+  "Genre": "Drama, Thriller",
+  "Director": "Ted Kotcheff",
+  "Writer": "Evan Jones, Kenneth Cook, Ted Kotcheff",
+  "Actors": "Donald Pleasence, Gary Bond, Chips Rafferty",
+  "Plot": "John Grant, a teacher working in the remote Australian town of Tiboonda, is under a financial bond with his Government job. At the end of term before Christmas holidays, he plans to visit his girlfriend in Sydney. In order to catch a flight to Sydney, he takes a train to the nearby mining town called Bundanyabba (or \"The Yabba\"), and plans to stay there overnight before moving on further to the airport. But things go grossly out of script as he is engulfed by the Yabba and its disconcerting residents.",
+  "Language": "English",
+  "Country": "Australia",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNjAwN2M2MjAtZDk2MS00MDQ2LTkxZWYtNTUyNTQ0YWI2NGJiXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "85/100"
+   }
+  ],
+  "Metascore": "85",
+  "imdbRating": "7.5",
+  "imdbVotes": "15,272",
+  "imdbID": "tt0067541",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$50,394",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-wall-e": {
+  "Title": "WALL·E",
+  "Year": "2008",
+  "Rated": "G",
+  "Released": "27 Jun 2008",
+  "Runtime": "98 min",
+  "Genre": "Animation, Adventure, Family",
+  "Director": "Andrew Stanton",
+  "Writer": "Andrew Stanton, Jim Reardon, Pete Docter",
+  "Actors": "Ben Burtt, Elissa Knight, Jeff Garlin",
+  "Plot": "In a distant, but not so unrealistic, future where mankind has abandoned earth because it has become covered with trash from products sold by the powerful multi-national Buy N Large corporation, WALL-E, a garbage collecting robot has been left to clean up the mess. Mesmerized with trinkets of Earth's history and show tunes, WALL-E is alone on Earth except for a sprightly pet cockroach. One day, EVE, a sleek (and dangerous) reconnaissance robot, is sent to Earth to find proof that life is once again sustainable. WALL-E falls in love with EVE. WALL-E rescues EVE from a dust storm and shows her a living plant he found amongst the rubble. Consistent with her \"directive\", EVE takes the plant and automatically enters a deactivated state except for a blinking green beacon. WALL-E, doesn't understand what has happened to his new friend, but, true to his love, he protects her from wind, rain, and lightning, even as she is unresponsive. One day a massive ship comes to reclaim EVE, but WALL-E, out of love or loneliness, hitches a ride on the outside of the ship to rescue EVE. The ship arrives back at a large space cruise ship, which is carrying all of the humans who evacuated Earth 700 years earlier. The people of Earth ride around this space resort on hovering chairs which give them a constant feed of TV and video chatting. They drink all of their meals through a straw out of laziness and/or bone loss, and are all so fat that they can barely move. When the auto-pilot computer, acting on hastily-given instructions sent many centuries before, tries to prevent the people of Earth from returning by stealing the plant, WALL-E, EVE, the portly captain, and a band of broken robots stage a mutiny.",
+  "Language": "English",
+  "Country": "United States, Japan",
+  "Awards": "Won 1 Oscar. 96 wins & 95 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "95%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "95/100"
+   }
+  ],
+  "Metascore": "95",
+  "imdbRating": "8.4",
+  "imdbVotes": "1,306,354",
+  "imdbID": "tt0910970",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$223,808,164",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-700190": {
+  "Title": "War for the Planet of the Apes",
+  "Year": "2017",
+  "Rated": "PG-13",
+  "Released": "14 Jul 2017",
+  "Runtime": "140 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "Matt Reeves",
+  "Writer": "Mark Bomback, Matt Reeves, Rick Jaffa",
+  "Actors": "Andy Serkis, Woody Harrelson, Steve Zahn",
+  "Plot": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.",
+  "Language": "English, American Sign ",
+  "Country": "United States, Canada",
+  "Awards": "Nominated for 1 Oscar. 28 wins & 65 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzNhMzNiZDYtMzYxYy00YTYwLTkxNmYtNTJhOGU1Yjg5ODI5XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "82/100"
+   }
+  ],
+  "Metascore": "82",
+  "imdbRating": "7.4",
+  "imdbVotes": "324,617",
+  "imdbID": "tt3450958",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$146,880,162",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-878089": {
+  "Title": "We Own This City",
+  "Year": "2022",
+  "Rated": "TV-MA",
+  "Released": "25 Apr 2022",
+  "Runtime": "N/A",
+  "Genre": "Biography, Crime, Drama",
+  "Director": "N/A",
+  "Writer": "George Pelecanos, David Simon",
+  "Actors": "Jon Bernthal, Wunmi Mosaku, Jamie Hector",
+  "Plot": "We Own the City is set in Baltimore 2015. Riots are erupting across the city as citizens demand justice for Freddie Gray, a 25-year-old Black man who has died under suspicious circumstances while in police custody. Drugs and violent crime are surging, and the city is reaching its highest murder count in more than two decades: 342 homicides in a single year, in a city of just 600,000 people. Facing pressure from the mayor's office-as well as a federal investigation of the department over Gray's death-Baltimore police commanders turn to a rank-and-file hero, Sergeant Wayne Jenkins, and his elite plainclothes unit, the Gun Trace Task Force, to help get guns and drugs off the street. However, behind these new efforts, a criminal conspiracy of unprecedented scale was unfolding within the police department. Entrusted with fixing the city's drug and gun crisis, Jenkins chose to exploit it instead.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "2 wins & 12 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BM2Q3NGIwNjQtZGJhNy00NDJlLThjMWEtNTBlZjU5Yzk1NTczXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.6",
+  "imdbVotes": "31,159",
+  "imdbID": "tt14192504",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-f-weekends": {
+  "Title": "Weekends",
+  "Year": "2017",
+  "Rated": "R",
+  "Released": "15 Apr 2018",
+  "Runtime": "15 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Trevor Jimenez",
+  "Writer": "Trevor Jimenez",
+  "Actors": "N/A",
+  "Plot": "'Weekends' is the story of a young boy shuffling between the homes of his recently divorced parents. Surreal dream-like moments mix with the domestic realities of a broken up family in this hand-animated film set in 1980s Toronto.",
+  "Language": "None",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 17 wins & 5 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZjg4ZTQ5MDctNjU1Mi00YjU4LWJlMDAtMTdlMjY1NWI2MGFjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "100%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.2",
+  "imdbVotes": "1,656",
+  "imdbID": "tt7375186",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-westerplatte": {
+  "Title": "Westerplatte Resists",
+  "Year": "1967",
+  "Rated": "TV-14",
+  "Released": "01 Sep 1967",
+  "Runtime": "96 min",
+  "Genre": "Drama, War",
+  "Director": "Stanislaw Rózewicz",
+  "Writer": "Jan Józef Szczepanski",
+  "Actors": "Zygmunt Hübner, Arkadiusz Bazak, Tadeusz Schmidt",
+  "Plot": "Westerplatte is a small peninsula at the entry to the Gdansk Harbour. Before World War II, it functioned as a Polish ammunition depot in the Free City of Danzig/Gdansk. Its crew consisted of one infantry company and a group of civilians, 182 people in total. It was the only Polish guard-post at the mouth of the Vistula River, with as little as five sentries, one field cannon, two anti-armour guns and four mortars. It was the first obstacle to Hitler's predatory march across Europe. The first shots of World War II were fired here. This film tells the story of Westerplatte's courageous defenders.",
+  "Language": "Polish, German",
+  "Country": "Poland",
+  "Awards": "1 win & 1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjc1MGQ2ZmQtMzA2Yy00ZjIyLTkxOWItNzcwYWY1YTQxMzUyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.0",
+  "imdbVotes": "572",
+  "imdbID": "tt0062485",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-what-s-eating-gilbert-grape": {
+  "Title": "What's Eating Gilbert Grape",
+  "Year": "1993",
+  "Rated": "PG-13",
+  "Released": "04 Mar 1994",
+  "Runtime": "118 min",
+  "Genre": "Drama",
+  "Director": "Lasse Hallström",
+  "Writer": "Peter Hedges",
+  "Actors": "Johnny Depp, Leonardo DiCaprio, Juliette Lewis",
+  "Plot": "What's Eating Gibert Grape is a beautifully shot movie of tenderness, caring and self-awareness that is set amongst the fictional working class one street town Endora. Centred around the Grape family Ellen and Amy and their two brothers Arnie and Gilbert, who, along with their morbidly obese widowed mother Bonnie Grape are striving to survive and coexist with the absence of a father figure, low wage work and seventeen-year-old Arnie's severe mental condition. It is in this awkward and extremely one sided affair that the unfortunate Gilbert has to constantly, while working for the town's slowly dying convenience store, take care of his younger brother Arnie. Gilbert's life, his future, is thwarted he knows this, but it is in this guardian angel that his love and bond for Arnie cannot, and will not, be let go. That is until the free spirit of Becky arrives in town, and with her grandmother are stranded for the week while waiting for parts for their vehicle. This realization unties new feelings, new thoughts and new hope for the put upon Gibert, something new is eating Gilbert Grape.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 8 wins & 7 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNWM5NWI1OTQtMTJiOS00ZDMxLWE1ODQtZjQ4MDc4OGE4ZjQyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "90%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "73/100"
+   }
+  ],
+  "Metascore": "73",
+  "imdbRating": "7.7",
+  "imdbVotes": "266,059",
+  "imdbID": "tt0108550",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$10,032,765",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-what-s-love-got-to-do-with-it": {
+  "Title": "What's Love Got to Do with It?",
+  "Year": "2022",
+  "Rated": "PG-13",
+  "Released": "05 May 2023",
+  "Runtime": "108 min",
+  "Genre": "Comedy, Drama, Romance",
+  "Director": "Shekhar Kapur",
+  "Writer": "Jemima Khan",
+  "Actors": "Mim Shaikh, Iman Boujelouah, Lily James",
+  "Plot": "In London, an award-winning film-maker documents her best friend's journey into an assisted marriage in line with his family's Pakistani heritage. In the process, she challenges her own attitude towards relationships.",
+  "Language": "English, Urdu, Arabic",
+  "Country": "United Kingdom, France, India, United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjdhYzdiOWItYTcwMS00ODcwLTk4MWYtZTNkYWYyNWEzMWMwXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "71%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "59/100"
+   }
+  ],
+  "Metascore": "59",
+  "imdbRating": "6.3",
+  "imdbVotes": "11,815",
+  "imdbID": "tt13430858",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-when-the-day-breaks": {
+  "Title": "When the Day Breaks",
+  "Year": "1999",
+  "Rated": "N/A",
+  "Released": "05 Sep 1999",
+  "Runtime": "10 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Amanda Forbis, Wendy Tilby",
+  "Writer": "Wendy Tilby",
+  "Actors": "N/A",
+  "Plot": "A rooster has his last biscuit for breakfast and goes grocery shopping. A pig prepares her breakfast (potato peelings, with the potatoes thrown in the trash) and discovers she needs more milk. Their paths cross, a lemon falls into the sewer, and both lives are changed.",
+  "Language": "English",
+  "Country": "Canada",
+  "Awards": "Nominated for 1 Oscar. 19 wins & 4 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTFmYzk1ZjYtMDExMS00MGNhLWI5NzAtOTcwMWEwYjYyNzE1XkEyXkFqcGdeQXVyMTg2NzgzMDE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "1,352",
+  "imdbID": "tt0200282",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-whiplash": {
+  "Title": "Whiplash",
+  "Year": "2014",
+  "Rated": "R",
+  "Released": "15 Oct 2014",
+  "Runtime": "106 min",
+  "Genre": "Drama, Music",
+  "Director": "Damien Chazelle",
+  "Writer": "Damien Chazelle",
+  "Actors": "Miles Teller, J.K. Simmons, Melissa Benoist",
+  "Plot": "Nineteen year old Andrew Niemann wants to be the greatest jazz drummer in the world, in a league with Buddy Rich. This goal is despite not coming from a pedigree of greatest, musical or otherwise, with Jim, his high school teacher father, being a failed writer. Andrew is starting his first year at Shaffer Conservatory of Music, the best music school in the United States. At Shaffer, being the best means being accepted to study under Terence Fletcher and being asked to play in his studio band, which represents the school at jazz competitions. Based on their less than positive first meeting, Andrew is surprised that Fletcher asks him to join the band, albeit in the alternate drummer position which he is more than happy to do initially. Andrew quickly learns that Fletcher operates on fear and intimidation, never settling for what he considers less than the best each and every time. Being the best in Fletcher's mind does not only entail playing well, but knowing that you're playing well and if not what you're doing wrong. His modus operandi creates an atmosphere of fear and of every man or woman for him/herself within the band. Regardless, Andrew works hard to be the best. He has to figure out his life priorities and what he is willing to sacrifice to be the best. The other question becomes how much emotional abuse he will endure by Fletcher to reach that greatness, which he may believe he can only achieve with the avenues opened up by Fletcher.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 3 Oscars. 100 wins & 144 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "89/100"
+   }
+  ],
+  "Metascore": "89",
+  "imdbRating": "8.5",
+  "imdbVotes": "1,134,459",
+  "imdbID": "tt2582802",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$14,003,391",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-who-am-i-kein-system-ist-sicher": {
+  "Title": "Who Am I",
+  "Year": "2014",
+  "Rated": "Not Rated",
+  "Released": "25 Sep 2014",
+  "Runtime": "102 min",
+  "Genre": "Crime, Drama, Mystery",
+  "Director": "Baran bo Odar",
+  "Writer": "Jantje Friese, Baran bo Odar",
+  "Actors": "Tom Schilling, Elyas M'Barek, Wotan Wilke Möhring",
+  "Plot": "Benjamin (TOM SCHILLING) is invisible, a nobody. This changes abruptly when he meets charismatic Max (ELYAS M'BAREK). Even though they couldn't seem more different from the outside, they share the same interest: hacking. Together with Max's friends, the impulsive Stephan (WOTAN WILKE MÖHRING) and paranoid Paul (ANTOINE MONOT), they form the subversive Hacker collective CLAY (CLOWNS LAUGHING @ YOU). CLAY provokes with fun campaigns and speaks for a whole generation. For the first time in his life, Benjamin is part of something and even the attractive Marie (HANNAH HERZSPRUNG) begins noticing him. But fun turns into deadly danger when CLAY appears on the BKA's (Bundeskriminalamt, Federal Criminal Police Office) as well as Europol's most wanted list. Hunted by Cybercrime investigator Hanne Lindberg (TRINE DYRHOLM), Benjamin is no longer a nobody, but instead one of the most wanted hackers in the world.",
+  "Language": "German, English",
+  "Country": "Germany",
+  "Awards": "6 wins & 6 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZDFmNDY0NWUtMzZhYS00ZDk4LTg0MWItMTg5MDliZWExNmI4XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.4",
+  "imdbVotes": "64,148",
+  "imdbID": "tt3042408",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-528758": {
+  "Title": "Wicked",
+  "Year": "2024",
+  "Rated": "PG",
+  "Released": "22 Nov 2024",
+  "Runtime": "160 min",
+  "Genre": "Fantasy, Musical, Romance",
+  "Director": "Jon M. Chu",
+  "Writer": "Winnie Holzman, Dana Fox, Gregory Maguire",
+  "Actors": "Cynthia Erivo, Ariana Grande, Jeff Goldblum",
+  "Plot": "A vivid reimagining of the classic The Wizard of Oz, Wicked spotlights the untold stories of Oz's most famous (or infamous) characters, namely the Wicked Witch of the West and her unlikely friend, Glinda the Good Witch. The show follows green-skinned star Elphaba from birth to college and through the life-changing events which eventually label her \"wicked,\" introducing spoiled rich girl Glinda, local prince and heartthrob Fiyero and even the Wizard of Oz himself, a troubled man very unlike the one you may remember. As Elphaba, a passionate political activist if there ever was one, fights injustice and seeks to undo the mistakes of the past, dark secrets and personal tragedies shape the history of Oz, paying homage to the classic Wizard of Oz story while simultaneously changing fans' understanding of it forever. A cautionary tale about love, friendship and trust, Wicked effortlessly reveals that there are indeed two sides to every story.",
+  "Language": "English",
+  "Country": "United Kingdom, United States, Canada",
+  "Awards": "Won 2 Oscars. 125 wins & 324 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOWMwYjYzYmMtMWQ2Ni00NWUwLTg2MzAtYzkzMDBiZDIwOTMwXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "88%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "73/100"
+   }
+  ],
+  "Metascore": "73",
+  "imdbRating": "7.4",
+  "imdbVotes": "191,746",
+  "imdbID": "tt1262426",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$474,560,015",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-worlds-apart": {
+  "Title": "Worlds Apart",
+  "Year": "2011",
+  "Rated": "N/A",
+  "Released": "21 Jul 2011",
+  "Runtime": "9 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Michael Huber",
+  "Writer": "Michael Huber",
+  "Actors": "N/A",
+  "Plot": "Part science fiction, part thriller and part cautionary fairytale, Worlds Apart encompasses the universal themes of innocence, friendship and the possible fate of humanity. Set in the not so distant future, Earth is visited by extra terrestrials on a peaceful mission to find sentient life. Landing near a central California farm home, they discover a desolate, polluted world where little life remains. As they search the abandoned farm home, they find a lone teddy bear that emits signs of life. With the aid of their futuristic technology, they extract the memories of the teddy bear and thus unravel the mystery of humanity's demise. Worlds Apart asks the questions, Is there hope for what remains of humanity?",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "1 win & 1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNjEwM2IwZWUtZmY3ZS00Yzc4LWFiNDUtNTY0NzBhNGY3MDc5XkEyXkFqcGdeQXVyMjU1OTc2MTc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.6",
+  "imdbVotes": "118",
+  "imdbID": "tt1915626",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-wrath-of-man": {
+  "Title": "Wrath of Man",
+  "Year": "2021",
+  "Rated": "R",
+  "Released": "07 May 2021",
+  "Runtime": "119 min",
+  "Genre": "Action, Crime, Thriller",
+  "Director": "Guy Ritchie",
+  "Writer": "Nicolas Boukhrief, Éric Besnard, Guy Ritchie",
+  "Actors": "Jason Statham, Holt McCallany, Josh Hartnett",
+  "Plot": "Mysterious and wild-eyed, a new security guard for a cash truck surprises his co-workers when he unleashes precision skills during a heist. The crew is left wondering who he is and where he came from. Soon, the marksman's ultimate motive becomes clear as he takes dramatic and irrevocable steps to settle a score.",
+  "Language": "English, Spanish, Arabic",
+  "Country": "United Kingdom, United States",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODE4ZGY4OTktNDBjMy00NGVkLTk5YWUtNjA3NGU3MTA5NzM0XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "68%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "57/100"
+   }
+  ],
+  "Metascore": "57",
+  "imdbRating": "7.1",
+  "imdbVotes": "237,787",
+  "imdbID": "tt11083552",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$27,466,489",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-828663": {
+  "Title": "The Promised Neverland",
+  "Year": "2019–2021",
+  "Rated": "TV-14",
+  "Released": "14 Apr 2019",
+  "Runtime": "23 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "N/A",
+  "Writer": "Kaiu Shirai",
+  "Actors": "Sumire Morohoshi, Mariya Ise, Shinei Ueki",
+  "Plot": "At Grace Field House, life couldn't be better for the orphans. Though they have no parents, together with the other kids and a kind \"Mama\" who cares for them, they form one big, happy family. No child is ever overlooked, especially since they are all adopted by the age of 12. Their daily lives involve rigorous tests, but afterwards, they are allowed to play outside. There is only one rule they must obey: do not leave the orphanage. But one day, two top-scoring orphans, Emma and Norman, venture past the gate and unearth the harrowing secret behind their entire existence. Utilizing their quick-wittedness, the children must work together to somehow change their predetermined fate.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "8 wins & 21 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMGQ4ZGJhZTUtZDQ5Mi00NTI1LWEyYjItMzIxM2VlNmY4MDEyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.1",
+  "imdbVotes": "55,634",
+  "imdbID": "tt8788458",
+  "Type": "series",
+  "totalSeasons": "2",
+  "Response": "True"
+ },
+ "imp-f-yesterday": {
+  "Title": "Yesterday",
+  "Year": "2019",
+  "Rated": "PG-13",
+  "Released": "28 Jun 2019",
+  "Runtime": "116 min",
+  "Genre": "Comedy, Fantasy, Music",
+  "Director": "Danny Boyle",
+  "Writer": "Richard Curtis, Jack Barth",
+  "Actors": "Himesh Patel, Lily James, Sophia Di Martino",
+  "Plot": "In Lowestoft UK, Jack Malik is a frustrated musician whose musical career is going nowhere despite the faith that his friend/manager Ellie Appleton has in him. However, on the night Jack decides to give up, the whole world is momentarily hit with a massive blackout during which Jack is hit by a bus. Upon regaining consciousness, Jack learns to his astonishment that he is apparently now the only one who knows the music of the Beatles. Realizing this improbable opportunity, Jack begins playing the music of one of the world's greatest rock bands, being forced to claim it as his own. It pays off quickly and Jack becomes a worldwide musical sensation. However, Jack finds himself drifting away from Ellie, only realizing his love for her when she has become intimidated by his success, which depends on a blatant plagiarization that no one could find out. Now, Jack must make a fundamental moral decision about his music to satisfy his conscience as he decides what he truly needs.",
+  "Language": "English, Portuguese, Japanese",
+  "Country": "United Kingdom, China, Japan, United States",
+  "Awards": "2 wins & 19 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjQ0NTI0NjkyN15BMl5BanBnXkFtZTgwNzY0MTE0NzM@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "63%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "55/100"
+   }
+  ],
+  "Metascore": "55",
+  "imdbRating": "6.8",
+  "imdbVotes": "183,673",
+  "imdbID": "tt8079248",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$73,286,650",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-yi-yi": {
+  "Title": "Yi Yi",
+  "Year": "2000",
+  "Rated": "Not Rated",
+  "Released": "16 Dec 2000",
+  "Runtime": "173 min",
+  "Genre": "Drama",
+  "Director": "Edward Yang",
+  "Writer": "Edward Yang",
+  "Actors": "Nien-Jen Wu, Elaine Jin, Issei Ogata",
+  "Plot": "Portrait of a middle-class family in Taipei. A man in his forties, his teenage daughter and his eight-year-old son experience life, navigating between remorse, hope and disappointment.",
+  "Language": "Mandarin, Min Nan, Hokkien, English, Japanese, French",
+  "Country": "Taiwan, Japan",
+  "Awards": "14 wins & 23 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTAyMDQ5Y2MtZDk0NC00N2IyLWE5OTgtZjJkZWNlMDBhMDhlXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "94/100"
+   }
+  ],
+  "Metascore": "94",
+  "imdbRating": "8.1",
+  "imdbVotes": "33,452",
+  "imdbID": "tt0244316",
+  "Type": "movie",
+  "DVD": "12 Jun 2007",
+  "BoxOffice": "$1,252,241",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-yoru-wa-mijikashi-aruke-yo-otome": {
+  "Title": "The Night Is Short, Walk on Girl",
+  "Year": "2017",
+  "Rated": "PG-13",
+  "Released": "07 Apr 2017",
+  "Runtime": "92 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Masaaki Yuasa",
+  "Writer": "Tomihiko Morimi, Makoto Ueda",
+  "Actors": "Gen Hoshino, Kana Hanazawa, Hiroshi Kamiya",
+  "Plot": "As a group of teens go out for a night on the town, a sophomore known only as \"The Girl with Black Hair\" experiences a series of surreal encounters with the local nightlife - all the while unaware of the romantic longings of Senpai, a fellow student who has been creating increasingly fantastic and contrived reasons to run into her, in an effort to win her heart.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "2 wins & 5 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTU3ZWNkOWEtMjAyMC00NThhLThkZjEtMTJmZjFmN2UwMWMyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "90%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "65/100"
+   }
+  ],
+  "Metascore": "65",
+  "imdbRating": "7.5",
+  "imdbVotes": "7,232",
+  "imdbID": "tt6335734",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$406,490",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-zing": {
+  "Title": "Zing",
+  "Year": "2011",
+  "Rated": "N/A",
+  "Released": "08 May 2011",
+  "Runtime": "8 min",
+  "Genre": "Animation, Short, Fantasy",
+  "Director": "Kyra Buschor, Cynthia Collins",
+  "Writer": "Kyra Buschor, Cynthia Collins",
+  "Actors": "Katharina Dietschmann, Anselm Roser",
+  "Plot": "Day in, day out, Mr. Grimm is busy with his job as the Reaper, harvesting people's lives. One day, his monotonous existence is interrupted by the door bell. It's a little girl. She wants her cat back. Little does she know that she's the next life on Mr. Grimm's list.",
+  "Language": "None",
+  "Country": "Germany",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOGE2M2Y3Y2ItZWY0ZS00MzRjLWFlNzctY2QxNzI2ZmU0OTc3XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.3/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.3",
+  "imdbVotes": "270",
+  "imdbID": "tt1992282",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-agodna": {
+  "Title": "A Gentle Spirit",
+  "Year": "1985",
+  "Rated": "N/A",
+  "Released": "01 Oct 1986",
+  "Runtime": "12 min",
+  "Genre": "Short, Animation",
+  "Director": "Piotr Dumala",
+  "Writer": "Fyodor Dostoevsky, Piotr Dumala",
+  "Actors": "Józef Duriasz",
+  "Plot": "A film based on a short story by Dostoevsky about a young woman dominated and intimidated by her old husband.",
+  "Language": "Polish",
+  "Country": "Poland",
+  "Awards": "3 wins & 2 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTRjYzQwZTYtY2VkOS00NDI3LWI0NGUtM2E2N2IxYmZmNTA3XkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.4",
+  "imdbVotes": "241",
+  "imdbID": "tt0242590",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-kami-kodomo-no-ame-to-yuki": {
+  "Title": "Wolf Children",
+  "Year": "2012",
+  "Rated": "PG",
+  "Released": "21 Jul 2012",
+  "Runtime": "117 min",
+  "Genre": "Animation, Drama, Family",
+  "Director": "Mamoru Hosoda",
+  "Writer": "Mamoru Hosoda, Satoko Okudera",
+  "Actors": "Aoi Miyazaki, Takao Osawa, Haru Kuroki",
+  "Plot": "After her werewolf lover unexpectedly dies in an accident while hunting for food for their children, a young woman must find ways to raise the werewolf son and daughter that she had with him while keeping their trait hidden from society.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "19 wins & 6 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDc4MTk0ZTEtMWNiMC00MTM3LWFmOTQtMDAwMjQ2MjhiNTcxXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "95%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "76/100"
+   }
+  ],
+  "Metascore": "76",
+  "imdbRating": "8.1",
+  "imdbVotes": "54,215",
+  "imdbID": "tt2140203",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$258,252",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-87947": {
+  "Title": "Swiat wedlug Kiepskich",
+  "Year": "1999–2022",
+  "Rated": "N/A",
+  "Released": "16 Mar 1999",
+  "Runtime": "30 min",
+  "Genre": "Comedy",
+  "Director": "N/A",
+  "Writer": "N/A",
+  "Actors": "Andrzej Grabowski, Marzena Kipiel-Sztuka, Bartosz Zukowski",
+  "Plot": "TV show about stereotypical polish family and their neighbours living in one of the tenement houses in Wroclaw.",
+  "Language": "English, Polish, Russian",
+  "Country": "Poland",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZGFjMjcxNmItZTJhOS00YmZmLTgyMGItZmM4YzViNTdlODlmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.5",
+  "imdbVotes": "1,120",
+  "imdbID": "tt0297639",
+  "Type": "series",
+  "totalSeasons": "28",
+  "Response": "True"
+ },
+ "imp-f-1917": {
+  "Title": "1917 (2019)",
+  "Year": "2019",
+  "Rated": "N/A",
+  "Released": "03 Feb 2020",
+  "Runtime": "N/A",
+  "Genre": "N/A",
+  "Director": "N/A",
+  "Writer": "N/A",
+  "Actors": "N/A",
+  "Plot": "N/A",
+  "Language": "N/A",
+  "Country": "N/A",
+  "Awards": "N/A",
+  "Poster": "N/A",
+  "Ratings": [],
+  "Metascore": "N/A",
+  "imdbRating": "N/A",
+  "imdbVotes": "N/A",
+  "imdbID": "tt24820246",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-2012": {
+  "Title": "2012",
+  "Year": "2009",
+  "Rated": "PG-13",
+  "Released": "13 Nov 2009",
+  "Runtime": "158 min",
+  "Genre": "Action, Adventure, Sci-Fi",
+  "Director": "Roland Emmerich",
+  "Writer": "Roland Emmerich, Harald Kloser",
+  "Actors": "John Cusack, Thandiwe Newton, Chiwetel Ejiofor",
+  "Plot": "Dr. Adrian Helmsley, part of a worldwide geophysical team investigating the effect on the earth of radiation from unprecedented solar storms, learns that the earth's core is heating up. He warns U.S. President Thomas Wilson that the crust of the earth is becoming unstable and that without proper preparations for saving a fraction of the world's population, the entire race is doomed. Meanwhile, writer Jackson Curtis stumbles on the same information. While the world's leaders race to build \"arks\" to escape the impending cataclysm, Curtis struggles to find a way to save his family. Meanwhile, volcanic eruptions and earthquakes of unprecedented strength wreak havoc around the world.",
+  "Language": "English, French, Tibetan, Mandarin, Russian, Hindi, Portuguese, Latin, Italian, Spanish",
+  "Country": "United States",
+  "Awards": "5 wins & 21 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTY0MjEyODQzMF5BMl5BanBnXkFtZTcwMTczMjQ4Mg@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "5.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "40%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "49/100"
+   }
+  ],
+  "Metascore": "49",
+  "imdbRating": "5.9",
+  "imdbVotes": "419,441",
+  "imdbID": "tt1190080",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$166,112,167",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-22-jump-street": {
+  "Title": "22 Jump Street",
+  "Year": "2014",
+  "Rated": "R",
+  "Released": "13 Jun 2014",
+  "Runtime": "112 min",
+  "Genre": "Action, Comedy, Crime",
+  "Director": "Phil Lord, Christopher Miller",
+  "Writer": "Michael Bacall, Oren Uziel, Rodney Rothman",
+  "Actors": "Channing Tatum, Jonah Hill, Ice Cube",
+  "Plot": "After making their way through high school (twice), big changes are in store for officers Schmidt (Jonah Hill) and Jenko (Channing Tatum) when they go deep undercover at a local college. But when Jenko meets a kindred spirit on the football team, and Schmidt infiltrates the bohemian art major scene, they begin to question their partnership. Now they don't have to just crack the case - they have to figure out if they can have a mature relationship. If these two overgrown adolescents can grow from freshmen into real men, college might be the best thing that ever happened to them.",
+  "Language": "English, Spanish, Ukrainian",
+  "Country": "United States",
+  "Awards": "7 wins & 25 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTcwNzAxMDU1M15BMl5BanBnXkFtZTgwNDE2NTU1MTE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "84%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "71/100"
+   }
+  ],
+  "Metascore": "71",
+  "imdbRating": "7.0",
+  "imdbVotes": "436,227",
+  "imdbID": "tt2294449",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$191,719,337",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-126239": {
+  "Title": "28 Years Later",
+  "Year": "2025",
+  "Rated": "R",
+  "Released": "20 Jun 2025",
+  "Runtime": "115 min",
+  "Genre": "Horror, Sci-Fi, Thriller",
+  "Director": "Danny Boyle",
+  "Writer": "Alex Garland",
+  "Actors": "Jodie Comer, Aaron Taylor-Johnson, Ralph Fiennes",
+  "Plot": "It's been almost three decades since the rage virus escaped a biological weapons laboratory, and now, still in a ruthlessly enforced quarantine, some have found ways to exist amidst the infected. One such group of survivors lives on a small island connected to the mainland by a single, heavily-defended causeway. When one of the group leaves the island on a mission into the dark heart of the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other survivors as well.",
+  "Language": "English, Swedish",
+  "Country": "United Kingdom, Canada, United States",
+  "Awards": "Nominated for 1 BAFTA Award. 6 wins & 63 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNjgwYTI0YjctMWYzNS00MmI1LWI5YTctNmE1YjBkNDFlNWMxXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "88%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "77/100"
+   }
+  ],
+  "Metascore": "77",
+  "imdbRating": "6.6",
+  "imdbVotes": "209,527",
+  "imdbID": "tt10548174",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$70,446,897",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-8-1-2": {
+  "Title": "8 1/2",
+  "Year": "2016",
+  "Rated": "N/A",
+  "Released": "24 Aug 2016",
+  "Runtime": "18 min",
+  "Genre": "Short, Comedy, Drama",
+  "Director": "Bryce Edmonds",
+  "Writer": "Bryce Edmonds",
+  "Actors": "Lev Cameron, Gracie Miller, Shae Smolik",
+  "Plot": "Irate producers. Condescending critics. Production's about to start on your next film. Your girlfriend is leaving you. Your lover is upset. And, your best friend is having a midlife crisis too. Life is tough for an 8½-year-old director. (Based upon Fellini's masterpiece, 8½ (1963))",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjEzZmNmZDQtODI1Mi00NmUwLTgyNWUtODZhYjBlM2VmNzVmXkEyXkFqcGdeQXVyNjQ1Mzc5OTI@._V1_SX300.jpg",
+  "Ratings": [],
+  "Metascore": "N/A",
+  "imdbRating": "N/A",
+  "imdbVotes": "N/A",
+  "imdbID": "tt6056646",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-8-mile": {
+  "Title": "8 Mile",
+  "Year": "2002",
+  "Rated": "R",
+  "Released": "08 Nov 2002",
+  "Runtime": "110 min",
+  "Genre": "Drama, Music",
+  "Director": "Curtis Hanson",
+  "Writer": "Scott Silver",
+  "Actors": "Eminem, Brittany Murphy, Kim Basinger",
+  "Plot": "The setting is Detroit in 1995. The city is divided by 8 Mile, a road that splits the town in half along racial lines. A young white rapper, Jimmy \"B-Rabbit\" Smith Jr. summons strength within himself to cross over these arbitrary boundaries to fulfill his dream of success in hip hop. With his pal Future and the three one third in place, all he has to do is not choke.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 17 wins & 21 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzFhZDhjMDAtZWJlZS00ZWUyLWFlZGMtYTcwZjFlODcyMGE2XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "76%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "77/100"
+   }
+  ],
+  "Metascore": "77",
+  "imdbRating": "7.2",
+  "imdbVotes": "347,308",
+  "imdbID": "tt0298203",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$116,750,901",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-a-bridge-too-far": {
+  "Title": "A Bridge Too Far",
+  "Year": "1977",
+  "Rated": "PG",
+  "Released": "15 Jun 1977",
+  "Runtime": "175 min",
+  "Genre": "Drama, History, War",
+  "Director": "Richard Attenborough",
+  "Writer": "Cornelius Ryan, William Goldman",
+  "Actors": "Sean Connery, Ryan O'Neal, Michael Caine",
+  "Plot": "The true story of Operation Market Garden, the Allies attempt, in September 1944, to hasten the end of World War II by driving through Belgium and Holland into Germany. The idea was for U.S. airborne divisions to take the towns of Eindhoven and Nijmegen and a British airborne division, reinforced by a Polish airborne brigade, to take the town of Arnhem. They would be reinforced, in due course and in turn, by the British XXX Corps, land-based and driving up from the British lines in the south. The key to the operation was the bridges, as if the Germans held or blew them, the paratroopers could not be relieved. Faulty intelligence, Allied high command hubris, and stubborn German resistance would ensure that Arnhem was a bridge too far.",
+  "Language": "English, German, Dutch, Polish, Latin",
+  "Country": "United States, United Kingdom",
+  "Awards": "Won 4 BAFTA 7 wins & 5 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODg5MDQ5OTAtNzU3NC00YjBjLTkzM2MtNDdiOGMwOTJiYWI1XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "61%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "63/100"
+   }
+  ],
+  "Metascore": "63",
+  "imdbRating": "7.4",
+  "imdbVotes": "67,192",
+  "imdbID": "tt0075784",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$50,750,000",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-476667": {
+  "Title": "A Hometown in Heart",
+  "Year": "1949",
+  "Rated": "N/A",
+  "Released": "09 Feb 1949",
+  "Runtime": "77 min",
+  "Genre": "Drama",
+  "Director": "Yong-Gyu Yoon",
+  "Writer": "Se-deok Ham, Il-byeong Kwak",
+  "Actors": "Ki-jong Byeon, Heon-yong Oh, Seung-min Nam",
+  "Plot": "Do-seong is a child monk who lives at a small mountain temple with the head monk, learning the teachings of Buddha. He becomes attached to a young widow who comes to pray at the temple, and the childless widow entreats the head monk to let her raise Do-seong as her own son.",
+  "Language": "Korean",
+  "Country": "South Korea",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDIxNmVkODgtNTNjOC00ZTQzLThlMWYtZWI0MDZiY2ZjOTI4XkEyXkFqcGdeQXVyMTM2MDY0OTYx._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.2",
+  "imdbVotes": "171",
+  "imdbID": "tt2151544",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-729800": {
+  "Title": "A Minecraft Movie",
+  "Year": "2025",
+  "Rated": "PG",
+  "Released": "04 Apr 2025",
+  "Runtime": "101 min",
+  "Genre": "Action, Adventure, Comedy",
+  "Director": "Jared Hess",
+  "Writer": "Chris Bowman, Hubbel Palmer, Neil Widener",
+  "Actors": "Jason Momoa, Jack Black, Sebastian Hansen",
+  "Plot": "Four misfits are suddenly pulled through a mysterious portal into a bizarre cubic wonderland that thrives on imagination. To get back home they'll have to master this world while embarking on a quest with an unexpected expert craf...",
+  "Language": "English, Spanish",
+  "Country": "United States, Sweden, New Zealand, Canada",
+  "Awards": "2 wins & 15 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYzFjMzNjOTktNDBlNy00YWZhLWExYTctZDcxNDA4OWVhOTJjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "5.6/10"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "45/100"
+   }
+  ],
+  "Metascore": "45",
+  "imdbRating": "5.6",
+  "imdbVotes": "153,774",
+  "imdbID": "tt3566834",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$424,087,780",
+  "Production": "Warner Bros. Pictures",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-795912": {
+  "Title": "A Quiet Place",
+  "Year": "2018",
+  "Rated": "PG-13",
+  "Released": "06 Apr 2018",
+  "Runtime": "90 min",
+  "Genre": "Drama, Horror, Sci-Fi",
+  "Director": "John Krasinski",
+  "Writer": "Bryan Woods, Scott Beck, John Krasinski",
+  "Actors": "Emily Blunt, John Krasinski, Millicent Simmonds",
+  "Plot": "In a devastated Earth overrun by invincible predators of a possible extraterrestrial origin, the Abbotts find themselves struggling to survive in the isolation of upstate New York, defined by a new era of utter silence. Indeed, as this new type of invader is attracted to noise, even the slightest of sounds can be deadly; however, it's been already twelve months since the powerful monsters' first sightings, and this resilient family still stands strong. Of course, learning the rules of survival in this muted dystopia is essential; nevertheless, now, of all times, an otherwise joyous event puts in jeopardy the already fragile stability. And now, more than ever, the Abbotts must not make a sound.",
+  "Language": "English, American Sign ",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 38 wins & 129 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "82/100"
+   }
+  ],
+  "Metascore": "82",
+  "imdbRating": "7.5",
+  "imdbVotes": "652,123",
+  "imdbID": "tt6644200",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$188,024,361",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-abiogenesis": {
+  "Title": "Abiogenesis",
+  "Year": "2011",
+  "Rated": "TV-G",
+  "Released": "26 May 2012",
+  "Runtime": "4 min",
+  "Genre": "Animation, Short, Action",
+  "Director": "Richard Mans",
+  "Writer": "Richard Mans",
+  "Actors": "N/A",
+  "Plot": "At a far-off, barren and lifeless star, somewhere in the deep and cold space, an oblong self-contained metal pod begins the landing procedure, on a mission to bring a vital and radical change. Suddenly, from the inside, four terraforming machines scatter to the four corners of the planet in search of its natural resources, and after a while, they return to unite with the vessel. Now, everything is ready for the land's astounding transformation.",
+  "Language": "None",
+  "Country": "New Zealand",
+  "Awards": "1 win & 1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTM1OTM4ODczMV5BMl5BanBnXkFtZTcwMzg3MjA2NQ@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.5",
+  "imdbVotes": "819",
+  "imdbID": "tt1959325",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-abominable": {
+  "Title": "Abominable",
+  "Year": "2019",
+  "Rated": "PG",
+  "Released": "27 Sep 2019",
+  "Runtime": "97 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Jill Culton, Todd Wilderman",
+  "Writer": "Jill Culton",
+  "Actors": "Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor",
+  "Plot": "While grieving over her late father and dealing with her many teenage frustrations, Yi discovers an infant yeti hiding on the roof of her apartment building. Rather lovable than scary, the creature has escaped from a research laboratory. Yi and two boys, a neighbour, Jin, and his cousin, Peng, leave their unnamed city, embarking on a trip across China to help their new friend, eponymously named Everest, get back safely home, to Mount Everest, and reunite with his family. They are chased by the rare animals' collector, Burnish, and his zoologist, Dr. Zara, who are determined to take Everest back to captivity. Enter the road movie, involving a chase, taking place along the captivating scenic cross-country trip, telling the sweet and endearing story about acceptance and bonding, value of friendship, importance of freedom and power and strength of family.",
+  "Language": "English, Mandarin",
+  "Country": "United States, China, Japan",
+  "Awards": "4 wins & 23 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDdiYTViMzQtNDhkZC00YTgzLWI2NWItODZkNjVlMDZkMDNiXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "83%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "61/100"
+   }
+  ],
+  "Metascore": "61",
+  "imdbRating": "7.0",
+  "imdbVotes": "46,541",
+  "imdbID": "tt6324278",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$61,270,390",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-adam-and-dog": {
+  "Title": "Adam and Dog",
+  "Year": "2012",
+  "Rated": "TV-PG",
+  "Released": "06 Nov 2012",
+  "Runtime": "16 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Minkyu Lee",
+  "Writer": "Minkyu Lee",
+  "Actors": "Alexander Jasho",
+  "Plot": "Dog walks Eden. Then one day he meets a strange creature, Adam. Side by side, they spend their days in the flourishing garden, and become inseparable companions - until a new creature arrives: Eve. After meeting this new companion, who is similar to him, Adam neglects Dog. But after the Fall of Man, when the two Humans must leave the Garden, he consorts with them into the realm of hardship.",
+  "Language": "None",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 1 win & 1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzc1NzcyNzY4Nl5BMl5BanBnXkFtZTcwNTEwMDIwOQ@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.9",
+  "imdbVotes": "2,333",
+  "imdbID": "tt2162565",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-643582": {
+  "Title": "Adam and Dog",
+  "Year": "2012",
+  "Rated": "TV-PG",
+  "Released": "06 Nov 2012",
+  "Runtime": "16 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Minkyu Lee",
+  "Writer": "Minkyu Lee",
+  "Actors": "Alexander Jasho",
+  "Plot": "Dog walks Eden. Then one day he meets a strange creature, Adam. Side by side, they spend their days in the flourishing garden, and become inseparable companions - until a new creature arrives: Eve. After meeting this new companion, who is similar to him, Adam neglects Dog. But after the Fall of Man, when the two Humans must leave the Garden, he consorts with them into the realm of hardship.",
+  "Language": "None",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 1 win & 1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzc1NzcyNzY4Nl5BMl5BanBnXkFtZTcwNTEwMDIwOQ@@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.9",
+  "imdbVotes": "2,333",
+  "imdbID": "tt2162565",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-208087": {
+  "Title": "Adieu Philippine",
+  "Year": "1962",
+  "Rated": "N/A",
+  "Released": "25 Sep 1963",
+  "Runtime": "106 min",
+  "Genre": "Drama, Romance",
+  "Director": "Jacques Rozier",
+  "Writer": "Michèle O'Glor, Jacques Rozier",
+  "Actors": "Jean-Claude Aimini, Daniel Descamps, Stefania Sabatini",
+  "Plot": "Michel is a young technician in the fledgling TV industry and is due for military service in two months at the time of the Algerian War. Juliette and Liliane are inseparable best friends, and aspiring actresses, who hang around outside the TV studio. Michel invites them in to watch, flirts with them both, and dates them separately and together. When Michel goes on a holiday to Corsica, just before he is drafted, the girls follow.",
+  "Language": "French, Italian, Corsican",
+  "Country": "France, Italy",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZWFmYzk2YmItYTU5MS00MDQ5LTkyMGEtMDFiOGQ3N2QyMTFmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.9",
+  "imdbVotes": "1,369",
+  "imdbID": "tt0143088",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-afternoon-class": {
+  "Title": "Afternoon Class",
+  "Year": "2015",
+  "Rated": "N/A",
+  "Released": "31 Oct 2015",
+  "Runtime": "3 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Seoro Oh",
+  "Writer": "N/A",
+  "Actors": "Seoro Oh, Ji Seon Kim, Sun Ki Bok",
+  "Plot": "A student is trying to stay awake in an afternoon class.",
+  "Language": "N/A",
+  "Country": "South Korea",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZDRmMjE2NmUtOGMwNi00MzJiLTg2MDYtZTFmNDgzNTYzOWIzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.0",
+  "imdbVotes": "491",
+  "imdbID": "tt5268728",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-akahige": {
+  "Title": "Red Beard",
+  "Year": "1965",
+  "Rated": "Not Rated",
+  "Released": "19 Dec 1968",
+  "Runtime": "185 min",
+  "Genre": "Drama",
+  "Director": "Akira Kurosawa",
+  "Writer": "Masato Ide, Hideo Oguni, Ryûzô Kikushima",
+  "Actors": "Toshirô Mifune, Yûzô Kayama, Tsutomu Yamazaki",
+  "Plot": "It's the early nineteenth century, and young Dr. Noboru Yasumoto has been summoned for a reason unknown to him to rural Koishikawa Medical Clinic from Nagasaki, where he has been stationed for three years completing his internship. The clinic, headed by the outwardly stern Dr. Kyojô Niide - nicknamed \"Red Beard\" for that attribute - under his very strict guidelines, treats the poor and disadvantaged of the region. Much to his surprise and dismay, Yasumoto is told he is to start work there immediately, staff, including doctors, living on site. As he was expecting a position as a physician for a shogunate in his privilege, Yasumoto shows his displeasure at this fate at every turn. He believes this fate was either orchestrated directly by Red Beard in solely wanting access to his detailed professional notes - Yasumoto believing he a much better doctor than his new, more experienced superior - or by the father of a female acquaintance in an effort to get rid of him. Yasumoto may get a different perspective of life as a doctor at the clinic in getting to view Red Beard's methods first hand, as he gets to know the stories of some of the in-patients at the clinic, and as he is assigned his first patient, Otoyo, a twelve year old orphaned girl who was raised in an abusive brothel environment in an effort to seal her supposed future.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "11 wins & 2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjE1MDRlMmQtYTU1Mi00YzY2LTkxNGQtZGMyZTNkN2U1M2VjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "73%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "90/100"
+   }
+  ],
+  "Metascore": "90",
+  "imdbRating": "8.3",
+  "imdbVotes": "22,731",
+  "imdbID": "tt0058888",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$46,808",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-alice-in-wonderland": {
+  "Title": "Alice in Wonderland",
+  "Year": "2010",
+  "Rated": "PG",
+  "Released": "05 Mar 2010",
+  "Runtime": "108 min",
+  "Genre": "Adventure, Family, Fantasy",
+  "Director": "Tim Burton",
+  "Writer": "Linda Woolverton, Lewis Carroll",
+  "Actors": "Mia Wasikowska, Johnny Depp, Helena Bonham Carter",
+  "Plot": "Alice, an unpretentious and individual 19-year-old, is betrothed to a dunce of an English nobleman. At her engagement party, she escapes the crowd to consider whether to go through with the marriage and falls down a hole in the garden after spotting an unusual rabbit. Arriving in a strange and surreal place called \"Underland,\" she finds herself in a world that resembles the nightmares she had as a child, filled with talking animals, villainous queens and knights, and frumious bandersnatches. Alice realizes that she is there for a reason--to conquer the horrific Jabberwocky and restore the rightful queen to her throne.",
+  "Language": "English",
+  "Country": "United States, Italy, Canada, Japan, United Kingdom",
+  "Awards": "Won 2 Oscars. 35 wins & 65 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYjgxMTQ3NjMtOTI1Yy00Yzg4LWJlNWQtMjFkNjVlYjU0OWIyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "51%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "53/100"
+   }
+  ],
+  "Metascore": "53",
+  "imdbRating": "6.4",
+  "imdbVotes": "464,214",
+  "imdbID": "tt1014759",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$334,191,110",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-10010007": {
+  "Title": "Alien: Romulus",
+  "Year": "2024",
+  "Rated": "R",
+  "Released": "16 Aug 2024",
+  "Runtime": "119 min",
+  "Genre": "Horror, Sci-Fi, Thriller",
+  "Director": "Fede Alvarez",
+  "Writer": "Dan O'Bannon, Ronald Shusett, Fede Alvarez",
+  "Actors": "Cailee Spaeny, David Jonsson, Archie Renaux",
+  "Plot": "In 2142, at the Jackson colony, Rain Carradine lives with her synthetic \"brother\" Andy that was reprogrammed by her father with the prime directive to protect her after the death of her parents. The Weyland-Yutani Corporation that administrates the colony forces the colonists to stay in Jackson prolonging the contracts of miners and farmers keeping them like slaves. When Rain's ex-boyfriend Tyler has his contract extended by the corporation, he convinces Rain to join his team, formed by his sister Kay, who is secretly pregnant, their cousin Bjorn and his sister Navarro, who is adopted, to travel to an abandoned station to flee to the planet Yvaga. They need Andy to interact with the computer system and they also need to recover the stasis chambers of the suspended animation for a nine-year trip to Yvaga. They go to the station and Andy and Bjorn realize that the chambers need cryogenic fuel for the trip. They go with Andy and accidentally unleash alien creatures, and there is a lockdown of the section. Rain uses the chip of the synthetic Rook that is damaged to update Andy to have access to all the functions of the station, but he becomes loyal to Weyland-Yutani Corporation and Rain is relegated to a second plane. But soon the creatures attack one by one of the Rain's friends. Will someone survive the alien creatures?",
+  "Language": "English",
+  "Country": "United Kingdom, United States, Hungary, Australia, New Zealand, Canada",
+  "Awards": "Nominated for 1 Oscar. 16 wins & 55 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDU0NjcwOGQtNjNjOS00NzQ3LWIwM2YtYWVmODZjMzQzN2ExXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "80%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "64/100"
+   }
+  ],
+  "Metascore": "64",
+  "imdbRating": "7.1",
+  "imdbVotes": "285,643",
+  "imdbID": "tt18412256",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$105,313,091",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-aliens": {
+  "Title": "Aliens",
+  "Year": "1986",
+  "Rated": "R",
+  "Released": "18 Jul 1986",
+  "Runtime": "137 min",
+  "Genre": "Action, Adventure, Horror",
+  "Director": "James Cameron",
+  "Writer": "James Cameron, David Giler, Walter Hill",
+  "Actors": "Sigourney Weaver, Michael Biehn, Carrie Henn",
+  "Plot": "57 years after Ellen Ripley had a close encounter with the reptilian alien creature from the first movie, she is called back, this time, to help a group of highly trained colonial marines fight off against the sinister extraterrestrials. But this time, the aliens have taken over a space colony on the moon LV-426. When the colonial marines are called upon to search the deserted space colony, they later find out that they are up against more than what they bargained for. Using specially modified machine guns and enough firepower, it's either fight or die as the space marines battle against the aliens.",
+  "Language": "English, Spanish",
+  "Country": "United Kingdom, United States",
+  "Awards": "Won 2 Oscars. 20 wins & 25 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZjIyNGJhYzYtN2I1My00OTVhLWEyMzItZTVjNDMzOTVkYWViXkEyXkFqcGc@._V1_QL75_UX380_CR0,6,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "93%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "84/100"
+   }
+  ],
+  "Metascore": "84",
+  "imdbRating": "8.4",
+  "imdbVotes": "839,261",
+  "imdbID": "tt0090605",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$85,160,248",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-alien-1992": {
+  "Title": "Alien³",
+  "Year": "1992",
+  "Rated": "R",
+  "Released": "22 May 1992",
+  "Runtime": "114 min",
+  "Genre": "Action, Horror, Sci-Fi",
+  "Director": "David Fincher",
+  "Writer": "Dan O'Bannon, Ronald Shusett, Vincent Ward",
+  "Actors": "Sigourney Weaver, Charles S. Dutton, Charles Dance",
+  "Plot": "Ellen Ripley is the only survivor when she crash lands on Fiorina 161, a bleak wasteland inhabited by former inmates of the planet's maximum security prison. Once again, Ripley must face skepticism and the alien as it hunts down the prisoners and guards. Without weapons or modern technology of any kind, Ripley leads the men into battle against the terrifying creature.",
+  "Language": "English",
+  "Country": "United Kingdom, United States",
+  "Awards": "Nominated for 1 Oscar. 5 wins & 25 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOGZiNmVlZGEtM2VmMi00ZTFkLTliMzEtZDNhYzUzNTcxMGY3XkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "44%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "59/100"
+   }
+  ],
+  "Metascore": "59",
+  "imdbRating": "6.4",
+  "imdbVotes": "351,875",
+  "imdbID": "tt0103644",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$55,473,545",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-alike": {
+  "Title": "Alike",
+  "Year": "2015",
+  "Rated": "N/A",
+  "Released": "04 Dec 2016",
+  "Runtime": "8 min",
+  "Genre": "Animation, Short",
+  "Director": "Rafa Cano Méndez, Daniel Martínez Lara",
+  "Writer": "Rafa Cano Méndez, Daniel Martínez Lara",
+  "Actors": "N/A",
+  "Plot": "In a busy life, Copi is a father who tries to teach the right way to his son, Paste. But - What is the correct path?",
+  "Language": "Spanish",
+  "Country": "Spain",
+  "Awards": "3 wins",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDNhMDI0NTItOTYyMy00MDYyLWI1MDgtNTA0OTI3ODc1YTRmXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.4/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.4",
+  "imdbVotes": "1,234",
+  "imdbID": "tt5293824",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-all-dogs-go-to-heaven": {
+  "Title": "All Dogs Go to Heaven",
+  "Year": "1989",
+  "Rated": "G",
+  "Released": "17 Nov 1989",
+  "Runtime": "84 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Don Bluth, Gary Goldman, Dan Kuenster",
+  "Writer": "David N. Weiss, Don Bluth, Ken Cromar",
+  "Actors": "Dom DeLuise, Burt Reynolds, Loni Anderson",
+  "Plot": "Charlie B. Barkin (Burt Reynolds), a rascally German Shepherd with a shady past, breaks out of the New Orleans Dog Pound with the help of his faithful friend Itchy (Dom De Luise), a nervously hyperactive dachshund. He then makes tracks to reunite with his gambling casino partner Carface Malone (Vic Tayback), a shifty pitbull who has planned a dastardly, and potentially deadly, double cross. Suddenly, Charlie finds himself at the Pearly Gates, face to face with the Heavenly Whippet (Melba Moore). Charlie weasels his way back to earth and reunites with Itchy. He plots his revenge against Carface and, along the way, acquires help from a little girl named Anne-Marie (who can talk to animals). After a series of fiendish schemes, close scrapes and unexpected adventures, both Charlie and Anne Marie find their lives at stake. Only one can be saved and the outcome is in Charlie's paws...",
+  "Language": "English",
+  "Country": "Ireland, United Kingdom, United States, France",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZTBlYTA0ZDUtNjJhMS00Y2UxLTk5MzAtMjBlYTAyN2FkMmNlXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "46%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "50/100"
+   }
+  ],
+  "Metascore": "50",
+  "imdbRating": "6.8",
+  "imdbVotes": "50,383",
+  "imdbID": "tt0096787",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$27,100,027",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-ambition": {
+  "Title": "Ambition",
+  "Year": "2014",
+  "Rated": "N/A",
+  "Released": "24 Oct 2014",
+  "Runtime": "7 min",
+  "Genre": "Short, History, Mystery",
+  "Director": "Tomasz Baginski",
+  "Writer": "Tomasz Baginski, Afolabi Kuti, Tobiasz Piatkowski",
+  "Actors": "Aidan Gillen, Aisling Franciosi",
+  "Plot": "The story of one of the most important space exploration endeavours of this decade. Just as Gillen's enigmatic Master encourages Franciosi's Apprentice to seek out the key to life amidst a rugged alien landscape, ESA has been on a decade-long ambitious journey of its own, to unlock the mysteries of a comet and the origins of our Solar System with its Rosetta spacecraft, hundreds of millions of kilometres from Earth. Ambition complements the ongoing communication about Rosetta and adds a \"human dimension\" to the scientific and technological achievements of the mission, which include curiosity, drive and ambition.",
+  "Language": "English",
+  "Country": "Poland, Ireland, Iceland",
+  "Awards": "1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZTBiNmY3ZWUtZTJjMS00N2NmLThlYTEtODQwNTUzYWRmZTQ2XkEyXkFqcGdeQXVyNDAyMDQzMjE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.1",
+  "imdbVotes": "881",
+  "imdbID": "tt4127138",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-american-beauty": {
+  "Title": "American Beauty",
+  "Year": "1999",
+  "Rated": "R",
+  "Released": "01 Oct 1999",
+  "Runtime": "122 min",
+  "Genre": "Drama",
+  "Director": "Sam Mendes",
+  "Writer": "Alan Ball",
+  "Actors": "Kevin Spacey, Annette Bening, Thora Birch",
+  "Plot": "After his death sometime in his 43rd year, suburbanite Lester Burnham tells of the last few weeks of his life, during which he had no idea of his imminent passing. He is a husband to real estate agent Carolyn Burnham and father to high school student Jane Burnham. Although Lester and Carolyn once loved each other, they now merely tolerate each other. Typical wallflower Jane also hates both her parents; the three suffer individually in silence in their home life. Jane tries to steer clear of both her parents. Carolyn, relatively new to the real estate business, wants to create the persona of success to further her career, aspiring to the professional life of Buddy Kane, the king of the real estate business in their neighborhood. Lester merely walks mindlessly through life, including at his job in advertising. His company is downsizing, and he, like all the other employees, has to justify his position to the newly hired efficiency expert to keep his job. Things change for Lester when he falls in love at first sight with Jane's more experienced classmate, Angela Hayes. Both Janie and Angela can see Lester's sexual infatuation with Angela, who courts such attention from any man as a sign that she is model material, she having once appeared in Seventeen and is a career to which she aspires. Lester's infatuation with Angela gives him a reenergized view on life, where he openly doesn't care anymore what anyone thinks about what he does, anyone except Angela. This infatuation coincides with the Fittses moving in next door: homophobic disciplinarian US Marine Colonel Frank Fitts who rules the house with a military fist (that fist being both figurative and literal), his semi-comatose wife Barbara Fitts, and their bright and quietly subversive 18-year-old son Ricky Fitts, who openly abides by his father's rules while behind the scenes lives by his own quite different perspective. Much like Lester's infatuation, Ricky immediately becomes infatuated with Jane; he considers girls like Angela as ordinary. The entry of Angela and the Fittses into the Burnhams' lives ultimately leads to each of the players confronting what is truly in his or her heart.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 5 Oscars. 112 wins & 102 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMDI1MDE0OTMtMmI2MS00Yjc2LTg2MTItMWExYTg5NzA1OGUzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "87%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "84/100"
+   }
+  ],
+  "Metascore": "84",
+  "imdbRating": "8.3",
+  "imdbVotes": "1,272,515",
+  "imdbID": "tt0169547",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$130,096,601",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-american-history-x": {
+  "Title": "American History X",
+  "Year": "1998",
+  "Rated": "R",
+  "Released": "20 Nov 1998",
+  "Runtime": "119 min",
+  "Genre": "Crime, Drama",
+  "Director": "Tony Kaye",
+  "Writer": "David McKenna",
+  "Actors": "Edward Norton, Edward Furlong, Beverly D'Angelo",
+  "Plot": "Derek Vineyard is paroled after serving 3 years in prison for brutally killing two black men who tried to break into/steal his truck. Through his 14 yr old brother's, Danny Vineyard, narration, we learn that before going to prison, Derek was a skinhead and the leader of a violent white supremacist gang that committed acts of racial crime throughout L.A. and his actions greatly influenced Danny. Reformed and fresh out of prison, Derek severs contact with the gang and becomes determined to keep Danny from going down the same violent path as he did.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 4 wins & 15 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzhiOTQ0NDItOTg0Zi00OGVmLWE0OGEtMTI4NDM0NWMxZWU4XkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "84%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "62/100"
+   }
+  ],
+  "Metascore": "62",
+  "imdbRating": "8.5",
+  "imdbVotes": "1,271,167",
+  "imdbID": "tt0120586",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$6,719,864",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-10032723": {
+  "Title": "Anatomy of a Fall",
+  "Year": "2024",
+  "Rated": "R",
+  "Released": "22 Mar 2024",
+  "Runtime": "151 min",
+  "Genre": "Crime, Drama, Mystery",
+  "Director": "Justine Triet",
+  "Writer": "Justine Triet, Arthur Harari",
+  "Actors": "Sandra Hüller, Swann Arlaud, Milo Machado-Graner",
+  "Plot": "The story begins when Samuel is found dead in the snow outside the isolated chalet where he lived with his wife Sandra, a German writer, and their partially-sighted 11-year-old son Daniel. An investigation leads to a conclusion of \"suspicious death\": it's impossible to know for sure whether he took his own life or was killed. Sandra is indicted, and we follow her trial which pulls the couple's relationship apart. Daniel is caught in the middle: between the trial and their home life, doubts take their toll on the mother-son relationship.",
+  "Language": "French, English",
+  "Country": "France",
+  "Awards": "Won 1 Oscar. 132 wins & 191 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYTk3MjFkZmQtMThiYi00N2JhLTk2YzItZTE5ZGUxZTIyZDVkXkEyXkFqcGc@._V1_QL75_UY562_CR2,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "86/100"
+   }
+  ],
+  "Metascore": "86",
+  "imdbRating": "7.6",
+  "imdbVotes": "209,320",
+  "imdbID": "tt17009710",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$5,076,369",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-angelinho": {
+  "Title": "Angelinho",
+  "Year": "2011",
+  "Rated": "N/A",
+  "Released": "17 Sep 2012",
+  "Runtime": "5 min",
+  "Genre": "Animation, Short, Action, Adventure, Family",
+  "Director": "Maryna Shchipak",
+  "Writer": "N/A",
+  "Actors": "N/A",
+  "Plot": "Angelinho is a cautious Guardian Angel... a bit too cautious. His best efforts only make the thrill-happy cyclist, for whom he is responsible, more and more adventurous. As the boy shifts into ever-higher gears, Angelinho is dragged closer and closer to the edge.",
+  "Language": "N/A",
+  "Country": "Germany",
+  "Awards": "N/A",
+  "Poster": "N/A",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "5.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "5.5",
+  "imdbVotes": "6",
+  "imdbID": "tt1942803",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-32427": {
+  "Title": "Animal Farm",
+  "Year": "1954",
+  "Rated": "Approved",
+  "Released": "19 Jun 1959",
+  "Runtime": "72 min",
+  "Genre": "Animation, Drama",
+  "Director": "Joy Batchelor, John Halas",
+  "Writer": "George Orwell, Lothar Wolff, Borden Mace",
+  "Actors": "Gordon Heath, Maurice Denham, Gilles Cheslton",
+  "Plot": "Britain's second animated feature, which, despite the title and Disney-esque animal animation, is in fact a no-holds-barred adaptation of George Orwell's classic satire on Stalinism, with the animals taking over their farm by means of a revolutionary coup, but then discovering that although all animals are supposed to be equal, some are more equal than others...",
+  "Language": "English",
+  "Country": "United Kingdom, United States",
+  "Awards": "Nominated for 1 BAFTA Award1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYjdlMTcxODktNDBhNS00MjRiLThkNTMtZGJjOTU0Zjc5NjUzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "67%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.2",
+  "imdbVotes": "20,700",
+  "imdbID": "tt0047834",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-anytime-is-ice-cream-time": {
+  "Title": "Anytime Is Ice Cream Time",
+  "Year": "2013",
+  "Rated": "N/A",
+  "Released": "01 Nov 2013",
+  "Runtime": "4 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Steve Cutts",
+  "Writer": "Steve Cutts",
+  "Actors": "N/A",
+  "Plot": "History about the life of an anthropomorphic ice cream in a parallel universe.",
+  "Language": "English",
+  "Country": "United Kingdom",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzBlNGNjMDQtYzU1Yi00MTI5LTllY2EtZjViNmI3OTAxNmFkXkEyXkFqcGdeQXVyMTQ0NjIwMzg@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "5.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "5.1",
+  "imdbVotes": "188",
+  "imdbID": "tt7976098",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-argo": {
+  "Title": "Argo",
+  "Year": "2012",
+  "Rated": "R",
+  "Released": "12 Oct 2012",
+  "Runtime": "120 min",
+  "Genre": "Biography, Drama, History",
+  "Director": "Ben Affleck",
+  "Writer": "Chris Terrio, Tony Mendez, Joshuah Bearman",
+  "Actors": "Ben Affleck, Bryan Cranston, John Goodman",
+  "Plot": "After Iranian militants stormed and took control of the U.S. Embassy in Tehran in November 1979 taking 56 Americans as hostages, six Americans managed to get away and took refuge in the home of Canadian Ambassador Ken Taylor. After two months of the Canadians putting their lives on the line everyday, the CIA and the US State Department try to come up with a plan to get their people out. Tony Mendez is an \"ex filtration\" specialist who proposes that they pose as a Canadian film crew scouting locations for a science fiction movie called Argo. Using Hollywood connections, Mendez creates a back story for the movie - ads in Variety, casting calls, inviting he media to a production launch - and then heads off to Iran to lead the six Americans out.",
+  "Language": "English, Persian, German, Arabic",
+  "Country": "United Kingdom, United States",
+  "Awards": "Won 3 Oscars. 96 wins & 156 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BM2QyMGUyZTEtMjE4Yi00M2RiLTgwN2QtZDMxZDNiMTFkMTFjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "96%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "86/100"
+   }
+  ],
+  "Metascore": "86",
+  "imdbRating": "7.7",
+  "imdbVotes": "665,933",
+  "imdbID": "tt1024648",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$136,025,503",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-arjun-the-warrior-prince": {
+  "Title": "Arjun: The Warrior Prince",
+  "Year": "2012",
+  "Rated": "Not Rated",
+  "Released": "25 May 2012",
+  "Runtime": "96 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Arnab Chaudhuri, Pavan Buragohain, K.K. Raina",
+  "Writer": "Rajesh Devraj, R.D. Tailang",
+  "Actors": "Yudhveer Bakoliya, Ashok Banthia, Ravi Khanvilkar",
+  "Plot": "I loved the movie!! No doubt it deviates quite a lot from the epic, but I being in the animation industry, can clearly understand the animations are not ordinary, as pointed out by many. People who have absolutely no knowledge about animation, can please stay away from writing negative feedback for the movie.It was 3D in 2D animation, where the movie is released in 2D, but the background and contrast characters have a 3D feeling!! People who haven't noticed this will have a good time noticing it.If there's a sequel then I will surely look forward to this movie. But yeah, people who do not like darker themes in the movie, wherein the hero suffers but then rises, may stay away!! Because this is not exactly pertaining to the epic, but it's surely shown in a good way.!!",
+  "Language": "Hindi",
+  "Country": "India, United States",
+  "Awards": "1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZGMzYjM0YTYtMzIwNi00YTkwLWJmMjUtODlkNGQxYmE0YTgyXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "67%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "2,115",
+  "imdbID": "tt2404027",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$10,017",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-arrival": {
+  "Title": "Arrival",
+  "Year": "2016",
+  "Rated": "PG-13",
+  "Released": "11 Nov 2016",
+  "Runtime": "116 min",
+  "Genre": "Drama, Mystery, Sci-Fi",
+  "Director": "Denis Villeneuve",
+  "Writer": "Eric Heisserer, Ted Chiang",
+  "Actors": "Amy Adams, Jeremy Renner, Forest Whitaker",
+  "Plot": "Linguistics professor Louise Banks leads an elite team of investigators when gigantic spaceships touchdown in 12 locations around the world. As nations teeter on the verge of global war, Banks and her crew must race against time to find a way to communicate with the extraterrestrial visitors. Hoping to unravel the mystery, she takes a chance that could threaten her life and quite possibly all of mankind.",
+  "Language": "English, Mandarin, Russian",
+  "Country": "Canada, United States",
+  "Awards": "Won 1 Oscar. 71 wins & 268 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "81/100"
+   }
+  ],
+  "Metascore": "81",
+  "imdbRating": "7.9",
+  "imdbVotes": "852,057",
+  "imdbID": "tt2543164",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$100,546,139",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-arrugas": {
+  "Title": "Wrinkles",
+  "Year": "2011",
+  "Rated": "Not Rated",
+  "Released": "27 Jan 2012",
+  "Runtime": "89 min",
+  "Genre": "Animation, Drama",
+  "Director": "Ignacio Ferreras",
+  "Writer": "Rosanna Cecchini, Ignacio Ferreras, Patrick Mullen",
+  "Actors": "Tacho González, Álvaro Guevara, Mabel Rivera",
+  "Plot": "Based on Paco Roca's comic of the same title (2008 Spanish National Comic Prize), WRINKLES is a 2D animated feature-length film for an adult audience. Wrinkles portrays the friendship between Emilio and Miguel, two aged gentlemen shut away in a care home. Recent arrival Emilio, in the early stages of Alzheimer, is helped by Miguel and colleagues to avoid ending up on the feared top floor of the care home, also known as the lost causes or \"assisted\" floor. Their wild plan infuses their otherwise tedious day-to-day with humor and tenderness, because although for some their lives are coming to an end, for them it is just a new beginning.",
+  "Language": "Spanish, Galician",
+  "Country": "Spain",
+  "Awards": "4 wins & 8 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzNTIzNzM2Ml5BMl5BanBnXkFtZTgwMzkzMDM5MTE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "93%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "81/100"
+   }
+  ],
+  "Metascore": "81",
+  "imdbRating": "7.6",
+  "imdbVotes": "4,728",
+  "imdbID": "tt1407052",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-assault-on-precinct-13": {
+  "Title": "Assault on Precinct 13",
+  "Year": "1976",
+  "Rated": "R",
+  "Released": "05 Nov 1976",
+  "Runtime": "91 min",
+  "Genre": "Action, Crime, Thriller",
+  "Director": "John Carpenter",
+  "Writer": "John Carpenter",
+  "Actors": "Austin Stoker, Darwin Joston, Laurie Zimmer",
+  "Plot": "Police ambush and kill several gang members in Los Angeles. Gang members make a pact of blood to strike back at police, and conduct a siege on the police station which is almost abandoned and due to be closed. Staff of the closing precinct and the criminals being held there while in transit must work together to fight off the attacking gang members.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjUzZmI1YjUtMDlhOS00MGQ1LTgxZWYtOWFhZGE0NTIyNWZlXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.3/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "89/100"
+   }
+  ],
+  "Metascore": "89",
+  "imdbRating": "7.3",
+  "imdbVotes": "58,340",
+  "imdbID": "tt0074156",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-atlantis-the-lost-empire": {
+  "Title": "Atlantis: The Lost Empire",
+  "Year": "2001",
+  "Rated": "PG",
+  "Released": "15 Jun 2001",
+  "Runtime": "95 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Gary Trousdale, Kirk Wise",
+  "Writer": "Tab Murphy, Kirk Wise, Gary Trousdale",
+  "Actors": "Michael J. Fox, Jim Varney, Corey Burton",
+  "Plot": "1914: Milo Thatch, grandson of the great Thaddeus Thatch works in the boiler room of a museum. He knows that Atlantis was real, and he can get there if he has the mysterious Shephards journal, which can guide him to Atlantis. But he needs someone to fund a voyage. His employer thinks he's dotty, and refuses to fund any crazy idea. He returns home to his apartment and finds a woman there. She takes him to Preston B. Whitmore, an old friend of his Grandfathers. He gives him the shepherds journal, a submarine and a 5 star crew. They travel through the Atlantic ocean, face a large lobster called the Leviathan, and finally get to Atlantis. But does the Atlantis crew have a lust for discovery, or something else?",
+  "Language": "English, French, Spanish",
+  "Country": "United States, Japan",
+  "Awards": "2 wins & 14 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODYwZTQwMDEtYjgyZS00NzNhLWFhYWMtN2Q1Y2JmZjlmZDlhXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "48%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "52/100"
+   }
+  ],
+  "Metascore": "52",
+  "imdbRating": "6.9",
+  "imdbVotes": "145,597",
+  "imdbID": "tt0230011",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$84,056,472",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-auntie-edna": {
+  "Title": "Auntie Edna",
+  "Year": "2018",
+  "Rated": "TV-PG",
+  "Released": "06 Nov 2018",
+  "Runtime": "5 min",
+  "Genre": "Animation, Short, Action",
+  "Director": "Ted Mathot",
+  "Writer": "Brad Bird, Ted Mathot",
+  "Actors": "Brad Bird, Craig T. Nelson, Eli Fucile",
+  "Plot": "Edna babysits Jack-Jack, who uses his powers.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BY2RlNTYwYzEtMDQ0Yy00MGRmLTgzYTAtN2JiOTI4YTU2NTE1XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.1",
+  "imdbVotes": "4,853",
+  "imdbID": "tt8952294",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-avengers-endgame": {
+  "Title": "Avengers: Endgame",
+  "Year": "2019",
+  "Rated": "PG-13",
+  "Released": "26 Apr 2019",
+  "Runtime": "181 min",
+  "Genre": "Action, Adventure, Sci-Fi",
+  "Director": "Anthony Russo, Joe Russo",
+  "Writer": "Christopher Markus, Stephen McFeely, Stan Lee",
+  "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo",
+  "Plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face...",
+  "Language": "English, Japanese, Xhosa, German",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 71 wins & 132 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.4/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "94%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "78/100"
+   }
+  ],
+  "Metascore": "78",
+  "imdbRating": "8.4",
+  "imdbVotes": "1,442,446",
+  "imdbID": "tt4154796",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$858,373,000",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-avril-et-le-monde-truqu": {
+  "Title": "April and the Extraordinary World",
+  "Year": "2015",
+  "Rated": "PG",
+  "Released": "08 Apr 2016",
+  "Runtime": "105 min",
+  "Genre": "Animation, Adventure, Comedy",
+  "Director": "Christian Desmares, Franck Ekinci",
+  "Writer": "Franck Ekinci, Benjamin Legrand, Jacques Tardi",
+  "Actors": "Marion Cotillard, Marc-André Grondin, Philippe Katerine",
+  "Plot": "In 1941, the world is radically different from the one we know from history books. Geopolitics has developed strangely: Napoleon V rules France and, for the last 70 years, scholars have been mysteriously disappearing, depriving mankind of their inventions. Without radio, television, electricity, aviation, and the combustion engine, the world is mired in outdated technology, dozing in the previous century's knowhow dominated by coal and steam. In this bizarre universe, Avril (Marion Cotillard), a teenage girl, Darwin (Philippe Katerine), her talking cat, Pops (Jean Rochefort), her grandfather, and Julius (Marc-André Grondin), a young scoundrel and police informer, go off in search of Avril's parents, two of the missing scientists. The quartet will face many dangers and mysteries in this strange new Rigged World.",
+  "Language": "French",
+  "Country": "France, Canada, Belgium",
+  "Awards": "1 win & 7 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODU2MzljMGQtOWFmOC00YzJhLWI1NmItMDcyYjMxNGZhNzdhXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "97%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "85/100"
+   }
+  ],
+  "Metascore": "85",
+  "imdbRating": "7.2",
+  "imdbVotes": "8,799",
+  "imdbID": "tt3422078",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$295,488",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-baby-driver": {
+  "Title": "Baby Driver",
+  "Year": "2017",
+  "Rated": "R",
+  "Released": "28 Jun 2017",
+  "Runtime": "113 min",
+  "Genre": "Action, Crime, Drama",
+  "Director": "Edgar Wright",
+  "Writer": "Edgar Wright",
+  "Actors": "Ansel Elgort, Jon Bernthal, Jon Hamm",
+  "Plot": "Baby is a young and partially hearing impaired getaway driver who can make any wild move while in motion with the right track playing. It's a critical talent he needs to survive his indentured servitude to the crime boss, Doc, who values his role in his meticulously planned robberies. However, just when Baby thinks he is finally free and clear to have his own life with his new girlfriend, Debora, Doc coerces him back for another job. Now saddled with a crew of thugs too violently unstable to keep to Doc's plans, Baby finds himself and everything he cares for in terrible danger. To survive and escape the coming maelstrom, it will take all of Baby's skill, wits and daring, but even on the best track, can he make it when life is forcing him to face the music?",
+  "Language": "English, American Sign Language",
+  "Country": "United Kingdom, United States",
+  "Awards": "Nominated for 3 Oscars. 43 wins & 66 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "92%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "86/100"
+   }
+  ],
+  "Metascore": "86",
+  "imdbRating": "7.5",
+  "imdbVotes": "682,380",
+  "imdbID": "tt3890160",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$107,825,862",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-back-to-the-future": {
+  "Title": "Back to the Future",
+  "Year": "1985",
+  "Rated": "PG",
+  "Released": "03 Jul 1985",
+  "Runtime": "116 min",
+  "Genre": "Adventure, Comedy, Sci-Fi",
+  "Director": "Robert Zemeckis",
+  "Writer": "Robert Zemeckis, Bob Gale",
+  "Actors": "Michael J. Fox, Christopher Lloyd, Lea Thompson",
+  "Plot": "Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean \"time machine\" invented by a slightly mad scientist. During his often hysterical, always amazing trip back in time, Marty must make sure his teenage parents-to-be meet and fall in love to get back to the future.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 27 wins & 25 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_QL75_UX380_CR0,14,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.5/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "93%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "88/100"
+   }
+  ],
+  "Metascore": "88",
+  "imdbRating": "8.5",
+  "imdbVotes": "1,450,794",
+  "imdbID": "tt0088763",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$222,476,852",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-bakha-satang": {
+  "Title": "Peppermint Candy",
+  "Year": "1999",
+  "Rated": "Not Rated",
+  "Released": "01 Jan 2000",
+  "Runtime": "129 min",
+  "Genre": "Drama",
+  "Director": "Lee Chang-dong",
+  "Writer": "Lee Chang-dong",
+  "Actors": "Sul Kyung-gu, Kim Yeo-jin, Moon So-ri",
+  "Plot": "Young Ho is a depressed middle-aged man. At his old friend group's reunion, he grows increasingly aggressive until he rushes to the railway to commit suicide. As he screams in regret, we follow the train in reverse, observing the six chapters of his life that led up to his suicide.",
+  "Language": "Korean",
+  "Country": "South Korea, Japan",
+  "Awards": "18 wins & 6 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYmY4YjIzY2QtZjJjMS00ZDQ4LTgyNzUtZmJlZTg5YTExMDE1XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.6/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "86%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.6",
+  "imdbVotes": "11,701",
+  "imdbID": "tt0247613",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-10003598": {
+  "Title": "Ballerina",
+  "Year": "2025",
+  "Rated": "R",
+  "Released": "06 Jun 2025",
+  "Runtime": "124 min",
+  "Genre": "Action, Thriller",
+  "Director": "Len Wiseman",
+  "Writer": "Shay Hatten, Derek Kolstad",
+  "Actors": "Ana de Armas, Keanu Reeves, Ian McShane",
+  "Plot": "A young woman remembers the time when as a little girl she witnessed her father getting killed by cult members. She is then adopted by a society of assassins and trained for many years to become a ballerina, body guard and assassin. She performs well in all these activities to the satisfaction of her superiors. Her heart however is made up to seek vengeance against the killers of her father. Despite being warned not to take up this dangerous mission she goes ahead and single handedly wages war against them.",
+  "Language": "English, Russian, Spanish, German",
+  "Country": "United States, Hungary",
+  "Awards": "1 win & 21 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzdhZmY2OTQtYWI4OC00ZThkLTlhZjAtNzE2YzRjM2Q5YjJlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "59/100"
+   }
+  ],
+  "Metascore": "59",
+  "imdbRating": "6.8",
+  "imdbVotes": "148,470",
+  "imdbID": "tt7181546",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$58,051,327",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-balto": {
+  "Title": "Balto",
+  "Year": "1995",
+  "Rated": "G",
+  "Released": "22 Dec 1995",
+  "Runtime": "78 min",
+  "Genre": "Animation, Adventure, Drama",
+  "Director": "Simon Wells",
+  "Writer": "Cliff Ruby, Elana Lesser, David Steven Cohen",
+  "Actors": "Kevin Bacon, Bob Hoskins, Bridget Fonda",
+  "Plot": "A half-wolf, half-husky named Balto gets a chance to become a hero when an outbreak of diphtheria threatens the children of Nome, Alaska in the winter of 1925. He leads a dog team on a 600-mile trip across the Alaskan wilderness to get medical supplies. The film is based on a true story which inspired the Iditarod dog sled race.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "5 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzY2OGY3MTYtMTlhNC00MDUyLWE2OGEtNzMzZjQxYjFiYjRiXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "54%"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.1",
+  "imdbVotes": "51,603",
+  "imdbID": "tt0112453",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$11,348,324",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-barbarian": {
+  "Title": "Barbarian",
+  "Year": "2022",
+  "Rated": "R",
+  "Released": "09 Sep 2022",
+  "Runtime": "102 min",
+  "Genre": "Horror, Mystery, Thriller",
+  "Director": "Zach Cregger",
+  "Writer": "Zach Cregger",
+  "Actors": "Georgina Campbell, Bill Skarsgård, Justin Long",
+  "Plot": "In town for a job interview, a young woman arrives at her Airbnb rental late at night only to find that the house has been mistakenly double-booked and a strange man is already staying there. Against her better judgment, she decides to stay the night anyway, but soon discovers that there is much more to be afraid of in the house than the other house guest.",
+  "Language": "English",
+  "Country": "United States, Bulgaria",
+  "Awards": "5 wins & 40 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNWQ5MDgwMzMtNWZhMy00Y2Q4LWI5NTAtODA4MDIzYTExOGQzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "92%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "78/100"
+   }
+  ],
+  "Metascore": "78",
+  "imdbRating": "7.0",
+  "imdbVotes": "258,415",
+  "imdbID": "tt15791034",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$40,842,944",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-batman-begins": {
+  "Title": "Batman Begins",
+  "Year": "2005",
+  "Rated": "PG-13",
+  "Released": "15 Jun 2005",
+  "Runtime": "140 min",
+  "Genre": "Action, Crime, Drama",
+  "Director": "Christopher Nolan",
+  "Writer": "Bob Kane, David S. Goyer, Christopher Nolan",
+  "Actors": "Christian Bale, Michael Caine, Ken Watanabe",
+  "Plot": "When his parents are killed, billionaire playboy Bruce Wayne relocates to Asia, where he is mentored by Henri Ducard and Ra's Al Ghul in how to fight evil. When learning about the plan to wipe out evil in Gotham City by Ducard, Bruce prevents this plan from getting any further and heads back to his home. Back in his original surroundings, Bruce adopts the image of a bat to strike fear into the criminals and the corrupt as the icon known as \"Batman\". But it doesn't stay quiet for long.",
+  "Language": "English, Mandarin",
+  "Country": "United States, United Kingdom",
+  "Awards": "Nominated for 1 Oscar. 15 wins & 79 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzA2NDQzZDEtNDU5Ni00YTlkLTg2OWEtYmQwM2Y1YTBjMjFjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.2/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "85%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "70/100"
+   }
+  ],
+  "Metascore": "70",
+  "imdbRating": "8.2",
+  "imdbVotes": "1,709,629",
+  "imdbID": "tt0372784",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$206,863,479",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-batman-returns": {
+  "Title": "Batman Returns",
+  "Year": "1992",
+  "Rated": "PG-13",
+  "Released": "19 Jun 1992",
+  "Runtime": "126 min",
+  "Genre": "Action, Crime, Fantasy",
+  "Director": "Tim Burton",
+  "Writer": "Bob Kane, Daniel Waters, Sam Hamm",
+  "Actors": "Michael Keaton, Danny DeVito, Michelle Pfeiffer",
+  "Plot": "In the sewers of gotham city to the rooftops of the gotham city the penguin wants to know where he came from well in his villain ways catwoman plans to kill rich man of gotham max shreak but as he battles with millionaire Bruce Wayne both ladies men have their own secrets Bruce Wayne is back as Bat man trying to stop the penguin Max is helping penguin steal gotham city while selina Kyle/catwoman tries to help penguin not knowing her man murder target also her murder is helping him but all four men have their goals taking gotham from crime winning gotham city assassination for two men and more money to be gotham citys number one rich man.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 2 Oscars. 2 wins & 29 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZTliMDVkYTktZDdlMS00NTAwLWJhNzYtMWIwMDZjN2ViMGFiXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "82%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "68/100"
+   }
+  ],
+  "Metascore": "68",
+  "imdbRating": "7.1",
+  "imdbVotes": "348,538",
+  "imdbID": "tt0103776",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$162,924,631",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-big-hero-6": {
+  "Title": "Big Hero 6",
+  "Year": "2014",
+  "Rated": "PG",
+  "Released": "07 Nov 2014",
+  "Runtime": "102 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Don Hall, Chris Williams",
+  "Writer": "Jordan Roberts, Robert L. Baird, Daniel Gerson",
+  "Actors": "Ryan Potter, Scott Adsit, Jamie Chung",
+  "Plot": "When a devastating event befalls the city of San Fransokyo and catapults Hiro into the midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to uncover the mystery, Hiro transforms his friends into a band of high-tech heroes called \"Big Hero 6.\"",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 1 Oscar. 17 wins & 58 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYjQ3YzUyOGQtNjdlYS00YmRhLWIyOWYtMGQ3YjkwMjJiYzRjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.8/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "90%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "74/100"
+   }
+  ],
+  "Metascore": "74",
+  "imdbRating": "7.8",
+  "imdbVotes": "548,572",
+  "imdbID": "tt2245084",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$222,527,828",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-717910": {
+  "Title": "Billions",
+  "Year": "2016–2023",
+  "Rated": "TV-MA",
+  "Released": "01 Jan 2016",
+  "Runtime": "60 min",
+  "Genre": "Drama",
+  "Director": "N/A",
+  "Writer": "Brian Koppelman, David Levien, Andrew Ross Sorkin",
+  "Actors": "Paul Giamatti, Damian Lewis, Maggie Siff",
+  "Plot": "Billions is a complex drama about power politics in the world of New York high finance. Shrewd, savvy U.S. Attorney Chuck Rhoades and the brilliant, ambitious hedge fund king Bobby \"Axe\" Axelrod are on an explosive collision course, with each using all of his considerable smarts, power and influence to outmaneuver the other. The stakes are in the billions in this timely, provocative series.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "2 wins & 20 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTE3OWEyNTctZGZiNy00NGI0LThmNTYtMmRjMDE3ZGU5ZmIzXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.3/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.3",
+  "imdbVotes": "117,286",
+  "imdbID": "tt4270492",
+  "Type": "series",
+  "totalSeasons": "7",
+  "Response": "True"
+ },
+ "imp-f-black-mirror-bandersnatch": {
+  "Title": "Black Mirror: Bandersnatch",
+  "Year": "2018",
+  "Rated": "TV-MA",
+  "Released": "28 Dec 2018",
+  "Runtime": "90 min",
+  "Genre": "Drama, Fantasy, Mystery",
+  "Director": "David Slade",
+  "Writer": "Charlie Brooker",
+  "Actors": "Fionn Whitehead, Craig Parkinson, Alice Lowe",
+  "Plot": "1984. Stefan is developing a computer game based on the book 'Bandersnatch', a novel where you get to make choices and this determines the story. He has an opportunity to take his game to Tuckersoft, a software company, and have them release it. However, the more he works on the game the more his life emulates the game, with choices being made that are out of his control. Stefan appears to be going insane",
+  "Language": "English",
+  "Country": "United Kingdom, United States",
+  "Awards": "Won 1 Primetime Emmy. 5 wins & 11 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjM5MzgzMjM3OF5BMl5BanBnXkFtZTgwMzQ2MzQwNzM@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.1/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.1",
+  "imdbVotes": "142,846",
+  "imdbID": "tt9495224",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-10003459": {
+  "Title": "Blown Away: Christmas",
+  "Year": "2021",
+  "Rated": "TV-PG",
+  "Released": "19 Nov 2021",
+  "Runtime": "N/A",
+  "Genre": "Reality-TV",
+  "Director": "N/A",
+  "Writer": "N/A",
+  "Actors": "Bobby Berk, Cat Burns, Katherine Gray",
+  "Plot": "Five fan-favorite glass blowers return to the hot shop to compete in a series of Christmas-themed challenges; the winner will receive a $10,000 cash prize, plus an additional $10,000 will be donated to his or her charity of choice.",
+  "Language": "English",
+  "Country": "Canada",
+  "Awards": "1 win total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYWNiMjZjODktNDg3NS00MGVjLWJkZGUtZjE5NjExZjMzMmQ4XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "754",
+  "imdbID": "tt15665668",
+  "Type": "series",
+  "totalSeasons": "1",
+  "Response": "True"
+ },
+ "imp-f-1085": {
+  "Title": "Blue Velvet",
+  "Year": "1986",
+  "Rated": "R",
+  "Released": "23 Oct 1986",
+  "Runtime": "120 min",
+  "Genre": "Crime, Drama, Mystery",
+  "Director": "David Lynch",
+  "Writer": "David Lynch",
+  "Actors": "Isabella Rossellini, Kyle MacLachlan, Dennis Hopper",
+  "Plot": "College student Jeffrey Beaumont returns to his idyllic hometown of Lumberton to manage his father's hardware store while his father is hospitalized. Walking though a grassy meadow near the family home, Jeffrey finds a severed human ear. After an initial investigation, lead police Detective John Williams advises Jeffrey not to speak to anyone about the case as they investigate further. Detective Williams also tells Jeffrey that he cannot divulge any information about what the police know. Detective Williams' high school aged daughter, Sandy Williams, tells Jeffrey what she knows about the case from overhearing her father's private conversations on the matter: that it has to do with a nightclub singer named Dorothy Vallens, who lives in an older apartment building near the Beaumont home. His curiosity getting the better of him, Jeffrey, with Sandy's help, decides to find out more about the woman at the center of the case by breaking into Dorothy's apartment while he knows she's at work. What Jeffrey finds is a world unfamiliar to him, one that he doesn't truly understand but one that he is unable to deny the lure of despite the inherent dangers of being associated with a possible murder. Still, he is torn between this world and the prospect of a relationship with Sandy, the two who are falling for each other, despite Sandy already being in a relationship with Mike, the school's star football player.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 18 wins & 18 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzkwZGUyYjQtM2QyOC00MTBjLWE0NGYtMTZmOGM5MjI0Mzg0XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.7/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "91%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "75/100"
+   }
+  ],
+  "Metascore": "75",
+  "imdbRating": "7.7",
+  "imdbVotes": "234,565",
+  "imdbID": "tt0090756",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$8,551,228",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-s-427194": {
+  "Title": "Boardwalk Empire",
+  "Year": "2010–2014",
+  "Rated": "TV-MA",
+  "Released": "19 Sep 2010",
+  "Runtime": "55 min",
+  "Genre": "Crime, Drama",
+  "Director": "N/A",
+  "Writer": "Terence Winter",
+  "Actors": "Steve Buscemi, Kelly Macdonald, Michael Shannon",
+  "Plot": "Set in the Prohibition era of the 1920s Boardwalk Empire is the story of Enoch \"Nucky\" Thompson, the treasurer of Atlantic County, Atlantic City, New Jersey. Due to his relationships with mobsters as well as political contacts, the Federal Government start to take an interest in him. His lavish lifestyle seems at odds with his position, and as well as his connections, there is prolific bootlegging in the area.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 20 Primetime Emmys. 64 wins & 186 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2MzODhjYTEtZTA2ZS00ZTRjLTlkZDYtNTBkNTdhNWJlMTYwXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "8.6/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.6",
+  "imdbVotes": "215,105",
+  "imdbID": "tt0979432",
+  "Type": "series",
+  "totalSeasons": "5",
+  "Response": "True"
+ },
+ "imp-f-borrowed-time": {
+  "Title": "Borrowed Time",
+  "Year": "2015",
+  "Rated": "G",
+  "Released": "14 Oct 2016",
+  "Runtime": "7 min",
+  "Genre": "Animation, Short, Drama",
+  "Director": "Andrew Coats, Lou Hamou-Lhadj",
+  "Writer": "Andrew Coats, Lou Hamou-Lhadj, Mark C. Harris",
+  "Actors": "Greg Dykstra, Nick Pitera, Steve Purcell",
+  "Plot": "An experienced sheriff returns to the location of an accident that changed him forever and left him traumatized. When all the painful memories come flooding back, faced with his mistake once again, he is forced to dig deep down and find the stamina to carry on.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 8 wins & 2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDY5MDgxMDY3Nl5BMl5BanBnXkFtZTgwMTYwMDI0NjE@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "7.5/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.5",
+  "imdbVotes": "4,665",
+  "imdbID": "tt4874696",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-bottle-rocket": {
+  "Title": "Bottle Rocket",
+  "Year": "1996",
+  "Rated": "R",
+  "Released": "21 Feb 1996",
+  "Runtime": "91 min",
+  "Genre": "Comedy, Crime, Drama",
+  "Director": "Wes Anderson",
+  "Writer": "Owen Wilson, Wes Anderson",
+  "Actors": "Luke Wilson, Owen Wilson, Ned Dowd",
+  "Plot": "Upon his release from a mental hospital following a nervous breakdown, the directionless Anthony joins his friend Dignan, who seems far less sane than the former. Dignan has hatched a hare-brained scheme for an as-yet-unspecified crime spree that somehow involves his former boss, the (supposedly) legendary Mr. Henry. With the help of their pathetic neighbor and pal Bob, Anthony and Dignan pull a job and hit the road, where Anthony finds love with motel maid Inez. When our boys finally hook up with Mr. Henry, the ensuing escapade turns out to be far from what anyone expected.",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "2 wins & 1 nomination total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDlmNWY5NmMtZDNiMS00YjQ1LTg5NmItZmE5ZWEwNDg2MzhjXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.9/10"
+   },
+   {
+    "Source": "Rotten Tomatoes",
+    "Value": "86%"
+   },
+   {
+    "Source": "Metacritic",
+    "Value": "67/100"
+   }
+  ],
+  "Metascore": "67",
+  "imdbRating": "6.9",
+  "imdbVotes": "88,017",
+  "imdbID": "tt0115734",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "$560,069",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-111152": {
+  "Title": "Bottle Rocket",
+  "Year": "1993",
+  "Rated": "N/A",
+  "Released": "N/A",
+  "Runtime": "13 min",
+  "Genre": "Short, Comedy, Crime",
+  "Director": "Wes Anderson",
+  "Writer": "Owen Wilson, Wes Anderson",
+  "Actors": "Luke Wilson, Owen Wilson, Robert Musgrave",
+  "Plot": "The banality of crime. Two young men, Dignan and Anthony, walk along talking about \"Starsky and Hutch.\" They're on their way to burglarize a house. After, they go to a café, play some pinball. They argue about the burglary and talk to their friend Bob about another scheme. They talk to a guy about buying a gun, just to intimidate. Anthony breaks into a car to steal a wallet. With Bob, they plan and stage a holdup and talk about it afterward at a burger stand: armed robbery for $183. They're pleased. The two pals race each other.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTc3YjQwMTAtNzkzMS00ZTYyLWI5NTMtMzBkMTJlYjdjZTE1XkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.6/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.6",
+  "imdbVotes": "7,614",
+  "imdbID": "tt0109322",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+ },
+ "imp-f-brain-divided": {
+  "Title": "Brain Divided",
+  "Year": "2013",
+  "Rated": "TV-PG",
+  "Released": "14 Jul 2013",
+  "Runtime": "5 min",
+  "Genre": "Animation, Short, Comedy",
+  "Director": "Josiah Haworth, Joon Shik Song, Joon Soo Song",
+  "Writer": "Josiah Haworth, Joon Shik Song, Joon Soo Song",
+  "Actors": "Andrew Racho, Kristen Gish, Sarah Young",
+  "Plot": "A nerdy man goes on a blind date to a restaurant. The place is great and the girl is beautiful. If only the two sides of his brain (seen here as two tiny creatures running the brain's command center) could work together for once.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNDc0ZDljNjMtNDhjZC00MTUwLThkNDgtM2E0YjkwNmI4YzllXkEyXkFqcGc@._V1_SX300.jpg",
+  "Ratings": [
+   {
+    "Source": "Internet Movie Database",
+    "Value": "6.8/10"
+   }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "1,027",
+  "imdbID": "tt3143518",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
  }
 };

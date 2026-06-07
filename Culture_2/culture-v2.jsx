@@ -137,9 +137,10 @@ function parseQuery(raw) {
     region: 'regions', country: 'regions',
     highlight: 'highlights', badge: 'highlights',
     on: 'providers', provider: 'providers', watch: 'providers',
+    title: 'title',
   };
   const result = {
-    text: '', releaseYear: [], ratedYear: [], ratingFilter: [],
+    text: '', title: [], releaseYear: [], ratedYear: [], ratingFilter: [],
     genres: [], actors: [], directors: [], tags: [], studios: [],
     writers: [], dps: [], regions: [], highlights: [], providers: [],
   };
@@ -171,11 +172,13 @@ function parseQuery(raw) {
   const text = [];
   for (const tok of parts) {
     if (!tok) continue;
+    const colonT = tok.match(/^:(.+)$/);   // ":alien" → title-only search
     const atY = tok.match(/^@(\d{4})$/);
     const yY  = tok.match(/^y:(\d{4})$/i);
     const inY = tok.match(/^in:(\d{4})$/i);
     const rEx = tok.match(/^r:(\d+)(?:([+])|[-](\d+))?$/i);
-    if      (atY) result.releaseYear.push(atY[1]);
+    if      (colonT) result.title.push(colonT[1].toLowerCase());
+    else if (atY) result.releaseYear.push(atY[1]);
     else if (yY)  result.releaseYear.push(yY[1]);
     else if (inY) result.ratedYear.push(inY[1]);
     else if (rEx) {
@@ -751,15 +754,34 @@ function displayTitle(it) { return it.enTitle || it.title; }
 // Attach the separate enrichment files (omdb_data.js / books_data.js) at runtime.
 // OMDb is nested under `item.omdb` (NEVER spread — so it can't overwrite existing
 // director/genres/etc.); the book overlay is spread (it's meant to fill gaps).
+// Your scraped Filmweb opinion for this item, keyed "<kind>/<id>" off the link
+// (film|serial|videogame) so film/serial numeric ids can't collide.
+function filmwebNote(item) {
+  const notes = window.CULTURE_NOTES;
+  if (!notes || !item.link) return null;
+  const m = item.link.match(/filmweb\.pl\/(film|serial|videogame)\/[^"']*-(\d+)/);
+  return m ? notes[`${m[1]}/${m[2]}`] || null : null;
+}
+
 function enrichExtras(item) {
   const omdb = (window.CULTURE_OMDB || {})[item.id];
   const book = (window.CULTURE_BOOKS || {})[item.id];
-  if (!omdb && !book) return item;
+  const gameTt = (window.CULTURE_GAME_IMDB || {})[item.id];  // IMDb id for games
+  const fwNote = item.note ? null : filmwebNote(item);       // never clobber a curated note
+  const noteEn = (window.CULTURE_NOTES_EN || {})[item.id];   // interpretive EN redraft
+  const tmdb = (window.CULTURE_TMDB || {})[item.id];         // TMDB synopsis (toggle source)
+  const addBadges = (window.CULTURE_BADGES || {})[item.id];  // curated badge additions
+  if (!omdb && !book && !gameTt && !fwNote && !noteEn && !tmdb && !addBadges) return item;
   const out = book ? { ...item, ...book } : { ...item };
   if (omdb) {
     out.omdb = omdb;
     if (omdb.imdbID) out.imdbUrl = `https://www.imdb.com/title/${omdb.imdbID}/`;
   }
+  if (gameTt && !out.imdbUrl) out.imdbUrl = `https://www.imdb.com/title/${gameTt}/`;
+  if (fwNote && !out.note) out.note = fwNote;
+  if (noteEn) out.noteEn = noteEn;
+  if (tmdb && !out.summary) out.summary = tmdb;
+  if (addBadges) out.highlights = [...new Set([...(out.highlights || []), ...addBadges])];
   return out;
 }
 
@@ -768,6 +790,26 @@ function omdbRating(omdb, source) {
   if (!omdb || !omdb.Ratings) return null;
   const r = omdb.Ratings.find(x => x.Source === source);
   return r && r.Value && r.Value !== 'N/A' ? r.Value : null;
+}
+
+// OMDb only gives Awards as a generalized sentence ("Won 2 Primetime Emmys.
+// Another 34 wins & 78 nominations total") — no per-award list exists. Parse it
+// into a few short chips; the full original sentence shows on hover.
+function parseAwards(str) {
+  if (!str || str === 'N/A') return null;
+  const n = re => { const m = str.match(re); return m ? parseInt(m[1], 10) : 0; };
+  const oscarsWon = n(/Won (\d+) Oscar/i);
+  const oscarNoms = n(/Nominated for (\d+) Oscar/i);
+  const wins = n(/(\d+) wins?\b/i);
+  const noms = n(/(\d+) nominations?\b/i);
+  const named = str.match(/Won (\d+) ((?:Primetime |Daytime )?Emmys?|Golden Globes?|BAFTA(?:[^.]*?Awards?)?|Grand Prix|Palme d['’]Or|Golden Lions?|Golden Bears?)/i);
+  const chips = [];
+  if (oscarsWon) chips.push(`🥇 ${oscarsWon} Oscar${oscarsWon > 1 ? 's' : ''}`);
+  else if (oscarNoms) chips.push(`🥇 ${oscarNoms} Oscar nom${oscarNoms > 1 ? 's' : ''}`);
+  if (named) chips.push(`🏆 ${named[1]} ${named[2].trim()}`);
+  if (wins) chips.push(`🏆 ${wins} win${wins > 1 ? 's' : ''}`);
+  if (noms) chips.push(`✦ ${noms} nom${noms > 1 ? 's' : ''}`);
+  return chips.length ? { chips, original: str } : { chips: [str], original: str };
 }
 
 // The external link to open, honouring the global Filmweb⇄IMDb preference.
@@ -832,14 +874,18 @@ const HIGHLIGHTS = {
   devastating:  { emoji: '💔', label: 'Emotionally devastating' },
   impact:       { emoji: '💥', label: 'Impactful' },
   funny:        { emoji: '😂', label: 'Genuinely funny' },
+  bittersweet:  { emoji: '🥲', label: 'Funny through tears' },
   cerebral:     { emoji: '🧠', label: 'Thought-provoking' },
   style:        { emoji: '🕶️', label: 'Bold style' },
   atmosphere:   { emoji: '🌌', label: 'Immersive atmosphere' },
   slowburn:     { emoji: '⏳', label: 'Slow burn' },
   intense:      { emoji: '🩸', label: 'Brutal' },
+  horrifying:   { emoji: '💀', label: 'Horrifying' },
   thrilling:    { emoji: '⚡', label: 'Pure adrenaline' },
   ahead:        { emoji: '🕰️', label: 'Ahead of its time' },
   singular:     { emoji: '🃏', label: 'One-of-a-kind' },
+  cognitive:    { emoji: '🪞', label: 'A cognitive shift' },
+  worldbuilding:{ emoji: '🗺️', label: 'A world unto itself' },
 };
 // One badge by default; only wide spines carry more (≥29px ≈ a movie ≥2.5h, or a
 // thick TV/game) so narrow titles don't get busy. The Reader shows all of them.
@@ -1362,6 +1408,72 @@ function ReaderSourceButton({ item }) {
   );
 }
 
+// The Reader description, with a source toggle. Films/TV with OMDb get the
+// IMDb plot first and a small IMDb·TMDB switch (the user finds TMDB synopses
+// flat); books/games show their single source with no toggle. Mounted with a
+// key={item.id} in the Reader so its active-source state resets per title.
+function ReaderSummary({ item }) {
+  const sources = [];
+  const o = item.omdb;
+  const imdbText = o && ((o.PlotShort && o.PlotShort !== 'N/A' && o.PlotShort)
+                      || (o.Plot && o.Plot !== 'N/A' && o.Plot));
+  if (imdbText) sources.push({ key: 'IMDb', text: imdbText });
+  if (item.summary)
+    sources.push({ key: item.medium === 'Books' ? 'Synopsis' : 'TMDB', text: item.summary });
+  if (item.igdbSummary)
+    sources.push({ key: 'IGDB', text: item.igdbSummary });
+  const [idx, setIdx] = React.useState(0);
+  if (!sources.length) return null;
+  const i = Math.min(idx, sources.length - 1);
+  const active = sources[i];
+  return (
+    <p className="reader-summary" key={active.key}>
+      {active.text}
+      {sources.length > 1 && (
+        <span className="summary-flip" onClick={() => setIdx((i + 1) % sources.length)}
+          title="Switch description source">{active.key} ⇄</span>
+      )}
+    </p>
+  );
+}
+
+// The personal-note blockquote. When an English redraft exists (item.noteEn),
+// clicking it toggles PL↔EN with a matrix-style vertical letter cascade.
+function ReaderQuote({ item }) {
+  const pl = item.note;
+  const en = item.noteEn;
+  const [showEn, setShowEn] = React.useState(!!en);  // approved English shows by default
+  const [busy, setBusy] = React.useState(false);
+  if (!pl) {
+    return <blockquote className="reader-quote empty">{item.favorite
+      ? 'A note for this one is on the to-write list.'
+      : 'From the wider library — no personal note yet.'}</blockquote>;
+  }
+  const text = (showEn && en) ? en : pl;
+  const toggle = () => {
+    if (!en || busy) return;
+    setBusy(true);
+    setShowEn(v => !v);
+    setTimeout(() => setBusy(false), 1400);
+  };
+  return (
+    <blockquote
+      className={`reader-quote${en ? ' translatable' : ''}${busy ? ' shifting' : ''}`}
+      onClick={toggle}
+      title={en ? (showEn ? 'Click for the original' : 'Click to translate') : undefined}>
+      <span className="quote-text" key={showEn ? 'en' : 'pl'}>
+        {busy
+          ? text.split('').map((ch, i) => (
+              <span className="qc" key={i} style={{ animationDelay: `${(Math.random() * 0.55).toFixed(3)}s`, animationDuration: `${(0.45 + Math.random() * 0.5).toFixed(3)}s` }}>
+                {ch === ' ' ? ' ' : ch}
+              </span>))
+          : text}
+      </span>
+      {en && <span className="quote-flip" aria-hidden="true">{showEn ? 'EN' : 'PL'} ⇄</span>}
+    </blockquote>
+  );
+}
+
 // ─────────── Reader Modal ───────────
 function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter }) {
   const { ITEMS, MEDIA_SHORT, MEDIA_GLYPH } = window.CULTURE;
@@ -1446,10 +1558,6 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
             {item.episodes ? <React.Fragment><span className="sep"/><span>{item.episodes} eps</span></React.Fragment> : null}
             {item.totalMinutes ? <React.Fragment><span className="sep"/><span>{formatRuntime(item.totalMinutes)} total</span></React.Fragment> : null}
             {item.rating ? <React.Fragment><span className="sep"/><span>★ {item.rating}/10</span></React.Fragment> : null}
-            {item.fwAvg ? <React.Fragment><span className="sep"/><span title="Filmweb community average">Filmweb avg ⌀ {item.fwAvg}</span></React.Fragment> : null}
-            {item.omdb && item.omdb.imdbRating && item.omdb.imdbRating !== 'N/A' ? <React.Fragment><span className="sep"/><span title={item.omdb.imdbVotes && item.omdb.imdbVotes !== 'N/A' ? `${item.omdb.imdbVotes} IMDb votes` : 'IMDb rating'}>IMDb {item.omdb.imdbRating}</span></React.Fragment> : null}
-            {omdbRating(item.omdb, 'Rotten Tomatoes') ? <React.Fragment><span className="sep"/><span title="Rotten Tomatoes">🍅 {omdbRating(item.omdb, 'Rotten Tomatoes')}</span></React.Fragment> : null}
-            {omdbRating(item.omdb, 'Metacritic') ? <React.Fragment><span className="sep"/><span title="Metacritic">Metacritic {omdbRating(item.omdb, 'Metacritic')}</span></React.Fragment> : null}
             {item.genres && item.genres.length > 0 ? <React.Fragment><span className="sep"/><span>{item.genres.slice(0, 4).map((g, i) => <React.Fragment key={g}>{i > 0 && ' · '}<span className="meta-link" onClick={() => onFilter && onFilter(`genre:${g}`)}>{g}</span></React.Fragment>)}</span></React.Fragment> : null}
             {item.igdbFranchise ? <React.Fragment><span className="sep"/><span>Series: {item.igdbFranchise}</span></React.Fragment> : null}
             {item.watchedDate ? <React.Fragment><span className="sep"/><span>Rated {item.watchedDate}</span></React.Fragment> : null}
@@ -1477,17 +1585,25 @@ function Reader({ item, onClose, onJump, allItems, otherItems, library, onFilter
             return uniq.length ? <div className="reader-orig">{uniq.join(' · ')}</div> : null;
           })()}
           <div className="reader-where">Fuad's library &nbsp;/&nbsp; {item.medium}</div>
-          {item.note
-            ? <blockquote className="reader-quote">{item.note}</blockquote>
-            : <blockquote className="reader-quote empty">{item.favorite ? 'A note for this one is on the to-write list.' : 'From the wider library — no personal note yet.'}</blockquote>}
+          <ReaderQuote key={'quote-' + item.id} item={item} />
+          <ReaderSummary key={'summary-' + item.id} item={item} />
           {(() => {
-            const desc = (item.omdb && item.omdb.Plot && item.omdb.Plot !== 'N/A' && item.omdb.Plot)
-                       || item.summary || item.igdbSummary;
-            return desc ? <p className="reader-summary">{desc}</p> : null;
+            const imdb = item.omdb && item.omdb.imdbRating && item.omdb.imdbRating !== 'N/A' ? item.omdb.imdbRating : null;
+            const rt = omdbRating(item.omdb, 'Rotten Tomatoes');
+            const mc = omdbRating(item.omdb, 'Metacritic');
+            const fw = item.fwAvg || null;
+            const a = item.omdb && parseAwards(item.omdb.Awards);
+            if (!imdb && !rt && !mc && !fw && !a) return null;
+            return (
+              <div className="reader-scores">
+                {imdb && <span className="score" title={item.omdb.imdbVotes && item.omdb.imdbVotes !== 'N/A' ? `${item.omdb.imdbVotes} IMDb votes` : 'IMDb rating'}><b>IMDb</b> ⭐ {imdb}</span>}
+                {rt && <span className="score" title="Rotten Tomatoes"><b>RT</b> 🍅 {rt}</span>}
+                {mc && <span className="score" title="Metacritic"><b>Metacritic</b> {mc}</span>}
+                {fw && <span className="score" title="Filmweb community average"><b>Filmweb</b> ⌀ {fw}</span>}
+                {a && <span className="reader-awards" title={a.original}>{a.chips.map((c, i) => <span className="award-chip" key={i}>{c}</span>)}</span>}
+              </div>
+            );
           })()}
-          {item.omdb && item.omdb.Awards && item.omdb.Awards !== 'N/A' && (
-            <div className="reader-awards">🏆 {item.omdb.Awards}</div>
-          )}
           {(item.composer || item.studio || (item.productionCompanies && item.productionCompanies.length > 0)) && (
             <div className="reader-crew reader-production">
               {item.studio   && <span><span className="crew-role">{studioLabel(item.medium)}</span> <span className="meta-link" onClick={() => onFilter && onFilter(`studio:${item.studio}`)}>{item.studio}</span></span>}
@@ -1577,7 +1693,7 @@ function SearchPalette({ initial, onApply, onClose }) {
           />
         </form>
         <div className="palette-hints">
-          <code>genre:</code><code>director:</code><code>actor:</code><code>tag:</code>
+          <code>:title</code><code>genre:</code><code>director:</code><code>actor:</code><code>tag:</code>
           <code>highlight:</code><code>on:</code><code>@year</code><code>r:8+</code>
           <span className="palette-enter">↵ apply · esc close</span>
         </div>
@@ -1707,11 +1823,15 @@ function App() {
 
   // Shelves after text / @year / y:year / in:year / r: filters — but NOT yet chip or stats filters.
   const preChipShelves = React.useMemo(() => {
-    const { text, releaseYear, ratedYear, ratingFilter, genres, actors, directors, tags, studios, writers, dps, regions, highlights, providers } = parseQuery(search);
+    const { text, title, releaseYear, ratedYear, ratingFilter, genres, actors, directors, tags, studios, writers, dps, regions, highlights, providers } = parseQuery(search);
     const q = text.toLowerCase();
+    const titleHit = (it, qq) => it.title.toLowerCase().includes(qq)
+      || (it.enTitle && it.enTitle.toLowerCase().includes(qq))
+      || (it.polishTitle && it.polishTitle.toLowerCase().includes(qq));
     return shelves.map(s => ({
       ...s,
       items: s.items.filter(it => {
+        if (title.length && !title.every(qq => titleHit(it, qq))) return false;
         if (releaseYear.length && !releaseYear.includes(String(it.year))) return false;
         if (ratedYear.length   && (!it.watchedDate || !ratedYear.includes(it.watchedDate.slice(0, 4)))) return false;
         if (ratingFilter.length && !ratingFilter.includes(it.rating)) return false;
@@ -2008,6 +2128,7 @@ function App() {
             >?</button>
             {showSearchHint && (
               <div className="search-hint-popover">
+                <div className="search-hint-row"><code>:alien</code> or <code>title:alien</code><span>— match the title only</span></div>
                 <div className="search-hint-row"><code>genre:Thriller</code><span>— match by genre</span></div>
                 <div className="search-hint-row"><code>actor:Name</code><span>— match by cast</span></div>
                 <div className="search-hint-row"><code>director:Name</code> <code>writer:Name</code> <code>dp:Name</code><span>— crew</span></div>
