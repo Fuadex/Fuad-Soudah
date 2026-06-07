@@ -10,6 +10,9 @@ window.CULTURE_BADGES = {
   "cerebral",
   "score"
  ],
+ "age-of-success": [
+  "satire"
+ ],
  "angels-egg": [
   "atmosphere",
   "singular"
@@ -26,7 +29,9 @@ window.CULTURE_BADGES = {
   "intense"
  ],
  "atlanta": [
-  "funny"
+  "absurdist",
+  "funny",
+  "satire"
  ],
  "avatar-tla": [
   "funny",
@@ -66,6 +71,7 @@ window.CULTURE_BADGES = {
  ],
  "bojack": [
   "funny",
+  "satire",
   "visuals"
  ],
  "breaking-bad": [
@@ -136,7 +142,8 @@ window.CULTURE_BADGES = {
   "funny"
  ],
  "escape-cinema": [
-  "funny"
+  "funny",
+  "satire"
  ],
  "eva": [
   "impact",
@@ -147,6 +154,7 @@ window.CULTURE_BADGES = {
  ],
  "fallout": [
   "funny",
+  "satire",
   "visuals"
  ],
  "fargo": [
@@ -162,6 +170,7 @@ window.CULTURE_BADGES = {
   "bittersweet"
  ],
  "flcl": [
+  "absurdist",
   "funny",
   "singular",
   "visuals"
@@ -226,20 +235,65 @@ window.CULTURE_BADGES = {
  "imp-f-10026657": [
   "horrifying"
  ],
+ "imp-f-107201": [
+  "cinematography",
+  "devastating",
+  "direction"
+ ],
  "imp-f-28-days-later": [
   "horrifying"
+ ],
+ "imp-f-32090": [
+  "thrilling"
+ ],
+ "imp-f-35459": [
+  "cerebral"
+ ],
+ "imp-f-3808": [
+  "cerebral"
  ],
  "imp-f-512263": [
   "horrifying"
  ],
+ "imp-f-686419": [
+  "cerebral"
+ ],
+ "imp-f-868513": [
+  "mindbending"
+ ],
+ "imp-f-annie-hall": [
+  "bittersweet"
+ ],
+ "imp-f-children-of-men": [
+  "cinematography"
+ ],
  "imp-f-corpse-bride": [
-  "funny",
+  "absurdist",
   "intense",
   "visuals"
  ],
+ "imp-f-dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-th": [
+  "satire"
+ ],
+ "imp-f-duck-amuck": [
+  "absurdist"
+ ],
+ "imp-f-edge-of-tomorrow": [
+  "intense",
+  "mindbending",
+  "thrilling"
+ ],
+ "imp-f-ex-machina": [
+  "cerebral"
+ ],
+ "imp-f-fa-yeung-nin-wa": [
+  "cinematography"
+ ],
  "imp-f-gake-no-ue-no-ponyo": [
-  "funny",
   "visuals"
+ ],
+ "imp-f-h-hokekyo-tonari-no-yamada-kun": [
+  "satire"
  ],
  "imp-f-happy-feet": [
   "funny",
@@ -249,8 +303,55 @@ window.CULTURE_BADGES = {
   "intense",
   "visuals"
  ],
+ "imp-f-inception": [
+  "thrilling"
+ ],
+ "imp-f-inglourious-basterds": [
+  "intense"
+ ],
+ "imp-f-innocence": [
+  "cinematography",
+  "impact"
+ ],
+ "imp-f-j-i-uchi-hairy-tsuma-shimatsu": [
+  "devastating"
+ ],
+ "imp-f-life-of-brian": [
+  "absurdist"
+ ],
+ "imp-f-monty-python-and-the-holy-grail": [
+  "absurdist"
+ ],
+ "imp-f-nie-wiem": [
+  "cerebral"
+ ],
+ "imp-f-once-upon-a-time-in-america": [
+  "intense"
+ ],
  "imp-f-perfect-blue": [
   "horrifying"
+ ],
+ "imp-f-refren": [
+  "cerebral"
+ ],
+ "imp-f-seksmisja": [
+  "absurdist",
+  "satire"
+ ],
+ "imp-f-seppuku": [
+  "devastating"
+ ],
+ "imp-f-szpital": [
+  "cerebral"
+ ],
+ "imp-f-the-bridge-on-the-river-kwai": [
+  "intense"
+ ],
+ "imp-f-the-gold-rush": [
+  "bittersweet"
+ ],
+ "imp-f-the-great-dictator": [
+  "satire"
  ],
  "imp-g-608591": [
   "mindbending"
@@ -263,7 +364,6 @@ window.CULTURE_BADGES = {
   "visuals"
  ],
  "imp-s-10038044": [
-  "funny",
   "visuals"
  ],
  "imp-s-10042461": [
@@ -278,14 +378,20 @@ window.CULTURE_BADGES = {
  "imp-s-324560": [
   "horrifying"
  ],
+ "imp-s-329991": [
+  "cerebral"
+ ],
  "imp-s-363435": [
+  "absurdist",
   "funny",
+  "satire",
   "visuals"
  ],
  "imp-s-427201": [
   "impact"
  ],
  "imp-s-469752": [
+  "absurdist",
   "funny",
   "visuals"
  ],
@@ -293,9 +399,15 @@ window.CULTURE_BADGES = {
   "funny",
   "visuals"
  ],
+ "imp-s-680486": [
+  "intense"
+ ],
  "imp-s-747022": [
   "funny",
   "visuals"
+ ],
+ "imp-s-767241": [
+  "absurdist"
  ],
  "imp-s-829257": [
   "funny",
@@ -343,6 +455,7 @@ window.CULTURE_BADGES = {
   "bittersweet"
  ],
  "limelight": [
+  "bittersweet",
   "funny"
  ],
  "limes-inferior": [
@@ -380,6 +493,7 @@ window.CULTURE_BADGES = {
   "score"
  ],
  "midnight-gospel": [
+  "absurdist",
   "cerebral",
   "funny",
   "visuals"
@@ -405,17 +519,24 @@ window.CULTURE_BADGES = {
  "nausicaa": [
   "worldbuilding"
  ],
+ "network": [
+  "satire"
+ ],
  "no-country": [
   "acting",
   "atmosphere",
   "cinematography"
  ],
  "odrzucone": [
+  "absurdist",
   "funny",
   "singular"
  ],
  "oldboy": [
   "devastating"
+ ],
+ "opm": [
+  "satire"
  ],
  "paradyzja": [
   "ahead",
@@ -442,6 +563,7 @@ window.CULTURE_BADGES = {
   "devastating"
  ],
  "pom-poko": [
+  "bittersweet",
   "funny",
   "visuals"
  ],
@@ -464,13 +586,16 @@ window.CULTURE_BADGES = {
   "writing"
  ],
  "pygmalion": [
-  "funny"
+  "funny",
+  "satire"
  ],
  "red-desert": [
   "impact"
  ],
  "rick-and-morty": [
-  "mindbending"
+  "absurdist",
+  "mindbending",
+  "satire"
  ],
  "robot": [
   "cerebral"
@@ -502,6 +627,7 @@ window.CULTURE_BADGES = {
  "sopranos": [
   "funny",
   "gem",
+  "satire",
   "slowburn"
  ],
  "soul": [
@@ -518,7 +644,6 @@ window.CULTURE_BADGES = {
  ],
  "steins-gate": [
   "devastating",
-  "funny",
   "visuals",
   "worldbuilding"
  ],
@@ -531,6 +656,7 @@ window.CULTURE_BADGES = {
   "slowburn"
  ],
  "tatami-galaxy": [
+  "absurdist",
   "funny",
   "mindbending",
   "visuals"
@@ -637,6 +763,9 @@ window.CULTURE_BADGES = {
  "wl-f-166290": [
   "cognitive"
  ],
+ "wl-f-30950": [
+  "cinematography"
+ ],
  "wl-f-33184": [
   "horrifying"
  ],
@@ -677,6 +806,9 @@ window.CULTURE_BADGES = {
  "wl-f-9330": [
   "horrifying"
  ],
+ "wl-f-9982": [
+  "cerebral"
+ ],
  "wl-g-729768": [
   "cognitive"
  ],
@@ -703,6 +835,7 @@ window.CULTURE_BADGES = {
  ],
  "yamadas": [
   "funny",
+  "satire",
   "visuals"
  ],
  "your-name": [

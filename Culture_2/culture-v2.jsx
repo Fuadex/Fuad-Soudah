@@ -482,10 +482,10 @@ function WorldMap({ items, selectedCountries, onToggleCountry, medium = 'All' })
 // diverges from the crowd, how much time you've sunk in, your growth over time,
 // and a one-line portrait. Pure reuse of existing + OMDb fields.
 function communityScore(it, axis) {
-  if (axis === 'imdb') {
-    const v = it.omdb && it.omdb.imdbRating;
-    return v && v !== 'N/A' ? parseFloat(v) : null;
-  }
+  const o = it.omdb;
+  if (axis === 'imdb')       { const v = o && o.imdbRating; return v && v !== 'N/A' ? parseFloat(v) : null; }
+  if (axis === 'rt')         { const r = omdbRating(o, 'Rotten Tomatoes'); return r ? parseFloat(r) / 10 : null; }
+  if (axis === 'metacritic') { const m = o && o.Metascore; return m && m !== 'N/A' ? parseFloat(m) / 10 : null; }
   return it.fwAvg != null ? parseFloat(it.fwAvg) : null;  // Filmweb
 }
 
@@ -495,8 +495,106 @@ function formatSpan(minutes) {
   return `${Math.round(minutes / 60)} h`;
 }
 
+// Distinctive subtag substrings worth surfacing even when rare — the gems buried
+// in TMDb's long tail (structural / conceptual / formal hooks). Matched as substrings.
+const NOTABLE_TAGS = ['fourth wall', 'nonlinear', 'unreliable narrator', 'time loop', 'time travel',
+  'simulated reality', 'existential', 'surreal', 'absurdis', 'dystopia', 'post-apocalyptic', 'amnesia',
+  'anthology', 'no dialogue', 'mockumentary', 'found footage', 'story within', 'flashback', 'rotoscop',
+  'stop motion', 'psychedelic', 'rebellion', 'transhuman', 'body horror', 'cosmic horror', 'slow cinema',
+  'one location', 'single location', 'real time', 'breaking the', 'metafiction', 'long take', 'one-shot',
+  'black and white', 'silent film', 'minimalis', 'philosoph'];
+
+// Palette explorer: combine standout badges + TMDb subtags into a live filter.
+// Click a chip's LEFT half = AND, RIGHT half = OR (mobile taps land left → AND).
+function TagBadgeExplorer({ items, onOpenItem }) {
+  const [sel, setSel] = React.useState([]);   // [{kind:'badge'|'tag', value, op}]
+  const MG = (window.CULTURE && window.CULTURE.MEDIA_GLYPH) || {};
+
+  const { badges, tags, notableSet } = React.useMemo(() => {
+    const b = {}, t = {};
+    items.forEach(it => {
+      (it.highlights || []).forEach(h => { if (HIGHLIGHTS[h]) b[h] = (b[h] || 0) + 1; });
+      (it.tags || []).forEach(tag => { const k = String(tag).toLowerCase(); if (k) t[k] = (t[k] || 0) + 1; });
+    });
+    const popular = Object.entries(t).filter(([, c]) => c >= 3).sort((a, c) => c[1] - a[1]).slice(0, 55);
+    const popKeys = new Set(popular.map(e => e[0]));
+    const notable = Object.entries(t).filter(([tag]) => !popKeys.has(tag) && NOTABLE_TAGS.some(n => tag.includes(n)))
+      .sort((a, c) => c[1] - a[1]);
+    return {
+      badges: Object.entries(b).sort((a, c) => c[1] - a[1]),
+      tags: [...notable, ...popular],   // gems first, then the popular bulk
+      notableSet: new Set(notable.map(e => e[0])),
+    };
+  }, [items]);
+
+  const keyOf = (k, v) => k + ':' + v;
+  const selMap = new Map(sel.map(c => [keyOf(c.kind, c.value), c.op]));
+  const choose = (kind, value, op) => setSel(prev => {
+    const k = keyOf(kind, value);
+    const ex = prev.find(c => keyOf(c.kind, c.value) === k);
+    if (ex) return ex.op === op ? prev.filter(c => keyOf(c.kind, c.value) !== k)
+                                : prev.map(c => keyOf(c.kind, c.value) === k ? { ...c, op } : c);
+    return [...prev, { kind, value, op }];
+  });
+  const click = (e, kind, value) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    choose(kind, value, (e.clientX - r.left) > r.width / 2 ? 'OR' : 'AND');
+  };
+
+  const has = (it, c) => c.kind === 'badge'
+    ? (it.highlights || []).includes(c.value)
+    : (it.tags || []).some(t => String(t).toLowerCase() === c.value);
+  const ands = sel.filter(c => c.op === 'AND'), ors = sel.filter(c => c.op === 'OR');
+  const results = React.useMemo(() => sel.length
+    ? items.filter(it => ands.every(c => has(it, c)) && (!ors.length || ors.some(c => has(it, c))))
+    : [], [items, sel]);
+
+  const cls = op => `xchip${op ? ' sel ' + op.toLowerCase() : ''}`;
+  return (
+    <div className="explorer">
+      <div className="explorer-hint">Click a chip — <b>left = AND</b>, <b>right = OR</b>. Mix badges + subtags.</div>
+      <div className="explorer-rail">
+        {badges.map(([h, c]) => { const op = selMap.get('badge:' + h); return (
+          <button key={h} className={cls(op) + ' badge'} onClick={e => click(e, 'badge', h)} title="Left half = AND · right half = OR">
+            {op ? <span className="xop">{op === 'OR' ? '∨' : '∧'}</span> : null}{HIGHLIGHTS[h].emoji} {HIGHLIGHTS[h].label}<span className="xc">{c}</span>
+          </button>
+        ); })}
+      </div>
+      {tags.length > 0 && <div className="explorer-cloud">
+        {tags.map(([t, c]) => { const op = selMap.get('tag:' + t); return (
+          <button key={t} className={cls(op) + ' tag' + (notableSet.has(t) ? ' notable' : '')} onClick={e => click(e, 'tag', t)} title="Left half = AND · right half = OR">
+            {op ? <span className="xop">{op === 'OR' ? '∨' : '∧'}</span> : null}{t}<span className="xc">{c}</span>
+          </button>
+        ); })}
+      </div>}
+      {sel.length > 0 && (
+        <div className="explorer-results">
+          <div className="explorer-query">
+            {ands.length > 0 && <span><b>all of:</b> {ands.map(c => c.kind === 'badge' ? HIGHLIGHTS[c.value].label : c.value).join(' · ')}</span>}
+            {ands.length > 0 && ors.length > 0 && <span className="qjoin">  and  </span>}
+            {ors.length > 0 && <span><b>any of:</b> {ors.map(c => c.kind === 'badge' ? HIGHLIGHTS[c.value].label : c.value).join(' · ')}</span>}
+          </div>
+          <div className="explorer-count">{results.length} match{results.length !== 1 ? 'es' : ''}<button className="xclear" onClick={() => setSel([])}>clear</button></div>
+          <div className="explorer-wall">
+            {results.slice(0, 140).map(it => {
+              const img = it.poster || it.tmdbPoster || it.igdbCover || it.bookCover;
+              return (
+                <a key={it.id} className="xcover" onClick={() => onOpenItem && onOpenItem(it)} title={`${displayTitle(it)} (${it.year || ''})`}>
+                  {img ? <img src={img} alt="" loading="lazy" />
+                       : <span className="xcover-fallback" style={{ '--pf-bg': spineBodyColor(it) }}>{MG[it.medium] || '•'}</span>}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function TasteProfile({ items, onOpenItem }) {
   const [axis, setAxis] = React.useState('filmweb');   // community baseline
+  const [hiddenMed, setHiddenMed] = React.useState(() => new Set());  // growth legend toggles
 
   const contrarian = React.useMemo(() => {
     const rows = [];
@@ -518,11 +616,21 @@ function TasteProfile({ items, onOpenItem }) {
   }, [items]);
 
   const timeline = React.useMemo(() => {
-    const dates = items.filter(i => i.watchedDate).map(i => i.watchedDate).sort();
-    if (dates.length < 2) return null;
-    const pts = dates.map((d, i) => ({ x: i / (dates.length - 1), y: (i + 1) / dates.length }));
-    const poly = pts.map(p => `${(p.x * 100).toFixed(2)},${(30 - p.y * 28).toFixed(2)}`).join(' ');
-    return { poly, n: dates.length, first: dates[0], last: dates[dates.length - 1] };
+    const dated = items.filter(i => i.watchedDate);
+    const years = [...new Set(dated.map(i => i.watchedDate.slice(0, 4)))].sort();
+    if (years.length < 2) return null;
+    const yi = {}; years.forEach((y, i) => { yi[y] = i; });
+    const series = {};                 // medium -> counts per year
+    const totals = years.map(() => 0);
+    dated.forEach(i => {
+      const j = yi[i.watchedDate.slice(0, 4)];
+      (series[i.medium] || (series[i.medium] = years.map(() => 0)))[j]++;
+      totals[j]++;
+    });
+    const mediums = Object.keys(series).sort((a, b) =>
+      series[b].reduce((x, y) => x + y, 0) - series[a].reduce((x, y) => x + y, 0));
+    const peakIdx = totals.indexOf(Math.max(...totals));
+    return { years, series, totals, mediums, total: dated.length, peak: totals[peakIdx], peakYear: years[peakIdx] };
   }, [items]);
 
   const fingerprint = React.useMemo(() => {
@@ -532,7 +640,15 @@ function TasteProfile({ items, onOpenItem }) {
     const director = top(countBy(items, it => it.director));
     const gmap = {}; items.forEach(it => (it.genres || []).forEach(g => { gmap[g] = (gmap[g] || 0) + 1; }));
     const genre = top(gmap);
-    return { decade, country, director, genre };
+    const bmap = {}; items.forEach(it => (it.highlights || []).forEach(h => { if (HIGHLIGHTS[h]) bmap[h] = (bmap[h] || 0) + 1; }));
+    const badge = top(bmap);
+    const tmap = {}; items.forEach(it => (it.tags || []).forEach(t => { const k = String(t).toLowerCase(); if (k) tmap[k] = (tmap[k] || 0) + 1; }));
+    const tag = top(tmap);
+    const ymap = {}; items.forEach(it => { if (it.watchedDate) { const y = it.watchedDate.slice(0, 4); ymap[y] = (ymap[y] || 0) + 1; } });
+    const busiest = top(ymap);
+    const rated = items.map(it => parseFloat(it.rating)).filter(v => !isNaN(v));
+    const avg = rated.length ? (rated.reduce((a, b) => a + b, 0) / rated.length).toFixed(1) : null;
+    return { decade, country, director, genre, badge, tag, busiest, avg, rated: rated.length };
   }, [items]);
 
   const Row = ({ r }) => (
@@ -549,11 +665,17 @@ function TasteProfile({ items, onOpenItem }) {
   return (
     <div className="taste">
       <div className="stats-section">
+        <div className="stats-section-title">Palette — explore by badge × tag</div>
+        <TagBadgeExplorer items={items} onOpenItem={onOpenItem} />
+      </div>
+      <div className="stats-section">
         <div className="stats-section-title-row">
           <div className="stats-section-title">Where your taste diverges{contrarian.n ? '' : ' — needs rated titles with a community score'}</div>
           <div className="rating-source-toggle">
             <button data-active={axis === 'filmweb'} onClick={() => setAxis('filmweb')}>vs Filmweb</button>
             <button data-active={axis === 'imdb'} onClick={() => setAxis('imdb')}>vs IMDb</button>
+            <button data-active={axis === 'rt'} onClick={() => setAxis('rt')}>vs RT</button>
+            <button data-active={axis === 'metacritic'} onClick={() => setAxis('metacritic')}>vs Metacritic</button>
           </div>
         </div>
         {contrarian.n > 0 && (
@@ -589,18 +711,50 @@ function TasteProfile({ items, onOpenItem }) {
             {fingerprint.country  && <div><span className="k">Home</span><span className="v">{fingerprint.country[0]} · {fingerprint.country[1]}</span></div>}
             {fingerprint.genre    && <div><span className="k">Genre</span><span className="v">{fingerprint.genre[0]} · {fingerprint.genre[1]}</span></div>}
             {fingerprint.director && <div><span className="k">Most-seen</span><span className="v">{fingerprint.director[0]} · {fingerprint.director[1]}</span></div>}
+            {fingerprint.badge    && HIGHLIGHTS[fingerprint.badge[0]] && <div><span className="k">Signature badge</span><span className="v">{HIGHLIGHTS[fingerprint.badge[0]].emoji} {HIGHLIGHTS[fingerprint.badge[0]].label} · {fingerprint.badge[1]}</span></div>}
+            {fingerprint.tag      && <div><span className="k">Signature tag</span><span className="v">{fingerprint.tag[0]} · {fingerprint.tag[1]}</span></div>}
+            {fingerprint.busiest  && <div><span className="k">Busiest year</span><span className="v">{fingerprint.busiest[0]} · {fingerprint.busiest[1]} titles</span></div>}
+            {fingerprint.avg      && <div><span className="k">Avg rating</span><span className="v">★ {fingerprint.avg} · {fingerprint.rated} rated</span></div>}
           </div>
         </div>
       </div>
 
-      {timeline && (
-        <div className="stats-section" style={{ marginBottom: 0 }}>
-          <div className="stats-section-title">Growth — {timeline.n} dated entries, {timeline.first} → {timeline.last}</div>
-          <svg className="taste-timeline" viewBox="0 0 100 30" preserveAspectRatio="none">
-            <polyline points={timeline.poly} fill="none" stroke="var(--accent)" strokeWidth="0.6" vectorEffect="non-scaling-stroke" />
-          </svg>
-        </div>
-      )}
+      {timeline && (() => {
+        const W = 320, H = 76, PAD = 6;
+        const ys = timeline.years, n = ys.length;
+        const vis = timeline.mediums.filter(m => !hiddenMed.has(m));
+        const vmax = Math.max(1, ...vis.flatMap(m => timeline.series[m]));
+        const X = i => n > 1 ? (i / (n - 1)) * W : 0;
+        const Y = c => H - PAD - (c / vmax) * (H - PAD * 2);
+        return (
+          <div className="stats-section" style={{ marginBottom: 0 }}>
+            <div className="stats-section-title">Titles seen per year — {timeline.total} dated · peak {timeline.peak} in {timeline.peakYear}</div>
+            <div className="taste-growth-layout">
+              <div className="taste-growth-chart">
+                <svg className="taste-timeline" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet">
+                  {vis.map(m => (
+                    <polyline key={m} fill="none" stroke={MEDIUM_MAP_HUE[m] || 'var(--accent)'} strokeWidth="1.4" vectorEffect="non-scaling-stroke"
+                      points={ys.map((_, i) => `${X(i).toFixed(1)},${Y(timeline.series[m][i]).toFixed(1)}`).join(' ')} />
+                  ))}
+                </svg>
+                <div className="taste-timeline-labels">
+                  {ys.map(y => <span key={y}>{"’" + y.slice(2)}</span>)}
+                </div>
+              </div>
+              <div className="taste-growth-legend">
+                {timeline.mediums.map(m => (
+                  <div key={m} className={`growth-leg${hiddenMed.has(m) ? ' off' : ''}`}
+                    onClick={() => setHiddenMed(p => { const s = new Set(p); s.has(m) ? s.delete(m) : s.add(m); return s; })}>
+                    <span className="growth-swatch" style={{ background: MEDIUM_MAP_HUE[m] || 'var(--accent)' }} />
+                    <span className="growth-leg-name">{m}</span>
+                    <span className="growth-leg-cnt">{timeline.series[m].reduce((a, b) => a + b, 0)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }
@@ -907,6 +1061,8 @@ const HIGHLIGHTS = {
   impact:       { emoji: '💥', label: 'Impactful' },
   funny:        { emoji: '😂', label: 'Genuinely funny' },
   bittersweet:  { emoji: '🥲', label: 'Funny through tears' },
+  satire:       { emoji: '🗯️', label: 'Satire' },
+  absurdist:    { emoji: '🤪', label: 'Absurdist' },
   cerebral:     { emoji: '🧠', label: 'Thought-provoking' },
   style:        { emoji: '🕶️', label: 'Bold style' },
   atmosphere:   { emoji: '🌌', label: 'Immersive atmosphere' },
@@ -1352,8 +1508,8 @@ function Popup({ item, x, y, linkPref = 'filmweb', onMouseEnter, onMouseLeave })
         </div>
       )}
       <div className="t">{displayTitle(item)}</div>
-      {item.note
-        ? <div className="blurb">{item.note}</div>
+      {(item.noteEn || item.note)
+        ? <div className="blurb">{item.noteEn || item.note}</div>
         : <div className="blurb empty">No note yet — add one in <code style={{ fontFamily:'var(--mono)', fontSize:11, background:'#eee5d3', padding:'1px 4px' }}>data.js</code>.</div>}
       <div className="hint">Click to open ↗ · middle-click → {service}</div>
     </div>
@@ -2054,6 +2210,19 @@ function App() {
     if (lib === 'wishlist') { setMode('spines'); setSort('priority'); }
     else                    { setMode('covers'); setSort('curated'); }
   };
+
+  // When a search/chip filter becomes active, flip to Mix so the layout can't hide
+  // matches (sort changes don't count). Fires only on the off→on edge, so a manual
+  // mode switch while a filter is active is left alone.
+  const anyFilter = !!(search.trim() || selectedRatings.size || selectedDirectors.size ||
+    selectedStudios.size || selectedWeeks.size || selectedCountries.size || selectedGenres.size ||
+    selectedActors.size || selectedWriters.size || selectedCinematographers.size ||
+    selectedHighlights.size || selectedRatedYears.size || selectedReleaseBuckets.size);
+  const prevFilterRef = React.useRef(false);
+  React.useEffect(() => {
+    if (anyFilter && !prevFilterRef.current && mode !== 'mix') setModeAndAnimate('mix');
+    prevFilterRef.current = anyFilter;
+  }, [anyFilter, mode]);
 
   return (
     <div className="page">
