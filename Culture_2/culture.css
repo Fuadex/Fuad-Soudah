@@ -990,13 +990,13 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
   top: 0; bottom: 0; left: 0;
   width: 50%;
   background: rgba(255,255,255,.16);
-  transform: translateX(0);
+  transform: translateX(100%);
   transition: transform .28s cubic-bezier(.4,0,.2,1), background .28s ease;
   z-index: -1;
   pointer-events: none;
 }
 .reader-btn.source-switch[data-side="imdb"] .ss-fill {
-  transform: translateX(100%);
+  transform: translateX(0);
   background: rgba(0,0,0,.12);
 }
 /* Two labels share one grid cell so the button is sized to the wider one and

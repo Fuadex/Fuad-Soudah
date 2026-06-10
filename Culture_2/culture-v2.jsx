@@ -1606,13 +1606,13 @@ function DragScroll({ className, children }) {
 }
 
 // The Reader's primary "Open on …" button. When the item has BOTH a stored
-// (Filmweb/etc.) link and an IMDb link, it becomes one morphing button: hover
-// the left half for Filmweb, the right half for IMDb — the label slides across
-// and the href follows. Items with only one link render a plain button.
+// (Filmweb/etc.) link and an IMDb link, it becomes one morphing button: it rests
+// on IMDb, and hovering the right half slides it across to Filmweb — the label
+// crosses and the href follows. Items with only one link render a plain button.
 function ReaderSourceButton({ item }) {
   const primary = item.link;
   const imdb = item.imdbUrl;
-  const [side, setSide] = React.useState('primary');
+  const [side, setSide] = React.useState('imdb');
   const arrow = (
     <svg className="ss-arrow" width="9" height="9" viewBox="0 0 12 12" fill="none">
       <path d="M3 3h6v6M3 9l6-6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1632,13 +1632,13 @@ function ReaderSourceButton({ item }) {
   const href = side === 'imdb' ? imdb : primary;
   const handleMove = (e) => {
     const r = e.currentTarget.getBoundingClientRect();
-    setSide((e.clientX - r.left) > r.width / 2 ? 'imdb' : 'primary');
+    setSide((e.clientX - r.left) > r.width / 2 ? 'primary' : 'imdb');
   };
   return (
     <a className="reader-btn primary source-switch" data-side={side}
        href={href} target="_blank" rel="noopener noreferrer"
-       onMouseMove={handleMove} onMouseLeave={() => setSide('primary')}
-       title={`Hover left for ${leftName}, right for IMDb`}>
+       onMouseMove={handleMove} onMouseLeave={() => setSide('imdb')}
+       title={`Hover left for IMDb, right for ${leftName}`}>
       <span className="ss-fill" aria-hidden="true" />
       <span className="ss-labels">
         <span className="ss-label ss-a">Open on {leftName}</span>
