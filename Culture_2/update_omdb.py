@@ -22,6 +22,8 @@ Run: python update_omdb.py [--dry-run] [--limit N] [--force]
 """
 import json, os, re, sys, time
 from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
 try: sys.stdout.reconfigure(encoding='utf-8')
 except Exception: pass
 import update_cast as uc   # reuse load_env / http_get / match_score / normalize
@@ -74,6 +76,25 @@ def parse_items(path):
     return out
 
 
+class QuotaExhausted(Exception):
+    pass
+
+
+def omdb_get(url):
+    """Like uc.http_get, but a 401 (\"Request limit reached!\") raises QuotaExhausted
+    instead of looking like a miss — so a dead quota can't poison the cache."""
+    try:
+        req = Request(url, headers={'User-Agent': 'culture-app/1.0', 'Accept-Encoding': 'identity'})
+        with urlopen(req, timeout=14) as r:
+            return json.loads(r.read().decode('utf-8'))
+    except HTTPError as e:
+        if e.code == 401:
+            raise QuotaExhausted()
+        return None
+    except (URLError, json.JSONDecodeError):
+        return None
+
+
 def omdb_fetch(key, item):
     """One primary call (whole payload). On a miss, one retry without the year."""
     typ = 'movie' if item['medium'] in MOVIE else 'series'
@@ -82,11 +103,11 @@ def omdb_fetch(key, item):
     params = dict(base)
     if item['year']:
         params['y'] = item['year']
-    data = uc.http_get(OMDB + '?' + urlencode(params))
+    data = omdb_get(OMDB + '?' + urlencode(params))
     if data and data.get('Response') == 'True':
         return data, False
     if item['year']:
-        data = uc.http_get(OMDB + '?' + urlencode(base))  # retry, no year
+        data = omdb_get(OMDB + '?' + urlencode(base))  # retry, no year
         if data and data.get('Response') == 'True':
             return data, True
     return None, False
@@ -95,7 +116,7 @@ def omdb_fetch(key, item):
 def omdb_short(key, imdb_id):
     """OMDb returns ONE plot per call; fetch the SHORT (crisp IMDb-style) synopsis
     by imdbID so it can sit alongside the full Plot."""
-    data = uc.http_get(OMDB + '?' + urlencode({'apikey': key, 'i': imdb_id, 'plot': 'short'}))
+    data = omdb_get(OMDB + '?' + urlencode({'apikey': key, 'i': imdb_id, 'plot': 'short'}))
     if data and data.get('Response') == 'True':
         p = data.get('Plot')
         return p if (p and p != 'N/A') else None
@@ -153,9 +174,16 @@ def main():
         return
 
     found = misses = low = 0
+    quota_dead = False
     review = []
     for n, it in enumerate(todo, 1):
-        data, no_year = omdb_fetch(key, it)
+        try:
+            data, no_year = omdb_fetch(key, it)
+        except QuotaExhausted:
+            quota_dead = True
+            print(f'\n  !! OMDb quota exhausted (HTTP 401) at item {n}/{len(todo)} — '
+                  'stopping so misses are not poisoned. Re-run after the daily reset.')
+            break
         if data:
             cache[it['id']] = data
             found += 1
@@ -179,13 +207,17 @@ def main():
     # lack it — so the Reader can show the crisp IMDb-style synopsis, not just the
     # long one. Shares the --limit budget so daily quota is respected over reruns.
     budget = (LIMIT - len(todo)) if LIMIT else None
-    if budget is None or budget > 0:
+    if not quota_dead and (budget is None or budget > 0):
         sb = 0
         for iid, v in cache.items():
             if budget is not None and sb >= budget:
                 break
             if isinstance(v, dict) and v.get('Response') == 'True' and v.get('imdbID') and 'PlotShort' not in v:
-                v['PlotShort'] = omdb_short(key, v['imdbID']) or ''  # '' marks attempted
+                try:
+                    v['PlotShort'] = omdb_short(key, v['imdbID']) or ''  # '' marks attempted
+                except QuotaExhausted:
+                    print('  !! quota exhausted during short-plot backfill — stopping.')
+                    break
                 sb += 1
                 if sb % 25 == 0:
                     json.dump(cache, open(CACHE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

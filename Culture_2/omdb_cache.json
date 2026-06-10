@@ -2645,11 +2645,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "short-circuit": {
-  "Response": "False",
-  "_q": "Walt Disney Animation Studios: Short Circuit Experimental Films",
-  "_y": 2020
- },
  "skaly": {
   "Title": "Skaly a ludia",
   "Year": "1959",
@@ -4133,11 +4128,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "nausicaa": {
-  "Response": "False",
-  "_q": "Warriors of the Wind",
-  "_y": 1984
- },
  "eva": {
   "Title": "Neon Genesis Evangelion",
   "Year": "1995–1996",
@@ -4166,11 +4156,6 @@
   "Type": "series",
   "totalSeasons": "1",
   "Response": "True"
- },
- "odrzucone": {
-  "Response": "False",
-  "_q": "Odrzucone",
-  "_y": 2000
  },
  "pitbull": {
   "Title": "Pitbull",
@@ -4443,11 +4428,6 @@
   "Type": "series",
   "totalSeasons": "7",
   "Response": "True"
- },
- "solo-na-ugorze": {
-  "Response": "False",
-  "_q": "Alone in a Fallow Field",
-  "_y": 1981
  },
  "sonny-boy": {
   "Title": "Sonny Boy",
@@ -5216,11 +5196,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "linia-zycia": {
-  "Response": "False",
-  "_q": "Linia życia",
-  "_y": 2009
- },
  "siec": {
   "Title": "Wielkie rzeczy: Siec",
   "Year": "2000",
@@ -5364,16 +5339,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-dekalog-v": {
-  "Response": "False",
-  "_q": "Decalogue III",
-  "_y": 1988
- },
- "imp-f-dekalog-viii": {
-  "Response": "False",
-  "_q": "Decalogue VIII",
-  "_y": 1988
  },
  "imp-f-fear-and-loathing-in-las-vegas": {
   "Title": "Fear and Loathing in Las Vegas",
@@ -5934,11 +5899,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-s-870863": {
-  "Response": "False",
-  "_q": "Attenborough's Life in Colour",
-  "_y": 2021
  },
  "imp-f-bab-el-hadid": {
   "Title": "Cairo Station",
@@ -6530,26 +6490,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-dekalog-iii": {
-  "Response": "False",
-  "_q": "Decalogue III",
-  "_y": 1988
- },
- "imp-f-dekalog-iv": {
-  "Response": "False",
-  "_q": "Decalogue IV",
-  "_y": 1988
- },
- "imp-f-dekalog-ix": {
-  "Response": "False",
-  "_q": "Decalogue IX",
-  "_y": 1988
- },
- "imp-f-dekalog-vii": {
-  "Response": "False",
-  "_q": "Decalogue VII",
-  "_y": 1988
- },
  "imp-f-die-nash-rner": {
   "Title": "Die Nashörner",
   "Year": "1961",
@@ -6621,11 +6561,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-dla-elizy-bagatela-a-moll-woo-59": {
-  "Response": "False",
-  "_q": "Dla Elizy Bagatela a-moll WoO 59",
-  "_y": 1992
  },
  "imp-f-duck-amuck": {
   "Title": "Duck Amuck",
@@ -8320,11 +8255,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-natural-attraction": {
-  "Response": "False",
-  "_q": "Natural Attraction",
-  "_y": 2014
- },
  "imp-f-neko-no-ongaeshi": {
   "Title": "The Cat Returns",
   "Year": "2002",
@@ -8364,11 +8294,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-offret-sacrificatio": {
-  "Response": "False",
-  "_q": "Offret Sacrificatio",
-  "_y": 1986
  },
  "imp-f-one-small-step": {
   "Title": "One Small Step",
@@ -12390,11 +12315,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-s-10005700": {
-  "Response": "False",
-  "_q": "Bo Burnham: Inside",
-  "_y": 2021
- },
  "imp-f-boundin": {
   "Title": "Boundin'",
   "Year": "2003",
@@ -13313,11 +13233,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-s-467384": {
-  "Response": "False",
-  "_q": "Code Geass: Lelouch of the Rebellion",
-  "_y": 2008
- },
  "imp-f-corpse-bride": {
   "Title": "Corpse Bride",
   "Year": "2005",
@@ -13462,11 +13377,6 @@
   "Type": "series",
   "totalSeasons": "12",
   "Response": "True"
- },
- "imp-s-802350": {
-  "Response": "False",
-  "_q": "Little Black Mirror",
-  "_y": 2018
  },
  "imp-f-94612": {
   "Title": "The Human Condition II: Road to Eternity",
@@ -13679,11 +13589,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-das-begr-bnis-des-harald-kramer": {
-  "Response": "False",
-  "_q": "Das Begräbnis des Harald Kramer",
-  "_y": 2013
  },
  "imp-f-das-boot": {
   "Title": "Das Boot",
@@ -13956,16 +13861,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-dekalog-i": {
-  "Response": "False",
-  "_q": "Decalogue I",
-  "_y": 1988
- },
- "imp-f-dekalog-vi": {
-  "Response": "False",
-  "_q": "Decalogue VI",
-  "_y": 1988
  },
  "imp-f-der-untergang": {
   "Title": "Downfall",
@@ -14739,11 +14634,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-egao": {
-  "Response": "False",
-  "_q": "Egao no Orchestra!",
-  "_y": 2003
- },
  "imp-f-10019714": {
   "Title": "Elemental",
   "Year": "2023",
@@ -14863,11 +14753,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-s-10014569": {
-  "Response": "False",
-  "_q": "Entergalactic",
-  "_y": 2022
  },
  "imp-f-erskineville-kings": {
   "Title": "Erskineville Kings",
@@ -15958,11 +15843,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-gi-saeng-chung": {
-  "Response": "False",
-  "_q": "Gi-saeng-chung",
-  "_y": 2019
- },
  "imp-s-363435": {
   "Title": "Gintama",
   "Year": "2006–2021",
@@ -16561,11 +16441,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-hotarubi-no-mori-e": {
-  "Response": "False",
-  "_q": "Hotarubi no Mori e",
-  "_y": 2011
- },
  "imp-f-hotel-chevalier": {
   "Title": "Hotel Chevalier",
   "Year": "2007",
@@ -16693,11 +16568,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-iblard-jikan": {
-  "Response": "False",
-  "_q": "Iblard Time",
-  "_y": 2007
  },
  "imp-f-il-buono-il-brutto-il-cattivo": {
   "Title": "The Good, the Bad and the Ugly",
@@ -17151,11 +17021,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-jaga": {
-  "Response": "False",
-  "_q": "Legendy Polskie: Jaga",
-  "_y": 2016
  },
  "imp-f-jagten": {
   "Title": "The Hunt",
@@ -18207,16 +18072,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-kyousogiga": {
-  "Response": "False",
-  "_q": "Kyousougiga",
-  "_y": 2011
- },
- "imp-s-665315": {
-  "Response": "False",
-  "_q": "Kyousougiga",
-  "_y": 2012
- },
  "imp-f-l-homme-orchestre": {
   "Title": "The One-Man Band",
   "Year": "1900",
@@ -18325,11 +18180,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-la-marmite-diabolique": {
-  "Response": "False",
-  "_q": "The Diabolical Saucepan",
-  "_y": 1903
- },
  "imp-f-lady-bird": {
   "Title": "Lady Bird",
   "Year": "2017",
@@ -18429,16 +18279,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-le-portrait-myst-rieux": {
-  "Response": "False",
-  "_q": "The Mysterious Portrait",
-  "_y": 1899
- },
- "imp-f-le-renard-et-l-oisille": {
-  "Response": "False",
-  "_q": "Le Renard et l'Oisille",
-  "_y": 2019
- },
  "imp-f-le-repas-fantastique": {
   "Title": "A Fantastical Meal",
   "Year": "1900",
@@ -18506,11 +18346,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-les-aventures-de-guillaume-tell": {
-  "Response": "False",
-  "_q": "Les Aventures de Guillaume Tell",
-  "_y": 1898
  },
  "imp-f-les-mis-rables": {
   "Title": "Les Misérables",
@@ -19056,11 +18891,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-macross-plus-movie-edition": {
-  "Response": "False",
-  "_q": "Macross Plus: The Movie",
-  "_y": 1995
- },
  "imp-f-mad-max-2": {
   "Title": "Mad Max 2: The Road Warrior (1981)",
   "Year": "1981",
@@ -19546,11 +19376,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-monstersymfonie": {
-  "Response": "False",
-  "_q": "Monstersymfonie",
-  "_y": 2012
- },
  "imp-f-7874": {
   "Title": "Moulin Rouge!",
   "Year": "2001",
@@ -20009,11 +19834,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-ningen-no-joken-ii": {
-  "Response": "False",
-  "_q": "Ningen no joken II",
-  "_y": 1959
- },
  "imp-f-nostalghia": {
   "Title": "Nostalgia 'We bellen je'",
   "Year": "1983",
@@ -20040,16 +19860,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-nowy-janko-muzykant": {
-  "Response": "False",
-  "_q": "New Janko the Musician",
-  "_y": 1960
- },
- "imp-f-o-menino-e-o-mundo": {
-  "Response": "False",
-  "_q": "Boy & the World",
-  "_y": 2013
  },
  "imp-f-oh-sheep": {
   "Title": "Oh Sheep!",
@@ -21101,11 +20911,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-peul-lan-da-seu-eui-gae": {
-  "Response": "False",
-  "_q": "Peul-lan-da-seu-eui Gae",
-  "_y": 2000
- },
  "imp-f-pi": {
   "Title": "Pi",
   "Year": "1998",
@@ -21145,11 +20950,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-pianoid": {
-  "Response": "False",
-  "_q": "Pianoid",
-  "_y": 2015
  },
  "imp-f-piper": {
   "Title": "Piper",
@@ -22122,11 +21922,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-rondo-alla-turca-z-sonaty-a-dur-kv-331": {
-  "Response": "False",
-  "_q": "Rondo Alla Turca z Sonaty A-dur KV 331",
-  "_y": 1993
- },
  "imp-f-royal-madness": {
   "Title": "Royal Madness",
   "Year": "2019",
@@ -22193,11 +21988,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-samog-oska": {
-  "Response": "False",
-  "_q": "Samogłoska",
-  "_y": 1981
  },
  "imp-f-9352": {
   "Title": "The Hourglass Sanatorium",
@@ -22578,11 +22368,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-shin-gekij-ban-initial-d-legend-1-kakusei": {
-  "Response": "False",
-  "_q": "Shin Gekijō-ban Initial D Legend 1 - Kakusei",
-  "_y": 2014
  },
  "imp-f-shine": {
   "Title": "Shine",
@@ -23255,11 +23040,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-strojenie-instrument-w": {
-  "Response": "False",
-  "_q": "Tuning the Instruments",
-  "_y": 2000
- },
  "imp-f-sztuka-spadania": {
   "Title": "Fallen Art",
   "Year": "2004",
@@ -23460,11 +23240,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-tango": {
-  "Response": "False",
-  "_q": "The Tango of Jealousy",
-  "_y": 1981
  },
  "imp-f-taxi-driver": {
   "Title": "Taxi Driver",
@@ -23705,11 +23480,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-the-adventures-of-andr-and-the-wally-b": {
-  "Response": "False",
-  "_q": "The Adventures of André and Wally B.",
-  "_y": 1984
  },
  "imp-f-the-animatrix": {
   "Title": "The Animatrix: Kid's Story",
@@ -24011,11 +23781,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-the-boy-in-the-striped-pyjamas": {
-  "Response": "False",
-  "_q": "The Boy in the Striped Pyjamas",
-  "_y": 2008
  },
  "imp-f-the-butterfly-effect": {
   "Title": "The Butterfly Effect",
@@ -24552,11 +24317,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-the-french-dispatch": {
-  "Response": "False",
-  "_q": "The French Dispatch of the Liberty, Kansas Evening Sun",
-  "_y": 2021
  },
  "imp-f-817420": {
   "Title": "The Gentlemen",
@@ -26589,11 +26349,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-tren-zb-ja": {
-  "Response": "False",
-  "_q": "Tren zbója",
-  "_y": 1967
- },
  "imp-f-trois-couleurs-rouge": {
   "Title": "Three Colors: Red",
   "Year": "1994",
@@ -26673,16 +26428,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-trzy-kolory-bia-y": {
-  "Response": "False",
-  "_q": "Trzy kolory: Biały",
-  "_y": 1994
- },
- "imp-f-trzy-kolory-niebieski": {
-  "Response": "False",
-  "_q": "Trzy kolory: Niebieski",
-  "_y": 1993
  },
  "imp-f-tt3d-closer-to-the-edge": {
   "Title": "TT3D: Closer to the Edge",
@@ -28828,11 +28573,6 @@
   "Website": "N/A",
   "Response": "True"
  },
- "imp-f-anchiporuno": {
-  "Response": "False",
-  "_q": "Anchiporuno",
-  "_y": 2016
- },
  "imp-f-angelinho": {
   "Title": "Angelinho",
   "Year": "2011",
@@ -29788,11 +29528,6 @@
   "totalSeasons": "5",
   "Response": "True"
  },
- "imp-f-boo-san-haeng": {
-  "Response": "False",
-  "_q": "Boo-san-haeng",
-  "_y": 2016
- },
  "imp-f-borrowed-time": {
   "Title": "Borrowed Time",
   "Year": "2015",
@@ -30108,301 +29843,6 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True"
- },
- "imp-f-canada-vignettes-log-driver-s-waltz": {
-  "Response": "False",
-  "_q": "Canada Vignettes: Log Driver's Waltz",
-  "_y": 1979
- },
- "imp-f-canned": {
-  "Response": "False",
-  "_q": "Canned",
-  "_y": 2014
- },
- "imp-f-carne": {
-  "Response": "False",
-  "_q": "Carne",
-  "_y": 1991
- },
- "imp-f-cars": {
-  "Response": "False",
-  "_q": "Cars",
-  "_y": 2006
- },
- "imp-f-905": {
-  "Response": "False",
-  "_q": "Casablanca",
-  "_y": 1942
- },
- "imp-f-casino-royale": {
-  "Response": "False",
-  "_q": "Casino Royale",
-  "_y": 2006
- },
- "imp-f-castello-cavalcanti": {
-  "Response": "False",
-  "_q": "Castello Cavalcanti",
-  "_y": 2013
- },
- "imp-f-catch-it": {
-  "Response": "False",
-  "_q": "Catch It",
-  "_y": 2015
- },
- "imp-f-chateau-de-sable": {
-  "Response": "False",
-  "_q": "Sand Castle",
-  "_y": 2015
- },
- "imp-s-783136": {
-  "Response": "False",
-  "_q": "Chef's Table: France",
-  "_y": 2016
- },
- "imp-s-10013452": {
-  "Response": "False",
-  "_q": "Chainsaw Man",
-  "_y": 2022
- },
- "imp-f-167500": {
-  "Response": "False",
-  "_q": "Chilsu and Mansu",
-  "_y": 1988
- },
- "imp-f-1027": {
-  "Response": "False",
-  "_q": "Chinatown",
-  "_y": 1974
- },
- "imp-f-city-lights": {
-  "Response": "False",
-  "_q": "City Lights",
-  "_y": 1931
- },
- "imp-f-clerks-ii": {
-  "Response": "False",
-  "_q": "Clerks II",
-  "_y": 2006
- },
- "imp-f-clueless": {
-  "Response": "False",
-  "_q": "Clueless",
-  "_y": 1995
- },
- "imp-s-351408": {
-  "Response": "False",
-  "_q": "Code Geass: Lelouch of the Rebellion",
-  "_y": 2006
- },
- "imp-f-con-air": {
-  "Response": "False",
-  "_q": "Con Air",
-  "_y": 1997
- },
- "imp-f-coraline": {
-  "Response": "False",
-  "_q": "Coraline",
-  "_y": 2009
- },
- "imp-f-creed-iii": {
-  "Response": "False",
-  "_q": "Creed III",
-  "_y": 2023
- },
- "imp-f-czar-k-ek": {
-  "Response": "False",
-  "_q": "The Charm of the Wheels",
-  "_y": 1966
- },
- "imp-f-czarny-kapturek": {
-  "Response": "False",
-  "_q": "Little Black Riding Hood",
-  "_y": 1983
- },
- "imp-f-czerwone-i-czarne": {
-  "Response": "False",
-  "_q": "The Red and the Black",
-  "_y": 1963
- },
- "imp-f-dancer-in-the-dark": {
-  "Response": "False",
-  "_q": "Dancer in the Dark",
-  "_y": 2000
- },
- "imp-s-702252": {
-  "Response": "False",
-  "_q": "Marvel's Daredevil",
-  "_y": 2015
- },
- "imp-f-dead-leaves": {
-  "Response": "False",
-  "_q": "Dead Leaves",
-  "_y": 2004
- },
- "imp-f-deadpool": {
-  "Response": "False",
-  "_q": "Deadpool",
-  "_y": 2016
- },
- "imp-f-dear-basketball": {
-  "Response": "False",
-  "_q": "Dear Basketball",
-  "_y": 2017
- },
- "imp-s-349326": {
-  "Response": "False",
-  "_q": "Death Note",
-  "_y": 2006
- },
- "imp-f-death-to-2020": {
-  "Response": "False",
-  "_q": "Death to 2020",
-  "_y": 2020
- },
- "imp-f-4968": {
-  "Response": "False",
-  "_q": "Deep End",
-  "_y": 1970
- },
- "imp-f-dekalog-ii": {
-  "Response": "False",
-  "_q": "Decalogue II",
-  "_y": 1988
- },
- "imp-f-dekalog-x": {
-  "Response": "False",
-  "_q": "Decalogue X",
-  "_y": 1988
- },
- "imp-f-der-besuch": {
-  "Response": "False",
-  "_q": "Der Besuch",
-  "_y": 2006
- },
- "imp-f-desire": {
-  "Response": "False",
-  "_q": "Desire",
-  "_y": 2014
- },
- "imp-s-801312": {
-  "Response": "False",
-  "_q": "Devilman Crybaby",
-  "_y": 2018
- },
- "imp-f-devotion": {
-  "Response": "False",
-  "_q": "Devotion",
-  "_y": 2013
- },
- "imp-f-dia-de-los-muertos": {
-  "Response": "False",
-  "_q": "Día de los muertos",
-  "_y": 2013
- },
- "imp-f-dial-m-for-murder": {
-  "Response": "False",
-  "_q": "Dial M for Murder",
-  "_y": 1954
- },
- "imp-f-die-hard": {
-  "Response": "False",
-  "_q": "Die Hard",
-  "_y": 1988
- },
- "imp-f-dimanche": {
-  "Response": "False",
-  "_q": "Sunday",
-  "_y": 2011
- },
- "imp-f-district-9": {
-  "Response": "False",
-  "_q": "District 9",
-  "_y": 2009
- },
- "imp-f-dji-death-sails": {
-  "Response": "False",
-  "_q": "Dji. Death Sails",
-  "_y": 2014
- },
- "imp-f-doctor-strange": {
-  "Response": "False",
-  "_q": "Doctor Strange",
-  "_y": 2016
- },
- "imp-f-donnie-brasco": {
-  "Response": "False",
-  "_q": "Donnie Brasco",
-  "_y": 1997
- },
- "imp-f-drive": {
-  "Response": "False",
-  "_q": "Drive",
-  "_y": 2011
- },
- "imp-f-droga": {
-  "Response": "False",
-  "_q": "Road",
-  "_y": 1971
- },
- "imp-f-dug-s-special-mission": {
-  "Response": "False",
-  "_q": "Dug's Special Mission",
-  "_y": 2009
- },
- "imp-f-dumb-dumber": {
-  "Response": "False",
-  "_q": "Dumb and Dumber",
-  "_y": 1994
- },
- "imp-f-dumbo": {
-  "Response": "False",
-  "_q": "Dumbo",
-  "_y": 1941
- },
- "imp-f-dune": {
-  "Response": "False",
-  "_q": "Dune",
-  "_y": 2021
- },
- "imp-f-dungeons-dragons-honor-among-thieves": {
-  "Response": "False",
-  "_q": "Dungeons & Dragons: Honor Among Thieves",
-  "_y": 2023
- },
- "imp-f-dunkirk": {
-  "Response": "False",
-  "_q": "Dunkirk",
-  "_y": 2017
- },
- "imp-f-d-ug": {
-  "Response": "False",
-  "_q": "The Debt",
-  "_y": 1999
- },
- "imp-f-el-camino-a-breaking-bad-movie": {
-  "Response": "False",
-  "_q": "El Camino: A Breaking Bad Movie",
-  "_y": 2019
- },
- "imp-f-97848": {
-  "Response": "False",
-  "_q": "Elf",
-  "_y": 2003
- },
- "imp-f-10019715": {
-  "Response": "False",
-  "_q": "Elio",
-  "_y": 2025
- },
- "imp-f-end-of-watch": {
-  "Response": "False",
-  "_q": "End of Watch",
-  "_y": 2012
- },
- "imp-f-everything-everywhere-all-at-once": {
-  "Response": "False",
-  "_q": "Everything Everywhere All at Once",
-  "_y": 2022
  },
  "imp-f-ningen-no-joken-i": {
   "Title": "The Human Condition III: A Soldier's Prayer",
