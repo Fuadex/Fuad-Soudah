@@ -4,6 +4,9 @@ __pycache__/
 
 # Machine-generated enrichment caches (regenerable; kept local, not committed)
 *_cache.json
+# …except the OMDb cache: it tracks fetch progress + misses across daily
+# quota-limited runs, so losing it would burn API calls re-fetching everything
+!omdb_cache.json
 
 # Scratch / backups / one-off output
 _tmp_*.py
