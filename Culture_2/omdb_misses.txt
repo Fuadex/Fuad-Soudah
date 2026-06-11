@@ -1,3 +1,63 @@
+short-circuit	Short Circuit (2020)	NO MATCH
+nausicaa	Nausicaä of the Valley of the Wind (1984)	NO MATCH
+odrzucone	Odrzucone (2000)	NO MATCH
+solo-na-ugorze	Solo na ugorze (1981)	NO MATCH
+linia-zycia	Linia życia (2009)	NO MATCH
+imp-f-dekalog-v	Dekalog V (1988)	NO MATCH
+imp-f-dekalog-viii	Dekalog VIII (1988)	NO MATCH
+imp-s-870863	Attenborough's Life in Colour (2021)	NO MATCH
+imp-f-dekalog-iii	Dekalog III (1988)	NO MATCH
+imp-f-dekalog-iv	Dekalog IV (1988)	NO MATCH
+imp-f-dekalog-ix	Dekalog IX (1988)	NO MATCH
+imp-f-dekalog-vii	Dekalog VII (1988)	NO MATCH
+imp-f-dla-elizy-bagatela-a-moll-woo-59	Dla Elizy Bagatela a-moll WoO 59 (1992)	NO MATCH
+imp-f-natural-attraction	Natural Attraction (2014)	NO MATCH
+imp-f-offret-sacrificatio	Offret Sacrificatio (1986)	NO MATCH
+imp-s-10005700	Bo Burnham: Inside (2021)	NO MATCH
+imp-s-467384	Code Geass: Hangyaku no Lelouch R2 (2008)	NO MATCH
+imp-s-802350	Czarne lusterko (2018)	NO MATCH
+imp-f-das-begr-bnis-des-harald-kramer	Das Begräbnis des Harald Kramer (2013)	NO MATCH
+imp-f-dekalog-i	Dekalog I (1988)	NO MATCH
+imp-f-dekalog-vi	Dekalog VI (1988)	NO MATCH
+imp-f-egao	Egao (2003)	NO MATCH
+imp-s-10014569	Entergalactic (2022)	NO MATCH
+imp-f-gi-saeng-chung	Gi-saeng-chung (2019)	NO MATCH
+imp-f-hotarubi-no-mori-e	Hotarubi no Mori e (2011)	NO MATCH
+imp-f-iblard-jikan	Iblard Jikan (2007)	NO MATCH
+imp-f-jaga	Jaga (2016)	NO MATCH
+imp-f-kyousogiga	Kyousogiga (2011)	NO MATCH
+imp-s-665315	Kyousougiga (2012)	NO MATCH
+imp-f-la-marmite-diabolique	La marmite diabolique (1903)	NO MATCH
+imp-f-le-portrait-myst-rieux	Le portrait mystérieux (1899)	NO MATCH
+imp-f-le-renard-et-l-oisille	Le Renard et l'Oisille (2019)	NO MATCH
+imp-f-les-aventures-de-guillaume-tell	Les Aventures de Guillaume Tell (1898)	NO MATCH
+imp-f-macross-plus-movie-edition	Macross Plus Movie Edition (1995)	NO MATCH
+imp-f-monstersymfonie	Monstersymfonie (2012)	NO MATCH
+imp-f-ningen-no-joken-ii	Ningen no joken II (1959)	NO MATCH
+imp-f-nowy-janko-muzykant	Nowy Janko Muzykant (1960)	NO MATCH
+imp-f-o-menino-e-o-mundo	O Menino e o Mundo (2013)	NO MATCH
+imp-f-peul-lan-da-seu-eui-gae	Peul-lan-da-seu-eui Gae (2000)	NO MATCH
+imp-f-pianoid	Pianoid (2015)	NO MATCH
+imp-f-rondo-alla-turca-z-sonaty-a-dur-kv-331	Rondo Alla Turca z Sonaty A-dur KV 331 (1993)	NO MATCH
+imp-f-samog-oska	Samogłoska (1981)	NO MATCH
+imp-f-shin-gekij-ban-initial-d-legend-1-kakusei	Shin Gekijō-ban Initial D Legend 1 - Kakusei (2014)	NO MATCH
+imp-f-strojenie-instrument-w	Strojenie instrumentów (2000)	NO MATCH
+imp-f-tango	Tango (1981)	NO MATCH
+imp-f-the-adventures-of-andr-and-the-wally-b	The Adventures of André and the Wally B. (1984)	NO MATCH
+imp-f-the-boy-in-the-striped-pyjamas	The Boy in the Striped Pyjamas (2008)	NO MATCH
+imp-f-the-french-dispatch	The French Dispatch (2021)	NO MATCH
+imp-f-tren-zb-ja	Tren zbója (1967)	NO MATCH
+imp-f-trzy-kolory-bia-y	Trzy kolory: Biały (1994)	NO MATCH
+imp-f-trzy-kolory-niebieski	Trzy kolory: Niebieski (1993)	NO MATCH
+imp-f-anchiporuno	Anchiporuno (2016)	NO MATCH
+imp-f-boo-san-haeng	Boo-san-haeng (2016)	NO MATCH
+imp-s-351408	Code Geass: Hangyaku no Lelouch (2006)	NO MATCH
+imp-f-czar-k-ek	Czar kółek (1966)	NO MATCH
+imp-f-czarny-kapturek	Czarny Kapturek (1983)	NO MATCH
+imp-f-czerwone-i-czarne	Czerwone i czarne (1963)	→ The Red and the Black (1954)	score 1.00 year?
+imp-s-702252	Daredevil (2015)	NO MATCH
+imp-f-dekalog-ii	Dekalog II (1988)	NO MATCH
+imp-f-dekalog-x	Dekalog X (1988)	NO MATCH
 imp-f-goutte-d-or	Goutte d'Or (2013)	NO MATCH
 imp-f-hana-to-alice-satsujin-jiken	Hana to Alice Satsujin Jiken (2015)	NO MATCH
 imp-f-258360	I-eo-do (1977)	NO MATCH
@@ -61,29 +121,22 @@ imp-f-pitbull-nowe-porz-dki	Pitbull. Nowe porządki (2016)	NO MATCH
 imp-f-pitbull-ostatni-pies	Pitbull. Ostatni pies (2018)	NO MATCH
 imp-f-shinseiki-evangelion-gekij-ban-shi-to-shinsei	Shinseiki Evangelion Gekijōban: Shi to Shinsei (1997)	NO MATCH
 imp-f-syn-gwiazd	Syn Gwiazd (2006)	NO MATCH
-imp-s-95067	...A je to! (1976)	→ Romance Is a Bonus Book (2019)	score 1.00 year?
 imp-f-24-me-chasseurs-alpins-le-on-de-boxe	24ème chasseurs alpins: leçon de boxe (1897)	NO MATCH
 imp-f-a-bord-du-tonkin-le-saut-la-corde	A bord du 'Tonkin' - Le saut à la corde (1900)	NO MATCH
 imp-f-a-railway-collision	A Railway Collision (1900)	NO MATCH
 imp-f-acteurs-japonais-exercice-de-la-perruque	Acteurs japonais: Exercice de la perruque (1898)	NO MATCH
 imp-f-an-over-incubated-baby	An Over-Incubated Baby (1901)	NO MATCH
-imp-f-aquarium	Aquarium (1895)	→ Aquarium (2005)	score 1.00 year?
 imp-f-army-life	Army Life (1900)	NO MATCH
 imp-f-arriv-e-d-un-bateau-vapeur	Arrivée d'un bateau à vapeur (1896)	NO MATCH
 imp-f-arriv-e-d-un-train-perrache	Arrivée d'un train à Perrache (1896)	NO MATCH
 imp-f-arroseur-et-arros	Arroseur et arrosé (1896)	NO MATCH
 imp-f-ast-rix-et-ob-lix-contre-c-sar	Astérix et Obélix contre César (1999)	NO MATCH
-imp-f-baignade-de-chevaux	Baignade de chevaux (1896)	→ Military Horses Bathing (1900)	score 0.80 year?
 imp-f-baignade-en-mer	Baignade en mer (1896)	NO MATCH
 imp-f-baignade-en-mer-1897	Baignade en mer (1897)	NO MATCH
 imp-f-baignade-en-mer-1895	Baignade en mer (1895)	NO MATCH
 imp-f-bains-en-mer	Bains en mer (1896)	NO MATCH
 imp-f-bal-d-enfants	Bal d'enfants (1896)	NO MATCH
-imp-f-bataille-de-boules-de-neige-1896	Bataille de boules de neige (1896)	→ Snowball Fight (2019)	score 1.00 year?
-imp-f-bataille-de-femmes	Bataille de femmes (1896)	→ Fearless: The Women Fighting Putin (2022)	score 0.80 year?
-imp-f-bataille-de-neige	Bataille de neige (1900)	→ Snowball Fight (2019)	score 1.00 year?
 imp-f-bethl-em-une-place	Bethléem, une place (1897)	NO MATCH
-imp-f-bicycliste	Bicycliste (1896)	→ Bicyclist (2016)	score 1.00 year?
 imp-f-blacksmith-scene	Blacksmith Scene (1893)	NO MATCH
 imp-s-120890	Bolek i Lolek (1963)	NO MATCH
 imp-f-bonne-d-enfants-et-soldat	Bonne d'enfants et soldat (1897)	NO MATCH
@@ -95,23 +148,18 @@ imp-f-627668	Budapest, cortège de la Couronne (1896)	NO MATCH
 imp-f-buy-your-own-cherries	Buy Your Own Cherries (1904)	NO MATCH
 imp-f-carmaux-chargement-du-coke	Carmaux, chargement du coke (1896)	NO MATCH
 imp-f-carmaux-d-fournage-du-coke	Carmaux, défournage du coke (1896)	NO MATCH
-imp-f-206069	Chłopi (1973)	→ The Peasants (2023)	score 1.00 year?
-imp-f-combat-de-coqs-1899	Combat de coqs (1899)	→ Combat de coqs (1896)	score 1.00 year?
 imp-f-concours-de-boules	Concours de boules (1896)	NO MATCH
 imp-f-coolies-sa-gon	Coolies à Saïgon (1897)	NO MATCH
 imp-f-cort-ge-au-mariage-de-la-princesse-maud	Cortège au mariage de la princesse Maud (1896)	NO MATCH
 imp-f-cuirassiers-cheval	Cuirassiers à cheval (1896)	NO MATCH
-imp-f-682513	Danse de l'éventail (1899)	→ Danse de l'éventail (1905)	score 1.00 year?
 imp-f-danse-japonaise-gueichas-en-jinrikcha	Danse Japonaise: Gueichas en Jinrikcha (1899)	NO MATCH
 imp-f-danseuses-cambodgiennes-du-roi-norodom-ii	Danseuses Cambodgiennes du roi Norodom. II. (1902)	NO MATCH
 imp-f-danseuses-des-rues	Danseuses des rues (1896)	NO MATCH
 imp-f-descente-de-la-grande-pyramide	Descente de la grande pyramide (1897)	NO MATCH
 imp-s-259066	Detektyw (2001)	NO MATCH
-imp-f-dragons-traversant-la-sa-ne-la-nage	Dragons traversant la Saône à la nage (1896)	→ Dragoons Crossing the Sâone (2016)	score 1.00 year?
 imp-f-dresde-vieux-quartier-allemand-i-exposition	Dresde, vieux quartier allemand à I'Exposition (1896)	NO MATCH
 imp-f-duel-au-pistolet	Duel au pistolet (1896)	NO MATCH
 imp-s-95399	Dziwne przygody Koziołka Matołka (1969)	NO MATCH
-imp-f-d-fense-du-drapeau	Défense du drapeau (1902)	→ La défense du drapeau (1897)	score 1.00 year?
 imp-f-d-fil-de-voitures-de-b-b-s-la-pouponni-re-de-paris	Défilé de voitures de bébés à la pouponnière de Paris (1899)	NO MATCH
 imp-f-d-fil-des-v-t-rans-en-costumes-anciens-vue-de-pr-s	Défilé des Vétérans en costumes anciens: Vue de près (1899)	NO MATCH
 imp-f-d-part-de-j-rusalem-en-chemin-de-fer	Départ de Jérusalem en chemin de fer (1897)	NO MATCH
@@ -128,39 +176,31 @@ imp-f-ex-cution-de-jeanne-d-arc	Exécution de Jeanne d'Arc (1898)	NO MATCH
 imp-f-faneurs	Faneurs (1897)	NO MATCH
 imp-f-faust-apparition-de-m-phistoph-l-s	Faust: apparition de Méphistophélès (1897)	NO MATCH
 imp-f-feu-de-bois	Feu de bois (1897)	NO MATCH
-imp-f-fumerie-d-opium	Fumerie d'opium (1901)	→ Chinese Opium Den (1894)	score 0.80 year?
 imp-f-f-te-de-paris-1899-concours-d-automobiles-fleuries	Fête de Paris 1899: Concours d'automobiles fleuries (1899)	NO MATCH
 imp-f-f-tes-du-couronnement-de-s-m-le-tsar-nicolas-ii-saint-p-ters	Fêtes du couronnement de S.M. le Tsar Nicolas II: Saint-Pétersbourg, rue Tverskaïa (1896)	NO MATCH
-imp-f-gone-in-sixty-seconds	Gone in Sixty Seconds (2000)	→ Gone in Sixty Seconds at Ascot Raceway (2020)	score 0.80 year?
 imp-f-gospodarze	Gospodarze (1972)	NO MATCH
 imp-s-103517	Grim and Evil (2001)	NO MATCH
 imp-f-g-ant-et-nain	Géant et nain (1896)	NO MATCH
 imp-f-i-promenade-du-dragon-cholon	I Promenade du dragon à Cholon (1902)	NO MATCH
 imp-f-ii-inauguration-longueur-8-m-tres	II. Inauguration (longueur : 8 mètres) (1896)	NO MATCH
-imp-f-illusions-fantasmagoriques	Illusions fantasmagoriques (1898)	→ The Famous Box Trick (1903)	score 1.00 year?
 imp-f-jing-cha-gu-shi-iv-jian-dan-ren-wu	Jing cha gu shi IV: Jian dan ren wu (1996)	NO MATCH
 imp-f-j-rusalem-le-saint-s-pulcre	Jérusalem, le saint sépulcre (1897)	NO MATCH
 imp-f-j-rusalem-porte-de-jaffa-c-t-est	Jérusalem, porte de Jaffa, côté Est (1897)	NO MATCH
 imp-f-karol-un-uomo-diventato-papa	Karol, un uomo diventato papa (2005)	NO MATCH
 imp-s-99251	Kommissar Rex (1994)	NO MATCH
-imp-f-l-affaire-dreyfus	L'affaire Dreyfus (1899)	→ The Dreyfus Affair (1908)	score 1.00 year?
 imp-f-l-album-merveilleux	L'album merveilleux (1905)	NO MATCH
-imp-f-l-arrivee-en-voiture	L'Arrivee en voiture (1896)	→ Arrival of President Loubet (1903)	score 1.00 year?
 imp-f-l-arriv-e-d-un-train-a-la-ciotat	L'Arrivée d'un train a la Ciotat (1895)	NO MATCH
 imp-f-l-arroseur-arros	L'arroseur arrosé (1895)	NO MATCH
-imp-f-l-assassinat-du-duc-de-guise	L'assassinat du duc de Guise (1897)	→ The Assassination of the Duke de Guise (1908)	score 1.00 year?
 imp-f-l-impressionniste-fin-de-si-cle	L'Impressionniste fin de siècle (1899)	NO MATCH
 imp-f-la-f-e-au-pigeons	La Fée au pigeons (1906)	NO MATCH
 imp-f-la-gare	La gare (1896)	NO MATCH
 imp-f-la-mi-car-me-char-et-bataille-de-confettis	La Mi-Carême, Char et bataille de confettis (1899)	NO MATCH
 imp-f-la-mise-en-croix	La mise en croix (1898)	NO MATCH
-imp-f-la-mort-de-marat	La Mort de Marat (1897)	→ The Death of Marat (2017)	score 1.00 year?
 imp-f-la-m-tamorphose-du-papillon	La Métamorphose du papillon (1904)	NO MATCH
 imp-f-la-palestina-en-1896	La Palestina en 1896 (1897)	NO MATCH
 imp-f-la-petite-fille-et-son-chat	La petite fille et son chat (1900)	NO MATCH
 imp-f-la-sortie-des-usines-lumi-re	La sortie des usines Lumière (1895)	NO MATCH
 imp-f-la-vague	La vague (1891)	NO MATCH
-imp-f-labourage	Labourage (1896)	→ Ploughing the Clouds (1917)	score 0.80 year?
 imp-f-lancement-d-un-navire	Lancement d'un navire (1896)	NO MATCH
 imp-f-lausanne-d-fil-du-8-me-bataillon	Lausanne, défilé du 8ème bataillon (1896)	NO MATCH
 imp-f-laveuses-sur-la-rivi-re	Laveuses sur la rivière (1897)	NO MATCH
@@ -174,9 +214,7 @@ imp-f-le-scieur-de-bois-me-lomane	Le scieur de bois mélomane (1898)	NO MATCH
 imp-f-le-village	Le Village (1900)	NO MATCH
 imp-f-les-bains-de-diane-milan	Les Bains de Diane à Milan (1896)	NO MATCH
 imp-f-les-elks-champions-du-cake-walk	Les Elks champions du Cake-Walk (1903)	NO MATCH
-imp-f-les-forgerons	Les forgerons (1895)	→ Forged from Fire - the Making of the Blacksmiths Tree (2019)	score 0.80 year?
 imp-f-les-infortunes-d-un-explorateur	Les Infortunes d'un explorateur (1900)	NO MATCH
-imp-f-les-patineurs	Les Patineurs (1900)	→ The Skaters (2016)	score 1.00 year?
 imp-f-les-pyramides-vue-g-n-rale	Les pyramides (vue générale) (1897)	NO MATCH
 imp-f-les-saltimbanques	Les saltimbanques (1898)	NO MATCH
 imp-f-le-on-de-boxe	Leçon de boxe (1898)	NO MATCH
@@ -189,7 +227,6 @@ imp-s-103881	Mitsubachi Maaya no Bōken (1975)	NO MATCH
 imp-f-naked-gun-33-1-3-the-final-insult	Naked Gun 33 1/3: The Final Insult (1994)	NO MATCH
 imp-f-new-york-arriv-e-d-un-train-bathery-place	New York, arrivée d'un train à Bathery Place (1896)	NO MATCH
 imp-f-nice-panorama-sur-la-ligne-de-beaulieu-monaco-iii	Nice : panorama sur la ligne de Beaulieu à Monaco, III (1900)	NO MATCH
-imp-s-103885	Nu, pogodi! (1969)	→ I'll Get You! Holidays (2021–2024)	score 0.80 year?
 imp-f-n-gres-dansant-dans-la-rue	Nègres dansant dans la rue (1896)	NO MATCH
 imp-f-n-mes-sortie-de-l-glise	Nîmes, sortie de l'église (1896)	NO MATCH
 imp-s-224608	Olimpiada Bolka i Lolka (1983)	NO MATCH
@@ -199,151 +236,62 @@ imp-f-panorama-du-grand-canal-vu-d-un-bateau	Panorama du Grand Canal vu d'un bat
 imp-f-panorama-du-havre-pris-d-un-bateau	Panorama du havre (pris d'un bateau) (1896)	NO MATCH
 imp-f-panorama-pendant-l-ascension-de-la-tour-eiffel	Panorama pendant l'ascension de la Tour Eiffel (1898)	NO MATCH
 imp-f-panorama-pris-d-un-ballon-captif	Panorama pris d'un ballon captif (1899)	NO MATCH
-imp-f-partie-d-carte	Partie d'écarte (1896)	→ The Card Game (2023)	score 1.00 year?
 imp-f-partie-de-tric-trac	Partie de tric-trac (1895)	NO MATCH
 imp-f-passage-en-chaises-porteurs-au-col-des-nuages-annam	Passage en chaises à porteurs au col des Nuages (Annam) (1900)	NO MATCH
 imp-f-patineur-grotesque	Patineur grotesque (1896)	NO MATCH
-imp-f-photographe	Photographe (1895)	→ Photograph (2019)	score 1.00 year?
 imp-f-podstawy-bhp-w-kopalni-miedzi	Podstawy BHP w kopalni miedzi (1972)	NO MATCH
 imp-f-poranek-kojota	Poranek kojota (2001)	NO MATCH
 imp-f-premiers-pas-de-b-b	Premiers pas de bébé (1896)	NO MATCH
 imp-f-prestidigitateur	Prestidigitateur (1897)	NO MATCH
 imp-f-procession-du-tapis-sacr	Procession du tapis sacré (1897)	NO MATCH
 imp-f-promenade-des-congressistes-sur-le-bord-de-la-sa-ne	Promenade des congressistes sur le bord de la Saône (1895)	NO MATCH
-imp-f-p-che-aux-sardines	Pêche aux sardines (1896)	→ Sardine Fishing (1906)	score 1.00 year?
-imp-f-rambo-iii	Rambo III (1988)	NO MATCH
-imp-f-rambo-first-blood-part-ii	Rambo: First Blood Part II (1985)	NO MATCH
-imp-f-ransom	Ransom (1996)	NO MATCH
-imp-f-red-heat	Red Heat (1988)	NO MATCH
-imp-f-red-planet	Red Planet (2000)	NO MATCH
-imp-s-98032	Reksio (1967)	NO MATCH
-imp-f-repas-d-indiens	Repas d'indiens (1896)	NO MATCH
-imp-f-repas-de-b-b	Repas de bébé (1895)	NO MATCH
-imp-f-repas-des-chats	Repas des chats (1896)	NO MATCH
-imp-f-repas-en-famille	Repas en famille (1896)	NO MATCH
 imp-f-retour-d-une-promenade-en-mer	Retour d'une promenade en mer (1896)	NO MATCH
-imp-f-retour-du-cort-ge-apr-s-le-couronnement-le-roi	Retour du Cortège après le Couronnement: Le Roi (1903)	NO MATCH
-imp-f-return-of-t-r-h-the-prince-and-princess-of-wales	Return of T.R.H. the Prince and Princess of Wales (1906)	NO MATCH
-imp-f-rise-of-the-planet-of-the-apes	Rise of the Planet of the Apes (2011)	NO MATCH
-imp-f-robbery	Robbery (1897)	NO MATCH
-imp-f-robetta-and-doretto-no-1	Robetta and Doretto, No. 1 (1895)	NO MATCH
-imp-f-robin-hood	Robin Hood (1973)	NO MATCH
-imp-f-rocky	Rocky (1976)	NO MATCH
-imp-s-103911	Rodzina zastępcza (1999)	NO MATCH
-imp-f-rome-pont-ripetta	Rome, pont Ripetta (1896)	NO MATCH
-imp-f-romeo-must-die	Romeo Must Die (2000)	NO MATCH
-imp-f-rough-sea-at-dover	Rough Sea at Dover (1895)	NO MATCH
-imp-f-royal-carriage-arriving-at-st-paul-s	Royal Carriage Arriving at St Paul's (1897)	NO MATCH
-imp-f-royal-carriages-passing-westminster	Royal Carriages Passing Westminster (1897)	NO MATCH
-imp-f-royal-princes-in-st-paul-s-churchyard	Royal Princes in St. Paul's Churchyard (1897)	NO MATCH
-imp-f-royal-train	Royal Train (1896)	NO MATCH
-imp-f-rush-hour	Rush Hour (1998)	NO MATCH
-imp-f-rush-hour-2	Rush Hour 2 (2001)	NO MATCH
-imp-f-r-cr-ation-la-martini-re	Récréation à la Martinière (1895)	NO MATCH
-imp-f-s-w-a-t	S.W.A.T. (2003)	NO MATCH
-imp-f-salt	Salt (2010)	NO MATCH
-imp-f-sandow	Sandow (1894)	NO MATCH
 imp-f-sauts-au-cheval-en-longueur	Sauts au cheval en longueur (1897)	NO MATCH
 imp-f-sauts-p-rilleux-par-deux	Sauts périlleux par deux (1899)	NO MATCH
-imp-f-saving-private-ryan	Saving Private Ryan (1998)	NO MATCH
-imp-f-scaphandrier	Scaphandrier (1896)	NO MATCH
 imp-f-scene-from-the-coronation-of-the-czar-of-russia	Scene from the Coronation of the Czar of Russia (1896)	NO MATCH
-imp-f-scene-on-the-delaware-river	Scene on the Delaware River (1897)	NO MATCH
-imp-f-schaffouse-ch-tes-du-rhin-vues-de-loin	Schaffouse, Chûtes du Rhin vues de loin (1896)	NO MATCH
-imp-f-scieurs-de-bois	Scieurs de bois (1896)	NO MATCH
-imp-f-scooby-doo	Scooby-Doo (2002)	NO MATCH
+imp-f-scieurs-de-bois	Scieurs de bois (1896)	→ Woodcutters of the Deep South (1973)	score 0.80 year?
 imp-f-scooby-doo-and-mummy-too	Scooby-Doo And Mummy Too (1969)	NO MATCH
-imp-s-96167	Scooby-Doo, Where Are You! (1969)	NO MATCH
-imp-f-scrooge-or-marley-s-ghost	Scrooge; or Marley's Ghost (1901)	NO MATCH
-imp-f-sc-ne-de-laveuses	Scène de laveuses (1896)	NO MATCH
-imp-f-serpentine-dance-by-annabelle	Serpentine Dance by Annabelle (1896)	NO MATCH
-imp-f-showtime	Showtime (2002)	NO MATCH
-imp-f-shrek-2	Shrek 2 (2004)	NO MATCH
-imp-f-shrek-the-third	Shrek the Third (2007)	NO MATCH
-imp-f-silent	Silent (2014)	NO MATCH
-imp-f-sioux-ghost-dance	Sioux Ghost Dance (1894)	NO MATCH
-imp-f-sirdar-s-reception-at-guildhall	Sirdar's Reception at Guildhall (1898)	NO MATCH
-imp-s-90364	Smallville (2001)	NO MATCH
-imp-s-96165	Smurfs (1981)	NO MATCH
-imp-f-sortie-de-l-usine-cockeril-seraing	Sortie de l'usine Cockeril à Seraing (1899)	NO MATCH
-imp-f-sortie-de-l-glise-saint-jacques	Sortie de l'église Saint-Jacques (1899)	NO MATCH
-imp-f-sortie-de-la-briqueterie-meffre-et-bourgoin-hano	Sortie de la briqueterie Meffre et Bourgoin, à Hanoï (1902)	NO MATCH
 imp-f-sortie-de-la-grand-messe-de-l-glise-de-la-cath-drale	Sortie de la grand' messe de l'église de la cathédrale (1899)	NO MATCH
 imp-f-sortie-de-la-pompe	Sortie de la pompe (1896)	NO MATCH
-imp-f-sortie-de-la-quadrille-vue-de-face	Sortie de la Quadrille (Vue de face) (1899)	NO MATCH
-imp-f-sortie-de-la-quadrille-et-commencement-de-la-course-vue-de-t	Sortie de la Quadrille et commencement de la course (Vue de trios quarts) (1899)	NO MATCH
-imp-f-sousse-march-aux-charbons-avec-chameaux	Sousse: Marché aux charbons (avec chameaux) (1896)	NO MATCH
-imp-s-94331	South Park (1997)	NO MATCH
-imp-f-speed	Speed (1994)	NO MATCH
-imp-f-speed-2-cruise-control	Speed 2: Cruise Control (1997)	NO MATCH
-imp-s-121831	Spider-Man (1994)	NO MATCH
-imp-f-spider-man	Spider-Man (2002)	NO MATCH
-imp-f-spider-man-2	Spider-Man 2 (2004)	NO MATCH
 imp-f-spy-kids-3-d-game-over	Spy Kids 3-D: Game Over (2003)	NO MATCH
-imp-f-star-wars-episode-vii-the-force-awakens	Star Wars: Episode VII - The Force Awakens (2015)	NO MATCH
-imp-f-star-wars-the-rise-of-skywalker	Star Wars: The Rise of Skywalker (2019)	NO MATCH
-imp-f-step-up-2-the-streets	Step Up 2: The Streets (2008)	NO MATCH
-imp-f-stockholm-entr-e-de-l-exposition	Stockholm, entrée de l'exposition (1897)	NO MATCH
-imp-f-stop-or-my-mom-will-shoot	Stop! Or My Mom Will Shoot (1992)	NO MATCH
-imp-f-stuart-little	Stuart Little (1999)	NO MATCH
-imp-f-suicide-du-colonel-henry	Suicide du Colonel Henry (1899)	NO MATCH
-imp-f-surf-s-up	Surf's Up (2007)	NO MATCH
-imp-f-surrogates	Surrogates (2009)	NO MATCH
-imp-s-770786	Szymon Majewski Show (2005)	NO MATCH
-imp-s-304133	Sędzia Anna Maria Wesołowska (2006)	NO MATCH
-imp-s-233754	Tabaluga (1997)	NO MATCH
-imp-f-taken	Taken (2008)	NO MATCH
-imp-f-tango-cash	Tango & Cash (1989)	NO MATCH
-imp-s-119826	Tanoshii Moomin Ikka (1990)	NO MATCH
-imp-f-tarzan	Tarzan (1999)	NO MATCH
-imp-s-140372	Taz-Mania (1991)	NO MATCH
-imp-s-140339	Teenage Mutant Ninja Turtles (1987)	NO MATCH
-imp-s-161236	Teletubbies (1997)	NO MATCH
-imp-f-terminator-genisys	Terminator Genisys (2015)	NO MATCH
-imp-f-tetherball-or-do-do	Tetherball, or Do-Do (1898)	NO MATCH
-imp-f-the-motorist	The '?' Motorist (1906)	NO MATCH
-imp-f-the-6th-day	The 6th Day (2000)	NO MATCH
-imp-s-140452	The Addams Family (1992)	NO MATCH
-imp-f-the-arrest-of-a-bookmaker	The Arrest of a Bookmaker (1895)	NO MATCH
-imp-f-the-arrest-of-a-pickpocket	The Arrest of a Pickpocket (1895)	NO MATCH
-imp-f-the-aviator	The Aviator (2004)	NO MATCH
-imp-f-the-barbershop	The Barbershop (1894)	NO MATCH
-imp-s-96162	The Benny Hill Show (1969)	NO MATCH
-imp-f-the-big-swallow	The Big Swallow (1901)	NO MATCH
-imp-f-the-black-ghiandola	The Black Ghiandola (2017)	NO MATCH
-imp-s-176358	The Blue Planet (2001)	NO MATCH
-imp-f-the-blues-brothers	The Blues Brothers (1980)	NO MATCH
-imp-f-the-book-of-eli	The Book of Eli (2010)	NO MATCH
-imp-f-the-boxing-cats-prof-welton-s	The Boxing Cats (Prof. Welton's) (1894)	NO MATCH
-imp-s-143644	The Bugs Bunny and Tweety Show (1986)	NO MATCH
-imp-s-117463	The Bugs Bunny Show (1960)	NO MATCH
-imp-s-247313	The Bugs n' Daffy Show (1996)	NO MATCH
-imp-f-the-burning-stable	The Burning Stable (1896)	NO MATCH
+imp-f-the-big-swallow	The Big Swallow (1901)	→ The Big Swallow 2010 (2010)	score 0.80 year?
 imp-f-the-cheese-mites	The Cheese Mites (1903)	NO MATCH
-imp-f-the-chronicles-of-riddick	The Chronicles of Riddick (2004)	NO MATCH
-imp-f-34007	The Core (2003)	NO MATCH
 imp-f-the-countryman-and-the-cinematograph	The Countryman and the Cinematograph (1901)	NO MATCH
-imp-s-94381	The Cramp Twins (2001)	NO MATCH
-imp-f-the-curse-of-bridge-hollow	The Curse of Bridge Hollow (2022)	NO MATCH
-imp-f-the-day-after-tomorrow	The Day After Tomorrow (2004)	NO MATCH
-imp-f-the-delhi-durbar	The Delhi Durbar (1903)	NO MATCH
-imp-f-the-deonzo-brothers	The Deonzo Brothers (1901)	NO MATCH
 imp-f-the-derby	The Derby (1900)	NO MATCH
-imp-f-the-derby-1896	The Derby (1896)	NO MATCH
-imp-f-the-derby-1896-2	The Derby (1896)	NO MATCH
-imp-f-the-derby-1895	The Derby 1895 (1895)	NO MATCH
 imp-s-442479	The Donald Duck Show (1983)	NO MATCH
-imp-f-the-execution-of-mary-stuart	The Execution of Mary Stuart (1895)	NO MATCH
-imp-f-the-extraordinary-waiter	The Extraordinary Waiter (1902)	NO MATCH
-imp-s-170289	The Fairly OddParents (2001)	NO MATCH
-imp-f-the-fan	The Fan (1996)	NO MATCH
-imp-f-the-firm	The Firm (1993)	NO MATCH
-imp-s-96157	The Flintstones (1960)	NO MATCH
-imp-f-the-flintstones	The Flintstones (1994)	NO MATCH
-imp-s-655968	The Following (2013)	NO MATCH
-imp-f-the-fugitive	The Fugitive (1993)	NO MATCH
 imp-f-the-gay-brothers	The Gay Brothers (1895)	NO MATCH
-imp-f-the-general-s-daughter	The General's Daughter (1999)	NO MATCH
 imp-s-96092	The Gummi Bears (1985)	NO MATCH
-imp-f-the-haunted-curiosity-shop	The Haunted Curiosity Shop (1901)	NO MATCH
-imp-f-the-hornbacker-murphy-fight	The Hornbacker-Murphy Fight (1894)	NO MATCH
+imp-f-the-lion-king-ii-simba-s-pride	The Lion King II: Simba's Pride (1998)	NO MATCH
+imp-f-the-pickaninnies	The Pickaninnies (1894)	→ The Pickaninnies and the Watermelon (1912)	score 0.80 year?
+imp-s-194738	The Scooby-Doo/Dynomutt Hour (1976)	NO MATCH
+imp-f-tigres	Tigres (1896)	NO MATCH
+imp-s-96097	Timon and Pumbaa (1995)	→ Timon and Pumbaa at the Movies (2019–)	score 0.80 year?
+imp-s-117482	Tom and Jerry (1940)	NO MATCH
+imp-f-transport-d-une-tourelle-par-un-attelage-de-60-chevaux	Transport d'une tourelle par un attelage de 60 chevaux (1897)	NO MATCH
+imp-f-un-homme-de-t-tes	Un homme de têtes (1898)	NO MATCH
+imp-f-une-noce-indig-ne	Une Noce indigène (1903)	NO MATCH
+imp-f-une-nuit-terrible	Une Nuit terrible (1896)	→ A Terrible Night (1913)	score 1.00 year?
+imp-f-une-partie-des-cartes	Une partie des cartes (1896)	NO MATCH
+imp-f-venise-panorama-de-la-place-saint-marc-pris-d-un-bateau	Venise, panorama de la place Saint-Marc pris d'un bateau (1897)	NO MATCH
+imp-f-venise-tramway-sur-le-grand-canal	Venise, tramway sur le Grand Canal (1896)	NO MATCH
+imp-f-vu-g-n-rale-de-l-exposition-prise-du-trocad-ro	Vu générale de l'Exposition prise du Trocadéro (1900)	NO MATCH
+imp-f-vue-prise-d-une-plate-forme-mobile-i	Vue prise d'une plate-forme mobile, I (1900)	NO MATCH
+imp-f-w-pustyni-i-w-puszczy	W pustyni i w puszczy (2001)	NO MATCH
+imp-s-208863	W11 - wydział śledczy (2004)	NO MATCH
+imp-f-washington-d-fil-de-la-garde-nationale-du-district-colombia	Washington, défilé de la garde nationale du district Colombia (1896)	NO MATCH
+imp-s-631836	Wojciech Cejrowski. Boso (2011)	NO MATCH
+imp-s-367031	Włatcy móch (2006)	→ Wlatcy móch (2006–)	score 0.33
+imp-f-yat-goh-hiu-yan	Yat Goh Hiu Yan (1997)	NO MATCH
+imp-f-criture-l-envers	Écriture à l'envers (1896)	→ Writing Backwards (2008)	score 1.00 year?
+wl-f-34355	3-4 x jūgatsu (1990)	NO MATCH
+wl-f-644476	5 Broken Cameras (2011)	NO MATCH
+wl-s-511352	A-i-ri-seu (2009)	NO MATCH
+wl-f-582678	A-jeo-ssi (2010)	NO MATCH
+wl-f-385134	A-joo Teuk-byeol-han Son-nim (2006)	NO MATCH
+wl-s-565378	Adventure Time with Finn and Jake (2010)	NO MATCH
+wl-f-3744	Akwarium (1996)	→ Aquarium (2005)	score 1.00 year?
+wl-f-335383	Babodeuli haengjin (1975)	NO MATCH
+wl-f-779249	Bam-eui hae-byeon-e-so hon-ja (2017)	NO MATCH
+wl-f-9641	Beetle Juice (1988)	NO MATCH
+wl-s-875837	Behawiorysta (2022)	NO MATCH
+wl-f-99522	Bei qing cheng shi (1989)	→ Bei Qing Cheng Shi (2003)	score 1.00 year?
