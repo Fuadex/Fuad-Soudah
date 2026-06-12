@@ -91,7 +91,7 @@ def omdb_get(url):
         if e.code == 401:
             raise QuotaExhausted()
         return None
-    except (URLError, json.JSONDecodeError):
+    except (URLError, TimeoutError, json.JSONDecodeError):
         return None
 
 
