@@ -1,19 +1,15 @@
-wl-f-184426	Sami maneti (1976)	NO MATCH
-wl-f-119750	Sat Pralat (2004)	NO MATCH
-wl-f-179070	Senya Ichiya Monogatari (1969)	→ A Thousand and One Nights (1945)	score 1.00 year?
-wl-f-706740	Seoul-yeok (2016)	NO MATCH
-wl-f-486673	Serras da desordem (2006)	NO MATCH
-wl-f-802660	Seu-wing-ki-jeu (2017)	NO MATCH
-wl-f-262390	Sha po lang (2005)	NO MATCH
-wl-s-750300	Si-geu-neol (2015)	NO MATCH
-wl-f-114662	Signum Laudis (1980)	→ The Medal (2019)	score 1.00 year?
-wl-f-10041252	Sirocco et le royaume des courants d'air (2023)	NO MATCH
-wl-f-255230	Subarnarekha (1965)	→ The Golden Thread (2022)	score 1.00 year?
-wl-f-109360	Tae-geug-ki Hwi-nal-ri-myeo (2004)	NO MATCH
-wl-f-157216	Taebek sanmaek (1994)	→ Taebek sanmaek (1975)	score 1.00 year?
-wl-f-767386	Taek-si un-jeon-sa (2017)	NO MATCH
-wl-f-112984	Tenebre (1982)	→ Tenebre (1934)	score 1.00 year?
-wl-s-129542	Tenkū no Escaflowne (1996)	NO MATCH
-wl-f-184427	Termometri (1976)	→ Galileo's Thermometer (2018)	score 0.80 year?
-wl-f-228061	The Aim (2004)	NO MATCH
-wl-s-849793	The Continental: From the World of John Wick (2023)	NO MATCH
+wl-f-466475	The Taking of Pelham 1 2 3 (2009)	NO MATCH
+wl-f-34982	To ja zabiłem (1974)	→ I Killed My Mother (2009)	score 0.80 year?
+wl-f-99668	Topâzu (1992)	NO MATCH
+wl-f-11797	Tous les matins du monde (1991)	NO MATCH
+wl-f-120591	Un Poeta nel Cinema: Andreij Tarkovskij (1984)	NO MATCH
+wl-s-627987	Usagi Drop (2011)	NO MATCH
+wl-f-203194	Utomlyonnye solntsem 2: Predstoyanie (2010)	NO MATCH
+wl-f-109452	Withnail & I (1987)	→ Withnail & I: Handmade Films & I (2006)	score 0.80 year?
+wl-f-119391	Wszystko może się przytrafić (1995)	→ Anything Can Happen (1952)	score 1.00 year?
+wl-f-196720	Zendegi va digar hich (1991)	→ Life and Nothing More (2017)	score 1.00 year?
+wl-f-12014	Zmory (1978)	→ Nightmares (1983)	score 1.00 year?
+wl-f-38727	Zmruż oczy (2003)	NO MATCH
+wl-f-123507	À nos amours (1983)	→ À nos amours au grand jour (2023)	score 0.80 year?
+wl-f-99671	Ōritsu Uchūgu: Honneamise no Tsubasa (1987)	NO MATCH
+wl-f-32453	Żółty szalik (2000)	→ The Girl in the Yellow Scarf Documentary (2023)	score 0.80 year?
