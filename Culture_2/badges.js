@@ -361,6 +361,7 @@ window.CULTURE_BADGES = {
  ],
  "imp-g-611366": [
   "atmosphere",
+  "devastating",
   "score",
   "worldbuilding"
  ],
