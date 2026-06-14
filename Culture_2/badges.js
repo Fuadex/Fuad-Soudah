@@ -360,6 +360,8 @@ window.CULTURE_BADGES = {
   "mindbending"
  ],
  "imp-g-611366": [
+  "atmosphere",
+  "score",
   "worldbuilding"
  ],
  "imp-s-10034646": [
