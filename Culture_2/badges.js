@@ -359,6 +359,9 @@ window.CULTURE_BADGES = {
  "imp-g-611176": [
   "mindbending"
  ],
+ "imp-g-611366": [
+  "worldbuilding"
+ ],
  "imp-s-10034646": [
   "funny",
   "visuals"
