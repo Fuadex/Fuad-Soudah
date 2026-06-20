@@ -296,8 +296,7 @@ window.CULTURE_BADGES = {
   "satire"
  ],
  "imp-f-happy-feet": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "imp-f-heavy-metal": [
   "intense",
@@ -366,8 +365,7 @@ window.CULTURE_BADGES = {
   "worldbuilding"
  ],
  "imp-s-10034646": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "imp-s-10038044": [
   "visuals"
@@ -378,8 +376,7 @@ window.CULTURE_BADGES = {
   "visuals"
  ],
  "imp-s-10049575": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "imp-s-324560": [
   "horrifying"
@@ -402,15 +399,13 @@ window.CULTURE_BADGES = {
   "visuals"
  ],
  "imp-s-662876": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "imp-s-680486": [
   "intense"
  ],
  "imp-s-747022": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "imp-s-767241": [
   "absurdist"
@@ -421,12 +416,10 @@ window.CULTURE_BADGES = {
   "visuals"
  ],
  "imp-s-843529": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "imp-s-871671": [
-  "funny",
-  "visuals"
+  "funny"
  ],
  "in-the-fall": [
   "devastating"
@@ -650,7 +643,6 @@ window.CULTURE_BADGES = {
  ],
  "steins-gate": [
   "devastating",
-  "visuals",
   "worldbuilding"
  ],
  "subnautica": [
