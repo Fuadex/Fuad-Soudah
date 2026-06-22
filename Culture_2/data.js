@@ -213,6 +213,8 @@ const ITEMS = [
   { id: 'konosuba',           title: 'KonoSuba: Legend of Crimson', year: 2019, medium: 'Feature Animation', favorite: true, region: 'jp', rating: '9', link: 'https://www.filmweb.pl/film/Kono+Subarashii+Sekai+ni+Shukufuku+o+Kurenai+Densetsu-2019-831928', poster: POSTER('konosuba.jpg'), director: 'Takaomi Kanasaki', studio: 'J.C.Staff', fwAvg: 7.6, runtime: 90, watchedDate: '2022-01-04', highlights: ['funny'], enTitle: 'KONOSUBA – God\'s blessing on this wonderful world! Legend of Crimson' },
   { id: 'tekkonkinkreet',     title: 'Tekkonkinkreet',           year: 2006, medium: 'Feature Animation', favorite: true, region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Tekkonkinkreet-2006-350090', poster: POSTER('tekkon.jpg'), director: 'Michael Arias', studio: 'Studio 4°C', fwAvg: 7.9, runtime: 103 , watchedDate: '2023-01-30', highlights: ['visuals', 'impact'] },
   { id: 'colorful',           title: 'Colorful',                 year: 2010, medium: 'Feature Animation', favorite: true, region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Colorful-2010-563824', poster: POSTER('colorful.jpg'), director: 'Eiichi Obara', studio: 'Sunrise', fwAvg: 7.3, runtime: 127, highlights: ['devastating'] },
+  { id: 'decorado',           title: 'Decorado',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Alberto Vázquez', highlights: ['mindbending', 'intense', 'bittersweet'] },
+  { id: 'lucy-lost',          title: 'Lucy Lost',                year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '7' },
 
   // ─────────── BOOKS ───────────
   { id: 'limes-inferior',     title: 'Limes Inferior',           year: 1982, medium: 'Books',  favorite: true, region: 'pl', link: 'https://www.goodreads.com/book/show/2108205.Limes_inferior', poster: POSTER('Limesinferior.jpg'), length: 1, director: 'Janusz Zajdel', pages: 213, highlights: ['ahead', 'gem', 'writing'] },
@@ -243,7 +245,6 @@ const ITEMS = [
   { id: 'tori-no-uta',     title: 'Tori no Uta',             year: 2007, medium: 'Shorts', favorite: true, region: 'jp', rating: '8', runtime: 35 , director: 'Yoshitaka Amano', watchedDate: '2021-03-16', fwAvg: 7.4, link: 'https://www.filmweb.pl/film/Tori+no+Uta-2007-393374', enTitle: 'Bird Song' },
   { id: 'hinterland',      title: 'Hinterland',              year: 2010, medium: 'Shorts', favorite: true, rating: '8' , director: 'Linda McCarthy', region: 'uk', watchedDate: '2021-04-04', fwAvg: 6.1, link: 'https://www.filmweb.pl/film/Hinterland-2010-646080'},
   { id: 'solo-na-ugorze',  title: 'Solo na ugorze',          year: 1981, medium: 'Shorts', favorite: true, region: 'pl', rating: '8' , director: 'Jerzy Kalina', watchedDate: '2020-10-15', fwAvg: 5.7, link: 'https://www.filmweb.pl/film/Solo+na+ugorze-1981-117029', enTitle: 'Alone in a Fallow Field' },
-  { id: 'decorado',        title: 'Decorado',                year: 2016, medium: 'Shorts', favorite: true, region: 'eu', rating: '8' , director: 'Alberto Vázquez', runtime: 11, highlights: ['mindbending', 'intense', 'bittersweet'] },
 ];
 
 // Default ordering: featured first, then by medium grouping, then by year desc.
