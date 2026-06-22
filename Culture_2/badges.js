@@ -410,11 +410,6 @@ window.CULTURE_BADGES = {
  "imp-s-767241": [
   "absurdist"
  ],
- "imp-s-829257": [
-  "funny",
-  "intense",
-  "visuals"
- ],
  "imp-s-843529": [
   "funny"
  ],
