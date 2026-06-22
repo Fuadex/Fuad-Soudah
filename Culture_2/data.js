@@ -243,6 +243,7 @@ const ITEMS = [
   { id: 'tori-no-uta',     title: 'Tori no Uta',             year: 2007, medium: 'Shorts', favorite: true, region: 'jp', rating: '8', runtime: 35 , director: 'Yoshitaka Amano', watchedDate: '2021-03-16', fwAvg: 7.4, link: 'https://www.filmweb.pl/film/Tori+no+Uta-2007-393374', enTitle: 'Bird Song' },
   { id: 'hinterland',      title: 'Hinterland',              year: 2010, medium: 'Shorts', favorite: true, rating: '8' , director: 'Linda McCarthy', region: 'uk', watchedDate: '2021-04-04', fwAvg: 6.1, link: 'https://www.filmweb.pl/film/Hinterland-2010-646080'},
   { id: 'solo-na-ugorze',  title: 'Solo na ugorze',          year: 1981, medium: 'Shorts', favorite: true, region: 'pl', rating: '8' , director: 'Jerzy Kalina', watchedDate: '2020-10-15', fwAvg: 5.7, link: 'https://www.filmweb.pl/film/Solo+na+ugorze-1981-117029', enTitle: 'Alone in a Fallow Field' },
+  { id: 'decorado',        title: 'Decorado',                year: 2016, medium: 'Shorts', favorite: true, region: 'eu', rating: '8' , director: 'Alberto Vázquez', runtime: 11, highlights: ['mindbending', 'intense', 'bittersweet'] },
 ];
 
 // Default ordering: featured first, then by medium grouping, then by year desc.
