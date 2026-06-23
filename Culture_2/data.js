@@ -214,7 +214,7 @@ const ITEMS = [
   { id: 'tekkonkinkreet',     title: 'Tekkonkinkreet',           year: 2006, medium: 'Feature Animation', favorite: true, region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Tekkonkinkreet-2006-350090', poster: POSTER('tekkon.jpg'), director: 'Michael Arias', studio: 'Studio 4°C', fwAvg: 7.9, runtime: 103 , watchedDate: '2023-01-30', highlights: ['visuals', 'impact'] },
   { id: 'colorful',           title: 'Colorful',                 year: 2010, medium: 'Feature Animation', favorite: true, region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Colorful-2010-563824', poster: POSTER('colorful.jpg'), director: 'Eiichi Obara', studio: 'Sunrise', fwAvg: 7.3, runtime: 127, highlights: ['devastating'] },
   { id: 'decorado',           title: 'Decorado',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Alberto Vázquez', highlights: ['mindbending', 'singular', 'intense', 'bittersweet'] },
-  { id: 'lucy-lost',          title: 'Lucy Lost',                year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '7' },
+  { id: 'lucy-lost',          title: 'Lucy Lost',                year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '7', director: 'Olivier Clert' },
   { id: 'in-waves',           title: 'In Waves',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Phuong Mai Nguyen', runtime: 90, highlights: ['bittersweet', 'style', 'visuals'] },
 
   // ─────────── BOOKS ───────────
