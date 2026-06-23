@@ -215,6 +215,7 @@ const ITEMS = [
   { id: 'colorful',           title: 'Colorful',                 year: 2010, medium: 'Feature Animation', favorite: true, region: 'jp', rating: '8', link: 'https://www.filmweb.pl/film/Colorful-2010-563824', poster: POSTER('colorful.jpg'), director: 'Eiichi Obara', studio: 'Sunrise', fwAvg: 7.3, runtime: 127, highlights: ['devastating'] },
   { id: 'decorado',           title: 'Decorado',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Alberto Vázquez', highlights: ['mindbending', 'singular', 'intense', 'bittersweet'] },
   { id: 'lucy-lost',          title: 'Lucy Lost',                year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '7' },
+  { id: 'in-waves',           title: 'In Waves',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', highlights: ['bittersweet', 'style', 'visuals'] },
 
   // ─────────── BOOKS ───────────
   { id: 'limes-inferior',     title: 'Limes Inferior',           year: 1982, medium: 'Books',  favorite: true, region: 'pl', link: 'https://www.goodreads.com/book/show/2108205.Limes_inferior', poster: POSTER('Limesinferior.jpg'), length: 1, director: 'Janusz Zajdel', pages: 213, highlights: ['ahead', 'gem', 'writing'] },
