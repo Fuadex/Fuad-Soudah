@@ -216,6 +216,9 @@ const ITEMS = [
   { id: 'decorado',           title: 'Decorado',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Alberto Vázquez', highlights: ['mindbending', 'singular', 'intense', 'bittersweet'] },
   { id: 'lucy-lost',          title: 'Lucy Lost',                year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '7', director: 'Olivier Clert' },
   { id: 'in-waves',           title: 'In Waves',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Phuong Mai Nguyen', runtime: 90, highlights: ['bittersweet', 'style', 'visuals'] },
+  { id: 'nobody-2026',        title: 'Nobody',                   year: 2026, medium: 'Feature Animation', region: 'other', rating: '6', director: 'Shui Yu', runtime: 118 },
+  { id: 'edge-of-time',       title: 'Edge of Time',             year: 2025, medium: 'Feature Animation', region: 'other', rating: '6', director: 'Various', runtime: 97, note: 'Anthology — a great last segment, but overall it felt very dated.' },
+  { id: 'spacetime-chronicles', title: 'Spacetime Chronicles',   year: 2025, medium: 'Feature Animation', region: 'it', director: 'N/A', runtime: 70, note: 'Saw it, but slept through most of it.' },
 
   // ─────────── BOOKS ───────────
   { id: 'limes-inferior',     title: 'Limes Inferior',           year: 1982, medium: 'Books',  favorite: true, region: 'pl', link: 'https://www.goodreads.com/book/show/2108205.Limes_inferior', poster: POSTER('Limesinferior.jpg'), length: 1, director: 'Janusz Zajdel', pages: 213, highlights: ['ahead', 'gem', 'writing'] },
