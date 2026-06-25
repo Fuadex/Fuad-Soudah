@@ -220,6 +220,7 @@ const ITEMS = [
   { id: 'edge-of-time',       title: 'Edge of Time',             year: 2025, medium: 'Feature Animation', region: 'other', rating: '6', director: 'Various', runtime: 97, note: 'Anthology — a great last segment, but overall it felt very dated.' },
   { id: 'spacetime-chronicles', title: 'Spacetime Chronicles',   year: 2025, medium: 'Feature Animation', region: 'it', director: 'N/A', runtime: 70, note: 'Saw it, but slept through most of it.' },
   { id: 'iron-boy',           title: 'Iron Boy',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '9', director: 'Louis Clichy', runtime: 90, highlights: ['visuals', 'writing'] },
+  { id: 'we-are-aliens',      title: 'We Are Aliens',            year: 2026, medium: 'Feature Animation', region: 'jp', rating: '4', director: 'Kadowaki' },
 
   // ─────────── BOOKS ───────────
   { id: 'limes-inferior',     title: 'Limes Inferior',           year: 1982, medium: 'Books',  favorite: true, region: 'pl', link: 'https://www.goodreads.com/book/show/2108205.Limes_inferior', poster: POSTER('Limesinferior.jpg'), length: 1, director: 'Janusz Zajdel', pages: 213, highlights: ['ahead', 'gem', 'writing'] },
