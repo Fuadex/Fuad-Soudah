@@ -1241,6 +1241,8 @@ window.CULTURE_WISHLIST = [
 {"id": "wl-g-688044", "title": "Gone Home", "year": 2013, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Gone+Home-2013-688044", "fwAvg": 6.4, "voteCount": 1173, "polishTitle": "Gone Home" },
 {"id": "wl-g-711070", "title": "No Man's Sky", "year": 2016, "medium": "Games", "link": "https://www.filmweb.pl/videogame/No+Man%27s+Sky-2016-711070", "fwAvg": 6.1, "voteCount": 1336, "polishTitle": "No Man's Sky" },
 {"id": "wl-g-784009", "title": "Disco Elysium", "year": 2019, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Disco+Elysium-2019-784009", "fwAvg": 9.0, "voteCount": 3275, "highlights": ["writing", "singular"], "polishTitle": "Disco Elysium" },
+{"id": "wl-g-obra-dinn", "title": "Return of the Obra Dinn", "year": 2018, "medium": "Games", "highlights": ["cognitive"], "director": "Lucas Pope" },
+{"id": "wl-g-beginners-guide", "title": "The Beginner's Guide", "year": 2015, "medium": "Games", "highlights": ["cognitive"], "director": "Davey Wreden" },
 {"id": "wl-g-811012", "title": "GRIS", "year": 2018, "medium": "Games", "link": "https://www.filmweb.pl/videogame/GRIS-2018-811012", "fwAvg": 7.8, "voteCount": 919, "polishTitle": "GRIS", "enTitle": "Gris" },
 {"id": "wl-g-791436", "title": "Dead Cells", "year": 2018, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Dead+Cells-2018-791436", "fwAvg": 7.9, "voteCount": 813, "polishTitle": "Dead Cells" },
 {"id": "wl-g-863114", "title": "Maquette", "year": 2021, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Maquette-2021-863114", "fwAvg": 5.8, "voteCount": 65, "polishTitle": "Maquette" },
