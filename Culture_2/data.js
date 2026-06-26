@@ -216,8 +216,8 @@ const ITEMS = [
   { id: 'decorado',           title: 'Decorado',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Alberto Vázquez', highlights: ['mindbending', 'cognitive', 'singular', 'intense', 'bittersweet'] },
   { id: 'lucy-lost',          title: 'Lucy Lost',                year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '7', director: 'Olivier Clert' },
   { id: 'in-waves',           title: 'In Waves',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '8', director: 'Phuong Mai Nguyen', runtime: 90, highlights: ['bittersweet', 'style', 'visuals'] },
-  { id: 'nobody-2026',        title: 'Nobody',                   year: 2026, medium: 'Feature Animation', region: 'other', rating: '6', director: 'Shui Yu', runtime: 118 },
-  { id: 'edge-of-time',       title: 'Edge of Time',             year: 2025, medium: 'Feature Animation', region: 'other', rating: '6', director: 'Various', runtime: 97, note: 'Anthology — a great last segment, but overall it felt very dated.' },
+  { id: 'nobody-2026',        title: 'Nobody',                   year: 2026, medium: 'Feature Animation', region: 'cn', rating: '6', director: 'Shui Yu', runtime: 118 },
+  { id: 'edge-of-time',       title: 'Edge of Time',             year: 2025, medium: 'Feature Animation', region: 'cn', rating: '6', director: 'Various', runtime: 97, note: 'Anthology — a great last segment, but overall it felt very dated.' },
   { id: 'spacetime-chronicles', title: 'Spacetime Chronicles',   year: 2025, medium: 'Feature Animation', region: 'it', director: 'N/A', runtime: 70, note: 'Saw it, but slept through most of it.' },
   { id: 'iron-boy',           title: 'Iron Boy',                 year: 2026, medium: 'Feature Animation', favorite: true, region: 'eu', rating: '9', director: 'Louis Clichy', runtime: 90, highlights: ['visuals', 'writing'] },
   { id: 'we-are-aliens',      title: 'We Are Aliens',            year: 2026, medium: 'Feature Animation', region: 'jp', rating: '4', director: 'Kadowaki' },
@@ -336,6 +336,7 @@ const REGION_COLORS = {
   ee:    '#2a4a6a',  // Estonian — deep blue
   uy:    '#5a82a8',  // Uruguayan — steel sky blue
   aq:    '#5a7a8a',  // Antarctica — icy slate (catch-all for unknown origin)
+  ge:    '#6a3a52',  // Georgian — deep wine (qvevri red)
 };
 
 const DECADE_COLORS = {

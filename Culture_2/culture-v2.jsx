@@ -120,7 +120,7 @@ const REGION_NAMES = {
   gr:'Greece', br:'Brazil',
   hk:'Hong Kong', cn:'China', mx:'Mexico',
   tw:'Taiwan', ar:'Argentina', in:'India', lb:'Lebanon', eg:'Egypt', is:'Iceland', th:'Thailand', nz:'New Zealand',
-  sg:'Singapore', ee:'Estonia', uy:'Uruguay', aq:'Antarctica',
+  sg:'Singapore', ee:'Estonia', uy:'Uruguay', aq:'Antarctica', ge:'Georgia',
 };
 function regionName(code) { return REGION_NAMES[code] || null; }
 
