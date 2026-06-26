@@ -1271,6 +1271,7 @@ window.CULTURE_WISHLIST = [
 {"id": "wl-f-machinist", "title": "The Machinist", "year": 2004, "medium": "Movies", "region": "eu", "highlights": ["cognitive"], "director": "Brad Anderson"},
 {"id": "wl-b-the-magus", "title": "The Magus", "year": 1965, "medium": "Books", "region": "uk", "highlights": ["cognitive"], "director": "John Fowles"},
 {"id": "wl-b-house-of-leaves", "title": "House of Leaves", "year": 2000, "medium": "Books", "region": "us", "highlights": ["cognitive"], "director": "Mark Z. Danielewski"},
+{"id": "wl-f-li-le", "title": "Li.le", "year": 2017, "medium": "Shorts", "region": "other", "director": "Natia Nikolashvili"},
 {"id": "wl-g-856778", "title": "Shadow Warrior 3", "year": 2022, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Shadow+Warrior+3-2022-856778", "fwAvg": 6.3, "voteCount": 260, "polishTitle": "Shadow Warrior 3" },
 {"id": "wl-g-784402", "title": "Hollow Knight", "year": 2017, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Hollow+Knight-2017-784402", "fwAvg": 8.7, "voteCount": 1901, "highlights": ["atmosphere", "visuals"], "polishTitle": "Hollow Knight" },
 {"id": "wl-g-822031", "title": "Florence", "year": 2018, "medium": "Games", "link": "https://www.filmweb.pl/videogame/Florence-2018-822031", "fwAvg": 6.9, "voteCount": 215, "polishTitle": "Florence" },
