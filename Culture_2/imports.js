@@ -3068,4 +3068,5 @@ window.CULTURE_IMPORTS = [
   { id: 'dollys-house',       title: "Welcome to Dolly's House", year: 2026, medium: 'Feature Animation', region: 'tw', rating: '3', director: 'Tree Muta, Rady Fu', runtime: 85, watchedDate: '2026-06-27' },
   { id: 'peleliu',            title: 'Peleliu: Guernica of Paradise', year: 2025, medium: 'Feature Animation', favorite: false, region: 'jp', rating: '7', director: 'Goro Kuji', watchedDate: '2026-06-27' },
   { id: 'tangles',            title: 'Tangles', year: 2026, medium: 'Feature Animation', favorite: false, region: 'ca', rating: '8', director: 'Leah Nelson', watchedDate: '2026-06-27' },
+  { id: 'ribbon-hero',        title: 'Ribbon Hero', year: 2010, medium: 'Games', favorite: false, region: 'us', rating: '5', studio: 'Microsoft Office Labs' },
 ];
