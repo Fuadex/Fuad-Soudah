@@ -1021,6 +1021,9 @@ function enrichExtras(item) {
   if (noteEn) out.noteEn = noteEn;
   if (tmdb && !out.summary) out.summary = tmdb;
   if (addBadges) out.highlights = [...new Set([...(out.highlights || []), ...addBadges])];
+  // No hand-picked poster and cast_data had no TMDB art? Use OMDb's poster (already
+  // downloaded) so the cover/Reader shows real art instead of the glyph fallback.
+  if (!out.poster && !out.tmdbPoster && omdb && omdb.Poster && omdb.Poster !== 'N/A') out.tmdbPoster = omdb.Poster;
   return out;
 }
 
