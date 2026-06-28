@@ -3070,4 +3070,5 @@ window.CULTURE_IMPORTS = [
   { id: 'tangles',            title: 'Tangles', year: 2026, medium: 'Feature Animation', favorite: false, region: 'ca', rating: '8', director: 'Leah Nelson', watchedDate: '2026-06-27' },
   { id: 'ribbon-hero',        title: 'The Ribbon Hero', year: 2026, medium: 'Feature Animation', favorite: false, region: 'jp', rating: '5', director: 'Yuuki Igarashi', studio: 'Outline', watchedDate: '2026-06-27' },
   { id: 'arco',               title: 'Arco', year: 2025, medium: 'Feature Animation', favorite: false, region: 'eu', rating: '6', director: 'Ugo Bienvenu', watchedDate: '2026-06-27' },
+  { id: 'camphor-tree',       title: 'The Keeper of the Camphor Tree', year: 2026, medium: 'Feature Animation', favorite: false, region: 'jp', rating: '6', director: 'Tomohiko Ito', studio: 'A-1 Pictures', watchedDate: '2026-06-27' },
 ];
