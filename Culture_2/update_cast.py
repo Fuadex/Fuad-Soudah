@@ -45,6 +45,7 @@ MISSES_FILE     = os.path.join(SCRIPT_DIR, 'cast_misses.txt')
 DRY_RUN   = '--dry-run' in sys.argv
 FORCE     = '--force' in sys.argv
 ONLY_TYPE = next((a.split('=', 1)[1] for a in sys.argv if a.startswith('--type=')), None)
+ONLY_IDS  = next((set(a.split('=', 1)[1].split(',')) for a in sys.argv if a.startswith('--ids=')), None)
 CAST_SIZE = 22  # actors per title
 
 # Manual TMDB ID overrides: { "normalized title|year": tmdb_id }
@@ -354,6 +355,8 @@ def main():
         print(f'=== {label} ===')
         for item_id, title, year, author, medium, is_json in parse_entries(path):
             if not medium:
+                continue
+            if ONLY_IDS and item_id not in ONLY_IDS:
                 continue
 
             # Type filter
