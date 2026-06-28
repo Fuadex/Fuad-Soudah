@@ -850,6 +850,9 @@ body { margin: 0; font-family: var(--sans); -webkit-font-smoothing: antialiased;
 /* Click-to-translate (PL↔EN) with a matrix-style vertical letter cascade */
 .reader-quote.translatable { cursor: pointer; position: relative; transition: border-color .3s; }
 .reader-quote.translatable:hover { border-left-color: var(--paper-ink); }
+/* Word box: keeps each word intact (no mid-word break) during the cascade so
+   wrapping matches the final plain text — otherwise the block reflows + cramps. */
+.reader-quote .qcw { display: inline-block; white-space: nowrap; }
 .reader-quote .qc {
   display: inline-block; white-space: pre;
   animation: matrixRoll .6s cubic-bezier(.16,.8,.3,1) backwards;

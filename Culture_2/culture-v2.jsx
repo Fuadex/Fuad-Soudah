@@ -1707,10 +1707,14 @@ function ReaderQuote({ item }) {
       title={en ? (showEn ? 'Click for the original' : 'Click to translate') : undefined}>
       <span className="quote-text" key={showEn ? 'en' : 'pl'}>
         {busy
-          ? text.split('').map((ch, i) => (
-              <span className="qc" key={i} style={{ animationDelay: `${(Math.random() * 0.55).toFixed(3)}s`, animationDuration: `${(0.45 + Math.random() * 0.5).toFixed(3)}s` }}>
-                {ch === ' ' ? ' ' : ch}
-              </span>))
+          ? text.split(/(\s+)/).map((seg, si) => (
+              /^\s+$/.test(seg)
+                ? seg   /* whitespace as plain text -> same wrap points + spacing as the final text */
+                : <span className="qcw" key={si}>
+                    {seg.split('').map((ch, i) => (
+                      <span className="qc" key={i} style={{ animationDelay: `${(Math.random() * 0.55).toFixed(3)}s`, animationDuration: `${(0.45 + Math.random() * 0.5).toFixed(3)}s` }}>{ch}</span>
+                    ))}
+                  </span>))
           : text}
       </span>
       {en && <span className="quote-flip" aria-hidden="true">{showEn ? 'EN' : 'PL'} ⇄</span>}
