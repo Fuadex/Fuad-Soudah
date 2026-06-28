@@ -1010,8 +1010,7 @@ function enrichExtras(item) {
   const noteEn = (window.CULTURE_NOTES_EN || {})[item.id];   // interpretive EN redraft
   const tmdb = (window.CULTURE_TMDB || {})[item.id];         // TMDB synopsis (toggle source)
   const addBadges = (window.CULTURE_BADGES || {})[item.id];  // curated badge additions
-  const tmeta = (window.CULTURE_TMDB_META || {})[item.id];   // TMDB poster art (cover-art fallback)
-  if (!omdb && !book && !gameTt && !fwNote && !noteEn && !tmdb && !addBadges && !tmeta) return item;
+  if (!omdb && !book && !gameTt && !fwNote && !noteEn && !tmdb && !addBadges) return item;
   const out = book ? { ...item, ...book } : { ...item };
   if (omdb) {
     out.omdb = omdb;
@@ -1022,7 +1021,6 @@ function enrichExtras(item) {
   if (noteEn) out.noteEn = noteEn;
   if (tmdb && !out.summary) out.summary = tmdb;
   if (addBadges) out.highlights = [...new Set([...(out.highlights || []), ...addBadges])];
-  if (tmeta && tmeta.poster && !out.poster) out.tmdbPoster = tmeta.poster;
   return out;
 }
 

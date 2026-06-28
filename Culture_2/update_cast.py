@@ -30,6 +30,8 @@ import json, os, re, sys, time, unicodedata
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 from urllib.error import HTTPError, URLError
+try: sys.stdout.reconfigure(encoding='utf-8')   # Windows console: don't crash on ✓/✗
+except Exception: pass
 
 SCRIPT_DIR      = os.path.dirname(os.path.abspath(__file__))
 IMPORTS_JS      = os.path.join(SCRIPT_DIR, 'imports.js')
