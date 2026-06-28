@@ -12,7 +12,7 @@ Cross-checks Filmweb_watched_film.csv against imports.js and updates it:
 import csv, re, os, unicodedata
 from urllib.parse import quote_plus
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # data files in project root (../)
 CSV_PATH   = os.path.join(SCRIPT_DIR, 'Filmweb_watched_film.csv')
 IMPORTS_JS = os.path.join(SCRIPT_DIR, 'imports.js')
 DATA_JS    = os.path.join(SCRIPT_DIR, 'data.js')

@@ -32,7 +32,7 @@ from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 from urllib.error import HTTPError, URLError
 
-SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # data files in project root (../)
 IMPORTS_JS  = os.path.join(SCRIPT_DIR, 'imports.js')
 DATA_JS     = os.path.join(SCRIPT_DIR, 'data.js')
 CACHE_FILE  = os.path.join(SCRIPT_DIR, 'runtimes_cache.json')

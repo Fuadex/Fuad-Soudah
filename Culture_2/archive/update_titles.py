@@ -15,10 +15,11 @@ import csv, json, os, re, sys, time
 from urllib.parse import urlencode
 try: sys.stdout.reconfigure(encoding='utf-8')
 except Exception: pass
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # sibling modules live in project root
 import update_cast as uc
 import update_igdb as ug
 
-SD = os.path.dirname(os.path.abspath(__file__))
+SD = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # data files in project root (../)
 CACHE = os.path.join(SD, 'title_cache.json')
 DRY = '--dry-run' in sys.argv; FORCE = '--force' in sys.argv; NO_GAMES = '--no-games' in sys.argv
 LIMIT = next((int(sys.argv[sys.argv.index(a)+1]) for a in sys.argv if a == '--limit'), None)

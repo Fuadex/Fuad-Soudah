@@ -26,7 +26,7 @@ import csv, json, os, re, sys
 
 import update_imports as ui  # reuse classification tables + helpers
 
-SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # data files in project root (../)
 WISHLIST_JS  = os.path.join(SCRIPT_DIR, 'wishlist.js')
 DATA_JS      = os.path.join(SCRIPT_DIR, 'data.js')
 IMPORTS_JS   = os.path.join(SCRIPT_DIR, 'imports.js')

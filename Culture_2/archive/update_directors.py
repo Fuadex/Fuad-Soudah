@@ -18,7 +18,7 @@ from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # data files in project root (../)
 IMPORTS_JS  = os.path.join(SCRIPT_DIR, 'imports.js')
 CACHE_FILE  = os.path.join(SCRIPT_DIR, 'director_cache.json')
 ENV_FILE    = os.path.join(SCRIPT_DIR, '.env')
