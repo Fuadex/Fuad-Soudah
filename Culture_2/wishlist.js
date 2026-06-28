@@ -1276,6 +1276,7 @@ window.CULTURE_WISHLIST = [
 {"id": "wl-g-ff7", "title": "Final Fantasy VII", "year": 1997, "medium": "Games", "region": "jp", "highlights": ["devastating", "ahead", "worldbuilding"], "director": "Yoshinori Kitase"},
 {"id": "wl-f-paper-trail", "title": "Paper Trail", "year": 2026, "medium": "Shorts", "region": "us", "director": "Don Hertzfeldt"},
 {"id": "wl-f-god-is-shy", "title": "God Is Shy", "year": 2025, "medium": "Shorts", "region": "eu", "director": "Jocelyn Charles", "enTitle": "God Is Shy"},
+{"id": "wl-f-muyi", "title": "Mu Yi", "year": 2026, "medium": "Feature Animation", "region": "eu", "director": "Julien Chheng"},
 {"id": "wl-g-umineko", "title": "Umineko no Naku Koro ni", "year": 2007, "medium": "Games", "region": "jp", "highlights": ["cognitive"], "director": "Ryukishi07"},
 {"id": "wl-g-13-sentinels", "title": "13 Sentinels: Aegis Rim", "year": 2019, "medium": "Games", "region": "jp", "highlights": ["cognitive"], "director": "George Kamitani"},
 {"id": "wl-g-void-stranger", "title": "Void Stranger", "year": 2023, "medium": "Games", "region": "other", "highlights": ["cognitive"], "director": "System Erasure"},
