@@ -48,6 +48,7 @@ DRY_RUN    = '--dry-run' in sys.argv
 FORCE      = '--force'   in sys.argv
 GAMES_ONLY = '--games-only' in sys.argv
 NO_GAMES   = '--no-games'   in sys.argv
+ONLY_IDS   = next((set(a.split('=', 1)[1].split(',')) for a in sys.argv if a.startswith('--ids=')), None)
 LIMIT = None
 for a in sys.argv:
     if a.startswith('--limit'):
@@ -321,6 +322,8 @@ def main():
     games = [it for it in items if it['medium'] == 'Games']
 
     def needs(it):
+        if ONLY_IDS is not None:
+            return it['id'] in ONLY_IDS   # targeted re-fetch of specific ids
         if FORCE:
             return True
         c = cache.get(it['id'])

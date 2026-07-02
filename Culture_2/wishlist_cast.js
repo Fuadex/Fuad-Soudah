@@ -69247,5 +69247,42 @@ window.CULTURE_WISHLIST_CAST = {
     "productionCompanies": [
       "Everything Unlimited Ltd."
     ]
+  },
+  "wl-f-asura": {
+    "cast": [
+      "Masako Nozawa",
+      "Hiroaki Hirata",
+      "Kinya Kitaoji",
+      "Megumi Hayashibara",
+      "Tessyo Genda",
+      "Bin Shimada",
+      "Kaori Yamagata",
+      "Kappei Yamaguchi",
+      "Yu Mizushima",
+      "Daisuke Sakaguchi",
+      "Motoko Kumai",
+      "Taiten Kusunoki"
+    ],
+    "composer": "Yoshihiro Ike",
+    "writer": "Ikuko Takahashi",
+    "productionCompanies": [
+      "Toei Animation"
+    ],
+    "tags": [
+      "growing up",
+      "beast",
+      "anime"
+    ],
+    "genres": [
+      "Animation",
+      "Drama",
+      "History",
+      "Horror"
+    ],
+    "tmdbPoster": "https://image.tmdb.org/t/p/w500/n5e1Lk0T8pk67m4DoGearNFeNjW.jpg",
+    "region": "jp",
+    "director": "Keiichi Sato",
+    "runtime": 76,
+    "tmdbRating": 7.2
   }
 };
