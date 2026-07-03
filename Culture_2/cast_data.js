@@ -19634,7 +19634,8 @@ window.CULTURE_CAST = {
     "tags": [
       "communism",
       "bureaucrat",
-      "marital conflict"
+      "marital conflict",
+      "twist ending"
     ],
     "genres": [
       "Mystery",
