@@ -2067,7 +2067,13 @@ function App() {
     return () => clearTimeout(t);
   }, [justPickedId]);
 
-  const shelves = MEDIA.map(m => ({ medium: m, items: ITEMS.filter(i => i.medium === m) }));
+  // Memoized so its identity is stable across renders — `preChipShelves` lists it
+  // as a dependency, and an unmemoized array here silently defeated that memo
+  // (the 4.6k-item filter re-ran on every keystroke/modal/mode render).
+  const shelves = React.useMemo(
+    () => MEDIA.map(m => ({ medium: m, items: ITEMS.filter(i => i.medium === m) })),
+    [ITEMS]
+  );
 
   // Shelves after text / @year / y:year / in:year / r: filters — but NOT yet chip or stats filters.
   const preChipShelves = React.useMemo(() => {
