@@ -2262,13 +2262,23 @@ function App() {
   // Flick between the seen Library and the unseen Wishlist. The wishlist has no
   // curated cover art and no "curated" rank, so default it to Spines + Priority;
   // restore the Library's curated Covers view on the way back.
+  // Shared filters (tags, genres, people, countries, search) SURVIVE the switch;
+  // only side-specific ones are dropped: personal rating / watched-date filters
+  // (wishlist items are unseen, so they'd blank the list) and each view's own
+  // bottom-strip chips (rated-years ↔ release-buckets).
   const switchLibrary = (lib) => {
     if (lib === library) return;
     setLibrary(lib);
-    clearStatsFilters();
-    setSelectedRatedYears(new Set());
-    if (lib === 'wishlist') { setMode('spines'); setSort('priority'); }
-    else                    { setMode('covers'); setSort('curated'); }
+    const sharedFilter = !!(search.trim() || selectedDirectors.size || selectedStudios.size ||
+      selectedCountries.size || selectedGenres.size || selectedActors.size ||
+      selectedWriters.size || selectedCinematographers.size || selectedHighlights.size);
+    if (lib === 'wishlist') {
+      setSelectedRatings(new Set()); setSelectedWeeks(new Set()); setSelectedRatedYears(new Set());
+      setMode('spines'); setSort('priority');
+    } else {
+      setSelectedReleaseBuckets(new Set());
+      setMode(sharedFilter ? 'spines' : 'covers'); setSort('curated');
+    }
   };
 
   // When a search/chip filter becomes active, collapse to Spines so the layout can't
