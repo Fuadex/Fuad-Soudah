@@ -10,3 +10,5 @@ AUDIT-2026-09-03.md
 *.pem
 *.key
 *.crt
+__pycache__/
+*.pyc
