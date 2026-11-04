@@ -11,27 +11,31 @@ body {
 
 p {
 	margin: 8px !important;
-	transition: all 0.5s ease;
+	transition: color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
 }
 
 a {
-	transition: all 0.5s ease;
+	transition: color 0.3s ease, transform 0.3s ease;
 	color: #222;
 	text-decoration: none;
 }
 
+p a {
+	display: inline-block; /* lets hover scale without reflowing the paragraph */
+}
+
 p:hover a {
 	color: rgb(0,100,170);
-	font-size: 1.5vw;
 }
 
 p a:hover {
 	color: rgba(0,150,255);
-	font-size: 30px !important;
+	transform: scale(1.2);
 }
 
 .wooaaar {
 	width: 25%;
+	transition: width 0.5s ease;
 }
 
 .wooaaar:hover {
@@ -97,7 +101,7 @@ p a:hover {
 
 .swiper-button-next,
 .swiper-button-prev {
-	transition: all 0.5s ease;
+	transition: transform 0.3s ease, fill 0.3s ease;
 	pointer-events: none;
 }
 
@@ -121,7 +125,7 @@ p a:hover {
 }
 
 .swiper-pagination-bullet {
-	transition: all 0.5s ease;
+	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .swiper-pagination-bullet:hover {
@@ -139,6 +143,7 @@ p a:hover {
 }
 
 .text {
+	pointer-events: none; /* overlay must never steal hover from the image/tilt */
 	opacity: 0;
 	font-weight: 300;
 	color: white;
@@ -159,19 +164,17 @@ p a:hover {
 }
 
 .col-md-4 {
-	transition: all 0.5s ease;
+	transition: width 0.5s ease;
 }
 
 .col-md-4 img {
-	transition: all 0.5s ease;
+	/* transform is owned by tilt.js on .tilt images; transition only the
+	   decorations here so the two never fight */
+	transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 	border-radius: 10px;
 	transform: scale(0.75);
 	border: 1px solid #999;
 	box-shadow: 0 2px 24px rgba(0,0,0,0.25), 0 2px 24px rgba(0,0,0,0.22);
-}
-
-.col-md-4:hover {
-	transform: scale(1);
 }
 
 .col-md-4:hover img {
@@ -183,12 +186,7 @@ p a:hover {
 }
 
 img:hover {
-	transition: all 0.2s ease;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 15px 28px rgba(0,0,0,0.22);
-}
-
-.text:hover ~ img {
-	filter: invert(100);
 }
 
 /* ── Magnific Popup ──────────────────────────────────────────────────── */
@@ -316,24 +314,11 @@ circle {
 
 	a.darken img {
 		display: block;
-		transition: all 0.5s linear;
+		transition: transform 0.4s linear, box-shadow 0.4s linear, border-color 0.4s linear;
 	}
 
 	.mfp-content {
 		max-width: 85vw !important;
-	}
-
-	.text:hover p {
-		font-size: 2vw;
-		transform: scale(0.9);
-	}
-
-	.text:hover p a {
-		font-size: 1.5vw;
-	}
-
-	p a:hover {
-		font-size: 2vw !important;
 	}
 }
 
