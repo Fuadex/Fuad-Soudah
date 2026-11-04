@@ -5,3 +5,8 @@ node_modules
 
 # Local audit report — do NOT publish (documents security issues)
 AUDIT-2026-09-03.md
+
+# Never commit TLS/keys/certs
+*.pem
+*.key
+*.crt
