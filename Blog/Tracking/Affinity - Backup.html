@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -131,7 +131,7 @@ a.darken:hover .text{color:black;
 function getRandomImage() {
     var num = Math.floor( Math.random() * 2);
     var img = ImageArray[num];
-    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+    document.getElementById("randImage").innerHTML = ('<img loading="lazy" src="' + img + '" width="100%">')
 
 }
 
@@ -502,7 +502,7 @@ function getRandomImage() {
 
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2">
-    <a href="https://farm2.staticflickr.com/1776/30011315768_955964980b_k.jpg" class="darken"><div class="text"><center>Here's a bit of Seoul<br>Cause I've been on Exchange...<br>In Korea?</center></div><img src="https://farm2.staticflickr.com/1776/30011315768_955964980b_k.jpg" width="100%" alt="DSC_6000"></a>
+    <a href="https://farm2.staticflickr.com/1776/30011315768_955964980b_k.jpg" class="darken"><div class="text"><center>Here's a bit of Seoul<br>Cause I've been on Exchange...<br>In Korea?</center></div><img loading="lazy" src="https://farm2.staticflickr.com/1776/30011315768_955964980b_k.jpg" width="100%" alt="DSC_6000"></a>
   </div><br>
 </div>
 <br>
