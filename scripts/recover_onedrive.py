@@ -39,6 +39,12 @@ URL_RE = re.compile(
     r"https?://[^\"'\s)<>]*(?:onedrive\.live|1drv|storage\.live|livefilestore)"
     r"[^\"'\s)<>]*"
 )
+# Plain-HTTP embeds are blocked as mixed content on the HTTPS site, and most
+# of these hosts (peepproject.com, old blogspot CDNs, ...) are dead anyway,
+# so recover them from the archive too. Known-alive hosts were already
+# rewritten to https in the pages themselves.
+HTTP_RE = re.compile(r"http://[^\"'\s)<>]+")
+HTTP_SKIP_HOSTS = ("www.w3.org", "w3.org", "schema.org", "localhost", "127.0.0.1")
 SCAN_EXTENSIONS = {".html", ".htm", ".js", ".css"}
 SKIP_DIRS = {".git", "node_modules", "recovered"}
 
@@ -59,9 +65,14 @@ def scan_repo_urls():
             path = os.path.join(dirpath, name)
             try:
                 with open(path, "r", encoding="utf-8", errors="ignore") as fh:
-                    urls.update(URL_RE.findall(fh.read()))
+                    text = fh.read()
             except OSError:
-                pass
+                continue
+            urls.update(URL_RE.findall(text))
+            for u in HTTP_RE.findall(text):
+                host = urllib.parse.urlsplit(u).netloc.lower()
+                if host and host not in HTTP_SKIP_HOSTS:
+                    urls.add(u)
     return sorted(urls)
 
 
