@@ -1283,9 +1283,11 @@ height:50% !important;
         infoWindow.open(map);
       }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQPayZYSYDne4uSIIcOiO21RnXZ9w_BHw&callback=initMap">
-  </script>
+    <!-- Google Maps loader disabled: the API key that lived here was exposed
+         publicly and has to be revoked. To restore the map, create a new key
+         in Google Cloud Console, restrict it to https://fuad.design/* via
+         HTTP-referrer restriction, and re-add:
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=NEW_KEY&callback=initMap"></script> -->
 
 <!--           <script src="../../scrollreveal.js"></script>
 
