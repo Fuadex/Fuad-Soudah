@@ -40,17 +40,16 @@ background:linear-gradient(0deg, rgba(0,0,0,1), rgba(255, 255, 255,0), rgba(0, 0
     overflow-x: hidden;
 }
 
-/* Hover-glitch fix: transparent base border (no size jump when the hover
-   border appears) and transitions on the base state so un-hover animates
-   back instead of snapping. */
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-10{
-  border: 1px solid transparent;
-  transition: background-color 0.5s ease, border-radius 0.5s ease, border-color 0.5s ease;
-}
-
 .col-md-1:hover, .col-md-2:hover, .col-md-3:hover, .col-md-4:hover, .col-md-5:hover, .col-md-6:hover, .col-md-7:hover, .col-md-8:hover, .col-md-10:hover{
+     -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
                   border-radius: 10vw;
                   background:black;
+  border-style:solid;
+  border-width:1px;
   border-color:black;
   }
 
@@ -79,7 +78,6 @@ h4{
 }*/
 
 .text{
-    pointer-events: none; /* overlay must never steal hover from the image */
     opacity:0;
       font-weight: bold;
     z-index: 1;
@@ -109,7 +107,12 @@ background-color:rgba(255,255,255,0.65);
 
 a.darken img {
     display: block;
-    transition: opacity 0.5s linear, transform 0.5s linear, box-shadow 0.5s linear;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
 }
 
 a.darken:hover img {
