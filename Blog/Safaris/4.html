@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -144,7 +144,7 @@ iframe{
 function getRandomImage() {
     var num = Math.floor( Math.random() * 2);
     var img = ImageArray[num];
-    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+    document.getElementById("randImage").innerHTML = ('<img loading="lazy" src="' + img + '" width="100%">')
 
 }
 
@@ -276,22 +276,22 @@ Based on the readings, frameworks seem to need to be developed for the assessmen
 
 <!-- <div class="row">
   <div class="col-md-2 col-md-offset-2">
-    <a href="https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none" class="darken"><div class="text"><center>Panda vol. 1<br></center></div><img src="https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+    <a href="https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none" class="darken"><div class="text"><center>Panda vol. 1<br></center></div><img loading="lazy" src="https://kkbq2g.by.files.1drv.com/y4mLC-4HNHzEfH9EMF1-eair71wYTNBDHKzubgoEpHHioQYqNJhdpY79MCCnx0ZzGYhiTVctbge8_TUgQfgJ18ny-GzQAvK34G1An1AEooNtKDPWWOg8LepGo3EmqAg0rONxwtY9F1jrTTSmdewnQt6NbavAgFbY37rSTgGDiUuwP0Ml-LwtZqES2KosXrUzPH6UwITiklWRqi7-WU9qRUvkQ?width=1024&height=683&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
     <div class="col-md-2">
-    <a href="https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none" class="darken"><div class="text"><center>Panda vol. 2<br></center></div><img src="https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+    <a href="https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none" class="darken"><div class="text"><center>Panda vol. 2<br></center></div><img loading="lazy" src="https://kkbb2g.by.files.1drv.com/y4mpOW0bphMrcW5p7-a4IIVG6tvqlDIcWX2QACfLfCYhIbmsWvbADVI_LP05Jk6hKYQH-7Xw8S7sHp42MILPYypA7eJo8FkslISMrj1PcpLjHe8zZX3lRQUboo6rhc-1F2pYFH8b7yv7IEkQ9tMurGkz0bGffInAzNntQC-gqSCzXL7z4K_Zv_B4-lBs_Ab3PXBGxMaYHeBqEB2C3ddrm1FwQ?width=1024&height=683&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
       <div class="col-md-2">
-    <a href="https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none" class="darken"><div class="text"><center>Humans vol. 1<br></center></div><img src="https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+    <a href="https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none" class="darken"><div class="text"><center>Humans vol. 1<br></center></div><img loading="lazy" src="https://kkbp2g.by.files.1drv.com/y4mOd80Qe0pokvXq1IgLt3VobyVbo_8Qe0xfXfj19Cm72QgVLEN7mU80FSugc3RoD6NO8q2ize3zdJJpgx-nXi4aL_JKcDNHmVQVOvpAEfb-tWP5RWKJIfXlbVvO6L05Hh8kXlTvRzciwhigi9eKITLzpFucLS5VXyvP0eIr2vxUbGtUJVzwJweqCQmEe7JYybi9mAECIjxA-80CKLjsIMjjA?width=1024&height=576&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
       <div class="col-md-2">
-    <a href="https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none" class="darken"><div class="text"><center>Humans vol. 2<br></center></div><img src="https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+    <a href="https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none" class="darken"><div class="text"><center>Humans vol. 2<br></center></div><img loading="lazy" src="https://hahw3q.db.files.1drv.com/y4mWZUDlsItWK6b8qjiI62D_mW2BeykwiWhZDGN4R5S922uIMyvXksp7A60K-ktAgYxk9fKjVKnvzv-8Gh8Z9GaetVOZuUrYuE4_NUe66M2xMVvaNoV8A27aI-bbQMxZj0YuN0delLYvpqjhScVZ6ngfaCqEhSBYPmSuddpQ1feoOke84MluN8D0Zyu32eSavj7KIf233ul70AsO9Npvftj9w?width=1024&height=768&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
   </div> -->
 
   <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <a href="https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater" class="darken"><div class="text"><center>Wallaby<br></center></div><img src="https://jqbe2g.by.files.1drv.com/y4mjXEqq1SOsxwswL0J7-rKO-evX14gU-b77lVrmFuzqhlrmWnWNuRDBKZJGzE_HN2NoG6qwtaWYhzpQkD0zBCQ0Dd95NS3HhwU2Odut9-3oFq5Z7pK6IpC-JWNx8zcB96BKgA_oSbTtNjcAz-FVyUlHmtNRKKaYyoWkt6MFMH_XrwstMDMyif009lcjQcXROkTl3mh6w6u6CE_VkFl0Yoebg?width=2632&height=1496&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+    <a href="https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater" class="darken"><div class="text"><center>Wallaby<br></center></div><img loading="lazy" src="https://jqbe2g.by.files.1drv.com/y4mjXEqq1SOsxwswL0J7-rKO-evX14gU-b77lVrmFuzqhlrmWnWNuRDBKZJGzE_HN2NoG6qwtaWYhzpQkD0zBCQ0Dd95NS3HhwU2Odut9-3oFq5Z7pK6IpC-JWNx8zcB96BKgA_oSbTtNjcAz-FVyUlHmtNRKKaYyoWkt6MFMH_XrwstMDMyif009lcjQcXROkTl3mh6w6u6CE_VkFl0Yoebg?width=2632&height=1496&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
 </div>
 
@@ -325,7 +325,7 @@ Tammar Wallabies, Kanagaroos and Wallaroos can move around the environment at qu
 
   <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <a href="https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater" class="darken"><div class="text"><center>Wallaby<br></center></div><img src="https://j6bp2g.by.files.1drv.com/y4mVEuymZe0tiY7VJGldT-6TSIYJoDJzXWVRc9SuYuiVWTXupEq-Em-lup178SQ0VJ7Z2Y0dUmydYsKlvf_8Dtynz3kBe1WWOGHfmD3tFj1cBR8kfAGTHp8njP8XxBVoIwi3eoXCf4AdJKvuQ4IawpfnCzgOhRDWBy44_5GmUQtKHQGn3EKtyFdC3z_Ao-V-OxywjtSjpfw4zK4OLr2c3KdUQ?width=2075&height=1672&cropmode=none" style="margin-top:20px"width="100%"></a><br>
+    <a href="https://www.facebook.com/Juniperfoxx/photos/a.234502386884598/803241106677387/?type=3&theater" class="darken"><div class="text"><center>Wallaby<br></center></div><img loading="lazy" src="https://j6bp2g.by.files.1drv.com/y4mVEuymZe0tiY7VJGldT-6TSIYJoDJzXWVRc9SuYuiVWTXupEq-Em-lup178SQ0VJ7Z2Y0dUmydYsKlvf_8Dtynz3kBe1WWOGHfmD3tFj1cBR8kfAGTHp8njP8XxBVoIwi3eoXCf4AdJKvuQ4IawpfnCzgOhRDWBy44_5GmUQtKHQGn3EKtyFdC3z_Ao-V-OxywjtSjpfw4zK4OLr2c3KdUQ?width=2075&height=1672&cropmode=none" style="margin-top:20px"width="100%"></a><br>
   </div>
 </div>
 

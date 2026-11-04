@@ -441,15 +441,6 @@ circle {
 		padding-bottom: 20px;
 	}
 
-	a:not(.iframe-link):not(.popup-youtube) {
-		animation: inter 1s infinite alternate;
-	}
-
-	@keyframes inter {
-		0%   { color: #222; }
-		75%  { color: #444; }
-		100% { color: #999; }
-	}
 }
 
 /* ── Tiny screens ────────────────────────────────────────────────────── */

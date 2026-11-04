@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<title>Fuad Soudah</title>
 	<link rel="icon" type="image/png" href="favicon.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 	<!-- Link Swiper's CSS -->
@@ -42,7 +42,7 @@ window.addEventListener('load', (event) => {
 
     var num = Math.floor( Math.random() * 7);
     var img = ImageArray[num];
-    document.getElementById("randImage").innerHTML = ('<img src="' + img + '" width="100%">')
+    document.getElementById("randImage").innerHTML = ('<img loading="lazy" src="' + img + '" width="100%">')
 
 };
 </script>
@@ -219,14 +219,14 @@ margin-left:22.5vw !important;
 				<div class="swiper-slide ">
 									<div class="col-md-4 mobcor">
 										<p class="arrr mober1"><a href="home.html">SuperNFT</a></p>
-										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">SuperNFT</p></div><img class="swiper-lazy tilt zwei" src="https://farm5.staticflickr.com/4196/34187708664_417124cc91_h.jpg" style="width:45vw"  id="n5"></a>
+										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">SuperNFT</p></div><img loading="lazy" class="swiper-lazy tilt zwei" src="https://farm5.staticflickr.com/4196/34187708664_417124cc91_h.jpg" style="width:45vw"  id="n5"></a>
 										<p class="arrr mober"><a href="home.html">SuperNFT</a></p>
 									</div>
 					</div>
 								<div class="swiper-slide">
 									<div class="col-md-4 mobcor">
 										<p class="arrr mober1"><a href="home.html">MegaNFT</a></p>
-										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">MegaNFT</p></div><img class="swiper-lazy tilt zwei" src="https://live.staticflickr.com/65535/50774159396_96b8b5dcf1_k.jpg" style="width:45vw"  id="n5"></a>
+										<a href="home.html" class="darken ho"><div class="text"><p class="arrr">MegaNFT</p></div><img loading="lazy" class="swiper-lazy tilt zwei" src="https://live.staticflickr.com/65535/50774159396_96b8b5dcf1_k.jpg" style="width:45vw"  id="n5"></a>
 										<p class="arrr mober"><a href="home.html">MegaNFT</a></p>
 									</div>
 								</div>
@@ -251,7 +251,7 @@ margin-left:22.5vw !important;
       // accessToken removed — legacy Instagram API credential, revoked
       // accessToken removed — legacy Instagram API credential, revoked
       resolution: 'standard_resolution',
-      template: '<a href="{{link}}" class="nop"><img src="{{image}}" class="{{orientation}}" alt="{{caption}}"/></a>',
+      template: '<a href="{{link}}" class="nop"><img loading="lazy" src="{{image}}" class="{{orientation}}" alt="{{caption}}"/></a>',
       limit: '18'
     });
     feed.run();
@@ -275,7 +275,7 @@ margin-left:22.5vw !important;
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
 		<script src="tilt.jquery.min.js"></script>
 
-		<script src="jquery.magnific-popup.js"></script>
+		<script src="jquery.magnific-popup.min.js"></script>
 
 
 
